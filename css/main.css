@@ -2049,8 +2049,8 @@ header {
             .container main .right .card.big_mode .row .half:last-child div:last-child {
               border-top: none; }
             .container main .right .card.big_mode .row .half div {
-              line-height: calc($big_mode_row / 2);
-              height: calc($big_mode_row / 2);
+              line-height: calc(5em / 2);
+              height: calc(5em / 2);
               padding: 0 .5em 0;
               width: 100%;
               border: none;
