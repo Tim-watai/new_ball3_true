@@ -593,6 +593,9 @@ aside .bet_box {
           vertical-align: middle;
           line-height: 100%; }
 
+.container.en main .left li p {
+  font-size: .9em; }
+
 @-webkit-keyframes marquee {
   0% {
     left: 100%;
@@ -1790,7 +1793,7 @@ header {
                   margin: 0 1% 0 0; }
             .container main .right .card li div.box_1 span {
               display: inline-block;
-              width: 90%;
+              width: 85%;
               margin: 0 1% 0;
               background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
               background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
@@ -2112,18 +2115,6 @@ header {
                   margin: 1px 0 0; }
               .container main .right .card.big_mode .row .three_wrap .wrap_box .wrap_in em {
                 cursor: pointer; }
-          .container main .right .card.big_mode .row .three_no {
-            padding: 0; }
-            .container main .right .card.big_mode .row .three_no div {
-              line-height: calc(5em / 3);
-              height: calc(5em / 3);
-              width: 100%;
-              border: none;
-              position: relative; }
-              .container main .right .card.big_mode .row .three_no div.box_1:first-child span {
-                vertical-align: bottom; }
-              .container main .right .card.big_mode .row .three_no div.box_1:last-child span {
-                vertical-align: top; }
     .container main .left {
       width: 12%;
       float: left;
@@ -2163,7 +2154,7 @@ header {
           background: url(../image/icon/list3.png) no-repeat;
           background-size: 1800%;
           vertical-align: middle;
-          margin: 0 1.1em 0 0; }
+          margin: 0 .5em 0 0; }
           .container main .left ul li i.i1 {
             background-position: 0em 0; }
           .container main .left ul li i.i2 {
@@ -2275,6 +2266,16 @@ header {
       top: 0;
       right: 0;
       padding: 0 0 8em; }
+      .container main .right_2::-webkit-scrollbar {
+        width: .5em;
+        position: absolute;
+        left: 0; }
+      .container main .right_2::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px; }
+      .container main .right_2::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px; }
       .container main .right_2 .live_page {
         background: #fafbff;
         -webkit-box-shadow: 0 0 3px 2px #c1c7e6;
@@ -2455,6 +2456,11 @@ header {
             display: none; }
             .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap {
               border-top: 1px solid #ddddec; }
+              .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap:hover .ball_title, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap:hover .ball_title {
+                background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaecf7));
+                background: -webkit-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
+                background: -o-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
+                background: linear-gradient(to bottom, #ffffff 0%, #eaecf7 100%); }
               .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap.active .ball_title {
                 background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaecf7));
                 background: -webkit-linear-gradient(top, #ffffff 0%, #eaecf7 100%);

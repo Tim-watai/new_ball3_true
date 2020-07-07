@@ -1,7 +1,7 @@
 @import "../css/reset.scss";
 @import "../css/window.scss";
 @import "../css/game_tools.scss";
-
+@import "../css/language_style.scss";
 
 @keyframes marquee{
   0%{
@@ -1389,7 +1389,7 @@ header {
             &.box_1{
               span{
                 display: inline-block;
-                width: 90%;
+                width: 85%;
                 margin: 0 1% 0;
                 background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
                 border: 1px solid #b9bfdc;
@@ -1802,28 +1802,28 @@ header {
                 }
               }
             }
-            .three_no{
-              padding: 0;
-              div{
-                line-height: calc(#{$big_mode_row} / 3);
-                height: calc(#{$big_mode_row} / 3);
-                width: 100%;
-                border: none;
-                position: relative;
-                &.box_1{
-                  &:first-child{
-                    span{
-                      vertical-align: bottom;
-                    }
-                  }
-                  &:last-child{
-                    span{
-                      vertical-align: top;
-                    }
-                  }
-                }
-              }
-            }
+            // .three_no{
+            //   padding: 0;
+            //   div{
+            //     line-height: calc(#{$big_mode_row} / 3);
+            //     height: calc(#{$big_mode_row} / 3);
+            //     width: 100%;
+            //     border: none;
+            //     position: relative;
+            //     &.box_1{
+            //       &:first-child{
+            //         span{
+            //           vertical-align: bottom;
+            //         }
+            //       }
+            //       &:last-child{
+            //         span{
+            //           vertical-align: top;
+            //         }
+            //       }
+            //     }
+            //   }
+            // }
           }
         }
       }
@@ -1873,7 +1873,7 @@ header {
             background: url(../image/icon/list3.png) no-repeat;
             background-size: 1800%;
             vertical-align: middle;
-            margin: 0 1.1em 0 0;
+            margin: 0 .5em 0 0;
             @for $i from 1 through 18{
               &.i#{$i}{
                 background-position: (-1.5em * ($i - 1)) 0;
@@ -1931,6 +1931,20 @@ header {
       top: 0;
       right: 0;
       padding: 0 0 8em;
+      &::-webkit-scrollbar {
+        width: .5em;
+        position: absolute;
+        left: 0;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        // background: #e8ebfe;
+        border-radius: 10px;
+      }
       .live_page{
         $live_game_pad:.25em;
         background: #fafbff;
@@ -2143,6 +2157,11 @@ header {
               display: none;
               .ball_wrap{
                 border-top: 1px solid #ddddec;
+                &:hover{
+                  .ball_title{
+                    background: linear-gradient(to bottom ,#ffffff 0%,#eaecf7 100%);
+                  }
+                }
                 &.active{
                   .ball_title{
                     background: linear-gradient(to bottom ,#ffffff 0%,#eaecf7 100%);

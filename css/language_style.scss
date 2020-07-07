@@ -1,0 +1,13 @@
+.container{
+    &.en{
+        main{
+            .left{
+                li{
+                    p{
+                        font-size: .9em;
+                    }
+                }
+            }
+        }
+    }
+}
