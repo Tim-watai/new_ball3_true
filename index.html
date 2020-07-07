@@ -4208,9 +4208,9 @@
                     <button class="live_1 active">直播賽事</button>
                     <button class="live_2">聊天室</button>
                   </div>
-                  <div class="live_content">
+                  <div class="live_content active">
                     <div class="live_balls active">
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title active">
                           <i class="i1"></i>
                           <p class="b_name">足球</p>
@@ -4258,7 +4258,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i2"></i>
                           <p class="b_name">棒球</p>
@@ -4306,7 +4306,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i3"></i>
                           <p class="b_name">籃球</p>
@@ -4354,7 +4354,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i4"></i>
                           <p class="b_name">賽馬賽狗</p>
@@ -4402,7 +4402,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i5"></i>
                           <p class="b_name">電競</p>
@@ -4450,7 +4450,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i6"></i>
                           <p class="b_name">指數</p>
@@ -4498,7 +4498,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i7"></i>
                           <p class="b_name">彩球</p>
@@ -4546,7 +4546,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i8"></i>
                           <p class="b_name">冰球</p>
@@ -4594,7 +4594,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i9"></i>
                           <p class="b_name">網球</p>
@@ -4642,7 +4642,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i10"></i>
                           <p class="b_name">斯諾克</p>
@@ -4690,7 +4690,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i11"></i>
                           <p class="b_name">排球</p>
@@ -4738,7 +4738,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i12"></i>
                           <p class="b_name">賽車</p>
@@ -4786,7 +4786,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i13"></i>
                           <p class="b_name">羽毛球</p>
@@ -4834,7 +4834,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i14"></i>
                           <p class="b_name">美式足球</p>
@@ -4882,7 +4882,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i15"></i>
                           <p class="b_name">沙灘足球</p>
@@ -4930,7 +4930,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="ball_wrap">
+                      <div class="ball_wrap start">
                         <div class="ball_title">
                           <i class="i16"></i>
                           <p class="b_name">乒乓球</p>
@@ -4979,8 +4979,11 @@
                         </ul>
                       </div>
                     </div>
+                    
+                  </div>
+                  <div class="talk_content">
                     <div class="live_talk">
-                      <div class="talk_content">
+                      <div class="talk_box">
                         <div class="talk_title">
                           <span></span>
                         </div>
@@ -8137,8 +8140,8 @@ $('.icon_infor').click(function(){
 //tag
 
 
-  let live_page = $('.live_content .live_balls');
-  let talk_page = $('.live_content .live_talk');
+  let live_page = $('.live_content');
+  let talk_page = $('.talk_content');
   function tagChage (my){
     if($(my).hasClass('active') != true){
             $(my).siblings().removeClass('active');
@@ -8161,15 +8164,18 @@ $('.live_page .live_games .live_tag .live_2').click(function(){
 $('.live_content .live_balls .ball_wrap').click(function(){
   if($(this).hasClass('active') != true){
           $(this).addClass('active');
+          $(this).siblings().removeClass('start');
   return  $(this).children(".ball_drow").slideDown("slow");
 
   }else{
           $(this).removeClass('active');
+          $(this).siblings().addClass('start');
   return  $(this).children(".ball_drow").hide();
   }
 
 })
 //<-----------------
+
 
 
 

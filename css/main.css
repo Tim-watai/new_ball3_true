@@ -2383,99 +2383,108 @@ header {
                 background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
                 background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
                 background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%); }
-          .container main .content_ .right_2 .live_page .live_games .live_content {
+          .container main .content_ .right_2 .live_page .live_games .live_content, .container main .content_ .right_2 .live_page .live_games .talk_content {
+            position: relative;
             padding: 0 0.25em;
+            overflow-y: scroll;
             height: 36em;
             line-height: 36em;
             -webkit-box-shadow: 0 0px 2px 2px #dae2ff;
-            box-shadow: 0 0px 2px 2px #dae2ff; }
-            .container main .content_ .right_2 .live_page .live_games .live_content::-webkit-scrollbar {
+            box-shadow: 0 0px 2px 2px #dae2ff;
+            display: none; }
+            .container main .content_ .right_2 .live_page .live_games .live_content.active, .container main .content_ .right_2 .live_page .live_games .talk_content.active {
+              display: block; }
+            .container main .content_ .right_2 .live_page .live_games .live_content::-webkit-scrollbar, .container main .content_ .right_2 .live_page .live_games .talk_content::-webkit-scrollbar {
               width: .5em;
               position: absolute;
               left: 0; }
-            .container main .content_ .right_2 .live_page .live_games .live_content::-webkit-scrollbar-thumb {
+            .container main .content_ .right_2 .live_page .live_games .live_content::-webkit-scrollbar-thumb, .container main .content_ .right_2 .live_page .live_games .talk_content::-webkit-scrollbar-thumb {
               background: #b9becf;
               border-radius: 10px; }
-            .container main .content_ .right_2 .live_page .live_games .live_content::-webkit-scrollbar-track {
+            .container main .content_ .right_2 .live_page .live_games .live_content::-webkit-scrollbar-track, .container main .content_ .right_2 .live_page .live_games .talk_content::-webkit-scrollbar-track {
               background: #f1f1f1;
               border-radius: 10px; }
-            .container main .content_ .right_2 .live_page .live_games .live_content .live_balls {
+            .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap {
+              display: none; }
+              .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.start, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap.start {
+                display: block; }
+            .container main .content_ .right_2 .live_page .live_games .live_content .live_balls, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls {
               -webkit-box-shadow: 0px 0px 2px 2px #dae2ff;
               box-shadow: 0px 0px 2px 2px #dae2ff;
               display: none; }
-              .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap {
+              .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap {
                 border-top: 1px solid #ddddec; }
-                .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title {
+                .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap.active .ball_title {
                   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaecf7));
                   background: -webkit-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
                   background: -o-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
                   background: linear-gradient(to bottom, #ffffff 0%, #eaecf7 100%); }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title p {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title p, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap.active .ball_title p {
                     color: #004eff; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title .right_box .arrow {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title .right_box .arrow, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap.active .ball_title .right_box .arrow {
                     -webkit-transform: rotate(90deg);
                     -ms-transform: rotate(90deg);
                     transform: rotate(90deg);
                     -webkit-transition: all .2s ease-in-out;
                     -o-transition: all .2s ease-in-out;
                     transition: all .2s ease-in-out; }
-                .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap:first-child {
+                .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap:first-child, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap:first-child {
                   border-top: 1px solid transparent; }
-                .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title {
+                .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title {
                   background: #fff;
                   line-height: 4em;
                   padding: 0 1.5em 0 1em;
                   cursor: pointer; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .b_name {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .b_name, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title .b_name {
                     margin: 0 0 0 .5em; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title p {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title p, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title p {
                     display: inline-block;
                     vertical-align: middle;
                     line-height: 100%;
                     font-size: 1.1em;
                     color: #4d515d; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i {
                     background: url(../image/icon/live_balls.png) no-repeat;
                     background-size: 1600%;
                     width: 1.5em;
                     height: 1.5em;
                     vertical-align: middle; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i1 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i1, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i1 {
                       background-position-x: 0em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i2 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i2, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i2 {
                       background-position-x: -1.5em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i3 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i3, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i3 {
                       background-position-x: -3em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i4 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i4, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i4 {
                       background-position-x: -4.5em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i5 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i5, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i5 {
                       background-position-x: -6em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i6 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i6, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i6 {
                       background-position-x: -7.5em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i7 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i7, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i7 {
                       background-position-x: -9em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i8 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i8, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i8 {
                       background-position-x: -10.5em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i9 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i9, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i9 {
                       background-position-x: -12em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i10 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i10, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i10 {
                       background-position-x: -13.5em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i11 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i11, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i11 {
                       background-position-x: -15em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i12 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i12, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i12 {
                       background-position-x: -16.5em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i13 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i13, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i13 {
                       background-position-x: -18em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i14 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i14, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i14 {
                       background-position-x: -19.5em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i15 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i15, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i15 {
                       background-position-x: -21em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i16 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i16, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i16 {
                       background-position-x: -22.5em; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .right_box {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .right_box, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title .right_box {
                     float: right;
                     line-height: 4em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .right_box .arrow {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .right_box .arrow, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title .right_box .arrow {
                       width: .5em;
                       height: .8em;
                       background: url(../image/icon/arrow_g.png) no-repeat;
@@ -2489,61 +2498,61 @@ header {
                       -webkit-transition: all .2s ease-in-out;
                       -o-transition: all .2s ease-in-out;
                       transition: all .2s ease-in-out; }
-                .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow {
+                .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow {
                   overflow: hidden;
                   display: none; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow.active {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow.active, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow.active {
                     display: block; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li {
                     overflow: hidden;
                     line-height: 100%;
                     padding: .25em .5em;
                     border-top: 1px solid #ddddec; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li:hover {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li:hover, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li:hover {
                       background: #fff0e2; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right p {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right p, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .drow_right p {
                       color: #d57f32; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right h1 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right h1, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .drow_right h1 {
                       display: none; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right .change_wrap .doing_wrap {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right .change_wrap .doing_wrap, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .drow_right .change_wrap .doing_wrap {
                       display: block; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button {
                       color: #d57f32;
                       border: 1px solid #d57f32; }
-                      .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button:hover, .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button.active {
+                      .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button:hover, .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button.active, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button:hover, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button.active {
                         background: #d57f32;
                         color: #fff; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li h1 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li h1, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li h1 {
                       line-height: 1.9em;
                       font-size: 1.1em;
                       width: 100%;
                       display: inline-block;
                       color: #4d515d; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left, .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left, .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right {
                       float: left; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left {
                       width: 55%; }
-                      .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left p {
+                      .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left p, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left p {
                         line-height: 1.4em;
                         width: 100%; }
-                      .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left h1, .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left p {
+                      .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left h1, .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left p, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left h1, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left p {
                         color: #4d515d; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right {
                       width: 45%;
                       height: 4.7em;
                       position: relative; }
-                      .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap {
+                      .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap {
                         position: absolute;
                         top: 0;
                         right: 0; }
-                        .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap h1 {
+                        .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap h1, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap h1 {
                           font-weight: normal; }
-                        .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap {
+                        .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap {
                           line-height: 1.9em;
                           display: none; }
-                          .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap p {
+                          .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap p, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap p {
                             line-height: 100%; }
-                          .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap .red_point {
+                          .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap .red_point, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap .red_point {
                             width: .55em;
                             height: .55em;
                             background: red;
@@ -2551,38 +2560,37 @@ header {
                             border-radius: 100px;
                             vertical-align: middle;
                             margin: -.25em 0 0 .25em; }
-                      .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap {
+                      .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap {
                         position: absolute;
                         bottom: 0;
                         right: 0; }
-                        .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button {
+                        .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button {
                           border: 1px solid #3654ff;
                           border-radius: 12px;
                           padding: .1em .5em;
                           background: transparent;
                           color: #3654ff; }
-                          .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:hover, .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button.active {
+                          .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:hover, .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button.active, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:hover, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button.active {
                             background: #3654ff;
                             color: #fff; }
-                          .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:first-child {
+                          .container main .content_ .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:first-child, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:first-child {
                             margin: 0 .5em 0 0; }
-            .container main .content_ .right_2 .live_page .live_games .live_content .live_talk {
-              display: none;
+            .container main .content_ .right_2 .live_page .live_games .live_content .live_talk, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk {
               height: inherit; }
-              .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content {
+              .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box {
                 height: 70%;
                 background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
                 background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
                 background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
                 background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%); }
-                .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_title {
+                .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_title, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_title {
                   line-height: 2em;
                   height: 2em;
                   background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
                   background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
                   background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
                   background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%); }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_title span {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_title span, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_title span {
                     display: inline-block;
                     width: 1em;
                     height: 1em;
@@ -2590,70 +2598,70 @@ header {
                     background: url(../image/icon/talk_icon.png) no-repeat;
                     background-size: cover;
                     margin: 0 0 0 1em; }
-                .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_box {
+                .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box {
                   height: calc(100% - 2em);
                   background: #fafafa;
                   overflow-y: scroll; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_box::-webkit-scrollbar {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box::-webkit-scrollbar, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box::-webkit-scrollbar {
                     width: .25em;
                     position: absolute;
                     left: 0; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_box::-webkit-scrollbar-thumb {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box::-webkit-scrollbar-thumb, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box::-webkit-scrollbar-thumb {
                     background: #b9becf;
                     border-radius: 10px; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_box::-webkit-scrollbar-track {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box::-webkit-scrollbar-track, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box::-webkit-scrollbar-track {
                     background: #f1f1f1;
                     border-radius: 10px; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_box .time_tag {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .time_tag, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .time_tag {
                     line-height: 1.1;
                     color: #8a8c93;
                     text-align: center;
                     margin: .5em 0; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_box .play_wrap {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap {
                     line-height: 100%;
                     color: #93a2ee;
                     margin: .5em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_box .play_wrap .p_name {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap .p_name, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap .p_name {
                       font-size: .8em;
                       text-transform: none; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_box .play_wrap .p_box {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap .p_box, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap .p_box {
                       border-radius: 12px;
                       border: 1px solid #93a2ee;
                       width: auto;
                       display: inline-block;
                       padding: .25em .5em;
                       text-transform: none; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_box .play_wrap.myself {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap.myself, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap.myself {
                       text-align: right; }
-                      .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_content .talk_box .play_wrap.myself .p_box {
+                      .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap.myself .p_box, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap.myself .p_box {
                         color: #fff;
                         background: #485abf; }
-              .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap {
+              .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap {
                 line-height: 100%;
                 width: 100%;
                 position: relative;
                 border-top: 1px solid #ddddec; }
-                .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap textarea {
+                .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap textarea, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap textarea {
                   width: 100%;
                   border: none;
                   padding: 1.5em .5em 0em;
                   height: 8em; }
-                .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap {
+                .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap {
                   position: absolute;
                   top: .25em;
                   left: .25em; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i {
                     width: 1em;
                     height: 1em;
                     background: url(../image/icon/talk_text_ic.png) no-repeat;
                     background-size: 200%;
                     margin: 0 .5em 0 0;
                     cursor: pointer; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i1 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i1, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i1 {
                       background-position-x: 0em; }
-                    .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i2 {
+                    .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i2, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i2 {
                       background-position-x: -1em; }
-              .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn {
+              .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn {
                 display: inline-block;
                 width: 100%;
                 height: 2.5em;
@@ -2661,26 +2669,28 @@ header {
                 background: #d6ddff;
                 border-radius: 0 0 8px 8px;
                 position: relative; }
-                .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap {
+                .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap {
                   position: absolute;
                   top: 50%;
                   right: 1em;
                   -webkit-transform: translateY(-50%);
                   -ms-transform: translateY(-50%);
                   transform: translateY(-50%); }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap button {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap button, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap button {
                     border-radius: 12px;
                     padding: .25em .5em; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .cancel {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .cancel, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .cancel {
                     border: 1px solid #afafaf;
                     color: #afafaf;
                     background: #fff; }
-                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send {
+                  .container main .content_ .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send {
                     border: 1px solid transparent;
                     color: #fff;
                     background: #6676cb; }
-            .container main .content_ .right_2 .live_page .live_games .live_content .live_balls.active, .container main .content_ .right_2 .live_page .live_games .live_content .live_talk.active {
+            .container main .content_ .right_2 .live_page .live_games .live_content .live_balls.active, .container main .content_ .right_2 .live_page .live_games .live_content .live_talk.active, .container main .content_ .right_2 .live_page .live_games .talk_content .live_balls.active, .container main .content_ .right_2 .live_page .live_games .talk_content .live_talk.active {
               display: block; }
+          .container main .content_ .right_2 .live_page .live_games .talk_content {
+            overflow: hidden; }
   .container footer {
     width: 100%;
     height: 69px;

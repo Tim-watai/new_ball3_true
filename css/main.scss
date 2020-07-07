@@ -2054,13 +2054,19 @@ header {
                 }
               }
             }
-            .live_content{
+            .live_content,.talk_content{
+              position: relative;
               padding: 0 $live_game_pad;
               // height: 28em;
               // line-height: 28em;
+              overflow-y: scroll;
               height: 36em;
               line-height: 36em;
               box-shadow: 0 0px 2px 2px #dae2ff;
+              display: none;
+              &.active{
+                display: block;
+              }
               &::-webkit-scrollbar {
                 width: .5em;
                 position: absolute;
@@ -2074,6 +2080,14 @@ header {
                 background: #f1f1f1;
                 // background: #e8ebfe;
                 border-radius: 10px;
+              }
+              .live_balls{
+                .ball_wrap{
+                  display: none;
+                  &.start{
+                    display: block;
+                  }
+                }
               }
               .live_balls{
                 box-shadow: 0px 0px 2px 2px #dae2ff;
@@ -2255,9 +2269,8 @@ header {
                 }
               }
               .live_talk{
-                display: none;
                 height: inherit;
-                .talk_content{
+                .talk_box{
                   height: 70%;
                   background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%);
                   .talk_title{
@@ -2392,6 +2405,9 @@ header {
                   display: block;
                 }
               }
+            }
+            .talk_content{
+              overflow: hidden;
             }
           }
         }
