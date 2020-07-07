@@ -712,15 +712,11 @@ header {
       width: 100%;
       padding: 0 0 5em 0.5em;
       //0703
-      // overflow: hidden;
-    
-      
-      
     }
     .right {
       width: 66%;
       float: left;
-      padding: .8em .8em 0 .8em;
+      padding: .8em .8em .8em .8em;
       position: fixed;
       top: 0;
       left: 12%;
@@ -742,7 +738,7 @@ header {
       .wrap{
         &.fixed{
           position: fixed;
-          top: 7.3em;
+          top: 1em;
           width: 968px;
           z-index: 5;
           display: none;
@@ -903,7 +899,7 @@ header {
         z-index: 1;
         &.fixed{
           position: fixed;
-          top: 7.3em;
+          top: .7em;
           width: 968px;
           z-index: 5;
           display: none;
@@ -1443,7 +1439,6 @@ header {
               height: .6em;
               margin: 0 0 0 .125em;
               vertical-align: middle;
-                
               }
             
             i{
@@ -1883,7 +1878,6 @@ header {
           p {
             font-size: 1.1em;
             line-height: 100%;
-            // vertical-align: sub;
             width: 50%;
             vertical-align: middle;
             &.num{
@@ -1926,15 +1920,11 @@ header {
       width: calc(1343px * 0.22);
       height: auto;
       float: left;
-      // position: fixed;
-      // right: 275px;
-      // position: relative;
       position: fixed;
       top: 0;
       right: 0;
       .live_page{
         $live_game_pad:.25em;
-
         background: #fafbff;
         box-shadow: 0 0 3px 2px #c1c7e6;
         overflow: hidden;
@@ -2388,8 +2378,10 @@ header {
                 }
               }
               .talk_input{
+                height: 30%;
                 .input_wrap{
                   line-height: 100%;
+                  height: 65%;
                   width: 100%;
                   position: relative;
                   border-top: 1px solid #ddddec;
@@ -2422,7 +2414,8 @@ header {
                 .talk_btn{
                   display: inline-block;
                   width: 100%;
-                  height: 2.5em;
+                  // height: 2.5em;
+                  height: 25%;
                   vertical-align: top;
                   background: #d6ddff;
                   border-radius: 0 0 8px 8px;
@@ -2432,6 +2425,7 @@ header {
                     top: 50%;
                     right: 1em;
                     transform: translateY(-50%);
+                    line-height: 1;
                     button{
                       border-radius: 12px;
                       padding: .125em .5em;

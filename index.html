@@ -3000,7 +3000,7 @@
                   <div class="b10 t_mid">
                     <i class="m_icon tv"></i>
                     <i class="m_icon heart"></i>
-                    <span class="arrow_d">+99<span></span></span>
+                    <em><p class="gray">+99</p><i class="arrow_d"></i></em>
                   </div>
                 </li>
                 <li class="row">
@@ -7972,15 +7972,15 @@ $('.test li:nth-child(7)').click(function(){
 });
 //<--------------------
 //左邊list
-$('.content_ .left ul li:nth-child(3)').click(function(){
+$('.left ul li:nth-child(3)').click(function(){
   page_active(5);
   sign_active(true);
 })
-$('.content_ .left ul li:nth-child(4)').click(function(){
+$('.left ul li:nth-child(4)').click(function(){
   page_active(6);
   sign_active(true);
 })
-$('.content_ .left ul li:nth-child(5)').click(function(){
+$('.left ul li:nth-child(5)').click(function(){
   page_active(7);
   sign_active(true);
 })
@@ -8118,7 +8118,7 @@ $('.icon_infor').click(function(){
 
 //dummy同步本尊的寬
 
-  let search_bar_obj = $('.container main .content_ .right .search_bar');
+  let search_bar_obj = $('.container main .right .search_bar');
   let search_bar_dummy = $('.search_bar.fixed');
   let ball_search_dummy = $('.wrap.fixed');
   let obj_w = search_bar_obj.outerWidth();
@@ -8126,12 +8126,13 @@ $('.icon_infor').click(function(){
       ball_search_dummy.css({width:obj_w});
 //
 //視窗偵測
-  $('.container').scroll(function () {
+  $('.container main .right').scroll(function () {
+
     var scrollVal = $(this).scrollTop();
-  //  console.log('scrollVal = '+scrollVal);
-   if(scrollVal >= 100){
+   console.log('scrollVal = '+scrollVal);
+   if(scrollVal >= 50){
     $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
-   }else if(scrollVal <= 99){
+   }else if(scrollVal <= 49){
     $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
    }
   });

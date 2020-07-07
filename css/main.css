@@ -1257,7 +1257,7 @@ header {
     .container main .right {
       width: 66%;
       float: left;
-      padding: .8em .8em 0 .8em;
+      padding: .8em .8em .8em .8em;
       position: fixed;
       top: 0;
       left: 12%;
@@ -1275,7 +1275,7 @@ header {
         border-radius: 10px; }
       .container main .right .wrap.fixed {
         position: fixed;
-        top: 7.3em;
+        top: 1em;
         width: 968px;
         z-index: 5;
         display: none; }
@@ -1433,7 +1433,7 @@ header {
         z-index: 1; }
         .container main .right .search_bar.fixed {
           position: fixed;
-          top: 7.3em;
+          top: .7em;
           width: 968px;
           z-index: 5;
           display: none; }
@@ -2670,68 +2670,72 @@ header {
                     .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap.myself .p_box, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap.myself .p_box {
                       color: #fff;
                       background: #485abf; }
-            .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap {
-              line-height: 100%;
-              width: 100%;
-              position: relative;
-              border-top: 1px solid #ddddec; }
-              .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap textarea, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap textarea {
+            .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input {
+              height: 30%; }
+              .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap {
+                line-height: 100%;
+                height: 65%;
                 width: 100%;
-                border: none;
-                padding: 1.5em .5em 0em;
-                height: 8em; }
-              .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap {
-                position: absolute;
-                top: .25em;
-                left: .25em; }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i {
-                  width: 1em;
-                  height: 1em;
-                  background: url(../image/icon/talk_text_ic.png) no-repeat;
-                  background-size: 200%;
-                  margin: 0 .5em 0 0;
-                  cursor: pointer; }
-                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i1, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i1 {
-                    background-position-x: 0em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i2, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i2 {
-                    background-position-x: -1em; }
-            .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn {
-              display: inline-block;
-              width: 100%;
-              height: 2.5em;
-              vertical-align: top;
-              background: #d6ddff;
-              border-radius: 0 0 8px 8px;
-              position: relative; }
-              .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap {
-                position: absolute;
-                top: 50%;
-                right: 1em;
-                -webkit-transform: translateY(-50%);
-                -ms-transform: translateY(-50%);
-                transform: translateY(-50%); }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap button, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap button {
-                  border-radius: 12px;
-                  padding: .125em .5em; }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .cancel, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .cancel {
-                  border: 1px solid #afafaf;
-                  color: #afafaf;
-                  background: #fff; }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send {
-                  border: 1px solid #8593d8;
-                  color: #fff;
-                  background: -webkit-gradient(linear, left top, left bottom, from(#8593d8), to(#3d50bb));
-                  background: -webkit-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
-                  background: -o-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
-                  background: linear-gradient(to bottom, #8593d8 0%, #3d50bb 100%); }
-                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send .tri, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send .tri {
-                    width: 0;
-                    height: 0;
-                    border-style: solid;
-                    border-width: .4em .4em 0 .4em;
-                    border-color: #fff transparent transparent transparent;
-                    display: inline-block;
-                    vertical-align: middle; }
+                position: relative;
+                border-top: 1px solid #ddddec; }
+                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap textarea, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap textarea {
+                  width: 100%;
+                  border: none;
+                  padding: 1.5em .5em 0em;
+                  height: 8em; }
+                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap {
+                  position: absolute;
+                  top: .25em;
+                  left: .25em; }
+                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i {
+                    width: 1em;
+                    height: 1em;
+                    background: url(../image/icon/talk_text_ic.png) no-repeat;
+                    background-size: 200%;
+                    margin: 0 .5em 0 0;
+                    cursor: pointer; }
+                    .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i1, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i1 {
+                      background-position-x: 0em; }
+                    .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i2, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i2 {
+                      background-position-x: -1em; }
+              .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn {
+                display: inline-block;
+                width: 100%;
+                height: 25%;
+                vertical-align: top;
+                background: #d6ddff;
+                border-radius: 0 0 8px 8px;
+                position: relative; }
+                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap {
+                  position: absolute;
+                  top: 50%;
+                  right: 1em;
+                  -webkit-transform: translateY(-50%);
+                  -ms-transform: translateY(-50%);
+                  transform: translateY(-50%);
+                  line-height: 1; }
+                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap button, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap button {
+                    border-radius: 12px;
+                    padding: .125em .5em; }
+                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .cancel, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .cancel {
+                    border: 1px solid #afafaf;
+                    color: #afafaf;
+                    background: #fff; }
+                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send {
+                    border: 1px solid #8593d8;
+                    color: #fff;
+                    background: -webkit-gradient(linear, left top, left bottom, from(#8593d8), to(#3d50bb));
+                    background: -webkit-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
+                    background: -o-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
+                    background: linear-gradient(to bottom, #8593d8 0%, #3d50bb 100%); }
+                    .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send .tri, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send .tri {
+                      width: 0;
+                      height: 0;
+                      border-style: solid;
+                      border-width: .4em .4em 0 .4em;
+                      border-color: #fff transparent transparent transparent;
+                      display: inline-block;
+                      vertical-align: middle; }
           .container main .right_2 .live_page .live_games .live_content .live_balls.active, .container main .right_2 .live_page .live_games .live_content .live_talk.active, .container main .right_2 .live_page .live_games .talk_content .live_balls.active, .container main .right_2 .live_page .live_games .talk_content .live_talk.active {
             display: block; }
         .container main .right_2 .live_page .live_games .talk_content {
