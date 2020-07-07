@@ -596,6 +596,9 @@ aside .bet_box {
 .container.en main .left li p {
   font-size: .9em; }
 
+.container.en .f_wrap .f_bot ul li p {
+  font-size: .9em; }
+
 @-webkit-keyframes marquee {
   0% {
     left: 100%;
@@ -686,12 +689,17 @@ header {
       color: #b4bac8; }
   header .h_box {
     width: 100%;
+    height: 5em;
     background: #fff;
     -webkit-box-shadow: 0px 1px 3px 0px #cdd2e5;
     box-shadow: 0px 1px 3px 0px #cdd2e5; }
   header .h_wrap {
     width: 1200px;
-    margin: 0 auto;
+    position: absolute;
+    left: 54%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     line-height: 5em;
     overflow: hidden;
     padding: 0 0 0 .4em; }
@@ -853,9 +861,9 @@ header {
 
 .container {
   text-transform: capitalize;
-  margin: 6.5em 0 0;
+  margin: 5em 0 0;
   width: 100%;
-  height: calc(100% - 6.5em);
+  height: calc(100% -5em);
   position: fixed;
   z-index: 1;
   overflow: auto;
@@ -875,7 +883,10 @@ header {
     position: fixed;
     top: 120px;
     z-index: 100;
-    right: -254px;
+    right: 0;
+    -webkit-transform: translateX(74%);
+    -ms-transform: translateX(74%);
+    transform: translateX(74%);
     border-radius: 20px 0 0 20px;
     -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
     box-shadow: 0 0 5px 1px #b6bcdd;
@@ -884,7 +895,9 @@ header {
     -o-transition: all ease-in-out .3s;
     transition: all ease-in-out .3s; }
     .container .search_group.active {
-      right: 0; }
+      -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      transform: translateX(0%); }
       .container .search_group.active .row {
         background: #eaedf4; }
     .container .search_group .row {
@@ -893,7 +906,7 @@ header {
     .container .search_group .s_box {
       display: inline-block;
       font-size: .9em;
-      width: 6.5em;
+      width: 7em;
       border-radius: 20px 0 0 20px;
       text-align: center;
       cursor: pointer;
@@ -1113,7 +1126,7 @@ header {
       text-align: center;
       padding: .8em;
       position: relative;
-      width: 6.5em; }
+      width: 7em; }
       .container .f_wrap .f_bot ul li i {
         margin: 0 0 4px; }
       .container .f_wrap .f_bot ul li p.red {
@@ -1894,6 +1907,8 @@ header {
             width: 8%; }
           .container main .right .card li .b10 {
             width: 10%; }
+          .container main .right .card li .b11 {
+            width: 11%; }
           .container main .right .card li .b12 {
             width: 12%; }
           .container main .right .card li .b13 {
@@ -2261,6 +2276,7 @@ header {
       height: auto;
       float: left;
       overflow-y: scroll;
+      overflow-x: hidden;
       position: fixed;
       height: 80vh;
       top: 0;
@@ -2367,7 +2383,7 @@ header {
               -webkit-transform: translateX(-50%);
               -ms-transform: translateX(-50%);
               transform: translateX(-50%);
-              width: 105%;
+              width: 97%;
               background: #2d2d2dde;
               color: #fff;
               padding: .5em 0;
@@ -2379,7 +2395,7 @@ header {
                 content: '';
                 position: absolute;
                 top: -10px;
-                right: 1.8em;
+                right: .9em;
                 width: 0;
                 height: 0;
                 border-style: solid;

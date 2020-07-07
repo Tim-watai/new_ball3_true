@@ -98,12 +98,16 @@ header {
   }
   .h_box {
     width: 100%;
+    height: 5em;
     background: #fff;
     box-shadow: 0px 1px 3px 0px #cdd2e5;
   }
   .h_wrap {
     width: 1200px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    position: absolute;
+    left: 54%;
+    transform: translateX(-50%);
     line-height: 5em;
     overflow: hidden;
     padding: 0 0 0 .4em;
@@ -302,9 +306,9 @@ header {
  //0624字母大
  text-transform:capitalize;
  
-  margin: 6.5em 0 0;
+  margin:5em 0 0;
   width: 100%;
-  height: calc(100% - 6.5em);
+  height: calc(100% -5em);
   position: fixed;
   z-index: 1;
   overflow: auto;
@@ -325,17 +329,20 @@ header {
     // background: #e8ebfe;
     border-radius: 10px;
   }
+  $right_list_width:7em;
   .search_group{
     position: fixed;
     top: 120px;
     z-index: 100;
-    right: -254px;
+    // right: -260px;
+    right: 0;
+    transform: translateX(74%);
     border-radius: 20px 0 0 20px;
     box-shadow: 0 0 5px 1px #b6bcdd;
     background: #fff;
     transition: all ease-in-out .3s;
     &.active{
-      right:0;
+      transform: translateX(0%);
       .row{
         background: #eaedf4;
       }
@@ -347,7 +354,7 @@ header {
     .s_box{
       display: inline-block;
       font-size: .9em;
-      width: 6.5em;
+      width: $right_list_width;
       border-radius: 20px 0 0 20px;
       text-align: center;
       cursor: pointer;
@@ -550,7 +557,7 @@ header {
         // padding: 1.2em .8em 1.2em .8em;
           padding: .8em;
           position: relative;
-          width: 6.5em;
+          width: $right_list_width;
           i{
             margin: 0 0 4px;
           }
@@ -1522,6 +1529,9 @@ header {
           .b10{
             width: 10%;
           }
+          .b11{
+            width: 11%;
+          }
           .b12{
             width: 12%;
           }
@@ -1926,6 +1936,7 @@ header {
       height: auto;
       float: left;
       overflow-y: scroll;
+      overflow-x: hidden;
       position: fixed;
       height: 80vh;
       top: 0;
@@ -2047,7 +2058,7 @@ header {
               left: 50%;
               top: 2.2em;
               transform: translateX(-50%);
-              width: 105%;
+              width: 97%;
               background: #2d2d2dde;
               color: #fff;
               padding: .5em 0;
@@ -2061,7 +2072,7 @@ header {
                 content: '';
                 position: absolute;
                 top: -10px;
-                right: 1.8em;
+                right: .9em;
                 width: 0;
                 height: 0;
                 border-style: solid;
