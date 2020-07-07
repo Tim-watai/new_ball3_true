@@ -1257,11 +1257,11 @@ header {
     .container main .right {
       width: 66%;
       float: left;
-      padding: .8em .8em .8em .8em;
+      padding: .8em .8em 8em .8em;
       position: fixed;
       top: 0;
       left: 12%;
-      height: 100%;
+      height: 80vh;
       overflow-y: scroll; }
       .container main .right::-webkit-scrollbar {
         width: .5em;
@@ -1907,6 +1907,8 @@ header {
             width: 33.33%; }
           .container main .right .card li .b36 {
             width: 36%; }
+          .container main .right .card li .b35 {
+            width: 35%; }
           .container main .right .card li .b38 {
             width: 38%; }
           .container main .right .card li .b46 {
@@ -2134,7 +2136,8 @@ header {
       -webkit-box-shadow: 0 0 5px 3px #d3d8ea;
       box-shadow: 0 0 5px 3px #d3d8ea;
       border-radius: 0 0 30px 30px;
-      background: #f6f9ff; }
+      background: #f6f9ff;
+      padding: 0 0 8em; }
       .container main .left::-webkit-scrollbar {
         width: .5em;
         position: absolute;
@@ -2266,14 +2269,16 @@ header {
       width: calc(1343px * 0.22);
       height: auto;
       float: left;
+      overflow-y: scroll;
       position: fixed;
+      height: 80vh;
       top: 0;
-      right: 0; }
+      right: 0;
+      padding: 0 0 8em; }
       .container main .right_2 .live_page {
         background: #fafbff;
         -webkit-box-shadow: 0 0 3px 2px #c1c7e6;
         box-shadow: 0 0 3px 2px #c1c7e6;
-        overflow: hidden;
         border-radius: 0 0 12px 12px; }
         .container main .right_2 .live_page .blue {
           color: #2d43b6; }
@@ -2445,6 +2450,8 @@ header {
           .container main .right_2 .live_page .live_games .live_content .live_balls, .container main .right_2 .live_page .live_games .talk_content .live_balls {
             -webkit-box-shadow: 0px 0px 2px 2px #dae2ff;
             box-shadow: 0px 0px 2px 2px #dae2ff;
+            border-radius: 0 0 12px 12px;
+            overflow: hidden;
             display: none; }
             .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap {
               border-top: 1px solid #ddddec; }
