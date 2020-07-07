@@ -1,0 +1,477 @@
+aside{
+    
+    .b33{
+        width: 33.33%;
+    }
+    .b30{
+        width: 30%;
+    }
+    .b48{
+        width: 48%;
+    }
+    .b50{
+        width: 50%;
+    }
+    .b52{
+        width: 52%;
+    }
+    .b617{
+        width: 61.7%;
+    }
+
+    .f_box{
+        float: left;
+    }
+    &.black_bg{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,.4);
+        z-index: 101;
+    }
+    .bet_box{
+        width: 36em;
+        height: auto;
+        border-radius: 15px;
+        // margin: 10em auto 0;
+        //0702
+        position: absolute;
+        left: calc(50vw - 18em);
+        top: 100px;
+        
+        overflow: hidden;
+        .hidden_i_block.hidden_i_block.hidden_i_block{
+            display: none;
+            &.active{
+                display: inline-block;
+            }
+        }
+        &.blue{
+            .title{
+                background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+            }
+            .content{
+                border-color:  #8593d8;
+                    .bets{
+                        .computer{
+                            .row{
+                                button{
+                                    background: linear-gradient(to bottom ,#fff 0%,#d5d9ef 100%);
+                                    border: solid 1px #495cc5;
+                                    &.bet_btn{
+                                        color: #fff;
+                                        background: linear-gradient(to bottom ,#8f9cdc 0%,#2e44b7 100%);
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                        .check_icon{
+                            background: #354ecf;
+                        }
+                    }
+            }
+        }
+        &.red{
+            .title{
+                background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
+            }
+            .content{
+                border-color:  #e01821;
+                    .bets{
+                        .computer{
+                            .row{
+                                button{
+                                    background: linear-gradient(to bottom ,#fff 0%,#efd5d5 100%);
+                                    border: solid 1px #eb0004;
+                                    &.bet_btn{
+                                        color: #fff;
+                                        background: linear-gradient(to bottom ,#ec0004 0%,#850004 100%);
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                        .check_icon{
+                            background: #db0006;
+                        }
+                    }
+            }
+        }
+        .title{
+            line-height: 2.5em;
+            position: relative;
+            color: #fff;
+            padding: 0 1em 0;
+            cursor: move;
+            p,span{
+                display: inline-block;
+            }
+            p{
+                font-size: .9em;
+            }
+            .num_box{
+                display: inline-block;
+                background: #fff;
+                color: red;
+                border-radius: 4px;
+                padding: .125em .4em 0em;
+                line-height: 100%;
+                font-size: 1em;
+                vertical-align: text-bottom;
+            }
+            .close{
+                width: 1em;
+                height: 1em;
+                position: absolute;
+                top: 50%;
+                right: 1em;
+                transform: translateY(-50%);
+                cursor: pointer;
+                &:before,&:after{
+                    content:'';
+                    position: absolute;
+                    background: #fff;
+                    width: 100%;
+                    height: 1px;
+                    left: 0;
+                    top: 50%;
+                }
+                &:before{
+                    transform: translateY(-50%) rotate(45deg);
+                }
+                &:after{
+                    transform: translateY(-50%) rotate(-45deg);
+                }
+            }
+        }
+        .content{
+            border-width: 0 2px 2px 2px;
+            border-style: solid;
+            border-radius: 0px 0 15px 15px;
+            background: #fff;
+            overflow: hidden;
+            font-size: 14px;
+            .red{
+                color: #f30d0d;
+            }
+            .l_red{
+                color: #f31d1d;
+            }
+            .blue{
+                color: #005aff;
+            }
+            .l_blue{
+                color: #556de7;
+            }
+            .d_blue{
+                color: #061d93;
+            }
+            span,p{
+                display: inline-block;
+            }
+            .bets{
+                .line{
+                    border-bottom: 1px solid #e0e1e3;
+                }
+                .line_box{
+                    display: inline-block;
+                    width: 2px;
+                    height: 1.3em;
+                    background: #3348b8;
+                    line-height: 1;
+                    vertical-align: middle;
+                    margin: 0 .25em 0;
+                }
+                .limit_area{
+                    max-height: 18.6em;
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar{
+                        width: 10px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        background: #eceef5;
+                        padding: 0 2px 0;
+                        }
+                    &::-webkit-scrollbar-thumb{
+                        background: #80829f;
+                        border-radius: 100px;
+                    }
+                    .li_box{
+                        border-bottom: 1px solid #e0e1e3;
+                    }
+                }
+                .check_icon{
+                    border-radius: 100px;
+                    position: relative;
+                    width: 1.5em;
+                    height: 1.5em;
+                    vertical-align: middle;
+                    margin: 0 .25em 0 0;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        width: .5em;
+                        height: .8em;
+                        border-width: 0 2px 2px 0;
+                        border-color: #fff;
+                        border-style: solid;
+                        top: 11%;
+                        left: 52%;
+                        transform: translateX(-50%) rotate(45deg);
+                    }
+                }
+                .bet_row{
+                    width: 100%;
+                    font-size: .95em;
+                    line-height: 2;
+                }
+                .bet_gn{
+                    padding: 0 1em 0;
+                    color: #4d515d;
+                    line-height: 2em;
+                    position: relative;
+                    width: 100%;
+                    .close{
+                        width: 1em;
+                        height: 1em;
+                        position: absolute;
+                        top: 50%;
+                        right: 1em;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+                        &:before,&:after{
+                            content:'';
+                            position: absolute;
+                            background: gray;
+                            width: 100%;
+                            height: 1px;
+                            left: 0;
+                            top: 50%;
+                        }
+                        &:before{
+                            transform: translateY(-50%) rotate(45deg);
+                        }
+                        &:after{
+                            transform: translateY(-50%) rotate(-45deg);
+                        }
+                    }
+                    span{
+                        width: 1.1em;
+                        height: 1.1em;
+                        background: url(../image/icon/list3.png)no-repeat;
+                        background-size: 1800%;
+                        background-position-y: -2.2em;
+                        vertical-align: text-bottom;
+                        margin: 0 .25em 0 0;
+                        @for $i from 3 through 18{
+                            &.i#{$i}{
+                                background-position-x: (($i - 1)*-1.1em);
+                            }
+                        }
+                    }
+                    p{
+                        font-size: .9em;
+                    }
+                }
+                .bet_bill{
+                    line-height: 4em;
+                    height: 4em;
+                    padding: 0 1em 0;
+                    color: #4d515d;
+                    .wrap{
+                        line-height: 1;
+                        vertical-align: middle;
+                    }
+                    .team_n{
+                        margin: 0 .5em 0 0;
+                        max-width: 10em;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        font-weight: bold;
+                        font-size: 1.1em;
+                        line-height: 1.3;
+                    }
+                    .f_box:first-child{
+                        position: relative;
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            width: 1px;
+                            height: 80%;
+                            background: #e0e1e3;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    .f_box:last-child{
+                        padding: 0 .5em 0;
+                    }
+                }
+                .total{
+                    line-height: 3em;
+                    height: 3em;
+                    background: #e2e4ed;
+                    box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+                    position: relative;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background: #b9c0d2;
+                        
+                    }
+                    .f_box{
+                        padding: 0 0 0 1em;
+                        position: relative;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 1px;
+                            height: 100%;
+                            background: #b9c0d2;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+                .computer,.check_page{
+                    display: none;
+                    background: #f8f8f8;
+                    &.active{
+                        display: block;
+                    }
+                }
+                .computer{
+                    padding: 1.5em 0 0;
+                    color: #4d515d;
+                    overflow: hidden;
+                    .row{
+                        width: 100%;
+                        line-height: 2em;
+                        margin: 0 0 .75em;
+                        position: relative;
+                        overflow: hidden;
+                        &.for_input{
+                            position: relative;
+                            &:before{
+                                content: '元';
+                                position: absolute;
+                                right: .5em;
+                                top: 2px;
+                                z-index: 10;
+                            }
+                        }
+                        input{
+                            line-height: 2em;
+                            float: right;
+                            padding: 0 1.5em 0 .5em;
+                            border: 1px solid #8593d8;
+                            border-radius: 4px;
+                            font-size: 16px;
+                            position: relative;
+                            width: 62%;
+                            &.bet_in{
+                                &::placeholder{
+                                    color: #ced1e0;
+                                }
+                                
+                            }
+                        }
+                        button{
+                            line-height: 2em;
+                            font-size: 16px;
+                            
+                            border-radius: 4px;
+                            color: #4d515d;
+                           
+                        }
+                        p{
+                            line-height: 1;
+                            vertical-align: middle;
+                            font-size: .95em;
+                        }
+                    }
+                    .f_box{
+                        &.b48{
+                            &:first-child{
+                                padding: 0 0 0 1em;
+                            }
+                        }
+                        &.b52{
+                            .row{
+                                &:not(:last-child){
+                                    button{
+                                        &:first-child{
+                                            margin: 0 1.7% 0;
+                                        }
+                                        &:last-child{
+                                            margin: 0 4.7% 0 1.7%;
+                                        }
+                                    }
+                                }
+                               &:last-child{
+                                   button{
+                                       &:first-child{
+                                           margin: 0 1.7% 0;
+                                       }
+                                       &:last-child{
+                                        margin: 0 4.7% 0 0%;
+                                    }
+                                   }
+                               }
+                            }
+                           
+                        }
+                        
+                    }
+                }
+                .check_page{
+                    overflow: hidden;
+                    padding: 0 0 .25em;
+                    padding: 1em 0 1em;
+                    span{
+                        vertical-align: middle;
+                    }
+                    .f_box{
+                        line-height: 4em;
+                        &.add_h{
+                            line-height: 6em;
+                        }
+                        &:first-child{
+                            padding: 0 0 0 1em;
+                            position: relative;
+                            &:before{
+                                content: '';
+                                position: absolute;
+                                width: 1px;
+                                height: 80%;
+                                background: #e0e1e3;
+                                right: 0;
+                                top: 50%;
+                                -webkit-transform: translateY(-50%);
+                                -ms-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                            }
+                        }
+                        &:last-child{
+                            padding: 0 0 0 .5em;
+                        }
+                        .wrap{
+                            vertical-align: middle;
+                            line-height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+  
+    }
+}
