@@ -9,6 +9,7 @@
                         display: block;
                       }
                         display: none;
+                        $bl_d:#4d515d;
                         .avatar_wrap{
                             width: 100%;
                             text-align: center;
@@ -24,7 +25,7 @@
                             }
                             .name{
                                 text-transform: none;
-                                color: #4d515d;
+                                color: $bl_d;
                                 font-size: 1.3em;
                                 display: inline-block;
                             }
@@ -36,7 +37,7 @@
                         .box_3{
                             overflow: hidden;
                             padding: 0 1em;
-                            margin: 1.5em 0 0;
+                            margin: 1.5em 0 2em;
                             .box{
                                 float: left;
                                 width: 33.33%;
@@ -58,10 +59,80 @@
                                     }
                                 }
                                 p{
-                                    color: #4d515d;
+                                    color: $bl_d;
                                     font-size: 1.1em;
                                     line-height: 100%;
                                 }
+                            }
+                        }
+                        li{
+                            line-height: 3.5em;
+                            position: relative;
+                            padding: 0 0 0 2.5em;
+                            cursor: pointer;
+                            &:hover,&.active{
+                                background: linear-gradient(to right , #1b2c85 0% , #7e8bd1 100%);
+                                i{
+                                    background-position-y: -1.3em;
+                                }
+                                p{
+                                    color: #fff;
+                                    &.num{
+                                        background: #fff;
+                                        color: #6272cc;
+                                    }
+                                }
+                            }
+                            p,i{
+                                display: inline-block;
+                            }
+                            i{
+                                width: 1.3em;
+                                height: 1.3em;
+                                background: url(../image/my/my_li_icon.png)no-repeat;
+                                background-size: 1400%;
+                                vertical-align: middle;
+                                margin: 0 1em 0 0;
+                                @for $i  from 1 through 14 {
+                                    &.i#{$i}{
+                                        background-position-x:($i - 1) * - 1.3em;
+                                    }
+                                }
+                            }
+                            p{
+                                font-size: 1.1em;
+                                vertical-align: middle;
+                                line-height: 100%;
+                                color: $bl_d;
+                                &.num{
+                                    &.active{
+                                        display: inline-block;
+                                    }
+                                    display: none;
+                                    background: #6272cc;
+                                    padding: .125em .75em;
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 2em;
+                                    transform: translateY(-50%);
+                                    color: #fff;
+                                    border-radius: 4px;
+                                }
+                            }
+                        }
+                        .blue_line{
+                            width: 100%;
+                            height: 2px;
+                            position: relative;
+                            &:before{
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                left: 50%;
+                                top: 0;
+                                transform: translateX(-50%);
+                                background: #e6e9f3;
                             }
                         }
                       }
@@ -70,6 +141,66 @@
             .right{
                 width: 80%;
                 left: 20%;
+               .my_bill{
+                   display: none;
+                   &.active{
+                       display: block;
+                   }
+                .wrap{
+                    .game_in{
+
+                        &.my_page_bill{
+                           .my_bill_mid{
+                            position: absolute;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            top: 43%;
+                            width: auto;
+                            .m_box{
+                                display: inline-block;
+                                text-align: center;
+                                padding: 0 1em;
+                                color: #4d515d;
+                                p{
+                                    font-size: 1.1em;
+                                    &:first-child{
+                                        margin: 0 0 .5em;
+                                    }
+                                    &.blue{
+                                        color: #556de7;
+                                    }
+                                }
+                            }
+                           }
+                           .bill_left{
+                            position: absolute;
+                            left: 2em;
+                            transform: translateY(-50%);
+                            top: 43%;
+                            width: auto;
+                            font-size: 1.1em;
+                            color: #4d515d;
+                           }
+                           .bill_right{
+                            position: absolute;
+                            right: 2em;
+                            transform: translateY(-50%);
+                            top: 43%;
+                            width: auto;
+                            font-size: 1.1em;
+                            button{
+                                color: #fff;
+                                background: linear-gradient(to bottom ,#dfb995 0% , #b6885f 100%);
+                                border: 1px solid #ffeddd;
+                                padding: .4em 1.5em;
+                                font-size: 1em;
+                                border-radius: 8px;
+                            }
+                           }
+                        }
+                    }
+                }
+               }
             }
             .right_2{
                 display: none;

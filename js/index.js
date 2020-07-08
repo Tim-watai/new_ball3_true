@@ -73,15 +73,20 @@ $(document).ready(function() {
 
       //我的
       function my_page_iswork(iswork){
+      
         if(iswork == true){
           $('.container main').addClass('my_page');
           $('main .left ul.my_page').siblings().removeClass('active');
           $('main .left ul.my_page').addClass('active');
+          $('main .right .my_bill').css('display','block');
+          
         }else{
           $('.container main').removeClass('my_page');
           $('main .left ul.my_page').siblings().addClass('active');
           $('main .left ul.my_page').removeClass('active');
+          $('main .right .my_bill').css('display','none');
         }
+        dummy('my');
       }
       function page_active (num){
         left_li.removeClass('active');
@@ -152,6 +157,8 @@ $(document).ready(function() {
           my_page_bill.css('display','block');
           my_page_bill.siblings().css('display','none');
           my_page_iswork(true);
+          $('.left ul.my_page li:nth-child(8)').siblings().removeClass('active');
+          $('.left ul.my_page li:nth-child(8)').addClass('active');
         }
       
       }
@@ -367,13 +374,24 @@ $(document).ready(function() {
       
       
       //dummy同步本尊的寬
-      
         let search_bar_obj = $('.container main .right .search_bar');
         let search_bar_dummy = $('.search_bar.fixed');
         let ball_search_dummy = $('.wrap.fixed');
+        
         let obj_w = search_bar_obj.outerWidth();
             search_bar_dummy.css({width:obj_w});
             ball_search_dummy.css({width:obj_w});
+      function dummy(page){
+        search_bar_dummy.css({width:obj_w});
+        ball_search_dummy.css({width:obj_w});
+        if(page == 'my'){
+          let search_bar_my = $('.container main.my_page .right .my_bill');
+          let my_wrap = $('.container main.my_page .right .my_bill .wrap.fixed');
+          let obj_w = search_bar_my.outerWidth();
+          my_wrap.css({width:obj_w});
+          console.log('my')
+        }
+      }
       //
       //視窗偵測
         $('.container main .right').scroll(function () {

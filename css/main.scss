@@ -782,9 +782,12 @@ header {
         height: 8em;
         margin: -.8em 0 -1em 0;
         position: relative;
-        background: url(../image/game_in/gin_soc.png) no-repeat;
-        background-size: 100%;
-        position: relative;
+
+        &.soc{
+          background: url(../image/game_in/gin_soc.png) no-repeat;
+          background-size: 100%;
+          position: relative;
+        }
         &.bas{
           background: url(../image/game_in/gin_bas.png) no-repeat;
           background-size: 100%;
@@ -792,6 +795,11 @@ header {
         }
         &.bask{
           background: url(../image/game_in/gin_bask.png) no-repeat;
+          background-size: 100%;
+          position: relative;
+        }
+        &.my_page_bill{
+          background: url(../image/my/title_bg.png) no-repeat;
           background-size: 100%;
           position: relative;
         }
