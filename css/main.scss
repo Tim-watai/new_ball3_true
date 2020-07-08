@@ -2,7 +2,7 @@
 @import "../css/window.scss";
 @import "../css/game_tools.scss";
 @import "../css/language_style.scss";
-
+@import "../css/my_page.scss";
 @keyframes marquee{
   0%{
       left:100%;
@@ -303,12 +303,39 @@ header {
   }
 }
 .container {
+  //共用vip_0708
+  .vip {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin: 0 0 0 0.5em;
+    padding: .125em 0.5em .125em;
+    background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
+    border-radius: 4px;
+    i {
+      background: url(../image/icon/vip.png) no-repeat;
+      background-size: 100%;
+      display: inline-block;
+      width: 2em;
+      height: 0.8em;
+      vertical-align: middle;
+    }
+    p {
+      display: inline-block;
+      font-family: "微軟正黑體";
+      font-weight: bold;
+      color: #fff;
+      vertical-align: middle;
+      line-height: 100%;
+      font-size: 1.2em;
+      margin: 0 0 0 2px;
+    }
+  }
  //0624字母大
  text-transform:capitalize;
  
-  margin:5em 0 0;
+  margin:6.5em 0 0;
   width: 100%;
-  height: calc(100% -5em);
+  height: calc(100% - 6.5em);
   position: fixed;
   z-index: 1;
   overflow: auto;
@@ -715,11 +742,7 @@ header {
         }
       }
     }
-    .content_ {
-      width: 100%;
-      padding: 0 0 5em 0.5em;
-      //0703
-    }
+
     .right {
       width: 66%;
       float: left;
@@ -1852,6 +1875,10 @@ header {
       border-radius: 0 0 30px 30px;
       background: #f6f9ff;
       padding: 0 0 8em;
+      &.my_page{
+        width: 20%;
+
+      }
       &::-webkit-scrollbar {
         width: .5em;
         position: absolute;
@@ -1867,69 +1894,75 @@ header {
         border-radius: 10px;
       }
       ul {
-        li {
-          line-height: 3.5em;
-          width: 100%;
-          padding: 0 0 0 .75em;
-          cursor: pointer;
-          position: relative;
-          i,
-          p {
-            display: inline-block;
+        &.index{
+          &.active{
+            display: block;
           }
-          i {
-            width: 1.5em;
-            height: 1.5em;
-            background: url(../image/icon/list3.png) no-repeat;
-            background-size: 1800%;
-            vertical-align: middle;
-            margin: 0 .5em 0 0;
-            @for $i from 1 through 18{
-              &.i#{$i}{
-                background-position: (-1.5em * ($i - 1)) 0;
+          display: none;
+            li {
+              line-height: 3.5em;
+              width: 100%;
+              padding: 0 0 0 .75em;
+              cursor: pointer;
+              position: relative;
+              i,
+              p {
+                display: inline-block;
               }
-            }
-          }
-          p {
-            font-size: 1.1em;
-            line-height: 100%;
-            width: 50%;
-            vertical-align: middle;
-            &.num{
-              position: absolute;
-              right: .5em;
-              top: 50%;
-              transform: translateY(-50%);
-              background: #6272cc;
-              padding: 3px 6px 2px;
-              border-radius: 6px;
-              color: #fff;
-              font-size: 1em;
-              width: 2.5em;
-              text-align: center;
-            }
-          }
-          &:hover,
-          &:active,
-          &.active {
-            background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
-            p {
-              color: #fff;
-              &.num{
-                background: #fff;
-                color: #3549b7;
+              i {
+                width: 1.5em;
+                height: 1.5em;
+                background: url(../image/icon/list3.png) no-repeat;
+                background-size: 1800%;
+                vertical-align: middle;
+                margin: 0 .5em 0 0;
+                @for $i from 1 through 18{
+                  &.i#{$i}{
+                    background-position: (-1.5em * ($i - 1)) 0;
+                  }
+                }
               }
-            }
-            i {
-              @for $i from 1 through 18{
-                &.i#{$i}{
-                  background-position: (-1.5em * ($i - 1)) -1.5em;
+              p {
+                font-size: 1.1em;
+                line-height: 100%;
+                width: 50%;
+                vertical-align: middle;
+                &.num{
+                  position: absolute;
+                  right: .5em;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  background: #6272cc;
+                  padding: 3px 6px 2px;
+                  border-radius: 6px;
+                  color: #fff;
+                  font-size: 1em;
+                  width: 2.5em;
+                  text-align: center;
+                }
+              }
+              &:hover,
+              &:active,
+              &.active {
+                background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
+                p {
+                  color: #fff;
+                  &.num{
+                    background: #fff;
+                    color: #3549b7;
+                  }
+                }
+                i {
+                  @for $i from 1 through 18{
+                    &.i#{$i}{
+                      background-position: (-1.5em * ($i - 1)) -1.5em;
+                    }
+                  }
                 }
               }
             }
           }
         }
-      }
     }
     .right_2{
       width: calc(1343px * 0.22);

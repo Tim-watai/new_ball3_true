@@ -1,0 +1,79 @@
+.container{
+    main{
+        &.my_page{
+            .left{
+                width: 20%;
+                ul {
+                    &.my_page{
+                      &.active{
+                        display: block;
+                      }
+                        display: none;
+                        .avatar_wrap{
+                            width: 100%;
+                            text-align: center;
+                            padding: 2em 0 0;
+                            .avatar{
+                                display: inline-block;
+                                width: 5em;
+                                height: 5em;
+                                background: url(../image/my/avatar_m.png)no-repeat;
+                                background-size: 100%;
+                                border-radius: 100px;
+                                margin: 0 0 .5em;
+                            }
+                            .name{
+                                text-transform: none;
+                                color: #4d515d;
+                                font-size: 1.3em;
+                                display: inline-block;
+                            }
+                            .day{
+                                color: #838ba0;
+                                font-size: 1.2em;
+                            }
+                        }
+                        .box_3{
+                            overflow: hidden;
+                            padding: 0 1em;
+                            margin: 1.5em 0 0;
+                            .box{
+                                float: left;
+                                width: 33.33%;
+                                text-align: center;
+                                cursor: pointer;
+                                i{
+                                    &.cash{
+                                       
+                                        width: 2.3em;
+                                        height: 2.3em;
+                                        background: url(../image/my/my_cash.png)no-repeat;
+                                        background-size: 300%;
+                                        display: inline-block;
+                                    }
+                                    @for $i from 1 through 3{
+                                        &.i#{$i}{
+                                            background-position-x: ($i - 1) * -2.3em;
+                                        }
+                                    }
+                                }
+                                p{
+                                    color: #4d515d;
+                                    font-size: 1.1em;
+                                    line-height: 100%;
+                                }
+                            }
+                        }
+                      }
+                    }
+            }
+            .right{
+                width: 80%;
+                left: 20%;
+            }
+            .right_2{
+                display: none;
+            }
+        }
+    }
+}

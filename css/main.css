@@ -599,6 +599,65 @@ aside .bet_box {
 .container.en .f_wrap .f_bot ul li p {
   font-size: .9em; }
 
+.container main.my_page .left {
+  width: 20%; }
+  .container main.my_page .left ul.my_page {
+    display: none; }
+    .container main.my_page .left ul.my_page.active {
+      display: block; }
+    .container main.my_page .left ul.my_page .avatar_wrap {
+      width: 100%;
+      text-align: center;
+      padding: 2em 0 0; }
+      .container main.my_page .left ul.my_page .avatar_wrap .avatar {
+        display: inline-block;
+        width: 5em;
+        height: 5em;
+        background: url(../image/my/avatar_m.png) no-repeat;
+        background-size: 100%;
+        border-radius: 100px;
+        margin: 0 0 .5em; }
+      .container main.my_page .left ul.my_page .avatar_wrap .name {
+        text-transform: none;
+        color: #4d515d;
+        font-size: 1.3em;
+        display: inline-block; }
+      .container main.my_page .left ul.my_page .avatar_wrap .day {
+        color: #838ba0;
+        font-size: 1.2em; }
+    .container main.my_page .left ul.my_page .box_3 {
+      overflow: hidden;
+      padding: 0 1em;
+      margin: 1.5em 0 0; }
+      .container main.my_page .left ul.my_page .box_3 .box {
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        cursor: pointer; }
+        .container main.my_page .left ul.my_page .box_3 .box i.cash {
+          width: 2.3em;
+          height: 2.3em;
+          background: url(../image/my/my_cash.png) no-repeat;
+          background-size: 300%;
+          display: inline-block; }
+        .container main.my_page .left ul.my_page .box_3 .box i.i1 {
+          background-position-x: 0em; }
+        .container main.my_page .left ul.my_page .box_3 .box i.i2 {
+          background-position-x: -2.3em; }
+        .container main.my_page .left ul.my_page .box_3 .box i.i3 {
+          background-position-x: -4.6em; }
+        .container main.my_page .left ul.my_page .box_3 .box p {
+          color: #4d515d;
+          font-size: 1.1em;
+          line-height: 100%; }
+
+.container main.my_page .right {
+  width: 80%;
+  left: 20%; }
+
+.container main.my_page .right_2 {
+  display: none; }
+
 @-webkit-keyframes marquee {
   0% {
     left: 100%;
@@ -861,14 +920,40 @@ header {
 
 .container {
   text-transform: capitalize;
-  margin: 5em 0 0;
+  margin: 6.5em 0 0;
   width: 100%;
-  height: calc(100% -5em);
+  height: calc(100% - 6.5em);
   position: fixed;
   z-index: 1;
   overflow: auto;
   overflow-x: hidden;
   font-size: 14px; }
+  .container .vip {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin: 0 0 0 0.5em;
+    padding: .125em 0.5em .125em;
+    background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
+    background: -webkit-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
+    background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
+    background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
+    border-radius: 4px; }
+    .container .vip i {
+      background: url(../image/icon/vip.png) no-repeat;
+      background-size: 100%;
+      display: inline-block;
+      width: 2em;
+      height: 0.8em;
+      vertical-align: middle; }
+    .container .vip p {
+      display: inline-block;
+      font-family: "微軟正黑體";
+      font-weight: bold;
+      color: #fff;
+      vertical-align: middle;
+      line-height: 100%;
+      font-size: 1.2em;
+      margin: 0 0 0 2px; }
   .container::-webkit-scrollbar {
     width: 5px;
     position: absolute;
@@ -1267,9 +1352,6 @@ header {
               left: 0%; }
             .container main .swiper_ .bot_wrap .c_wrap.n3.right {
               right: 0%; }
-    .container main .content_ {
-      width: 100%;
-      padding: 0 0 5em 0.5em; }
     .container main .right {
       width: 66%;
       float: left;
@@ -2144,6 +2226,8 @@ header {
       border-radius: 0 0 30px 30px;
       background: #f6f9ff;
       padding: 0 0 8em; }
+      .container main .left.my_page {
+        width: 20%; }
       .container main .left::-webkit-scrollbar {
         width: .5em;
         position: absolute;
@@ -2154,123 +2238,127 @@ header {
       .container main .left::-webkit-scrollbar-track {
         background: #f1f1f1;
         border-radius: 10px; }
-      .container main .left ul li {
-        line-height: 3.5em;
-        width: 100%;
-        padding: 0 0 0 .75em;
-        cursor: pointer;
-        position: relative; }
-        .container main .left ul li i,
-        .container main .left ul li p {
-          display: inline-block; }
-        .container main .left ul li i {
-          width: 1.5em;
-          height: 1.5em;
-          background: url(../image/icon/list3.png) no-repeat;
-          background-size: 1800%;
-          vertical-align: middle;
-          margin: 0 .5em 0 0; }
-          .container main .left ul li i.i1 {
-            background-position: 0em 0; }
-          .container main .left ul li i.i2 {
-            background-position: -1.5em 0; }
-          .container main .left ul li i.i3 {
-            background-position: -3em 0; }
-          .container main .left ul li i.i4 {
-            background-position: -4.5em 0; }
-          .container main .left ul li i.i5 {
-            background-position: -6em 0; }
-          .container main .left ul li i.i6 {
-            background-position: -7.5em 0; }
-          .container main .left ul li i.i7 {
-            background-position: -9em 0; }
-          .container main .left ul li i.i8 {
-            background-position: -10.5em 0; }
-          .container main .left ul li i.i9 {
-            background-position: -12em 0; }
-          .container main .left ul li i.i10 {
-            background-position: -13.5em 0; }
-          .container main .left ul li i.i11 {
-            background-position: -15em 0; }
-          .container main .left ul li i.i12 {
-            background-position: -16.5em 0; }
-          .container main .left ul li i.i13 {
-            background-position: -18em 0; }
-          .container main .left ul li i.i14 {
-            background-position: -19.5em 0; }
-          .container main .left ul li i.i15 {
-            background-position: -21em 0; }
-          .container main .left ul li i.i16 {
-            background-position: -22.5em 0; }
-          .container main .left ul li i.i17 {
-            background-position: -24em 0; }
-          .container main .left ul li i.i18 {
-            background-position: -25.5em 0; }
-        .container main .left ul li p {
-          font-size: 1.1em;
-          line-height: 100%;
-          width: 50%;
-          vertical-align: middle; }
-          .container main .left ul li p.num {
-            position: absolute;
-            right: .5em;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            background: #6272cc;
-            padding: 3px 6px 2px;
-            border-radius: 6px;
-            color: #fff;
-            font-size: 1em;
-            width: 2.5em;
-            text-align: center; }
-        .container main .left ul li:hover, .container main .left ul li:active, .container main .left ul li.active {
-          background: -webkit-gradient(linear, left top, right top, from(#1b2c86), to(#7e8bd1));
-          background: -webkit-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
-          background: -o-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
-          background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%); }
-          .container main .left ul li:hover p, .container main .left ul li:active p, .container main .left ul li.active p {
-            color: #fff; }
-            .container main .left ul li:hover p.num, .container main .left ul li:active p.num, .container main .left ul li.active p.num {
-              background: #fff;
-              color: #3549b7; }
-          .container main .left ul li:hover i.i1, .container main .left ul li:active i.i1, .container main .left ul li.active i.i1 {
-            background-position: 0em -1.5em; }
-          .container main .left ul li:hover i.i2, .container main .left ul li:active i.i2, .container main .left ul li.active i.i2 {
-            background-position: -1.5em -1.5em; }
-          .container main .left ul li:hover i.i3, .container main .left ul li:active i.i3, .container main .left ul li.active i.i3 {
-            background-position: -3em -1.5em; }
-          .container main .left ul li:hover i.i4, .container main .left ul li:active i.i4, .container main .left ul li.active i.i4 {
-            background-position: -4.5em -1.5em; }
-          .container main .left ul li:hover i.i5, .container main .left ul li:active i.i5, .container main .left ul li.active i.i5 {
-            background-position: -6em -1.5em; }
-          .container main .left ul li:hover i.i6, .container main .left ul li:active i.i6, .container main .left ul li.active i.i6 {
-            background-position: -7.5em -1.5em; }
-          .container main .left ul li:hover i.i7, .container main .left ul li:active i.i7, .container main .left ul li.active i.i7 {
-            background-position: -9em -1.5em; }
-          .container main .left ul li:hover i.i8, .container main .left ul li:active i.i8, .container main .left ul li.active i.i8 {
-            background-position: -10.5em -1.5em; }
-          .container main .left ul li:hover i.i9, .container main .left ul li:active i.i9, .container main .left ul li.active i.i9 {
-            background-position: -12em -1.5em; }
-          .container main .left ul li:hover i.i10, .container main .left ul li:active i.i10, .container main .left ul li.active i.i10 {
-            background-position: -13.5em -1.5em; }
-          .container main .left ul li:hover i.i11, .container main .left ul li:active i.i11, .container main .left ul li.active i.i11 {
-            background-position: -15em -1.5em; }
-          .container main .left ul li:hover i.i12, .container main .left ul li:active i.i12, .container main .left ul li.active i.i12 {
-            background-position: -16.5em -1.5em; }
-          .container main .left ul li:hover i.i13, .container main .left ul li:active i.i13, .container main .left ul li.active i.i13 {
-            background-position: -18em -1.5em; }
-          .container main .left ul li:hover i.i14, .container main .left ul li:active i.i14, .container main .left ul li.active i.i14 {
-            background-position: -19.5em -1.5em; }
-          .container main .left ul li:hover i.i15, .container main .left ul li:active i.i15, .container main .left ul li.active i.i15 {
-            background-position: -21em -1.5em; }
-          .container main .left ul li:hover i.i16, .container main .left ul li:active i.i16, .container main .left ul li.active i.i16 {
-            background-position: -22.5em -1.5em; }
-          .container main .left ul li:hover i.i17, .container main .left ul li:active i.i17, .container main .left ul li.active i.i17 {
-            background-position: -24em -1.5em; }
-          .container main .left ul li:hover i.i18, .container main .left ul li:active i.i18, .container main .left ul li.active i.i18 {
-            background-position: -25.5em -1.5em; }
+      .container main .left ul.index {
+        display: none; }
+        .container main .left ul.index.active {
+          display: block; }
+        .container main .left ul.index li {
+          line-height: 3.5em;
+          width: 100%;
+          padding: 0 0 0 .75em;
+          cursor: pointer;
+          position: relative; }
+          .container main .left ul.index li i,
+          .container main .left ul.index li p {
+            display: inline-block; }
+          .container main .left ul.index li i {
+            width: 1.5em;
+            height: 1.5em;
+            background: url(../image/icon/list3.png) no-repeat;
+            background-size: 1800%;
+            vertical-align: middle;
+            margin: 0 .5em 0 0; }
+            .container main .left ul.index li i.i1 {
+              background-position: 0em 0; }
+            .container main .left ul.index li i.i2 {
+              background-position: -1.5em 0; }
+            .container main .left ul.index li i.i3 {
+              background-position: -3em 0; }
+            .container main .left ul.index li i.i4 {
+              background-position: -4.5em 0; }
+            .container main .left ul.index li i.i5 {
+              background-position: -6em 0; }
+            .container main .left ul.index li i.i6 {
+              background-position: -7.5em 0; }
+            .container main .left ul.index li i.i7 {
+              background-position: -9em 0; }
+            .container main .left ul.index li i.i8 {
+              background-position: -10.5em 0; }
+            .container main .left ul.index li i.i9 {
+              background-position: -12em 0; }
+            .container main .left ul.index li i.i10 {
+              background-position: -13.5em 0; }
+            .container main .left ul.index li i.i11 {
+              background-position: -15em 0; }
+            .container main .left ul.index li i.i12 {
+              background-position: -16.5em 0; }
+            .container main .left ul.index li i.i13 {
+              background-position: -18em 0; }
+            .container main .left ul.index li i.i14 {
+              background-position: -19.5em 0; }
+            .container main .left ul.index li i.i15 {
+              background-position: -21em 0; }
+            .container main .left ul.index li i.i16 {
+              background-position: -22.5em 0; }
+            .container main .left ul.index li i.i17 {
+              background-position: -24em 0; }
+            .container main .left ul.index li i.i18 {
+              background-position: -25.5em 0; }
+          .container main .left ul.index li p {
+            font-size: 1.1em;
+            line-height: 100%;
+            width: 50%;
+            vertical-align: middle; }
+            .container main .left ul.index li p.num {
+              position: absolute;
+              right: .5em;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              background: #6272cc;
+              padding: 3px 6px 2px;
+              border-radius: 6px;
+              color: #fff;
+              font-size: 1em;
+              width: 2.5em;
+              text-align: center; }
+          .container main .left ul.index li:hover, .container main .left ul.index li:active, .container main .left ul.index li.active {
+            background: -webkit-gradient(linear, left top, right top, from(#1b2c86), to(#7e8bd1));
+            background: -webkit-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
+            background: -o-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
+            background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%); }
+            .container main .left ul.index li:hover p, .container main .left ul.index li:active p, .container main .left ul.index li.active p {
+              color: #fff; }
+              .container main .left ul.index li:hover p.num, .container main .left ul.index li:active p.num, .container main .left ul.index li.active p.num {
+                background: #fff;
+                color: #3549b7; }
+            .container main .left ul.index li:hover i.i1, .container main .left ul.index li:active i.i1, .container main .left ul.index li.active i.i1 {
+              background-position: 0em -1.5em; }
+            .container main .left ul.index li:hover i.i2, .container main .left ul.index li:active i.i2, .container main .left ul.index li.active i.i2 {
+              background-position: -1.5em -1.5em; }
+            .container main .left ul.index li:hover i.i3, .container main .left ul.index li:active i.i3, .container main .left ul.index li.active i.i3 {
+              background-position: -3em -1.5em; }
+            .container main .left ul.index li:hover i.i4, .container main .left ul.index li:active i.i4, .container main .left ul.index li.active i.i4 {
+              background-position: -4.5em -1.5em; }
+            .container main .left ul.index li:hover i.i5, .container main .left ul.index li:active i.i5, .container main .left ul.index li.active i.i5 {
+              background-position: -6em -1.5em; }
+            .container main .left ul.index li:hover i.i6, .container main .left ul.index li:active i.i6, .container main .left ul.index li.active i.i6 {
+              background-position: -7.5em -1.5em; }
+            .container main .left ul.index li:hover i.i7, .container main .left ul.index li:active i.i7, .container main .left ul.index li.active i.i7 {
+              background-position: -9em -1.5em; }
+            .container main .left ul.index li:hover i.i8, .container main .left ul.index li:active i.i8, .container main .left ul.index li.active i.i8 {
+              background-position: -10.5em -1.5em; }
+            .container main .left ul.index li:hover i.i9, .container main .left ul.index li:active i.i9, .container main .left ul.index li.active i.i9 {
+              background-position: -12em -1.5em; }
+            .container main .left ul.index li:hover i.i10, .container main .left ul.index li:active i.i10, .container main .left ul.index li.active i.i10 {
+              background-position: -13.5em -1.5em; }
+            .container main .left ul.index li:hover i.i11, .container main .left ul.index li:active i.i11, .container main .left ul.index li.active i.i11 {
+              background-position: -15em -1.5em; }
+            .container main .left ul.index li:hover i.i12, .container main .left ul.index li:active i.i12, .container main .left ul.index li.active i.i12 {
+              background-position: -16.5em -1.5em; }
+            .container main .left ul.index li:hover i.i13, .container main .left ul.index li:active i.i13, .container main .left ul.index li.active i.i13 {
+              background-position: -18em -1.5em; }
+            .container main .left ul.index li:hover i.i14, .container main .left ul.index li:active i.i14, .container main .left ul.index li.active i.i14 {
+              background-position: -19.5em -1.5em; }
+            .container main .left ul.index li:hover i.i15, .container main .left ul.index li:active i.i15, .container main .left ul.index li.active i.i15 {
+              background-position: -21em -1.5em; }
+            .container main .left ul.index li:hover i.i16, .container main .left ul.index li:active i.i16, .container main .left ul.index li.active i.i16 {
+              background-position: -22.5em -1.5em; }
+            .container main .left ul.index li:hover i.i17, .container main .left ul.index li:active i.i17, .container main .left ul.index li.active i.i17 {
+              background-position: -24em -1.5em; }
+            .container main .left ul.index li:hover i.i18, .container main .left ul.index li:active i.i18, .container main .left ul.index li.active i.i18 {
+              background-position: -25.5em -1.5em; }
     .container main .right_2 {
       width: calc(1343px * 0.22);
       height: auto;
