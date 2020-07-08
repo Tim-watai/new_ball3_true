@@ -746,54 +746,244 @@ aside .bet_box {
     display: none; }
     .container main.my_page .right .my_bill.active {
       display: block; }
-    .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      top: 43%;
-      width: auto; }
-      .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box {
-        display: inline-block;
-        text-align: center;
-        padding: 0 1em;
+    .container main.my_page .right .my_bill .wrap .game_in {
+      font-weight: bold; }
+      .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        top: 43%;
+        width: auto; }
+        .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box {
+          display: inline-block;
+          text-align: center;
+          padding: 0 2em;
+          color: #4d515d;
+          position: relative; }
+          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box:first-child:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            right: 0;
+            width: 1px;
+            height: 90%;
+            background: #a8aecf; }
+          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box:last-child:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            left: 0;
+            width: 1px;
+            height: 90%;
+            background: #a8aecf; }
+          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p {
+            font-size: 1.1em; }
+            .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p:first-child {
+              margin: 0 0 .5em; }
+            .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p.blue {
+              color: #556de7; }
+      .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_left {
+        position: absolute;
+        left: 2em;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        top: 43%;
+        width: auto;
+        font-size: 1.1em;
         color: #4d515d; }
-        .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p {
-          font-size: 1.1em; }
-          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p:first-child {
-            margin: 0 0 .5em; }
-          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p.blue {
-            color: #556de7; }
-    .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_left {
-      position: absolute;
-      left: 2em;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      top: 43%;
-      width: auto;
-      font-size: 1.1em;
-      color: #4d515d; }
-    .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_right {
-      position: absolute;
-      right: 2em;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      top: 43%;
-      width: auto;
-      font-size: 1.1em; }
-      .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_right button {
-        color: #fff;
-        background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b6885f));
-        background: -webkit-linear-gradient(top, #dfb995 0%, #b6885f 100%);
-        background: -o-linear-gradient(top, #dfb995 0%, #b6885f 100%);
-        background: linear-gradient(to bottom, #dfb995 0%, #b6885f 100%);
-        border: 1px solid #ffeddd;
-        padding: .4em 1.5em;
-        font-size: 1em;
-        border-radius: 8px; }
+      .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_right {
+        position: absolute;
+        right: 2em;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        top: 43%;
+        width: auto;
+        font-size: 1.1em; }
+        .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_right button {
+          color: #fff;
+          background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b6885f));
+          background: -webkit-linear-gradient(top, #dfb995 0%, #b6885f 100%);
+          background: -o-linear-gradient(top, #dfb995 0%, #b6885f 100%);
+          background: linear-gradient(to bottom, #dfb995 0%, #b6885f 100%);
+          border: 1px solid #ffeddd;
+          padding: .4em 1.5em;
+          font-size: 1em;
+          border-radius: 8px; }
+    .container main.my_page .right .my_bill .basic_bill {
+      font-size: 1.12em;
+      border-radius: 18px;
+      overflow: hidden;
+      -webkit-box-shadow: 0 0 4px 2px #bac0db;
+      box-shadow: 0 0 4px 2px #bac0db;
+      margin: .8em 0 0;
+      color: #4d515d;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      .container main.my_page .right .my_bill .basic_bill.active {
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+        .container main.my_page .right .my_bill .basic_bill.active .b_name {
+          color: #fff;
+          background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#414c88));
+          background: -webkit-linear-gradient(top, #6b76b4 0%, #414c88 100%);
+          background: -o-linear-gradient(top, #6b76b4 0%, #414c88 100%);
+          background: linear-gradient(to bottom, #6b76b4 0%, #414c88 100%); }
+          .container main.my_page .right .my_bill .basic_bill.active .b_name .right_box .arrow {
+            background: url(../image/icon/arrow_w.png) no-repeat;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out; }
+        .container main.my_page .right .my_bill .basic_bill.active .close {
+          display: none; }
+        .container main.my_page .right .my_bill .basic_bill.active .open {
+          display: block; }
+      .container main.my_page .right .my_bill .basic_bill .blue {
+        color: #556de7; }
+      .container main.my_page .right .my_bill .basic_bill .red {
+        color: #f31b1b; }
+      .container main.my_page .right .my_bill .basic_bill .b_name {
+        line-height: 2em;
+        height: 2em;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f0f0f0));
+        background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+        background: -o-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+        background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+        position: relative; }
+        .container main.my_page .right .my_bill .basic_bill .b_name p {
+          line-height: 1;
+          vertical-align: middle; }
+          .container main.my_page .right .my_bill .basic_bill .b_name p.bf {
+            line-height: 1;
+            vertical-align: baseline;
+            margin: 0 0 0 1em;
+            display: inline-block; }
+        .container main.my_page .right .my_bill .basic_bill .b_name .right_box {
+          position: absolute;
+          top: 50%;
+          right: 2em;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+          .container main.my_page .right .my_bill .basic_bill .b_name .right_box p {
+            display: inline-block; }
+          .container main.my_page .right .my_bill .basic_bill .b_name .right_box .time {
+            margin: 0 1em 0 0; }
+          .container main.my_page .right .my_bill .basic_bill .b_name .right_box .arrow {
+            display: inline-block;
+            width: .5em;
+            height: .7em;
+            background: url(../image/icon/arrow_d.png) no-repeat;
+            background-size: cover;
+            vertical-align: text-bottom;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            cursor: pointer; }
+      .container main.my_page .right .my_bill .basic_bill .bill_row {
+        border-top: 1px solid #b9c0d2; }
+        .container main.my_page .right .my_bill .basic_bill .bill_row .t_left {
+          text-align: left;
+          padding: 0 0 0 .5em; }
+        .container main.my_page .right .my_bill .basic_bill .bill_row li {
+          overflow: hidden;
+          background: #fff; }
+          .container main.my_page .right .my_bill .basic_bill .bill_row li .g_bg {
+            background: #f8f8f8; }
+          .container main.my_page .right .my_bill .basic_bill .bill_row li div {
+            float: left;
+            text-align: center;
+            border-right: 1px solid #b9c0d2; }
+            .container main.my_page .right .my_bill .basic_bill .bill_row li div:last-child {
+              border-right: none; }
+          .container main.my_page .right .my_bill .basic_bill .bill_row li .b10 {
+            width: 10%; }
+          .container main.my_page .right .my_bill .basic_bill .bill_row li .b11 {
+            width: 11%; }
+          .container main.my_page .right .my_bill .basic_bill .bill_row li .b22 {
+            width: 22%; }
+          .container main.my_page .right .my_bill .basic_bill .bill_row li .b25 {
+            width: 25%; }
+      .container main.my_page .right .my_bill .basic_bill .close {
+        line-height: 2.5em;
+        height: 2.5em;
+        display: block; }
+      .container main.my_page .right .my_bill .basic_bill .open {
+        display: none; }
+        .container main.my_page .right .my_bill .basic_bill .open li.title {
+          line-height: 2em;
+          height: 2em;
+          padding: 0 0 0 1em; }
+          .container main.my_page .right .my_bill .basic_bill .open li.title i {
+            width: 1em;
+            height: 1em;
+            background: url(../image/icon/list3.png) no-repeat;
+            background-size: 1800%;
+            background-position-y: -2em;
+            display: inline-block;
+            vertical-align: text-bottom; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i1 {
+              background-position-x: -2em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i2 {
+              background-position-x: -3em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i3 {
+              background-position-x: -4em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i4 {
+              background-position-x: -5em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i5 {
+              background-position-x: -6em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i6 {
+              background-position-x: -7em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i7 {
+              background-position-x: -8em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i8 {
+              background-position-x: -9em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i9 {
+              background-position-x: -10em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i10 {
+              background-position-x: -11em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i11 {
+              background-position-x: -12em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i12 {
+              background-position-x: -13em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i13 {
+              background-position-x: -14em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i14 {
+              background-position-x: -15em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i15 {
+              background-position-x: -16em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i16 {
+              background-position-x: -17em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i17 {
+              background-position-x: -18em; }
+            .container main.my_page .right .my_bill .basic_bill .open li.title i.i18 {
+              background-position-x: -19em; }
+          .container main.my_page .right .my_bill .basic_bill .open li.title .right_box {
+            position: absolute;
+            top: 50%;
+            right: 2em;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+            .container main.my_page .right .my_bill .basic_bill .open li.title .right_box p {
+              display: inline-block; }
 
 .container main.my_page .right_2 {
   display: none; }
@@ -2146,8 +2336,12 @@ header {
             width: 16%; }
           .container main .right .card li .b20 {
             width: 20%; }
+          .container main .right .card li .b22 {
+            width: 22%; }
           .container main .right .card li .b24 {
             width: 24%; }
+          .container main .right .card li .b25 {
+            width: 25%; }
           .container main .right .card li .b33 {
             width: 33.33%; }
           .container main .right .card li .b36 {

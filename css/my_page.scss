@@ -148,7 +148,7 @@
                    }
                 .wrap{
                     .game_in{
-
+                            font-weight: bold;
                         &.my_page_bill{
                            .my_bill_mid{
                             position: absolute;
@@ -159,8 +159,33 @@
                             .m_box{
                                 display: inline-block;
                                 text-align: center;
-                                padding: 0 1em;
+                                padding: 0 2em;
                                 color: #4d515d;
+                                position: relative;
+                                &:first-child{
+                                    &:before{
+                                        content: '';
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        right: 0;
+                                        width: 1px;
+                                        height: 90%;
+                                        background: #a8aecf;
+                                    }
+                                }
+                                &:last-child{
+                                    &:before{
+                                        content: '';
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        left: 0;
+                                        width: 1px;
+                                        height: 90%;
+                                        background: #a8aecf;
+                                    }
+                                }
                                 p{
                                     font-size: 1.1em;
                                     &:first-child{
@@ -199,6 +224,156 @@
                            }
                         }
                     }
+                }
+                .basic_bill{
+                    font-size: 1.12em;
+                    border-radius: 18px;
+                    overflow: hidden;
+                    box-shadow: 0 0 4px 2px #bac0db;
+                    margin: .8em 0 0;
+                    color: #4d515d;
+                    transition: all .2s ease-in-out;
+                    &.active{
+                        transition: all .2s ease-in-out;
+                        .b_name{
+                            color:#fff;
+                            background: linear-gradient(to bottom, #6b76b4 0%,#414c88 100%);
+                            .right_box{
+                                .arrow{
+                                    background: url(../image/icon/arrow_w.png)no-repeat;
+                                    transform: rotate(90deg);
+                                    transition: all .2s ease-in-out;
+                                }
+                            }
+                        }
+                        .close{
+                            display: none;
+                        }
+                        .open{
+                            display: block;
+                        }
+                    }
+                    .blue{
+                        color: #556de7;
+                    }
+                    .red{
+                        color: #f31b1b;
+                    }
+                    .b_name{
+                        line-height: 2em;
+                        height: 2em;
+                        background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+                        position: relative;
+                        p{
+                            line-height: 1;
+                            vertical-align: middle;
+                            &.bf{
+                                line-height: 1;
+                                vertical-align: baseline;
+                                margin: 0 0 0 1em;
+                                display: inline-block;
+                            }
+                           
+                        }
+                        .right_box{
+                            position: absolute;
+                            top: 50%;
+                            right: 2em;
+                            transform: translateY(-50%);
+                            p{
+                                display: inline-block;
+                            }
+                            .time{
+                                margin: 0 1em 0 0;
+                            }
+                            .arrow{
+                                display: inline-block;
+                                width: .5em;
+                                height: .7em;
+                                background: url(../image/icon/arrow_d.png) no-repeat;
+                                background-size: cover;
+                                vertical-align: text-bottom;
+                                transform: rotate(90deg);
+                                transition: all .2s ease-in-out;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .bill_row{
+                        border-top: 1px solid #b9c0d2;
+                        .t_left{
+                            text-align: left;
+                            padding: 0 0 0 .5em;
+                        }
+                        li{
+                            overflow: hidden;
+                            background: #fff;
+                            .g_bg{
+                                background: #f8f8f8;
+                            }
+                            div{
+                                float: left;
+                                text-align: center;
+                                border-right: 1px solid #b9c0d2;
+                                &:last-child{
+                                    border-right: none;
+                                }
+                            }
+
+                            .b10{
+                                width: 10%;
+                            }
+                            .b11{
+                                width: 11%;
+                            }
+                            .b22{
+                                width: 22%;
+                            }
+                            .b25{
+                                width: 25%;
+                            }
+                        }
+                    }
+                    .close{
+                        line-height: 2.5em;
+                        height: 2.5em;
+                        display: block;
+                    }
+                    .open{
+                        display: none;
+                        li{
+                            &.title{
+                                line-height: 2em;
+                                height: 2em;
+                                padding: 0 0 0 1em;
+                                i{
+                                    width: 1em;
+                                    height: 1em;
+                                    background: url(../image/icon/list3.png) no-repeat;
+                                    background-size: 1800%;
+                                    background-position-y: -2em;
+                                    display: inline-block;
+                                    vertical-align: text-bottom;
+                                    @for $i from 1 through 18{
+                                        &.i#{$i}{
+                                            background-position-x: ($i + 1) * -1em;
+                                        }
+                                    }
+                             
+                                }
+                                .right_box{
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 2em;
+                                    transform: translateY(-50%);
+                                    p{
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   
                 }
                }
             }
