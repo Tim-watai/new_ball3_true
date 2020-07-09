@@ -37,8 +37,8 @@ $(document).ready(function() {
       let sign_in = $('.right .sign_in');
       let list_yet = $('.f_wrap .f_bot ul.yet');
       let list_in = $('.f_wrap .f_bot ul.in');
-        $('.f_wrap .f_bot ul.in').removeClass('active');
-        $('.f_wrap .f_bot ul.yet').addClass('active');
+        // $('.f_wrap .f_bot ul.in').removeClass('active');
+        // $('.f_wrap .f_bot ul.yet').addClass('active');
        function sign_active (sign){
       if(sign == false){
                 sign_yet.addClass('active');

@@ -37,15 +37,29 @@
                         .box_3{
                             overflow: hidden;
                             padding: 0 1em;
-                            margin: 1.5em 0 2em;
+                            margin: 1em 0 2em;
                             .box{
                                 float: left;
                                 width: 33.33%;
                                 text-align: center;
                                 cursor: pointer;
+                                position: relative;
+                                overflow: hidden;
+                                border-radius: 4px;
+                                padding: .5em 0;
+                                &:hover,&.active{
+                                    background: #4256be;
+                                    p{
+                                        color: #fff;
+                                    }
+                                    i{
+                                        &.cash{
+                                            background-position-y: -2.3em;
+                                        }
+                                    }
+                                }
                                 i{
                                     &.cash{
-                                       
                                         width: 2.3em;
                                         height: 2.3em;
                                         background: url(../image/my/my_cash.png)no-repeat;
@@ -147,6 +161,7 @@
                        display: block;
                    }
                 .wrap{
+                    z-index: 1;
                     .game_in{
                             font-weight: bold;
                         &.my_page_bill{

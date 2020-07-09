@@ -628,12 +628,22 @@ aside .bet_box {
     .container main.my_page .left ul.my_page .box_3 {
       overflow: hidden;
       padding: 0 1em;
-      margin: 1.5em 0 2em; }
+      margin: 1em 0 2em; }
       .container main.my_page .left ul.my_page .box_3 .box {
         float: left;
         width: 33.33%;
         text-align: center;
-        cursor: pointer; }
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+        padding: .5em 0; }
+        .container main.my_page .left ul.my_page .box_3 .box:hover, .container main.my_page .left ul.my_page .box_3 .box.active {
+          background: #4256be; }
+          .container main.my_page .left ul.my_page .box_3 .box:hover p, .container main.my_page .left ul.my_page .box_3 .box.active p {
+            color: #fff; }
+          .container main.my_page .left ul.my_page .box_3 .box:hover i.cash, .container main.my_page .left ul.my_page .box_3 .box.active i.cash {
+            background-position-y: -2.3em; }
         .container main.my_page .left ul.my_page .box_3 .box i.cash {
           width: 2.3em;
           height: 2.3em;
@@ -746,114 +756,116 @@ aside .bet_box {
     display: none; }
     .container main.my_page .right .my_bill.active, .container main.my_page .right .my_bill_record.active {
       display: block; }
-    .container main.my_page .right .my_bill .wrap .game_in, .container main.my_page .right .my_bill_record .wrap .game_in {
-      font-weight: bold; }
-      .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid {
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        top: 43%;
-        width: auto;
-        white-space: nowrap; }
-        .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box {
-          display: inline-block;
-          text-align: center;
-          padding: 0 2em;
-          color: #4d515d;
-          position: relative; }
-          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box:before, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box:before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            right: 0;
-            width: 1px;
-            height: 90%;
-            background: #a8aecf; }
-          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box:last-child:before, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box:last-child:before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            left: 0;
-            width: 1px;
-            height: 90%;
-            background: transparent; }
-          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box p {
-            font-size: 1.1em; }
-            .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p:first-child, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box p:first-child {
-              margin: 0 0 .5em; }
-            .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p.blue, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box p.blue {
-              color: #556de7; }
-      .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_left, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .bill_left {
-        position: absolute;
-        left: 2em;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        top: 43%;
-        width: auto;
-        font-size: 1.1em;
-        color: #4d515d; }
-      .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_right, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .bill_right {
-        position: absolute;
-        right: 2em;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        top: 43%;
-        width: auto;
-        font-size: 1.1em; }
-        .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_right button, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .bill_right button {
-          color: #fff;
-          background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b6885f));
-          background: -webkit-linear-gradient(top, #dfb995 0%, #b6885f 100%);
-          background: -o-linear-gradient(top, #dfb995 0%, #b6885f 100%);
-          background: linear-gradient(to bottom, #dfb995 0%, #b6885f 100%);
-          border: 1px solid #ffeddd;
-          padding: .4em 1.5em;
-          font-size: 1em;
-          border-radius: 8px; }
-    .container main.my_page .right .my_bill .wrap .bill_record_d_card, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card {
-      width: 100%;
-      background: #404b87;
-      color: #fff;
-      border-radius: 0 0 8px 8px;
-      line-height: 3em;
-      height: 3em;
-      margin: -.5em 0 0;
-      overflow: hidden; }
-      .container main.my_page .right .my_bill .wrap .bill_record_d_card .b25, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .b25 {
-        width: 25%;
-        float: left;
-        text-align: center;
-        padding: .5em 0 0;
-        line-height: 2.5em;
-        height: 3em;
-        position: relative; }
-        .container main.my_page .right .my_bill .wrap .bill_record_d_card .b25:before, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .b25:before {
-          content: '';
+    .container main.my_page .right .my_bill .wrap, .container main.my_page .right .my_bill_record .wrap {
+      z-index: 1; }
+      .container main.my_page .right .my_bill .wrap .game_in, .container main.my_page .right .my_bill_record .wrap .game_in {
+        font-weight: bold; }
+        .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid {
           position: absolute;
-          right: 0;
-          top: calc(50% + .25em);
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          top: 43%;
+          width: auto;
+          white-space: nowrap; }
+          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box {
+            display: inline-block;
+            text-align: center;
+            padding: 0 2em;
+            color: #4d515d;
+            position: relative; }
+            .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box:before, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box:before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              right: 0;
+              width: 1px;
+              height: 90%;
+              background: #a8aecf; }
+            .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box:last-child:before, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box:last-child:before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              left: 0;
+              width: 1px;
+              height: 90%;
+              background: transparent; }
+            .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box p {
+              font-size: 1.1em; }
+              .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p:first-child, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box p:first-child {
+                margin: 0 0 .5em; }
+              .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p.blue, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box p.blue {
+                color: #556de7; }
+        .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_left, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .bill_left {
+          position: absolute;
+          left: 2em;
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-          width: 1px;
-          background: #fff;
-          height: 60%; }
-        .container main.my_page .right .my_bill .wrap .bill_record_d_card .b25:last-child:before, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .b25:last-child:before {
-          display: none; }
-      .container main.my_page .right .my_bill .wrap .bill_record_d_card span, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card span {
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 1.1em; }
+          top: 43%;
+          width: auto;
+          font-size: 1.1em;
+          color: #4d515d; }
+        .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_right, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .bill_right {
+          position: absolute;
+          right: 2em;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          top: 43%;
+          width: auto;
+          font-size: 1.1em; }
+          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .bill_right button, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .bill_right button {
+            color: #fff;
+            background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b6885f));
+            background: -webkit-linear-gradient(top, #dfb995 0%, #b6885f 100%);
+            background: -o-linear-gradient(top, #dfb995 0%, #b6885f 100%);
+            background: linear-gradient(to bottom, #dfb995 0%, #b6885f 100%);
+            border: 1px solid #ffeddd;
+            padding: .4em 1.5em;
+            font-size: 1em;
+            border-radius: 8px; }
+      .container main.my_page .right .my_bill .wrap .bill_record_d_card, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card {
+        width: 100%;
+        background: #404b87;
+        color: #fff;
+        border-radius: 0 0 8px 8px;
+        line-height: 3em;
+        height: 3em;
+        margin: -.5em 0 0;
+        overflow: hidden; }
+        .container main.my_page .right .my_bill .wrap .bill_record_d_card .b25, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .b25 {
+          width: 25%;
+          float: left;
+          text-align: center;
+          padding: .5em 0 0;
+          line-height: 2.5em;
+          height: 3em;
+          position: relative; }
+          .container main.my_page .right .my_bill .wrap .bill_record_d_card .b25:before, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .b25:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: calc(50% + .25em);
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 1px;
+            background: #fff;
+            height: 60%; }
+          .container main.my_page .right .my_bill .wrap .bill_record_d_card .b25:last-child:before, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .b25:last-child:before {
+            display: none; }
+        .container main.my_page .right .my_bill .wrap .bill_record_d_card span, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card span {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 1.1em; }
     .container main.my_page .right .my_bill .bill_box, .container main.my_page .right .my_bill_record .bill_box {
       margin: .5em 0;
       border-radius: 8px;
@@ -1917,7 +1929,7 @@ header {
         border-radius: 10px; }
       .container main .right .wrap.fixed {
         position: fixed;
-        top: 1em;
+        top: 0;
         width: 968px;
         z-index: 5;
         display: none; }
@@ -2075,7 +2087,7 @@ header {
         border-radius: 8px;
         padding: 0 1em 0 1em;
         position: relative;
-        z-index: 1; }
+        z-index: 2; }
         .container main .right .search_bar.fixed {
           position: fixed;
           top: .7em;
@@ -2199,7 +2211,10 @@ header {
             .container main .right .search_bar .tag_wrap .tag:last-child {
               margin: 0; }
             .container main .right .search_bar .tag_wrap .tag:hover, .container main .right .search_bar .tag_wrap .tag.active {
-              background: #6272cc;
+              background: -webkit-gradient(linear, left top, left bottom, from(#354ab9), to(#8b98da));
+              background: -webkit-linear-gradient(top, #354ab9 0%, #8b98da 100%);
+              background: -o-linear-gradient(top, #354ab9 0%, #8b98da 100%);
+              background: linear-gradient(to bottom, #354ab9 0%, #8b98da 100%);
               color: #fff; }
         .container main .right .search_bar .right_box {
           float: right;
@@ -2247,6 +2262,76 @@ header {
           border-radius: 4px;
           background: #fff;
           padding: 0 .5em; }
+      .container main .right .search_box {
+        position: relative; }
+        .container main .right .search_box .balls_choice {
+          display: none;
+          width: 100%;
+          height: auto;
+          background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(20%, #fafbff), color-stop(80%, #fafbff), to(#e2e5f5));
+          background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 20%, #fafbff 80%, #e2e5f5 100%);
+          background: -o-linear-gradient(top, #fafbff 0%, #fafbff 20%, #fafbff 80%, #e2e5f5 100%);
+          background: linear-gradient(to bottom, #fafbff 0%, #fafbff 20%, #fafbff 80%, #e2e5f5 100%);
+          border-radius: 0 0 8px 8px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          -webkit-transform: translateY(90%);
+          -ms-transform: translateY(90%);
+          transform: translateY(90%);
+          z-index: 1;
+          padding: 1em;
+          color: #4d515d;
+          overflow: hidden; }
+          .container main .right .search_box .balls_choice.active {
+            display: block; }
+          .container main .right .search_box .balls_choice .row {
+            line-height: 2em;
+            height: 2em;
+            width: 100%;
+            float: left; }
+            .container main .right .search_box .balls_choice .row p {
+              display: inline-block;
+              vertical-align: middle;
+              line-height: 1; }
+            .container main .right .search_box .balls_choice .row span {
+              display: inline-block;
+              vertical-align: text-bottom; }
+              .container main .right .search_box .balls_choice .row span.check {
+                cursor: pointer;
+                width: 1em;
+                height: 1em;
+                border: 1px solid #b2afcf;
+                border-radius: 4px;
+                background: -webkit-gradient(linear, left top, left bottom, from(#cbd0e9), to(#ffffff));
+                background: -webkit-linear-gradient(top, #cbd0e9 0%, #ffffff 100%);
+                background: -o-linear-gradient(top, #cbd0e9 0%, #ffffff 100%);
+                background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
+                position: relative; }
+                .container main .right .search_box .balls_choice .row span.check.active {
+                  border: 1px solid #4259d7;
+                  background: -webkit-gradient(linear, left top, left bottom, from(#2f45b7), to(#8694d8));
+                  background: -webkit-linear-gradient(top, #2f45b7 0%, #8694d8 100%);
+                  background: -o-linear-gradient(top, #2f45b7 0%, #8694d8 100%);
+                  background: linear-gradient(to bottom, #2f45b7 0%, #8694d8 100%); }
+                  .container main .right .search_box .balls_choice .row span.check.active:before {
+                    content: '';
+                    position: absolute;
+                    top: 35%;
+                    left: 50%;
+                    width: 50%;
+                    height: 80%;
+                    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+                    -ms-transform: translate(-50%, -50%) rotate(45deg);
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    background: none;
+                    border-width: 0 2px 2px 0;
+                    border-style: solid;
+                    border-color: #fff; }
+            .container main .right .search_box .balls_choice .row .b12_5 {
+              width: 12.5%;
+              float: left;
+              white-space: nowrap; }
       .container main .right .book {
         line-height: 3.5em;
         height: 3.5em;

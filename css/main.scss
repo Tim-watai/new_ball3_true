@@ -775,7 +775,7 @@ header {
       .wrap{
         &.fixed{
           position: fixed;
-          top: 1em;
+          top: 0;
           width: 968px;
           z-index: 5;
           display: none;
@@ -941,7 +941,7 @@ header {
         // box-shadow: 0 0 4px 2px #bac0db;
         padding: 0 1em 0 1em;
         position: relative;
-        z-index: 1;
+        z-index: 2;
         &.fixed{
           position: fixed;
           top: .7em;
@@ -1079,7 +1079,7 @@ header {
               margin: 0;
             }
             &:hover,&.active{
-              background: #6272cc;
+              background: linear-gradient(to bottom ,#354ab9 0%, #8b98da 100%);
               color: #fff;
             }
           }
@@ -1139,6 +1139,76 @@ header {
           background: #fff;
           padding: 0 .5em;
         }
+    
+      }
+      .search_box{
+        position: relative;
+            //0709
+            .balls_choice{
+              display: none;
+              &.active{
+                display: block;
+              }
+              width: 100%;
+              height: auto;
+              background: linear-gradient(to bottom, #fafbff 0%,#fafbff 20%,#fafbff 80%, #e2e5f5 100%);
+              border-radius: 0 0 8px 8px;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              transform: translateY(90%);
+              z-index: 1;
+              padding: 1em;
+              color: #4d515d;
+              overflow: hidden;
+              .row{
+                line-height: 2em;
+                height: 2em;
+                width: 100%;
+                float: left;
+                p{
+                  display: inline-block;
+                  vertical-align: middle;
+                  line-height: 1;
+                }
+                span{
+                  display: inline-block;
+                  vertical-align: text-bottom;
+                  &.check{
+                    cursor: pointer;
+                    width: 1em;
+                    height: 1em;
+                    border: 1px solid #b2afcf;
+                    border-radius: 4px;
+                    background: linear-gradient(to bottom,#cbd0e9 0%,#ffffff 100%);
+                    position: relative;
+                    &.active{
+                      border: 1px solid #4259d7;
+                      background: linear-gradient(to bottom,#2f45b7 0%,#8694d8 100%);
+                      &:before{
+                        content: '';
+                        position: absolute;
+                        top: 35%;
+                        left: 50%;
+                        width: 50%;
+                        height: 80%;
+                        transform: translate(-50%, -50%) rotate(45deg);
+                        background: none;
+                        border-width: 0 2px 2px 0;
+                        border-style: solid;
+                        border-color: #fff;
+                      }
+                    }
+                  }
+                }
+                .b12_5{
+                  width: 12.5%;
+                  float: left;
+                  white-space: nowrap;
+                }
+              }
+    
+            }
       }
       .book{
         line-height: 3.5em;
@@ -1935,7 +2005,6 @@ header {
       padding: 0 0 8em;
       &.my_page{
         width: 20%;
-
       }
       &::-webkit-scrollbar {
         width: .5em;
