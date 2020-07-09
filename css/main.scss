@@ -129,6 +129,7 @@ header {
         vertical-align: middle;
         background: linear-gradient(to bottom, #8997da 0%, #3247b8 100%);
         background-clip: text;
+        position: relative;
         -webkit-text-fill-color: transparent;
       }
     }
@@ -937,7 +938,7 @@ header {
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         overflow: hidden;
         border-radius: 8px;
-        box-shadow: 0 0 4px 2px #bac0db;
+        // box-shadow: 0 0 4px 2px #bac0db;
         padding: 0 1em 0 1em;
         position: relative;
         z-index: 1;
@@ -952,8 +953,6 @@ header {
           }
         }
         //0701
-        // width: calc(57% - 1.6em);
-        // position: fixed;
         .back_wrap{
           display: inline-block;
           line-height: 1.1em;
@@ -1067,6 +1066,15 @@ header {
           margin: 0 0 0 .5em;
           .tag{
             margin: 0 4px 0 0;
+            border: 1px solid #3145b2;
+            line-height: 1.1;
+            vertical-align: middle;
+            display: inline-block;
+            padding: 2px .315em 0 .315em;
+            color: #3145b2;
+            border-radius: 4px;
+            font-size: 1.1em;
+            cursor: pointer;
             &:last-child{
               margin: 0;
             }
@@ -1075,17 +1083,6 @@ header {
               color: #fff;
             }
           }
-        }
-        .tag{
-          border: 1px solid #3145b2;
-          line-height: 1.1;
-          vertical-align: middle;
-          display: inline-block;
-          padding: 2px .315em 0 .315em;
-          color: #3145b2;
-          border-radius: 4px;
-          font-size: 1.1em;
-          cursor: pointer;
         }
         .right_box{
           float: right;
@@ -1100,6 +1097,47 @@ header {
           line-height: 1;
           vertical-align: middle;
           margin: 0 .5em;
+        }
+        .row_line{
+          background: #3145b2;
+          width: .5em;
+          height: .125em;
+          display: inline-block;
+          line-height: 1;
+          vertical-align: middle;
+          margin: 0 .25em;
+        }
+        span{
+          &.date_icon{
+            width: 1.3em;
+            height: 1.3em;
+            vertical-align: middle;
+            background: url(../image/my/date_icon.png)no-repeat;
+            background-size: 100%;
+            display: inline-block;
+            cursor: pointer;
+          }
+          &.tri{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: .4em .3em 0 .3em;
+            border-color: #9496af transparent transparent transparent;
+            display: inline-block;
+            vertical-align: middle;
+            margin: -.125em 0 0;
+          }
+        }
+        .day_box{
+          display: inline-block;
+          vertical-align: middle;
+          width: auto;
+          height: 1.5em;
+          line-height: 1.5em;
+          border: 1px solid #3145b2;
+          border-radius: 4px;
+          background: #fff;
+          padding: 0 .5em;
         }
       }
       .book{

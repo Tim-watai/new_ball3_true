@@ -755,14 +755,15 @@ aside .bet_box {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         top: 43%;
-        width: auto; }
+        width: auto;
+        white-space: nowrap; }
         .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box {
           display: inline-block;
           text-align: center;
           padding: 0 2em;
           color: #4d515d;
           position: relative; }
-          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box:first-child:before, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box:first-child:before {
+          .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box:before, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box:before {
             content: '';
             position: absolute;
             top: 50%;
@@ -783,7 +784,7 @@ aside .bet_box {
             left: 0;
             width: 1px;
             height: 90%;
-            background: #a8aecf; }
+            background: transparent; }
           .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box p {
             font-size: 1.1em; }
             .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid .m_box p:first-child, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid .m_box p:first-child {
@@ -819,12 +820,154 @@ aside .bet_box {
           padding: .4em 1.5em;
           font-size: 1em;
           border-radius: 8px; }
+    .container main.my_page .right .my_bill .wrap .bill_record_d_card, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card {
+      width: 100%;
+      background: #404b87;
+      color: #fff;
+      border-radius: 0 0 8px 8px;
+      line-height: 3em;
+      height: 3em;
+      margin: -.5em 0 0;
+      overflow: hidden; }
+      .container main.my_page .right .my_bill .wrap .bill_record_d_card .b25, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .b25 {
+        width: 25%;
+        float: left;
+        text-align: center;
+        padding: .5em 0 0;
+        line-height: 2.5em;
+        height: 3em;
+        position: relative; }
+        .container main.my_page .right .my_bill .wrap .bill_record_d_card .b25:before, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .b25:before {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: calc(50% + .25em);
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          width: 1px;
+          background: #fff;
+          height: 60%; }
+        .container main.my_page .right .my_bill .wrap .bill_record_d_card .b25:last-child:before, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .b25:last-child:before {
+          display: none; }
+      .container main.my_page .right .my_bill .wrap .bill_record_d_card span, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1.1em; }
+    .container main.my_page .right .my_bill .bill_box, .container main.my_page .right .my_bill_record .bill_box {
+      margin: .5em 0;
+      border-radius: 8px;
+      overflow: hidden; }
+      .container main.my_page .right .my_bill .bill_box.active, .container main.my_page .right .my_bill_record .bill_box.active {
+        border: 1px solid #b7906e;
+        border-top: none;
+        background: #ffdbb9; }
+        .container main.my_page .right .my_bill .bill_box.active .title_bill, .container main.my_page .right .my_bill_record .bill_box.active .title_bill {
+          border-color: transparent transparent #b7906e transparent;
+          background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d8a77b));
+          background: -webkit-linear-gradient(top, #fedab8 0%, #d8a77b 100%);
+          background: -o-linear-gradient(top, #fedab8 0%, #d8a77b 100%);
+          background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%); }
+        .container main.my_page .right .my_bill .bill_box.active .box, .container main.my_page .right .my_bill_record .bill_box.active .box {
+          display: block; }
+      .container main.my_page .right .my_bill .bill_box .red, .container main.my_page .right .my_bill_record .bill_box .red {
+        color: #fe0000; }
+      .container main.my_page .right .my_bill .bill_box .title_bill, .container main.my_page .right .my_bill_record .bill_box .title_bill {
+        width: 100%;
+        line-height: 3em;
+        height: 3em;
+        border-radius: 8px;
+        border: 1px solid #989dbc;
+        color: #4d515d;
+        overflow: hidden;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#edeef5));
+        background: -webkit-linear-gradient(top, #ffffff 0%, #edeef5 100%);
+        background: -o-linear-gradient(top, #ffffff 0%, #edeef5 100%);
+        background: linear-gradient(to bottom, #ffffff 0%, #edeef5 100%);
+        position: relative; }
+        .container main.my_page .right .my_bill .bill_box .title_bill span, .container main.my_page .right .my_bill_record .bill_box .title_bill span {
+          font-size: 1.1em; }
+        .container main.my_page .right .my_bill .bill_box .title_bill .b25, .container main.my_page .right .my_bill_record .bill_box .title_bill .b25 {
+          float: left;
+          width: 25%;
+          text-align: center;
+          position: relative; }
+          .container main.my_page .right .my_bill .bill_box .title_bill .b25:before, .container main.my_page .right .my_bill_record .bill_box .title_bill .b25:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 1px;
+            background: #bdbfd3;
+            height: 60%; }
+          .container main.my_page .right .my_bill .bill_box .title_bill .b25:last-child:before, .container main.my_page .right .my_bill_record .bill_box .title_bill .b25:last-child:before {
+            display: none; }
+        .container main.my_page .right .my_bill .bill_box .title_bill .have, .container main.my_page .right .my_bill_record .bill_box .title_bill .have {
+          position: absolute;
+          top: 50%;
+          left: 2em;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          background: #fe0000;
+          color: #fff;
+          padding: .125em .5em 0em .5em;
+          display: inline-block;
+          line-height: 100%;
+          border-radius: 4px; }
+          .container main.my_page .right .my_bill .bill_box .title_bill .have p, .container main.my_page .right .my_bill_record .bill_box .title_bill .have p {
+            line-height: 100%;
+            vertical-align: middle;
+            font-size: 1.1em; }
+      .container main.my_page .right .my_bill .bill_box .footer_bill, .container main.my_page .right .my_bill_record .bill_box .footer_bill {
+        font-size: 1.12em;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: .8em 0 0;
+        color: #fff;
+        background: #bf652e;
+        line-height: 2em;
+        height: 2em; }
+        .container main.my_page .right .my_bill .bill_box .footer_bill .t_mid, .container main.my_page .right .my_bill_record .bill_box .footer_bill .t_mid {
+          text-align: center; }
+        .container main.my_page .right .my_bill .bill_box .footer_bill .t_left, .container main.my_page .right .my_bill_record .bill_box .footer_bill .t_left {
+          text-align: left;
+          padding: 0 0 0 .5em; }
+        .container main.my_page .right .my_bill .bill_box .footer_bill .b10, .container main.my_page .right .my_bill .bill_box .footer_bill .b11, .container main.my_page .right .my_bill .bill_box .footer_bill .b22, .container main.my_page .right .my_bill .bill_box .footer_bill .b25, .container main.my_page .right .my_bill_record .bill_box .footer_bill .b10, .container main.my_page .right .my_bill_record .bill_box .footer_bill .b11, .container main.my_page .right .my_bill_record .bill_box .footer_bill .b22, .container main.my_page .right .my_bill_record .bill_box .footer_bill .b25 {
+          float: left;
+          position: relative;
+          height: 100%; }
+        .container main.my_page .right .my_bill .bill_box .footer_bill .b11:before, .container main.my_page .right .my_bill .bill_box .footer_bill .b10:before, .container main.my_page .right .my_bill_record .bill_box .footer_bill .b11:before, .container main.my_page .right .my_bill_record .bill_box .footer_bill .b10:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          right: 0;
+          background: #fff;
+          width: 1px;
+          height: 70%; }
+        .container main.my_page .right .my_bill .bill_box .footer_bill .b10, .container main.my_page .right .my_bill_record .bill_box .footer_bill .b10 {
+          width: 10%; }
+        .container main.my_page .right .my_bill .bill_box .footer_bill .b11, .container main.my_page .right .my_bill_record .bill_box .footer_bill .b11 {
+          width: 11%; }
+        .container main.my_page .right .my_bill .bill_box .footer_bill .b22, .container main.my_page .right .my_bill_record .bill_box .footer_bill .b22 {
+          width: 22%; }
+        .container main.my_page .right .my_bill .bill_box .footer_bill .b25, .container main.my_page .right .my_bill_record .bill_box .footer_bill .b25 {
+          width: 25%; }
+      .container main.my_page .right .my_bill .bill_box .box, .container main.my_page .right .my_bill_record .bill_box .box {
+        display: none;
+        padding: 0 1em 1em; }
     .container main.my_page .right .my_bill .basic_bill, .container main.my_page .right .my_bill_record .basic_bill {
       font-size: 1.12em;
       border-radius: 18px;
       overflow: hidden;
-      -webkit-box-shadow: 0 0 4px 2px #bac0db;
-      box-shadow: 0 0 4px 2px #bac0db;
+      -webkit-box-shadow: 0 0 4px 1px #bac0db;
+      box-shadow: 0 0 4px 1px #bac0db;
       margin: .8em 0 0;
       color: #4d515d;
       -webkit-transition: all .2s ease-in-out;
@@ -1178,6 +1321,7 @@ header {
         background: linear-gradient(to bottom, #8997da 0%, #3247b8 100%);
         -webkit-background-clip: text;
         background-clip: text;
+        position: relative;
         -webkit-text-fill-color: transparent; }
     header .h_wrap ul {
       float: left;
@@ -1929,8 +2073,6 @@ header {
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         overflow: hidden;
         border-radius: 8px;
-        -webkit-box-shadow: 0 0 4px 2px #bac0db;
-        box-shadow: 0 0 4px 2px #bac0db;
         padding: 0 1em 0 1em;
         position: relative;
         z-index: 1; }
@@ -2044,22 +2186,21 @@ header {
           display: inline-block;
           margin: 0 0 0 .5em; }
           .container main .right .search_bar .tag_wrap .tag {
-            margin: 0 4px 0 0; }
+            margin: 0 4px 0 0;
+            border: 1px solid #3145b2;
+            line-height: 1.1;
+            vertical-align: middle;
+            display: inline-block;
+            padding: 2px .315em 0 .315em;
+            color: #3145b2;
+            border-radius: 4px;
+            font-size: 1.1em;
+            cursor: pointer; }
             .container main .right .search_bar .tag_wrap .tag:last-child {
               margin: 0; }
             .container main .right .search_bar .tag_wrap .tag:hover, .container main .right .search_bar .tag_wrap .tag.active {
               background: #6272cc;
               color: #fff; }
-        .container main .right .search_bar .tag {
-          border: 1px solid #3145b2;
-          line-height: 1.1;
-          vertical-align: middle;
-          display: inline-block;
-          padding: 2px .315em 0 .315em;
-          color: #3145b2;
-          border-radius: 4px;
-          font-size: 1.1em;
-          cursor: pointer; }
         .container main .right .search_bar .right_box {
           float: right;
           height: 100%; }
@@ -2071,6 +2212,41 @@ header {
           line-height: 1;
           vertical-align: middle;
           margin: 0 .5em; }
+        .container main .right .search_bar .row_line {
+          background: #3145b2;
+          width: .5em;
+          height: .125em;
+          display: inline-block;
+          line-height: 1;
+          vertical-align: middle;
+          margin: 0 .25em; }
+        .container main .right .search_bar span.date_icon {
+          width: 1.3em;
+          height: 1.3em;
+          vertical-align: middle;
+          background: url(../image/my/date_icon.png) no-repeat;
+          background-size: 100%;
+          display: inline-block;
+          cursor: pointer; }
+        .container main .right .search_bar span.tri {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: .4em .3em 0 .3em;
+          border-color: #9496af transparent transparent transparent;
+          display: inline-block;
+          vertical-align: middle;
+          margin: -.125em 0 0; }
+        .container main .right .search_bar .day_box {
+          display: inline-block;
+          vertical-align: middle;
+          width: auto;
+          height: 1.5em;
+          line-height: 1.5em;
+          border: 1px solid #3145b2;
+          border-radius: 4px;
+          background: #fff;
+          padding: 0 .5em; }
       .container main .right .book {
         line-height: 3.5em;
         height: 3.5em;
