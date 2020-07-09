@@ -53,6 +53,7 @@ $(document).ready(function() {
       }
       }
       //<-----------
+
       //main頁面切換
       //球類內頁
       let balls = $('.balls_wrap');
@@ -71,22 +72,37 @@ $(document).ready(function() {
       let bas_page = $('.balls_wrap .bas_page_beginner_inner');
       let bask_page = $('.balls_wrap .bask_page_beginner_inner');
 
+      //header變化
+      let header_tag = [
+        $('header .h_wrap ul li:nth-child(1)'),
+        $('header .h_wrap ul li:nth-child(2)'),
+        $('header .h_wrap ul li:nth-child(3)'),
+        $('header .h_wrap ul li:nth-child(4)'),
+        $('header .h_wrap ul li:nth-child(5)'),
+        $('header .h_wrap ul li:nth-child(6)'),
+    ];
+  
       //我的
       function my_page_iswork(iswork){
-      
         if(iswork == true){
           $('.container main').addClass('my_page');
           $('main .left ul.my_page').siblings().removeClass('active');
           $('main .left ul.my_page').addClass('active');
-          $('main .right .my_bill').css('display','block');
-          
+          // $('main .right .my_bill').css('display','block');
+          dummy('my');
         }else{
           $('.container main').removeClass('my_page');
           $('main .left ul.my_page').siblings().addClass('active');
           $('main .left ul.my_page').removeClass('active');
-          $('main .right .my_bill').css('display','none');
+          // $('main .right .my_bill').css('display','none');
+          dummy();
         }
-        dummy('my');
+        
+      }
+      function header_active(num){
+        let num_f = num - 1;
+        header_tag[num_f].siblings().removeClass('active');
+        header_tag[num_f].addClass('active');
       }
       function page_active (num){
         left_li.removeClass('active');
@@ -97,7 +113,7 @@ $(document).ready(function() {
           switch_normal.css('display','block');
           switch_search_bar.css('display','block');
           my_page_iswork(false);
-          
+          header_active(1);
         }
         else if(num == 2){
           balls.css('display','none');
@@ -106,6 +122,7 @@ $(document).ready(function() {
           switch_beginner.css('display','block');
           switch_search_bar.css('display','block');
           my_page_iswork(false);
+          header_active(1);
         }
         else if(num == 3){
           balls.css('display','none');
@@ -114,6 +131,7 @@ $(document).ready(function() {
           switch_senior.css('display','block');
           switch_search_bar.css('display','block');
           my_page_iswork(false);
+          header_active(1);
         }
         else if(num == 4){
           balls.css('display','block');
@@ -123,6 +141,7 @@ $(document).ready(function() {
           switch_search_bar.css('display','block');
           $('.left ul.index li:nth-child(3)').addClass('active');
           my_page_iswork(false);
+          header_active(1);
         }
         else if(num == 5){
           balls.css('display','block');
@@ -132,6 +151,7 @@ $(document).ready(function() {
           switch_search_bar.css('display','block');
           $('.left ul.index li:nth-child(3)').addClass('active');
           my_page_iswork(false);
+          header_active(1);
         }
         else if(num == 6){
           balls.css('display','block');
@@ -141,6 +161,7 @@ $(document).ready(function() {
           switch_search_bar.css('display','block');
           $('.left ul.index li:nth-child(4)').addClass('active');
           my_page_iswork(false);
+          header_active(1);
         }
         else if(num == 7){
           balls.css('display','block');
@@ -150,6 +171,7 @@ $(document).ready(function() {
           switch_search_bar.css('display','block');
           $('.left ul.index li:nth-child(5)').addClass('active');
           my_page_iswork(false);
+          header_active(1);
         }
         else if(num == 8){
           //我的_即時注單
@@ -159,6 +181,18 @@ $(document).ready(function() {
           my_page_iswork(true);
           $('.left ul.my_page li:nth-child(8)').siblings().removeClass('active');
           $('.left ul.my_page li:nth-child(8)').addClass('active');
+          header_active(6);
+        }
+        else if(num == 9){
+          //我的_投注紀錄
+          console.log('re')
+          let my_page_bill_re = $('.container main .right .my_bill_record');
+          my_page_bill_re.css('display','block');
+          my_page_bill_re.siblings().css('display','none');
+          my_page_iswork(true);
+          $('.left ul.my_page li:nth-child(9)').siblings().removeClass('active');
+          $('.left ul.my_page li:nth-child(9)').addClass('active');
+          header_active(6);
         }
       
       }
@@ -217,14 +251,22 @@ $(document).ready(function() {
         sign_active(true);
       });
       //<--------------------
-         //我的_即時注單
-         $('.test li:nth-child(8)').click(function(){
-          $(this).siblings().removeClass('active');
-          $(this).addClass('active');
-          page_active(8);
-          sign_active(true);
-        });
-        //<--------------------
+      //我的_即時注單
+      $('.test li:nth-child(8)').click(function(){
+      $(this).siblings().removeClass('active');
+      $(this).addClass('active');
+      page_active(8);
+      sign_active(true);
+      });
+    //<--------------------
+     //我的_投注紀錄
+     $('.test li:nth-child(9)').click(function(){
+      $(this).siblings().removeClass('active');
+      $(this).addClass('active');
+      page_active(9);
+      sign_active(true);
+      });
+    //<--------------------
       //左邊list
       $('.left ul li:nth-child(3)').click(function(){
         page_active(5);
@@ -397,7 +439,7 @@ $(document).ready(function() {
         $('.container main .right').scroll(function () {
       
           var scrollVal = $(this).scrollTop();
-         console.log('scrollVal = '+scrollVal);
+        //  console.log('scrollVal = '+scrollVal);
          if(scrollVal >= 50){
           $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
          }else if(scrollVal <= 49){

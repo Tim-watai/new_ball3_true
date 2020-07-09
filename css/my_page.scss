@@ -141,7 +141,7 @@
             .right{
                 width: 80%;
                 left: 20%;
-               .my_bill{
+               .my_bill,.my_bill_record{
                    display: none;
                    &.active{
                        display: block;
@@ -233,6 +233,37 @@
                     margin: .8em 0 0;
                     color: #4d515d;
                     transition: all .2s ease-in-out;
+                    .num_wrap{
+                        overflow: hidden;
+                        border-top: 1px solid #b9c0d2;
+                        &:first-child{
+                            border-top: 1px solid transparent;
+                        }
+                    }
+                    .li_wrap{
+                        width: 95%;
+                        float: left;
+                        .b9{
+                            width: 9%;
+                        }
+                        .b23_6{
+                            width: 23.6%;
+                        }
+                        .b10_6{
+                            width: 10.6%;
+                        }
+                    }
+                    .b5{
+                        width: 5%;
+                        float: left;
+                        line-height: 7em;
+                        text-align: center;
+                        background: #fff;
+                        border-right: 1px solid #b9c0d2;
+                        p{
+                            font-size: 1.8em;
+                        }
+                    }
                     &.active{
                         transition: all .2s ease-in-out;
                         .b_name{
@@ -256,8 +287,17 @@
                     .blue{
                         color: #556de7;
                     }
+                    .d_blue{
+                        color: #061d93;
+                    }
                     .red{
                         color: #f31b1b;
+                    }
+                    .white{
+                        color: #fff;
+                    }
+                    .footer_bg_blue.footer_bg_blue.footer_bg_blue{
+                        background: #404b87;
                     }
                     .b_name{
                         line-height: 2em;
@@ -265,20 +305,23 @@
                         background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
                         position: relative;
                         p{
+                            display: inline-block;
                             line-height: 1;
                             vertical-align: middle;
                             &.bf{
                                 line-height: 1;
                                 vertical-align: baseline;
                                 margin: 0 0 0 1em;
-                                display: inline-block;
                             }
                            
                         }
                         .right_box{
                             position: absolute;
                             top: 50%;
-                            right: 2em;
+                            height: 100%;
+                            float: right;
+                            line-height: 2em;
+                            right: 1em;
                             transform: translateY(-50%);
                             p{
                                 display: inline-block;
@@ -305,9 +348,11 @@
                             text-align: left;
                             padding: 0 0 0 .5em;
                         }
+                        
                         li{
                             overflow: hidden;
                             background: #fff;
+                            width: 100%;
                             .g_bg{
                                 background: #f8f8f8;
                             }
@@ -319,7 +364,7 @@
                                     border-right: none;
                                 }
                             }
-
+                          
                             .b10{
                                 width: 10%;
                             }
@@ -332,6 +377,12 @@
                             .b25{
                                 width: 25%;
                             }
+                            .b49{
+                                width: 49%;
+                            }
+                            .b54{
+                                width: 54%;
+                            }
                         }
                     }
                     .close{
@@ -340,8 +391,24 @@
                         display: block;
                     }
                     .open{
+                        
                         display: none;
+                        border: 1px solid #7987d0;
                         li{
+                            border-top: 1px solid #b9c0d2;
+                            position: relative;
+                            line-height: 2.5em;
+                            height: 2.5em;
+                            &.big_line{
+                                line-height: 5em;
+                                height: 5em;
+                            }
+                            .big_li_half{
+                                line-height: calc(3.5em / 2);
+                            }
+                            &:first-child{
+                                border-top: 1px solid transparent;
+                            }
                             &.title{
                                 line-height: 2em;
                                 height: 2em;
@@ -364,16 +431,33 @@
                                 .right_box{
                                     position: absolute;
                                     top: 50%;
-                                    right: 2em;
+                                    height: 100%;
+                                    float: right;
+                                    line-height: 2em;
+                                    right: 1em;
                                     transform: translateY(-50%);
                                     p{
                                         display: inline-block;
                                     }
                                 }
                             }
+                            em{
+                                &.wrap{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                            }
                         }
                     }
-                   
+                   .row_line.row_line{
+                    width: 1px;
+                    background: #b9c0d2;
+                    height: 70%;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 .5em;
+                    float: none;
+                   }
                 }
                }
             }
