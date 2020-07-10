@@ -409,6 +409,7 @@
                     margin: .8em 0 0;
                     color: #4d515d;
                     transition: all .2s ease-in-out;
+                   
                     .num_wrap{
                         overflow: hidden;
                         border-top: 1px solid #b9c0d2;
@@ -564,6 +565,7 @@
                                 background: url(../image/icon/arrow_g.png) no-repeat;
                                 background-size: 100%;
                                 transform: rotate(90deg);
+                                cursor: pointer;
                             }
                             .right_box{
                                 float: right;
@@ -571,6 +573,7 @@
                         }
                         .row{
                             overflow: hidden;
+                            
                             &.box_7{
                                 margin: 0 -.8em 0 0;
                                 li{
@@ -604,14 +607,84 @@
                             }
                             li{
                                 float: left;
-                                text-align: center;
                                 padding: .5em 0;
+                                &.b50{
+                                    width: 50%;
+                                    position: relative;
+                                    .row50{
+                                        margin: 0 0 .5em;
+                                        &:last-child{
+                                            margin: 0;
+                                        }
+                                    }
+                                    .bk_box{
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        width: 65%;
+                                    }
+                                    p{
+                                        display: inline-block;
+                                        &.title{
+                                            margin: 0 1em 0 0;
+                                        }
+                                    }
+                                    &:before{
+                                        content: '';
+                                        position: absolute;
+                                        right: 0;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        height: 80%;
+                                        width: 1px;
+                                        background: #b9c0d2;
+                                    }
+                                    &:last-child{
+                                        &:before{
+                                            display: none;
+                                        }
+                                    }
+                                    .copy{
+                                        width: 3em;
+                                        display: inline-block;
+                                        text-align: center;
+                                        line-height: 1.5em;
+                                        height: 1.5em;
+                                        border-radius: 24px;
+                                        border: 1px solid #b9c0d2;
+                                        vertical-align: middle;
+                                        color: #b9c0d2;
+                                        margin: 0 0 0 .5em;
+                                        cursor: pointer;
+                                        &:hover,.active{
+                                            background: #b9c0d2;
+                                            color: #fff;
+                                        }
+                                        p{
+                                            margin: -2px 0 0;
+                                            line-height: 100%;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                        }
+                                    }
+                                }
+                                &.full{
+                                    width: 100%;
+                                }
+                                .li_h_2_3{
+                                    line-height: 2.3em;
+                                    padding: 0;
+                                }
+
                                 .save_wrap{
                                     border: 1px solid #b9c0d2;
                                     border-radius: 10px;
-                                    padding: 1em 0;
+                                    text-align: center;
                                     position: relative;
                                     overflow: hidden;
+                                    &.li_h_2_3{
+                                        line-height: 2.3em;
+                                        padding: 0;
+                                    }
                                     &:hover,&.active{
                                         border: 1px solid #3046b7;
                                         &:before{
@@ -628,22 +701,59 @@
                                     }
 
                                 }
-                                    span{
+                                .text_tag{
+                                    display: inline-block;
+                                    .infor_i{
+                                        width: 1.2em;
+                                        height: 1.2em;
+                                        background: url(../image/icon/infor.png)no-repeat;
+                                        background-size: 100%;
+                                        vertical-align: middle;
+                                    }
+                                    p,span{
+                                        display: inline-block;
+                                    }
+                                }
+                                .save_btn{
+                                    background: linear-gradient(to bottom,#8e9bdc 0%, #3046b7);
+                                    color: #fff;
+                                    font-weight: bold;
+                                    width: 30%;
+                                    height: 2.5em;
+                                    border-radius: 4px;
+                                    p{
+                                        font-size: 1.2em;
+                                    }
+                                }
+                                input{
+                                    line-height: 1.5em;
+                                    width: 30%;
+                                    border-radius: 4px;
+                                    border: 1px solid #b9c0d2;
+                                    padding: .5em;
+                                    margin: 0 1em 0 0;
+                                    &::placeholder{
+                                        color: #ced1e0;
+                                    }
+                                    &:focus{
+                                        border: 1px solid #364bb9;
+                                    }
+                                }
+                                span{
+                                    &.pay{
                                         display: inline-block;
                                         width: 3em;
                                         height: 3em;
                                         background: url(../image/my/save_icon.png)no-repeat;
                                         background-size: 1400%;
-                                        @for $i from 1 through 14{
-                                            &.i#{$i}{
-                                                background-position-x:($i - 1) * -3em ;
-                                            }
+                                    }
+                                    
+                                    @for $i from 1 through 14{
+                                        &.i#{$i}{
+                                            background-position-x:($i - 1) * -3em ;
                                         }
-                                       }
-                                
-                                &:last-child{
-                                    margin: 0;
-                                }
+                                    }
+                                    }
                             }
                         }
                     }
@@ -658,6 +768,7 @@
                             overflow: hidden;
                             background: #fff;
                             width: 100%;
+                    
                             .g_bg{
                                 background: #f8f8f8;
                             }

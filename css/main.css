@@ -1125,7 +1125,8 @@ aside .bet_box {
             background-size: 100%;
             -webkit-transform: rotate(90deg);
             -ms-transform: rotate(90deg);
-            transform: rotate(90deg); }
+            transform: rotate(90deg);
+            cursor: pointer; }
           .container main.my_page .right .my_bill .basic_bill .save_type .bk_box .right_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .bk_box .right_box {
             float: right; }
         .container main.my_page .right .my_bill .basic_bill .save_type .row, .container main.my_page .right .my_bill_record .basic_bill .save_type .row {
@@ -1153,14 +1154,69 @@ aside .bet_box {
                   color: #364cb9; }
           .container main.my_page .right .my_bill .basic_bill .save_type .row li, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li {
             float: left;
-            text-align: center;
             padding: .5em 0; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 {
+              width: 50%;
+              position: relative; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .row50, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .row50 {
+                margin: 0 0 .5em; }
+                .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .row50:last-child, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .row50:last-child {
+                  margin: 0; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .bk_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .bk_box {
+                display: inline-block;
+                vertical-align: middle;
+                width: 65%; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 p, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 p {
+                display: inline-block; }
+                .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 p.title, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 p.title {
+                  margin: 0 1em 0 0; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50:before, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50:before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                height: 80%;
+                width: 1px;
+                background: #b9c0d2; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50:last-child:before, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50:last-child:before {
+                display: none; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .copy, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .copy {
+                width: 3em;
+                display: inline-block;
+                text-align: center;
+                line-height: 1.5em;
+                height: 1.5em;
+                border-radius: 24px;
+                border: 1px solid #b9c0d2;
+                vertical-align: middle;
+                color: #b9c0d2;
+                margin: 0 0 0 .5em;
+                cursor: pointer; }
+                .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .copy:hover, .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .copy .active, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .copy:hover, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .copy .active {
+                  background: #b9c0d2;
+                  color: #fff; }
+                .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .copy p, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .copy p {
+                  margin: -2px 0 0;
+                  line-height: 100%;
+                  display: inline-block;
+                  vertical-align: middle; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li.full, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.full {
+              width: 100%; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li .li_h_2_3, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .li_h_2_3 {
+              line-height: 2.3em;
+              padding: 0; }
             .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap {
               border: 1px solid #b9c0d2;
               border-radius: 10px;
-              padding: 1em 0;
+              text-align: center;
               position: relative;
               overflow: hidden; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap.li_h_2_3, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap.li_h_2_3 {
+                line-height: 2.3em;
+                padding: 0; }
               .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap:hover, .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap.active, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap:hover, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap.active {
                 border: 1px solid #3046b7; }
                 .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap:hover:before, .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap.active:before, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap:hover:before, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap.active:before {
@@ -1173,42 +1229,79 @@ aside .bet_box {
                   background: url(../image/my/box_check.png) no-repeat;
                   background-size: 100%;
                   border-radius: 0 0 10px 0; }
-            .container main.my_page .right .my_bill .basic_bill .save_type .row li span, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span {
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li .text_tag, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .text_tag {
+              display: inline-block; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li .text_tag .infor_i, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .text_tag .infor_i {
+                width: 1.2em;
+                height: 1.2em;
+                background: url(../image/icon/infor.png) no-repeat;
+                background-size: 100%;
+                vertical-align: middle; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li .text_tag p, .container main.my_page .right .my_bill .basic_bill .save_type .row li .text_tag span, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .text_tag p, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .text_tag span {
+                display: inline-block; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_btn, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_btn {
+              background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3046b7));
+              background: -webkit-linear-gradient(top, #8e9bdc 0%, #3046b7);
+              background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
+              background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
+              color: #fff;
+              font-weight: bold;
+              width: 30%;
+              height: 2.5em;
+              border-radius: 4px; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_btn p, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_btn p {
+                font-size: 1.2em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li input, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li input {
+              line-height: 1.5em;
+              width: 30%;
+              border-radius: 4px;
+              border: 1px solid #b9c0d2;
+              padding: .5em;
+              margin: 0 1em 0 0; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li input::-webkit-input-placeholder, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li input::-webkit-input-placeholder {
+                color: #ced1e0; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li input:-ms-input-placeholder, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li input:-ms-input-placeholder {
+                color: #ced1e0; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li input::-ms-input-placeholder, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li input::-ms-input-placeholder {
+                color: #ced1e0; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li input::placeholder, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li input::placeholder {
+                color: #ced1e0; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li input:focus, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li input:focus {
+                border: 1px solid #364bb9; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.pay, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.pay {
               display: inline-block;
               width: 3em;
               height: 3em;
               background: url(../image/my/save_icon.png) no-repeat;
               background-size: 1400%; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i1, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i1 {
-                background-position-x: 0em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i2, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i2 {
-                background-position-x: -3em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i3, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i3 {
-                background-position-x: -6em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i4, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i4 {
-                background-position-x: -9em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i5, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i5 {
-                background-position-x: -12em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i6, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i6 {
-                background-position-x: -15em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i7, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i7 {
-                background-position-x: -18em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i8, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i8 {
-                background-position-x: -21em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i9, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i9 {
-                background-position-x: -24em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i10, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i10 {
-                background-position-x: -27em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i11, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i11 {
-                background-position-x: -30em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i12, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i12 {
-                background-position-x: -33em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i13, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i13 {
-                background-position-x: -36em; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i14, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i14 {
-                background-position-x: -39em; }
-            .container main.my_page .right .my_bill .basic_bill .save_type .row li:last-child, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li:last-child {
-              margin: 0; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i1, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i1 {
+              background-position-x: 0em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i2, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i2 {
+              background-position-x: -3em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i3, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i3 {
+              background-position-x: -6em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i4, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i4 {
+              background-position-x: -9em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i5, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i5 {
+              background-position-x: -12em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i6, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i6 {
+              background-position-x: -15em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i7, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i7 {
+              background-position-x: -18em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i8, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i8 {
+              background-position-x: -21em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i9, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i9 {
+              background-position-x: -24em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i10, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i10 {
+              background-position-x: -27em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i11, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i11 {
+              background-position-x: -30em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i12, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i12 {
+              background-position-x: -33em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i13, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i13 {
+              background-position-x: -36em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li span.i14, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li span.i14 {
+              background-position-x: -39em; }
       .container main.my_page .right .my_bill .basic_bill .bill_row, .container main.my_page .right .my_bill_record .basic_bill .bill_row {
         border-top: 1px solid #b9c0d2; }
         .container main.my_page .right .my_bill .basic_bill .bill_row .t_left, .container main.my_page .right .my_bill_record .basic_bill .bill_row .t_left {
