@@ -338,7 +338,7 @@ header {
     }
   }
  //0624字母大
- text-transform:capitalize;
+//  text-transform:capitalize;
  
   margin:6.5em 0 0;
   width: 100%;
@@ -773,7 +773,7 @@ header {
         border-radius: 10px;
       }
       .wrap{
-        &.fixed{
+        &.fixed.fixed.fixed.fixed{
           position: fixed;
           top: 0;
           width: 968px;
@@ -942,6 +942,9 @@ header {
         padding: 0 1em 0 1em;
         position: relative;
         z-index: 2;
+        .blue{
+          color: #556de7;
+        }
         &.fixed{
           position: fixed;
           top: .7em;
@@ -992,7 +995,7 @@ header {
           cursor: pointer;
           padding: 2px 0 0;
           position: relative;
-          &:hover,&.active{
+          &.active{
             color: #6272cc;
             &:before{
               content: '';

@@ -402,7 +402,7 @@
                     }
                 }
                 .basic_bill{
-                    font-size: 1.12em;
+                    font-size: 1.1em;
                     border-radius: 18px;
                     overflow: hidden;
                     box-shadow: 0 0 4px 1px #bac0db;
@@ -491,6 +491,15 @@
                             }
                            
                         }
+                        .question_icon{
+                            display: inline-block;
+                            width: 1em;
+                            height: 1em;
+                            background: url(../image/icon/q_icon_gray.png)no-repeat;
+                            background-size: 100%;
+                            vertical-align: text-bottom;
+                            margin: 0 .25em 0 0;
+                        }
                         .right_box{
                             position: absolute;
                             top: 50%;
@@ -515,6 +524,126 @@
                                 transform: rotate(90deg);
                                 transition: all .2s ease-in-out;
                                 cursor: pointer;
+                            }
+                        }
+                    }
+                    .save_type{
+                        padding: 1em;
+                        background: #fff;
+                        width: 100%;
+                        .bk_box{
+                            border: 1px solid #b9bfdc;
+                            border-radius: 8px;
+                            line-height: 2.5em;
+                            height: 2.5em;
+                            width: 30%;
+                            overflow: hidden;
+                            .bk_wrap{
+                                padding: 0 1em;
+                            }
+                            span{
+                                &.bk_icon{
+                                    display: inline-block;
+                                    width: 1.12em;
+                                    height: 1.12em;
+                                    vertical-align: middle;
+                                    background: url(../image/my/china_bank.png)no-repeat;
+                                    background-size: 100%;
+                                }
+                            }
+                            p{
+                                display: inline-block;
+                                line-height: 100%;
+                                vertical-align: middle;
+                            }
+                            .arrow{
+                                display: inline-block;
+                                width: .5em;
+                                height: .8em;
+                                vertical-align: middle;
+                                background: url(../image/icon/arrow_g.png) no-repeat;
+                                background-size: 100%;
+                                transform: rotate(90deg);
+                            }
+                            .right_box{
+                                float: right;
+                            }
+                        }
+                        .row{
+                            overflow: hidden;
+                            &.box_7{
+                                margin: 0 -.8em 0 0;
+                                li{
+                                    width: calc(100% / 7);
+                                    .save_wrap{
+                                        margin: 0 .8em 0 0;
+                                    }
+                                }
+                            }
+                            &.box_5{
+                                margin: 0 -.8em 0 0;
+                                li{
+                                    width: calc(100% / 5);
+                                    .save_wrap{
+                                        margin: 0 .8em 0 0;
+                                        line-height: 1;
+                                        p{
+                                            font-size: 1.2em;
+                                            display: inline-block;
+                                            vertical-align: baseline;
+                                            &.money{
+                                                font-size: .8em;
+                                            }
+
+                                        }
+                                        &:hover,&.active{
+                                            color: #364cb9;
+                                        }
+                                    }
+                                }
+                            }
+                            li{
+                                float: left;
+                                text-align: center;
+                                padding: .5em 0;
+                                .save_wrap{
+                                    border: 1px solid #b9c0d2;
+                                    border-radius: 10px;
+                                    padding: 1em 0;
+                                    position: relative;
+                                    overflow: hidden;
+                                    &:hover,&.active{
+                                        border: 1px solid #3046b7;
+                                        &:before{
+                                            position: absolute;
+                                            content: '';
+                                            right: 0;
+                                            bottom: -1px;
+                                            width: 1.5em;
+                                            height: 1.5em;
+                                            background: url(../image/my/box_check.png)no-repeat;
+                                            background-size: 100%;
+                                            border-radius: 0 0 10px 0;
+                                        }
+                                    }
+
+                                }
+                                    span{
+                                        display: inline-block;
+                                        width: 3em;
+                                        height: 3em;
+                                        background: url(../image/my/save_icon.png)no-repeat;
+                                        background-size: 1400%;
+                                        @for $i from 1 through 14{
+                                            &.i#{$i}{
+                                                background-position-x:($i - 1) * -3em ;
+                                            }
+                                        }
+                                       }
+                                
+                                &:last-child{
+                                    margin: 0;
+                                }
                             }
                         }
                     }
