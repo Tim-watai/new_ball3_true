@@ -18,7 +18,12 @@ aside{
     .b617{
         width: 61.7%;
     }
-
+    &.ch_pw{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
     .f_box{
         float: left;
     }
@@ -29,6 +34,8 @@ aside{
         background: rgba(0,0,0,.4);
         z-index: 101;
     }
+    //{{波膽下注彈窗}}
+
     .bet_box{
         width: 36em;
         height: auto;
@@ -38,7 +45,12 @@ aside{
         position: absolute;
         left: calc(50vw - 18em);
         top: 100px;
-        
+        &.free_w{
+            width: auto;
+        }
+        &.pw_w{
+            width: 21em;
+        }
         overflow: hidden;
         .hidden_i_block.hidden_i_block.hidden_i_block{
             display: none;
@@ -473,5 +485,66 @@ aside{
             }
         }
   
+        li{
+            &.pw_size{
+                padding: 0 1em;
+                line-height: 2.5em;
+                overflow: hidden;
+                margin: 1em 0 0;
+                p,.right_box{
+                    display: inline-block;
+                }
+                p{
+                    color: #4d515d;
+                    font-size: 1.1em;
+                }
+                .right_box{
+                    float: right;
+                    height: 2.5em;
+                }
+                input{
+                    height: 100%;
+                    width: 16em;
+                    padding: 0 .5em;
+                    border: 1px solid #b9bfdc;
+                    border-radius: 8px;
+                }
+            }
+            &.pw_btn_area{
+                padding: 0 1em;
+                line-height: 2.5em;
+                overflow: hidden;
+                margin: 1.5em 0 1em;
+                .parent{
+                    margin: 0 -.5em 0 0;
+                    overflow: hidden;
+                }
+                .btn_wrap{
+                    width: calc(50% - .5em);
+                    margin: 0 .5em 0 0;
+                    float: left;
+                }
+                button{
+                    height: 2.5em;
+                    width: 100%;
+                    border-radius: 8px;
+                    p{
+                        font-size: 1.1em;
+                        font-weight: bold;
+                    }
+                    &.check{
+                        color: #fff;
+                        border: none;
+                        background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+                    }
+                    &.cancel{
+                        color: #4d515d;
+                        border: 1px solid #495cc5;
+                        background: linear-gradient(to bottom, #ffffff 0% ,#d5d9ef 100%);
+                    }
+                }
+                
+            }
+        }
     }
 }

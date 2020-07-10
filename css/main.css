@@ -190,6 +190,11 @@ aside .b52 {
 aside .b617 {
   width: 61.7%; }
 
+aside.ch_pw {
+  display: none; }
+  aside.ch_pw.active {
+    display: block; }
+
 aside .f_box {
   float: left; }
 
@@ -208,6 +213,10 @@ aside .bet_box {
   left: calc(50vw - 18em);
   top: 100px;
   overflow: hidden; }
+  aside .bet_box.free_w {
+    width: auto; }
+  aside .bet_box.pw_w {
+    width: 21em; }
   aside .bet_box .hidden_i_block.hidden_i_block.hidden_i_block {
     display: none; }
     aside .bet_box .hidden_i_block.hidden_i_block.hidden_i_block.active {
@@ -592,6 +601,58 @@ aside .bet_box {
         aside .bet_box .content .bets .check_page .f_box .wrap {
           vertical-align: middle;
           line-height: 100%; }
+  aside .bet_box li.pw_size {
+    padding: 0 1em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 1em 0 0; }
+    aside .bet_box li.pw_size p, aside .bet_box li.pw_size .right_box {
+      display: inline-block; }
+    aside .bet_box li.pw_size p {
+      color: #4d515d;
+      font-size: 1.1em; }
+    aside .bet_box li.pw_size .right_box {
+      float: right;
+      height: 2.5em; }
+    aside .bet_box li.pw_size input {
+      height: 100%;
+      width: 16em;
+      padding: 0 .5em;
+      border: 1px solid #b9bfdc;
+      border-radius: 8px; }
+  aside .bet_box li.pw_btn_area {
+    padding: 0 1em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 1.5em 0 1em; }
+    aside .bet_box li.pw_btn_area .parent {
+      margin: 0 -.5em 0 0;
+      overflow: hidden; }
+    aside .bet_box li.pw_btn_area .btn_wrap {
+      width: calc(50% - .5em);
+      margin: 0 .5em 0 0;
+      float: left; }
+    aside .bet_box li.pw_btn_area button {
+      height: 2.5em;
+      width: 100%;
+      border-radius: 8px; }
+      aside .bet_box li.pw_btn_area button p {
+        font-size: 1.1em;
+        font-weight: bold; }
+      aside .bet_box li.pw_btn_area button.check {
+        color: #fff;
+        border: none;
+        background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
+        background: -webkit-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
+        background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
+        background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%); }
+      aside .bet_box li.pw_btn_area button.cancel {
+        color: #4d515d;
+        border: 1px solid #495cc5;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
+        background: -webkit-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
+        background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
+        background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%); }
 
 .container.en main .left li p {
   font-size: .9em; }

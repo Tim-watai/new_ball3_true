@@ -312,7 +312,7 @@ $(document).ready(function() {
       //彈窗移動
       let isMove = true;
       //單關移動
-      $('.bet_box.blue .title').mousedown(
+      $('.bet_box.blue.free_w .title').mousedown(
           function(event){
           let isMove = true;
           let abs_x = event.pageX - $('aside .bet_box.blue').offset().left;
