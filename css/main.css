@@ -1095,7 +1095,8 @@ aside .bet_box {
       .container main.my_page .right .my_bill .basic_bill .save_type, .container main.my_page .right .my_bill_record .basic_bill .save_type {
         padding: 1em;
         background: #fff;
-        width: 100%; }
+        width: 100%;
+        cursor: pointer; }
         .container main.my_page .right .my_bill .basic_bill .save_type .bk_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .bk_box {
           border: 1px solid #b9bfdc;
           border-radius: 8px;
@@ -1155,9 +1156,28 @@ aside .bet_box {
           .container main.my_page .right .my_bill .basic_bill .save_type .row li, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li {
             float: left;
             padding: .5em 0; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .row li .t_left.t_left.t_left, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .t_left.t_left.t_left {
+              text-align: left; }
             .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 {
               width: 50%;
               position: relative; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50.t_right, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50.t_right {
+                text-align: right; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 p, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 p {
+                display: inline-block; }
+                .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 p.title, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 p.title {
+                  margin: 0 1em 0 0; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 input, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 input {
+                width: 50%;
+                padding: .5em 1em;
+                margin: 0; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .text_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .text_box {
+                padding: 0 0 0 1em;
+                line-height: 2.5em;
+                color: #838ba0;
+                vertical-align: middle;
+                display: inline-block;
+                width: 50%; }
               .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .row50, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .row50 {
                 margin: 0 0 .5em; }
                 .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .row50:last-child, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .row50:last-child {
@@ -1165,11 +1185,7 @@ aside .bet_box {
               .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .bk_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .bk_box {
                 display: inline-block;
                 vertical-align: middle;
-                width: 65%; }
-              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 p, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 p {
-                display: inline-block; }
-                .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 p.title, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 p.title {
-                  margin: 0 1em 0 0; }
+                width: 50%; }
               .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50:before, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50:before {
                 content: '';
                 position: absolute;
@@ -1183,6 +1199,12 @@ aside .bet_box {
                 background: #b9c0d2; }
               .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50:last-child:before, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50:last-child:before {
                 display: none; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .copy_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .copy_box {
+                width: 3em;
+                height: 1.5em;
+                margin: 0 0 0 .5em;
+                display: inline-block;
+                vertical-align: middle; }
               .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50 .copy, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 .copy {
                 width: 3em;
                 display: inline-block;
@@ -1214,6 +1236,17 @@ aside .bet_box {
               text-align: center;
               position: relative;
               overflow: hidden; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap .icon_change, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap .icon_change {
+                display: inline-block;
+                width: 2em;
+                height: 2em;
+                background: url(../image/my/change.png) no-repeat;
+                background-size: 100%;
+                vertical-align: middle; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap .right_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap .right_box {
+                float: right; }
+                .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap .right_box p, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap .right_box p {
+                  font-size: 1.2em; }
               .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap.li_h_2_3, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap.li_h_2_3 {
                 line-height: 2.3em;
                 padding: 0; }
@@ -1229,6 +1262,10 @@ aside .bet_box {
                   background: url(../image/my/box_check.png) no-repeat;
                   background-size: 100%;
                   border-radius: 0 0 10px 0; }
+                .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap:hover .icon_change, .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap.active .icon_change, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap:hover .icon_change, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap.active .icon_change {
+                  background-position-y: -2em; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap.for_change, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap.for_change {
+                padding: 0 2em; }
             .container main.my_page .right .my_bill .basic_bill .save_type .row li .text_tag, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .text_tag {
               display: inline-block; }
               .container main.my_page .right .my_bill .basic_bill .save_type .row li .text_tag .infor_i, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .text_tag .infor_i {
@@ -1254,9 +1291,9 @@ aside .bet_box {
             .container main.my_page .right .my_bill .basic_bill .save_type .row li input, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li input {
               line-height: 1.5em;
               width: 30%;
-              border-radius: 4px;
+              border-radius: 8px;
               border: 1px solid #b9c0d2;
-              padding: .5em;
+              padding: .5em 1em;
               margin: 0 1em 0 0; }
               .container main.my_page .right .my_bill .basic_bill .save_type .row li input::-webkit-input-placeholder, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li input::-webkit-input-placeholder {
                 color: #ced1e0; }

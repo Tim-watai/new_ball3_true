@@ -598,7 +598,7 @@
                   <p>網銀支付</p>
                 </div>
               </li>
-              <li>
+              <li class="pay_11">
                 <div class="save_wrap">
                   <span class="pay i11"></span>
                   <p>網銀支付</p>
@@ -666,15 +666,94 @@
                   </div>
                   <div class="li_h_2_3 row50">
                     <p class="title">收款帳號</p>
-                   <input type="text" class="li_h_2_3">
+                   <input type="text" >
+                    <span class="copy"><p>複製</p></span>
+                  </div>
+                  <div class="li_h_2_3 row50">
+                    <p class="title">換款方式</p>
+                   <div class="text_box">網路轉帳</div>
                     <span class="copy"><p>複製</p></span>
                   </div>
                 </li>
-                <li class="b50"></li>
+                <li class="b50 t_right">
+                  <div class="li_h_2_3 row50">
+                    <p class="title">支行</p>
+                    <div class="bk_box t_left">
+                      <div class="bk_wrap">
+                        <p>廣州新世界銀行</p>
+                        <div class="right_box">
+                          <div class="arrow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="copy"><p>複製</p></span>
+                  </div>
+                  <div class="li_h_2_3 row50">
+                    <p class="title">收款人</p>
+                    <input type="text" >
+                    <span class="copy"><p>複製</p></span>
+                  </div>
+                  <div class="li_h_2_3 row50">
+                    <p class="title">匯款帳號後4碼</p>
+                    <input type="text" >
+                    <span class="copy_box"></span>
+                  </div>
+                </li>
               </ul>
             </div>
 
           
+          </div>
+           <!--網關卡-->
+           <div class="basic_bill pay_11">
+            <div class="b_name">
+              <p class="bf">支付通道</p>
+            </div>
+            <div class="save_type">
+              <ul class="row box_5">
+                <li>
+                  <div class="save_wrap li_h_2_3 t_left for_change">
+                    <div class="icon_change"></div>
+                    <div class="right_box">
+                      <p>0</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="save_wrap li_h_2_3 t_left for_change">
+                    <div class="icon_change"></div>
+                    <div class="right_box">
+                      <p>1</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="save_wrap li_h_2_3 t_left for_change">
+                    <div class="icon_change"></div>
+                    <div class="right_box">
+                      <p>2</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="save_wrap li_h_2_3 t_left for_change">
+                    <div class="icon_change"></div>
+                    <div class="right_box">
+                      <p>3</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="save_wrap li_h_2_3 t_left for_change">
+                    <div class="icon_change"></div>
+                    <div class="right_box">
+                      <p>4</p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
           </div>
           <!--存款金額-->
           <div class="basic_bill pay_1">
@@ -791,6 +870,63 @@
               </ul>
             </div>
           </div>
+          <div class="basic_bill pay_11">
+            <div class="b_name">
+              <p class="bf">存款金額</p>
+            </div>
+            <div class="save_type">
+              <ul class="row box_5">
+                <li>
+                  <div class="save_wrap li_h_2_3">
+                    <p class="money">NT$</p>
+                    <p>1000</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="save_wrap li_h_2_3">
+                    <p class="money">NT$</p>
+                    <p>1000</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="save_wrap li_h_2_3">
+                    <p class="money">NT$</p>
+                    <p>1000</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="save_wrap li_h_2_3">
+                    <p class="money">NT$</p>
+                    <p>1000</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="save_wrap li_h_2_3">
+                    <p class="money">NT$</p>
+                    <p>1000</p>
+                  </div>
+                </li>
+
+              </ul>
+              <ul class="row">
+                <li class="full">
+                  <input type="text" placeholder="請輸入100-50000元之間的金額">
+                  <div class="text_tag li_h_2_3">
+                    <span class="infor_i"></span>
+                    <p>建議您存入帶尾數的金額，以便存款後能更快匹配到帳</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="row">
+                <li class="full">
+                  <button class="save_btn">
+                    <p>立即存款</p>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+         
         </div>
 
       </div>
@@ -6469,13 +6605,18 @@
     // }
     //_{網銀支付:1}
     $('li.pay_1').click(function () {
-      pay_type(0);
+      pay_type(1);
       let my = $(this).children();
       act_on_off(my);
     })
     //_{流水號匯款}
     $('li.pay_8').click(function () {
-      pay_type(1);
+      pay_type(8);
+      let my = $(this).children();
+      act_on_off(my);
+    })
+    $('li.pay_11').click(function () {
+      pay_type(11);
       let my = $(this).children();
       act_on_off(my);
     })
@@ -6486,15 +6627,20 @@
     }
     function pay_type(pay) {
       //_{網銀支付:1}
-      if (pay == 0) {
+      if (pay == 1) {
         $('.pay_change .basic_bill.pay_1').siblings().css('display', 'none');
         $('.pay_change .basic_bill.pay_1').css('display', 'block');
         console.log('pay 1');
       }
-      //_{流水號匯款}
-      else if (pay == 1) {
+      //_{流水號匯款:8}
+      else if (pay == 8) {
         $('.pay_change .basic_bill.pay_8').siblings().css('display', 'none');
         $('.pay_change .basic_bill.pay_8').css('display', 'block');
+      }
+         //_{網關卡:11}
+         else if (pay == 11) {
+        $('.pay_change .basic_bill.pay_11').siblings().css('display', 'none');
+        $('.pay_change .basic_bill.pay_11').css('display', 'block');
       }
     }
   })

@@ -532,6 +532,9 @@
                         padding: 1em;
                         background: #fff;
                         width: 100%;
+
+                        
+                        cursor: pointer;
                         .bk_box{
                             border: 1px solid #b9bfdc;
                             border-radius: 8px;
@@ -608,9 +611,34 @@
                             li{
                                 float: left;
                                 padding: .5em 0;
+                                .t_left.t_left.t_left{
+                                    text-align: left;
+                                }
                                 &.b50{
                                     width: 50%;
                                     position: relative;
+                                    &.t_right{
+                                        text-align: right;
+                                    }
+                                    p{
+                                        display: inline-block;
+                                        &.title{
+                                            margin: 0 1em 0 0;
+                                        }
+                                    }
+                                    input{
+                                        width: 50%;
+                                        padding: .5em 1em;
+                                        margin: 0;
+                                    }
+                                    .text_box{
+                                        padding: 0 0 0 1em;
+                                        line-height: 2.5em;
+                                        color: #838ba0;
+                                        vertical-align: middle;
+                                        display: inline-block;
+                                        width: 50%;
+                                    }
                                     .row50{
                                         margin: 0 0 .5em;
                                         &:last-child{
@@ -620,14 +648,9 @@
                                     .bk_box{
                                         display: inline-block;
                                         vertical-align: middle;
-                                        width: 65%;
+                                        width: 50%;
                                     }
-                                    p{
-                                        display: inline-block;
-                                        &.title{
-                                            margin: 0 1em 0 0;
-                                        }
-                                    }
+                                    
                                     &:before{
                                         content: '';
                                         position: absolute;
@@ -642,6 +665,13 @@
                                         &:before{
                                             display: none;
                                         }
+                                    }
+                                    .copy_box{
+                                        width: 3em;
+                                        height: 1.5em;
+                                        margin: 0 0 0 .5em;
+                                        display: inline-block;
+                                        vertical-align: middle;
                                     }
                                     .copy{
                                         width: 3em;
@@ -681,6 +711,20 @@
                                     text-align: center;
                                     position: relative;
                                     overflow: hidden;
+                                    .icon_change{
+                                        display: inline-block;
+                                        width: 2em;
+                                        height: 2em;
+                                        background: url(../image/my/change.png)no-repeat;
+                                        background-size: 100%;
+                                        vertical-align: middle;
+                                    }
+                                    .right_box{
+                                        float: right;
+                                        p{
+                                            font-size: 1.2em;
+                                        }
+                                    }
                                     &.li_h_2_3{
                                         line-height: 2.3em;
                                         padding: 0;
@@ -698,6 +742,12 @@
                                             background-size: 100%;
                                             border-radius: 0 0 10px 0;
                                         }
+                                        .icon_change{
+                                            background-position-y: -2em;
+                                        }
+                                    }
+                                    &.for_change{
+                                        padding: 0 2em;
                                     }
 
                                 }
@@ -728,9 +778,9 @@
                                 input{
                                     line-height: 1.5em;
                                     width: 30%;
-                                    border-radius: 4px;
+                                    border-radius: 8px;
                                     border: 1px solid #b9c0d2;
-                                    padding: .5em;
+                                    padding: .5em 1em;
                                     margin: 0 1em 0 0;
                                     &::placeholder{
                                         color: #ced1e0;
