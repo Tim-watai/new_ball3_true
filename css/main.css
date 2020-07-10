@@ -1296,7 +1296,8 @@ aside .bet_box {
               border-radius: 10px;
               text-align: center;
               position: relative;
-              overflow: hidden; }
+              overflow: hidden;
+              padding: .5em 0; }
               .container main.my_page .right .my_bill .basic_bill .save_type .row li .save_wrap .icon_change, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .save_wrap .icon_change {
                 display: inline-block;
                 width: 2em;
