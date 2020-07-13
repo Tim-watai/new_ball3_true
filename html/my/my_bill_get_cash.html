@@ -279,16 +279,49 @@
                      <span>儲蓄卡</span>
                    </div>
                  </div>
+                 <div class="card_num">
+                   <span>◆◆◆◆</span>
+                   <span>◆◆◆◆</span>
+                   <span>◆◆◆◆</span>
+                   <span>9572</span>
+                 </div>
+                 <div class="card_check blue"></div>
                 </div>
               </div>
               <div class="box_3">
                 <div class="card_box green_card text_left finish_card">
-                2
+                  <div class="card_name">
+                    <i class="i2 icon"></i>
+                    <div class="r_wrap">
+                      <span>農業銀行</span>
+                      <span>儲蓄卡</span>
+                    </div>
+                  </div>
+                  <div class="card_num">
+                    <span>◆◆◆◆</span>
+                    <span>◆◆◆◆</span>
+                    <span>◆◆◆◆</span>
+                    <span>1578</span>
+                  </div>
+                  <div class="card_check green"></div>
                 </div>
               </div>
               <div class="box_3">
                 <div class="card_box pink_card text_left finish_card">
-                 1
+                  <div class="card_name">
+                    <i class="i3 icon"></i>
+                    <div class="r_wrap">
+                      <span>中國銀行</span>
+                      <span>儲蓄卡</span>
+                    </div>
+                  </div>
+                  <div class="card_num">
+                    <span>◆◆◆◆</span>
+                    <span>◆◆◆◆</span>
+                    <span>◆◆◆◆</span>
+                    <span>3682</span>
+                  </div>
+                  <div class="card_check pink"></div>
                 </div>
               </div>
             </div>
@@ -6244,7 +6277,7 @@
           )//up
       })//down
 
-  //{{立即取款}}
+  //立即取款 輸入觸發
   let input_cash = $('.basic_bill .save_type .row li input');
   let cash_btn = $('.row li .cash_btn');
   input_cash.click(function(){
@@ -6256,6 +6289,14 @@
     }
   })
     
+  //選擇卡片.check
+  let finish_card = $('.card_box.finish_card ');
+  finish_card.click(function(){
+    if($(this).hasClass('check') != true){
+      $(this).parent().siblings().children().removeClass('check');
+      $(this).addClass('check');
+    }
+  })
 })//document_ready
 </script>
 <script type="text/javascript" src="../../js/index.js"></script>
