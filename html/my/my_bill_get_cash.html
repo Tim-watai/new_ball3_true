@@ -6005,7 +6005,7 @@
     </div>
   </div>
 </aside>
-<aside class="add_b_card black_bg active">
+<aside class="add_b_card black_bg">
   <div class="bet_box blue add_card_w">
     <div class="title">
       <p>添加銀行卡</p>
@@ -6016,7 +6016,7 @@
        <div class="box_2 margin_2">
          <div class="box">
            <div class="row">
-             <p class="name">開戶銀行</p>
+             <p class="name gray">開戶銀行</p>
             <div class="right_box">
               <div class="blue_box_size li_2_5">
                 選擇銀行
@@ -6030,7 +6030,7 @@
          </div>
          <div class="box">
           <div class="row">
-            <p class="name">開戶城市</p>
+            <p class="name gray">開戶城市</p>
            <div class="right_box half">
               <div class="half_box">
                 <div class="blue_box_size li_2_5">
@@ -6055,16 +6055,15 @@
        <div class="box_2 margin_2">
         <div class="box">
           <div class="row">
-            <p class="name">支行名稱</p>
+            <p class="name gray">支行名稱</p>
            <div class="right_box">
              <input class="blue_box_size li_2_5">
            </div>
           </div>
-          
         </div>
         <div class="box">
          <div class="row">
-           <p class="name">銀行帳號</p>
+           <p class="name gray">銀行帳號</p>
           <div class="right_box">
             <input class="blue_box_size li_2_5">
           </div>
@@ -6074,7 +6073,7 @@
       <div class="box_2 margin_2">
         <div class="box">
           <div class="row">
-            <p class="name">戶名</p>
+            <p class="name gray">戶名</p>
           <div class="right_box">
             <input class="blue_box_size li_2_5">
           </div>
@@ -6083,7 +6082,7 @@
         </div>
         <div class="box">
         <div class="row">
-          <p class="name">確認帳號</p>
+          <p class="name gray">確認帳號</p>
           <div class="right_box">
             <input class="blue_box_size li_2_5">
           </div>
@@ -6093,7 +6092,7 @@
       <div class="box_2 margin_2">
         <div class="box">
           <div class="row">
-            <p class="name">手機號碼</p>
+            <p class="name gray">手機號碼</p>
            <div class="right_box">
              <input class="blue_box_size li_2_5">
            </div>
@@ -6102,7 +6101,7 @@
         </div>
         <div class="box">
          <div class="row">
-           <p class="name">QQ帳號</p>
+           <p class="name gray">QQ帳號</p>
           <div class="right_box">
             <input class="blue_box_size li_2_5">
           </div>
@@ -6112,7 +6111,7 @@
       <div class="box_2 margin_2">
         <div class="box">
           <div class="row">
-            <p class="name">Wechat</p>
+            <p class="name gray">Wechat</p>
            <div class="right_box">
              <input class="blue_box_size li_2_5">
            </div>
@@ -6125,6 +6124,9 @@
          </div>
         </div>
       </div>
+      <div class="mid_box">
+        <div class="blue_btn">添加銀行卡</div>
+      </div>
      </div>
     </div>
   </div>
@@ -6132,12 +6134,6 @@
 <script>
   $(document).ready(function () {
     console.log('get_cash_page');
-
-
-
-
-
-
 
   //修改密碼彈窗
   let ch_pw = $('.tag_wrap .tag.ch_pw');
@@ -6170,11 +6166,62 @@
               }
               //move接up
             }).mouseup(
-          function () {
-            isMove = false;
-          }
-      )//up
+              function () {
+                isMove = false;
+              }
+            )//up
         })//down
+
+    //添加銀行卡彈窗
+    let add_btn = $('.box_3 .card_box.m_card');
+    let add_window = $('.black_bg.add_b_card');
+    add_btn.click(function(){
+    if(add_window.hasClass('active')!= true)
+    {
+       return add_window.addClass('active');
+    }
+  })
+  //add_card close
+    let add_close = $('aside .add_card_w .title .close');
+    add_close.click(function(){
+      return add_window.removeClass('active');
+    })
+
+  //add_card 彈窗_移動
+  $('.bet_box.blue.add_card_w .title').mousedown(
+        function(event){
+        let isMove = true;
+        let abs_x = event.pageX - $('aside .bet_box.blue.add_card_w').offset().left;
+        let abs_y = event.pageY - $('aside .bet_box.blue.add_card_w').offset().top;
+        //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
+        let e_px = event.pageX;
+        let leftt = $('aside .bet_box.add_card_w').offset().left;
+        $(document).mousemove(
+          function(event){
+            if (isMove) {
+            let obj = $('aside .bet_box.add_card_w');
+            obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
+            }
+            //move接up
+          }).mouseup(
+            function () {
+              isMove = false;
+            }
+          )//up
+      })//down
+
+  //{{立即取款}}
+  let input_cash = $('.basic_bill .save_type .row li input');
+  let cash_btn = $('.row li .cash_btn');
+  input_cash.click(function(){
+    if(cash_btn.hasClass('active') != true){
+       return cash_btn.addClass('active');
+    }else
+    {
+      return cash_btn.removeClass('active')
+    }
+  })
+    
 })//document_ready
 </script>
 <script type="text/javascript" src="../../js/index.js"></script>

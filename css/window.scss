@@ -92,7 +92,7 @@ aside{
                         }
                     }
                     .window_box{
-                        padding: 1em;
+                        padding: 1em 1.5em;
                         width: 100%;
                         .box_2{
                             overflow: hidden;
@@ -120,6 +120,9 @@ aside{
                                         display: inline-block;
                                         vertical-align: middle;
                                         width: 25%;
+                                        &.gray{
+                                            color: #4d515d;
+                                        }
                                         }
                                     }
                                     .right_box{
@@ -166,6 +169,20 @@ aside{
                                     }
                                 }
                             }
+                        }
+                        .blue_btn{
+                            color: #fff;
+                            background: linear-gradient(to bottom ,#8f9cdc 0%,#2e44b7 100%);
+                            width: auto;
+                            display: inline-block;
+                            border-radius: 8px;
+                            padding: .5em 4em;
+                            cursor: pointer;
+                        }
+                        .mid_box{
+                            margin: 2em 0 1em;
+                            text-align: center;
+
                         }
                     }
             }

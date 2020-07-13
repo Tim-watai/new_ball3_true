@@ -251,7 +251,7 @@ aside .bet_box {
     aside .bet_box.blue .content .bets .check_icon {
       background: #354ecf; }
     aside .bet_box.blue .content .window_box {
-      padding: 1em;
+      padding: 1em 1.5em;
       width: 100%; }
       aside .bet_box.blue .content .window_box .box_2 {
         overflow: hidden; }
@@ -272,6 +272,8 @@ aside .bet_box {
               display: inline-block;
               vertical-align: middle;
               width: 25%; }
+              aside .bet_box.blue .content .window_box .box_2 .box .row p.name.gray {
+                color: #4d515d; }
             aside .bet_box.blue .content .window_box .box_2 .box .row .right_box {
               float: right;
               width: 75%; }
@@ -305,6 +307,20 @@ aside .bet_box {
                     -webkit-transform: rotate(90deg);
                     -ms-transform: rotate(90deg);
                     transform: rotate(90deg); }
+      aside .bet_box.blue .content .window_box .blue_btn {
+        color: #fff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2e44b7));
+        background: -webkit-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
+        background: -o-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
+        background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
+        width: auto;
+        display: inline-block;
+        border-radius: 8px;
+        padding: .5em 4em;
+        cursor: pointer; }
+      aside .bet_box.blue .content .window_box .mid_box {
+        margin: 2em 0 1em;
+        text-align: center; }
   aside .bet_box.red .title {
     background: -webkit-gradient(linear, left top, left bottom, from(#eb0004), to(#850004));
     background: -webkit-linear-gradient(top, #eb0004 0%, #850004 100%);
@@ -1569,7 +1585,8 @@ aside .bet_box {
                 line-height: 5.5em;
                 overflow: hidden;
                 background: #fff;
-                border: 1px solid #b9bfdc; }
+                border: 1px solid #b9bfdc;
+                cursor: auto; }
                 .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.gray_top p.g_top, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.gray_top p.g_top {
                   margin: 0;
                   padding: 0 0 0 1em;
