@@ -24,6 +24,12 @@ aside{
             display: block;
         }
     }
+    &.add_b_card{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
     .f_box{
         float: left;
     }
@@ -50,6 +56,9 @@ aside{
         }
         &.pw_w{
             width: 21em;
+        }
+        &.add_card_w{
+            width: 47em;
         }
         overflow: hidden;
         .hidden_i_block.hidden_i_block.hidden_i_block{
@@ -80,6 +89,83 @@ aside{
                         }
                         .check_icon{
                             background: #354ecf;
+                        }
+                    }
+                    .window_box{
+                        padding: 1em;
+                        width: 100%;
+                        .box_2{
+                            overflow: hidden;
+                            &.margin_2{
+                                margin: .8em -2em 0 0;
+                                &:first-child{
+                                    margin: 0 -2em 0 0;
+                                }
+                                .box{
+                                    .row{
+                                        margin: 0 2em 0 0;
+                                    }
+                                }
+                            }
+                            .box{
+                                float: left;
+                                width: 50%;
+                                .row{
+                                    overflow: hidden;
+                                    line-height: 3em;
+                                   
+                                    p{
+                                    &.name{
+                                        line-height: 100%;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        width: 25%;
+                                        }
+                                    }
+                                    .right_box{
+                                        float: right;
+                                        width: 75%;
+                                        &.half{
+                                            overflow: hidden;
+                                            margin: 0 -1em 0 0;
+                                            .half_box{
+                                                width: calc(50% - 1em);
+                                                display: inline-block;
+                                                float: left;
+                                                margin: 0 1em 0 0;
+                                                .blue_box_size{
+                                                   
+                                                }
+                                            }
+                                        }
+                                        .blue_box_size{
+                                            border: 1px solid #b9bfdc;
+                                            border-radius: 8px;
+                                            padding: 0 1em;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            color: #4d515d;
+                                            width: 100%;
+                                            &.li_2_5{
+                                                line-height: 2.5em;
+                                            }
+                                            .size_right{
+                                                float: right;
+                                                .arrow{
+                                                    width: .5em;
+                                                    height: .9em;
+                                                    background: url(../image/icon/arrow_g.png) no-repeat;
+                                                    display: inline-block;
+                                                    vertical-align: middle;
+                                                    background-size: 100%;
+                                                    transform: rotate(90deg);
+                                                }
+                                            }
+                                        }
+                                     
+                                    }
+                                }
+                            }
                         }
                     }
             }

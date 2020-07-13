@@ -195,6 +195,11 @@ aside.ch_pw {
   aside.ch_pw.active {
     display: block; }
 
+aside.add_b_card {
+  display: none; }
+  aside.add_b_card.active {
+    display: block; }
+
 aside .f_box {
   float: left; }
 
@@ -217,6 +222,8 @@ aside .bet_box {
     width: auto; }
   aside .bet_box.pw_w {
     width: 21em; }
+  aside .bet_box.add_card_w {
+    width: 47em; }
   aside .bet_box .hidden_i_block.hidden_i_block.hidden_i_block {
     display: none; }
     aside .bet_box .hidden_i_block.hidden_i_block.hidden_i_block.active {
@@ -243,6 +250,61 @@ aside .bet_box {
         border: none; }
     aside .bet_box.blue .content .bets .check_icon {
       background: #354ecf; }
+    aside .bet_box.blue .content .window_box {
+      padding: 1em;
+      width: 100%; }
+      aside .bet_box.blue .content .window_box .box_2 {
+        overflow: hidden; }
+        aside .bet_box.blue .content .window_box .box_2.margin_2 {
+          margin: .8em -2em 0 0; }
+          aside .bet_box.blue .content .window_box .box_2.margin_2:first-child {
+            margin: 0 -2em 0 0; }
+          aside .bet_box.blue .content .window_box .box_2.margin_2 .box .row {
+            margin: 0 2em 0 0; }
+        aside .bet_box.blue .content .window_box .box_2 .box {
+          float: left;
+          width: 50%; }
+          aside .bet_box.blue .content .window_box .box_2 .box .row {
+            overflow: hidden;
+            line-height: 3em; }
+            aside .bet_box.blue .content .window_box .box_2 .box .row p.name {
+              line-height: 100%;
+              display: inline-block;
+              vertical-align: middle;
+              width: 25%; }
+            aside .bet_box.blue .content .window_box .box_2 .box .row .right_box {
+              float: right;
+              width: 75%; }
+              aside .bet_box.blue .content .window_box .box_2 .box .row .right_box.half {
+                overflow: hidden;
+                margin: 0 -1em 0 0; }
+                aside .bet_box.blue .content .window_box .box_2 .box .row .right_box.half .half_box {
+                  width: calc(50% - 1em);
+                  display: inline-block;
+                  float: left;
+                  margin: 0 1em 0 0; }
+              aside .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size {
+                border: 1px solid #b9bfdc;
+                border-radius: 8px;
+                padding: 0 1em;
+                display: inline-block;
+                vertical-align: middle;
+                color: #4d515d;
+                width: 100%; }
+                aside .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size.li_2_5 {
+                  line-height: 2.5em; }
+                aside .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size .size_right {
+                  float: right; }
+                  aside .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size .size_right .arrow {
+                    width: .5em;
+                    height: .9em;
+                    background: url(../image/icon/arrow_g.png) no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                    background-size: 100%;
+                    -webkit-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    transform: rotate(90deg); }
   aside .bet_box.red .title {
     background: -webkit-gradient(linear, left top, left bottom, from(#eb0004), to(#850004));
     background: -webkit-linear-gradient(top, #eb0004 0%, #850004 100%);
