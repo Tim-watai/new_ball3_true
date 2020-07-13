@@ -924,7 +924,23 @@
                                  background: #f1f1f1;
                                  border-radius: 8px;
                                  cursor: pointer;
+                                &.gray_top{
+                                    line-height: 5.5em;
+                                    overflow: hidden;
+                                    background: #fff;
+                                    border: 1px solid #b9bfdc;
+                                    p{
+                                       &.g_top{
+                                        margin: 0;
+                                        padding: 0 0 0 1em;
+                                        text-align: left;
+                                        background: #dee0e5;
+                                        color: #4d515d;
+                                        line-height: 2.5em;
 
+                                       }
+                                    }
+                                }
                                  &.m_card{
                                     transition: all .2s ease-in-out;
                                     &:hover,&.active{
@@ -935,12 +951,15 @@
                                         }
                                     }
                                  }
-                                 
+
                      
                                  .icon_wrap{
                                     display: inline-block;
                                     line-height: 1;
                                     vertical-align: middle;
+                                    P{
+                                        color: #4d515d;
+                                    }
                                  }
                                  .c_icon{
                                     width: 2.8em;
@@ -948,6 +967,9 @@
                                     background: url(../image/my/add_card.png)no-repeat;
                                     background-size: 200%;
                                     display: inline-block;
+                                 }
+                                 .g_top_mid{
+                                     font-size: 1.2em;
                                  }
                                  p{
                                      line-height: 1.2;
