@@ -500,6 +500,17 @@
                             background-size: 100%;
                             vertical-align: text-bottom;
                             margin: 0 .25em 0 0;
+                            cursor: pointer;
+                        }
+                        .reset_icon{
+                            display: inline-block;
+                            width: 1em;
+                            height: 1em;
+                            background: url(../image/my/reset.png)no-repeat;
+                            background-size: 100%;
+                            vertical-align: text-bottom;
+                            margin: 0 .25em 0 0;
+                            cursor: pointer;
                         }
                         .right_box{
                             position: absolute;
@@ -507,7 +518,7 @@
                             height: 100%;
                             float: right;
                             line-height: 2em;
-                            right: 1em;
+                            right: 1.5em;
                             transform: translateY(-50%);
                             p{
                                 display: inline-block;
@@ -532,9 +543,6 @@
                         padding: 1em;
                         background: #fff;
                         width: 100%;
-
-                        
-                        cursor: pointer;
                         .bk_box{
                             border: 1px solid #b9bfdc;
                             border-radius: 8px;
@@ -776,6 +784,20 @@
                                         font-size: 1.2em;
                                     }
                                 }
+                                .cash_btn{
+                                    background: #c3c7d2;
+                                    color: #fff;
+                                    font-weight: bold;
+                                    width: 30%;
+                                    height: 3em;
+                                    border-radius: 4px;
+                                    p{
+                                        font-size: 1.2em;
+                                    }
+                                    &.active{
+                                        background: linear-gradient(to bottom,#8e9bdc 0%, #3046b7);
+                                    }
+                                }
                                 input{
                                     line-height: 1.5em;
                                     width: 30%;
@@ -807,6 +829,135 @@
                                     }
                             }
                         }
+                        //取款_中心&鎖定_錢包
+                        .mb_box{
+                            border: 1px solid #b9c0d2;
+                            border-radius: 4px;
+                            overflow: hidden;
+                            line-height: 6em;
+                            height: 6em;
+                            .b50{
+                                width: 50%;
+                                float: left;
+                                position: relative;
+                                &:last-child{
+                                    &:before{
+                                        display: none;
+                                    }
+                                }
+                                &:before{
+                                    position: absolute;
+                                    content: '';
+                                    right: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    width: 1px;
+                                    height: calc(100% - 2em);
+                                    background: #b9c0d2;
+                                }
+                                .mb_i1,.mb_i2{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    margin: 0 0 0 3.5em;
+                                }
+                                .mb_i1{
+                                    background: url(../image/my/mb_1.png)no-repeat;
+                                    background-size: 100%;
+                                    width: 2.3em;
+                                    height: 2.3em;
+                                }
+                                .mb_i2{
+                                    background: url(../image/my/mb_2.png)no-repeat;
+                                    background-size: 100%;
+                                    width: 2.4em;
+                                    height: 2.3em;
+                                }
+                                .text_wrap{
+                                    display: inline-block;
+                                    line-height: 6em;
+                                    position: absolute;
+                                    left: 7em;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    p{
+                                        line-height: 3em;
+                                        &:last-child{
+                                            font-size: .95em;
+                                        }
+                                    }
+                                    span{
+                                        display: inline-block;
+                                        font-size: 1.7em;
+                                    }
+                                    p,span{
+                                        &.red{
+                                            color: #c75665;
+                                        }
+                                    }
+                                }
+                                .r_btn{
+                                    border-radius: 12px;
+                                    background: #d7af8a;
+                                    color: #fff;
+                                    position: absolute;
+                                    top: 1em;
+                                    right: 4em;
+                                    padding: .1em .5em;
+                                }
+                            }
+                        }
+                        //添加銀行卡
+                     .cards{
+                         width: auto;
+                         height: 8em;
+                         line-height: 8em;
+                         margin: 0 -1em 0 0;
+                         &.cash_num{
+                             margin: 1.5em -1em 0 0;
+                         }
+                         .box_3{
+                             width: calc(100% / 3);
+                             float: left;
+                             .card_box{
+                                 margin: 0 1em 0 0;
+                                 text-align: center;
+                                 background: #f1f1f1;
+                                 border-radius: 8px;
+                                 cursor: pointer;
+
+                                 &.m_card{
+                                    transition: all .2s ease-in-out;
+                                    &:hover,&.active{
+                                        background: #fff;
+                                        box-shadow: 0 0 6px 2px #e3e5f1;
+                                        .c_icon{
+                                            background-position-x: -2.8em;
+                                        }
+                                    }
+                                 }
+                                 
+                     
+                                 .icon_wrap{
+                                    display: inline-block;
+                                    line-height: 1;
+                                    vertical-align: middle;
+                                 }
+                                 .c_icon{
+                                    width: 2.8em;
+                                    height: 2.1em;
+                                    background: url(../image/my/add_card.png)no-repeat;
+                                    background-size: 200%;
+                                    display: inline-block;
+                                 }
+                                 p{
+                                     line-height: 1.2;
+                                     color: #838ba0;
+                                     margin: .5em 0 0;
+                                 }
+                             }
+                         }
+                         
+                     }
                     }
                     .bill_row{
                         border-top: 1px solid #b9c0d2;
