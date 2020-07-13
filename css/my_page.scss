@@ -837,6 +837,58 @@
                             overflow: hidden;
                             line-height: 6em;
                             height: 6em;
+                            &.trans{
+                                width: 60%;
+                                line-height: 6em;
+                                height: 7em;
+                                &.b35{
+                                    width: 35%;
+                                }
+                                .trans_box{
+                                    padding: 1em;
+                                    overflow: hidden;
+                                    .row{
+                                        display: block;
+                                        float: left;
+                                        line-height: 2.5em;
+                                        width: 100%;
+                                        .red{
+                                            color: #c75665;
+                                        }
+                                        .big_t{
+                                            font-size: 1.7em;
+                                        }
+                                        .yellow_btn{
+                                            color: #fff;
+                                            background: #d7af8a;
+                                            padding: .125em .5em;
+                                            font-size: 1em;
+                                            border-radius: 12px;
+                                        }
+                                        .right_box{
+                                            float: right;
+                                        }
+                                        i{
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            &.icon{
+                                                width: 1em;
+                                                height: 1em;
+                                                margin: 0 .5em 0 0;
+                                                &.m1{
+                                                    background: url(../image/my/mb_1.png)no-repeat;
+                                                background-size: 100%;
+                                                }
+                                                &.m2{
+                                                    background: url(../image/my/mb_2.png)no-repeat;
+                                                background-size: 100%;
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                             .b50{
                                 width: 50%;
                                 float: left;
@@ -1078,7 +1130,7 @@
                                     display: inline-block;
                                  }
                                  .g_top_mid{
-                                     font-size: 1.2em;
+                                     font-size: 1.8em;
                                  }
                                  p{
                                      line-height: 1.2;
