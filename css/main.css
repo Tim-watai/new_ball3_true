@@ -1244,7 +1244,8 @@ aside .bet_box {
       .container main.my_page .right .my_bill .basic_bill .save_type, .container main.my_page .right .my_bill_record .basic_bill .save_type {
         padding: 2em;
         background: #fff;
-        width: 100%; }
+        width: 100%;
+        overflow: hidden; }
         .container main.my_page .right .my_bill .basic_bill .save_type .bk_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .bk_box {
           border: 1px solid #b9bfdc;
           border-radius: 8px;
@@ -1511,7 +1512,8 @@ aside .bet_box {
           .container main.my_page .right .my_bill .basic_bill .save_type .mb_box.trans, .container main.my_page .right .my_bill_record .basic_bill .save_type .mb_box.trans {
             width: 60%;
             line-height: 6em;
-            height: 7em; }
+            height: 7em;
+            float: left; }
             .container main.my_page .right .my_bill .basic_bill .save_type .mb_box.trans.b35, .container main.my_page .right .my_bill_record .basic_bill .save_type .mb_box.trans.b35 {
               width: 35%; }
             .container main.my_page .right .my_bill .basic_bill .save_type .mb_box.trans .trans_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .mb_box.trans .trans_box {

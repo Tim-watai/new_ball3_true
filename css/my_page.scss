@@ -544,6 +544,8 @@
                         padding: 2em;
                         background: #fff;
                         width: 100%;
+                        //0713
+                        overflow: hidden;
                         .bk_box{
                             border: 1px solid #b9bfdc;
                             border-radius: 8px;
@@ -841,6 +843,7 @@
                                 width: 60%;
                                 line-height: 6em;
                                 height: 7em;
+                                float: left;
                                 &.b35{
                                     width: 35%;
                                 }
