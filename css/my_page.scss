@@ -540,7 +540,8 @@
                         }
                     }
                     .save_type{
-                        padding: 1em;
+                        // padding: 1em;
+                        padding: 2em;
                         background: #fff;
                         width: 100%;
                         .bk_box{
@@ -909,23 +910,60 @@
                         //添加銀行卡
                      .cards{
                          width: auto;
-                         height: 8em;
-                         line-height: 8em;
-                         margin: 0 -1em 0 0;
+                         height: 10em;
+                         line-height: 10em;
+                         margin: 0 -2em 0 0;
                          &.cash_num{
-                             margin: 1.5em -1em 0 0;
+                             margin: 1.5em -2em 0 0;
                          }
                          .box_3{
                              width: calc(100% / 3);
                              float: left;
                              .card_box{
-                                 margin: 0 1em 0 0;
+                                 margin: 0 2em 0 0;
                                  text-align: center;
                                  background: #f1f1f1;
                                  border-radius: 8px;
-                                 cursor: pointer;
+                               
+                                 &.text_left{
+                                     text-align: left;
+                                 }
+                                 &.finish_card{
+                                    color: #fff;
+                                    .card_name{
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        line-height: 3em;
+                                        i{
+                                            &.icon{
+                                                display: inline-block;
+                                                vertical-align: middle;
+                                                width: 2.5em;
+                                                height: 2.5em;
+                                                background: url(../image/my/card_icon.png)no-repeat;
+                                                background-size: 300%;
+                                            }
+                                        }
+                                        .r_wrap{
+                                            float: right;
+                                            line-height: 1.5em;
+                                            span{
+                                                display: block;
+                                            }
+                                        }
+                                     }
+                                 }
+                                 &.blue_card.blue_card.blue_card{
+                                     background: linear-gradient(to left, #a3c3f4 0%, #6589c6 100%);
+                                 }
+                                 &.green_card.green_card.green_card{
+                                    background: linear-gradient(to left, #60d6ce 0%, #31a8b1 100%);
+                                }
+                                &.pink_card.pink_card.pink_card{
+                                    background: linear-gradient(to left, #ffadba 0%, #d7767a 100%);
+                                }
                                 &.gray_top{
-                                    line-height: 5.5em;
+                                    line-height: 7.5em;
                                     overflow: hidden;
                                     background: #fff;
                                     border: 1px solid #b9bfdc;
@@ -944,6 +982,7 @@
                                 }
                                  &.m_card{
                                     transition: all .2s ease-in-out;
+                                    cursor: pointer;
                                     &:hover,&.active{
                                         background: #fff;
                                         box-shadow: 0 0 6px 2px #e3e5f1;

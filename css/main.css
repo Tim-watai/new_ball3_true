@@ -1242,7 +1242,7 @@ aside .bet_box {
             transition: all .2s ease-in-out;
             cursor: pointer; }
       .container main.my_page .right .my_bill .basic_bill .save_type, .container main.my_page .right .my_bill_record .basic_bill .save_type {
-        padding: 1em;
+        padding: 2em;
         background: #fff;
         width: 100%; }
         .container main.my_page .right .my_bill .basic_bill .save_type .bk_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .bk_box {
@@ -1567,22 +1567,56 @@ aside .bet_box {
               padding: .1em .5em; }
         .container main.my_page .right .my_bill .basic_bill .save_type .cards, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards {
           width: auto;
-          height: 8em;
-          line-height: 8em;
-          margin: 0 -1em 0 0; }
+          height: 10em;
+          line-height: 10em;
+          margin: 0 -2em 0 0; }
           .container main.my_page .right .my_bill .basic_bill .save_type .cards.cash_num, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards.cash_num {
-            margin: 1.5em -1em 0 0; }
+            margin: 1.5em -2em 0 0; }
           .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 {
             width: calc(100% / 3);
             float: left; }
             .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box {
-              margin: 0 1em 0 0;
+              margin: 0 2em 0 0;
               text-align: center;
               background: #f1f1f1;
-              border-radius: 8px;
-              cursor: pointer; }
+              border-radius: 8px; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.text_left, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.text_left {
+                text-align: left; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.finish_card, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.finish_card {
+                color: #fff; }
+                .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.finish_card .card_name, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.finish_card .card_name {
+                  display: inline-block;
+                  vertical-align: top;
+                  line-height: 3em; }
+                  .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.finish_card .card_name i.icon, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.finish_card .card_name i.icon {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 2.5em;
+                    height: 2.5em;
+                    background: url(../image/my/card_icon.png) no-repeat;
+                    background-size: 300%; }
+                  .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.finish_card .card_name .r_wrap, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.finish_card .card_name .r_wrap {
+                    float: right;
+                    line-height: 1.5em; }
+                    .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.finish_card .card_name .r_wrap span, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.finish_card .card_name .r_wrap span {
+                      display: block; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.blue_card.blue_card.blue_card, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.blue_card.blue_card.blue_card {
+                background: -webkit-gradient(linear, right top, left top, from(#a3c3f4), to(#6589c6));
+                background: -webkit-linear-gradient(right, #a3c3f4 0%, #6589c6 100%);
+                background: -o-linear-gradient(right, #a3c3f4 0%, #6589c6 100%);
+                background: linear-gradient(to left, #a3c3f4 0%, #6589c6 100%); }
+              .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.green_card.green_card.green_card, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.green_card.green_card.green_card {
+                background: -webkit-gradient(linear, right top, left top, from(#60d6ce), to(#31a8b1));
+                background: -webkit-linear-gradient(right, #60d6ce 0%, #31a8b1 100%);
+                background: -o-linear-gradient(right, #60d6ce 0%, #31a8b1 100%);
+                background: linear-gradient(to left, #60d6ce 0%, #31a8b1 100%); }
+              .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.pink_card.pink_card.pink_card, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.pink_card.pink_card.pink_card {
+                background: -webkit-gradient(linear, right top, left top, from(#ffadba), to(#d7767a));
+                background: -webkit-linear-gradient(right, #ffadba 0%, #d7767a 100%);
+                background: -o-linear-gradient(right, #ffadba 0%, #d7767a 100%);
+                background: linear-gradient(to left, #ffadba 0%, #d7767a 100%); }
               .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.gray_top, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.gray_top {
-                line-height: 5.5em;
+                line-height: 7.5em;
                 overflow: hidden;
                 background: #fff;
                 border: 1px solid #b9bfdc;
@@ -1597,7 +1631,8 @@ aside .bet_box {
               .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.m_card, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.m_card {
                 -webkit-transition: all .2s ease-in-out;
                 -o-transition: all .2s ease-in-out;
-                transition: all .2s ease-in-out; }
+                transition: all .2s ease-in-out;
+                cursor: pointer; }
                 .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.m_card:hover, .container main.my_page .right .my_bill .basic_bill .save_type .cards .box_3 .card_box.m_card.active, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.m_card:hover, .container main.my_page .right .my_bill_record .basic_bill .save_type .cards .box_3 .card_box.m_card.active {
                   background: #fff;
                   -webkit-box-shadow: 0 0 6px 2px #e3e5f1;
