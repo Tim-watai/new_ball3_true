@@ -899,7 +899,8 @@ aside .bet_box {
       .container main.my_page .right .my_bill .wrap, .container main.my_page .right .my_bill_record .wrap {
         z-index: 1; }
         .container main.my_page .right .my_bill .wrap .game_in, .container main.my_page .right .my_bill_record .wrap .game_in {
-          font-weight: bold; }
+          font-weight: bold;
+          height: 7em; }
           .container main.my_page .right .my_bill .wrap .game_in.my_page_bill .my_bill_mid, .container main.my_page .right .my_bill_record .wrap .game_in.my_page_bill .my_bill_mid {
             position: absolute;
             left: 50%;
@@ -981,6 +982,38 @@ aside .bet_box {
           height: 3em;
           margin: -.5em 0 0;
           overflow: hidden; }
+          .container main.my_page .right .my_bill .wrap .bill_record_d_card .basic_b, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .basic_b {
+            float: left;
+            padding: .5em 0 0;
+            line-height: 2.5em;
+            height: 3em;
+            position: relative;
+            text-align: center; }
+            .container main.my_page .right .my_bill .wrap .bill_record_d_card .basic_b:before, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .basic_b:before {
+              content: '';
+              position: absolute;
+              right: 0;
+              top: calc(50% + .25em);
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              width: 1px;
+              background: #fff;
+              height: 60%; }
+            .container main.my_page .right .my_bill .wrap .bill_record_d_card .basic_b:last-child:before, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .basic_b:last-child:before {
+              display: none; }
+            .container main.my_page .right .my_bill .wrap .bill_record_d_card .basic_b.b12, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .basic_b.b12 {
+              width: 12%; }
+            .container main.my_page .right .my_bill .wrap .bill_record_d_card .basic_b.b15, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .basic_b.b15 {
+              width: 15%; }
+            .container main.my_page .right .my_bill .wrap .bill_record_d_card .basic_b.b16, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .basic_b.b16 {
+              width: 16%; }
+            .container main.my_page .right .my_bill .wrap .bill_record_d_card .basic_b.b18, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .basic_b.b18 {
+              width: 18%; }
+            .container main.my_page .right .my_bill .wrap .bill_record_d_card .basic_b.b19, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .basic_b.b19 {
+              width: 19%; }
+            .container main.my_page .right .my_bill .wrap .bill_record_d_card .basic_b.b20, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .basic_b.b20 {
+              width: 20%; }
           .container main.my_page .right .my_bill .wrap .bill_record_d_card .b25, .container main.my_page .right .my_bill_record .wrap .bill_record_d_card .b25 {
             width: 25%;
             float: left;
@@ -1385,7 +1418,8 @@ aside .bet_box {
               border-radius: 8px;
               padding: .6em 1em; }
               .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .i_btn p, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .i_btn p {
-                font-size: 16px; }
+                font-size: 16px;
+                font-weight: bold; }
               .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .i_btn.active, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .i_btn.active {
                 background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2e44b7));
                 background: -webkit-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
@@ -2074,6 +2108,73 @@ aside .bet_box {
           float: none; }
   .container main.my_page .right_2 {
     display: none; }
+
+.tr_record_box {
+  border: 1px solid #7987d0;
+  border-radius: 12px;
+  width: 100%;
+  background: #fff;
+  position: relative;
+  margin: 1em 0 0;
+  overflow: hidden; }
+  .tr_record_box .record_row {
+    overflow: hidden;
+    position: relative; }
+    .tr_record_box .record_row.yet {
+      background: #ededed; }
+      .tr_record_box .record_row.yet span {
+        color: #838ba0; }
+    .tr_record_box .record_row:first-child:before {
+      display: none; }
+    .tr_record_box .record_row:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      background: #b9c0d2; }
+    .tr_record_box .record_row .box {
+      float: left;
+      text-align: center;
+      position: relative;
+      line-height: 3em;
+      color: #4d515d; }
+      .tr_record_box .record_row .box span {
+        display: inline-block;
+        line-height: 100%;
+        vertical-align: middle; }
+        .tr_record_box .record_row .box span.d_blue {
+          color: #061d93; }
+        .tr_record_box .record_row .box span.l_blue {
+          color: #7486ea; }
+      .tr_record_box .record_row .box:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 1px;
+        background: #b9c0d2;
+        height: 100%; }
+      .tr_record_box .record_row .box:last-child:before {
+        display: none; }
+      .tr_record_box .record_row .box.l_mid {
+        text-align: left; }
+      .tr_record_box .record_row .box.b12 {
+        width: 12%; }
+      .tr_record_box .record_row .box.b15 {
+        width: 15%; }
+      .tr_record_box .record_row .box.b16 {
+        width: 16%; }
+      .tr_record_box .record_row .box.b18 {
+        width: 18%; }
+      .tr_record_box .record_row .box.b19 {
+        width: 19%; }
+      .tr_record_box .record_row .box.b20 {
+        width: 20%; }
 
 @-webkit-keyframes marquee {
   0% {
@@ -2804,7 +2905,7 @@ header {
           display: block; }
       .container main .right .game_in {
         width: 100%;
-        height: 7em;
+        height: 8em;
         margin: -.8em 0 -1em 0;
         position: relative; }
         .container main .right .game_in.soc {
@@ -2995,7 +3096,7 @@ header {
                 display: none; }
         .container main .right .search_bar p {
           display: inline-block;
-          font-size: 1.1em;
+          font-size: 1rem;
           color: #4d515d;
           line-height: 1.1;
           vertical-align: middle;
@@ -3075,7 +3176,7 @@ header {
             padding: 2px .315em 0 .315em;
             color: #3145b2;
             border-radius: 4px;
-            font-size: 1.1em;
+            font-size: 1rem;
             cursor: pointer; }
             .container main .right .search_bar .tag_wrap .tag:last-child {
               margin: 0; }
@@ -3120,7 +3221,7 @@ header {
           border-color: #9496af transparent transparent transparent;
           display: inline-block;
           vertical-align: middle;
-          margin: -.125em 0 0; }
+          margin: -.125em 0 0 .25em; }
         .container main .right .search_bar .day_box {
           display: inline-block;
           vertical-align: middle;

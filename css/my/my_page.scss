@@ -165,6 +165,7 @@
                     z-index: 1;
                     .game_in{
                             font-weight: bold;
+                            height: 7em;
                         &.my_page_bill{
                            .my_bill_mid{
                             position: absolute;
@@ -246,9 +247,50 @@
                         border-radius: 0 0 8px 8px;
                         line-height: 3em;
                         height: 3em;
-                     
                         margin: -.5em 0 0;
                         overflow: hidden;
+                        .basic_b{
+                            float: left;
+                            padding: .5em 0 0;
+                            line-height: 2.5em;
+                            height: 3em;
+                            position: relative;
+                            text-align: center;
+                            &:before{
+                                content: '';
+                                position: absolute;
+                                right: 0;
+                                top: calc(50% + .25em);
+                                transform: translateY(-50%);
+                                width: 1px;
+                                background: #fff;
+                                height: 60%;
+                            }
+                            &:last-child{
+                                &:before{
+                                    display: none;
+                                }
+                            }
+                           
+                            &.b12{
+                                width: 12%;
+                            }
+                            &.b15{
+                                width: 15%;
+                            }
+                            &.b16{
+                                width: 16%;
+                            }
+                            &.b18{
+                                width: 18%;
+                            }
+                            &.b19{
+                                width: 19%;
+                            }
+                            &.b20{
+                                width: 20%;
+                            }
+                        }
                         .b25{
                             width: 25%;
                             float: left;
@@ -708,6 +750,7 @@
                                     padding: .6em 1em;
                                     p{
                                         font-size: 16px;
+                                        font-weight: bold;
                                     }
                                     &.active{
                                         background: linear-gradient(to bottom,#8f9cdc 0%,#2e44b7 100%);

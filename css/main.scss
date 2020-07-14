@@ -2,7 +2,8 @@
 @import "../css/window.scss";
 @import "../css/game_tools.scss";
 @import "../css/language_style.scss";
-@import "../css/my_page.scss";
+@import "../css/my/my_page.scss";
+@import "../css/my/my_trans_record.scss";
 @keyframes marquee{
   0%{
       left:100%;
@@ -786,7 +787,7 @@ header {
       }
       .game_in{
         width: 100%;
-        height: 7em;
+        height: 8em;
         margin: -.8em 0 -1em 0;
         position: relative;
 
@@ -988,7 +989,7 @@ header {
         }
         p{
           display: inline-block;
-          font-size: 1.1em;
+          font-size: 1rem;
           color: #4d515d;
           line-height: 1.1;
           vertical-align: middle;
@@ -1076,7 +1077,7 @@ header {
             padding: 2px .315em 0 .315em;
             color: #3145b2;
             border-radius: 4px;
-            font-size: 1.1em;
+            font-size: 1rem;
             cursor: pointer;
             &:last-child{
               margin: 0;
@@ -1128,7 +1129,7 @@ header {
             border-color: #9496af transparent transparent transparent;
             display: inline-block;
             vertical-align: middle;
-            margin: -.125em 0 0;
+            margin: -.125em 0 0 .25em;
           }
         }
         .day_box{
