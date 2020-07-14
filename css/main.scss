@@ -4,6 +4,7 @@
 @import "../css/language_style.scss";
 @import "../css/my/my_page.scss";
 @import "../css/my/my_trans_record.scss";
+@import "../css/my/my_help.scss";
 @keyframes marquee{
   0%{
       left:100%;
@@ -989,7 +990,7 @@ header {
         }
         p{
           display: inline-block;
-          font-size: 1rem;
+          font-size: 1.1em;
           color: #4d515d;
           line-height: 1.1;
           vertical-align: middle;
