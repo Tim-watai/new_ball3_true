@@ -325,7 +325,31 @@
           </div>
           <div class="save_type">
               <div class="trans_row">
-                <span class="infor"></span><span>場館內錢包不支持戶轉</span>
+                <span class="infor_i"></span><span class="mid_text">場館內錢包不支持戶轉</span>
+              </div>
+              <div class="trans_row">
+                <div class="i_box w35p">
+                   <span class="mid_text">中心錢包</span>
+                   <div class="right_text">
+                     <span class="arrow"></span>
+                   </div>
+                </div>
+                <div class="arrow_trans"></div>
+                <div class="i_box w35p">
+                  <span class="mid_text">○○體育</span>
+                  <div class="right_text">
+                    <span class="arrow"></span>
+                  </div>
+               </div>
+              </div>
+              <div class="trans_row">
+                <span class="mid_text">金額輸入</span>
+              </div>
+              <div class="trans_row">
+                <input type="text" class="i_box w35p" placeholder="請輸入100-50000元之間的金額">
+              </div>
+              <div class="trans_row">
+                <button class="i_btn w35p"><p>立即轉點</p></button>
               </div>
           </div>
         </div>
@@ -6187,49 +6211,15 @@
                 isMove = false;
               }
             )//up
-        })//down
+  })//down
 
-    //添加銀行卡彈窗
-    let add_btn = $('.box_3 .card_box.m_card');
-    let add_window = $('.black_bg.add_b_card');
-    add_btn.click(function(){
-    if(add_window.hasClass('active')!= true)
-    {
-       return add_window.addClass('active');
-    }
-  })
-  //add_card close
-    let add_close = $('aside .add_card_w .title .close');
-    add_close.click(function(){
-      return add_window.removeClass('active');
-    })
 
-  //add_card 彈窗_移動
-  $('.bet_box.blue.add_card_w .title').mousedown(
-        function(event){
-        let isMove = true;
-        let abs_x = event.pageX - $('aside .bet_box.blue.add_card_w').offset().left;
-        let abs_y = event.pageY - $('aside .bet_box.blue.add_card_w').offset().top;
-        //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
-        let e_px = event.pageX;
-        let leftt = $('aside .bet_box.add_card_w').offset().left;
-        $(document).mousemove(
-          function(event){
-            if (isMove) {
-            let obj = $('aside .bet_box.add_card_w');
-            obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
-            }
-            //move接up
-          }).mouseup(
-            function () {
-              isMove = false;
-            }
-          )//up
-      })//down
 
-  //立即取款 輸入觸發
-  let input_cash = $('.basic_bill .save_type .row li input');
-  let cash_btn = $('.row li .cash_btn');
+
+
+  //立即轉點 輸入觸發
+  let input_cash = $('.trans_row input.w35p.i_box');
+  let cash_btn = $('.trans_row .i_btn.w35p');
   input_cash.click(function(){
     if(cash_btn.hasClass('active') != true){
        return cash_btn.addClass('active');
@@ -6239,14 +6229,16 @@
     }
   })
     
-  //選擇卡片.check
-  let finish_card = $('.card_box.finish_card ');
-  finish_card.click(function(){
-    if($(this).hasClass('check') != true){
-      $(this).parent().siblings().children().removeClass('check');
-      $(this).addClass('check');
+//自動轉點_switch
+let sw = $('.switch_icon');
+sw.click(function(){
+  if($(this).hasClass('active') != true){
+      return  $(this).addClass('active');
+  }else{
+      return  $(this).removeClass('active');
     }
-  })
+})
+
 })//document_ready
 </script>
 <script type="text/javascript" src="../../js/index.js"></script>

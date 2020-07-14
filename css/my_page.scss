@@ -642,14 +642,79 @@
                                 }
                             }
                             .trans_row{
+                                line-height: 1.2em;
+                                margin: 1em 0 0;
+                                input{
+                                    &::placeholder{
+                                        color: #d1d4e2;
+                                    }
+                                }
+                                &:first-child{
+                                    margin: 0;
+                                }
                                 .infor_i{
-                                   
+                                        display: inline-block;
                                         width: 1.2em;
                                         height: 1.2em;
                                         background: url(../image/icon/infor.png)no-repeat;
                                         background-size: 100%;
                                         vertical-align: middle;
-                                   
+                                        margin: 0 .25em 0 0;
+                                }
+                                .mid_text{
+                                    vertical-align: middle;
+                                    line-height: 1;
+                                }
+                                .right_text{
+                                    float: right;
+                                    .arrow{
+                                        display: inline-block;
+                                        line-height: 1;
+                                        vertical-align: middle;
+                                        background: url(../image/icon/arrow_d.png)no-repeat;
+                                        background-size: 100%;
+                                        width: .5em;
+                                        height: .7em;
+                                        transform: rotate(90deg);
+                                    }
+                                }
+                                .arrow_trans{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    line-height: 100%;
+                                    background: url(../image/my/arrow_trans.png)no-repeat;
+                                    background-size: 100%;
+                                    width: 2.5em;
+                                    height: 1.5em;
+                                    margin: 0 1em;
+                                }
+                                .i_box{
+                                    border-radius: 8px;
+                                    border: 1px solid #b9bfdc;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    padding: .6em 1em;
+                                    &.active,&:focus{
+                                        border-color: #364bb9;
+                                    }
+                                    
+                                }
+                                .i_btn{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    background: #b6bcca;
+                                    color: #fff;
+                                    border-radius: 8px;
+                                    padding: .6em 1em;
+                                    p{
+                                        font-size: 16px;
+                                    }
+                                    &.active{
+                                        background: linear-gradient(to bottom,#8f9cdc 0%,#2e44b7 100%);
+                                    }
+                                }
+                                .w35p{
+                                    width: 35%;
                                 }
                             }
                             //轉點金額區塊
@@ -1039,6 +1104,7 @@
                                             transition: all .2s ease-in-out;
                                         }
                                         &.active{
+                                            background: #808290;
                                             .s_ball{
                                                 transform: translate(95%,-50%);
                                             }

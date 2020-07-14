@@ -1323,12 +1323,76 @@ aside .bet_box {
                   background-size: 100%;
                   vertical-align: middle;
                   margin: 0 0 0 .5em; }
-          .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .infor_i, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .infor_i {
-            width: 1.2em;
-            height: 1.2em;
-            background: url(../image/icon/infor.png) no-repeat;
-            background-size: 100%;
-            vertical-align: middle; }
+          .container main.my_page .right .my_bill .basic_bill .save_type .trans_row, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row {
+            line-height: 1.2em;
+            margin: 1em 0 0; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row input::-webkit-input-placeholder, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row input::-webkit-input-placeholder {
+              color: #d1d4e2; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row input:-ms-input-placeholder, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row input:-ms-input-placeholder {
+              color: #d1d4e2; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row input::-ms-input-placeholder, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row input::-ms-input-placeholder {
+              color: #d1d4e2; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row input::placeholder, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row input::placeholder {
+              color: #d1d4e2; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row:first-child, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row:first-child {
+              margin: 0; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .infor_i, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .infor_i {
+              display: inline-block;
+              width: 1.2em;
+              height: 1.2em;
+              background: url(../image/icon/infor.png) no-repeat;
+              background-size: 100%;
+              vertical-align: middle;
+              margin: 0 .25em 0 0; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .mid_text, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .mid_text {
+              vertical-align: middle;
+              line-height: 1; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .right_text, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .right_text {
+              float: right; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .right_text .arrow, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .right_text .arrow {
+                display: inline-block;
+                line-height: 1;
+                vertical-align: middle;
+                background: url(../image/icon/arrow_d.png) no-repeat;
+                background-size: 100%;
+                width: .5em;
+                height: .7em;
+                -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg); }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .arrow_trans, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .arrow_trans {
+              display: inline-block;
+              vertical-align: middle;
+              line-height: 100%;
+              background: url(../image/my/arrow_trans.png) no-repeat;
+              background-size: 100%;
+              width: 2.5em;
+              height: 1.5em;
+              margin: 0 1em; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .i_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .i_box {
+              border-radius: 8px;
+              border: 1px solid #b9bfdc;
+              display: inline-block;
+              vertical-align: middle;
+              padding: .6em 1em; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .i_box.active, .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .i_box:focus, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .i_box.active, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .i_box:focus {
+                border-color: #364bb9; }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .i_btn, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .i_btn {
+              display: inline-block;
+              vertical-align: middle;
+              background: #b6bcca;
+              color: #fff;
+              border-radius: 8px;
+              padding: .6em 1em; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .i_btn p, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .i_btn p {
+                font-size: 16px; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .i_btn.active, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .i_btn.active {
+                background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2e44b7));
+                background: -webkit-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
+                background: -o-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
+                background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%); }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .w35p, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .w35p {
+              width: 35%; }
           .container main.my_page .right .my_bill .basic_bill .save_type .bk_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .bk_box {
             border: 1px solid #b9bfdc;
             border-radius: 8px;
@@ -1672,10 +1736,12 @@ aside .bet_box {
                   -webkit-transition: all .2s ease-in-out;
                   -o-transition: all .2s ease-in-out;
                   transition: all .2s ease-in-out; }
-                .container main.my_page .right .my_bill .basic_bill .save_type .mb_box.trans .switch_icon.active .s_ball, .container main.my_page .right .my_bill_record .basic_bill .save_type .mb_box.trans .switch_icon.active .s_ball {
-                  -webkit-transform: translate(95%, -50%);
-                  -ms-transform: translate(95%, -50%);
-                  transform: translate(95%, -50%); }
+                .container main.my_page .right .my_bill .basic_bill .save_type .mb_box.trans .switch_icon.active, .container main.my_page .right .my_bill_record .basic_bill .save_type .mb_box.trans .switch_icon.active {
+                  background: #808290; }
+                  .container main.my_page .right .my_bill .basic_bill .save_type .mb_box.trans .switch_icon.active .s_ball, .container main.my_page .right .my_bill_record .basic_bill .save_type .mb_box.trans .switch_icon.active .s_ball {
+                    -webkit-transform: translate(95%, -50%);
+                    -ms-transform: translate(95%, -50%);
+                    transform: translate(95%, -50%); }
             .container main.my_page .right .my_bill .basic_bill .save_type .mb_box .b50, .container main.my_page .right .my_bill_record .basic_bill .save_type .mb_box .b50 {
               width: 50%;
               float: left;
@@ -2738,7 +2804,7 @@ header {
           display: block; }
       .container main .right .game_in {
         width: 100%;
-        height: 8em;
+        height: 7em;
         margin: -.8em 0 -1em 0;
         position: relative; }
         .container main .right .game_in.soc {
