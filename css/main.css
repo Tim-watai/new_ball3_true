@@ -2340,9 +2340,9 @@ header {
     -webkit-box-shadow: 0px 1px 3px 0px #cdd2e5;
     box-shadow: 0px 1px 3px 0px #cdd2e5; }
   header .h_wrap {
-    width: 1200px;
+    width: 1100px;
     position: absolute;
-    left: 54%;
+    left: 48%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
