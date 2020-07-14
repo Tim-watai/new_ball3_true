@@ -3838,7 +3838,8 @@ header {
               pointer-events: none; }
         .container main .right .card.normal_mode .row {
           line-height: 3em;
-          height: 3em; }
+          height: 3em;
+          position: relative; }
         .container main .right .card.normal_mode .title .b24 {
           padding: 0 .5em 0; }
         .container main .right .card.big_mode .row {
