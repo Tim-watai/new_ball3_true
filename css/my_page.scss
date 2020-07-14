@@ -555,6 +555,7 @@
                     .save_type{
                         padding:1.5em;
                         background: #fff;
+                        border-top: 1px solid #e0e1e3;
                         //0713
                         overflow: hidden;
                         &.full{
@@ -568,6 +569,7 @@
                                 $trans_marg:.5em;
                                 width: auto;
                                 margin: 0 #{$trans_marg * -1} 0 0;
+                                overflow: hidden;
                                 .box_4{
                                     width: calc(100% / 4);
                                     float: left;
@@ -575,9 +577,83 @@
                                         margin: 0 $trans_marg 0 0;
                                         border: 1px solid #b9c0d2;
                                         border-radius: 8px;
+                                        padding: 0 .8em;
+                                        line-height: 6em;
+                                        overflow: hidden;
+                                        .row{
+                                            display: block;
+                                            float: left;
+                                            line-height: 3em;
+                                            width: 100%;
+                                            .right_box{
+                                                float: right;
+                                                .yellow_btn{
+                                                    color: #fff;
+                                                    background: #d7af8a;
+                                                    padding: .125em .5em;
+                                                    font-size: 1em;
+                                                    border-radius: 12px;
+                                                }
+                                            }
+                                            .sm_t{
+                                                font-size: .8em;
+                                            }
+                                            .big_t{
+                                                font-size: 1.2em;
+                                            }
+                                        }
                                     }
                                 }
                             }
+                            .trans_drow_bg{
+                                position: relative;
+                                width: auto;
+                                height: 3em;
+                                padding: 0;
+                                margin: 0 -1.5em -1.5em;
+                            }
+                            .trans_drow_bar{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                text-align: center;
+                                line-height: 3em;
+                                margin: 0 0 -1.5em;
+                                background: linear-gradient(to bottom, #fff 0%,#efefef 100%);
+                                .bar_wrap{
+                                    display: inline-block;
+                                    line-height: 1;
+                                    vertical-align: bottom;
+                                    padding: 0 0 .5em;
+                                    color: #c59a73;
+                                    cursor: pointer;
+                                    span{
+                                        display: inline-block;
+                                        &.arrow_gold{
+                                            background: url(../image/icon/arrow_gold.png)no-repeat;
+                                            width: .8em;
+                                            height: .5em;
+                                            background-size: 100%;
+                                            vertical-align: middle;
+                                            margin: 0 0 0 .5em;
+                                        }
+                                    }
+                                }
+                            }
+                            .trans_row{
+                                .infor_i{
+                                   
+                                        width: 1.2em;
+                                        height: 1.2em;
+                                        background: url(../image/icon/infor.png)no-repeat;
+                                        background-size: 100%;
+                                        vertical-align: middle;
+                                   
+                                }
+                            }
+                            //轉點金額區塊
+                            
                             .bk_box{
                                 border: 1px solid #b9bfdc;
                                 border-radius: 8px;
@@ -654,6 +730,9 @@
                                 li{
                                     float: left;
                                     padding: .5em 0;
+                                    &.no_padding{
+                                        padding: 0;
+                                    }
                                     .t_left.t_left.t_left{
                                         text-align: left;
                                     }
@@ -1221,123 +1300,123 @@
                                 
                             }
                         }
-                        .bill_row{
-                            border-top: 1px solid #b9c0d2;
-                            .t_left{
-                                text-align: left;
-                                padding: 0 0 0 .5em;
-                            }
-                            
-                            li{
-                                overflow: hidden;
-                                background: #fff;
-                                width: 100%;
-                        
-                                .g_bg{
-                                    background: #f8f8f8;
+                            .bill_row{
+                                border-top: 1px solid #b9c0d2;
+                                .t_left{
+                                    text-align: left;
+                                    padding: 0 0 0 .5em;
                                 }
-                                div{
-                                    float: left;
-                                    text-align: center;
-                                    border-right: 1px solid #b9c0d2;
-                                    &:last-child{
-                                        border-right: none;
+                                
+                                li{
+                                    overflow: hidden;
+                                    background: #fff;
+                                    width: 100%;
+                            
+                                    .g_bg{
+                                        background: #f8f8f8;
+                                    }
+                                    div{
+                                        float: left;
+                                        text-align: center;
+                                        border-right: 1px solid #b9c0d2;
+                                        &:last-child{
+                                            border-right: none;
+                                        }
+                                    }
+                                
+                                    .b10{
+                                        width: 10%;
+                                    }
+                                    .b11{
+                                        width: 11%;
+                                    }
+                                    .b22{
+                                        width: 22%;
+                                    }
+                                    .b25{
+                                        width: 25%;
+                                    }
+                                    .b49{
+                                        width: 49%;
+                                    }
+                                    .b54{
+                                        width: 54%;
                                     }
                                 }
-                            
-                                .b10{
-                                    width: 10%;
-                                }
-                                .b11{
-                                    width: 11%;
-                                }
-                                .b22{
-                                    width: 22%;
-                                }
-                                .b25{
-                                    width: 25%;
-                                }
-                                .b49{
-                                    width: 49%;
-                                }
-                                .b54{
-                                    width: 54%;
-                                }
                             }
-                        }
-                        .close{
-                            line-height: 2.5em;
-                            height: 2.5em;
-                            display: block;
-                        }
-                        .open{
-                            
-                            display: none;
-                            border: 1px solid #7987d0;
-                            li{
-                                border-top: 1px solid #b9c0d2;
-                                position: relative;
+                            .close{
                                 line-height: 2.5em;
                                 height: 2.5em;
-                                &.big_line{
-                                    line-height: 5em;
-                                    height: 5em;
-                                }
-                                .big_li_half{
-                                    line-height: calc(3.5em / 2);
-                                }
-                                &:first-child{
-                                    border-top: 1px solid transparent;
-                                }
-                                &.title{
-                                    line-height: 2em;
-                                    height: 2em;
-                                    padding: 0 0 0 1em;
-                                    i{
-                                        width: 1em;
-                                        height: 1em;
-                                        background: url(../image/icon/list3.png) no-repeat;
-                                        background-size: 1800%;
-                                        background-position-y: -2em;
-                                        display: inline-block;
-                                        vertical-align: text-bottom;
-                                        @for $i from 1 through 18{
-                                            &.i#{$i}{
-                                                background-position-x: ($i + 1) * -1em;
+                                display: block;
+                            }
+                            .open{
+                                
+                                display: none;
+                                border: 1px solid #7987d0;
+                                li{
+                                    border-top: 1px solid #b9c0d2;
+                                    position: relative;
+                                    line-height: 2.5em;
+                                    height: 2.5em;
+                                    &.big_line{
+                                        line-height: 5em;
+                                        height: 5em;
+                                    }
+                                    .big_li_half{
+                                        line-height: calc(3.5em / 2);
+                                    }
+                                    &:first-child{
+                                        border-top: 1px solid transparent;
+                                    }
+                                    &.title{
+                                        line-height: 2em;
+                                        height: 2em;
+                                        padding: 0 0 0 1em;
+                                        i{
+                                            width: 1em;
+                                            height: 1em;
+                                            background: url(../image/icon/list3.png) no-repeat;
+                                            background-size: 1800%;
+                                            background-position-y: -2em;
+                                            display: inline-block;
+                                            vertical-align: text-bottom;
+                                            @for $i from 1 through 18{
+                                                &.i#{$i}{
+                                                    background-position-x: ($i + 1) * -1em;
+                                                }
+                                            }
+                                    
+                                        }
+                                        .right_box{
+                                            position: absolute;
+                                            top: 50%;
+                                            height: 100%;
+                                            float: right;
+                                            line-height: 2em;
+                                            right: 1em;
+                                            transform: translateY(-50%);
+                                            p{
+                                                display: inline-block;
                                             }
                                         }
-                                
                                     }
-                                    .right_box{
-                                        position: absolute;
-                                        top: 50%;
-                                        height: 100%;
-                                        float: right;
-                                        line-height: 2em;
-                                        right: 1em;
-                                        transform: translateY(-50%);
-                                        p{
+                                    em{
+                                        &.wrap{
                                             display: inline-block;
+                                            vertical-align: middle;
                                         }
-                                    }
-                                }
-                                em{
-                                    &.wrap{
-                                        display: inline-block;
-                                        vertical-align: middle;
                                     }
                                 }
                             }
-                        }
-                        .row_line.row_line{
-                            width: 1px;
-                            background: #b9c0d2;
-                            height: 70%;
-                            display: inline-block;
-                            vertical-align: middle;
-                            margin: 0 .5em;
-                            float: none;
-                        }
+                            .row_line.row_line{
+                                width: 1px;
+                                background: #b9c0d2;
+                                height: 70%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin: 0 .5em;
+                                float: none;
+                            }
                 }
                }
             }

@@ -1252,6 +1252,7 @@ aside .bet_box {
         .container main.my_page .right .my_bill .basic_bill .save_type, .container main.my_page .right .my_bill_record .basic_bill .save_type {
           padding: 1.5em;
           background: #fff;
+          border-top: 1px solid #e0e1e3;
           overflow: hidden; }
           .container main.my_page .right .my_bill .basic_bill .save_type.full, .container main.my_page .right .my_bill_record .basic_bill .save_type.full {
             width: 100%; }
@@ -1259,14 +1260,75 @@ aside .bet_box {
             margin: 0 -.5em 0 0; }
           .container main.my_page .right .my_bill .basic_bill .save_type .trans_card, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_card {
             width: auto;
-            margin: 0 -0.5em 0 0; }
+            margin: 0 -0.5em 0 0;
+            overflow: hidden; }
             .container main.my_page .right .my_bill .basic_bill .save_type .trans_card .box_4, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_card .box_4 {
               width: calc(100% / 4);
               float: left; }
               .container main.my_page .right .my_bill .basic_bill .save_type .trans_card .box_4 .box, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_card .box_4 .box {
                 margin: 0 0.5em 0 0;
                 border: 1px solid #b9c0d2;
-                border-radius: 8px; }
+                border-radius: 8px;
+                padding: 0 .8em;
+                line-height: 6em;
+                overflow: hidden; }
+                .container main.my_page .right .my_bill .basic_bill .save_type .trans_card .box_4 .box .row, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_card .box_4 .box .row {
+                  display: block;
+                  float: left;
+                  line-height: 3em;
+                  width: 100%; }
+                  .container main.my_page .right .my_bill .basic_bill .save_type .trans_card .box_4 .box .row .right_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_card .box_4 .box .row .right_box {
+                    float: right; }
+                    .container main.my_page .right .my_bill .basic_bill .save_type .trans_card .box_4 .box .row .right_box .yellow_btn, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_card .box_4 .box .row .right_box .yellow_btn {
+                      color: #fff;
+                      background: #d7af8a;
+                      padding: .125em .5em;
+                      font-size: 1em;
+                      border-radius: 12px; }
+                  .container main.my_page .right .my_bill .basic_bill .save_type .trans_card .box_4 .box .row .sm_t, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_card .box_4 .box .row .sm_t {
+                    font-size: .8em; }
+                  .container main.my_page .right .my_bill .basic_bill .save_type .trans_card .box_4 .box .row .big_t, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_card .box_4 .box .row .big_t {
+                    font-size: 1.2em; }
+          .container main.my_page .right .my_bill .basic_bill .save_type .trans_drow_bg, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_drow_bg {
+            position: relative;
+            width: auto;
+            height: 3em;
+            padding: 0;
+            margin: 0 -1.5em -1.5em; }
+          .container main.my_page .right .my_bill .basic_bill .save_type .trans_drow_bar, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_drow_bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            line-height: 3em;
+            margin: 0 0 -1.5em;
+            background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#efefef));
+            background: -webkit-linear-gradient(top, #fff 0%, #efefef 100%);
+            background: -o-linear-gradient(top, #fff 0%, #efefef 100%);
+            background: linear-gradient(to bottom, #fff 0%, #efefef 100%); }
+            .container main.my_page .right .my_bill .basic_bill .save_type .trans_drow_bar .bar_wrap, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_drow_bar .bar_wrap {
+              display: inline-block;
+              line-height: 1;
+              vertical-align: bottom;
+              padding: 0 0 .5em;
+              color: #c59a73;
+              cursor: pointer; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .trans_drow_bar .bar_wrap span, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_drow_bar .bar_wrap span {
+                display: inline-block; }
+                .container main.my_page .right .my_bill .basic_bill .save_type .trans_drow_bar .bar_wrap span.arrow_gold, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_drow_bar .bar_wrap span.arrow_gold {
+                  background: url(../image/icon/arrow_gold.png) no-repeat;
+                  width: .8em;
+                  height: .5em;
+                  background-size: 100%;
+                  vertical-align: middle;
+                  margin: 0 0 0 .5em; }
+          .container main.my_page .right .my_bill .basic_bill .save_type .trans_row .infor_i, .container main.my_page .right .my_bill_record .basic_bill .save_type .trans_row .infor_i {
+            width: 1.2em;
+            height: 1.2em;
+            background: url(../image/icon/infor.png) no-repeat;
+            background-size: 100%;
+            vertical-align: middle; }
           .container main.my_page .right .my_bill .basic_bill .save_type .bk_box, .container main.my_page .right .my_bill_record .basic_bill .save_type .bk_box {
             border: 1px solid #b9bfdc;
             border-radius: 8px;
@@ -1326,6 +1388,8 @@ aside .bet_box {
             .container main.my_page .right .my_bill .basic_bill .save_type .row li, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li {
               float: left;
               padding: .5em 0; }
+              .container main.my_page .right .my_bill .basic_bill .save_type .row li.no_padding, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.no_padding {
+                padding: 0; }
               .container main.my_page .right .my_bill .basic_bill .save_type .row li .t_left.t_left.t_left, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li .t_left.t_left.t_left {
                 text-align: left; }
               .container main.my_page .right .my_bill .basic_bill .save_type .row li.b50, .container main.my_page .right .my_bill_record .basic_bill .save_type .row li.b50 {
