@@ -1,0 +1,33 @@
+.data_wrap{
+    line-height: 6em;
+}
+.avatar{
+    display: inline-block;
+    width: 5em;
+    height: 5em;
+    background: url(../image/my/avatar_m.png) no-repeat;
+    background-size: 100%;
+    border-radius: 100px;
+    vertical-align: middle;
+    position: relative;
+    &.edit{
+        &:before{
+            content: '';
+        display: inline-block;
+        background: url(../image/my/edit_icon.png)no-repeat;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100px;
+        position: absolute;
+        background-size: 100%;
+        right: 0;
+        bottom: 0;
+        
+    }
+        
+    }
+}
+.edit_box{
+    border: 1xp solid #b9c0d2;
+    
+}

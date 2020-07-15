@@ -995,6 +995,7 @@
               <i class="i1"></i>
               <p class="name">個人資料</p>
               <p class="num active">1</p>
+              <a href="./my_data.html"></a>
             </li>
             <li>
               <i class="i2"></i>
@@ -5629,6 +5630,19 @@ $(document).ready(function(){
             return  record_bill_have.parent().removeClass('active');
         }
     })
+       //注單展開2
+       let bill_name = $('.basic_bill .b_name');
+    function bill_open (myself){
+        if(myself.parent().hasClass('active') != true){
+            myself.parent().addClass('active');
+        }else{
+            myself.parent().removeClass('active');
+        }
+    }
+    bill_name.click(function(){
+      let myself = $(this);
+      bill_open(myself);
+    })
     //勾選icon
     let check_btn = $('.balls_choice .row span.check');
     check_btn.click(function(){
@@ -5650,9 +5664,41 @@ $(document).ready(function(){
             return  balls_choice.removeClass('active');
         }
     })
-})
+    //dummy同步本尊的寬
+   let search_bar_obj = $('.container main .right .search_bar');
+        let search_bar_dummy = $('.search_bar.fixed');
+        let ball_search_dummy = $('.wrap.fixed');
+        
+        let obj_w = search_bar_obj.outerWidth();
+            search_bar_dummy.css({width:obj_w});
+            ball_search_dummy.css({width:obj_w});
+      function dummy(page){
+        search_bar_dummy.css({width:obj_w});
+        ball_search_dummy.css({width:obj_w});
+        if(page == 'my'){
+          let search_bar_my = $('.container main.my_page .right .my_bill');
+          let my_wrap = $('.container main.my_page .right .my_bill .wrap.fixed');
+          let obj_w = search_bar_my.outerWidth();
+          my_wrap.css({width:obj_w});
+          console.log('my')
+        }
+      }
+      //
+      //視窗偵測
+        $('.container main .right').scroll(function () {
+      
+          var scrollVal = $(this).scrollTop();
+        //  console.log('scrollVal = '+scrollVal);
+         if(scrollVal >= 50){
+          $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
+         }else if(scrollVal <= 49){
+          $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
+         }
+        });
+      //<------------------
+})//ready
+
 
 </script>
- <script type="text/javascript" src="../../js/index.js"></script>
- <script type="text/javascript" src="../../js/my_page.js"></script>
+
 </body

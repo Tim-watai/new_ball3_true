@@ -5,6 +5,12 @@
 @import "../css/my/my_page.scss";
 @import "../css/my/my_trans_record.scss";
 @import "../css/my/my_help.scss";
+//灰高表格_
+@import "../css/my/basic_bill.scss";
+//投注記錄表格
+@import "../css/my/bill_box.scss";
+//基本資料格式
+@import "../css/my/my_data_type.scss";
 @keyframes marquee{
   0%{
       left:100%;
@@ -761,7 +767,7 @@ header {
       position: fixed;
       top: 0;
       left: 12%;
-      height: 80vh;
+      height: 88vh;
       overflow-y: scroll;
       &::-webkit-scrollbar {
         width: .5em;
@@ -2001,13 +2007,11 @@ header {
       float: left;
       top: 0;
       left: 0;
-      height: 80vh;
       position: fixed;
-      // overflow: hidden;
-      height: 80vh;
+      height: 88vh;
       overflow-y: scroll;
       box-shadow: 0 0 5px 3px #d3d8ea;
-      border-radius: 0 0 30px 30px;
+      border-radius: 0 0 10px 10px;
       background: #f6f9ff;
       padding: 0 0 8em;
       &.my_page{
@@ -2105,7 +2109,7 @@ header {
       overflow-y: scroll;
       overflow-x: hidden;
       position: fixed;
-      height: 80vh;
+      height: 88vh;
       top: 0;
       right: 0;
       padding: 0 0 8em;

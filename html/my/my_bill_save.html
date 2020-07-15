@@ -127,7 +127,6 @@
 <div class="container cn">
   <main class="my_page">
     <div class="right">
-      <div class="my_bill active">
         <div class="wrap">
           <div class="game_in my_page_bill">
             <div class="bill_left">
@@ -595,8 +594,6 @@
           </div>
          
         </div>
-
-      </div>
     </div>
     <div class="left ">
       <ul class="index">
@@ -701,6 +698,7 @@
           <i class="i1"></i>
           <p class="name">個人資料</p>
           <p class="num active">1</p>
+          <a href="./my_data.html"></a>
         </li>
         <li>
           <i class="i2"></i>
@@ -6349,9 +6347,40 @@
         $('.pay_change .basic_bill.pay_11').css('display', 'block');
       }
     }
-  })
-  //修改密碼彈窗
-  let ch_pw = $('.tag_wrap .tag.ch_pw');
+//dummy同步本尊的寬
+let search_bar_obj = $('.container main .right .search_bar');
+        let search_bar_dummy = $('.search_bar.fixed');
+        let ball_search_dummy = $('.wrap.fixed');
+        
+        let obj_w = search_bar_obj.outerWidth();
+            search_bar_dummy.css({width:obj_w});
+            ball_search_dummy.css({width:obj_w});
+      function dummy(page){
+        search_bar_dummy.css({width:obj_w});
+        ball_search_dummy.css({width:obj_w});
+        if(page == 'my'){
+          let search_bar_my = $('.container main.my_page .right .my_bill');
+          let my_wrap = $('.container main.my_page .right .my_bill .wrap.fixed');
+          let obj_w = search_bar_my.outerWidth();
+          my_wrap.css({width:obj_w});
+          console.log('my')
+        }
+      }
+      //
+      //視窗偵測
+        $('.container main .right').scroll(function () {
+      
+          var scrollVal = $(this).scrollTop();
+        //  console.log('scrollVal = '+scrollVal);
+         if(scrollVal >= 50){
+          $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
+         }else if(scrollVal <= 49){
+          $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
+         }
+        });
+      //<------------------
+ //修改密碼彈窗
+ let ch_pw = $('.tag_wrap .tag.ch_pw');
   let ch_window = $('.black_bg.ch_pw');
   ch_pw.click(function(){
     if(ch_window.hasClass('active')!= true)
@@ -6386,7 +6415,8 @@
           }
       )//up
         })//down
-</script>
-<script type="text/javascript" src="../../js/index.js"></script>
 
+  })//ready
+ 
+</script>
 </body

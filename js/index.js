@@ -37,8 +37,18 @@ $(document).ready(function() {
       let sign_in = $('.right .sign_in');
       let list_yet = $('.f_wrap .f_bot ul.yet');
       let list_in = $('.f_wrap .f_bot ul.in');
-        // $('.f_wrap .f_bot ul.in').removeClass('active');
+      let btn_start = $('header .h_wrap .right');
+    
+      // $('.f_wrap .f_bot ul.in').removeClass('active');
         // $('.f_wrap .f_bot ul.yet').addClass('active');
+        btn_start.click(function(){
+          if(sign_in.hasClass('active')){
+            return  sign_active(false);
+          }else{
+            return  sign_active(true);
+          }
+        })
+
        function sign_active (sign){
       if(sign == false){
                 sign_yet.addClass('active');
@@ -448,7 +458,6 @@ $(document).ready(function() {
         });
       //<------------------
       //直播區域
-      
       //tag
         let live_page = $('.live_content');
         let talk_page = $('.talk_content');
