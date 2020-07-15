@@ -122,11 +122,11 @@ header {
     // margin: 0 auto;
     position: absolute;
     // left: 54%;
-    left: 48%;
+    left: 50%;
     transform: translateX(-50%);
     line-height: 5em;
     overflow: hidden;
-    padding: 0 0 0 .4em;
+    // padding: 0 0 0 .4em;
     .logo {
       width: 17%;
       height: 100%;
@@ -213,7 +213,7 @@ header {
       float: right;
       line-height: 5em;
       height: 5em;
-    
+      padding: 0 1.5em 0 0;
       .sign_yet,
       .sign_in {
         overflow: hidden;

@@ -1,9 +1,9 @@
 .basic_bill{
-    font-size: 1.1em;
+    font-size: 1em;
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 0 4px 1px #bac0db;
-    margin: .8em 0 0;
+    margin: 1em 0 0;
     color: #4d515d;
     transition: all .2s ease-in-out;
    
@@ -78,14 +78,32 @@
         height: 2em;
         background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
         position: relative;
+        i{
+            display: inline-block;
+            &.icon{
+                width: 1.2em;
+                height: 1.2em;
+                vertical-align: middle;
+                background: url(../image/icon/list3.png) no-repeat;
+                background-size: 1800%;
+                background-position-y: -2.4em;
+                margin: 0 -.8em 0 1em;
+                @for $i  from 1  through 18 {
+                    &.i#{$i}{
+                        background-position-x: ($i + 1) * -1.2em;
+                    }
+                }
+            }
+        }
         p{
             display: inline-block;
             line-height: 1;
             vertical-align: middle;
             &.bf{
                 line-height: 1;
-                vertical-align: baseline;
+                vertical-align: middle;
                 margin: 0 0 0 1em;
+                font-size: 1.1em;
             }
            
         }
@@ -149,13 +167,16 @@
     }
    
     .save_type{
-        padding:1.5em;
+        padding: 1.2em;
         background: #fff;
         border-top: 1px solid #e0e1e3;
         //0713
         overflow: hidden;
         &.full{
             width: 100%;
+        }
+        &.data_size{
+            padding: 1.3em 1.2em;
         }
         //轉點
             &.trans_marg{
@@ -784,15 +805,15 @@
                 width: auto;
                 //  height: 10em;
                 //  line-height: 10em;
-                margin: 0 -1.5em 0 0;
+                margin: 0 -1.2em 0 0;
                 &.cash_num{
-                    margin: 1.5em -2em 0 0;
+                    margin: 1.5em -1.2em 0 0;
                 }
                 .box_3{
                     width: calc(100% / 3);
                     float: left;
                     .card_box{
-                        margin: 0 1.5em 0 0;
+                        margin: 0 1.2em 0 0;
                         text-align: center;
                         background: #f1f1f1;
                         border-radius: 8px;
