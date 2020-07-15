@@ -1345,33 +1345,9 @@ header {
             color: #4d515d;
           }
           &.row{
+            position: relative;
+            pointer-events: all;
             div{
-              // &.mid_wrap.mid_wrap.mid_wrap{
-              //   position: relative;
-              //   height: 6em;
-
-              //   .wrap.wrap.wrap.wrap{
-              //     position: absolute;
-              //     top: 50%;
-              //     left: 50%;
-              //     transform: translate(-50%,-50%);
-              //     width: 100%;
-              //     height: auto;
-              //     &.w_box_3{
-              //       span{
-              //         display: inline-block;
-              //         width: 80%;
-              //         height: 1.8em;
-              //         &:first-child{
-              //           margin: 0 0 .2em;
-              //         }
-              //         &:last-child{
-              //          margin: .2em 0 0; 
-              //         }
-              //       }
-              //     }
-              //   }
-              // }
             }
           }
           div{

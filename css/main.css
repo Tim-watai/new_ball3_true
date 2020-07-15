@@ -3680,6 +3680,9 @@ header {
             color: #ff0000; }
           .container main .right .card li .gray {
             color: #4d515d; }
+          .container main .right .card li.row {
+            position: relative;
+            pointer-events: all; }
           .container main .right .card li div {
             position: relative;
             float: left;
