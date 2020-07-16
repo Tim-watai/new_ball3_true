@@ -1,11 +1,15 @@
 .time_line {
     background: #2f333d;
+    .time_wrap{
+        line-height: 1.5em;
+        width: 1350px;
+        text-align: right;
+        margin: 0 auto;
+        color: #b4bac8;
+    }
     p {
-      line-height: 1.5em;
-      width: 1200px;
-      text-align: right;
-      margin: 0 auto;
-      color: #b4bac8;
+        display: inline-block;
+        width: auto;
     }
   }
 .h_box {

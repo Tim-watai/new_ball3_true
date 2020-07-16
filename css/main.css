@@ -740,12 +740,15 @@ aside .bet_box {
 
 .time_line {
   background: #2f333d; }
-  .time_line p {
+  .time_line .time_wrap {
     line-height: 1.5em;
-    width: 1200px;
+    width: 1350px;
     text-align: right;
     margin: 0 auto;
     color: #b4bac8; }
+  .time_line p {
+    display: inline-block;
+    width: auto; }
 
 .h_box {
   width: 100%;
@@ -1598,7 +1601,7 @@ aside .bet_box {
     background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
     color: #4d515d; }
     .card.gray.gray .g_name i {
-      background-position-y: -2.3e; }
+      background-position-y: -2.3em; }
   .card.gray.gray .title {
     background: #f3f3f3; }
   .card.gray.gray div.box_8 span, .card.gray.gray div.box_4 span, .card.gray.gray div.box_3 span, .card.gray.gray div.box_2 span, .card.gray.gray div.box_1 span {
