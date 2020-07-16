@@ -749,13 +749,13 @@ aside .bet_box {
 
 .h_box {
   width: 100%;
-  height: 5em;
+  height: 6em;
   background: #fff;
   -webkit-box-shadow: 0px 1px 3px 0px #cdd2e5;
   box-shadow: 0px 1px 3px 0px #cdd2e5; }
 
 .h_wrap {
-  width: 1100px;
+  width: 1350px;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -763,11 +763,18 @@ aside .bet_box {
   transform: translateX(-50%);
   line-height: 5em;
   overflow: hidden; }
+  .h_wrap.other_size {
+    width: 1100px; }
+    .h_wrap.other_size .logo {
+      width: 20%; }
+    .h_wrap.other_size .right {
+      padding: 0; }
   .h_wrap .logo {
-    width: 17%;
+    width: 13.7%;
     height: 100%;
     text-align: center;
-    float: left; }
+    float: left;
+    line-height: 6em; }
     .h_wrap .logo h1 {
       font-size: 3.5em;
       line-height: 100%;
@@ -786,10 +793,9 @@ aside .bet_box {
     overflow: hidden;
     margin: 0 0 0 1em; }
     .h_wrap ul.m_yet {
-      line-height: 5em;
-      height: 5em; }
+      line-height: 6em;
+      height: 6em; }
     .h_wrap ul li {
-      font-size: 1.1em;
       float: left;
       margin: 0 1em;
       position: relative;
@@ -804,7 +810,8 @@ aside .bet_box {
         line-height: 1;
         vertical-align: middle;
         display: inline-block;
-        word-break: break-word; }
+        word-break: break-word;
+        font-size: 1.2em; }
       .h_wrap ul li i {
         display: inline-block;
         width: 16px;
@@ -832,9 +839,9 @@ aside .bet_box {
           border-radius: 8px; }
   .h_wrap .right {
     float: right;
-    line-height: 5em;
-    height: 5em;
-    padding: 0 1.5em 0 0; }
+    line-height: 6em;
+    height: 6em;
+    padding: 0 calc(100% * .178) 0 0; }
     .h_wrap .right .sign_yet,
     .h_wrap .right .sign_in {
       overflow: hidden;
@@ -843,7 +850,7 @@ aside .bet_box {
       .h_wrap .right .sign_in.active {
         display: block; }
     .h_wrap .right .sign_yet {
-      line-height: 5em;
+      line-height: 6em;
       text-align: right; }
       .h_wrap .right .sign_yet .wrap {
         line-height: 4em;
@@ -868,7 +875,7 @@ aside .bet_box {
         font-size: 1.1em;
         color: #4d515d; }
     .h_wrap .right .sign_in {
-      line-height: 5em;
+      line-height: 6em;
       text-align: right; }
       .h_wrap .right .sign_in .wrap {
         display: inline-block;
@@ -1097,7 +1104,7 @@ aside .bet_box {
     margin: 0 .5em 0 0; }
 
 .card {
-  font-size: 1.12em;
+  font-size: 1em;
   border-radius: 18px;
   overflow: hidden;
   -webkit-box-shadow: 0 0 4px 2px #bac0db;
@@ -1160,31 +1167,33 @@ aside .bet_box {
       position: relative;
       float: left;
       border-right: 2px solid #e0e1e3; }
-      .card li div.box_8 span:hover:hover:hover, .card li div.box_8 span.active.active.active, .card li div.box_4 span:hover:hover:hover, .card li div.box_4 span.active.active.active, .card li div.box_3 span:hover:hover:hover, .card li div.box_3 span.active.active.active, .card li div.box_2 span:hover:hover:hover, .card li div.box_2 span.active.active.active, .card li div.box_1 span:hover:hover:hover, .card li div.box_1 span.active.active.active {
-        background: #3654ff;
-        border: 1px solid transparent; }
-        .card li div.box_8 span:hover:hover:hover p, .card li div.box_8 span.active.active.active p, .card li div.box_4 span:hover:hover:hover p, .card li div.box_4 span.active.active.active p, .card li div.box_3 span:hover:hover:hover p, .card li div.box_3 span.active.active.active p, .card li div.box_2 span:hover:hover:hover p, .card li div.box_2 span.active.active.active p, .card li div.box_1 span:hover:hover:hover p, .card li div.box_1 span.active.active.active p {
-          color: #fff; }
-      .card li div.box_8.no_use.no_use.no_use.no_use span, .card li div.box_4.no_use.no_use.no_use.no_use span, .card li div.box_3.no_use.no_use.no_use.no_use span, .card li div.box_2.no_use.no_use.no_use.no_use span, .card li div.box_1.no_use.no_use.no_use.no_use span {
-        background: #f7f7f7;
-        color: #4d515d;
-        pointer-events: none;
-        border-color: transparent; }
-      .card li div.box_8 .no_use.no_use.no_use.no_use.no_use, .card li div.box_4 .no_use.no_use.no_use.no_use.no_use, .card li div.box_3 .no_use.no_use.no_use.no_use.no_use, .card li div.box_2 .no_use.no_use.no_use.no_use.no_use, .card li div.box_1 .no_use.no_use.no_use.no_use.no_use {
-        background: #f7f7f7;
-        color: #4d515d;
-        border-color: transparent;
-        pointer-events: none; }
-      .card li div.box_8.no_use_d span, .card li div.box_4.no_use_d span, .card li div.box_3.no_use_d span, .card li div.box_2.no_use_d span, .card li div.box_1.no_use_d span {
-        background: #f7f7f7;
-        color: #4d515d;
-        pointer-events: none;
-        border-color: transparent; }
-      .card li div.box_8 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_4 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_3 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_2 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_1 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d {
-        background: #f7f7f7;
-        color: #4d515d;
-        border-color: transparent;
-        pointer-events: none; }
+      .card li div.box_8, .card li div.box_4, .card li div.box_3, .card li div.box_2, .card li div.box_1 {
+        padding: 6px 0; }
+        .card li div.box_8 span:hover:hover:hover, .card li div.box_8 span.active.active.active, .card li div.box_4 span:hover:hover:hover, .card li div.box_4 span.active.active.active, .card li div.box_3 span:hover:hover:hover, .card li div.box_3 span.active.active.active, .card li div.box_2 span:hover:hover:hover, .card li div.box_2 span.active.active.active, .card li div.box_1 span:hover:hover:hover, .card li div.box_1 span.active.active.active {
+          background: #3654ff;
+          border: 1px solid transparent; }
+          .card li div.box_8 span:hover:hover:hover p, .card li div.box_8 span.active.active.active p, .card li div.box_4 span:hover:hover:hover p, .card li div.box_4 span.active.active.active p, .card li div.box_3 span:hover:hover:hover p, .card li div.box_3 span.active.active.active p, .card li div.box_2 span:hover:hover:hover p, .card li div.box_2 span.active.active.active p, .card li div.box_1 span:hover:hover:hover p, .card li div.box_1 span.active.active.active p {
+            color: #fff; }
+        .card li div.box_8.no_use.no_use.no_use.no_use span, .card li div.box_4.no_use.no_use.no_use.no_use span, .card li div.box_3.no_use.no_use.no_use.no_use span, .card li div.box_2.no_use.no_use.no_use.no_use span, .card li div.box_1.no_use.no_use.no_use.no_use span {
+          background: none;
+          color: #4d515d;
+          pointer-events: none;
+          border-color: transparent; }
+        .card li div.box_8 .no_use.no_use.no_use.no_use.no_use, .card li div.box_4 .no_use.no_use.no_use.no_use.no_use, .card li div.box_3 .no_use.no_use.no_use.no_use.no_use, .card li div.box_2 .no_use.no_use.no_use.no_use.no_use, .card li div.box_1 .no_use.no_use.no_use.no_use.no_use {
+          background: none;
+          color: #4d515d;
+          border-color: transparent;
+          pointer-events: none; }
+        .card li div.box_8.no_use_d span, .card li div.box_4.no_use_d span, .card li div.box_3.no_use_d span, .card li div.box_2.no_use_d span, .card li div.box_1.no_use_d span {
+          background: #f7f7f7;
+          color: #4d515d;
+          pointer-events: none;
+          border-color: transparent; }
+        .card li div.box_8 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_4 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_3 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_2 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_1 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d {
+          background: #f7f7f7;
+          color: #4d515d;
+          border-color: transparent;
+          pointer-events: none; }
       .card li div.wrap_in span:hover:hover:hover, .card li div.wrap_in span.active.active.active {
         background: #3654ff;
         border: 1px solid transparent; }
@@ -1211,8 +1220,7 @@ aside .bet_box {
         border-color: transparent;
         pointer-events: none; }
       .card li div.box_8 {
-        height: 100%;
-        padding: 8px 0; }
+        height: 100%; }
         .card li div.box_8 span {
           float: left;
           width: 11.375%;
@@ -1230,8 +1238,7 @@ aside .bet_box {
           .card li div.box_8 span:last-child {
             margin: 0 1% 0 0; }
       .card li div.box_4 {
-        height: 100%;
-        padding: 8px 0; }
+        height: 100%; }
         .card li div.box_4 span {
           float: left;
           width: 23.75%;
@@ -1251,8 +1258,7 @@ aside .bet_box {
           .card li div.box_4 span:last-child {
             margin: 0 1% 0 0; }
       .card li div.box_3 {
-        height: 100%;
-        padding: 8px 0; }
+        height: 100%; }
         .card li div.box_3 span {
           float: left;
           width: 32%;
@@ -1268,8 +1274,7 @@ aside .bet_box {
           .card li div.box_3 span:last-child {
             margin: 0 1% 0 0; }
       .card li div.box_2 {
-        height: 100%;
-        padding: 8px 0; }
+        height: 100%; }
         .card li div.box_2 span {
           float: left;
           width: 48.5%;
@@ -1472,7 +1477,8 @@ aside .bet_box {
     .card .g_name p {
       line-height: 1;
       vertical-align: middle;
-      margin: 0 0 0 1em; }
+      margin: 0 0 0 1em;
+      font-size: 1.12em; }
   .card .title {
     line-height: 1.8em;
     overflow: hidden;
@@ -3920,9 +3926,9 @@ header {
       color: #b4bac8; }
 
 .container {
-  margin: 6.5em 0 0;
+  margin: 7.5em 0 0;
   width: 100%;
-  height: calc(100% - 6.5em);
+  height: calc(100% - 7.5em);
   position: fixed;
   z-index: 1;
   overflow: auto;
@@ -4668,9 +4674,9 @@ header {
         .container main .left ul.index.active {
           display: block; }
         .container main .left ul.index li {
-          line-height: 3.5em;
+          line-height: 3.8em;
           width: 100%;
-          padding: 0 0 0 .75em;
+          padding: 0 0 0 1em;
           cursor: pointer;
           position: relative; }
           .container main .left ul.index li i,
@@ -4681,8 +4687,8 @@ header {
             height: 1.5em;
             background: url(../image/icon/list3.png) no-repeat;
             background-size: 1800%;
-            vertical-align: middle;
-            margin: 0 .5em 0 0; }
+            vertical-align: text-bottom;
+            margin: 0 1.15em 0 0; }
             .container main .left ul.index li i.i1 {
               background-position: 0em 0; }
             .container main .left ul.index li i.i2 {
@@ -4720,19 +4726,19 @@ header {
             .container main .left ul.index li i.i18 {
               background-position: -25.5em 0; }
           .container main .left ul.index li p {
-            font-size: 1.1em;
+            font-size: 1.15em;
             line-height: 100%;
             width: 50%;
             vertical-align: middle; }
             .container main .left ul.index li p.num {
               position: absolute;
-              right: .5em;
+              right: .9em;
               top: 50%;
               -webkit-transform: translateY(-50%);
               -ms-transform: translateY(-50%);
               transform: translateY(-50%);
               background: #6272cc;
-              padding: 3px 6px 2px;
+              padding: 3px 6px 1px;
               border-radius: 6px;
               color: #fff;
               font-size: 1em;

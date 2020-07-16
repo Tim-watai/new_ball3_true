@@ -48,7 +48,8 @@
     }
   }
 .card{
-font-size: 1.12em;
+// font-size: 1.12em;
+font-size: 1em;
 border-radius: 18px;
 overflow: hidden;
 box-shadow: 0 0 4px 2px #bac0db;
@@ -129,6 +130,7 @@ li{
     position: relative;
     float: left;
     &.box_8,&.box_4,&.box_3,&.box_2,&.box_1{
+        padding: 6px 0;
         span{
         &:hover:hover:hover,&.active.active.active{
             background: #3654ff;
@@ -140,7 +142,7 @@ li{
         }
         &.no_use.no_use.no_use.no_use{
         span{
-        background: #f7f7f7;
+        background: none;
         // color: #8b8b8b;
         color: #4d515d;
         pointer-events: none;
@@ -148,7 +150,7 @@ li{
         }
         }
         .no_use.no_use.no_use.no_use.no_use{
-            background: #f7f7f7;
+            background: none;
         //  color: #8b8b8b;
             color: #4d515d;
             border-color: transparent;
@@ -212,7 +214,7 @@ li{
     }
     &.box_8{
         height: 100%;
-        padding: 8px 0;
+        // padding: 8px 0;
         span{
         float: left;
         width: 11.375%;
@@ -237,7 +239,7 @@ li{
     }
     &.box_4{
         height: 100%;
-        padding: 8px 0;
+        // padding: 8px 0;
         span{
         float: left;
         width: 23.75%;
@@ -264,7 +266,7 @@ li{
     }
     &.box_3{
         height: 100%;
-        padding: 8px 0;
+        // padding: 8px 0;
         span{
         float: left;
         width: 32%;
@@ -285,7 +287,7 @@ li{
     }
     &.box_2{
         height: 100%;
-        padding: 8px 0;
+        // padding: 8px 0;
         span{
         float: left;
         width: 48.5%;
@@ -518,6 +520,7 @@ p{
     line-height: 1;
     vertical-align: middle;
     margin: 0 0 0 1em;
+    font-size: 1.12em;
     }
 }
 .title{
