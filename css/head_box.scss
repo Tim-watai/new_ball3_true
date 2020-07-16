@@ -21,15 +21,24 @@
     transform: translateX(-50%);
     line-height: 5em;
     overflow: hidden;
-&.other_size{
-    width: 1100px;
-    .logo{
-        width: 20%;
+    &.live_mode{
+        .logo{
+            margin: 0 0 0 10.7%;
+        }
+        .right{
+            width: 22.2%;
+            padding: 0;
+        }
     }
-    .right{
-        padding: 0;
+    &.other_size{
+        width: 1100px;
+        .logo{
+            width: 20%;
+        }
+        .right{
+            padding: 0;
+        }
     }
-}
 // padding: 0 0 0 .4em;
 .logo {
     width: 13.7%;
@@ -122,6 +131,7 @@ ul {
     padding: 0 calc(100% * .178) 0 0;
     .sign_yet,
     .sign_in {
+        text-align: center;
     overflow: hidden;
     display: none;
     &.active{
@@ -130,7 +140,7 @@ ul {
     }
     .sign_yet {
     line-height: 6em;
-    text-align: right;
+    // text-align: right;
     .wrap {
         line-height: 4em;
         display: inline-block;
@@ -163,7 +173,7 @@ ul {
     //登入
     .sign_in {
     line-height: 6em;
-    text-align: right;
+    // text-align: right;
     .wrap {
         display: inline-block;
         line-height: 4em;

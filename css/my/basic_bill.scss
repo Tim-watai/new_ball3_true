@@ -714,17 +714,17 @@
                             position: absolute;
                             top: 50%;
                             transform: translate(0%,-50%);
-                            left: .125em;
+                            left: .2em;
                             background: #fff;
                             border-radius: 100px;
-                            width: 1.5em;
-                            height: 1.5em;
+                            width: 1.3em;
+                            height: 1.3em;
                             transition: all .2s ease-in-out;
                         }
                         &.active{
                             background: #808290;
                             .s_ball{
-                                transform: translate(95%,-50%);
+                                transform: translate(1.4em,-50%);
                             }
                         }
                     }

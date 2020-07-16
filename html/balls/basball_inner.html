@@ -23,7 +23,7 @@
             </p>
         </div>
         <div class="h_box">
-            <div class="h_wrap">
+            <div class="h_wrap live_mode">
                 <div class="logo">
                     <h1>LOGO</h1>
                 </div>
@@ -395,7 +395,7 @@
 
 
 <div class="container cn">
-    <main>
+    <main class="live_mode">
         <div class="right">
           <div class="wrap">
             <div class="game_in bas">
@@ -429,6 +429,7 @@
               <div class="back_wrap">
                 <div class="arrow_w"></div>
                 <p>返回</p>
+                <a href="javascript:history.back()"></a>
               </div>
                 <p>所有盤口</p>
               <div class="line"></div>
@@ -1708,15 +1709,15 @@
 <script text="javascript">
  $(document).ready(function(){
    console.log('ready');
-      //登入狀態切換
-      let sign_yet = $('.right .sign_yet');
+           //登入狀態切換
+           let sign_yet = $('.right .sign_yet');
       let sign_in = $('.right .sign_in');
       let list_yet = $('.f_wrap .f_bot ul.yet');
       let list_in = $('.f_wrap .f_bot ul.in');
       let btn_start = $('header .h_wrap .right');
-    
-      // $('.f_wrap .f_bot ul.in').removeClass('active');
-        // $('.f_wrap .f_bot ul.yet').addClass('active');
+      let right_2_live = $('.right_2');
+      let head_wrap = $('.h_wrap');
+      let main_page = $('main');
         btn_start.click(function(){
           if(sign_in.hasClass('active')){
             return  sign_active(false);
@@ -1726,15 +1727,22 @@
         })
 
        function sign_active (sign){
+         console.log('sign ='+sign)
       if(sign == false){
                 sign_yet.addClass('active');
                 sign_in.removeClass('active');
                 list_yet.addClass('active');
+                right_2_live.removeClass('active');
+                head_wrap.removeClass('live_mode');
+                main_page.removeClass('live_mode');
         return  list_in.removeClass('active');
       }else{
                 sign_yet.removeClass('active');
                 sign_in.addClass('active');
                 list_yet.removeClass('active');
+                right_2_live.addClass('active');
+                head_wrap.addClass('live_mode');
+                main_page.addClass('live_mode');
         return  list_in.addClass('active');
       }
       }

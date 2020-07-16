@@ -763,6 +763,11 @@ aside .bet_box {
   transform: translateX(-50%);
   line-height: 5em;
   overflow: hidden; }
+  .h_wrap.live_mode .logo {
+    margin: 0 0 0 10.7%; }
+  .h_wrap.live_mode .right {
+    width: 22.2%;
+    padding: 0; }
   .h_wrap.other_size {
     width: 1100px; }
     .h_wrap.other_size .logo {
@@ -844,14 +849,14 @@ aside .bet_box {
     padding: 0 calc(100% * .178) 0 0; }
     .h_wrap .right .sign_yet,
     .h_wrap .right .sign_in {
+      text-align: center;
       overflow: hidden;
       display: none; }
       .h_wrap .right .sign_yet.active,
       .h_wrap .right .sign_in.active {
         display: block; }
     .h_wrap .right .sign_yet {
-      line-height: 6em;
-      text-align: right; }
+      line-height: 6em; }
       .h_wrap .right .sign_yet .wrap {
         line-height: 4em;
         display: inline-block;
@@ -875,8 +880,7 @@ aside .bet_box {
         font-size: 1.1em;
         color: #4d515d; }
     .h_wrap .right .sign_in {
-      line-height: 6em;
-      text-align: right; }
+      line-height: 6em; }
       .h_wrap .right .sign_in .wrap {
         display: inline-block;
         line-height: 4em;
@@ -1103,6 +1107,30 @@ aside .bet_box {
     vertical-align: text-bottom;
     margin: 0 .5em 0 0; }
 
+.game_inner_box.game_inner_box .card .g_name {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#414c88));
+  background: -webkit-linear-gradient(top, #6b76b4 0%, #414c88 100%);
+  background: -o-linear-gradient(top, #6b76b4 0%, #414c88 100%);
+  background: linear-gradient(to bottom, #6b76b4 0%, #414c88 100%);
+  color: #fff; }
+
+.game_inner_box.game_inner_box .card div.box_8 span, .game_inner_box.game_inner_box .card div.box_4 span, .game_inner_box.game_inner_box .card div.box_3 span, .game_inner_box.game_inner_box .card div.box_2 span, .game_inner_box.game_inner_box .card div.box_1 span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%); }
+
+.game_inner_box.game_inner_box .card div.wrap_in span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+  border: 1px solid #b9bfdc;
+  border-radius: 8px; }
+
+.game_inner_box.game_inner_box .card span.two_text p:last-child {
+  color: #005aff; }
+
 .card {
   font-size: 1em;
   border-radius: 18px;
@@ -1294,17 +1322,15 @@ aside .bet_box {
       .card li div.box_1 span {
         display: inline-block;
         width: 85%;
-        margin: 0 1% 0;
         background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
         background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
         background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
         background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
         border: 1px solid #b9bfdc;
         border-radius: 4px;
-        height: calc(85% - 8px);
+        height: calc(100%);
         position: relative;
         cursor: pointer;
-        vertical-align: middle;
         line-height: 1;
         position: relative; }
       .card li div span.solo p {
@@ -1532,6 +1558,26 @@ aside .bet_box {
     background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
     border: 1px solid #b9bfdc;
     border-radius: 8px; }
+  .card.blue.blue .g_name {
+    background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#414c88));
+    background: -webkit-linear-gradient(top, #6b76b4 0%, #414c88 100%);
+    background: -o-linear-gradient(top, #6b76b4 0%, #414c88 100%);
+    background: linear-gradient(to bottom, #6b76b4 0%, #414c88 100%);
+    color: #fff; }
+  .card.blue.blue div.box_8 span, .card.blue.blue div.box_4 span, .card.blue.blue div.box_3 span, .card.blue.blue div.box_2 span, .card.blue.blue div.box_1 span {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%); }
+  .card.blue.blue div.wrap_in span {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+    border: 1px solid #b9bfdc;
+    border-radius: 8px; }
+  .card.blue.blue div span.two_text p:last-child {
+    color: #005aff; }
   .card .row {
     background: #fefefe; }
     .card .row:nth-child(even) {
@@ -1577,10 +1623,6 @@ aside .bet_box {
       width: 100%;
       border: none;
       position: relative; }
-      .card.big_mode .row .two div:first-child span {
-        margin: .25em 0 0; }
-      .card.big_mode .row .two div:last-child span {
-        margin: 0 0 .25em; }
     .card.big_mode .row .three {
       padding: 0; }
       .card.big_mode .row .three div {
@@ -3198,20 +3240,20 @@ aside .bet_box {
             -webkit-transform: translate(0%, -50%);
             -ms-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
-            left: .125em;
+            left: .2em;
             background: #fff;
             border-radius: 100px;
-            width: 1.5em;
-            height: 1.5em;
+            width: 1.3em;
+            height: 1.3em;
             -webkit-transition: all .2s ease-in-out;
             -o-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out; }
           .basic_bill .save_type .mb_box.trans .switch_icon.active {
             background: #808290; }
             .basic_bill .save_type .mb_box.trans .switch_icon.active .s_ball {
-              -webkit-transform: translate(95%, -50%);
-              -ms-transform: translate(95%, -50%);
-              transform: translate(95%, -50%); }
+              -webkit-transform: translate(1.4em, -50%);
+              -ms-transform: translate(1.4em, -50%);
+              transform: translate(1.4em, -50%); }
       .basic_bill .save_type .mb_box .b50 {
         width: 50%;
         float: left;
@@ -4269,6 +4311,11 @@ header {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     height: 797px; }
+    .container main.live_mode .right {
+      width: 65.5%;
+      left: 12.3%; }
+    .container main.live_mode .left {
+      width: 12.3%; }
     .container main .swiper_ {
       height: 420px;
       position: relative;
@@ -4419,7 +4466,9 @@ header {
           color: #fff;
           border-radius: 6px;
           margin: 0px 1em 0px 0px;
-          vertical-align: middle; }
+          vertical-align: middle;
+          position: relative;
+          z-index: 1; }
           .container main .right .search_bar .back_wrap .arrow_w {
             background: url(../image/icon/arrow_w.png) no-repeat;
             background-size: 100%;
@@ -4791,7 +4840,7 @@ header {
             .container main .left ul.index li:hover i.i18, .container main .left ul.index li:active i.i18, .container main .left ul.index li.active i.i18 {
               background-position: -25.5em -1.5em; }
     .container main .right_2 {
-      width: calc(1343px * 0.178);
+      width: 22.2%;
       height: auto;
       float: left;
       overflow-y: scroll;

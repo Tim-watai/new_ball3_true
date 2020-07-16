@@ -465,6 +465,15 @@ header {
     left: 50%;
     transform: translateX(-50%);
     height: 797px;
+    &.live_mode{
+      .right{
+        width: 65.5%;
+        left: 12.3%;
+      }
+      .left{
+        width: 12.3%;
+      }
+    }
     .swiper_ {
       height: 420px;
       position: relative;
@@ -633,6 +642,8 @@ header {
           border-radius: 6px;
           margin: 0px 1em 0px 0px;
           vertical-align: middle;
+          position: relative;
+          z-index: 1;
           .arrow_w{
             background: url(../image/icon/arrow_w.png) no-repeat;
             background-size: 100%;
@@ -883,7 +894,7 @@ header {
       }
     }
     .left {
-      // width: 12%;
+      // width: 12.3%; live_mode
       width: 13.7%;
       float: left;
       top: 0;
@@ -985,7 +996,7 @@ header {
         }
     }
     .right_2{
-      width: calc(1343px * 0.178);
+      width: 22.2%;
       height: auto;
       float: left;
       overflow-y: scroll;

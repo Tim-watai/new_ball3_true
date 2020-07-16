@@ -39,9 +39,8 @@ $(document).ready(function() {
       let list_in = $('.f_wrap .f_bot ul.in');
       let btn_start = $('header .h_wrap .right');
       let right_2_live = $('.right_2');
-    
-      // $('.f_wrap .f_bot ul.in').removeClass('active');
-        // $('.f_wrap .f_bot ul.yet').addClass('active');
+      let head_wrap = $('.h_wrap');
+      let main_page = $('main');
         btn_start.click(function(){
           if(sign_in.hasClass('active')){
             return  sign_active(false);
@@ -57,12 +56,16 @@ $(document).ready(function() {
                 sign_in.removeClass('active');
                 list_yet.addClass('active');
                 right_2_live.removeClass('active');
+                head_wrap.removeClass('live_mode');
+                main_page.removeClass('live_mode');
         return  list_in.removeClass('active');
       }else{
                 sign_yet.removeClass('active');
                 sign_in.addClass('active');
                 list_yet.removeClass('active');
                 right_2_live.addClass('active');
+                head_wrap.addClass('live_mode');
+                main_page.addClass('live_mode');
         return  list_in.addClass('active');
       }
       }
@@ -103,7 +106,7 @@ $(document).ready(function() {
           $('main .left ul.my_page').siblings().removeClass('active');
           $('main .left ul.my_page').addClass('active');
           // $('main .right .my_bill').css('display','block');
-          dummy('my');
+          dummy();
         }else{
           $('.container main').removeClass('my_page');
           $('main .left ul.my_page').siblings().addClass('active');
@@ -437,25 +440,21 @@ $(document).ready(function() {
         let obj_w = search_bar_obj.outerWidth();
             search_bar_dummy.css({width:obj_w});
             ball_search_dummy.css({width:obj_w});
+
       function dummy(page){
-        search_bar_dummy.css({width:obj_w});
-        ball_search_dummy.css({width:obj_w});
-        if(page == 'my'){
-          let search_bar_my = $('.container main.my_page .right .my_bill');
-          let my_wrap = $('.container main.my_page .right .my_bill .wrap.fixed');
-          let obj_w = search_bar_my.outerWidth();
-          my_wrap.css({width:obj_w});
-          console.log('my')
-        }
+         let re_search_bar_obj = $('.container main .right .search_bar');
+          let re_obj_w = re_search_bar_obj.outerWidth();
+          search_bar_dummy.css({width:re_obj_w});
+          ball_search_dummy.css({width:re_obj_w});
       }
       //
       //視窗偵測
         $('.container main .right').scroll(function () {
-      
           var scrollVal = $(this).scrollTop();
         //  console.log('scrollVal = '+scrollVal);
          if(scrollVal >= 50){
           $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
+          dummy();
          }else if(scrollVal <= 49){
           $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
          }

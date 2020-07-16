@@ -47,6 +47,37 @@
       margin: 0 .5em 0 0;
     }
   }
+.game_inner_box.game_inner_box{
+    .card{
+        .g_name{
+            background: linear-gradient(to bottom, #6b76b4 0%, #414c88 100%);
+            color: #fff;
+        }
+        div{
+            &.box_8,&.box_4,&.box_3,&.box_2,&.box_1{
+                span{
+                background: linear-gradient(to bottom ,#ffffff 0%, #ebecf7 100%);
+                }
+            }
+            &.wrap_in{
+                span{
+                background: linear-gradient(to bottom ,#ffffff 0%, #ebecf7 100%);
+                border: 1px solid #b9bfdc;
+                border-radius: 8px;
+                }
+            }
+        }
+        span{
+            &.two_text{
+                p{
+                    &:last-child{
+                        color: #005aff;
+                    }
+                }
+            }
+        }
+    }
+}
 .card{
 // font-size: 1.12em;
 font-size: 1em;
@@ -308,15 +339,13 @@ li{
         span{
         display: inline-block;
         width: 85%;
-        margin: 0 1% 0;
         background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
         border: 1px solid #b9bfdc;
         border-radius: 4px;
         //0703
-        height: calc(85% - 8px);
+        height: calc(100%);
         position: relative;
         cursor: pointer;
-        vertical-align: middle;
         line-height: 1;
         position: relative;
         }
@@ -590,6 +619,35 @@ p{
     }
     }
 }
+&.blue.blue{
+    .g_name{
+        background: linear-gradient(to bottom, #6b76b4 0%, #414c88 100%);
+        color: #fff;
+    }
+    div{
+        &.box_8,&.box_4,&.box_3,&.box_2,&.box_1{
+            span{
+            background: linear-gradient(to bottom ,#ffffff 0%, #ebecf7 100%);
+            }
+        }
+        &.wrap_in{
+            span{
+            background: linear-gradient(to bottom ,#ffffff 0%, #ebecf7 100%);
+            border: 1px solid #b9bfdc;
+            border-radius: 8px;
+            }
+        }
+        span{
+            &.two_text{
+                p{
+                    &:last-child{
+                        color: #005aff;
+                    }
+                }
+            }
+        }
+        }
+}
 .row{
     background: #fefefe;
     &:nth-child(even){
@@ -658,22 +716,21 @@ $big_mode_row:5em;
     }
     .two{
         div{
-        
         line-height: calc(#{$big_mode_row} / 2);
         height: calc(#{$big_mode_row} / 2);
         width: 100%;
         border: none;
         position: relative;
-        &:first-child{
-            span{
-            margin: .25em 0 0;
-            }
-        }
-        &:last-child{
-            span{
-            margin:  0 0 .25em;
-            }
-        }
+        // &:first-child{
+        //     span{
+        //     margin: .25em 0 0;
+        //     }
+        // }
+        // &:last-child{
+        //     span{
+        //     margin:  0 0 .25em;
+        //     }
+        // }
         }
     }
     .three{

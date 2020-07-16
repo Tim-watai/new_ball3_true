@@ -5664,33 +5664,29 @@ $(document).ready(function(){
             return  balls_choice.removeClass('active');
         }
     })
-    //dummy同步本尊的寬
-   let search_bar_obj = $('.container main .right .search_bar');
+         //dummy同步本尊的寬
+         let search_bar_obj = $('.container main .right .search_bar');
         let search_bar_dummy = $('.search_bar.fixed');
         let ball_search_dummy = $('.wrap.fixed');
         
         let obj_w = search_bar_obj.outerWidth();
             search_bar_dummy.css({width:obj_w});
             ball_search_dummy.css({width:obj_w});
+
       function dummy(page){
-        search_bar_dummy.css({width:obj_w});
-        ball_search_dummy.css({width:obj_w});
-        if(page == 'my'){
-          let search_bar_my = $('.container main.my_page .right .my_bill');
-          let my_wrap = $('.container main.my_page .right .my_bill .wrap.fixed');
-          let obj_w = search_bar_my.outerWidth();
-          my_wrap.css({width:obj_w});
-          console.log('my')
-        }
+         let re_search_bar_obj = $('.container main .right .search_bar');
+          let re_obj_w = re_search_bar_obj.outerWidth();
+          search_bar_dummy.css({width:re_obj_w});
+          ball_search_dummy.css({width:re_obj_w});
       }
       //
       //視窗偵測
         $('.container main .right').scroll(function () {
-      
           var scrollVal = $(this).scrollTop();
         //  console.log('scrollVal = '+scrollVal);
          if(scrollVal >= 50){
           $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
+          dummy();
          }else if(scrollVal <= 49){
           $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
          }
