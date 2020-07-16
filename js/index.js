@@ -497,4 +497,31 @@ $(document).ready(function() {
       
       })
       //<-----------------
+//新手專業switch
+let hardchange = $(' main .right .search_bar p.beginner');
+let beginner_page = $('.page_beginner');
+let senior_page = $('.page_senior');
+hardchange.click(function(){
+  if($(this).hasClass('start')!=true){
+    change_methods('beg');
+    $(this).addClass('start');
+  }else{
+    change_methods('sen');
+    $(this).removeClass('start');
+  }
+})
+function change_methods(ishard){
+  if(ishard == 'beg'){
+    hardchange.text('新手版');
+    beginner_page.css('display','block');
+    senior_page.css('display','none');
+  }else if(ishard == 'sen')
+  {
+    hardchange.text('專業版');
+    beginner_page.css('display','none');
+    senior_page.css('display','block');
+  }
+}
+//<---------------------------
+
   }); 

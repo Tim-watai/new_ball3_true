@@ -1195,6 +1195,58 @@ aside .bet_box {
       position: relative;
       float: left;
       border-right: 2px solid #e0e1e3; }
+      .card li div.icon_box {
+        padding: 0 6px;
+        overflow: hidden; }
+        .card li div.icon_box .ii_wrap {
+          float: none;
+          margin: 6px 0; }
+        .card li div.icon_box .icon_box_wrap {
+          float: none;
+          overflow: hidden;
+          margin-right: -7px; }
+        .card li div.icon_box .i_box {
+          width: calc(100% / 3);
+          display: block;
+          float: left;
+          line-height: calc(3em - 12px); }
+          .card li div.icon_box .i_box.heart_size {
+            width: 30px; }
+          .card li div.icon_box .i_box div.cube {
+            background: #000;
+            width: auto;
+            height: 2em;
+            margin: 0px 7px 0 0px;
+            float: none;
+            cursor: pointer;
+            position: relative; }
+            .card li div.icon_box .i_box div.cube.tv {
+              background: url(../image/icon/live_icon.png) no-repeat;
+              background-size: cover;
+              width: 2em;
+              display: inline-block;
+              vertical-align: bottom;
+              width: 1.9em;
+              height: 1.9em; }
+            .card li div.icon_box .i_box div.cube.heart {
+              background: url(../image/icon/heart.png) no-repeat;
+              background-size: 200%;
+              width: 1.6em;
+              height: 1.6em;
+              display: inline-block;
+              vertical-align: bottom; }
+              .card li div.icon_box .i_box div.cube.heart:hover, .card li div.icon_box .i_box div.cube.heart.active {
+                background-position-x: -1.6em; }
+            .card li div.icon_box .i_box div.cube.num {
+              line-height: calc(3em - 12px);
+              background: none;
+              color: #4d515d; }
+              .card li div.icon_box .i_box div.cube.num span {
+                display: inline-block;
+                line-height: 100%;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 1.2em; }
       .card li div.box_8, .card li div.box_4, .card li div.box_3, .card li div.box_2, .card li div.box_1 {
         padding: 6px 0; }
         .card li div.box_8 span:hover:hover:hover, .card li div.box_8 span.active.active.active, .card li div.box_4 span:hover:hover:hover, .card li div.box_4 span.active.active.active, .card li div.box_3 span:hover:hover:hover, .card li div.box_3 span.active.active.active, .card li div.box_2 span:hover:hover:hover, .card li div.box_2 span.active.active.active, .card li div.box_1 span:hover:hover:hover, .card li div.box_1 span.active.active.active {
@@ -1421,7 +1473,7 @@ aside .bet_box {
     .card li .b10 {
       width: 10%; }
     .card li .b11 {
-      width: 11%; }
+      width: calc(11% + 1.7%); }
     .card li .b12 {
       width: 12%; }
     .card li .b13 {
@@ -1445,9 +1497,9 @@ aside .bet_box {
     .card li .b35 {
       width: 35%; }
     .card li .b38 {
-      width: 38%; }
+      width: calc(38% - 1.7%); }
     .card li .b46 {
-      width: 46%; }
+      width: calc(46% - 1.7%); }
     .card li .b100 {
       width: 100%; }
     .card li:first-child {
@@ -1456,50 +1508,53 @@ aside .bet_box {
         display: none; }
   .card p {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    font-size: 1.15em;
+    line-height: 100%;
+    white-space: nowrap; }
   .card .g_name {
     line-height: 2em; }
     .card .g_name i {
       display: inline-block;
-      width: .9em;
-      height: .9em;
+      width: 1.15em;
+      height: 1.15em;
       background: url(../image/icon/list3.png) no-repeat;
       background-size: 1800%;
       line-height: 1;
       vertical-align: text-top;
       margin: 0 -.5em 0 .5em; }
       .card .g_name i.i1 {
-        background-position-x: -1.8em; }
+        background-position-x: -2.3em; }
       .card .g_name i.i2 {
-        background-position-x: -2.7em; }
+        background-position-x: -3.45em; }
       .card .g_name i.i3 {
-        background-position-x: -3.6em; }
+        background-position-x: -4.6em; }
       .card .g_name i.i4 {
-        background-position-x: -4.5em; }
+        background-position-x: -5.75em; }
       .card .g_name i.i5 {
-        background-position-x: -5.4em; }
+        background-position-x: -6.9em; }
       .card .g_name i.i6 {
-        background-position-x: -6.3em; }
+        background-position-x: -8.05em; }
       .card .g_name i.i7 {
-        background-position-x: -7.2em; }
+        background-position-x: -9.2em; }
       .card .g_name i.i8 {
-        background-position-x: -8.1em; }
+        background-position-x: -10.35em; }
       .card .g_name i.i9 {
-        background-position-x: -9em; }
+        background-position-x: -11.5em; }
       .card .g_name i.i10 {
-        background-position-x: -9.9em; }
+        background-position-x: -12.65em; }
       .card .g_name i.i11 {
-        background-position-x: -10.8em; }
+        background-position-x: -13.8em; }
       .card .g_name i.i12 {
-        background-position-x: -11.7em; }
+        background-position-x: -14.95em; }
       .card .g_name i.i13 {
-        background-position-x: -12.6em; }
+        background-position-x: -16.1em; }
       .card .g_name i.i14 {
-        background-position-x: -13.5em; }
+        background-position-x: -17.25em; }
       .card .g_name i.i15 {
-        background-position-x: -14.4em; }
+        background-position-x: -18.4em; }
       .card .g_name i.i16 {
-        background-position-x: -15.3em; }
+        background-position-x: -19.55em; }
     .card .g_name p {
       line-height: 1;
       vertical-align: middle;
@@ -1513,7 +1568,7 @@ aside .bet_box {
       display: inline-block;
       line-height: 1;
       vertical-align: middle;
-      font-size: 14px; }
+      font-size: 1.15em; }
   .card.gold.gold .g_name {
     background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d9a87c));
     background: -webkit-linear-gradient(top, #fedab8 0%, #d9a87c 100%);
@@ -1521,7 +1576,7 @@ aside .bet_box {
     background: linear-gradient(to bottom, #fedab8 0%, #d9a87c 100%);
     color: #6c2600; }
     .card.gold.gold .g_name i {
-      background-position-y: -.9em; }
+      background-position-y: -1.15em; }
   .card.gold.gold .title {
     background: #fff0e2; }
   .card.gold.gold div.box_8 span, .card.gold.gold div.box_4 span, .card.gold.gold div.box_3 span, .card.gold.gold div.box_2 span, .card.gold.gold div.box_1 span {
@@ -1543,7 +1598,7 @@ aside .bet_box {
     background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
     color: #4d515d; }
     .card.gray.gray .g_name i {
-      background-position-y: -1.8em; }
+      background-position-y: -2.3e; }
   .card.gray.gray .title {
     background: #f3f3f3; }
   .card.gray.gray div.box_8 span, .card.gray.gray div.box_4 span, .card.gray.gray div.box_3 span, .card.gray.gray div.box_2 span, .card.gray.gray div.box_1 span {
@@ -4316,6 +4371,12 @@ header {
       left: 12.3%; }
     .container main.live_mode .left {
       width: 12.3%; }
+      .container main.live_mode .left .index li {
+        padding: 0 0 0 .8em; }
+        .container main.live_mode .left .index li i {
+          margin: 0 .7em 0 0; }
+        .container main.live_mode .left .index li .num {
+          right: .5em; }
     .container main .swiper_ {
       height: 420px;
       position: relative;
