@@ -738,6 +738,1366 @@ aside .bet_box {
 .container.en .f_wrap .f_bot ul li p {
   font-size: .9em; }
 
+.time_line {
+  background: #2f333d; }
+  .time_line p {
+    line-height: 1.5em;
+    width: 1200px;
+    text-align: right;
+    margin: 0 auto;
+    color: #b4bac8; }
+
+.h_box {
+  width: 100%;
+  height: 5em;
+  background: #fff;
+  -webkit-box-shadow: 0px 1px 3px 0px #cdd2e5;
+  box-shadow: 0px 1px 3px 0px #cdd2e5; }
+
+.h_wrap {
+  width: 1100px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  line-height: 5em;
+  overflow: hidden; }
+  .h_wrap .logo {
+    width: 17%;
+    height: 100%;
+    text-align: center;
+    float: left; }
+    .h_wrap .logo h1 {
+      font-size: 3.5em;
+      line-height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      background: -webkit-gradient(linear, left top, left bottom, from(#8997da), to(#3247b8));
+      background: -webkit-linear-gradient(top, #8997da 0%, #3247b8 100%);
+      background: -o-linear-gradient(top, #8997da 0%, #3247b8 100%);
+      background: linear-gradient(to bottom, #8997da 0%, #3247b8 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      position: relative;
+      -webkit-text-fill-color: transparent; }
+  .h_wrap ul {
+    float: left;
+    overflow: hidden;
+    margin: 0 0 0 1em; }
+    .h_wrap ul.m_yet {
+      line-height: 5em;
+      height: 5em; }
+    .h_wrap ul li {
+      font-size: 1.1em;
+      float: left;
+      margin: 0 1em;
+      position: relative;
+      color: #4d515d;
+      cursor: pointer;
+      text-align: center;
+      width: auto; }
+      .h_wrap ul li.limit_w {
+        width: 3.5em; }
+      .h_wrap ul li p {
+        width: auto;
+        line-height: 1;
+        vertical-align: middle;
+        display: inline-block;
+        word-break: break-word; }
+      .h_wrap ul li i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(../image/icon/h_icon.png) no-repeat;
+        background-size: 300%;
+        margin: 0px 4px 0 0;
+        vertical-align: text-bottom; }
+        .h_wrap ul li i.i1 {
+          background-position: 0 0; }
+        .h_wrap ul li i.i2 {
+          background-position: -16px 0; }
+        .h_wrap ul li i.i3 {
+          background-position: -32px 0; }
+      .h_wrap ul li:hover, .h_wrap ul li:active, .h_wrap ul li.active {
+        color: #293eb0; }
+        .h_wrap ul li:hover:before, .h_wrap ul li:active:before, .h_wrap ul li.active:before {
+          content: "";
+          background: #293eb0;
+          height: 0.25em;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          border-radius: 8px; }
+  .h_wrap .right {
+    float: right;
+    line-height: 5em;
+    height: 5em;
+    padding: 0 1.5em 0 0; }
+    .h_wrap .right .sign_yet,
+    .h_wrap .right .sign_in {
+      overflow: hidden;
+      display: none; }
+      .h_wrap .right .sign_yet.active,
+      .h_wrap .right .sign_in.active {
+        display: block; }
+    .h_wrap .right .sign_yet {
+      line-height: 5em;
+      text-align: right; }
+      .h_wrap .right .sign_yet .wrap {
+        line-height: 4em;
+        display: inline-block;
+        vertical-align: middle; }
+      .h_wrap .right .sign_yet p,
+      .h_wrap .right .sign_yet i,
+      .h_wrap .right .sign_yet span {
+        display: inline-block; }
+      .h_wrap .right .sign_yet i {
+        width: 30px;
+        height: 30px;
+        background: url(../image/icon/avatar.png) no-repeat;
+        background-size: 100%;
+        vertical-align: middle;
+        margin: 0 4px 0 0; }
+      .h_wrap .right .sign_yet p {
+        vertical-align: middle;
+        line-height: 100%; }
+      .h_wrap .right .sign_yet span {
+        cursor: pointer;
+        font-size: 1.1em;
+        color: #4d515d; }
+    .h_wrap .right .sign_in {
+      line-height: 5em;
+      text-align: right; }
+      .h_wrap .right .sign_in .wrap {
+        display: inline-block;
+        line-height: 4em;
+        vertical-align: middle; }
+        .h_wrap .right .sign_in .wrap .row {
+          line-height: 1.5em; }
+          .h_wrap .right .sign_in .wrap .row p {
+            font-size: 1.3em;
+            display: inline-block;
+            vertical-align: baseline; }
+            .h_wrap .right .sign_in .wrap .row p.gray {
+              color: #4d515d; }
+            .h_wrap .right .sign_in .wrap .row p.blue {
+              color: #2d43b6; }
+          .h_wrap .right .sign_in .wrap .row .vip {
+            display: inline-block;
+            vertical-align: text-bottom;
+            margin: 0 0 0 0.5em;
+            padding: 0em 0.5em 0em;
+            background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
+            background: -webkit-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
+            background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
+            background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
+            border-radius: 4px; }
+            .h_wrap .right .sign_in .wrap .row .vip i {
+              background: url(../image/icon/vip.png) no-repeat;
+              background-size: 100%;
+              display: inline-block;
+              width: 2em;
+              height: 0.8em;
+              vertical-align: middle; }
+            .h_wrap .right .sign_in .wrap .row .vip p {
+              display: inline-block;
+              font-family: "微軟正黑體";
+              font-weight: bold;
+              color: #fff;
+              vertical-align: middle;
+              line-height: 100%;
+              font-size: 1.2em;
+              margin: 0 0 0 2px; }
+          .h_wrap .right .sign_in .wrap .row.bot {
+            text-align: left; }
+            .h_wrap .right .sign_in .wrap .row.bot i {
+              width: 1.2em;
+              height: 1.2em;
+              background: url(../image/icon/q_icon.png) no-repeat;
+              background-size: 100%;
+              display: inline-block;
+              vertical-align: text-bottom;
+              margin: 0 0 0 4px; }
+
+.game_in {
+  width: 100%;
+  height: 8em;
+  margin: -.8em 0 -1em 0;
+  position: relative; }
+  .game_in.soc {
+    background: url(../image/game_in/gin_soc.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.bas {
+    background: url(../image/game_in/gin_bas.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.bask {
+    background: url(../image/game_in/gin_bask.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.my_page_bill {
+    background: url(../image/my/title_bg.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in .in_left {
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    top: calc(50%);
+    left: 2em;
+    font-size: 1.1em;
+    line-height: 1.7;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%); }
+  .game_in .in_right {
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    top: calc(50% - .5em);
+    right: 2em;
+    font-size: 1.1em;
+    line-height: 1.7;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%); }
+    .game_in .in_right li {
+      display: inline-block;
+      margin: 0 .3em 0 0; }
+      .game_in .in_right li:last-child {
+        margin: 0; }
+      .game_in .in_right li span {
+        display: inline-block;
+        vertical-align: middle;
+        width: 2em;
+        height: 1.8em;
+        background: url(../image/icon/view_icon.png) no-repeat;
+        background-size: 200%;
+        cursor: pointer; }
+        .game_in .in_right li span.i1 {
+          background-position: 0em 0; }
+        .game_in .in_right li span.i2 {
+          background-position: -2em 0; }
+  .game_in .mid {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: calc(50% - .25em);
+    left: 50%;
+    font-size: 1.1em;
+    line-height: 1.5;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .game_in .mid li:nth-child(2) {
+      position: relative; }
+      .game_in .mid li:nth-child(2):before, .game_in .mid li:nth-child(2):after {
+        content: '';
+        width: .4em;
+        height: .15em;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      .game_in .mid li:nth-child(2):before {
+        left: -3.5em; }
+      .game_in .mid li:nth-child(2):after {
+        right: -3.5em; }
+  .game_in .t_wrap1, .game_in .t_wrap2 {
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    top: calc(50% - .25em);
+    font-size: 1.2em;
+    line-height: 1;
+    text-align: left; }
+    .game_in .t_wrap1 .box, .game_in .t_wrap2 .box {
+      display: inline-block;
+      vertical-align: middle; }
+    .game_in .t_wrap1 span, .game_in .t_wrap1 p, .game_in .t_wrap2 span, .game_in .t_wrap2 p {
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle; }
+    .game_in .t_wrap1 p, .game_in .t_wrap2 p {
+      max-width: 9em;
+      line-height: 1.2;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis; }
+    .game_in .t_wrap1 span, .game_in .t_wrap2 span {
+      width: 3em;
+      height: 2em;
+      background: url(../image/icon/team_icon.png) no-repeat;
+      background-size: 600%; }
+      .game_in .t_wrap1 span.t1, .game_in .t_wrap2 span.t1 {
+        background-position-x: 0em; }
+      .game_in .t_wrap1 span.t2, .game_in .t_wrap2 span.t2 {
+        background-position-x: -3em; }
+      .game_in .t_wrap1 span.t3, .game_in .t_wrap2 span.t3 {
+        background-position-x: -6em; }
+      .game_in .t_wrap1 span.t4, .game_in .t_wrap2 span.t4 {
+        background-position-x: -9em; }
+      .game_in .t_wrap1 span.t5, .game_in .t_wrap2 span.t5 {
+        background-position-x: -12em; }
+      .game_in .t_wrap1 span.t6, .game_in .t_wrap2 span.t6 {
+        background-position-x: -15em; }
+  .game_in .t_wrap1 {
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    right: 61%; }
+    .game_in .t_wrap1 span {
+      margin: 0 0 0 .5em; }
+  .game_in .t_wrap2 {
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    left: 61%; }
+    .game_in .t_wrap2 span {
+      margin: 0 .5em 0 0; }
+
+.book {
+  line-height: 3.5em;
+  height: 3.5em;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 -.8em; }
+  .book.gold p {
+    color: #cf813a; }
+  .book.gold span {
+    background-position: 0 0; }
+  .book.blue p {
+    color: #005aff; }
+  .book.blue span {
+    background-position: -1em 0; }
+  .book.gray p {
+    color: #858585; }
+  .book.gray span {
+    background-position: -2em 0; }
+  .book p, .book span {
+    display: inline-block; }
+  .book p {
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 1.1em; }
+  .book span {
+    width: 1em;
+    height: 1em;
+    background: url(../image/icon/statust_icon.png) no-repeat;
+    background-size: 300%;
+    line-height: 1;
+    vertical-align: text-bottom;
+    margin: 0 .5em 0 0; }
+
+.card {
+  font-size: 1.12em;
+  border-radius: 18px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 4px 2px #bac0db;
+  box-shadow: 0 0 4px 2px #bac0db;
+  margin: .8em 0 0; }
+  .card.no_line.no_line li {
+    border: none;
+    background: #fff; }
+    .card.no_line.no_line li.g_name {
+      border-bottom: 1px solid #e0e1e3; }
+  .card em.wrap {
+    display: inline-block;
+    line-height: 100%;
+    vertical-align: middle;
+    font-style: normal; }
+  .card .t_left {
+    text-align: left;
+    padding: 0 .5em 0; }
+  .card .t_right {
+    text-align: right; }
+  .card .t_mid {
+    text-align: center; }
+  .card .t_hidden {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.2;
+    vertical-align: middle;
+    word-break: break-all;
+    font-size: 14px; }
+  .card li {
+    overflow: hidden;
+    position: relative;
+    border-top: 2px solid #e0e1e3; }
+    .card li .gray_bg {
+      background-color: #f3f3f3;
+      color: #4d515d; }
+    .card li .r_bg {
+      background-color: #ff6767;
+      color: #fff; }
+    .card li .p_bg {
+      background-color: #b67bff;
+      color: #fff; }
+    .card li .g_bg {
+      background-color: #50a1a2;
+      color: #fff; }
+    .card li .blue {
+      color: #005aff; }
+    .card li .red {
+      color: #ff0000; }
+    .card li .gray {
+      color: #4d515d; }
+    .card li.row {
+      position: relative;
+      pointer-events: all; }
+    .card li div {
+      position: relative;
+      float: left;
+      border-right: 2px solid #e0e1e3; }
+      .card li div.box_8 span:hover:hover:hover, .card li div.box_8 span.active.active.active, .card li div.box_4 span:hover:hover:hover, .card li div.box_4 span.active.active.active, .card li div.box_3 span:hover:hover:hover, .card li div.box_3 span.active.active.active, .card li div.box_2 span:hover:hover:hover, .card li div.box_2 span.active.active.active, .card li div.box_1 span:hover:hover:hover, .card li div.box_1 span.active.active.active {
+        background: #3654ff;
+        border: 1px solid transparent; }
+        .card li div.box_8 span:hover:hover:hover p, .card li div.box_8 span.active.active.active p, .card li div.box_4 span:hover:hover:hover p, .card li div.box_4 span.active.active.active p, .card li div.box_3 span:hover:hover:hover p, .card li div.box_3 span.active.active.active p, .card li div.box_2 span:hover:hover:hover p, .card li div.box_2 span.active.active.active p, .card li div.box_1 span:hover:hover:hover p, .card li div.box_1 span.active.active.active p {
+          color: #fff; }
+      .card li div.box_8.no_use.no_use.no_use.no_use span, .card li div.box_4.no_use.no_use.no_use.no_use span, .card li div.box_3.no_use.no_use.no_use.no_use span, .card li div.box_2.no_use.no_use.no_use.no_use span, .card li div.box_1.no_use.no_use.no_use.no_use span {
+        background: #f7f7f7;
+        color: #4d515d;
+        pointer-events: none;
+        border-color: transparent; }
+      .card li div.box_8 .no_use.no_use.no_use.no_use.no_use, .card li div.box_4 .no_use.no_use.no_use.no_use.no_use, .card li div.box_3 .no_use.no_use.no_use.no_use.no_use, .card li div.box_2 .no_use.no_use.no_use.no_use.no_use, .card li div.box_1 .no_use.no_use.no_use.no_use.no_use {
+        background: #f7f7f7;
+        color: #4d515d;
+        border-color: transparent;
+        pointer-events: none; }
+      .card li div.box_8.no_use_d span, .card li div.box_4.no_use_d span, .card li div.box_3.no_use_d span, .card li div.box_2.no_use_d span, .card li div.box_1.no_use_d span {
+        background: #f7f7f7;
+        color: #4d515d;
+        pointer-events: none;
+        border-color: transparent; }
+      .card li div.box_8 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_4 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_3 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_2 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .card li div.box_1 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d {
+        background: #f7f7f7;
+        color: #4d515d;
+        border-color: transparent;
+        pointer-events: none; }
+      .card li div.wrap_in span:hover:hover:hover, .card li div.wrap_in span.active.active.active {
+        background: #3654ff;
+        border: 1px solid transparent; }
+        .card li div.wrap_in span:hover:hover:hover p, .card li div.wrap_in span.active.active.active p {
+          color: #fff; }
+      .card li div.wrap_in.no_use.no_use.no_use.no_use span {
+        background: #f7f7f7;
+        color: #4d515d;
+        pointer-events: none;
+        border-color: transparent; }
+      .card li div.wrap_in .no_use.no_use.no_use.no_use.no_use {
+        background: #f7f7f7;
+        color: #4d515d;
+        border-color: transparent;
+        pointer-events: none; }
+      .card li div.wrap_in.no_use_d span {
+        background: #f7f7f7;
+        color: #4d515d;
+        pointer-events: none;
+        border-color: transparent; }
+      .card li div.wrap_in .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d {
+        background: #f7f7f7;
+        color: #4d515d;
+        border-color: transparent;
+        pointer-events: none; }
+      .card li div.box_8 {
+        height: 100%;
+        padding: 8px 0; }
+        .card li div.box_8 span {
+          float: left;
+          width: 11.375%;
+          border: 1px solid #b9bfdc;
+          border-radius: 8px;
+          height: 100%;
+          position: relative;
+          cursor: pointer;
+          line-height: calc(3em - 8px);
+          margin: 0 0 0 1%; }
+          .card li div.box_8 span:first-child {
+            margin: 0 0 0 1%; }
+          .card li div.box_8 span:nth-child(7) {
+            margin: 0 1% 0 1%; }
+          .card li div.box_8 span:last-child {
+            margin: 0 1% 0 0; }
+      .card li div.box_4 {
+        height: 100%;
+        padding: 8px 0; }
+        .card li div.box_4 span {
+          float: left;
+          width: 23.75%;
+          margin: 0 1% 0;
+          border: 1px solid #b9bfdc;
+          border-radius: 8px;
+          height: 100%;
+          position: relative;
+          cursor: pointer;
+          line-height: calc(3em - 12px); }
+          .card li div.box_4 span:first-child {
+            margin: 0 0 0 1%; }
+          .card li div.box_4 span:nth-child(2) {
+            margin: 0 .5% 0 1%; }
+          .card li div.box_4 span:nth-child(3) {
+            margin: 0 1% 0 .5%; }
+          .card li div.box_4 span:last-child {
+            margin: 0 1% 0 0; }
+      .card li div.box_3 {
+        height: 100%;
+        padding: 8px 0; }
+        .card li div.box_3 span {
+          float: left;
+          width: 32%;
+          margin: 0 1% 0;
+          border: 1px solid #b9bfdc;
+          border-radius: 8px;
+          height: 100%;
+          position: relative;
+          cursor: pointer;
+          line-height: calc(3em - 12px); }
+          .card li div.box_3 span:first-child {
+            margin: 0 0 0 1%; }
+          .card li div.box_3 span:last-child {
+            margin: 0 1% 0 0; }
+      .card li div.box_2 {
+        height: 100%;
+        padding: 8px 0; }
+        .card li div.box_2 span {
+          float: left;
+          width: 48.5%;
+          margin: 0 1% 0;
+          background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
+          background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
+          background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
+          background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
+          border: 1px solid #b9bfdc;
+          border-radius: 8px;
+          height: 100%;
+          position: relative;
+          cursor: pointer;
+          line-height: calc(3em - 8px); }
+          .card li div.box_2 span:last-child {
+            margin: 0 1% 0 0; }
+      .card li div.box_1 span {
+        display: inline-block;
+        width: 85%;
+        margin: 0 1% 0;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
+        background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
+        background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
+        background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
+        border: 1px solid #b9bfdc;
+        border-radius: 4px;
+        height: calc(85% - 8px);
+        position: relative;
+        cursor: pointer;
+        vertical-align: middle;
+        line-height: 1;
+        position: relative; }
+      .card li div span.solo p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      .card li div span.two_text p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+        .card li div span.two_text p:first-child {
+          left: 25%; }
+        .card li div span.two_text p:last-child {
+          left: 70%; }
+      .card li div .arrow_d {
+        color: #4d515d;
+        cursor: pointer;
+        display: inline-block;
+        background: url(../image/icon/arrow_d.png) no-repeat;
+        background-size: 100%;
+        width: .4em;
+        height: .6em;
+        margin: 0 0 0 .125em;
+        vertical-align: middle; }
+      .card li div i {
+        display: inline-block;
+        cursor: pointer; }
+        .card li div i.m_icon {
+          width: 1.2em;
+          height: 1.2em;
+          vertical-align: middle;
+          margin: 0 .125em 0 0; }
+        .card li div i.tv {
+          background: url(../image/icon/live_icon.png) no-repeat;
+          background-size: 100%; }
+        .card li div i.heart {
+          background: url(../image/icon/heart.png) no-repeat;
+          background-size: 200%; }
+          .card li div i.heart:hover, .card li div i.heart.active {
+            background-position: -1.2em 0; }
+      .card li div .point {
+        display: inline-block;
+        width: .5em;
+        height: .5em;
+        background: #e60012;
+        border-radius: 100%;
+        vertical-align: middle;
+        margin: 0 0 0 .25em; }
+      .card li div .point_b {
+        display: inline-block;
+        width: .5em;
+        height: .5em;
+        background: #000;
+        border-radius: 100%;
+        vertical-align: middle;
+        margin: 0 0 0 .25em; }
+      .card li div .bb_base {
+        display: inline-block;
+        width: 95%;
+        height: 4.8em;
+        background: url(../image/icon/basball.png) no-repeat;
+        background-size: contain;
+        vertical-align: middle; }
+      .card li div.n_pad {
+        padding: 0; }
+      .card li div:last-child {
+        border-right: none; }
+        .card li div:last-child::before {
+          display: none; }
+    .card li .b3 {
+      width: 3%; }
+    .card li .b4 {
+      width: 4%; }
+    .card li .b5 {
+      width: 5%; }
+    .card li .b6 {
+      width: 6%; }
+    .card li .b7 {
+      width: 7%; }
+    .card li .b8 {
+      width: 8%; }
+    .card li .b10 {
+      width: 10%; }
+    .card li .b11 {
+      width: 11%; }
+    .card li .b12 {
+      width: 12%; }
+    .card li .b13 {
+      width: 13%; }
+    .card li .b15 {
+      width: 15%; }
+    .card li .b16 {
+      width: 16%; }
+    .card li .b20 {
+      width: 20%; }
+    .card li .b22 {
+      width: 22%; }
+    .card li .b24 {
+      width: 24%; }
+    .card li .b25 {
+      width: 25%; }
+    .card li .b33 {
+      width: 33.33%; }
+    .card li .b36 {
+      width: 36%; }
+    .card li .b35 {
+      width: 35%; }
+    .card li .b38 {
+      width: 38%; }
+    .card li .b46 {
+      width: 46%; }
+    .card li .b100 {
+      width: 100%; }
+    .card li:first-child {
+      border-top: none; }
+      .card li:first-child:before {
+        display: none; }
+  .card p {
+    display: inline-block;
+    vertical-align: middle; }
+  .card .g_name {
+    line-height: 2em; }
+    .card .g_name i {
+      display: inline-block;
+      width: .9em;
+      height: .9em;
+      background: url(../image/icon/list3.png) no-repeat;
+      background-size: 1800%;
+      line-height: 1;
+      vertical-align: text-top;
+      margin: 0 -.5em 0 .5em; }
+      .card .g_name i.i1 {
+        background-position-x: -1.8em; }
+      .card .g_name i.i2 {
+        background-position-x: -2.7em; }
+      .card .g_name i.i3 {
+        background-position-x: -3.6em; }
+      .card .g_name i.i4 {
+        background-position-x: -4.5em; }
+      .card .g_name i.i5 {
+        background-position-x: -5.4em; }
+      .card .g_name i.i6 {
+        background-position-x: -6.3em; }
+      .card .g_name i.i7 {
+        background-position-x: -7.2em; }
+      .card .g_name i.i8 {
+        background-position-x: -8.1em; }
+      .card .g_name i.i9 {
+        background-position-x: -9em; }
+      .card .g_name i.i10 {
+        background-position-x: -9.9em; }
+      .card .g_name i.i11 {
+        background-position-x: -10.8em; }
+      .card .g_name i.i12 {
+        background-position-x: -11.7em; }
+      .card .g_name i.i13 {
+        background-position-x: -12.6em; }
+      .card .g_name i.i14 {
+        background-position-x: -13.5em; }
+      .card .g_name i.i15 {
+        background-position-x: -14.4em; }
+      .card .g_name i.i16 {
+        background-position-x: -15.3em; }
+    .card .g_name p {
+      line-height: 1;
+      vertical-align: middle;
+      margin: 0 0 0 1em; }
+  .card .title {
+    line-height: 1.8em;
+    overflow: hidden;
+    color: #4d515d; }
+    .card .title p {
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
+      font-size: 14px; }
+  .card.gold.gold .g_name {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d9a87c));
+    background: -webkit-linear-gradient(top, #fedab8 0%, #d9a87c 100%);
+    background: -o-linear-gradient(top, #fedab8 0%, #d9a87c 100%);
+    background: linear-gradient(to bottom, #fedab8 0%, #d9a87c 100%);
+    color: #6c2600; }
+    .card.gold.gold .g_name i {
+      background-position-y: -.9em; }
+  .card.gold.gold .title {
+    background: #fff0e2; }
+  .card.gold.gold div.box_8 span, .card.gold.gold div.box_4 span, .card.gold.gold div.box_3 span, .card.gold.gold div.box_2 span, .card.gold.gold div.box_1 span {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%); }
+  .card.gold.gold div.wrap_in span {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
+    border: 1px solid #b9bfdc;
+    border-radius: 8px; }
+  .card.gray.gray .g_name {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f0f0f0));
+    background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    background: -o-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+    color: #4d515d; }
+    .card.gray.gray .g_name i {
+      background-position-y: -1.8em; }
+  .card.gray.gray .title {
+    background: #f3f3f3; }
+  .card.gray.gray div.box_8 span, .card.gray.gray div.box_4 span, .card.gray.gray div.box_3 span, .card.gray.gray div.box_2 span, .card.gray.gray div.box_1 span {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%); }
+  .card.gray.gray div.wrap_in span {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+    border: 1px solid #b9bfdc;
+    border-radius: 8px; }
+  .card .row {
+    background: #fefefe; }
+    .card .row:nth-child(even) {
+      background: #f3f3f3; }
+    .card .row.pure_text.pure_text.pure_text.pure_text.pure_text {
+      color: #4d515d;
+      background: #fff; }
+      .card .row.pure_text.pure_text.pure_text.pure_text.pure_text div span {
+        border-color: transparent;
+        background: #fff;
+        pointer-events: none; }
+  .card.normal_mode .row {
+    line-height: 3em;
+    height: 3em;
+    position: relative; }
+  .card.normal_mode .title .b24 {
+    padding: 0 .5em 0; }
+  .card.big_mode .row {
+    line-height: 5em;
+    height: 5em; }
+    .card.big_mode .row .half {
+      padding: 0; }
+      .card.big_mode .row .half:last-child div:last-child {
+        border-top: none; }
+      .card.big_mode .row .half div {
+        line-height: calc(5em / 2);
+        height: calc(5em / 2);
+        padding: 0 .5em 0;
+        width: 100%;
+        border: none;
+        position: relative; }
+        .card.big_mode .row .half div:last-child {
+          border-top: 2px solid #e0e1e3; }
+    .card.big_mode .row .half_sp .b40 {
+      width: 40%;
+      border: none; }
+    .card.big_mode .row .half_sp .b60 {
+      width: 60%;
+      border: none; }
+    .card.big_mode .row .two div {
+      line-height: calc(5em / 2);
+      height: calc(5em / 2);
+      width: 100%;
+      border: none;
+      position: relative; }
+      .card.big_mode .row .two div:first-child span {
+        margin: .25em 0 0; }
+      .card.big_mode .row .two div:last-child span {
+        margin: 0 0 .25em; }
+    .card.big_mode .row .three {
+      padding: 0; }
+      .card.big_mode .row .three div {
+        line-height: calc(5em / 3);
+        height: calc(5em / 3);
+        padding: 0 .5em 0;
+        width: 100%;
+        border: none;
+        position: relative;
+        border-top: 2px solid #e0e1e3; }
+        .card.big_mode .row .three div p {
+          width: .8em; }
+        .card.big_mode .row .three div:first-child {
+          border-top: none; }
+    .card.big_mode .row .three_wrap .wrap_box {
+      width: 100%;
+      height: 5em;
+      position: relative; }
+      .card.big_mode .row .three_wrap .wrap_box .wrap_in {
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        line-height: 1;
+        width: 3.5em; }
+        .card.big_mode .row .three_wrap .wrap_box .wrap_in.w100 {
+          width: 100%; }
+        .card.big_mode .row .three_wrap .wrap_box .wrap_in span {
+          position: relative;
+          width: 100%;
+          display: inline-block;
+          line-height: calc((5em - 20px) / 3);
+          height: calc((5em - 20px) / 3);
+          cursor: pointer; }
+          .card.big_mode .row .three_wrap .wrap_box .wrap_in span:first-child {
+            margin: 0 0 1px; }
+          .card.big_mode .row .three_wrap .wrap_box .wrap_in span:last-child {
+            margin: 1px 0 0; }
+        .card.big_mode .row .three_wrap .wrap_box .wrap_in em {
+          cursor: pointer; }
+
+.live_page {
+  background: #fafbff;
+  -webkit-box-shadow: 0 0 3px 2px #c1c7e6;
+  box-shadow: 0 0 3px 2px #c1c7e6;
+  border-radius: 0 0 12px 12px; }
+  .live_page .blue {
+    color: #2d43b6; }
+  .live_page .t_hidden {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .live_page span, .live_page p, .live_page i {
+    display: inline-block; }
+  .live_page span.icon_tv_gold {
+    width: 1.5em;
+    height: 1.5em;
+    background: url(../image/icon/live_icon_gold.png) no-repeat;
+    background-size: 100%;
+    vertical-align: text-bottom;
+    margin: 0 .75em 0 0;
+    cursor: pointer; }
+  .live_page span.icon_infor {
+    width: 1.2em;
+    height: 1.2em;
+    background: url(../image/icon/infor.png) no-repeat;
+    background-size: 100%;
+    vertical-align: text-bottom;
+    margin: 0 0 0 .75em;
+    cursor: pointer; }
+  .live_page .live_title {
+    line-height: 4em;
+    height: 4em;
+    border-bottom: solid 1px #e0e1e3; }
+    .live_page .live_title.for_view.for_view.for_view .r_box, .live_page .live_title.for_view.for_view.for_view .l_box {
+      line-height: 1em; }
+      .live_page .live_title.for_view.for_view.for_view .r_box p, .live_page .live_title.for_view.for_view.for_view .l_box p {
+        font-size: 1em;
+        color: #4d515d;
+        background: none;
+        border: none;
+        border-radius: 0;
+        cursor: text;
+        width: 88%;
+        vertical-align: bottom;
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis; }
+    .live_page .live_title .wrap {
+      width: 100%;
+      line-height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 1em 0;
+      position: relative; }
+      .live_page .live_title .wrap .r_box {
+        float: left;
+        width: 50%;
+        text-align: right; }
+        .live_page .live_title .wrap .r_box p {
+          color: #4d515d;
+          font-size: 1em;
+          padding: .1em;
+          border: solid 1px;
+          background: #fff;
+          border-radius: 4px;
+          cursor: pointer; }
+      .live_page .live_title .wrap .l_box {
+        float: left;
+        width: 50%; }
+        .live_page .live_title .wrap .l_box p {
+          color: #4d515d;
+          font-size: 1.2em;
+          cursor: pointer; }
+      .live_page .live_title .wrap .m_box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+        .live_page .live_title .wrap .m_box p {
+          font-size: 1.1em; }
+      .live_page .live_title .wrap .infor_con {
+        position: absolute;
+        left: 50%;
+        top: 2.2em;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 97%;
+        background: #2d2d2dde;
+        color: #fff;
+        padding: .5em 0;
+        display: none;
+        z-index: 10; }
+        .live_page .live_title .wrap .infor_con.active {
+          display: block; }
+        .live_page .live_title .wrap .infor_con:before {
+          content: '';
+          position: absolute;
+          top: -10px;
+          right: .9em;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 .4em .7em .4em;
+          border-color: transparent transparent #2d2d2dde transparent; }
+        .live_page .live_title .wrap .infor_con p {
+          line-height: 1.5;
+          text-align: center; }
+  .live_page .live_box {
+    width: 100%;
+    height: 13em;
+    padding: 0 0.25em;
+    margin: 0 0 1em;
+    -webkit-box-shadow: 0px -3px 5px 2px #e2e6f5;
+    box-shadow: 0px -3px 5px 2px #e2e6f5; }
+    .live_page .live_box .live_box_in {
+      width: inherit;
+      height: inherit;
+      background: url(../image/icon/live_view.png) no-repeat;
+      background-size: cover; }
+  .live_page .live_games .live_tag {
+    overflow: hidden;
+    padding: 0.125em 0.25em 0; }
+    .live_page .live_games .live_tag button {
+      float: left;
+      width: 50%;
+      text-align: center;
+      background: none;
+      color: #4d515d;
+      padding: .25em 0;
+      font-size: 1.1em; }
+      .live_page .live_games .live_tag button.active {
+        color: #2d43b6;
+        -webkit-box-shadow: 0 0px 2px 2px #dae2ff;
+        box-shadow: 0 0px 2px 2px #dae2ff;
+        border-radius: 12px 12px 0 0;
+        border-width: 1px 1px 0 1px;
+        border-style: solid;
+        border-color: #fff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
+        background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
+        background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
+        background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%); }
+  .live_page .live_games .live_content, .live_page .live_games .talk_content {
+    position: relative;
+    padding: 0 0.25em;
+    overflow-y: scroll;
+    height: 32em;
+    line-height: 32em;
+    -webkit-box-shadow: 0 0px 2px 2px #dae2ff;
+    box-shadow: 0 0px 2px 2px #dae2ff;
+    display: none; }
+    .live_page .live_games .live_content.active, .live_page .live_games .talk_content.active {
+      display: block; }
+    .live_page .live_games .live_content::-webkit-scrollbar, .live_page .live_games .talk_content::-webkit-scrollbar {
+      width: .5em;
+      position: absolute;
+      left: 0; }
+    .live_page .live_games .live_content::-webkit-scrollbar-thumb, .live_page .live_games .talk_content::-webkit-scrollbar-thumb {
+      background: #b9becf;
+      border-radius: 10px; }
+    .live_page .live_games .live_content::-webkit-scrollbar-track, .live_page .live_games .talk_content::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px; }
+    .live_page .live_games .live_content .live_balls .ball_wrap, .live_page .live_games .talk_content .live_balls .ball_wrap {
+      display: none; }
+      .live_page .live_games .live_content .live_balls .ball_wrap.start, .live_page .live_games .talk_content .live_balls .ball_wrap.start {
+        display: block; }
+    .live_page .live_games .live_content .live_balls, .live_page .live_games .talk_content .live_balls {
+      -webkit-box-shadow: 0px 0px 2px 2px #dae2ff;
+      box-shadow: 0px 0px 2px 2px #dae2ff;
+      border-radius: 0 0 12px 12px;
+      overflow: hidden;
+      display: none; }
+      .live_page .live_games .live_content .live_balls .ball_wrap, .live_page .live_games .talk_content .live_balls .ball_wrap {
+        border-top: 1px solid #ddddec; }
+        .live_page .live_games .live_content .live_balls .ball_wrap:hover .ball_title, .live_page .live_games .talk_content .live_balls .ball_wrap:hover .ball_title {
+          background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaecf7));
+          background: -webkit-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
+          background: -o-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
+          background: linear-gradient(to bottom, #ffffff 0%, #eaecf7 100%); }
+        .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title, .live_page .live_games .talk_content .live_balls .ball_wrap.active .ball_title {
+          background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaecf7));
+          background: -webkit-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
+          background: -o-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
+          background: linear-gradient(to bottom, #ffffff 0%, #eaecf7 100%); }
+          .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title p, .live_page .live_games .talk_content .live_balls .ball_wrap.active .ball_title p {
+            color: #004eff; }
+          .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title .right_box .arrow, .live_page .live_games .talk_content .live_balls .ball_wrap.active .ball_title .right_box .arrow {
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out; }
+        .live_page .live_games .live_content .live_balls .ball_wrap:first-child, .live_page .live_games .talk_content .live_balls .ball_wrap:first-child {
+          border-top: 1px solid transparent; }
+        .live_page .live_games .live_content .live_balls .ball_wrap .ball_title, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title {
+          background: #fff;
+          line-height: 4em;
+          padding: 0 1.5em 0 1em;
+          cursor: pointer; }
+          .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .b_name, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title .b_name {
+            margin: 0 0 0 .5em; }
+          .live_page .live_games .live_content .live_balls .ball_wrap .ball_title p, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title p {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 100%;
+            font-size: 1.1em;
+            color: #4d515d; }
+          .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i {
+            background: url(../image/icon/live_balls.png) no-repeat;
+            background-size: 1600%;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i1, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i1 {
+              background-position-x: 0em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i2, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i2 {
+              background-position-x: -1.5em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i3, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i3 {
+              background-position-x: -3em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i4, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i4 {
+              background-position-x: -4.5em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i5, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i5 {
+              background-position-x: -6em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i6, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i6 {
+              background-position-x: -7.5em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i7, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i7 {
+              background-position-x: -9em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i8, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i8 {
+              background-position-x: -10.5em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i9, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i9 {
+              background-position-x: -12em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i10, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i10 {
+              background-position-x: -13.5em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i11, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i11 {
+              background-position-x: -15em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i12, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i12 {
+              background-position-x: -16.5em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i13, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i13 {
+              background-position-x: -18em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i14, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i14 {
+              background-position-x: -19.5em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i15, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i15 {
+              background-position-x: -21em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i16, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i16 {
+              background-position-x: -22.5em; }
+          .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .right_box, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title .right_box {
+            float: right;
+            line-height: 4em; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .right_box .arrow, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title .right_box .arrow {
+              width: .5em;
+              height: .8em;
+              background: url(../image/icon/arrow_g.png) no-repeat;
+              background-size: cover;
+              vertical-align: middle;
+              line-height: 100%;
+              margin: 0 0 0 1em;
+              -webkit-transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+              transform: rotate(0deg);
+              -webkit-transition: all .2s ease-in-out;
+              -o-transition: all .2s ease-in-out;
+              transition: all .2s ease-in-out; }
+        .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow {
+          overflow: hidden;
+          display: none; }
+          .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow.active, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow.active {
+            display: block; }
+          .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li {
+            overflow: hidden;
+            line-height: 100%;
+            padding: .25em .5em;
+            border-top: 1px solid #ddddec; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li:hover, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li:hover {
+              background: #fff0e2; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right p, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .drow_right p {
+              color: #d57f32; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right h1, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .drow_right h1 {
+              display: none; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right .change_wrap .doing_wrap, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .drow_right .change_wrap .doing_wrap {
+              display: block; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button {
+              color: #d57f32;
+              border: 1px solid #d57f32; }
+              .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button:hover, .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button.active, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button:hover, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button.active {
+                background: #d57f32;
+                color: #fff; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li h1, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li h1 {
+              line-height: 1.9em;
+              font-size: 1.1em;
+              width: 100%;
+              display: inline-block;
+              color: #4d515d; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left, .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right {
+              float: left; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left {
+              width: 55%; }
+              .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left p, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left p {
+                line-height: 1.4em;
+                width: 100%; }
+              .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left h1, .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left p, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left h1, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left p {
+                color: #4d515d; }
+            .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right {
+              width: 45%;
+              height: 4.7em;
+              position: relative; }
+              .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap {
+                position: absolute;
+                top: 0;
+                right: 0; }
+                .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap h1, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap h1 {
+                  font-weight: normal; }
+                .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap {
+                  line-height: 1.9em;
+                  display: none; }
+                  .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap p, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap p {
+                    line-height: 100%; }
+                  .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap .red_point, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap .red_point {
+                    width: .55em;
+                    height: .55em;
+                    background: red;
+                    margin: -2px 0 0px;
+                    border-radius: 100px;
+                    vertical-align: middle;
+                    margin: -.25em 0 0 .25em; }
+              .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap {
+                position: absolute;
+                bottom: 0;
+                right: 0; }
+                .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button {
+                  border: 1px solid #3654ff;
+                  border-radius: 12px;
+                  padding: .1em .5em;
+                  background: transparent;
+                  color: #3654ff; }
+                  .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:hover, .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button.active, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:hover, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button.active {
+                    background: #3654ff;
+                    color: #fff; }
+                  .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:first-child, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:first-child {
+                    margin: 0 .5em 0 0; }
+    .live_page .live_games .live_content .live_talk, .live_page .live_games .talk_content .live_talk {
+      height: inherit; }
+      .live_page .live_games .live_content .live_talk .talk_box, .live_page .live_games .talk_content .live_talk .talk_box {
+        height: 70%;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
+        background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
+        background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
+        background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%); }
+        .live_page .live_games .live_content .live_talk .talk_box .talk_title, .live_page .live_games .talk_content .live_talk .talk_box .talk_title {
+          line-height: 2em;
+          height: 2em;
+          background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
+          background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
+          background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
+          background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%); }
+          .live_page .live_games .live_content .live_talk .talk_box .talk_title span, .live_page .live_games .talk_content .live_talk .talk_box .talk_title span {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            background: url(../image/icon/talk_icon.png) no-repeat;
+            background-size: cover;
+            margin: 0 0 0 1em; }
+        .live_page .live_games .live_content .live_talk .talk_box .talk_box, .live_page .live_games .talk_content .live_talk .talk_box .talk_box {
+          height: calc(100% - 2em);
+          background: #fafafa;
+          overflow-y: scroll; }
+          .live_page .live_games .live_content .live_talk .talk_box .talk_box::-webkit-scrollbar, .live_page .live_games .talk_content .live_talk .talk_box .talk_box::-webkit-scrollbar {
+            width: .25em;
+            position: absolute;
+            left: 0; }
+          .live_page .live_games .live_content .live_talk .talk_box .talk_box::-webkit-scrollbar-thumb, .live_page .live_games .talk_content .live_talk .talk_box .talk_box::-webkit-scrollbar-thumb {
+            background: #b9becf;
+            border-radius: 10px; }
+          .live_page .live_games .live_content .live_talk .talk_box .talk_box::-webkit-scrollbar-track, .live_page .live_games .talk_content .live_talk .talk_box .talk_box::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px; }
+          .live_page .live_games .live_content .live_talk .talk_box .talk_box .time_tag, .live_page .live_games .talk_content .live_talk .talk_box .talk_box .time_tag {
+            line-height: 1.1;
+            color: #8a8c93;
+            text-align: center;
+            margin: .5em 0; }
+          .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap, .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap {
+            line-height: 100%;
+            color: #93a2ee;
+            margin: .5em; }
+            .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap .p_name, .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap .p_name {
+              font-size: .8em;
+              text-transform: none; }
+            .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap .p_box, .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap .p_box {
+              border-radius: 12px;
+              border: 1px solid #93a2ee;
+              width: auto;
+              display: inline-block;
+              padding: .25em .5em;
+              text-transform: none; }
+            .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap.myself, .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap.myself {
+              text-align: right; }
+              .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap.myself .p_box, .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap.myself .p_box {
+                color: #fff;
+                background: #485abf; }
+      .live_page .live_games .live_content .live_talk .talk_input, .live_page .live_games .talk_content .live_talk .talk_input {
+        height: 30%; }
+        .live_page .live_games .live_content .live_talk .talk_input .input_wrap, .live_page .live_games .talk_content .live_talk .talk_input .input_wrap {
+          line-height: 100%;
+          height: 65%;
+          width: 100%;
+          position: relative;
+          border-top: 1px solid #ddddec; }
+          .live_page .live_games .live_content .live_talk .talk_input .input_wrap textarea, .live_page .live_games .talk_content .live_talk .talk_input .input_wrap textarea {
+            width: 100%;
+            border: none;
+            padding: 1.5em .5em 0em;
+            height: 8em; }
+          .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap, .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap {
+            position: absolute;
+            top: .25em;
+            left: .25em; }
+            .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i, .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i {
+              width: 1em;
+              height: 1em;
+              background: url(../image/icon/talk_text_ic.png) no-repeat;
+              background-size: 200%;
+              margin: 0 .5em 0 0;
+              cursor: pointer; }
+              .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i1, .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i1 {
+                background-position-x: 0em; }
+              .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i2, .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i2 {
+                background-position-x: -1em; }
+        .live_page .live_games .live_content .live_talk .talk_input .talk_btn, .live_page .live_games .talk_content .live_talk .talk_input .talk_btn {
+          display: inline-block;
+          width: 100%;
+          height: 33%;
+          vertical-align: top;
+          background: #d6ddff;
+          border-radius: 0 0 8px 8px;
+          position: relative; }
+          .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap, .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap {
+            position: absolute;
+            top: 50%;
+            right: 1em;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            line-height: 1; }
+            .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap button, .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap button {
+              border-radius: 12px;
+              padding: .125em .5em; }
+            .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .cancel, .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .cancel {
+              border: 1px solid #afafaf;
+              color: #afafaf;
+              background: #fff; }
+            .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send, .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send {
+              border: 1px solid #8593d8;
+              color: #fff;
+              background: -webkit-gradient(linear, left top, left bottom, from(#8593d8), to(#3d50bb));
+              background: -webkit-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
+              background: -o-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
+              background: linear-gradient(to bottom, #8593d8 0%, #3d50bb 100%); }
+              .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send .tri, .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send .tri {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: .4em .4em 0 .4em;
+                border-color: #fff transparent transparent transparent;
+                display: inline-block;
+                vertical-align: middle; }
+    .live_page .live_games .live_content .live_balls.active, .live_page .live_games .live_content .live_talk.active, .live_page .live_games .talk_content .live_balls.active, .live_page .live_games .talk_content .live_talk.active {
+      display: block; }
+  .live_page .live_games .talk_content {
+    overflow: hidden;
+    height: 35em;
+    line-height: 35em; }
+
 .container main.my_page {
   width: 1100px; }
   .container main.my_page .left {
@@ -2558,178 +3918,6 @@ header {
       text-align: right;
       margin: 0 auto;
       color: #b4bac8; }
-  header .h_box {
-    width: 100%;
-    height: 5em;
-    background: #fff;
-    -webkit-box-shadow: 0px 1px 3px 0px #cdd2e5;
-    box-shadow: 0px 1px 3px 0px #cdd2e5; }
-  header .h_wrap {
-    width: 1100px;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    line-height: 5em;
-    overflow: hidden; }
-    header .h_wrap .logo {
-      width: 17%;
-      height: 100%;
-      text-align: center;
-      float: left; }
-      header .h_wrap .logo h1 {
-        font-size: 3.5em;
-        line-height: 100%;
-        display: inline-block;
-        vertical-align: middle;
-        background: -webkit-gradient(linear, left top, left bottom, from(#8997da), to(#3247b8));
-        background: -webkit-linear-gradient(top, #8997da 0%, #3247b8 100%);
-        background: -o-linear-gradient(top, #8997da 0%, #3247b8 100%);
-        background: linear-gradient(to bottom, #8997da 0%, #3247b8 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        position: relative;
-        -webkit-text-fill-color: transparent; }
-    header .h_wrap ul {
-      float: left;
-      overflow: hidden;
-      margin: 0 0 0 1em; }
-      header .h_wrap ul.m_yet {
-        line-height: 5em;
-        height: 5em; }
-      header .h_wrap ul li {
-        font-size: 1.1em;
-        float: left;
-        margin: 0 1em;
-        position: relative;
-        color: #4d515d;
-        cursor: pointer;
-        text-align: center;
-        width: auto; }
-        header .h_wrap ul li.limit_w {
-          width: 3.5em; }
-        header .h_wrap ul li p {
-          width: auto;
-          line-height: 1;
-          vertical-align: middle;
-          display: inline-block;
-          word-break: break-word; }
-        header .h_wrap ul li i {
-          display: inline-block;
-          width: 16px;
-          height: 16px;
-          background: url(../image/icon/h_icon.png) no-repeat;
-          background-size: 300%;
-          margin: 0px 4px 0 0;
-          vertical-align: text-bottom; }
-          header .h_wrap ul li i.i1 {
-            background-position: 0 0; }
-          header .h_wrap ul li i.i2 {
-            background-position: -16px 0; }
-          header .h_wrap ul li i.i3 {
-            background-position: -32px 0; }
-        header .h_wrap ul li:hover, header .h_wrap ul li:active, header .h_wrap ul li.active {
-          color: #293eb0; }
-          header .h_wrap ul li:hover:before, header .h_wrap ul li:active:before, header .h_wrap ul li.active:before {
-            content: "";
-            background: #293eb0;
-            height: 0.25em;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            border-radius: 8px; }
-    header .h_wrap .right {
-      float: right;
-      line-height: 5em;
-      height: 5em;
-      padding: 0 1.5em 0 0; }
-      header .h_wrap .right .sign_yet,
-      header .h_wrap .right .sign_in {
-        overflow: hidden;
-        display: none; }
-        header .h_wrap .right .sign_yet.active,
-        header .h_wrap .right .sign_in.active {
-          display: block; }
-      header .h_wrap .right .sign_yet {
-        line-height: 5em;
-        text-align: right; }
-        header .h_wrap .right .sign_yet .wrap {
-          line-height: 4em;
-          display: inline-block;
-          vertical-align: middle; }
-        header .h_wrap .right .sign_yet p,
-        header .h_wrap .right .sign_yet i,
-        header .h_wrap .right .sign_yet span {
-          display: inline-block; }
-        header .h_wrap .right .sign_yet i {
-          width: 30px;
-          height: 30px;
-          background: url(../image/icon/avatar.png) no-repeat;
-          background-size: 100%;
-          vertical-align: middle;
-          margin: 0 4px 0 0; }
-        header .h_wrap .right .sign_yet p {
-          vertical-align: middle;
-          line-height: 100%; }
-        header .h_wrap .right .sign_yet span {
-          cursor: pointer;
-          font-size: 1.1em;
-          color: #4d515d; }
-      header .h_wrap .right .sign_in {
-        line-height: 5em;
-        text-align: right; }
-        header .h_wrap .right .sign_in .wrap {
-          display: inline-block;
-          line-height: 4em;
-          vertical-align: middle; }
-          header .h_wrap .right .sign_in .wrap .row {
-            line-height: 1.5em; }
-            header .h_wrap .right .sign_in .wrap .row p {
-              font-size: 1.3em;
-              display: inline-block;
-              vertical-align: baseline; }
-              header .h_wrap .right .sign_in .wrap .row p.gray {
-                color: #4d515d; }
-              header .h_wrap .right .sign_in .wrap .row p.blue {
-                color: #2d43b6; }
-            header .h_wrap .right .sign_in .wrap .row .vip {
-              display: inline-block;
-              vertical-align: text-bottom;
-              margin: 0 0 0 0.5em;
-              padding: 0em 0.5em 0em;
-              background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
-              background: -webkit-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
-              background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
-              background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
-              border-radius: 4px; }
-              header .h_wrap .right .sign_in .wrap .row .vip i {
-                background: url(../image/icon/vip.png) no-repeat;
-                background-size: 100%;
-                display: inline-block;
-                width: 2em;
-                height: 0.8em;
-                vertical-align: middle; }
-              header .h_wrap .right .sign_in .wrap .row .vip p {
-                display: inline-block;
-                font-family: "微軟正黑體";
-                font-weight: bold;
-                color: #fff;
-                vertical-align: middle;
-                line-height: 100%;
-                font-size: 1.2em;
-                margin: 0 0 0 2px; }
-            header .h_wrap .right .sign_in .wrap .row.bot {
-              text-align: left; }
-              header .h_wrap .right .sign_in .wrap .row.bot i {
-                width: 1.2em;
-                height: 1.2em;
-                background: url(../image/icon/q_icon.png) no-repeat;
-                background-size: 100%;
-                display: inline-block;
-                vertical-align: text-bottom;
-                margin: 0 0 0 4px; }
 
 .container {
   margin: 6.5em 0 0;
@@ -3165,12 +4353,12 @@ header {
             .container main .swiper_ .bot_wrap .c_wrap.n3.right {
               right: 0%; }
     .container main .right {
-      width: 66%;
+      width: 68.5%;
       float: left;
       padding: .8em .8em 8em .8em;
       position: fixed;
       top: 0;
-      left: 12%;
+      left: 13.7%;
       height: 88vh;
       overflow-y: scroll; }
       .container main .right::-webkit-scrollbar {
@@ -3191,146 +4379,6 @@ header {
         display: none; }
         .container main .right .wrap.fixed.fixed.fixed.fixed.active {
           display: block; }
-      .container main .right .game_in {
-        width: 100%;
-        height: 8em;
-        margin: -.8em 0 -1em 0;
-        position: relative; }
-        .container main .right .game_in.soc {
-          background: url(../image/game_in/gin_soc.png) no-repeat;
-          background-size: 100%;
-          position: relative; }
-        .container main .right .game_in.bas {
-          background: url(../image/game_in/gin_bas.png) no-repeat;
-          background-size: 100%;
-          position: relative; }
-        .container main .right .game_in.bask {
-          background: url(../image/game_in/gin_bask.png) no-repeat;
-          background-size: 100%;
-          position: relative; }
-        .container main .right .game_in.my_page_bill {
-          background: url(../image/my/title_bg.png) no-repeat;
-          background-size: 100%;
-          position: relative; }
-        .container main .right .game_in .in_left {
-          display: inline-block;
-          color: #fff;
-          position: absolute;
-          top: calc(50%);
-          left: 2em;
-          font-size: 1.1em;
-          line-height: 1.7;
-          -webkit-transform: translate(0%, -50%);
-          -ms-transform: translate(0%, -50%);
-          transform: translate(0%, -50%); }
-        .container main .right .game_in .in_right {
-          display: inline-block;
-          color: #fff;
-          position: absolute;
-          top: calc(50% - .5em);
-          right: 2em;
-          font-size: 1.1em;
-          line-height: 1.7;
-          -webkit-transform: translate(0%, -50%);
-          -ms-transform: translate(0%, -50%);
-          transform: translate(0%, -50%); }
-          .container main .right .game_in .in_right li {
-            display: inline-block;
-            margin: 0 .3em 0 0; }
-            .container main .right .game_in .in_right li:last-child {
-              margin: 0; }
-            .container main .right .game_in .in_right li span {
-              display: inline-block;
-              vertical-align: middle;
-              width: 2em;
-              height: 1.8em;
-              background: url(../image/icon/view_icon.png) no-repeat;
-              background-size: 200%;
-              cursor: pointer; }
-              .container main .right .game_in .in_right li span.i1 {
-                background-position: 0em 0; }
-              .container main .right .game_in .in_right li span.i2 {
-                background-position: -2em 0; }
-        .container main .right .game_in .mid {
-          display: inline-block;
-          text-align: center;
-          color: #fff;
-          position: absolute;
-          top: calc(50% - .25em);
-          left: 50%;
-          font-size: 1.1em;
-          line-height: 1.5;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-          .container main .right .game_in .mid li:nth-child(2) {
-            position: relative; }
-            .container main .right .game_in .mid li:nth-child(2):before, .container main .right .game_in .mid li:nth-child(2):after {
-              content: '';
-              width: .4em;
-              height: .15em;
-              background: #fff;
-              position: absolute;
-              top: 50%;
-              -webkit-transform: translateY(-50%);
-              -ms-transform: translateY(-50%);
-              transform: translateY(-50%); }
-            .container main .right .game_in .mid li:nth-child(2):before {
-              left: -3.5em; }
-            .container main .right .game_in .mid li:nth-child(2):after {
-              right: -3.5em; }
-        .container main .right .game_in .t_wrap1, .container main .right .game_in .t_wrap2 {
-          display: inline-block;
-          color: #fff;
-          position: absolute;
-          top: calc(50% - .25em);
-          font-size: 1.2em;
-          line-height: 1;
-          text-align: left; }
-          .container main .right .game_in .t_wrap1 .box, .container main .right .game_in .t_wrap2 .box {
-            display: inline-block;
-            vertical-align: middle; }
-          .container main .right .game_in .t_wrap1 span, .container main .right .game_in .t_wrap1 p, .container main .right .game_in .t_wrap2 span, .container main .right .game_in .t_wrap2 p {
-            display: inline-block;
-            line-height: 1;
-            vertical-align: middle; }
-          .container main .right .game_in .t_wrap1 p, .container main .right .game_in .t_wrap2 p {
-            max-width: 9em;
-            line-height: 1.2;
-            overflow: hidden;
-            -o-text-overflow: ellipsis;
-            text-overflow: ellipsis; }
-          .container main .right .game_in .t_wrap1 span, .container main .right .game_in .t_wrap2 span {
-            width: 3em;
-            height: 2em;
-            background: url(../image/icon/team_icon.png) no-repeat;
-            background-size: 600%; }
-            .container main .right .game_in .t_wrap1 span.t1, .container main .right .game_in .t_wrap2 span.t1 {
-              background-position-x: 0em; }
-            .container main .right .game_in .t_wrap1 span.t2, .container main .right .game_in .t_wrap2 span.t2 {
-              background-position-x: -3em; }
-            .container main .right .game_in .t_wrap1 span.t3, .container main .right .game_in .t_wrap2 span.t3 {
-              background-position-x: -6em; }
-            .container main .right .game_in .t_wrap1 span.t4, .container main .right .game_in .t_wrap2 span.t4 {
-              background-position-x: -9em; }
-            .container main .right .game_in .t_wrap1 span.t5, .container main .right .game_in .t_wrap2 span.t5 {
-              background-position-x: -12em; }
-            .container main .right .game_in .t_wrap1 span.t6, .container main .right .game_in .t_wrap2 span.t6 {
-              background-position-x: -15em; }
-        .container main .right .game_in .t_wrap1 {
-          -webkit-transform: translate(0%, -50%);
-          -ms-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
-          right: 61%; }
-          .container main .right .game_in .t_wrap1 span {
-            margin: 0 0 0 .5em; }
-        .container main .right .game_in .t_wrap2 {
-          -webkit-transform: translate(0%, -50%);
-          -ms-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
-          left: 61%; }
-          .container main .right .game_in .t_wrap2 span {
-            margin: 0 .5em 0 0; }
       .container main .right .search_bar {
         width: 100%;
         line-height: 3em;
@@ -3590,562 +4638,8 @@ header {
               width: 12.5%;
               float: left;
               white-space: nowrap; }
-      .container main .right .book {
-        line-height: 3.5em;
-        height: 3.5em;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        margin: 0 0 -.8em; }
-        .container main .right .book.gold p {
-          color: #cf813a; }
-        .container main .right .book.gold span {
-          background-position: 0 0; }
-        .container main .right .book.blue p {
-          color: #005aff; }
-        .container main .right .book.blue span {
-          background-position: -1em 0; }
-        .container main .right .book.gray p {
-          color: #858585; }
-        .container main .right .book.gray span {
-          background-position: -2em 0; }
-        .container main .right .book p, .container main .right .book span {
-          display: inline-block; }
-        .container main .right .book p {
-          line-height: 1;
-          vertical-align: middle;
-          font-size: 1.1em; }
-        .container main .right .book span {
-          width: 1em;
-          height: 1em;
-          background: url(../image/icon/statust_icon.png) no-repeat;
-          background-size: 300%;
-          line-height: 1;
-          vertical-align: text-bottom;
-          margin: 0 .5em 0 0; }
-      .container main .right .card {
-        font-size: 1.12em;
-        border-radius: 18px;
-        overflow: hidden;
-        -webkit-box-shadow: 0 0 4px 2px #bac0db;
-        box-shadow: 0 0 4px 2px #bac0db;
-        margin: .8em 0 0; }
-        .container main .right .card.no_line.no_line li {
-          border: none;
-          background: #fff; }
-          .container main .right .card.no_line.no_line li.g_name {
-            border-bottom: 1px solid #e0e1e3; }
-        .container main .right .card em.wrap {
-          display: inline-block;
-          line-height: 100%;
-          vertical-align: middle;
-          font-style: normal; }
-        .container main .right .card .t_left {
-          text-align: left;
-          padding: 0 .5em 0; }
-        .container main .right .card .t_right {
-          text-align: right; }
-        .container main .right .card .t_mid {
-          text-align: center; }
-        .container main .right .card .t_hidden {
-          overflow: hidden;
-          -o-text-overflow: ellipsis;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 2;
-          line-height: 1.2;
-          vertical-align: middle;
-          word-break: break-all;
-          font-size: 14px; }
-        .container main .right .card li {
-          overflow: hidden;
-          position: relative;
-          border-top: 2px solid #e0e1e3; }
-          .container main .right .card li .gray_bg {
-            background-color: #f3f3f3;
-            color: #4d515d; }
-          .container main .right .card li .r_bg {
-            background-color: #ff6767;
-            color: #fff; }
-          .container main .right .card li .p_bg {
-            background-color: #b67bff;
-            color: #fff; }
-          .container main .right .card li .g_bg {
-            background-color: #50a1a2;
-            color: #fff; }
-          .container main .right .card li .blue {
-            color: #005aff; }
-          .container main .right .card li .red {
-            color: #ff0000; }
-          .container main .right .card li .gray {
-            color: #4d515d; }
-          .container main .right .card li.row {
-            position: relative;
-            pointer-events: all; }
-          .container main .right .card li div {
-            position: relative;
-            float: left;
-            border-right: 2px solid #e0e1e3; }
-            .container main .right .card li div.box_8 span:hover:hover:hover, .container main .right .card li div.box_8 span.active.active.active, .container main .right .card li div.box_4 span:hover:hover:hover, .container main .right .card li div.box_4 span.active.active.active, .container main .right .card li div.box_3 span:hover:hover:hover, .container main .right .card li div.box_3 span.active.active.active, .container main .right .card li div.box_2 span:hover:hover:hover, .container main .right .card li div.box_2 span.active.active.active, .container main .right .card li div.box_1 span:hover:hover:hover, .container main .right .card li div.box_1 span.active.active.active {
-              background: #3654ff;
-              border: 1px solid transparent; }
-              .container main .right .card li div.box_8 span:hover:hover:hover p, .container main .right .card li div.box_8 span.active.active.active p, .container main .right .card li div.box_4 span:hover:hover:hover p, .container main .right .card li div.box_4 span.active.active.active p, .container main .right .card li div.box_3 span:hover:hover:hover p, .container main .right .card li div.box_3 span.active.active.active p, .container main .right .card li div.box_2 span:hover:hover:hover p, .container main .right .card li div.box_2 span.active.active.active p, .container main .right .card li div.box_1 span:hover:hover:hover p, .container main .right .card li div.box_1 span.active.active.active p {
-                color: #fff; }
-            .container main .right .card li div.box_8.no_use.no_use.no_use.no_use span, .container main .right .card li div.box_4.no_use.no_use.no_use.no_use span, .container main .right .card li div.box_3.no_use.no_use.no_use.no_use span, .container main .right .card li div.box_2.no_use.no_use.no_use.no_use span, .container main .right .card li div.box_1.no_use.no_use.no_use.no_use span {
-              background: #f7f7f7;
-              color: #4d515d;
-              pointer-events: none;
-              border-color: transparent; }
-            .container main .right .card li div.box_8 .no_use.no_use.no_use.no_use.no_use, .container main .right .card li div.box_4 .no_use.no_use.no_use.no_use.no_use, .container main .right .card li div.box_3 .no_use.no_use.no_use.no_use.no_use, .container main .right .card li div.box_2 .no_use.no_use.no_use.no_use.no_use, .container main .right .card li div.box_1 .no_use.no_use.no_use.no_use.no_use {
-              background: #f7f7f7;
-              color: #4d515d;
-              border-color: transparent;
-              pointer-events: none; }
-            .container main .right .card li div.box_8.no_use_d span, .container main .right .card li div.box_4.no_use_d span, .container main .right .card li div.box_3.no_use_d span, .container main .right .card li div.box_2.no_use_d span, .container main .right .card li div.box_1.no_use_d span {
-              background: #f7f7f7;
-              color: #4d515d;
-              pointer-events: none;
-              border-color: transparent; }
-            .container main .right .card li div.box_8 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .container main .right .card li div.box_4 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .container main .right .card li div.box_3 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .container main .right .card li div.box_2 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d, .container main .right .card li div.box_1 .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d {
-              background: #f7f7f7;
-              color: #4d515d;
-              border-color: transparent;
-              pointer-events: none; }
-            .container main .right .card li div.wrap_in span:hover:hover:hover, .container main .right .card li div.wrap_in span.active.active.active {
-              background: #3654ff;
-              border: 1px solid transparent; }
-              .container main .right .card li div.wrap_in span:hover:hover:hover p, .container main .right .card li div.wrap_in span.active.active.active p {
-                color: #fff; }
-            .container main .right .card li div.wrap_in.no_use.no_use.no_use.no_use span {
-              background: #f7f7f7;
-              color: #4d515d;
-              pointer-events: none;
-              border-color: transparent; }
-            .container main .right .card li div.wrap_in .no_use.no_use.no_use.no_use.no_use {
-              background: #f7f7f7;
-              color: #4d515d;
-              border-color: transparent;
-              pointer-events: none; }
-            .container main .right .card li div.wrap_in.no_use_d span {
-              background: #f7f7f7;
-              color: #4d515d;
-              pointer-events: none;
-              border-color: transparent; }
-            .container main .right .card li div.wrap_in .no_use_d.no_use_d.no_use_d.no_use_d.no_use_d {
-              background: #f7f7f7;
-              color: #4d515d;
-              border-color: transparent;
-              pointer-events: none; }
-            .container main .right .card li div.box_8 {
-              height: 100%;
-              padding: 8px 0; }
-              .container main .right .card li div.box_8 span {
-                float: left;
-                width: 11.375%;
-                border: 1px solid #b9bfdc;
-                border-radius: 8px;
-                height: 100%;
-                position: relative;
-                cursor: pointer;
-                line-height: calc(3em - 8px);
-                margin: 0 0 0 1%; }
-                .container main .right .card li div.box_8 span:first-child {
-                  margin: 0 0 0 1%; }
-                .container main .right .card li div.box_8 span:nth-child(7) {
-                  margin: 0 1% 0 1%; }
-                .container main .right .card li div.box_8 span:last-child {
-                  margin: 0 1% 0 0; }
-            .container main .right .card li div.box_4 {
-              height: 100%;
-              padding: 8px 0; }
-              .container main .right .card li div.box_4 span {
-                float: left;
-                width: 23.75%;
-                margin: 0 1% 0;
-                border: 1px solid #b9bfdc;
-                border-radius: 8px;
-                height: 100%;
-                position: relative;
-                cursor: pointer;
-                line-height: calc(3em - 12px); }
-                .container main .right .card li div.box_4 span:first-child {
-                  margin: 0 0 0 1%; }
-                .container main .right .card li div.box_4 span:nth-child(2) {
-                  margin: 0 .5% 0 1%; }
-                .container main .right .card li div.box_4 span:nth-child(3) {
-                  margin: 0 1% 0 .5%; }
-                .container main .right .card li div.box_4 span:last-child {
-                  margin: 0 1% 0 0; }
-            .container main .right .card li div.box_3 {
-              height: 100%;
-              padding: 8px 0; }
-              .container main .right .card li div.box_3 span {
-                float: left;
-                width: 32%;
-                margin: 0 1% 0;
-                border: 1px solid #b9bfdc;
-                border-radius: 8px;
-                height: 100%;
-                position: relative;
-                cursor: pointer;
-                line-height: calc(3em - 12px); }
-                .container main .right .card li div.box_3 span:first-child {
-                  margin: 0 0 0 1%; }
-                .container main .right .card li div.box_3 span:last-child {
-                  margin: 0 1% 0 0; }
-            .container main .right .card li div.box_2 {
-              height: 100%;
-              padding: 8px 0; }
-              .container main .right .card li div.box_2 span {
-                float: left;
-                width: 48.5%;
-                margin: 0 1% 0;
-                background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
-                background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
-                background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
-                background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
-                border: 1px solid #b9bfdc;
-                border-radius: 8px;
-                height: 100%;
-                position: relative;
-                cursor: pointer;
-                line-height: calc(3em - 8px); }
-                .container main .right .card li div.box_2 span:last-child {
-                  margin: 0 1% 0 0; }
-            .container main .right .card li div.box_1 span {
-              display: inline-block;
-              width: 85%;
-              margin: 0 1% 0;
-              background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
-              background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
-              background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
-              background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
-              border: 1px solid #b9bfdc;
-              border-radius: 4px;
-              height: calc(85% - 8px);
-              position: relative;
-              cursor: pointer;
-              vertical-align: middle;
-              line-height: 1;
-              position: relative; }
-            .container main .right .card li div span.solo p {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
-            .container main .right .card li div span.two_text p {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
-              .container main .right .card li div span.two_text p:first-child {
-                left: 25%; }
-              .container main .right .card li div span.two_text p:last-child {
-                left: 70%; }
-            .container main .right .card li div .arrow_d {
-              color: #4d515d;
-              cursor: pointer;
-              display: inline-block;
-              background: url(../image/icon/arrow_d.png) no-repeat;
-              background-size: 100%;
-              width: .4em;
-              height: .6em;
-              margin: 0 0 0 .125em;
-              vertical-align: middle; }
-            .container main .right .card li div i {
-              display: inline-block;
-              cursor: pointer; }
-              .container main .right .card li div i.m_icon {
-                width: 1.2em;
-                height: 1.2em;
-                vertical-align: middle;
-                margin: 0 .125em 0 0; }
-              .container main .right .card li div i.tv {
-                background: url(../image/icon/live_icon.png) no-repeat;
-                background-size: 100%; }
-              .container main .right .card li div i.heart {
-                background: url(../image/icon/heart.png) no-repeat;
-                background-size: 200%; }
-                .container main .right .card li div i.heart:hover, .container main .right .card li div i.heart.active {
-                  background-position: -1.2em 0; }
-            .container main .right .card li div .point {
-              display: inline-block;
-              width: .5em;
-              height: .5em;
-              background: #e60012;
-              border-radius: 100%;
-              vertical-align: middle;
-              margin: 0 0 0 .25em; }
-            .container main .right .card li div .point_b {
-              display: inline-block;
-              width: .5em;
-              height: .5em;
-              background: #000;
-              border-radius: 100%;
-              vertical-align: middle;
-              margin: 0 0 0 .25em; }
-            .container main .right .card li div .bb_base {
-              display: inline-block;
-              width: 95%;
-              height: 4.8em;
-              background: url(../image/icon/basball.png) no-repeat;
-              background-size: contain;
-              vertical-align: middle; }
-            .container main .right .card li div.n_pad {
-              padding: 0; }
-            .container main .right .card li div:last-child {
-              border-right: none; }
-              .container main .right .card li div:last-child::before {
-                display: none; }
-          .container main .right .card li .b3 {
-            width: 3%; }
-          .container main .right .card li .b4 {
-            width: 4%; }
-          .container main .right .card li .b5 {
-            width: 5%; }
-          .container main .right .card li .b6 {
-            width: 6%; }
-          .container main .right .card li .b7 {
-            width: 7%; }
-          .container main .right .card li .b8 {
-            width: 8%; }
-          .container main .right .card li .b10 {
-            width: 10%; }
-          .container main .right .card li .b11 {
-            width: 11%; }
-          .container main .right .card li .b12 {
-            width: 12%; }
-          .container main .right .card li .b13 {
-            width: 13%; }
-          .container main .right .card li .b15 {
-            width: 15%; }
-          .container main .right .card li .b16 {
-            width: 16%; }
-          .container main .right .card li .b20 {
-            width: 20%; }
-          .container main .right .card li .b22 {
-            width: 22%; }
-          .container main .right .card li .b24 {
-            width: 24%; }
-          .container main .right .card li .b25 {
-            width: 25%; }
-          .container main .right .card li .b33 {
-            width: 33.33%; }
-          .container main .right .card li .b36 {
-            width: 36%; }
-          .container main .right .card li .b35 {
-            width: 35%; }
-          .container main .right .card li .b38 {
-            width: 38%; }
-          .container main .right .card li .b46 {
-            width: 46%; }
-          .container main .right .card li .b100 {
-            width: 100%; }
-          .container main .right .card li:first-child {
-            border-top: none; }
-            .container main .right .card li:first-child:before {
-              display: none; }
-        .container main .right .card p {
-          display: inline-block;
-          vertical-align: middle; }
-        .container main .right .card .g_name {
-          line-height: 2em; }
-          .container main .right .card .g_name i {
-            display: inline-block;
-            width: .9em;
-            height: .9em;
-            background: url(../image/icon/list3.png) no-repeat;
-            background-size: 1800%;
-            line-height: 1;
-            vertical-align: text-top;
-            margin: 0 -.5em 0 .5em; }
-            .container main .right .card .g_name i.i1 {
-              background-position-x: -1.8em; }
-            .container main .right .card .g_name i.i2 {
-              background-position-x: -2.7em; }
-            .container main .right .card .g_name i.i3 {
-              background-position-x: -3.6em; }
-            .container main .right .card .g_name i.i4 {
-              background-position-x: -4.5em; }
-            .container main .right .card .g_name i.i5 {
-              background-position-x: -5.4em; }
-            .container main .right .card .g_name i.i6 {
-              background-position-x: -6.3em; }
-            .container main .right .card .g_name i.i7 {
-              background-position-x: -7.2em; }
-            .container main .right .card .g_name i.i8 {
-              background-position-x: -8.1em; }
-            .container main .right .card .g_name i.i9 {
-              background-position-x: -9em; }
-            .container main .right .card .g_name i.i10 {
-              background-position-x: -9.9em; }
-            .container main .right .card .g_name i.i11 {
-              background-position-x: -10.8em; }
-            .container main .right .card .g_name i.i12 {
-              background-position-x: -11.7em; }
-            .container main .right .card .g_name i.i13 {
-              background-position-x: -12.6em; }
-            .container main .right .card .g_name i.i14 {
-              background-position-x: -13.5em; }
-            .container main .right .card .g_name i.i15 {
-              background-position-x: -14.4em; }
-            .container main .right .card .g_name i.i16 {
-              background-position-x: -15.3em; }
-          .container main .right .card .g_name p {
-            line-height: 1;
-            vertical-align: middle;
-            margin: 0 0 0 1em; }
-        .container main .right .card .title {
-          line-height: 1.8em;
-          overflow: hidden;
-          color: #4d515d; }
-          .container main .right .card .title p {
-            display: inline-block;
-            line-height: 1;
-            vertical-align: middle;
-            font-size: 14px; }
-        .container main .right .card.gold.gold .g_name {
-          background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d9a87c));
-          background: -webkit-linear-gradient(top, #fedab8 0%, #d9a87c 100%);
-          background: -o-linear-gradient(top, #fedab8 0%, #d9a87c 100%);
-          background: linear-gradient(to bottom, #fedab8 0%, #d9a87c 100%);
-          color: #6c2600; }
-          .container main .right .card.gold.gold .g_name i {
-            background-position-y: -.9em; }
-        .container main .right .card.gold.gold .title {
-          background: #fff0e2; }
-        .container main .right .card.gold.gold div.box_8 span, .container main .right .card.gold.gold div.box_4 span, .container main .right .card.gold.gold div.box_3 span, .container main .right .card.gold.gold div.box_2 span, .container main .right .card.gold.gold div.box_1 span {
-          background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
-          background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
-          background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
-          background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%); }
-        .container main .right .card.gold.gold div.wrap_in span {
-          background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
-          background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
-          background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
-          background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
-          border: 1px solid #b9bfdc;
-          border-radius: 8px; }
-        .container main .right .card.gray.gray .g_name {
-          background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f0f0f0));
-          background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
-          background: -o-linear-gradient(top, #fff 0%, #f0f0f0 100%);
-          background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
-          color: #4d515d; }
-          .container main .right .card.gray.gray .g_name i {
-            background-position-y: -1.8em; }
-        .container main .right .card.gray.gray .title {
-          background: #f3f3f3; }
-        .container main .right .card.gray.gray div.box_8 span, .container main .right .card.gray.gray div.box_4 span, .container main .right .card.gray.gray div.box_3 span, .container main .right .card.gray.gray div.box_2 span, .container main .right .card.gray.gray div.box_1 span {
-          background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
-          background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
-          background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
-          background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%); }
-        .container main .right .card.gray.gray div.wrap_in span {
-          background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
-          background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
-          background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
-          background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
-          border: 1px solid #b9bfdc;
-          border-radius: 8px; }
-        .container main .right .card .row {
-          background: #fefefe; }
-          .container main .right .card .row:nth-child(even) {
-            background: #f3f3f3; }
-          .container main .right .card .row.pure_text.pure_text.pure_text.pure_text.pure_text {
-            color: #4d515d;
-            background: #fff; }
-            .container main .right .card .row.pure_text.pure_text.pure_text.pure_text.pure_text div span {
-              border-color: transparent;
-              background: #fff;
-              pointer-events: none; }
-        .container main .right .card.normal_mode .row {
-          line-height: 3em;
-          height: 3em;
-          position: relative; }
-        .container main .right .card.normal_mode .title .b24 {
-          padding: 0 .5em 0; }
-        .container main .right .card.big_mode .row {
-          line-height: 5em;
-          height: 5em; }
-          .container main .right .card.big_mode .row .half {
-            padding: 0; }
-            .container main .right .card.big_mode .row .half:last-child div:last-child {
-              border-top: none; }
-            .container main .right .card.big_mode .row .half div {
-              line-height: calc(5em / 2);
-              height: calc(5em / 2);
-              padding: 0 .5em 0;
-              width: 100%;
-              border: none;
-              position: relative; }
-              .container main .right .card.big_mode .row .half div:last-child {
-                border-top: 2px solid #e0e1e3; }
-          .container main .right .card.big_mode .row .half_sp .b40 {
-            width: 40%;
-            border: none; }
-          .container main .right .card.big_mode .row .half_sp .b60 {
-            width: 60%;
-            border: none; }
-          .container main .right .card.big_mode .row .two div {
-            line-height: calc(5em / 2);
-            height: calc(5em / 2);
-            width: 100%;
-            border: none;
-            position: relative; }
-            .container main .right .card.big_mode .row .two div:first-child span {
-              margin: .25em 0 0; }
-            .container main .right .card.big_mode .row .two div:last-child span {
-              margin: 0 0 .25em; }
-          .container main .right .card.big_mode .row .three {
-            padding: 0; }
-            .container main .right .card.big_mode .row .three div {
-              line-height: calc(5em / 3);
-              height: calc(5em / 3);
-              padding: 0 .5em 0;
-              width: 100%;
-              border: none;
-              position: relative;
-              border-top: 2px solid #e0e1e3; }
-              .container main .right .card.big_mode .row .three div p {
-                width: .8em; }
-              .container main .right .card.big_mode .row .three div:first-child {
-                border-top: none; }
-          .container main .right .card.big_mode .row .three_wrap .wrap_box {
-            width: 100%;
-            height: 5em;
-            position: relative; }
-            .container main .right .card.big_mode .row .three_wrap .wrap_box .wrap_in {
-              position: absolute;
-              -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-              left: 50%;
-              top: 50%;
-              line-height: 1;
-              width: 3.5em; }
-              .container main .right .card.big_mode .row .three_wrap .wrap_box .wrap_in.w100 {
-                width: 100%; }
-              .container main .right .card.big_mode .row .three_wrap .wrap_box .wrap_in span {
-                position: relative;
-                width: 100%;
-                display: inline-block;
-                line-height: calc((5em - 20px) / 3);
-                height: calc((5em - 20px) / 3);
-                cursor: pointer; }
-                .container main .right .card.big_mode .row .three_wrap .wrap_box .wrap_in span:first-child {
-                  margin: 0 0 1px; }
-                .container main .right .card.big_mode .row .three_wrap .wrap_box .wrap_in span:last-child {
-                  margin: 1px 0 0; }
-              .container main .right .card.big_mode .row .three_wrap .wrap_box .wrap_in em {
-                cursor: pointer; }
     .container main .left {
-      width: 12%;
+      width: 13.7%;
       float: left;
       top: 0;
       left: 0;
@@ -4291,7 +4785,7 @@ header {
             .container main .left ul.index li:hover i.i18, .container main .left ul.index li:active i.i18, .container main .left ul.index li.active i.i18 {
               background-position: -25.5em -1.5em; }
     .container main .right_2 {
-      width: calc(1343px * 0.22);
+      width: calc(1343px * 0.178);
       height: auto;
       float: left;
       overflow-y: scroll;
@@ -4300,7 +4794,10 @@ header {
       height: 88vh;
       top: 0;
       right: 0;
-      padding: 0 0 8em; }
+      padding: 0 0 8em;
+      display: none; }
+      .container main .right_2.active {
+        display: block; }
       .container main .right_2::-webkit-scrollbar {
         width: .5em;
         position: absolute;
@@ -4311,485 +4808,6 @@ header {
       .container main .right_2::-webkit-scrollbar-track {
         background: #f1f1f1;
         border-radius: 10px; }
-      .container main .right_2 .live_page {
-        background: #fafbff;
-        -webkit-box-shadow: 0 0 3px 2px #c1c7e6;
-        box-shadow: 0 0 3px 2px #c1c7e6;
-        border-radius: 0 0 12px 12px; }
-        .container main .right_2 .live_page .blue {
-          color: #2d43b6; }
-        .container main .right_2 .live_page .t_hidden {
-          white-space: nowrap;
-          overflow: hidden;
-          -o-text-overflow: ellipsis;
-          text-overflow: ellipsis; }
-        .container main .right_2 .live_page span, .container main .right_2 .live_page p, .container main .right_2 .live_page i {
-          display: inline-block; }
-        .container main .right_2 .live_page span.icon_tv_gold {
-          width: 1.5em;
-          height: 1.5em;
-          background: url(../image/icon/live_icon_gold.png) no-repeat;
-          background-size: 100%;
-          vertical-align: text-bottom;
-          margin: 0 .75em 0 0;
-          cursor: pointer; }
-        .container main .right_2 .live_page span.icon_infor {
-          width: 1.2em;
-          height: 1.2em;
-          background: url(../image/icon/infor.png) no-repeat;
-          background-size: 100%;
-          vertical-align: text-bottom;
-          margin: 0 0 0 .75em;
-          cursor: pointer; }
-        .container main .right_2 .live_page .live_title {
-          line-height: 4em;
-          height: 4em;
-          border-bottom: solid 1px #e0e1e3; }
-          .container main .right_2 .live_page .live_title.for_view.for_view.for_view .r_box, .container main .right_2 .live_page .live_title.for_view.for_view.for_view .l_box {
-            line-height: 1em; }
-            .container main .right_2 .live_page .live_title.for_view.for_view.for_view .r_box p, .container main .right_2 .live_page .live_title.for_view.for_view.for_view .l_box p {
-              font-size: 1em;
-              color: #4d515d;
-              background: none;
-              border: none;
-              border-radius: 0;
-              cursor: text;
-              width: 88%;
-              vertical-align: bottom;
-              white-space: nowrap;
-              overflow: hidden;
-              -o-text-overflow: ellipsis;
-              text-overflow: ellipsis; }
-          .container main .right_2 .live_page .live_title .wrap {
-            width: 100%;
-            line-height: 100%;
-            display: inline-block;
-            vertical-align: middle;
-            padding: 0 1em 0;
-            position: relative; }
-            .container main .right_2 .live_page .live_title .wrap .r_box {
-              float: left;
-              width: 50%;
-              text-align: right; }
-              .container main .right_2 .live_page .live_title .wrap .r_box p {
-                color: #4d515d;
-                font-size: 1em;
-                padding: .1em;
-                border: solid 1px;
-                background: #fff;
-                border-radius: 4px;
-                cursor: pointer; }
-            .container main .right_2 .live_page .live_title .wrap .l_box {
-              float: left;
-              width: 50%; }
-              .container main .right_2 .live_page .live_title .wrap .l_box p {
-                color: #4d515d;
-                font-size: 1.2em;
-                cursor: pointer; }
-            .container main .right_2 .live_page .live_title .wrap .m_box {
-              position: absolute;
-              left: 50%;
-              top: 50%;
-              -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
-              .container main .right_2 .live_page .live_title .wrap .m_box p {
-                font-size: 1.1em; }
-            .container main .right_2 .live_page .live_title .wrap .infor_con {
-              position: absolute;
-              left: 50%;
-              top: 2.2em;
-              -webkit-transform: translateX(-50%);
-              -ms-transform: translateX(-50%);
-              transform: translateX(-50%);
-              width: 97%;
-              background: #2d2d2dde;
-              color: #fff;
-              padding: .5em 0;
-              display: none;
-              z-index: 10; }
-              .container main .right_2 .live_page .live_title .wrap .infor_con.active {
-                display: block; }
-              .container main .right_2 .live_page .live_title .wrap .infor_con:before {
-                content: '';
-                position: absolute;
-                top: -10px;
-                right: .9em;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 0 .4em .7em .4em;
-                border-color: transparent transparent #2d2d2dde transparent; }
-              .container main .right_2 .live_page .live_title .wrap .infor_con p {
-                line-height: 1.5;
-                text-align: center; }
-        .container main .right_2 .live_page .live_box {
-          width: 100%;
-          height: 13em;
-          padding: 0 0.25em;
-          margin: 0 0 1em;
-          -webkit-box-shadow: 0px -3px 5px 2px #e2e6f5;
-          box-shadow: 0px -3px 5px 2px #e2e6f5; }
-          .container main .right_2 .live_page .live_box .live_box_in {
-            width: inherit;
-            height: inherit;
-            background: url(../image/icon/live_view.png) no-repeat;
-            background-size: cover; }
-        .container main .right_2 .live_page .live_games .live_tag {
-          overflow: hidden;
-          padding: 0.125em 0.25em 0; }
-          .container main .right_2 .live_page .live_games .live_tag button {
-            float: left;
-            width: 50%;
-            text-align: center;
-            background: none;
-            color: #4d515d;
-            padding: .25em 0;
-            font-size: 1.1em; }
-            .container main .right_2 .live_page .live_games .live_tag button.active {
-              color: #2d43b6;
-              -webkit-box-shadow: 0 0px 2px 2px #dae2ff;
-              box-shadow: 0 0px 2px 2px #dae2ff;
-              border-radius: 12px 12px 0 0;
-              border-width: 1px 1px 0 1px;
-              border-style: solid;
-              border-color: #fff;
-              background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
-              background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
-              background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
-              background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%); }
-        .container main .right_2 .live_page .live_games .live_content, .container main .right_2 .live_page .live_games .talk_content {
-          position: relative;
-          padding: 0 0.25em;
-          overflow-y: scroll;
-          height: 32em;
-          line-height: 32em;
-          -webkit-box-shadow: 0 0px 2px 2px #dae2ff;
-          box-shadow: 0 0px 2px 2px #dae2ff;
-          display: none; }
-          .container main .right_2 .live_page .live_games .live_content.active, .container main .right_2 .live_page .live_games .talk_content.active {
-            display: block; }
-          .container main .right_2 .live_page .live_games .live_content::-webkit-scrollbar, .container main .right_2 .live_page .live_games .talk_content::-webkit-scrollbar {
-            width: .5em;
-            position: absolute;
-            left: 0; }
-          .container main .right_2 .live_page .live_games .live_content::-webkit-scrollbar-thumb, .container main .right_2 .live_page .live_games .talk_content::-webkit-scrollbar-thumb {
-            background: #b9becf;
-            border-radius: 10px; }
-          .container main .right_2 .live_page .live_games .live_content::-webkit-scrollbar-track, .container main .right_2 .live_page .live_games .talk_content::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 10px; }
-          .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap {
-            display: none; }
-            .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.start, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap.start {
-              display: block; }
-          .container main .right_2 .live_page .live_games .live_content .live_balls, .container main .right_2 .live_page .live_games .talk_content .live_balls {
-            -webkit-box-shadow: 0px 0px 2px 2px #dae2ff;
-            box-shadow: 0px 0px 2px 2px #dae2ff;
-            border-radius: 0 0 12px 12px;
-            overflow: hidden;
-            display: none; }
-            .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap {
-              border-top: 1px solid #ddddec; }
-              .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap:hover .ball_title, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap:hover .ball_title {
-                background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaecf7));
-                background: -webkit-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
-                background: -o-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
-                background: linear-gradient(to bottom, #ffffff 0%, #eaecf7 100%); }
-              .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap.active .ball_title {
-                background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaecf7));
-                background: -webkit-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
-                background: -o-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
-                background: linear-gradient(to bottom, #ffffff 0%, #eaecf7 100%); }
-                .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title p, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap.active .ball_title p {
-                  color: #004eff; }
-                .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap.active .ball_title .right_box .arrow, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap.active .ball_title .right_box .arrow {
-                  -webkit-transform: rotate(90deg);
-                  -ms-transform: rotate(90deg);
-                  transform: rotate(90deg);
-                  -webkit-transition: all .2s ease-in-out;
-                  -o-transition: all .2s ease-in-out;
-                  transition: all .2s ease-in-out; }
-              .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap:first-child, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap:first-child {
-                border-top: 1px solid transparent; }
-              .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title {
-                background: #fff;
-                line-height: 4em;
-                padding: 0 1.5em 0 1em;
-                cursor: pointer; }
-                .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .b_name, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title .b_name {
-                  margin: 0 0 0 .5em; }
-                .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title p, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title p {
-                  display: inline-block;
-                  vertical-align: middle;
-                  line-height: 100%;
-                  font-size: 1.1em;
-                  color: #4d515d; }
-                .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i {
-                  background: url(../image/icon/live_balls.png) no-repeat;
-                  background-size: 1600%;
-                  width: 1.5em;
-                  height: 1.5em;
-                  vertical-align: middle; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i1, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i1 {
-                    background-position-x: 0em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i2, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i2 {
-                    background-position-x: -1.5em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i3, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i3 {
-                    background-position-x: -3em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i4, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i4 {
-                    background-position-x: -4.5em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i5, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i5 {
-                    background-position-x: -6em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i6, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i6 {
-                    background-position-x: -7.5em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i7, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i7 {
-                    background-position-x: -9em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i8, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i8 {
-                    background-position-x: -10.5em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i9, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i9 {
-                    background-position-x: -12em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i10, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i10 {
-                    background-position-x: -13.5em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i11, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i11 {
-                    background-position-x: -15em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i12, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i12 {
-                    background-position-x: -16.5em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i13, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i13 {
-                    background-position-x: -18em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i14, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i14 {
-                    background-position-x: -19.5em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i15, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i15 {
-                    background-position-x: -21em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title i.i16, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title i.i16 {
-                    background-position-x: -22.5em; }
-                .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .right_box, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title .right_box {
-                  float: right;
-                  line-height: 4em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_title .right_box .arrow, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_title .right_box .arrow {
-                    width: .5em;
-                    height: .8em;
-                    background: url(../image/icon/arrow_g.png) no-repeat;
-                    background-size: cover;
-                    vertical-align: middle;
-                    line-height: 100%;
-                    margin: 0 0 0 1em;
-                    -webkit-transform: rotate(0deg);
-                    -ms-transform: rotate(0deg);
-                    transform: rotate(0deg);
-                    -webkit-transition: all .2s ease-in-out;
-                    -o-transition: all .2s ease-in-out;
-                    transition: all .2s ease-in-out; }
-              .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow {
-                overflow: hidden;
-                display: none; }
-                .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow.active, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow.active {
-                  display: block; }
-                .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li {
-                  overflow: hidden;
-                  line-height: 100%;
-                  padding: .25em .5em;
-                  border-top: 1px solid #ddddec; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li:hover, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li:hover {
-                    background: #fff0e2; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right p, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .drow_right p {
-                    color: #d57f32; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right h1, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .drow_right h1 {
-                    display: none; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .drow_right .change_wrap .doing_wrap, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .drow_right .change_wrap .doing_wrap {
-                    display: block; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button {
-                    color: #d57f32;
-                    border: 1px solid #d57f32; }
-                    .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button:hover, .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button.active, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button:hover, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li.active .btn_wrap.btn_wrap button.active {
-                      background: #d57f32;
-                      color: #fff; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li h1, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li h1 {
-                    line-height: 1.9em;
-                    font-size: 1.1em;
-                    width: 100%;
-                    display: inline-block;
-                    color: #4d515d; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left, .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right {
-                    float: left; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left {
-                    width: 55%; }
-                    .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left p, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left p {
-                      line-height: 1.4em;
-                      width: 100%; }
-                    .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left h1, .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_left p, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left h1, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_left p {
-                      color: #4d515d; }
-                  .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right {
-                    width: 45%;
-                    height: 4.7em;
-                    position: relative; }
-                    .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap {
-                      position: absolute;
-                      top: 0;
-                      right: 0; }
-                      .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap h1, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap h1 {
-                        font-weight: normal; }
-                      .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap {
-                        line-height: 1.9em;
-                        display: none; }
-                        .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap p, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap p {
-                          line-height: 100%; }
-                        .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap .red_point, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .change_wrap .doing_wrap .red_point {
-                          width: .55em;
-                          height: .55em;
-                          background: red;
-                          margin: -2px 0 0px;
-                          border-radius: 100px;
-                          vertical-align: middle;
-                          margin: -.25em 0 0 .25em; }
-                    .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap {
-                      position: absolute;
-                      bottom: 0;
-                      right: 0; }
-                      .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button {
-                        border: 1px solid #3654ff;
-                        border-radius: 12px;
-                        padding: .1em .5em;
-                        background: transparent;
-                        color: #3654ff; }
-                        .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:hover, .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button.active, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:hover, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button.active {
-                          background: #3654ff;
-                          color: #fff; }
-                        .container main .right_2 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:first-child, .container main .right_2 .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:first-child {
-                          margin: 0 .5em 0 0; }
-          .container main .right_2 .live_page .live_games .live_content .live_talk, .container main .right_2 .live_page .live_games .talk_content .live_talk {
-            height: inherit; }
-            .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box {
-              height: 70%;
-              background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
-              background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
-              background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
-              background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%); }
-              .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_title, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_title {
-                line-height: 2em;
-                height: 2em;
-                background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
-                background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
-                background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
-                background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%); }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_title span, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_title span {
-                  display: inline-block;
-                  width: 1em;
-                  height: 1em;
-                  vertical-align: middle;
-                  background: url(../image/icon/talk_icon.png) no-repeat;
-                  background-size: cover;
-                  margin: 0 0 0 1em; }
-              .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box {
-                height: calc(100% - 2em);
-                background: #fafafa;
-                overflow-y: scroll; }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box::-webkit-scrollbar, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box::-webkit-scrollbar {
-                  width: .25em;
-                  position: absolute;
-                  left: 0; }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box::-webkit-scrollbar-thumb, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box::-webkit-scrollbar-thumb {
-                  background: #b9becf;
-                  border-radius: 10px; }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box::-webkit-scrollbar-track, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box::-webkit-scrollbar-track {
-                  background: #f1f1f1;
-                  border-radius: 10px; }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .time_tag, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .time_tag {
-                  line-height: 1.1;
-                  color: #8a8c93;
-                  text-align: center;
-                  margin: .5em 0; }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap {
-                  line-height: 100%;
-                  color: #93a2ee;
-                  margin: .5em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap .p_name, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap .p_name {
-                    font-size: .8em;
-                    text-transform: none; }
-                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap .p_box, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap .p_box {
-                    border-radius: 12px;
-                    border: 1px solid #93a2ee;
-                    width: auto;
-                    display: inline-block;
-                    padding: .25em .5em;
-                    text-transform: none; }
-                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap.myself, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap.myself {
-                    text-align: right; }
-                    .container main .right_2 .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap.myself .p_box, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap.myself .p_box {
-                      color: #fff;
-                      background: #485abf; }
-            .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input {
-              height: 30%; }
-              .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap {
-                line-height: 100%;
-                height: 65%;
-                width: 100%;
-                position: relative;
-                border-top: 1px solid #ddddec; }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap textarea, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap textarea {
-                  width: 100%;
-                  border: none;
-                  padding: 1.5em .5em 0em;
-                  height: 8em; }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap {
-                  position: absolute;
-                  top: .25em;
-                  left: .25em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i {
-                    width: 1em;
-                    height: 1em;
-                    background: url(../image/icon/talk_text_ic.png) no-repeat;
-                    background-size: 200%;
-                    margin: 0 .5em 0 0;
-                    cursor: pointer; }
-                    .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i1, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i1 {
-                      background-position-x: 0em; }
-                    .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i2, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .input_wrap .i_icon_wrap i.i2 {
-                      background-position-x: -1em; }
-              .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn {
-                display: inline-block;
-                width: 100%;
-                height: 33%;
-                vertical-align: top;
-                background: #d6ddff;
-                border-radius: 0 0 8px 8px;
-                position: relative; }
-                .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap {
-                  position: absolute;
-                  top: 50%;
-                  right: 1em;
-                  -webkit-transform: translateY(-50%);
-                  -ms-transform: translateY(-50%);
-                  transform: translateY(-50%);
-                  line-height: 1; }
-                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap button, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap button {
-                    border-radius: 12px;
-                    padding: .125em .5em; }
-                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .cancel, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .cancel {
-                    border: 1px solid #afafaf;
-                    color: #afafaf;
-                    background: #fff; }
-                  .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send {
-                    border: 1px solid #8593d8;
-                    color: #fff;
-                    background: -webkit-gradient(linear, left top, left bottom, from(#8593d8), to(#3d50bb));
-                    background: -webkit-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
-                    background: -o-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
-                    background: linear-gradient(to bottom, #8593d8 0%, #3d50bb 100%); }
-                    .container main .right_2 .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send .tri, .container main .right_2 .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send .tri {
-                      width: 0;
-                      height: 0;
-                      border-style: solid;
-                      border-width: .4em .4em 0 .4em;
-                      border-color: #fff transparent transparent transparent;
-                      display: inline-block;
-                      vertical-align: middle; }
-          .container main .right_2 .live_page .live_games .live_content .live_balls.active, .container main .right_2 .live_page .live_games .live_content .live_talk.active, .container main .right_2 .live_page .live_games .talk_content .live_balls.active, .container main .right_2 .live_page .live_games .talk_content .live_talk.active {
-            display: block; }
-        .container main .right_2 .live_page .live_games .talk_content {
-          overflow: hidden;
-          height: 35em;
-          line-height: 35em; }
   .container footer {
     width: 100%;
     height: 69px;

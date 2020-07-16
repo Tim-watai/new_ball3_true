@@ -1,0 +1,218 @@
+.time_line {
+    background: #2f333d;
+    p {
+      line-height: 1.5em;
+      width: 1200px;
+      text-align: right;
+      margin: 0 auto;
+      color: #b4bac8;
+    }
+  }
+.h_box {
+    width: 100%;
+    height: 5em;
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px #cdd2e5;
+  }
+.h_wrap {
+// width: 1200px;
+width: 1100px;
+// margin: 0 auto;
+position: absolute;
+// left: 54%;
+left: 50%;
+transform: translateX(-50%);
+line-height: 5em;
+overflow: hidden;
+// padding: 0 0 0 .4em;
+.logo {
+    width: 17%;
+    height: 100%;
+    text-align: center;
+    float: left;
+    h1 {
+    font-size: 3.5em;
+    line-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    background: linear-gradient(to bottom, #8997da 0%, #3247b8 100%);
+    background-clip: text;
+    position: relative;
+    -webkit-text-fill-color: transparent;
+    }
+}
+ul {
+    float: left;
+    overflow: hidden;
+    margin: 0 0 0 1em;
+    &.m_yet {
+    // width: 30%;
+    // height: 100%;
+    line-height: 5em;
+    height: 5em;
+    }
+    li {
+    font-size: 1.1em;
+    float: left;
+    margin: 0 1em;
+    position: relative;
+    color: #4d515d;
+    cursor: pointer;
+    text-align: center;
+    width: auto;
+    &.limit_w{
+        width: 3.5em;
+    }
+    p{
+        // width: 5em;
+        width: auto;
+        line-height: 1;
+        vertical-align: middle;
+        display: inline-block;
+        word-break: break-word;
+    }
+    i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(../image/icon/h_icon.png) no-repeat;
+        background-size: 300%;
+        margin: 0px 4px 0 0;
+        vertical-align: text-bottom;
+        &.i1 {
+        background-position: 0 0;
+        }
+        &.i2 {
+        background-position: -16px 0;
+        }
+        &.i3 {
+        background-position: -32px 0;
+        }
+    }
+    &:hover,
+    &:active,
+    &.active {
+        color: #293eb0;
+        // border-bottom: 1px solid #293eb0;
+        &:before {
+        content: "";
+        background: #293eb0;
+        height: 0.25em;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 8px;
+        }
+    }
+    }
+}
+.right {
+    float: right;
+    line-height: 5em;
+    height: 5em;
+    padding: 0 1.5em 0 0;
+    .sign_yet,
+    .sign_in {
+    overflow: hidden;
+    display: none;
+    &.active{
+        display: block;
+    }
+    }
+    .sign_yet {
+    line-height: 5em;
+    text-align: right;
+    .wrap {
+        line-height: 4em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    p,
+    i,
+    span {
+        display: inline-block;
+    }
+    i {
+        width: 30px;
+        height: 30px;
+        background: url(../image/icon/avatar.png) no-repeat;
+        background-size: 100%;
+        vertical-align: middle;
+        margin: 0 4px 0 0;
+    }
+    p {
+        vertical-align: middle;
+        line-height: 100%;
+        
+    }
+    span {
+        cursor: pointer;
+        font-size: 1.1em;
+        color: #4d515d;
+    }
+    }
+    //登入
+    .sign_in {
+    line-height: 5em;
+    text-align: right;
+    .wrap {
+        display: inline-block;
+        line-height: 4em;
+        vertical-align: middle;
+        .row {
+        line-height: 1.5em;
+        p {
+            font-size: 1.3em;
+            display: inline-block;
+            vertical-align: baseline;
+            &.gray {
+            color: #4d515d;
+            }
+            &.blue {
+            color: #2d43b6;
+            }
+        }
+        .vip {
+            display: inline-block;
+            vertical-align: text-bottom;
+            margin: 0 0 0 0.5em;
+            padding: 0em 0.5em 0em;
+            background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
+            border-radius: 4px;
+            i {
+            background: url(../image/icon/vip.png) no-repeat;
+            background-size: 100%;
+            display: inline-block;
+            width: 2em;
+            height: 0.8em;
+            vertical-align: middle;
+            }
+            p {
+            display: inline-block;
+            font-family: "微軟正黑體";
+            font-weight: bold;
+            color: #fff;
+            vertical-align: middle;
+            line-height: 100%;
+            font-size: 1.2em;
+            margin: 0 0 0 2px;
+            }
+        }
+        &.bot {
+            text-align: left;
+            i {
+            width: 1.2em;
+            height: 1.2em;
+            background: url(../image/icon/q_icon.png) no-repeat;
+            background-size: 100%;
+            display: inline-block;
+            vertical-align: text-bottom;
+            margin: 0 0 0 4px;
+            }
+        }
+        }
+    }
+    }
+}
+}

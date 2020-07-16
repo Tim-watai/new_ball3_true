@@ -1,0 +1,147 @@
+.game_in{
+    width: 100%;
+    height: 8em;
+    margin: -.8em 0 -1em 0;
+    position: relative;
+
+    &.soc{
+      background: url(../image/game_in/gin_soc.png) no-repeat;
+      background-size: 100%;
+      position: relative;
+    }
+    &.bas{
+      background: url(../image/game_in/gin_bas.png) no-repeat;
+      background-size: 100%;
+      position: relative;
+    }
+    &.bask{
+      background: url(../image/game_in/gin_bask.png) no-repeat;
+      background-size: 100%;
+      position: relative;
+    }
+    &.my_page_bill{
+      background: url(../image/my/title_bg.png) no-repeat;
+      background-size: 100%;
+      position: relative;
+    }
+    .in_left{
+      display: inline-block;
+      color: #fff;
+      position: absolute;
+      top: calc(50%);
+      left: 2em;
+      font-size: 1.1em;
+      line-height: 1.7;
+      transform: translate(0%,-50%);
+    }
+    .in_right{
+      display: inline-block;
+      color: #fff;
+      position: absolute;
+      top: calc(50% - .5em);
+      right: 2em;
+      font-size: 1.1em;
+      line-height: 1.7;
+      transform: translate(0%,-50%);
+      li{
+        display: inline-block;
+        margin: 0 .3em 0 0;
+          &:last-child{
+            margin: 0;
+          }
+        span{
+          display: inline-block;
+          vertical-align: middle;
+          width: 2em;
+          height: 1.8em;
+          background: url(../image/icon/view_icon.png)no-repeat;
+          background-size: 200%;
+          cursor: pointer;
+          
+          @for $i from 1 through 2 {
+              &.i#{$i}{
+                background-position: (($i - 1) * -2em) 0;
+              }
+          }
+        }
+      }
+    }
+    .mid{
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      top: calc(50% - .25em);
+      left: 50%;
+      font-size: 1.1em;
+      line-height: 1.5;
+      transform: translate(-50%, -50%);
+      li:nth-child(2){
+        position: relative;
+        &:before,&:after{
+          content: '';
+          width: .4em;
+          height: .15em;
+          background: #fff;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &:before{
+          left: -3.5em;
+        }
+        &:after{
+          right: -3.5em;
+        }
+      }
+    }
+    .t_wrap1,.t_wrap2{
+      display: inline-block;
+      color: #fff;
+      position: absolute;
+      top: calc(50% - .25em);
+      font-size: 1.2em;
+      line-height: 1;
+      .box{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      text-align: left;
+      span,p{
+        display: inline-block;
+        line-height: 1;
+        vertical-align: middle; 
+      }
+      p{
+        max-width: 9em;
+        line-height: 1.2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      span{
+        width: 3em;
+        height: 2em;
+        background: url(../image/icon/team_icon.png)no-repeat;
+        background-size: 600%;
+        @for $i from 1 through 6 {
+          &.t#{$i}{
+            background-position-x: (($i - 1) * -3em);
+          }
+        }
+      }
+    }
+    .t_wrap1{
+      transform: translate(00%, -50%);
+      right: 61%;
+      span{
+        margin: 0 0 0 .5em;
+      }
+    }
+    .t_wrap2{
+      transform: translate(0%, -50%);
+      left: 61%;
+      span{
+        margin: 0 .5em 0 0;
+      }
+    }
+  }

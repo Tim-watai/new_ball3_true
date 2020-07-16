@@ -38,6 +38,7 @@ $(document).ready(function() {
       let list_yet = $('.f_wrap .f_bot ul.yet');
       let list_in = $('.f_wrap .f_bot ul.in');
       let btn_start = $('header .h_wrap .right');
+      let right_2_live = $('.right_2');
     
       // $('.f_wrap .f_bot ul.in').removeClass('active');
         // $('.f_wrap .f_bot ul.yet').addClass('active');
@@ -50,15 +51,18 @@ $(document).ready(function() {
         })
 
        function sign_active (sign){
+         console.log('sign ='+sign)
       if(sign == false){
                 sign_yet.addClass('active');
                 sign_in.removeClass('active');
                 list_yet.addClass('active');
+                right_2_live.removeClass('active');
         return  list_in.removeClass('active');
       }else{
                 sign_yet.removeClass('active');
                 sign_in.addClass('active');
                 list_yet.removeClass('active');
+                right_2_live.addClass('active');
         return  list_in.addClass('active');
       }
       }

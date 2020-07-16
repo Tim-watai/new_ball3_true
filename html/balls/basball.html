@@ -1071,7 +1071,7 @@
         </ul>
     
       </div>
-        <div class="right_2">
+        <div class="right_2 active">
           <div class="live_page">
             <div class="live_title">
               <div class="wrap">
@@ -2093,12 +2093,13 @@
 <script text="javascript">
  $(document).ready(function(){
    console.log('ready');
-      //登入狀態切換
+         //登入狀態切換
       let sign_yet = $('.right .sign_yet');
       let sign_in = $('.right .sign_in');
       let list_yet = $('.f_wrap .f_bot ul.yet');
       let list_in = $('.f_wrap .f_bot ul.in');
       let btn_start = $('header .h_wrap .right');
+      let right_2_live = $('.right_2');
     
       // $('.f_wrap .f_bot ul.in').removeClass('active');
         // $('.f_wrap .f_bot ul.yet').addClass('active');
@@ -2111,15 +2112,18 @@
         })
 
        function sign_active (sign){
+         console.log('sign ='+sign)
       if(sign == false){
                 sign_yet.addClass('active');
                 sign_in.removeClass('active');
                 list_yet.addClass('active');
+                right_2_live.removeClass('active');
         return  list_in.removeClass('active');
       }else{
                 sign_yet.removeClass('active');
                 sign_in.addClass('active');
                 list_yet.removeClass('active');
+                right_2_live.addClass('active');
         return  list_in.addClass('active');
       }
       }
@@ -2187,5 +2191,61 @@
           senior_page.css('display','block');
         }
       }
+      //<---------------------------
+      //dummy同步本尊的寬
+      let search_bar_obj = $('.container main .right .search_bar');
+        let search_bar_dummy = $('.search_bar.fixed');
+        let ball_search_dummy = $('.wrap.fixed');
+        
+        let obj_w = search_bar_obj.outerWidth();
+            search_bar_dummy.css({width:obj_w});
+            ball_search_dummy.css({width:obj_w});
+      function dummy(page){
+        search_bar_dummy.css({width:obj_w});
+        ball_search_dummy.css({width:obj_w});
+        if(page == 'my'){
+          let search_bar_my = $('.container main.my_page .right .my_bill');
+          let my_wrap = $('.container main.my_page .right .my_bill .wrap.fixed');
+          let obj_w = search_bar_my.outerWidth();
+          my_wrap.css({width:obj_w});
+          console.log('my')
+        }
+      }
+      //
+      //視窗偵測
+        $('.container main .right').scroll(function () {
+      
+          var scrollVal = $(this).scrollTop();
+        //  console.log('scrollVal = '+scrollVal);
+         if(scrollVal >= 50){
+          $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
+         }else if(scrollVal <= 49){
+          $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
+         }
+        });
+      //<------------------
+            //search main
+            $('.s_box').click(function(){
+        
+        if($(this).parent().parent().hasClass('active') == true){
+          console.log('s_box');
+          return  $(this).parent().parent().removeClass('active');
+        }else{
+          $(this).parent().parent().addClass('active');
+        }
+      })
+      //<----------
+      //search child
+      $('.gt ul').hide();
+      $('.gt').click(function(){
+        if($(this).hasClass('active') != true){
+                  $(this).addClass('active');
+          return $(this).children("ul").slideDown('slow', function() {});
+        }else{
+                $(this).removeClass('active');
+          return $(this).children("ul").hide();
+        }
+      })
+      //<-----------
  })
 </script>
