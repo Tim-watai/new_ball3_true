@@ -799,7 +799,9 @@
                     }
                 }
             }
-
+// [class = 'box_3']{
+//     background: #000;
+// }
             //添加銀行卡
             .cards{
                 width: auto;
@@ -826,6 +828,7 @@
                             line-height: 6em;
                             padding: 1em;
                             position: relative;
+                            cursor: pointer;
                             &.check{
                                 .card_check{
                                     display: block;

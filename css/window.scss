@@ -24,6 +24,12 @@ aside{
             display: block;
         }
     }
+    &.warning{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
     &.add_b_card{
         display: none;
         &.active{
@@ -55,7 +61,9 @@ aside{
             width: auto;
         }
         &.pw_w{
-            width: 21em;
+            $pw_w:21em;
+            width: $pw_w;
+            left: calc(50vw - (#{$pw_w} / 2));
         }
         &.add_card_w{
             width: 47em;
@@ -94,6 +102,10 @@ aside{
                     .window_box{
                         padding: 1em 1.5em;
                         width: 100%;
+                        color: #4d515d;
+                        // &.size_17{
+                        //     font-size: 1.143em;
+                        // }
                         .box_2{
                             overflow: hidden;
                             &.margin_2{
@@ -178,11 +190,14 @@ aside{
                             border-radius: 8px;
                             padding: .5em 4em;
                             cursor: pointer;
+                            font-size: 1.143em;
                         }
-                        .mid_box{
+                        .mid_box_margin{
                             margin: 2em 0 1em;
                             text-align: center;
-
+                        }
+                        .t_mid{
+                            text-align: center;
                         }
                     }
             }
@@ -214,7 +229,7 @@ aside{
             }
         }
         .title{
-            line-height: 2.5em;
+            line-height: 3em;
             position: relative;
             color: #fff;
             padding: 0 1em 0;
@@ -223,7 +238,7 @@ aside{
                 display: inline-block;
             }
             p{
-                font-size: .9em;
+                font-size: 1em;
             }
             .num_box{
                 display: inline-block;
@@ -267,6 +282,9 @@ aside{
             background: #fff;
             overflow: hidden;
             font-size: 14px;
+            .db{
+                display: block;
+            }
             .red{
                 color: #f30d0d;
             }
@@ -281,6 +299,15 @@ aside{
             }
             .d_blue{
                 color: #061d93;
+            }
+            .gray{
+                color: #b6bcca;
+            }
+            .mg_bot_5{
+                margin: 0 0 .5em;
+            }
+            .mg_bot_1{
+                margin: 0 0 1em;
             }
             span,p{
                 display: inline-block;

@@ -195,6 +195,11 @@ aside.ch_pw {
   aside.ch_pw.active {
     display: block; }
 
+aside.warning {
+  display: none; }
+  aside.warning.active {
+    display: block; }
+
 aside.add_b_card {
   display: none; }
   aside.add_b_card.active {
@@ -221,7 +226,8 @@ aside .bet_box {
   aside .bet_box.free_w {
     width: auto; }
   aside .bet_box.pw_w {
-    width: 21em; }
+    width: 21em;
+    left: calc(50vw - (21em / 2)); }
   aside .bet_box.add_card_w {
     width: 47em; }
   aside .bet_box .hidden_i_block.hidden_i_block.hidden_i_block {
@@ -252,7 +258,8 @@ aside .bet_box {
       background: #354ecf; }
     aside .bet_box.blue .content .window_box {
       padding: 1em 1.5em;
-      width: 100%; }
+      width: 100%;
+      color: #4d515d; }
       aside .bet_box.blue .content .window_box .box_2 {
         overflow: hidden; }
         aside .bet_box.blue .content .window_box .box_2.margin_2 {
@@ -317,9 +324,12 @@ aside .bet_box {
         display: inline-block;
         border-radius: 8px;
         padding: .5em 4em;
-        cursor: pointer; }
-      aside .bet_box.blue .content .window_box .mid_box {
+        cursor: pointer;
+        font-size: 1.143em; }
+      aside .bet_box.blue .content .window_box .mid_box_margin {
         margin: 2em 0 1em;
+        text-align: center; }
+      aside .bet_box.blue .content .window_box .t_mid {
         text-align: center; }
   aside .bet_box.red .title {
     background: -webkit-gradient(linear, left top, left bottom, from(#eb0004), to(#850004));
@@ -344,7 +354,7 @@ aside .bet_box {
     aside .bet_box.red .content .bets .check_icon {
       background: #db0006; }
   aside .bet_box .title {
-    line-height: 2.5em;
+    line-height: 3em;
     position: relative;
     color: #fff;
     padding: 0 1em 0;
@@ -352,7 +362,7 @@ aside .bet_box {
     aside .bet_box .title p, aside .bet_box .title span {
       display: inline-block; }
     aside .bet_box .title p {
-      font-size: .9em; }
+      font-size: 1em; }
     aside .bet_box .title .num_box {
       display: inline-block;
       background: #fff;
@@ -395,6 +405,8 @@ aside .bet_box {
     background: #fff;
     overflow: hidden;
     font-size: 14px; }
+    aside .bet_box .content .db {
+      display: block; }
     aside .bet_box .content .red {
       color: #f30d0d; }
     aside .bet_box .content .l_red {
@@ -405,6 +417,12 @@ aside .bet_box {
       color: #556de7; }
     aside .bet_box .content .d_blue {
       color: #061d93; }
+    aside .bet_box .content .gray {
+      color: #b6bcca; }
+    aside .bet_box .content .mg_bot_5 {
+      margin: 0 0 .5em; }
+    aside .bet_box .content .mg_bot_1 {
+      margin: 0 0 1em; }
     aside .bet_box .content span, aside .bet_box .content p {
       display: inline-block; }
     aside .bet_box .content .bets .line {
@@ -2193,7 +2211,7 @@ aside .bet_box {
                 width: 0;
                 height: 0;
                 border-style: solid;
-                border-width: .4em .4em 0 .4em;
+                border-width: .4em .3em 0 .3em;
                 border-color: #fff transparent transparent transparent;
                 display: inline-block;
                 vertical-align: middle; }
@@ -3389,7 +3407,8 @@ aside .bet_box {
             color: #fff;
             line-height: 6em;
             padding: 1em;
-            position: relative; }
+            position: relative;
+            cursor: pointer; }
             .basic_bill .save_type .cards .box_3 .card_box.finish_card.check .card_check {
               display: block; }
             .basic_bill .save_type .cards .box_3 .card_box.finish_card .card_name {
@@ -3967,7 +3986,7 @@ body {
   left: 2%;
   display: inline-block;
   z-index: 1000;
-  width: 206px;
+  width: 95px;
   height: 100vh; }
   .test_box .en_cn {
     position: absolute;
@@ -4956,12 +4975,12 @@ header {
         margin: 6px 0 0; }
 
 .bg_t {
-  background: url(../image/bg.jpg) no-repeat;
+  background: url(../image/bg2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
   width: 1920px;
-  height: 1000px;
+  height: 1200px;
   position: relative;
   position: fixed;
   top: 0px;

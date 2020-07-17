@@ -6194,9 +6194,30 @@
          </div>
         </div>
       </div>
-      <div class="mid_box">
+      <div class="mid_box_margin">
         <div class="blue_btn">添加銀行卡</div>
       </div>
+     </div>
+    </div>
+  </div>
+</aside>
+<aside class="warning black_bg active">
+  <div class="bet_box blue free_w">
+    <div class="title">
+      <p>注意</p>
+      <span class="close"></span>
+    </div>
+    <div class="content">
+     <div class="window_box">
+      <p class="db mg_bot_5">您尚未綁定銀行卡，無法使用取款功能，請依循下列步驟綁定銀行卡：</p>
+      <span class="mg_bot_1"> 
+          1. <span class="d_blue">點擊網站首頁｢我的｣</span> <span class="gray">&ensp;→&ensp;</span>
+          2. <span class="d_blue">點擊｢我的錢包｣</span> <span class="gray">&ensp;→&ensp;</span> 
+          3. <span class="d_blue">添加銀行卡</span>
+        </span>
+        <div class="t_mid">
+          <button class="blue_btn">確認</button>
+        </div>
      </div>
     </div>
   </div>
@@ -6204,6 +6225,36 @@
 <script>
   $(document).ready(function () {
     console.log('get_cash_page');
+  //warning彈窗
+  let warning_clch =  $('aside .bet_box.free_w .title .close ,aside .bet_box.blue .content .window_box .blue_btn');
+  let warning_w = $('aside.black_bg.warning');
+
+  warning_clch.click(function(){
+      return warning_w.removeClass('active');
+    })
+    //pw_ch 彈窗_移動
+  $('.bet_box.blue.free_w .title').mousedown(
+          function(event){
+          let isMove = true;
+          let abs_x = event.pageX - $('aside .bet_box.blue.free_w').offset().left;
+          let abs_y = event.pageY - $('aside .bet_box.blue.free_w').offset().top;
+          //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
+          let e_px = event.pageX;
+          let leftt = $('aside .bet_box.free_w').offset().left;
+          $(document).mousemove(
+            function(event){
+              if (isMove) {
+              let obj = $('aside .bet_box.free_w');
+              obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
+              }
+              //move接up
+            }).mouseup(
+              function () {
+                isMove = false;
+              }
+            )//up
+        })//down
+  //<-----------------------------------
 
   //修改密碼彈窗
   let ch_pw = $('.tag_wrap .tag.ch_pw');
