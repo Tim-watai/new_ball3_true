@@ -495,17 +495,70 @@
                     <div class="b50">
                      <p class="set_title">盤口切換</p>
                      <div class="set_sw">
-                       <div class="s_b50">1</div>
-                       <div class="s_b50">2</div>
+                       <!-- <div class="s_ball"></div> -->
+                       <div class="s_b50 active"><p>歐洲盤</p></div>
+                       <div class="s_b50"><p>香港盤</p></div>
                      </div>
                     </div>
                     <div class="b50">
-                     2
-                    </div>
+                      <p class="set_title">主題風格</p>
+                      <div class="set_sw">
+                        <!-- <div class="s_ball"></div> -->
+                        <div class="s_b50 active"><p>日間</p></div>
+                        <div class="s_b50"><p>夜間</p></div>
+                      </div>
+                     </div>
                   </div>
                 </div>
               </div>
-          
+              <div class="basic_bill">
+                <div class="b_name">
+                  <p class="bf">通知設定</p>
+                  <div class="right_box">
+                    <i class="infor infor_margin_r"></i><span>開啟通知，可隨時掌握最新賽事比分</span>
+                  </div>
+                </div>
+                <div class="save_type set_size">
+                  <div class="mb_box no_border">
+                    <div class="b50">
+                     <p class="set_title">桌面通知</p>
+                     <div class="set_sw">
+                       <!-- <div class="s_ball"></div> -->
+                       <div class="s_b50 active"><p>開啟</p></div>
+                       <div class="s_b50"><p>關閉</p></div>
+                     </div>
+                    </div>
+                    <div class="b50">
+                      <p class="set_title">電子郵件通知</p>
+                      <div class="set_sw">
+                        <!-- <div class="s_ball"></div> -->
+                        <div class="s_b50 active"><p>開啟</p></div>
+                        <div class="s_b50"><p>關閉</p></div>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basic_bill b50">
+                <div class="b_name">
+                  <p class="bf">版本資訊</p>
+                </div>
+                <div class="save_type version_size">
+                  <div class="mb_box">
+                    <div class="b50">
+                      <div class="v_wrap">
+                        <span class="v_title">目前為最新版本</span>
+                        <span class="v_data">V4.0.3</span>
+                      </div>
+                    </div>
+                    <div class="b50">
+                        <div class="v_wrap">
+                          <div class="v_icon_check"></div>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
         </div>
         <div class="left ">
           <ul class="index">
@@ -1641,21 +1694,16 @@
 
 <script>
 $(document).ready(function(){
-    console.log('record');
-    //注單展開
-    let bill_name = $('.basic_bill .b_name');
-    function bill_open (myself){
-        if(myself.parent().hasClass('active') != true){
-            myself.parent().addClass('active');
-        }else{
-            myself.parent().removeClass('active');
-        }
-    }
-    bill_name.click(function(){
-      let myself = $(this);
-      bill_open(myself);
-    })
-
+    console.log('set');
+//switch
+let sw_btn = $('.set_sw .s_b50');
+sw_btn.click(function(){
+  if($(this).hasClass('active') != true){
+              $(this).siblings().removeClass('active');
+      return  $(this).addClass('active');
+  }
+})
+//<-------------------
 //dummy同步本尊的寬
 let search_bar_obj = $('.container main .right .search_bar');
         let search_bar_dummy = $('.search_bar.fixed');

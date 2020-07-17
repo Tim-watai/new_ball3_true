@@ -131,10 +131,13 @@ i{
     &.infor{
         vertical-align: middle;
         display: inline-block;
-        width: 1.1em;
-        height: 1.1em;
+        width: 1.286em;
+        height: 1.286em;
         background: url(../image/icon/infor.png)no-repeat;
         background-size: 100%;
+        &.infor_margin_r{
+            margin-right: 0.571em;
+        }
     }
 }
 

@@ -2666,6 +2666,8 @@ aside .bet_box {
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; }
+  .basic_bill.b50 {
+    width: 50%; }
   .basic_bill .num_wrap {
     overflow: hidden;
     border-top: 1px solid #b9c0d2; }
@@ -2722,8 +2724,8 @@ aside .bet_box {
   .basic_bill .footer_bg_blue.footer_bg_blue.footer_bg_blue {
     background: #404b87; }
   .basic_bill .b_name {
-    line-height: 2em;
-    height: 2em;
+    line-height: 2.214em;
+    height: 2.214em;
     background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f0f0f0));
     background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
     background: -o-linear-gradient(top, #fff 0%, #f0f0f0 100%);
@@ -2807,12 +2809,16 @@ aside .bet_box {
       top: 50%;
       height: 100%;
       float: right;
-      line-height: 2em;
+      line-height: 2.214em;
       right: 1.5em;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
       .basic_bill .b_name .right_box p {
+        display: inline-block; }
+      .basic_bill .b_name .right_box span {
+        line-height: 1;
+        vertical-align: middle;
         display: inline-block; }
       .basic_bill .b_name .right_box .time {
         margin: 0 1em 0 0; }
@@ -2856,11 +2862,26 @@ aside .bet_box {
         line-height: calc(2em - 2px);
         background: #a3a8c4;
         float: right;
-        border-radius: 24px; }
+        border-radius: 24px;
+        color: #fff; }
         .basic_bill .save_type.set_size .set_sw .s_b50 {
           float: left;
           width: 50%;
-          line-height: 2em; }
+          line-height: 2em;
+          text-align: center;
+          cursor: pointer; }
+          .basic_bill .save_type.set_size .set_sw .s_b50.active p {
+            background: #fff;
+            color: #4d515d; }
+          .basic_bill .save_type.set_size .set_sw .s_b50:first-child p {
+            margin: 2px 0 0 2px; }
+          .basic_bill .save_type.set_size .set_sw .s_b50:last-child p {
+            margin: 2px 0 0 0px; }
+          .basic_bill .save_type.set_size .set_sw .s_b50 p {
+            width: calc(100% - 2px);
+            height: calc(2em - 4px);
+            vertical-align: middle;
+            border-radius: 24px; }
       .basic_bill .save_type.set_size .mb_box {
         line-height: 4.571em;
         height: calc(4.571em - (1.286em * 2)); }
@@ -2870,6 +2891,37 @@ aside .bet_box {
           padding: 0 9.212%; }
           .basic_bill .save_type.set_size .mb_box .b50:before {
             height: 2.643em; }
+    .basic_bill .save_type.version_size {
+      padding: 1em 1.429em 1.357em; }
+      .basic_bill .save_type.version_size .mb_box {
+        line-height: calc(7.214em);
+        height: 7.214em; }
+        .basic_bill .save_type.version_size .mb_box .b50 {
+          padding-left: 3.714em; }
+          .basic_bill .save_type.version_size .mb_box .b50:before {
+            display: none; }
+          .basic_bill .save_type.version_size .mb_box .b50:last-child {
+            padding-left: 3em; }
+        .basic_bill .save_type.version_size .mb_box .v_wrap {
+          line-height: 100%;
+          vertical-align: middle;
+          display: inline-block; }
+          .basic_bill .save_type.version_size .mb_box .v_wrap .v_title {
+            display: block;
+            color: #1bc100;
+            font-weight: bold;
+            font-size: 1.214em;
+            margin-bottom: .5em; }
+          .basic_bill .save_type.version_size .mb_box .v_wrap .v_data {
+            color: #4d515d;
+            font-size: 1.1em; }
+          .basic_bill .save_type.version_size .mb_box .v_wrap .v_icon_check {
+            display: inline-block;
+            width: 5.857em;
+            height: 4.643em;
+            background: url(../image/my/version_check.png) no-repeat;
+            background-size: 100%;
+            vertical-align: middle; }
     .basic_bill .save_type.full {
       width: 100%; }
     .basic_bill .save_type.data_size {
@@ -2956,8 +3008,8 @@ aside .bet_box {
         margin: 0; }
       .basic_bill .save_type .trans_row .infor_i {
         display: inline-block;
-        width: 1.2em;
-        height: 1.2em;
+        width: 1.286em;
+        height: 1.286em;
         background: url(../image/icon/infor.png) no-repeat;
         background-size: 100%;
         vertical-align: middle;
@@ -3937,10 +3989,12 @@ aside .bet_box {
 i.infor {
   vertical-align: middle;
   display: inline-block;
-  width: 1.1em;
-  height: 1.1em;
+  width: 1.286em;
+  height: 1.286em;
   background: url(../image/icon/infor.png) no-repeat;
   background-size: 100%; }
+  i.infor.infor_margin_r {
+    margin-right: 0.571em; }
 
 .full_box {
   width: auto; }
