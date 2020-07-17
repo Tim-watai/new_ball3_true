@@ -15,6 +15,7 @@
 @import "../css/my/my_page.scss";
 @import "../css/my/my_trans_record.scss";
 @import "../css/my/my_help.scss";
+@import "../css/my/my_message.scss";
 //灰高表格_
 @import "../css/my/basic_bill.scss";
 //投注記錄表格_
@@ -622,8 +623,8 @@ header {
       }
       .search_bar{
         width: 100%;
-        line-height: 3em;
-        height: 3em;
+        line-height: 3.214em;
+        height: 3.214em;
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         overflow: hidden;
         border-radius: 8px;
@@ -691,7 +692,7 @@ header {
             &:before{
               content: '';
               position: absolute;
-              bottom: -.7em;
+              bottom: -.8em;
               left: 0;
               width: 100%;
               height: 3px;
