@@ -1518,7 +1518,9 @@ aside .bet_box {
     .card li .b35 {
       width: 35%; }
     .card li .b38 {
-      width: calc(38% - 1.7%); }
+      width: 38%; }
+    .card li .b36_3 {
+      width: 36.3%; }
     .card li .b46 {
       width: calc(46% - 1.7%); }
     .card li .b100 {
@@ -2236,12 +2238,12 @@ aside .bet_box {
         padding: 2em 0 0; }
         .container main.my_page .left ul.my_page .avatar_wrap .avatar {
           display: inline-block;
-          width: 6.5em;
-          height: 6.5em;
+          width: 5.857em;
+          height: 5.857em;
           background: url(../image/my/avatar_m.png) no-repeat;
           background-size: 100%;
           border-radius: 100px;
-          margin: 0 0 .5em; }
+          margin: 0 0 1.5em; }
         .container main.my_page .left ul.my_page .avatar_wrap .name {
           text-transform: none;
           color: #4d515d;
@@ -2253,7 +2255,7 @@ aside .bet_box {
       .container main.my_page .left ul.my_page .box_3 {
         overflow: hidden;
         padding: 0 1em;
-        margin: 1em 0 2em; }
+        margin: 1em 0 1em; }
         .container main.my_page .left ul.my_page .box_3 .box {
           float: left;
           width: 33.33%;
@@ -2284,7 +2286,8 @@ aside .bet_box {
           .container main.my_page .left ul.my_page .box_3 .box p {
             color: #4d515d;
             font-size: 1.1em;
-            line-height: 100%; }
+            line-height: 100%;
+            margin-top: .4em; }
       .container main.my_page .left ul.my_page li {
         line-height: 3.5em;
         position: relative;
@@ -2839,6 +2842,23 @@ aside .bet_box {
     background: #fff;
     border-top: 1px solid #e0e1e3;
     overflow: hidden; }
+    .basic_bill .save_type.set_size {
+      padding: 1.286em; }
+      .basic_bill .save_type.set_size .set_title {
+        color: #4d515d;
+        display: inline-block;
+        line-height: 100%;
+        vertical-align: middle;
+        font-size: 1.1em; }
+      .basic_bill .save_type.set_size .mb_box {
+        line-height: 4.571em;
+        height: calc(4.571em - (1.286em * 2)); }
+        .basic_bill .save_type.set_size .mb_box .b50 {
+          line-height: calc(4.571em - (1.286em * 2));
+          height: calc(4.571em - (1.286em * 2));
+          padding: 0 9.212%; }
+          .basic_bill .save_type.set_size .mb_box .b50:before {
+            height: 2.643em; }
     .basic_bill .save_type.full {
       width: 100%; }
     .basic_bill .save_type.data_size {
@@ -3246,6 +3266,8 @@ aside .bet_box {
       overflow: hidden;
       line-height: 6em;
       height: 6em; }
+      .basic_bill .save_type .mb_box.no_border {
+        border: none; }
       .basic_bill .save_type .mb_box.trans {
         float: left;
         margin: 0 .5em 0 0;
@@ -3798,8 +3820,8 @@ aside .bet_box {
 
 .avatar {
   display: inline-block;
-  width: 6.5em;
-  height: 6.5em;
+  width: 5.857em;
+  height: 5.857em;
   background: url(../image/my/avatar_m.png) no-repeat;
   background-size: 100%;
   border-radius: 100px;

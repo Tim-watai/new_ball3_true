@@ -172,6 +172,31 @@
         border-top: 1px solid #e0e1e3;
         //0713
         overflow: hidden;
+        &.set_size{
+                // line-height: 4.571em;
+                // height: 4.571em;
+            .set_title{
+                color: #4d515d;
+                display: inline-block;
+                line-height: 100%;
+                vertical-align: middle;
+                font-size: 1.1em;
+            }
+            $set_pad:1.286em;
+            padding: $set_pad;
+           .mb_box{
+               line-height: 4.571em;
+               height: calc(4.571em - (#{$set_pad} * 2));
+               .b50{
+                   line-height: calc(4.571em - (#{$set_pad} * 2));
+                   height: calc(4.571em - (#{$set_pad} * 2));
+                   padding: 0 9.212%;
+                   &:before{
+                       height: 2.643em;
+                   }
+               }
+           }
+        }
         &.full{
             width: 100%;
         }
@@ -633,6 +658,10 @@
                 overflow: hidden;
                 line-height: 6em;
                 height: 6em;
+             
+                &.no_border{
+                    border: none;
+                }
                 &.trans{
                     // line-height: 6em;
                     // height: 7em;
