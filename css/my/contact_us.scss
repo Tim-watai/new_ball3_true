@@ -29,8 +29,18 @@
             right: 3em;
             transform: translateY(-50%);
               .c_cube{
-                line-height: 1;
+               text-align: center;
                 vertical-align: middle;
+                height: 2.286em;
+                width: 4.929em;
+                background: linear-gradient(to bottom,#ffffff 0%,#d5daef 100%);
+                border-radius: 8px;
+                border: 1px solid #495cc5;
+                cursor: pointer;
+                p{
+                    line-height: 2.286em;
+                    color: #4d515d;
+                }
               }
           }
       }
@@ -42,6 +52,11 @@
                background-size: 300%;
                vertical-align: middle;
                display: inline-block;
+               @for $i from 1 through 3{
+                   &.i#{$i}{
+                       background-position-x: ($i - 1) * -2.857em;
+                   }
+               }
            }
        }
    }

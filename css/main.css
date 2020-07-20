@@ -4279,8 +4279,20 @@ ul.data li {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
       .contact_us_size.contact_us_size.contact_us_size .contact_top .b50 .right_box .c_cube, .contact_us_size.contact_us_size.contact_us_size .contact_bot .b50 .right_box .c_cube {
-        line-height: 1;
-        vertical-align: middle; }
+        text-align: center;
+        vertical-align: middle;
+        height: 2.286em;
+        width: 4.929em;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5daef));
+        background: -webkit-linear-gradient(top, #ffffff 0%, #d5daef 100%);
+        background: -o-linear-gradient(top, #ffffff 0%, #d5daef 100%);
+        background: linear-gradient(to bottom, #ffffff 0%, #d5daef 100%);
+        border-radius: 8px;
+        border: 1px solid #495cc5;
+        cursor: pointer; }
+        .contact_us_size.contact_us_size.contact_us_size .contact_top .b50 .right_box .c_cube p, .contact_us_size.contact_us_size.contact_us_size .contact_bot .b50 .right_box .c_cube p {
+          line-height: 2.286em;
+          color: #4d515d; }
     .contact_us_size.contact_us_size.contact_us_size .contact_top i.med_i, .contact_us_size.contact_us_size.contact_us_size .contact_bot i.med_i {
       width: 2.857em;
       height: 2.857em;
@@ -4288,6 +4300,12 @@ ul.data li {
       background-size: 300%;
       vertical-align: middle;
       display: inline-block; }
+      .contact_us_size.contact_us_size.contact_us_size .contact_top i.med_i.i1, .contact_us_size.contact_us_size.contact_us_size .contact_bot i.med_i.i1 {
+        background-position-x: 0em; }
+      .contact_us_size.contact_us_size.contact_us_size .contact_top i.med_i.i2, .contact_us_size.contact_us_size.contact_us_size .contact_bot i.med_i.i2 {
+        background-position-x: -2.857em; }
+      .contact_us_size.contact_us_size.contact_us_size .contact_top i.med_i.i3, .contact_us_size.contact_us_size.contact_us_size .contact_bot i.med_i.i3 {
+        background-position-x: -5.714em; }
   .contact_us_size.contact_us_size.contact_us_size .contact_top {
     position: relative; }
     .contact_us_size.contact_us_size.contact_us_size .contact_top:before {
