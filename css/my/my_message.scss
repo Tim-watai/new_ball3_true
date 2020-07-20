@@ -83,13 +83,33 @@
 //--------------------
 .mess_drow{
     margin-top:.5em;
-    
+    cursor: pointer;
     &.active{
+        cursor: default;
         .mess_title{
             color: #fff;
             background: linear-gradient(to bottom,#6b76b4 0% ,#424d89 100%);
+            transition: all .2s ease-in-out;  
+          
+            .arrow{
+                background: url(../image/my/arrow_down_w.png)no-repeat;
+                background-size: 100%;
+                transition: all .2s ease-in-out;
+            }
+        }
+        .mess_content{
+            display: block;
         }
 
+    }
+    &.editing{
+        .mess_title{
+            .e_point{
+                &:before{
+                    display: block;
+                }
+            }
+        }
     }
     span{
         &.tt{
@@ -106,6 +126,7 @@
             background-size: 100%;
             vertical-align: middle;
             margin-left: 1em;
+            transition: all .2s ease-in-out;
         }
     }
     .mess_title{
@@ -115,8 +136,115 @@
         border-radius: 12px;
         padding: 0 1.429em;
         color: #4d515d;
+        z-index: 1;
+        transform: translateZ(1px);
+        transition: all .2s ease-in-out;
         .right_box{
             float: right;
+        }
+        .e_point{
+            width: 1em;
+            height: 1em;
+            border: 1px solid #3145b2;
+            border-radius: 100px;
+            display: inline-block;
+            position: relative;
+            vertical-align: text-bottom;
+            display: none;
+            &.active{
+                display: inline-block;
+            }
+            &:before{
+                content: '';
+                width: 0.571em;
+                height: 0.571em;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                background: #3145b2;
+                position: absolute;
+                display: none;
+                border-radius: 100px;
+            }
+        }
+    }
+    .mess_content{
+        display: none;
+        padding: 1em 1.214em 1.286em 1.214em;
+        background: #fff;
+        border-radius: 12px;
+        margin: -1em 0 0;
+        [class *='mess'] {
+            margin-top: 2.143em;
+        }
+        .mess_card{
+            border-radius: 12px;
+            border: 1px solid #6b76b4;
+            line-height: 2;
+            padding: 1.5em 2em;
+            box-shadow: 0 0 7px 1px #e2e4f3;
+             p{
+                font-size: 1.071em;
+                color: #292b30;
+             }
+        }
+        .mess_solo_p{
+            line-height: 2;
+            margin-top: 1.6em;
+            font-size: 1.071em;
+            color: #292b30;
+        }
+        .mess_table{
+            text-align: center;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 1px solid #6b76b4;
+            box-shadow: 0 0 7px 1px #e2e4f3;
+            p{
+                font-size: 1.071em;
+                color: #4d515d;
+            }
+            li{
+                overflow: hidden;
+                line-height: 2.214em;
+                background: #fff;
+                border-top: 1px solid #e1e1e4;
+                &:first-child{
+                    border: none;
+                }
+                &:nth-child(odd){
+                    background: #eef0f7;
+                }
+                &.title.title{
+                    background: #5b6498;
+                    .b50.b50.b50{
+                        border: none;
+                        p{
+                            color: #fff;
+                        }
+                    }
+                }
+                .b50{
+                    width: 50%;
+                    float: left;
+                    position: relative;
+                    &:first-child{
+                        border-right: 1px solid #e1e1e4;
+                    }
+                }
+            }
+        }
+        .mess_footer{
+            text-align: right;
+            margin-top: 1.286em;
+            .infor_i{
+                display: inline-block;
+                width: 1.286em;
+                height: 1.286em;
+                background: url(../image/icon/infor.png)no-repeat;
+                background-size: 100%;
+                vertical-align: text-bottom;
+            }
         }
     }
 }

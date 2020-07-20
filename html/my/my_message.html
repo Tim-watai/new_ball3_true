@@ -84,6 +84,19 @@
                         <div class="s_b50 active"><p class="sp">IM體育</p></div>
                         <div class="s_b50"><p class="sp">UR體育</p></div>
                       </div>
+                      <div class="edit">
+                        <div class="do">
+                          <span>編輯</span>
+                        </div>
+                        <div class="doing">
+                          <div class="delete">
+                            <span>刪除</span>
+                          </div>
+                          <div class="cancel">
+                            <span>取消</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
               </div>
@@ -109,11 +122,25 @@
                         <div class="s_b50 active"><p class="sp">IM體育</p></div>
                         <div class="s_b50"><p class="sp">UR體育</p></div>
                       </div>
+                   
                     </div>
                 </div>
               </div>
               <div class="messages_page"></div>
               <div class="events_page">
+                <div class="mess_drow">
+                  <div class="mess_title">
+                    <span class="e_point"></span>
+                    <span class="tt">【○○感恩祭】晚上8點上線即可搶8888禮金，禮金有限，送完為止</span>
+                    <div class="right_box">
+                      <span class="tt">活動時間 2020/07/13 ~ 2020/07/22</span>
+                      <span class="arrow"></span>
+                    </div>
+                  </div>
+                  <div class="mess_content">
+
+                  </div>
+                </div>
                 <div class="mess_drow">
                   <div class="mess_title">
                     <span class="tt">【○○感恩祭】晚上8點上線即可搶8888禮金，禮金有限，送完為止</span>
@@ -123,19 +150,68 @@
                     </div>
                   </div>
                   <div class="mess_content">
-
-                  </div>
-                </div>
-                <div class="mess_drow active">
-                  <div class="mess_title">
-                    <span class="tt">【○○感恩祭】晚上8點上線即可搶8888禮金，禮金有限，送完為止</span>
-                    <div class="right_box">
-                      <span class="tt">活動時間 2020/07/13 ~ 2020/07/22</span>
-                      <span class="arrow"></span>
-                    </div>
-                  </div>
-                  <div class="mess_content">
-
+                      <div class="mess_card">
+                        <p>活動對象：平台全體會員</p>
+                        <p>活動時間：2020/07/13 00:00:00 ~ 2020/07/22 23:59:59</p>
+                      </div>
+                      <p class="mess_solo_p">在活動期間，投注指定英超賽事，單注有效投注額 ≧ 500元且最終結算完畢，注單尾號含有連續數字8，即可獲得最高
+                        888元彩金！單需一倍流水即可提款！</p>
+                      <ul class="mess_table">
+                        <li class="title">
+                          <div class="b50"><p>注單尾號</p></div>
+                          <div class="b50"><p>彩金金額</p></div>
+                        </li>
+                        <li>
+                          <div class="b50"><p>8</p></div>
+                          <div class="b50"><p>18元</p></div>
+                        </li>
+                        <li>
+                          <div class="b50"><p>88</p></div>
+                          <div class="b50"><p>88元</p></div>
+                        </li>
+                        <li>
+                          <div class="b50"><p>888</p></div>
+                          <div class="b50"><p>388元</p></div>
+                        </li>
+                        <li>
+                          <div class="b50"><p>8888</p></div>
+                          <div class="b50"><p>888元</p></div>
+                        </li>
+                      </ul>
+                      <ul class="mess_table">
+                        <li class="title">
+                          <div class="b50"><p>時間</p></div>
+                          <div class="b50"><p>指定賽事</p></div>
+                        </li>
+                        <li>
+                          <div class="b50"><p>2020-07-13  02:00:00</p></div>
+                          <div class="b50"><p>伯恩茅斯 VS 萊斯特城</p></div>
+                        </li>
+                        <li>
+                          <div class="b50"><p>2020-07-14  03:00:00</p></div>
+                          <div class="b50"><p>曼聯 VS 南安普敦</p></div>
+                        </li>
+                        <li>
+                          <div class="b50"><p>2020-07-16  01:00:00</p></div>
+                          <div class="b50"><p>曼城 VS 伯恩茅斯</p></div>
+                        </li>
+                        <li>
+                          <div class="b50"><p>2020-07-16  03:15:00</p></div>
+                          <div class="b50"><p>阿森納 VS 利物浦</p></div>
+                        </li>
+                        <li>
+                          <div class="b50"><p>2020-07-17  03:15:00</p></div>
+                          <div class="b50"><p>水晶宮 VS 曼聯</p></div>
+                        </li>
+                        <li>
+                          <div class="b50"><p>2020-07-19  23:00:00</p></div>
+                          <div class="b50"><p>熱刺 VS 萊斯特城</p></div>
+                        </li>
+                      </ul>
+                      <div class="mess_footer">
+                        <span class="infor_i"></span>
+                        <span>具體開賽時間，請以官網時間為準</span>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -505,23 +581,24 @@ mess_tags.click(function(){
   }
   console.log('hi guy')
 })
+//{{頁面切換}}
 function tag_switch(tag_num){
     console.log('num ='+tag_num)
-    let page_clear = $('.messages_page,.events_page,.anno_page,.game_anno_page,.right_box .mess_sw');
-    let a_page = $('.messages_page');
-    let b_page = $('.events_page');
+    let page_clear = $('.messages_page,.events_page,.anno_page,.game_anno_page,.right_box .mess_sw,.right_box .edit');
+    let a_page = $('.messages_page,.right_box .edit');
+    let b_page = $('.events_page,.right_box .edit');
     let c_page = $('.anno_page');
     let d_page = $('.game_anno_page');
 
     let mess_sw = $('.right_box .mess_sw');
-
+    let edit_btn = $('.right_box .edit');
     page_clear.removeClass('active');
     if(tag_num == 'messages')
     {
-    return a_page.addClass('active');}
+    return  a_page.addClass('active');}
 
     else if(tag_num == 'events'){
-    return b_page.addClass('active');}
+    return  b_page.addClass('active');}
 
     else if(tag_num == 'anno'){
     return c_page.addClass('active');}
@@ -531,8 +608,10 @@ function tag_switch(tag_num){
     return    mess_sw.addClass('active')
             }
   }
+//<---------------------------------------
+//{編輯模式}
 
-
+//<---------------------------------------
 //dummy同步本尊的寬
 let search_bar_obj = $('.container main .right .search_bar');
         let search_bar_dummy = $('.search_bar.fixed');
@@ -574,6 +653,19 @@ sw_btn.click(function(){
   }
 })
 //<-------------------
+
+//下拉式_開關
+let drow = $('.mess_drow .mess_title');
+
+let act = 'active'
+drow.click(function(){
+  if($(this).parent().hasClass(act)!= true)
+  {
+    $(this).parent().addClass(act);
+  }else{
+    $(this).parent().removeClass(act);
+  }
+})
 
 })//ready
 

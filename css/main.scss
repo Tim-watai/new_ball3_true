@@ -784,6 +784,42 @@ header {
           height: 100%;
           
         }
+        .edit{
+          display: none;
+          &.active{
+            display: block;
+          }
+          .do,.delete,.cancel{
+            display: inline-block;
+            border: 1px solid #3145b2;
+            line-height: 100%;
+            padding: .2em .5em .15em;
+            border-radius: 4px;
+            color: #3145b2;
+            cursor: pointer;
+            span{
+              font-size: 1.1em;
+            }
+            &:hover{
+              background: #3145b2;
+              color: #fff;
+            }
+          }
+          .delete{
+            margin-right: .2em;
+          }
+          .doing{
+            display: none;
+          }
+          &.editing{
+            .do{
+              display: none;
+            }
+            .doing{
+              display: inline-block;
+            }
+          }
+        }
         .line{
           background: #bcbcbc;
           width: 1px;
