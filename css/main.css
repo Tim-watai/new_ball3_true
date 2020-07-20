@@ -2947,6 +2947,14 @@ aside .bet_box {
     background: -o-linear-gradient(top, #fff 0%, #f0f0f0 100%);
     background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
     position: relative; }
+    .basic_bill .b_name .line {
+      background: #bcbcbc;
+      width: 1px;
+      height: 60%;
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
+      margin: 0 .5em; }
     .basic_bill .b_name i {
       display: inline-block; }
       .basic_bill .b_name i.icon {
@@ -3001,6 +3009,10 @@ aside .bet_box {
         line-height: 1;
         vertical-align: middle;
         margin: 0 0 0 1em;
+        font-size: 1.1em; }
+      .basic_bill .b_name p.bf_n {
+        line-height: 1;
+        vertical-align: middle;
         font-size: 1.1em; }
     .basic_bill .b_name .question_icon {
       display: inline-block;
@@ -4319,6 +4331,18 @@ ul.data li {
       width: calc(100% - 3.858em);
       background: #b9c0d2;
       position: absolute; }
+
+.contact_us_reply.contact_us_reply.contact_us_reply .b_name {
+  line-height: 2.143em; }
+  .contact_us_reply.contact_us_reply.contact_us_reply .b_name .right_box .time {
+    margin: 0; }
+
+.contact_us_reply.contact_us_reply.contact_us_reply .save_type {
+  padding: 0.929em 1.357em; }
+  .contact_us_reply.contact_us_reply.contact_us_reply .save_type .reply_p {
+    color: #2d43b6;
+    margin-top: 1em;
+    line-height: 1.5; }
 
 @-webkit-keyframes marquee {
   0% {

@@ -81,6 +81,15 @@
         height: 2.214em;
         background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
         position: relative;
+        .line{
+            background: #bcbcbc;
+            width: 1px;
+            height: 60%;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+            margin: 0 .5em;
+        }
         i{
             display: inline-block;
             &.icon{
@@ -106,6 +115,11 @@
                 line-height: 1;
                 vertical-align: middle;
                 margin: 0 0 0 1em;
+                font-size: 1.1em;
+            }
+            &.bf_n{
+                line-height: 1;
+                vertical-align: middle;
                 font-size: 1.1em;
             }
            
