@@ -591,7 +591,6 @@ function tag_switch(tag_num){
     let d_page = $('.game_anno_page');
 
     let mess_sw = $('.right_box .mess_sw');
-    let edit_btn = $('.right_box .edit');
     page_clear.removeClass('active');
     if(tag_num == 'messages')
     {
@@ -610,7 +609,19 @@ function tag_switch(tag_num){
   }
 //<---------------------------------------
 //{編輯模式}
-
+let edit_btn = $('.right_box .edit');
+let ed_point = $('.mess_title .e_point');
+let ed_cancel = $('.edit .cancel')
+edit_btn.click(function(){
+  $(this).addClass('active');
+  $(this).addClass('editing');
+  ed_point.addClass('active');
+})
+ed_cancel.click(function(){
+  console.log('cancel')
+  edit_btn.removeClass('editing');
+  ed_point.removeClass('active');
+})
 //<---------------------------------------
 //dummy同步本尊的寬
 let search_bar_obj = $('.container main .right .search_bar');

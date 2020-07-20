@@ -2789,6 +2789,8 @@ aside .bet_box {
       display: none; }
       .mess_drow .mess_title .e_point.active {
         display: inline-block; }
+      .mess_drow .mess_title .e_point.choice:before {
+        display: block; }
       .mess_drow .mess_title .e_point:before {
         content: '';
         width: 0.571em;

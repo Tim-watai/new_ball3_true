@@ -154,6 +154,11 @@
             &.active{
                 display: inline-block;
             }
+            &.choice{
+                &:before{
+                    display: block;
+                }
+            }
             &:before{
                 content: '';
                 width: 0.571em;
