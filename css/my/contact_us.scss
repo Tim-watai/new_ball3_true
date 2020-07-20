@@ -1,0 +1,61 @@
+.contact_us_size.contact_us_size.contact_us_size{
+    line-height: 7.429em;
+   height: auto;
+//    padding: 1.429em 1em;
+        padding: 0;
+   .contact_top,.contact_bot{
+       overflow: hidden;
+
+      .b50{
+          .contact_box{
+              display: inline-block;
+              vertical-align: middle;
+              line-height: 4.571em;
+              padding: 0 0 0 2.929em;
+          }
+          .line_wrap{
+            display: inline-block;
+            line-height: 100%;
+            vertical-align: middle;
+            margin-left: 1.5em;
+              p{
+                line-height: 2;
+                font-size: 1.1em;
+              }
+          }
+          .right_box{
+            position: absolute;
+            top: 50%;
+            right: 3em;
+            transform: translateY(-50%);
+              .c_cube{
+                line-height: 1;
+                vertical-align: middle;
+              }
+          }
+      }
+       i{
+           &.med_i{
+               width: 2.857em;
+               height: 2.857em;
+               background: url(../image/my/media_icon.png)no-repeat;
+               background-size: 300%;
+               vertical-align: middle;
+               display: inline-block;
+           }
+       }
+   }
+   .contact_top{
+    position: relative;
+    &:before{
+        content: '';
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        width: calc(100% - 3.858em);
+        background: #b9c0d2;
+        position: absolute;
+    }
+   }
+}

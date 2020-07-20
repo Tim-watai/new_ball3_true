@@ -4252,6 +4252,56 @@ ul.data li {
       font-size: 1.1em;
       width: calc(100% / 3); }
 
+.contact_us_size.contact_us_size.contact_us_size {
+  line-height: 7.429em;
+  height: auto;
+  padding: 0; }
+  .contact_us_size.contact_us_size.contact_us_size .contact_top, .contact_us_size.contact_us_size.contact_us_size .contact_bot {
+    overflow: hidden; }
+    .contact_us_size.contact_us_size.contact_us_size .contact_top .b50 .contact_box, .contact_us_size.contact_us_size.contact_us_size .contact_bot .b50 .contact_box {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 4.571em;
+      padding: 0 0 0 2.929em; }
+    .contact_us_size.contact_us_size.contact_us_size .contact_top .b50 .line_wrap, .contact_us_size.contact_us_size.contact_us_size .contact_bot .b50 .line_wrap {
+      display: inline-block;
+      line-height: 100%;
+      vertical-align: middle;
+      margin-left: 1.5em; }
+      .contact_us_size.contact_us_size.contact_us_size .contact_top .b50 .line_wrap p, .contact_us_size.contact_us_size.contact_us_size .contact_bot .b50 .line_wrap p {
+        line-height: 2;
+        font-size: 1.1em; }
+    .contact_us_size.contact_us_size.contact_us_size .contact_top .b50 .right_box, .contact_us_size.contact_us_size.contact_us_size .contact_bot .b50 .right_box {
+      position: absolute;
+      top: 50%;
+      right: 3em;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .contact_us_size.contact_us_size.contact_us_size .contact_top .b50 .right_box .c_cube, .contact_us_size.contact_us_size.contact_us_size .contact_bot .b50 .right_box .c_cube {
+        line-height: 1;
+        vertical-align: middle; }
+    .contact_us_size.contact_us_size.contact_us_size .contact_top i.med_i, .contact_us_size.contact_us_size.contact_us_size .contact_bot i.med_i {
+      width: 2.857em;
+      height: 2.857em;
+      background: url(../image/my/media_icon.png) no-repeat;
+      background-size: 300%;
+      vertical-align: middle;
+      display: inline-block; }
+  .contact_us_size.contact_us_size.contact_us_size .contact_top {
+    position: relative; }
+    .contact_us_size.contact_us_size.contact_us_size .contact_top:before {
+      content: '';
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      height: 1px;
+      width: calc(100% - 3.858em);
+      background: #b9c0d2;
+      position: absolute; }
+
 @-webkit-keyframes marquee {
   0% {
     left: 100%;
