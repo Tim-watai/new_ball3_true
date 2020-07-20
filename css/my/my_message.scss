@@ -151,6 +151,8 @@
             position: relative;
             vertical-align: text-bottom;
             display: none;
+            z-index: 5;
+            margin-right: .5em;
             &.active{
                 display: inline-block;
             }
