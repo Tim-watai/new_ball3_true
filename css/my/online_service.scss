@@ -1,12 +1,61 @@
 .online_talk_box{
     background: #fafafa;
-    height: 10em;
+    // height: 10em;
     margin: -.8em 0 0;
-    padding: .8em 0 0;
+    padding: .8em 1em 2em;
     .time_tag{
         text-align: center;
         color: #838ba0;
         font-size:1em;
         margin: 1.286em 0;
     }
+    .talk_wrap{
+        line-height: 100%;
+        margin-top: 1em;
+        &.t_right{
+            text-align: right;
+        }
+        .my_ava{
+            display: inline-block;
+            width: 3.143em;
+            height: 3.143em;
+            background: url(../image/my/avatar_m.png)no-repeat;
+            background-size: 100%;
+            vertical-align: top;
+            margin-left:0.429em;
+        }
+        .my_talk{
+            margin-top: .25em;
+            display: inline-block;
+            font-size: 1.1em;
+            line-height: 1.1em;
+            vertical-align: top;
+            background: #273aa1;
+            color: #fff;
+            padding: 0.857em 0.857em 0.857em 0.857em;
+            border-radius: 12px 0px 12px 12px;
+            box-shadow: 0 0 8px 1px #dfe1ec;
+        }
+        .ser_ava{
+            display: inline-block;
+            width: 3.143em;
+            height: 3.143em;
+            background: url(../image/my/avatar_s.png)no-repeat;
+            background-size: 100%;
+            vertical-align: top;
+            margin-right:0.429em;
+        }
+        .ser_talk{
+            margin-top: .25em;
+            display: inline-block;
+            font-size: 1.1em;
+            line-height: 1.1em;
+            vertical-align: top;
+            border: 1px solid #c2c5ff;
+            padding: 0.857em  0.857em 0.857em 0.857em;
+            border-radius: 0px 12px 12px 12px;
+            box-shadow: 0 0 8px 1px #dfe1ec;
+        }
+    }
+  
 }
