@@ -4469,14 +4469,34 @@ ul.data li {
         background: url(../image/icon/infor.png) no-repeat;
         background-size: 100%; }
 
+.online_talk_bbox {
+  margin: -.8em 0 0;
+  padding: .8em 0 0;
+  background: #fafafa; }
+
 .online_talk_box {
   background: #fafafa;
-  margin: -.8em 0 0;
-  padding: .8em 1em 2em; }
+  padding: 0 1em 2em;
+  overflow-y: scroll;
+  height: 37.857em; }
+  .online_talk_box::-webkit-scrollbar {
+    width: .714em;
+    position: absolute;
+    left: 0; }
+  .online_talk_box::-webkit-scrollbar-thumb {
+    background: #80829f;
+    border-radius: 10px; }
+  .online_talk_box::-webkit-scrollbar-track {
+    background: #eceef5;
+    border-radius: 10px; }
+  .online_talk_box .ser_reply {
+    color: #2d43b6;
+    display: inline-block;
+    font-size: 1em; }
   .online_talk_box .time_tag {
     text-align: center;
     color: #838ba0;
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 1.286em 0; }
   .online_talk_box .talk_wrap {
     line-height: 100%;
@@ -4495,12 +4515,12 @@ ul.data li {
       margin-top: .25em;
       display: inline-block;
       font-size: 1.1em;
-      line-height: 1.1em;
+      line-height: 1.3em;
       vertical-align: top;
       background: #273aa1;
       color: #fff;
-      padding: 0.857em 0.857em 0.857em 0.857em;
-      border-radius: 12px 0px 12px 12px;
+      padding: 0.857em 0.857em 0.6em 0.857em;
+      border-radius: 15px 0px 15px 15px;
       -webkit-box-shadow: 0 0 8px 1px #dfe1ec;
       box-shadow: 0 0 8px 1px #dfe1ec; }
     .online_talk_box .talk_wrap .ser_ava {
@@ -4515,13 +4535,54 @@ ul.data li {
       margin-top: .25em;
       display: inline-block;
       font-size: 1.1em;
-      line-height: 1.1em;
+      line-height: 1.3em;
       vertical-align: top;
+      color: #4d515d;
       border: 1px solid #c2c5ff;
-      padding: 0.857em  0.857em 0.857em 0.857em;
-      border-radius: 0px 12px 12px 12px;
+      padding: 0.857em 0.857em 0.6em 0.857em;
+      border-radius: 0px 15px 15px 15px;
       -webkit-box-shadow: 0 0 8px 1px #dfe1ec;
-      box-shadow: 0 0 8px 1px #dfe1ec; }
+      box-shadow: 0 0 8px 1px #dfe1ec;
+      background: #fff; }
+
+.online_text_area {
+  border-top: 1px solid #e0e1e3;
+  width: 100%;
+  background: #fff;
+  padding: 0.429em 1.429em 1em .786em;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px; }
+  .online_text_area .top_btn_ar .t_ic {
+    display: inline-block;
+    background: url(../image/icon/talk_text_ic.png) no-repeat;
+    background-size: 200%;
+    width: 1.143em;
+    height: 1.143em; }
+  .online_text_area .bot_btn_ar {
+    overflow: hidden; }
+    .online_text_area .bot_btn_ar .blue_btn {
+      color: #fff;
+      float: right;
+      text-align: center;
+      line-height: 2.714em;
+      width: 7.125em;
+      height: 2.714em;
+      border-radius: 4px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#8996da), to(#3046b7));
+      background: -webkit-linear-gradient(top, #8996da 0%, #3046b7 100%);
+      background: -o-linear-gradient(top, #8996da 0%, #3046b7 100%);
+      background: linear-gradient(to bottom, #8996da 0%, #3046b7 100%); }
+      .online_text_area .bot_btn_ar .blue_btn .btn_w {
+        line-height: 100%;
+        vertical-align: middle; }
+      .online_text_area .bot_btn_ar .blue_btn p {
+        font-size: 1.1em; }
+  .online_text_area .online_t_ar {
+    width: 100%;
+    resize: none;
+    height: 5em;
+    border: none;
+    padding: 0; }
 
 @-webkit-keyframes marquee {
   0% {
