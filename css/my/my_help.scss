@@ -118,3 +118,37 @@
     position: relative;
     margin-top: .714em;
 }
+.rules_ul{
+    margin: .5em 0 0;
+    overflow: hidden;
+    border:1px solid #444f8b ;
+    border-radius: 15px;
+    span{
+        display: inline-block;
+        &.red{
+            color: #ff0000;
+        }
+    }
+    .title{
+        background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
+        line-height: 2.214em;
+        padding: 0 1em;
+        border-top: none;
+        p{
+            color: #fff;
+        }
+    }
+    li{
+        padding: .5em 1em;
+        background: #ededed;
+        border-top: 1px solid #e0e1e3;
+        &:nth-child(even){
+            background: #fff;
+        }
+        p{
+            font-size: 1.1em;
+            color: #4d515d;
+            line-height: 2;
+        }
+    }
+}
