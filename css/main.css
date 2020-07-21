@@ -4469,6 +4469,17 @@ ul.data li {
         background: url(../image/icon/infor.png) no-repeat;
         background-size: 100%; }
 
+.online_talk_box {
+  background: #fafafa;
+  height: 10em;
+  margin: -.8em 0 0;
+  padding: .8em 0 0; }
+  .online_talk_box .time_tag {
+    text-align: center;
+    color: #838ba0;
+    font-size: 1em;
+    margin: 1.286em 0; }
+
 @-webkit-keyframes marquee {
   0% {
     left: 100%;
