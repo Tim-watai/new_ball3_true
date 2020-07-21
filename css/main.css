@@ -2661,6 +2661,56 @@ aside .bet_box {
   .help_content .gray {
     color: #b6bcca; }
 
+.h_6_5 {
+  height: 6.643em; }
+
+.rules_type {
+  width: 80%;
+  position: fixed;
+  top: 9.927em;
+  right: 0;
+  -ms-transform: translateX(-50%);
+  z-index: 5;
+  padding: 0 calc(.8em + 8px) 0 0.8em; }
+  .rules_type .row_box {
+    background: #fff;
+    padding: .714em 1em;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 5px 1px #d9dbef;
+    box-shadow: 0 0 5px 1px #d9dbef; }
+  .rules_type .row {
+    overflow: hidden;
+    margin-right: -.5em; }
+    .rules_type .row:last-child {
+      margin-top: 0.357em; }
+    .rules_type .row .box_wrap {
+      float: left;
+      width: calc(100% / 9); }
+      .rules_type .row .box_wrap .m_box {
+        background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b78960));
+        background: -webkit-linear-gradient(top, #dfb995 0%, #b78960 100%);
+        background: -o-linear-gradient(top, #dfb995 0%, #b78960 100%);
+        background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
+        margin-right: .5em;
+        line-height: 2.286em;
+        border: 1px solid #b78960;
+        border-radius: 8px;
+        text-align: center;
+        cursor: pointer; }
+        .rules_type .row .box_wrap .m_box:hover, .rules_type .row .box_wrap .m_box.active {
+          background: -webkit-gradient(linear, left top, left bottom, from(#434e8a), to(#6974b2));
+          background: -webkit-linear-gradient(top, #434e8a 0%, #6974b2 100%);
+          background: -o-linear-gradient(top, #434e8a 0%, #6974b2 100%);
+          background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
+          border-color: #444f8b; }
+        .rules_type .row .box_wrap .m_box p {
+          font-size: 1.1em;
+          color: #fff; }
+
+.rules_type_coby {
+  position: relative;
+  margin-top: .714em; }
+
 .mess_sw {
   width: 12.429em;
   height: calc(3.214em - 12px);
