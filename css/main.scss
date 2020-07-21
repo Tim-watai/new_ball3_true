@@ -619,7 +619,7 @@ header {
       .wrap{
         &.fixed.fixed.fixed.fixed{
           position: fixed;
-          top: 0;
+          top: .8em;
           width: 968px;
           z-index: 5;
           display: none;

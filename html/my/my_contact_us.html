@@ -78,7 +78,7 @@
                     <p class="anno">我的反饋</p>
                     <div class="line"></div>
                     <p class="game_anno">線上客服</p>
-                    <div class="right_box">
+                    <div class="date_switch right_box">
                       <span class="date_icon"></span>
                       <div class="day_box">
                         <span>2020-05-25</span>
@@ -99,27 +99,36 @@
               <div class="wrap fixed">
                 <div class="game_in my_page_bill">
                     <div class="bill_left">
-                      <p>消息中心</p>
+                      <p>聯繫我們</p>
                     </div>
                   <div class="bill_right">
                     <button>登出</button>
                   </div>
                 </div>
                 <div class="search_bar">
-                    <p class="messages">通知</p>
+                    <p class="active messages">聯繫我們</p>
                     <div class="line"></div>
-                    <p class="events">活動</p>
+                    <p class="events">意見反饋</p>
                     <div class="line"></div>
-                    <p class="anno">公告</p>
+                    <p class="anno">我的反饋</p>
                     <div class="line"></div>
-                    <p class="active game_anno">賽事公告</p>
+                    <p class="game_anno">線上客服</p>
                     <div class="right_box">
-                      <div class="mess_sw active">
-                        <div class="s_b50 active"><p class="sp">IM體育</p></div>
-                        <div class="s_b50"><p class="sp">UR體育</p></div>
+                      <span class="date_icon"></span>
+                      <div class="day_box">
+                        <span>2020-05-25</span>
+                        <span class="tri"></span>
                       </div>
-                   
+                    <div class="row_line"></div>
+                    <span class="date_icon"></span>
+                    <div class="day_box">
+                      <span>2020-05-31</span>
+                      <span class="tri"></span>
                     </div>
+                    <div class="tag_wrap">
+                      <span class="tag">查詢</span>
+                    </div>
+                    </div><!--right_box-->
                 </div>
               </div>
               <div class="messages_page active">
@@ -421,7 +430,7 @@
                     </div><!--_t-->
                     <div class="talk_wrap">
                       <div class="ser_ava"></div>
-                      <div class="ser_talk">不客氣，期待下次為您服務！</div>
+                      <div class="ser_talk">不客氣，期待下次為您服務!</div>
                     </div><!--_t-->
                   </div><!--online_talk_box-->
                 </div><!--bbox-->
@@ -526,7 +535,7 @@
             </li>
             <li class="active">
               <i class="i9"></i>
-              <p class="name">在線客服</p>
+              <p class="name">聯繫我們</p>
               <p class="num active">1</p>
               <a href="./my_contact_us.html"></a>
             </li>
@@ -634,7 +643,7 @@
                 </li>
                 <li>
                     <i class="i7"></i>
-                    <p>在線客服</p>
+                    <p>聯繫我們</p>
                 </li>
                 <li>
                     <i class="i8"></i>
@@ -669,7 +678,7 @@
                 </li>
                 <li>
                     <i class="i7"></i>
-                    <p>在線客服</p>
+                    <p>聯繫我們</p>
                     <span class="nb">6</span>
                 </li>
                 <li>
@@ -709,13 +718,13 @@ mess_tags.click(function(){
 //{{頁面切換}}
 function tag_switch(tag_num){
     console.log('num ='+tag_num)
-    let page_clear = $('.messages_page,.events_page,.anno_page,.game_anno_page,.right_box .mess_sw,.right_box .edit');
+    let page_clear = $('.messages_page,.events_page,.anno_page,.game_anno_page,.date_switch');
     let a_page = $('.messages_page,.right_box .edit');
     let b_page = $('.events_page,.right_box .edit');
     let c_page = $('.anno_page');
     let d_page = $('.game_anno_page');
 
-    let mess_sw = $('.right_box .mess_sw');
+    let date = $('.date_switch');
     page_clear.removeClass('active');
     if(tag_num == 'messages')
     {
@@ -725,7 +734,8 @@ function tag_switch(tag_num){
     return  b_page.addClass('active');}
 
     else if(tag_num == 'anno'){
-    return c_page.addClass('active');}
+            date.addClass('active');
+    return  c_page.addClass('active');}
 
     else if(tag_num == 'game_anno'){
               d_page.addClass('active');

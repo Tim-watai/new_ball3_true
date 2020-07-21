@@ -1,3 +1,9 @@
+.date_switch{
+    display: none;
+    &.active{
+        display: block;
+    }
+}
 .online_talk_bbox{
     margin: -.8em 0 0;
     padding: .8em 0 0;
@@ -94,10 +100,17 @@
     .top_btn_ar{
         .t_ic{
             display: inline-block;
-            background: url(../image/icon/talk_text_ic.png)no-repeat;
+            background: url(../image/my/t_icon_gray.png)no-repeat;
             background-size: 200%;
             width: 1.143em;
             height: 1.143em;
+            cursor: pointer;
+            &.i1{
+                margin-right: .5em;
+            }
+            &.i2{
+                background-position-x: -1.143em;
+            }
         }
     }
     .bot_btn_ar{
@@ -114,9 +127,29 @@
             .btn_w{
                 line-height: 100%;
                 vertical-align: middle;
+                position: relative;
             }
             p{
                 font-size: 1.1em;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 1.3em;
+                transform: translateY(-50%);
+            }
+            .tri{
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0.357em 0.357em 0 0.357em;
+                border-color: #fff transparent transparent transparent;
+                vertical-align: middle;
+                margin-left: 2em;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 1em;
             }
         }
     }
@@ -126,5 +159,9 @@
         height: 5em;
         border: none;
         padding: 0;
+        font-size: 1.1em;
+        &::placeholder{
+            color: #e7e9f0;
+        }
     }
 }
