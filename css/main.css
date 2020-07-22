@@ -1167,7 +1167,8 @@ aside .bet_box {
     display: inline-block;
     line-height: 100%;
     vertical-align: middle;
-    font-style: normal; }
+    font-style: normal;
+    width: 100%; }
   .card .t_left {
     text-align: left;
     padding: 0 .5em 0; }
@@ -1185,7 +1186,11 @@ aside .bet_box {
     line-height: 1.2;
     vertical-align: middle;
     word-break: break-all;
-    font-size: 14px; }
+    font-size: 14px;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: normal; }
   .card li {
     overflow: hidden;
     position: relative;
@@ -1391,20 +1396,22 @@ aside .bet_box {
           line-height: calc(3em - 8px); }
           .card li div.box_2 span:last-child {
             margin: 0 1% 0 0; }
-      .card li div.box_1 span {
-        display: inline-block;
-        width: 85%;
-        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
-        background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
-        background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
-        background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
-        border: 1px solid #b9bfdc;
-        border-radius: 4px;
-        height: calc(100%);
-        position: relative;
-        cursor: pointer;
-        line-height: 1;
-        position: relative; }
+      .card li div.box_1 {
+        height: 100%; }
+        .card li div.box_1 span {
+          display: inline-block;
+          width: 98%;
+          background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
+          background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
+          background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
+          background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
+          border: 1px solid #b9bfdc;
+          border-radius: 8px;
+          height: calc(100%);
+          position: relative;
+          cursor: pointer;
+          line-height: calc(3em - 8px);
+          position: relative; }
       .card li div span.solo p {
         position: absolute;
         top: 50%;
@@ -1418,9 +1425,12 @@ aside .bet_box {
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
+        transform: translate(-50%, -50%);
+        line-height: 1.2; }
         .card li div span.two_text p:first-child {
-          left: 25%; }
+          left: 25%;
+          width: 50%;
+          white-space: nowrap; }
         .card li div span.two_text p:last-child {
           left: 70%; }
       .card li div .arrow_d {
@@ -1531,7 +1541,7 @@ aside .bet_box {
   .card p {
     display: inline-block;
     vertical-align: middle;
-    font-size: 1.15em;
+    font-size: 1em;
     line-height: 100%;
     white-space: nowrap; }
   .card .g_name {
@@ -1581,7 +1591,7 @@ aside .bet_box {
       line-height: 1;
       vertical-align: middle;
       margin: 0 0 0 1em;
-      font-size: 1.12em; }
+      font-size: 1em; }
   .card .title {
     line-height: 1.8em;
     overflow: hidden;
@@ -1661,11 +1671,14 @@ aside .bet_box {
       background: #f3f3f3; }
     .card .row.pure_text.pure_text.pure_text.pure_text.pure_text {
       color: #4d515d;
-      background: #fff; }
+      background: #fff;
+      height: 2em;
+      line-height: 2em; }
       .card .row.pure_text.pure_text.pure_text.pure_text.pure_text div span {
         border-color: transparent;
         background: #fff;
-        pointer-events: none; }
+        pointer-events: none;
+        line-height: calc(2em - 12px); }
   .card.normal_mode .row {
     line-height: 3em;
     height: 3em;

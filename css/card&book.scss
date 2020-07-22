@@ -101,6 +101,7 @@ em{
     line-height: 100%;
     vertical-align: middle;
     font-style: normal;
+    width: 100%;
     }
 }
 .t_left{
@@ -123,6 +124,10 @@ em{
     vertical-align: middle;
     word-break: break-all;
     font-size: 14px;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
 li{
     overflow: hidden;
@@ -385,7 +390,6 @@ li{
     }
     &.box_2{
         height: 100%;
-        // padding: 8px 0;
         span{
         float: left;
         width: 48.5%;
@@ -403,17 +407,18 @@ li{
         }
     }
     &.box_1{
+        height: 100%;
         span{
         display: inline-block;
-        width: 85%;
+        width: 98%;
         background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
         border: 1px solid #b9bfdc;
-        border-radius: 4px;
+        border-radius: 8px;
         //0703
         height: calc(100%);
         position: relative;
         cursor: pointer;
-        line-height: 1;
+        line-height: calc(3em - 8px);
         position: relative;
         }
     }
@@ -433,8 +438,11 @@ li{
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+            line-height: 1.2;
             &:first-child{
             left: 25%;
+            width: 50%;
+            white-space: nowrap;
             }
             &:last-child{
             left: 70%;
@@ -596,7 +604,7 @@ li{
 p{
     display: inline-block;
     vertical-align: middle;
-    font-size: 1.15em;
+    font-size: 1em;
     line-height: 100%;
     white-space: nowrap;
 }
@@ -621,7 +629,7 @@ p{
     line-height: 1;
     vertical-align: middle;
     margin: 0 0 0 1em;
-    font-size: 1.12em;
+    font-size: 1em;
     }
 }
 .title{
@@ -729,11 +737,14 @@ p{
     &.pure_text.pure_text.pure_text.pure_text.pure_text{
     color: #4d515d;
     background: #fff;
+    height: 2em;
+    line-height: 2em;
     div{
         span{
         border-color: transparent;
         background: #fff;
         pointer-events: none;
+        line-height: calc(2em - 12px);
         }
     }
     }
