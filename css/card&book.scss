@@ -410,7 +410,7 @@ li{
         height: 100%;
         span{
         display: inline-block;
-        width: 98%;
+        width: 88%;
         background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
         border: 1px solid #b9bfdc;
         border-radius: 8px;
@@ -802,7 +802,7 @@ $big_mode_row:5em;
         div{
         line-height: calc(#{$big_mode_row} / 2);
         height: calc(#{$big_mode_row} / 2);
-        width: 90%;
+        width: 100%;
         border: none;
         position: relative;
         // &:first-child{
@@ -846,8 +846,7 @@ $big_mode_row:5em;
             left: 50%;
             top: 50%;
             line-height: 1;
-            width: 2.5em;
-            height: 100%;
+            width: 3.5em;
             .m_icon{
                 margin: 0 auto;
                 display: block;

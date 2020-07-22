@@ -1400,7 +1400,7 @@ aside .bet_box {
         height: 100%; }
         .card li div.box_1 span {
           display: inline-block;
-          width: 98%;
+          width: 88%;
           background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
           background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
           background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
@@ -1710,7 +1710,7 @@ aside .bet_box {
     .card.big_mode .row .two div {
       line-height: calc(5em / 2);
       height: calc(5em / 2);
-      width: 90%;
+      width: 100%;
       border: none;
       position: relative; }
     .card.big_mode .row .three {
@@ -1739,8 +1739,7 @@ aside .bet_box {
         left: 50%;
         top: 50%;
         line-height: 1;
-        width: 2.5em;
-        height: 100%; }
+        width: 3.5em; }
         .card.big_mode .row .three_wrap .wrap_box .wrap_in .m_icon {
           margin: 0 auto;
           display: block; }
