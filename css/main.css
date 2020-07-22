@@ -4598,6 +4598,60 @@ ul.data li {
         .save_type.about_size.about_size .mb_box .ab_wrap .box:last-child {
           margin-right: 0; }
 
+.save_type.about_size_row2 {
+  padding: 1.286em 1.429em; }
+  .save_type.about_size_row2 .mb_box {
+    line-height: calc(16.857em - 2.2em);
+    height: 16.857em;
+    padding: 1.1em 0;
+    text-align: center; }
+    .save_type.about_size_row2 .mb_box .row_top {
+      display: block;
+      vertical-align: top;
+      line-height: 100%;
+      margin-bottom: 2.5em; }
+    .save_type.about_size_row2 .mb_box .row_bot {
+      display: block;
+      vertical-align: bottom;
+      line-height: 100%; }
+    .save_type.about_size_row2 .mb_box .row_top .box, .save_type.about_size_row2 .mb_box .row_bot .box {
+      display: inline-block;
+      line-height: 6em;
+      vertical-align: middle;
+      margin-right: 4.286em;
+      text-align: center; }
+      .save_type.about_size_row2 .mb_box .row_top .box span, .save_type.about_size_row2 .mb_box .row_bot .box span {
+        line-height: 100%;
+        vertical-align: top;
+        display: inline-block; }
+        .save_type.about_size_row2 .mb_box .row_top .box span.office_i, .save_type.about_size_row2 .mb_box .row_bot .box span.office_i {
+          background: url(../image/my/about_friends_icon.png) no-repeat;
+          background-size: 700%;
+          width: 5.714em;
+          height: 3.571em;
+          margin-top: -.5em; }
+          .save_type.about_size_row2 .mb_box .row_top .box span.office_i.i1, .save_type.about_size_row2 .mb_box .row_bot .box span.office_i.i1 {
+            background-position-x: 0em; }
+          .save_type.about_size_row2 .mb_box .row_top .box span.office_i.i2, .save_type.about_size_row2 .mb_box .row_bot .box span.office_i.i2 {
+            background-position-x: -5.714em; }
+          .save_type.about_size_row2 .mb_box .row_top .box span.office_i.i3, .save_type.about_size_row2 .mb_box .row_bot .box span.office_i.i3 {
+            background-position-x: -11.428em; }
+          .save_type.about_size_row2 .mb_box .row_top .box span.office_i.i4, .save_type.about_size_row2 .mb_box .row_bot .box span.office_i.i4 {
+            background-position-x: -17.142em; }
+          .save_type.about_size_row2 .mb_box .row_top .box span.office_i.i5, .save_type.about_size_row2 .mb_box .row_bot .box span.office_i.i5 {
+            background-position-x: -22.856em; }
+          .save_type.about_size_row2 .mb_box .row_top .box span.office_i.i6, .save_type.about_size_row2 .mb_box .row_bot .box span.office_i.i6 {
+            background-position-x: -28.57em; }
+          .save_type.about_size_row2 .mb_box .row_top .box span.office_i.i7, .save_type.about_size_row2 .mb_box .row_bot .box span.office_i.i7 {
+            background-position-x: -34.284em; }
+      .save_type.about_size_row2 .mb_box .row_top .box p, .save_type.about_size_row2 .mb_box .row_bot .box p {
+        line-height: 1.2em;
+        vertical-align: bottom;
+        font-size: 1.1em;
+        margin-top: -2.4em; }
+      .save_type.about_size_row2 .mb_box .row_top .box:last-child, .save_type.about_size_row2 .mb_box .row_bot .box:last-child {
+        margin-right: 0; }
+
 .date_switch {
   display: none; }
   .date_switch.active {
