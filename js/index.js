@@ -41,6 +41,8 @@ $(document).ready(function() {
       let right_2_live = $('.right_2');
       let head_wrap = $('.h_wrap');
       let main_page = $('main');
+      let search_bar = $('.search_bar');
+      let r_wrap = $('.right .wrap');
         btn_start.click(function(){
           if(sign_in.hasClass('active')){
             return  sign_active(false);
@@ -58,6 +60,8 @@ $(document).ready(function() {
                 right_2_live.removeClass('active');
                 head_wrap.removeClass('live_mode');
                 main_page.removeClass('live_mode');
+                search_bar.addClass('big_size');
+                r_wrap.addClass('big_size');
         return  list_in.removeClass('active');
       }else{
                 sign_yet.removeClass('active');
@@ -66,6 +70,8 @@ $(document).ready(function() {
                 right_2_live.addClass('active');
                 head_wrap.addClass('live_mode');
                 main_page.addClass('live_mode');
+                search_bar.removeClass('big_size');
+                r_wrap.removeClass('big_size');
         return  list_in.addClass('active');
       }
       }
@@ -106,13 +112,13 @@ $(document).ready(function() {
           $('main .left ul.my_page').siblings().removeClass('active');
           $('main .left ul.my_page').addClass('active');
           // $('main .right .my_bill').css('display','block');
-          dummy();
+          // dummy();
         }else{
           $('.container main').removeClass('my_page');
           $('main .left ul.my_page').siblings().addClass('active');
           $('main .left ul.my_page').removeClass('active');
           // $('main .right .my_bill').css('display','none');
-          dummy();
+          // dummy();
         }
         
       }
@@ -433,32 +439,32 @@ $(document).ready(function() {
       
       
       //dummy同步本尊的寬
-        let search_bar_obj = $('.container main .right .search_bar');
-        let search_bar_dummy = $('.search_bar.fixed');
-        let ball_search_dummy = $('.wrap.fixed');
+      //   let search_bar_obj = $('.container main .right .search_bar');
+      //   let search_bar_dummy = $('.search_bar.fixed');
+      //   let ball_search_dummy = $('.wrap.fixed');
         
-        let obj_w = search_bar_obj.outerWidth();
-            search_bar_dummy.css({width:obj_w});
-            ball_search_dummy.css({width:obj_w});
+      //   let obj_w = search_bar_obj.outerWidth();
+      //       search_bar_dummy.css({width:obj_w});
+      //       ball_search_dummy.css({width:obj_w});
 
-      function dummy(page){
-         let re_search_bar_obj = $('.container main .right .search_bar');
-          let re_obj_w = re_search_bar_obj.outerWidth();
-          search_bar_dummy.css({width:re_obj_w});
-          ball_search_dummy.css({width:re_obj_w});
-      }
+      // function dummy(page){
+      //    let re_search_bar_obj = $('.container main .right .search_bar');
+      //     let re_obj_w = re_search_bar_obj.outerWidth();
+      //     search_bar_dummy.css({width:re_obj_w});
+      //     ball_search_dummy.css({width:re_obj_w});
+      // }
       //
       //視窗偵測
-        $('.container main .right').scroll(function () {
-          var scrollVal = $(this).scrollTop();
-        //  console.log('scrollVal = '+scrollVal);
-         if(scrollVal >= 50){
-          $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
-          dummy();
-         }else if(scrollVal <= 49){
-          $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
-         }
-        });
+        // $('.container main .right').scroll(function () {
+        //   var scrollVal = $(this).scrollTop();
+        // //  console.log('scrollVal = '+scrollVal);
+        //  if(scrollVal >= 50){
+        //   $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
+        //   // dummy();
+        //  }else if(scrollVal <= 49){
+        //   $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
+        //  }
+        // });
       //<------------------
       //直播區域
       //tag

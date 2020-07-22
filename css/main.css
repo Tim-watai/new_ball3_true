@@ -5437,7 +5437,9 @@ header {
         top: .8em;
         width: 968px;
         z-index: 5;
-        display: none; }
+        width: calc((65.5% - 1.6em) - 4px); }
+        .container main .right .wrap.fixed.fixed.fixed.fixed.big_size {
+          width: calc((68.5% - 1.6em) - 4px); }
         .container main .right .wrap.fixed.fixed.fixed.fixed.active {
           display: block; }
       .container main .right .search_bar {
@@ -5458,9 +5460,10 @@ header {
         .container main .right .search_bar.fixed {
           position: fixed;
           top: .7em;
-          width: 968px;
-          z-index: 5;
-          display: none; }
+          width: calc((65.5% - 1.6em) - 4px);
+          z-index: 5; }
+          .container main .right .search_bar.fixed.big_size {
+            width: calc((68.5% - 1.6em) - 4px); }
           .container main .right .search_bar.fixed.active {
             display: block; }
         .container main .right .search_bar .back_wrap {

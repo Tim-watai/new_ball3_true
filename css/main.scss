@@ -624,7 +624,11 @@ header {
           top: .8em;
           width: 968px;
           z-index: 5;
-          display: none;
+          // display: none;
+          width: calc((65.5% - 1.6em) - 4px);
+          &.big_size{
+            width: calc((68.5% - 1.6em) - 4px);
+          }
           &.active{
             display: block;
           }
@@ -637,7 +641,6 @@ header {
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         overflow: hidden;
         border-radius: 8px;
-        // box-shadow: 0 0 4px 2px #bac0db;
         padding: 0 1em 0 1em;
         position: relative;
         z-index: 2;
@@ -647,9 +650,12 @@ header {
         &.fixed{
           position: fixed;
           top: .7em;
-          width: 968px;
+          width: calc((65.5% - 1.6em) - 4px);
+          &.big_size{
+            width: calc((68.5% - 1.6em) - 4px);
+          }
+
           z-index: 5;
-          display: none;
           &.active{
             display: block;
           }
