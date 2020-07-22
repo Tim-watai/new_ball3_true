@@ -1,0 +1,53 @@
+.a_about_page,.a_link_page{
+    display: none;
+    &.active{
+        display: block;
+    }
+}
+.save_type{
+    &.about_size.about_size{
+        padding: 1.286em 1.429em;
+        .mb_box{
+            line-height: 7.857em;
+            height: 7.857em;
+            .ab_wrap{
+                text-align: center;
+                .box{
+                    display: inline-block;
+                    line-height: 6em ;
+                    vertical-align: middle;
+                    margin-right: 5em;
+                    text-align: center;
+                    span{
+                        line-height: 100%;
+                        vertical-align: top;
+                        display: inline-block;
+                        &.office_i{
+                            background: url(../image/my/about_office_icon.png)no-repeat;
+                            background-size: 400%;
+                            width: 5.714em;
+                            height: 3.571em;
+                            margin-top: -.5em;
+                            @for $i from 1 through 4{
+                                &.i#{$i}{
+                                    background-position-x: ($i - 1) * -5.714em;
+                                }
+                            }
+
+                        }
+                    }
+                    p{
+                        line-height: 1.2em;
+                        vertical-align: bottom;
+                        font-size: 1.1em;
+                        margin-top: -2.4em;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            
+        }
+    }
+}
