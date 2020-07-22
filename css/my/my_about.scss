@@ -107,3 +107,49 @@
         }
     }
 }
+.link_row{
+    // overflow: hidden;
+    margin-right: -0.786em;
+    .box{
+        width: 25%;
+        float: left;
+        .box_wrap{
+            margin-top: 0.714em;
+            margin-right: 0.786em;
+            height: 100%;
+            overflow: hidden;
+            border: 1px solid #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 6px 1px #d7dced;
+            position: relative;
+            cursor: pointer;
+            i{
+                display: block;
+                &.link_icon{
+                    background: url(../image/my/about_link_icon.png)no-repeat;
+                    background-size: 800%;
+                    width: 14.429em;
+                    height: 6.286em;
+                    @for $i from 1 through 8{
+                        &.i#{$i}{
+                            background-position-x: ($i - 1)* -14.429em;
+                        }
+                    }
+                }
+            }
+            .link_title{
+                line-height: 2.286em;
+                padding-left: 0.643em;
+                background: #f9f9f9;
+                p{
+                    font-size: 1.1em;
+                    color: #4d515d;
+                    width: 100%;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
