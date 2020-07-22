@@ -286,7 +286,7 @@ li{
         }
         &.no_use.no_use.no_use.no_use{
         span{
-            background: #f7f7f7;
+            background: none;
             // color: #8b8b8b;
             color: #4d515d;
             pointer-events: none;
@@ -294,7 +294,7 @@ li{
         }
         }
         .no_use.no_use.no_use.no_use.no_use{
-            background: #f7f7f7;
+            background: none;
             //  color: #8b8b8b;
             color: #4d515d;
             border-color: transparent;
@@ -467,8 +467,8 @@ li{
         display: inline-block;
         cursor: pointer;
         &.m_icon{
-        width: 1.2em;
-        height: 1.2em;
+        width: 1.7em;
+        height: 1.7em;
         vertical-align: middle;
         margin: 0 .125em 0 0;
         }
@@ -481,7 +481,7 @@ li{
         background: url(../image/icon/heart.png)no-repeat;
         background-size: 200%;
         &:hover,&.active{
-            background-position: -1.2em 0;
+            background-position: -1.7em 0;
         }
         }
     }
@@ -642,7 +642,7 @@ p{
     line-height: 1;
     vertical-align: middle;
     // font-size: 14px;
-    font-size: 1.15em;
+    font-size: 1em;
     }
 }
 
@@ -802,7 +802,7 @@ $big_mode_row:5em;
         div{
         line-height: calc(#{$big_mode_row} / 2);
         height: calc(#{$big_mode_row} / 2);
-        width: 100%;
+        width: 90%;
         border: none;
         position: relative;
         // &:first-child{
@@ -846,7 +846,12 @@ $big_mode_row:5em;
             left: 50%;
             top: 50%;
             line-height: 1;
-            width: 3.5em;
+            width: 2.5em;
+            height: 100%;
+            .m_icon{
+                margin: 0 auto;
+                display: block;
+            }
             &.w100{
             width: 100%;
             }
@@ -867,6 +872,7 @@ $big_mode_row:5em;
             }
             em{
             cursor: pointer;
+            font-size: 1.1em;
             }
         }
         }
