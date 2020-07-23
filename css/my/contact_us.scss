@@ -37,6 +37,10 @@
                 border-radius: 8px;
                 border: 1px solid #495cc5;
                 cursor: pointer;
+                &:hover{
+                    background: linear-gradient(to bottom, #d5daef 0% ,#fff 100%);
+                    transition: all .2s ease-in-out;
+                }
                 p{
                     line-height: 2.286em;
                     color: #4d515d;
@@ -49,10 +53,10 @@
                width: 2.857em;
                height: 2.857em;
                background: url(../image/my/media_icon.png)no-repeat;
-               background-size: 300%;
+               background-size: 500%;
                vertical-align: middle;
                display: inline-block;
-               @for $i from 1 through 3{
+               @for $i from 1 through 5{
                    &.i#{$i}{
                        background-position-x: ($i - 1) * -2.857em;
                    }

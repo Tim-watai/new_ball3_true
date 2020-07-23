@@ -57,16 +57,20 @@
             height: 16.857em;
             padding: 1.1em 0;
             text-align: center;
+            &.free_h{
+                height: auto;
+            }
             .row_top{
                 display: block;
                 vertical-align: top;
                 line-height: 100%;
-                margin-bottom: 2.5em;
+              
             }
             .row_bot{
                 display: block;
                 vertical-align: bottom;
                 line-height: 100%;
+                margin-top: 2.5em;
             }
             .row_top,.row_bot{
               .box{
