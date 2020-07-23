@@ -159,6 +159,9 @@
                 left: 20%;
                 .wrap{
                     z-index: 1;
+                    &.fixed.fixed.fixed.fixed.fixed.fixed{
+                        width: calc((80% - 1.6em) - 7px);
+                    }
                     .game_in{
                             font-weight: bold;
                             height: 7em;

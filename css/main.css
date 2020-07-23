@@ -2399,6 +2399,8 @@ aside .bet_box {
     left: 20%; }
     .container main.my_page .right .wrap {
       z-index: 1; }
+      .container main.my_page .right .wrap.fixed.fixed.fixed.fixed.fixed.fixed {
+        width: calc((80% - 1.6em) - 7px); }
       .container main.my_page .right .wrap .game_in {
         font-weight: bold;
         height: 7em; }
@@ -4885,9 +4887,13 @@ ul.data li {
   padding: 1.429em; }
 
 .download_mb_box_size.download_mb_box_size.download_mb_box_size.download_mb_box_size {
-  line-height: 9.714em;
+  line-height: calc(9.714em - 2em);
   height: 9.714em;
   position: relative; }
+
+.d_mb_box2.d_mb_box2.d_mb_box2.d_mb_box2 {
+  height: 14.429em;
+  line-height: 100%; }
 
 p.qa_title {
   font-size: 1.1em;
@@ -4930,6 +4936,55 @@ p.qa_title {
       color: #4d515d;
       margin-bottom: 1.143em; }
 
+.browsers_box {
+  height: 50%;
+  width: 100%;
+  position: relative; }
+  .browsers_box:first-child:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: calc(100% - 1.429em);
+    height: 1px;
+    background: #b9c0d2; }
+  .browsers_box .b_on_mid {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .browsers_box .b_link {
+    left: 1.929em;
+    line-height: 100%;
+    overflow: hidden; }
+    .browsers_box .b_link i.brow_i {
+      display: inline-block;
+      width: 3em;
+      height: 3em;
+      margin-right: 2em;
+      vertical-align: middle;
+      background: url(../image/my/download_app_browser.png) no-repeat;
+      background-size: 200%; }
+      .browsers_box .b_link i.brow_i.i1 {
+        background-position-x: 0em; }
+      .browsers_box .b_link i.brow_i.i2 {
+        background-position-x: -3em; }
+    .browsers_box .b_link .brow_li_box {
+      display: inline-block;
+      line-height: 100%;
+      line-height: 3em; }
+      .browsers_box .b_link .brow_li_box .b_wrap {
+        vertical-align: middle;
+        line-height: 2;
+        display: inline-block; }
+        .browsers_box .b_link .brow_li_box .b_wrap p {
+          font-size: 1.05em;
+          color: #4d515d; }
+
 .setup_teach {
   border: 1px solid #495cc5;
   border-radius: 4px;
@@ -4940,7 +4995,21 @@ p.qa_title {
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5daef));
   background: -webkit-linear-gradient(top, #fff 0%, #d5daef 100%);
   background: -o-linear-gradient(top, #fff 0%, #d5daef 100%);
-  background: linear-gradient(to bottom, #fff 0%, #d5daef 100%); }
+  background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  .setup_teach.browser_size {
+    right: 3em;
+    width: 4.929em; }
+  .setup_teach:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#d5daef), to(#fff));
+    background: -webkit-linear-gradient(top, #d5daef 0%, #fff 100%);
+    background: -o-linear-gradient(top, #d5daef 0%, #fff 100%);
+    background: linear-gradient(to bottom, #d5daef 0%, #fff 100%);
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
   .setup_teach p {
     font-size: 1.05em;
     color: #4d515d;
