@@ -1,0 +1,69 @@
+.download_size.download_size.download_size{
+    padding: 1.429em;
+}
+.download_mb_box_size.download_mb_box_size.download_mb_box_size.download_mb_box_size{
+    line-height: 9.714em;
+    height: 9.714em;
+    position: relative;
+}
+p{
+    &.qa_title{
+        font-size: 1.1em;
+        color: #4d515d;
+        padding-left:0.714em ;
+        margin-bottom: 1.429em;
+        white-space: nowrap;
+    }
+}
+.qa_wrap{
+    position: absolute;
+    top: 50%;
+    left: 2em;
+    transform: translateY(-50%);
+    height: 7.857em;
+    width: auto;
+    overflow: hidden;
+}
+.qa_code{
+    display: inline-block;
+    float: left;
+    width: 7.857em;
+    height: 7.857em;
+    background: url(../image/my/download_app_qr.png)no-repeat;
+    background-size: 100%;
+}
+.qa_li_box{
+    line-height: 7.857em;
+    display: inline-block;
+    float: left;
+    margin-left: 3.857em;
+    text-align: center;
+    .b_wrap{
+        display: inline-block;
+        line-height: 100%;
+        vertical-align: middle;
+        .sup{
+            font-size: 1.05em;
+            color: #4d515d;
+            margin-bottom: 1.143em;
+        }
+ 
+    }
+}
+//blue_size_btn
+.setup_teach{
+    border: 1px solid #495cc5;
+    border-radius: 4px;
+    line-height: calc(2.214em - 2px);
+    height: 2.214em;
+    width: 6.786em;
+    text-align: center;
+    background: linear-gradient(to bottom, #fff 0% ,#d5daef 100%);
+    p{
+        font-size: 1.05em;
+        color: #4d515d;
+        vertical-align: middle;
+        font-weight: bold;
+        line-height: 100%;
+    }
+}

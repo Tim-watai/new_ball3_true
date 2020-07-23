@@ -1398,6 +1398,8 @@ aside .bet_box {
             margin: 0 1% 0 0; }
       .card li div.box_1 {
         height: 100%; }
+        .card li div.box_1.bet_size span {
+          width: 98%; }
         .card li div.box_1 span {
           display: inline-block;
           width: 88%;
@@ -2471,7 +2473,8 @@ aside .bet_box {
             border: 1px solid #ffeddd;
             padding: .4em 1.5em;
             font-size: 1em;
-            border-radius: 8px; }
+            border-radius: 8px;
+            font-weight: bold; }
       .container main.my_page .right .wrap .bill_record_d_card {
         width: 100%;
         background: #404b87;
@@ -4877,6 +4880,73 @@ ul.data li {
       color: #e7e9f0; }
     .online_text_area .online_t_ar::placeholder {
       color: #e7e9f0; }
+
+.download_size.download_size.download_size {
+  padding: 1.429em; }
+
+.download_mb_box_size.download_mb_box_size.download_mb_box_size.download_mb_box_size {
+  line-height: 9.714em;
+  height: 9.714em;
+  position: relative; }
+
+p.qa_title {
+  font-size: 1.1em;
+  color: #4d515d;
+  padding-left: 0.714em;
+  margin-bottom: 1.429em;
+  white-space: nowrap; }
+
+.qa_wrap {
+  position: absolute;
+  top: 50%;
+  left: 2em;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 7.857em;
+  width: auto;
+  overflow: hidden; }
+
+.qa_code {
+  display: inline-block;
+  float: left;
+  width: 7.857em;
+  height: 7.857em;
+  background: url(../image/my/download_app_qr.png) no-repeat;
+  background-size: 100%; }
+
+.qa_li_box {
+  line-height: 7.857em;
+  display: inline-block;
+  float: left;
+  margin-left: 3.857em;
+  text-align: center; }
+  .qa_li_box .b_wrap {
+    display: inline-block;
+    line-height: 100%;
+    vertical-align: middle; }
+    .qa_li_box .b_wrap .sup {
+      font-size: 1.05em;
+      color: #4d515d;
+      margin-bottom: 1.143em; }
+
+.setup_teach {
+  border: 1px solid #495cc5;
+  border-radius: 4px;
+  line-height: calc(2.214em - 2px);
+  height: 2.214em;
+  width: 6.786em;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5daef));
+  background: -webkit-linear-gradient(top, #fff 0%, #d5daef 100%);
+  background: -o-linear-gradient(top, #fff 0%, #d5daef 100%);
+  background: linear-gradient(to bottom, #fff 0%, #d5daef 100%); }
+  .setup_teach p {
+    font-size: 1.05em;
+    color: #4d515d;
+    vertical-align: middle;
+    font-weight: bold;
+    line-height: 100%; }
 
 @-webkit-keyframes marquee {
   0% {

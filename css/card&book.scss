@@ -408,6 +408,11 @@ li{
     }
     &.box_1{
         height: 100%;
+        &.bet_size{
+            span{
+                width: 98%;
+            }
+        }
         span{
         display: inline-block;
         width: 88%;
@@ -433,6 +438,7 @@ li{
         }
         }
         &.two_text{
+          
         p{
             position: absolute;
             top: 50%;
