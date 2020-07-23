@@ -2242,158 +2242,159 @@ aside .bet_box {
     height: 35em;
     line-height: 35em; }
 
+.container main ul.my_page {
+  display: none; }
+  .container main ul.my_page.active {
+    display: block; }
+  .container main ul.my_page .avatar_wrap {
+    width: 100%;
+    text-align: center;
+    padding: 2em 0 0; }
+    .container main ul.my_page .avatar_wrap .avatar {
+      display: inline-block;
+      width: 5.857em;
+      height: 5.857em;
+      background: url(../image/my/avatar_m.png) no-repeat;
+      background-size: 100%;
+      border-radius: 100px;
+      margin: 0 0 1.5em; }
+    .container main ul.my_page .avatar_wrap .name {
+      text-transform: none;
+      color: #4d515d;
+      font-size: 1.3em;
+      display: inline-block; }
+    .container main ul.my_page .avatar_wrap .day {
+      color: #838ba0;
+      font-size: 1em; }
+  .container main ul.my_page .box_3 {
+    overflow: hidden;
+    padding: 0 1em;
+    margin: 1em 0 1em; }
+    .container main ul.my_page .box_3 .box {
+      float: left;
+      width: 33.33%;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      padding: .5em 0; }
+      .container main ul.my_page .box_3 .box:hover, .container main ul.my_page .box_3 .box.active {
+        background: #4256be; }
+        .container main ul.my_page .box_3 .box:hover p, .container main ul.my_page .box_3 .box.active p {
+          color: #fff; }
+        .container main ul.my_page .box_3 .box:hover i.cash, .container main ul.my_page .box_3 .box.active i.cash {
+          background-position-y: -2.3em; }
+      .container main ul.my_page .box_3 .box i.cash {
+        width: 2.3em;
+        height: 2.3em;
+        background: url(../image/my/my_cash.png) no-repeat;
+        background-size: 300%;
+        display: inline-block; }
+      .container main ul.my_page .box_3 .box i.i1 {
+        background-position-x: 0em; }
+      .container main ul.my_page .box_3 .box i.i2 {
+        background-position-x: -2.3em; }
+      .container main ul.my_page .box_3 .box i.i3 {
+        background-position-x: -4.6em; }
+      .container main ul.my_page .box_3 .box p {
+        color: #4d515d;
+        font-size: 1.1em;
+        line-height: 100%;
+        margin-top: .4em; }
+  .container main ul.my_page li {
+    line-height: 3.5em;
+    position: relative;
+    padding: 0 0 0 2.5em;
+    cursor: pointer; }
+    .container main ul.my_page li:hover, .container main ul.my_page li.active {
+      background: -webkit-gradient(linear, left top, right top, from(#1b2c85), to(#7e8bd1));
+      background: -webkit-linear-gradient(left, #1b2c85 0%, #7e8bd1 100%);
+      background: -o-linear-gradient(left, #1b2c85 0%, #7e8bd1 100%);
+      background: linear-gradient(to right, #1b2c85 0%, #7e8bd1 100%); }
+      .container main ul.my_page li:hover i, .container main ul.my_page li.active i {
+        background-position-y: -1.3em; }
+      .container main ul.my_page li:hover p, .container main ul.my_page li.active p {
+        color: #fff; }
+        .container main ul.my_page li:hover p.num, .container main ul.my_page li.active p.num {
+          background: #fff;
+          color: #6272cc; }
+    .container main ul.my_page li p, .container main ul.my_page li i {
+      display: inline-block; }
+    .container main ul.my_page li i {
+      width: 1.3em;
+      height: 1.3em;
+      background: url(../image/my/my_li_icon.png) no-repeat;
+      background-size: 1400%;
+      vertical-align: middle;
+      margin: 0 1em 0 0; }
+      .container main ul.my_page li i.i1 {
+        background-position-x: 0em; }
+      .container main ul.my_page li i.i2 {
+        background-position-x: -1.3em; }
+      .container main ul.my_page li i.i3 {
+        background-position-x: -2.6em; }
+      .container main ul.my_page li i.i4 {
+        background-position-x: -3.9em; }
+      .container main ul.my_page li i.i5 {
+        background-position-x: -5.2em; }
+      .container main ul.my_page li i.i6 {
+        background-position-x: -6.5em; }
+      .container main ul.my_page li i.i7 {
+        background-position-x: -7.8em; }
+      .container main ul.my_page li i.i8 {
+        background-position-x: -9.1em; }
+      .container main ul.my_page li i.i9 {
+        background-position-x: -10.4em; }
+      .container main ul.my_page li i.i10 {
+        background-position-x: -11.7em; }
+      .container main ul.my_page li i.i11 {
+        background-position-x: -13em; }
+      .container main ul.my_page li i.i12 {
+        background-position-x: -14.3em; }
+      .container main ul.my_page li i.i13 {
+        background-position-x: -15.6em; }
+      .container main ul.my_page li i.i14 {
+        background-position-x: -16.9em; }
+    .container main ul.my_page li p {
+      font-size: 1.1em;
+      vertical-align: middle;
+      line-height: 100%;
+      color: #4d515d; }
+      .container main ul.my_page li p.num {
+        display: none;
+        background: #6272cc;
+        padding: .125em .75em;
+        position: absolute;
+        top: 50%;
+        right: 2em;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: #fff;
+        border-radius: 4px; }
+        .container main ul.my_page li p.num.active {
+          display: inline-block; }
+  .container main ul.my_page .blue_line {
+    width: 100%;
+    height: 2px;
+    position: relative; }
+    .container main ul.my_page .blue_line:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      background: #e6e9f3; }
+
 .container main.my_page {
   width: 1100px; }
   .container main.my_page .left {
     width: 20%; }
-    .container main.my_page .left ul.my_page {
-      display: none; }
-      .container main.my_page .left ul.my_page.active {
-        display: block; }
-      .container main.my_page .left ul.my_page .avatar_wrap {
-        width: 100%;
-        text-align: center;
-        padding: 2em 0 0; }
-        .container main.my_page .left ul.my_page .avatar_wrap .avatar {
-          display: inline-block;
-          width: 5.857em;
-          height: 5.857em;
-          background: url(../image/my/avatar_m.png) no-repeat;
-          background-size: 100%;
-          border-radius: 100px;
-          margin: 0 0 1.5em; }
-        .container main.my_page .left ul.my_page .avatar_wrap .name {
-          text-transform: none;
-          color: #4d515d;
-          font-size: 1.3em;
-          display: inline-block; }
-        .container main.my_page .left ul.my_page .avatar_wrap .day {
-          color: #838ba0;
-          font-size: 1em; }
-      .container main.my_page .left ul.my_page .box_3 {
-        overflow: hidden;
-        padding: 0 1em;
-        margin: 1em 0 1em; }
-        .container main.my_page .left ul.my_page .box_3 .box {
-          float: left;
-          width: 33.33%;
-          text-align: center;
-          cursor: pointer;
-          position: relative;
-          overflow: hidden;
-          border-radius: 4px;
-          padding: .5em 0; }
-          .container main.my_page .left ul.my_page .box_3 .box:hover, .container main.my_page .left ul.my_page .box_3 .box.active {
-            background: #4256be; }
-            .container main.my_page .left ul.my_page .box_3 .box:hover p, .container main.my_page .left ul.my_page .box_3 .box.active p {
-              color: #fff; }
-            .container main.my_page .left ul.my_page .box_3 .box:hover i.cash, .container main.my_page .left ul.my_page .box_3 .box.active i.cash {
-              background-position-y: -2.3em; }
-          .container main.my_page .left ul.my_page .box_3 .box i.cash {
-            width: 2.3em;
-            height: 2.3em;
-            background: url(../image/my/my_cash.png) no-repeat;
-            background-size: 300%;
-            display: inline-block; }
-          .container main.my_page .left ul.my_page .box_3 .box i.i1 {
-            background-position-x: 0em; }
-          .container main.my_page .left ul.my_page .box_3 .box i.i2 {
-            background-position-x: -2.3em; }
-          .container main.my_page .left ul.my_page .box_3 .box i.i3 {
-            background-position-x: -4.6em; }
-          .container main.my_page .left ul.my_page .box_3 .box p {
-            color: #4d515d;
-            font-size: 1.1em;
-            line-height: 100%;
-            margin-top: .4em; }
-      .container main.my_page .left ul.my_page li {
-        line-height: 3.5em;
-        position: relative;
-        padding: 0 0 0 2.5em;
-        cursor: pointer; }
-        .container main.my_page .left ul.my_page li:hover, .container main.my_page .left ul.my_page li.active {
-          background: -webkit-gradient(linear, left top, right top, from(#1b2c85), to(#7e8bd1));
-          background: -webkit-linear-gradient(left, #1b2c85 0%, #7e8bd1 100%);
-          background: -o-linear-gradient(left, #1b2c85 0%, #7e8bd1 100%);
-          background: linear-gradient(to right, #1b2c85 0%, #7e8bd1 100%); }
-          .container main.my_page .left ul.my_page li:hover i, .container main.my_page .left ul.my_page li.active i {
-            background-position-y: -1.3em; }
-          .container main.my_page .left ul.my_page li:hover p, .container main.my_page .left ul.my_page li.active p {
-            color: #fff; }
-            .container main.my_page .left ul.my_page li:hover p.num, .container main.my_page .left ul.my_page li.active p.num {
-              background: #fff;
-              color: #6272cc; }
-        .container main.my_page .left ul.my_page li p, .container main.my_page .left ul.my_page li i {
-          display: inline-block; }
-        .container main.my_page .left ul.my_page li i {
-          width: 1.3em;
-          height: 1.3em;
-          background: url(../image/my/my_li_icon.png) no-repeat;
-          background-size: 1400%;
-          vertical-align: middle;
-          margin: 0 1em 0 0; }
-          .container main.my_page .left ul.my_page li i.i1 {
-            background-position-x: 0em; }
-          .container main.my_page .left ul.my_page li i.i2 {
-            background-position-x: -1.3em; }
-          .container main.my_page .left ul.my_page li i.i3 {
-            background-position-x: -2.6em; }
-          .container main.my_page .left ul.my_page li i.i4 {
-            background-position-x: -3.9em; }
-          .container main.my_page .left ul.my_page li i.i5 {
-            background-position-x: -5.2em; }
-          .container main.my_page .left ul.my_page li i.i6 {
-            background-position-x: -6.5em; }
-          .container main.my_page .left ul.my_page li i.i7 {
-            background-position-x: -7.8em; }
-          .container main.my_page .left ul.my_page li i.i8 {
-            background-position-x: -9.1em; }
-          .container main.my_page .left ul.my_page li i.i9 {
-            background-position-x: -10.4em; }
-          .container main.my_page .left ul.my_page li i.i10 {
-            background-position-x: -11.7em; }
-          .container main.my_page .left ul.my_page li i.i11 {
-            background-position-x: -13em; }
-          .container main.my_page .left ul.my_page li i.i12 {
-            background-position-x: -14.3em; }
-          .container main.my_page .left ul.my_page li i.i13 {
-            background-position-x: -15.6em; }
-          .container main.my_page .left ul.my_page li i.i14 {
-            background-position-x: -16.9em; }
-        .container main.my_page .left ul.my_page li p {
-          font-size: 1.1em;
-          vertical-align: middle;
-          line-height: 100%;
-          color: #4d515d; }
-          .container main.my_page .left ul.my_page li p.num {
-            display: none;
-            background: #6272cc;
-            padding: .125em .75em;
-            position: absolute;
-            top: 50%;
-            right: 2em;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            color: #fff;
-            border-radius: 4px; }
-            .container main.my_page .left ul.my_page li p.num.active {
-              display: inline-block; }
-      .container main.my_page .left ul.my_page .blue_line {
-        width: 100%;
-        height: 2px;
-        position: relative; }
-        .container main.my_page .left ul.my_page .blue_line:before {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          left: 50%;
-          top: 0;
-          -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-          background: #e6e9f3; }
   .container main.my_page .right {
     width: 80%;
     left: 20%; }
@@ -4981,13 +4982,15 @@ p.j_content {
       font-size: 1.286em;
       color: #4d515d;
       line-height: 1.3;
-      margin: 0; }
+      margin: 0;
+      text-align: left; }
     .j_mid_box .j_li_wrap .j_content {
       font-size: 1.05em;
       color: #838ba0;
       line-height: 1.3;
       white-space: nowrap;
-      margin: 0.714em 0 0; }
+      margin: 0.714em 0 0;
+      text-align: left; }
 
 .download_size.download_size.download_size {
   padding: 1.429em; }
@@ -5122,6 +5125,95 @@ p.qa_title {
     vertical-align: middle;
     font-weight: bold;
     line-height: 100%; }
+
+.event_page.event_page.event_page {
+  width: 1100px; }
+  .event_page.event_page.event_page i.li_icon {
+    width: 1.286em;
+    height: 1.286em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    background: url(../image/event/event_left_icon.png) no-repeat;
+    background-size: 500%;
+    margin: 0 1.857em; }
+    .event_page.event_page.event_page i.li_icon.c_title_size {
+      margin: 0 0.357em 0 1.071em;
+      background-position-y: -1.286em; }
+    .event_page.event_page.event_page i.li_icon.i1 {
+      background-position-x: 0em; }
+    .event_page.event_page.event_page i.li_icon.i2 {
+      background-position-x: -1.286em; }
+    .event_page.event_page.event_page i.li_icon.i3 {
+      background-position-x: -2.572em; }
+    .event_page.event_page.event_page i.li_icon.i4 {
+      background-position-x: -3.858em; }
+    .event_page.event_page.event_page i.li_icon.i5 {
+      background-position-x: -5.144em; }
+  .event_page.event_page.event_page .left {
+    width: 23%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    overflow-y: hidden;
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 3em; }
+    .event_page.event_page.event_page .left ul.event_page_ul {
+      background: #fff;
+      border-radius: 0 0 10px 10px; }
+      .event_page.event_page.event_page .left ul.event_page_ul li {
+        line-height: 3.714em;
+        height: 3.714em;
+        background: #fff;
+        cursor: pointer; }
+        .event_page.event_page.event_page .left ul.event_page_ul li:hover, .event_page.event_page.event_page .left ul.event_page_ul li.active {
+          background: -webkit-gradient(linear, left top, right top, from(#1b2c85), to(#7e8bd1));
+          background: -webkit-linear-gradient(left, #1b2c85 0%, #7e8bd1 100%);
+          background: -o-linear-gradient(left, #1b2c85 0%, #7e8bd1 100%);
+          background: linear-gradient(to right, #1b2c85 0%, #7e8bd1 100%); }
+          .event_page.event_page.event_page .left ul.event_page_ul li:hover p, .event_page.event_page.event_page .left ul.event_page_ul li.active p {
+            color: #fff; }
+          .event_page.event_page.event_page .left ul.event_page_ul li:hover .li_icon, .event_page.event_page.event_page .left ul.event_page_ul li.active .li_icon {
+            background-position-y: -1.286em; }
+      .event_page.event_page.event_page .left ul.event_page_ul p {
+        font-size: 1.186em;
+        vertical-align: middle;
+        line-height: 100%;
+        display: inline-block; }
+  .event_page.event_page.event_page .right {
+    width: 77%;
+    left: 23%;
+    padding: 1em .5em 8em 1em; }
+    .event_page.event_page.event_page .right .event_card .cw {
+      position: relative; }
+    .event_page.event_page.event_page .right .event_card .c_title {
+      position: absolute;
+      left: 0;
+      top: 0px;
+      line-height: calc(2.357em - 1px);
+      overflow: hidden;
+      background: orange;
+      z-index: 1;
+      border-radius: 20px 0 0 0;
+      line-height: 2.429em;
+      width: 23.143em;
+      height: 2.429em;
+      background: url(../image/event/event_title_bg2.png) no-repeat;
+      background-size: 400%; }
+      .event_page.event_page.event_page .right .event_card .c_title p {
+        font-size: 1.186em;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle; }
+    .event_page.event_page.event_page .right .event_card .card {
+      position: relative;
+      height: 12.857em;
+      border-radius: 18px;
+      border: 1px solid #8581b4;
+      background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), color-stop(80%, #eff1fb), to(#cfd3e9));
+      background: -webkit-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
+      background: -o-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
+      background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%); }
 
 @-webkit-keyframes marquee {
   0% {

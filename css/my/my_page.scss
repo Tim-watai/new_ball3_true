@@ -1,158 +1,159 @@
 .container{
     main{
+        ul {
+            &.my_page{
+              &.active{
+                display: block;
+              }
+                display: none;
+                $bl_d:#4d515d;
+                .avatar_wrap{
+                    width: 100%;
+                    text-align: center;
+                    padding: 2em 0 0;
+                    .avatar{
+                        display: inline-block;
+                        width: 5.857em;
+                        height: 5.857em;
+                        background: url(../image/my/avatar_m.png)no-repeat;
+                        background-size: 100%;
+                        border-radius: 100px;
+                        margin: 0 0 1.5em;
+                    }
+                    .name{
+                        text-transform: none;
+                        color: $bl_d;
+                        font-size: 1.3em;
+                        display: inline-block;
+                    }
+                    .day{
+                        color: #838ba0;
+                        font-size: 1em;
+                    }
+                }
+                .box_3{
+                    overflow: hidden;
+                    padding: 0 1em;
+                    margin: 1em 0 1em;
+                    .box{
+                        float: left;
+                        width: 33.33%;
+                        text-align: center;
+                        cursor: pointer;
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 4px;
+                        padding: .5em 0;
+                        &:hover,&.active{
+                            background: #4256be;
+                            p{
+                                color: #fff;
+                            }
+                            i{
+                                &.cash{
+                                    background-position-y: -2.3em;
+                                }
+                            }
+                        }
+                        i{
+                            &.cash{
+                                width: 2.3em;
+                                height: 2.3em;
+                                background: url(../image/my/my_cash.png)no-repeat;
+                                background-size: 300%;
+                                display: inline-block;
+                            }
+                            @for $i from 1 through 3{
+                                &.i#{$i}{
+                                    background-position-x: ($i - 1) * -2.3em;
+                                }
+                            }
+                        }
+                        p{
+                            color: $bl_d;
+                            font-size: 1.1em;
+                            line-height: 100%;
+                            margin-top: .4em;
+                        }
+                    }
+                }
+                li{
+                    line-height: 3.5em;
+                    position: relative;
+                    padding: 0 0 0 2.5em;
+                    cursor: pointer;
+                    &:hover,&.active{
+                        background: linear-gradient(to right , #1b2c85 0% , #7e8bd1 100%);
+                        i{
+                            background-position-y: -1.3em;
+                        }
+                        p{
+                            color: #fff;
+                            &.num{
+                                background: #fff;
+                                color: #6272cc;
+                            }
+                        }
+                    }
+                    p,i{
+                        display: inline-block;
+                    }
+                    i{
+                        width: 1.3em;
+                        height: 1.3em;
+                        background: url(../image/my/my_li_icon.png)no-repeat;
+                        background-size: 1400%;
+                        vertical-align: middle;
+                        margin: 0 1em 0 0;
+                        @for $i  from 1 through 14 {
+                            &.i#{$i}{
+                                background-position-x:($i - 1) * - 1.3em;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 1.1em;
+                        vertical-align: middle;
+                        line-height: 100%;
+                        color: $bl_d;
+                        &.num{
+                            &.active{
+                                display: inline-block;
+                            }
+                            display: none;
+                            background: #6272cc;
+                            padding: .125em .75em;
+                            position: absolute;
+                            top: 50%;
+                            right: 2em;
+                            transform: translateY(-50%);
+                            color: #fff;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+                .blue_line{
+                    width: 100%;
+                    height: 2px;
+                    position: relative;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        left: 50%;
+                        top: 0;
+                        transform: translateX(-50%);
+                        background: #e6e9f3;
+                    }
+                }
+              }
+            }
         &.my_page{
             width: 1100px;
             .left{
                 width: 20%;
-                ul {
-                    &.my_page{
-                      &.active{
-                        display: block;
-                      }
-                        display: none;
-                        $bl_d:#4d515d;
-                        .avatar_wrap{
-                            width: 100%;
-                            text-align: center;
-                            padding: 2em 0 0;
-                            .avatar{
-                                display: inline-block;
-                                width: 5.857em;
-                                height: 5.857em;
-                                background: url(../image/my/avatar_m.png)no-repeat;
-                                background-size: 100%;
-                                border-radius: 100px;
-                                margin: 0 0 1.5em;
-                            }
-                            .name{
-                                text-transform: none;
-                                color: $bl_d;
-                                font-size: 1.3em;
-                                display: inline-block;
-                            }
-                            .day{
-                                color: #838ba0;
-                                font-size: 1em;
-                            }
-                        }
-                        .box_3{
-                            overflow: hidden;
-                            padding: 0 1em;
-                            margin: 1em 0 1em;
-                            .box{
-                                float: left;
-                                width: 33.33%;
-                                text-align: center;
-                                cursor: pointer;
-                                position: relative;
-                                overflow: hidden;
-                                border-radius: 4px;
-                                padding: .5em 0;
-                                &:hover,&.active{
-                                    background: #4256be;
-                                    p{
-                                        color: #fff;
-                                    }
-                                    i{
-                                        &.cash{
-                                            background-position-y: -2.3em;
-                                        }
-                                    }
-                                }
-                                i{
-                                    &.cash{
-                                        width: 2.3em;
-                                        height: 2.3em;
-                                        background: url(../image/my/my_cash.png)no-repeat;
-                                        background-size: 300%;
-                                        display: inline-block;
-                                    }
-                                    @for $i from 1 through 3{
-                                        &.i#{$i}{
-                                            background-position-x: ($i - 1) * -2.3em;
-                                        }
-                                    }
-                                }
-                                p{
-                                    color: $bl_d;
-                                    font-size: 1.1em;
-                                    line-height: 100%;
-                                    margin-top: .4em;
-                                }
-                            }
-                        }
-                        li{
-                            line-height: 3.5em;
-                            position: relative;
-                            padding: 0 0 0 2.5em;
-                            cursor: pointer;
-                            &:hover,&.active{
-                                background: linear-gradient(to right , #1b2c85 0% , #7e8bd1 100%);
-                                i{
-                                    background-position-y: -1.3em;
-                                }
-                                p{
-                                    color: #fff;
-                                    &.num{
-                                        background: #fff;
-                                        color: #6272cc;
-                                    }
-                                }
-                            }
-                            p,i{
-                                display: inline-block;
-                            }
-                            i{
-                                width: 1.3em;
-                                height: 1.3em;
-                                background: url(../image/my/my_li_icon.png)no-repeat;
-                                background-size: 1400%;
-                                vertical-align: middle;
-                                margin: 0 1em 0 0;
-                                @for $i  from 1 through 14 {
-                                    &.i#{$i}{
-                                        background-position-x:($i - 1) * - 1.3em;
-                                    }
-                                }
-                            }
-                            p{
-                                font-size: 1.1em;
-                                vertical-align: middle;
-                                line-height: 100%;
-                                color: $bl_d;
-                                &.num{
-                                    &.active{
-                                        display: inline-block;
-                                    }
-                                    display: none;
-                                    background: #6272cc;
-                                    padding: .125em .75em;
-                                    position: absolute;
-                                    top: 50%;
-                                    right: 2em;
-                                    transform: translateY(-50%);
-                                    color: #fff;
-                                    border-radius: 4px;
-                                }
-                            }
-                        }
-                        .blue_line{
-                            width: 100%;
-                            height: 2px;
-                            position: relative;
-                            &:before{
-                                content: '';
-                                position: absolute;
-                                width: 100%;
-                                height: 100%;
-                                left: 50%;
-                                top: 0;
-                                transform: translateX(-50%);
-                                background: #e6e9f3;
-                            }
-                        }
-                      }
-                    }
+          
             }
             .right{
                 width: 80%;
