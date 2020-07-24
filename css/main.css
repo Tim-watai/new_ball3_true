@@ -172,9 +172,9 @@ button {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
 
-.sign_up {
+.sign_up, .sign_up_ok, .sign_in {
   display: none; }
-  .sign_up.active {
+  .sign_up.active, .sign_up_ok.active, .sign_in.active {
     display: block; }
 
 .sign_box {
@@ -242,6 +242,52 @@ button {
       line-height: 2.714em;
       overflow: hidden;
       margin-top: 1.143em; }
+      .sign_box .content .row .check_wrap {
+        display: inline-block; }
+      .sign_box .content .row .cube {
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        vertical-align: middle;
+        border: 1px solid #4259d7;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden; }
+        .sign_box .content .row .cube:before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: -webkit-gradient(linear, left top, left bottom, from(#3449b9), to(#8694d8));
+          background: -webkit-linear-gradient(top, #3449b9 0%, #8694d8 100%);
+          background: -o-linear-gradient(top, #3449b9 0%, #8694d8 100%);
+          background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%); }
+      .sign_box .content .row .user_t {
+        font-size: 1.214em;
+        line-height: 1;
+        vertical-align: middle;
+        display: inline-block;
+        color: #4d515d; }
+      .sign_box .content .row .right_box {
+        float: right; }
+        .sign_box .content .row .right_box .in_box {
+          width: 17.857em;
+          height: 2.714em;
+          border: 1px solid #b9bfdc;
+          border-radius: 4px;
+          padding-left: 1em; }
+          .sign_box .content .row .right_box .in_box::-webkit-input-placeholder {
+            font-size: 1.071em;
+            color: #838ba0; }
+          .sign_box .content .row .right_box .in_box:-ms-input-placeholder {
+            font-size: 1.071em;
+            color: #838ba0; }
+          .sign_box .content .row .right_box .in_box::-ms-input-placeholder {
+            font-size: 1.071em;
+            color: #838ba0; }
+          .sign_box .content .row .right_box .in_box::placeholder {
+            font-size: 1.071em;
+            color: #838ba0; }
       .sign_box .content .row .r_box {
         float: left;
         margin-right: 2.143em; }
@@ -259,7 +305,7 @@ button {
           width: 19.286em;
           height: 2.714em;
           border: 1px solid #b9bfdc;
-          border-radius: 8px;
+          border-radius: 4px;
           padding-left: 1em; }
           .sign_box .content .row .r_box .in_box::-webkit-input-placeholder {
             font-size: 1.071em;
@@ -273,6 +319,41 @@ button {
           .sign_box .content .row .r_box .in_box::placeholder {
             font-size: 1.071em;
             color: #838ba0; }
+    .sign_box .content .icon_area {
+      text-align: center; }
+    .sign_box .content .ic_wrap {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 2.286em;
+      margin-bottom: 1em; }
+      .sign_box .content .ic_wrap i {
+        display: inline-block; }
+        .sign_box .content .ic_wrap i.success {
+          width: 4.286em;
+          height: 4.286em;
+          background: -webkit-gradient(linear, left top, left bottom, from(#2ccf11), to(#189a08));
+          background: -webkit-linear-gradient(top, #2ccf11 0%, #189a08 100%);
+          background: -o-linear-gradient(top, #2ccf11 0%, #189a08 100%);
+          background: linear-gradient(to bottom, #2ccf11 0%, #189a08 100%);
+          border-radius: 100px;
+          position: relative;
+          margin-bottom: .5em; }
+          .sign_box .content .ic_wrap i.success:before {
+            content: '';
+            position: absolute;
+            border-width: 0 5px 5px 0;
+            border-style: solid;
+            border-color: #fff;
+            width: 1.3em;
+            height: 2.2em;
+            top: 42%;
+            left: 52%;
+            -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            -ms-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg); }
+      .sign_box .content .ic_wrap .succ_t {
+        font-size: 1.214em;
+        color: #4d515d; }
     .sign_box .content .btn_area {
       text-align: center;
       margin-top: 1.643em;
@@ -280,14 +361,19 @@ button {
     .sign_box .content .btn_wrap {
       display: inline-block;
       vertical-align: middle; }
+      .sign_box .content .btn_wrap.sign_in_size button {
+        width: 11.857em; }
+        .sign_box .content .btn_wrap.sign_in_size button:first-child {
+          margin-right: .5em; }
       .sign_box .content .btn_wrap button {
         width: 13.714em;
         height: 2.714em;
-        border-radius: 8px; }
+        border-radius: 4px; }
         .sign_box .content .btn_wrap button p {
-          font-size: 1.071em; }
+          font-size: 1.214em;
+          font-weight: bold; }
         .sign_box .content .btn_wrap button:first-child {
-          margin-right: 1.214em; }
+          margin-right: 1 0.714em; }
         .sign_box .content .btn_wrap button.cancel {
           border: 1px solid #495cc5;
           color: #4d515d;
@@ -311,6 +397,18 @@ button {
             background: -webkit-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
             background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
             background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%); }
+        .sign_box .content .btn_wrap button.go_save {
+          background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#a17045));
+          background: -webkit-linear-gradient(top, #dfb995 0%, #a17045 100%);
+          background: -o-linear-gradient(top, #dfb995 0%, #a17045 100%);
+          background: linear-gradient(to bottom, #dfb995 0%, #a17045 100%);
+          color: #fff;
+          border: 1px solid #b78960; }
+          .sign_box .content .btn_wrap button.go_save:hover {
+            background: -webkit-gradient(linear, left top, left bottom, from(#a17045), to(#dfb995));
+            background: -webkit-linear-gradient(top, #a17045 0%, #dfb995 100%);
+            background: -o-linear-gradient(top, #a17045 0%, #dfb995 100%);
+            background: linear-gradient(to bottom, #a17045 0%, #dfb995 100%); }
 
 aside .b33 {
   width: 33.33%; }
