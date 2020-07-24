@@ -77,236 +77,8 @@ $(document).ready(function() {
       }
       //<-----------
 
-      //main頁面切換
-      //球類內頁
-      let balls = $('.balls_wrap');
-      //新手,一般,高手_父級
-      let switch_page = $('.switch_wrap');
-      //
-      let switch_normal = $('.switch_wrap .normal');
-      let switch_beginner = $('.switch_wrap .beginner');
-      let switch_senior = $('.switch_wrap .senior');
-      let switch_search_bar = $('.switch_wrap .search_bar');
-      let left_li = $('.left ul.index li');
-      
-      //球種
-      let soc_page_beg = $('.balls_wrap .soc_page_beginner');
-      let soc_page = $('.balls_wrap .soc_page_beginner_inner');
-      let bas_page = $('.balls_wrap .bas_page_beginner_inner');
-      let bask_page = $('.balls_wrap .bask_page_beginner_inner');
-
-      //header變化
-      let header_tag = [
-        $('header .h_wrap ul li:nth-child(1)'),
-        $('header .h_wrap ul li:nth-child(2)'),
-        $('header .h_wrap ul li:nth-child(3)'),
-        $('header .h_wrap ul li:nth-child(4)'),
-        $('header .h_wrap ul li:nth-child(5)'),
-        $('header .h_wrap ul li:nth-child(6)'),
-    ];
   
-      //我的
-      function my_page_iswork(iswork){
-        if(iswork == true){
-          $('.container main').addClass('my_page');
-          $('main .left ul.my_page').siblings().removeClass('active');
-          $('main .left ul.my_page').addClass('active');
-          // $('main .right .my_bill').css('display','block');
-          // dummy();
-        }else{
-          $('.container main').removeClass('my_page');
-          $('main .left ul.my_page').siblings().addClass('active');
-          $('main .left ul.my_page').removeClass('active');
-          // $('main .right .my_bill').css('display','none');
-          // dummy();
-        }
-        
-      }
-      function header_active(num){
-        let num_f = num - 1;
-        header_tag[num_f].siblings().removeClass('active');
-        header_tag[num_f].addClass('active');
-      }
-      function page_active (num){
-        left_li.removeClass('active');
-        if(num == 1){
-          balls.css('display','none');
-          switch_page.css('display','block');
-          switch_normal.siblings().css('display','none');
-          switch_normal.css('display','block');
-          switch_search_bar.css('display','block');
-          my_page_iswork(false);
-          header_active(1);
-        }
-        else if(num == 2){
-          balls.css('display','none');
-          switch_page.css('display','block');
-          switch_beginner.siblings().css('display','none');
-          switch_beginner.css('display','block');
-          switch_search_bar.css('display','block');
-          my_page_iswork(false);
-          header_active(1);
-        }
-        else if(num == 3){
-          balls.css('display','none');
-          switch_page.css('display','block');
-          switch_senior.siblings().css('display','none');
-          switch_senior.css('display','block');
-          switch_search_bar.css('display','block');
-          my_page_iswork(false);
-          header_active(1);
-        }
-        else if(num == 4){
-          balls.css('display','block');
-          switch_page.css('display','none');
-          soc_page_beg.siblings().css('display','none');
-          soc_page_beg.css('display','block');
-          switch_search_bar.css('display','block');
-          $('.left ul.index li:nth-child(3)').addClass('active');
-          my_page_iswork(false);
-          header_active(1);
-        }
-        else if(num == 5){
-          balls.css('display','block');
-          switch_page.css('display','none');
-          soc_page.siblings().css('display','none');
-          soc_page.css('display','block');
-          switch_search_bar.css('display','block');
-          $('.left ul.index li:nth-child(3)').addClass('active');
-          my_page_iswork(false);
-          header_active(1);
-        }
-        else if(num == 6){
-          balls.css('display','block');
-          switch_page.css('display','none');
-          bas_page.siblings().css('display','none');
-          bas_page.css('display','block');
-          switch_search_bar.css('display','block');
-          $('.left ul.index li:nth-child(4)').addClass('active');
-          my_page_iswork(false);
-          header_active(1);
-        }
-        else if(num == 7){
-          balls.css('display','block');
-          switch_page.css('display','none');
-          bask_page.siblings().css('display','none');
-          bask_page.css('display','block');
-          switch_search_bar.css('display','block');
-          $('.left ul.index li:nth-child(5)').addClass('active');
-          my_page_iswork(false);
-          header_active(1);
-        }
-        else if(num == 8){
-          //我的_即時注單
-          let my_page_bill = $('.container main .right .my_bill');
-          my_page_bill.css('display','block');
-          my_page_bill.siblings().css('display','none');
-          my_page_iswork(true);
-          $('.left ul.my_page li:nth-child(8)').siblings().removeClass('active');
-          $('.left ul.my_page li:nth-child(8)').addClass('active');
-          header_active(6);
-        }
-        else if(num == 9){
-          //我的_投注紀錄
-          console.log('re')
-          let my_page_bill_re = $('.container main .right .my_bill_record');
-          my_page_bill_re.css('display','block');
-          my_page_bill_re.siblings().css('display','none');
-          my_page_iswork(true);
-          $('.left ul.my_page li:nth-child(9)').siblings().removeClass('active');
-          $('.left ul.my_page li:nth-child(9)').addClass('active');
-          header_active(6);
-        }
-      
-      }
-      //新手&專業switch
-      //一般
-      $('.test li:nth-child(1)').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        page_active(1);
-        sign_active(false);
-      })
-      //新手
-      $('.test li:nth-child(2)').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        page_active(2);
-        sign_active(true);
-      })
-      //專業
-      $('.test li:nth-child(3)').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        page_active(3);
-        sign_active(true);
-      })
-      
-      //足球頁面
-      //首頁
-      $('.test li:nth-child(4)').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        page_active(4);
-        sign_active(true);
-      });
-      //足球內頁
-      $('.test li:nth-child(5)').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        page_active(5);
-        sign_active(true);
-      });
-      //<--------------------
-      //棒球內頁
-      $('.test li:nth-child(6)').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        page_active(6);
-        sign_active(true);
-      });
-      //<--------------------
-      //籃球內頁
-      $('.test li:nth-child(7)').click(function(){
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        page_active(7);
-        sign_active(true);
-      });
-      //<--------------------
-      //我的_即時注單
-      $('.test li:nth-child(8)').click(function(){
-      $(this).siblings().removeClass('active');
-      $(this).addClass('active');
-      page_active(8);
-      sign_active(true);
-      });
-    //<--------------------
-     //我的_投注紀錄
-     $('.test li:nth-child(9)').click(function(){
-      $(this).siblings().removeClass('active');
-      $(this).addClass('active');
-      page_active(9);
-      sign_active(true);
-      });
-    //<--------------------
-      //左邊list
-      $('.left ul li:nth-child(3)').click(function(){
-        page_active(5);
-        sign_active(true);
-      })
-      $('.left ul li:nth-child(4)').click(function(){
-        page_active(6);
-        sign_active(true);
-      })
-      $('.left ul li:nth-child(5)').click(function(){
-        page_active(7);
-        sign_active(true);
-      })
-      //<--------------------
-      //上方頁面
-      
-      //<--------------------
+
       //search main
       $('.s_box').click(function(){
         
@@ -335,7 +107,7 @@ $(document).ready(function() {
       //彈窗移動
       let isMove = true;
       //單關移動
-      $('.bet_box.blue.free_w .title').mousedown(
+      $('.bet_box.blue .title').mousedown(
           function(event){
           let isMove = true;
           let abs_x = event.pageX - $('aside .bet_box.blue').offset().left;
@@ -426,6 +198,19 @@ $(document).ready(function() {
         $('.bet_solo').css('display','none');
       });
       //<------------------
+
+      //註冊彈窗close
+      let close_b = $('aside .sign_box .sign_close');
+      let sign_up = $('aside.sign_up');
+      $('.test2 li:nth-child(4)').click(function(){
+        sign_up.addClass('active');
+      })
+      close_b.click(function(){
+        console.log('sign_c')
+        $(this).parent().parents().removeClass('active')
+      })
+      //<-----------------
+
       //聲明infor
       let infor_con = $('.infor_con');
       $('.icon_infor').click(function(){
@@ -436,36 +221,7 @@ $(document).ready(function() {
         }
       })
       //<-----------------
-      
-      
-      //dummy同步本尊的寬
-      //   let search_bar_obj = $('.container main .right .search_bar');
-      //   let search_bar_dummy = $('.search_bar.fixed');
-      //   let ball_search_dummy = $('.wrap.fixed');
-        
-      //   let obj_w = search_bar_obj.outerWidth();
-      //       search_bar_dummy.css({width:obj_w});
-      //       ball_search_dummy.css({width:obj_w});
-
-      // function dummy(page){
-      //    let re_search_bar_obj = $('.container main .right .search_bar');
-      //     let re_obj_w = re_search_bar_obj.outerWidth();
-      //     search_bar_dummy.css({width:re_obj_w});
-      //     ball_search_dummy.css({width:re_obj_w});
-      // }
-      //
-      //視窗偵測
-        // $('.container main .right').scroll(function () {
-        //   var scrollVal = $(this).scrollTop();
-        // //  console.log('scrollVal = '+scrollVal);
-        //  if(scrollVal >= 50){
-        //   $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
-        //   // dummy();
-        //  }else if(scrollVal <= 49){
-        //   $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
-        //  }
-        // });
-      //<------------------
+ 
       //直播區域
       //tag
         let live_page = $('.live_content');
