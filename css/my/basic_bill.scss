@@ -758,7 +758,10 @@
                 overflow: hidden;
                 line-height: 6em;
                 height: 6em;
-             
+                &.free{
+                    height: auto;
+                    line-height: 100%;
+                }
                 &.no_border{
                     border: none;
                 }

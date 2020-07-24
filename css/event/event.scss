@@ -62,8 +62,16 @@
         left: 23%;
         padding: 1em .5em 8em 1em;
         .event_card{
+            display: none;
+            &.active{
+                display: block;
+            }
             .cw{
                 position: relative;
+                margin-top: 1.071em;
+                &:first-child{
+                    margin: 0;
+                }
             }
             .c_title{
                 position: absolute;
@@ -79,10 +87,12 @@
                 height: 2.429em;
                 background: url(../image/event/event_title_bg2.png)no-repeat;
                 background-size: 400%;
-                
-                &.bgi{
-                    
-                }
+                @for $i  from 1  through 4{
+                    &.ct_bg#{$i}{
+                        background-position-x: ($i - 1) * - 23.143em;
+                    }
+                }    
+            
                 p{
                     font-size: 1.186em;
                     color: #fff;
@@ -91,11 +101,74 @@
                 }
             }
             .card{
+                margin: 0;
                 position: relative;
                 height: 12.857em;
+                line-height: calc(12.857em - 2px);
                 border-radius: 18px;
                 border: 1px solid #8581b4;
                 background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
+                .title_box{
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: 100%;
+                    margin-left: 2.714em;
+                    padding-top: 1.5em;
+                    p{
+                        width: 100%;
+                        display: inline-block;
+                        &.time_s{
+                            font-size: 1.071em;
+                            color: #4d515d;
+                            margin-bottom: 1em;
+                        }
+                        &.big_s{
+                            font-size: 2.143em;
+                            color: #b98353;
+                            margin-bottom: .45em;
+                        }
+                        &.add_s{
+                            font-size: 1.429em;
+                            color: #4d515d;
+                            span{
+                                color: #b98353;
+                            }
+                        }
+
+                    }
+                }
+                .img_pos{
+                    position: absolute;
+                    bottom: 0;
+                    left: 63%;
+                    transform: translateX(-50%);
+                }
+                .e1{
+                    // width: 26em;
+                    // height: 12.214em;
+                    background: url(../image/event/e1.png)no-repeat;
+                    background-size: cover;
+                }
+                .check_more{
+                    position: absolute;
+                    right: 1.5em;
+                    bottom: 1.357em;
+                    border: 1px solid #1e2f8e;
+                    border-radius: 4px;
+                    height: 2.214em;
+                    padding: 0 1.786em;
+                    z-index: 3;
+                    line-height: calc(2.214em - 2px);
+                    background: linear-gradient(to bottom,#8e9bdc 0%,#3349b8 100%);
+                    &:hover{
+                        background: linear-gradient(to bottom,#3349b8 0%,#8e9bdc 100%);
+                    }
+                    p{
+                        color: #fff;
+                        font-size: 1.071em;
+                        font-weight: bold;
+                    }
+                }
             }
         }
     }
