@@ -262,17 +262,27 @@
                 .mb_box{
                     padding: 1em 2em;
                 }
+                // ol{
+                //     counter-reset: my-awesome-counter;
+                //     li{
+                //         counter-increment: my-awesome-counter;
+                //         &:before{
+                //             content: counter(my-awesome-counter);
+                //             width: 2em;
+                //         }
+                //     }
+                // }
                 .basic_t,.t_t_1,.t_t_3{
                     font-size: 1.071em;
                     color: #4d515d;
                     line-height: 2;
                 }
                 .t_t_1{
-                    text-indent: 1.071em;
+                    text-indent: .9em;
                  
                 }
                 .t_t_3{
-                    text-indent: 3.213em;
+                    text-indent: 2.7em;
                 }
                 ul{
                     &.s_box{

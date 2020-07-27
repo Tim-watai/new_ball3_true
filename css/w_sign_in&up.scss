@@ -87,11 +87,15 @@
             //sign_in
             .check_wrap{
                 display: inline-block;
+                label{
+                    cursor: pointer;
+                }
             }
             input[type = "checkbox"]{
                 display: none;
             }
             input[type = "checkbox"]:checked + label .cube{
+                border-color: #4259d7;
                 &:before,&:after{
                     display: block;
                 }
@@ -101,7 +105,9 @@
                 height: 1em;
                 display: inline-block;
                 vertical-align: middle;
-                border: 1px solid #4259d7;
+                border: 1px solid #b2afcf;
+                background: linear-gradient(to bottom,#cbd0e9 0% ,#ffffff 100%);
+                //4259d7
                 border-radius: 4px;
                 position: relative;
                 overflow: hidden;
@@ -133,6 +139,9 @@
                 vertical-align: middle;
                 display: inline-block;
                 color: #4d515d;
+                &.pw_forget{
+                    cursor: pointer;
+                }
             }
             .right_box{
                 float: right;

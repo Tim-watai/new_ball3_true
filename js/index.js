@@ -202,8 +202,12 @@ $(document).ready(function() {
       //註冊彈窗close
       let close_b = $('aside .sign_box .sign_close');
       let sign_up = $('aside.sign_up,aside.sign_up_ok');
+      let sign_inin = $('aside.sign_in');
       $('.test2 li:nth-child(4)').click(function(){
         sign_up.addClass('active');
+      })
+      $('.test2 li:nth-child(5)').click(function(){
+        sign_inin.addClass('active');
       })
       close_b.click(function(){
         console.log('sign_c')
