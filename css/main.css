@@ -185,6 +185,12 @@ button {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
+  .sign_box.sign_up_size .content {
+    width: 59em; }
+  .sign_box.sign_up_ok_size .content {
+    width: 33.714em; }
+  .sign_box.sign_in_size .content {
+    width: 28.714em; }
   .sign_box .title {
     line-height: 3.714em;
     background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3046b7));

@@ -11,6 +11,21 @@
     top: 15em;
     left: 50%;
     transform: translateX(-50%);
+    &.sign_up_size{
+        .content{
+            width: 59em;
+        }
+    }
+    &.sign_up_ok_size{
+        .content{
+            width: 33.714em;
+        }
+    }
+    &.sign_in_size{
+        .content{
+            width: 28.714em;
+        }
+    }
     
     .title{
         // height: 3.714em;
