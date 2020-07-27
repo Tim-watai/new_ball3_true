@@ -899,20 +899,22 @@
                     }
                     .text_wrap{
                         display: inline-block;
-                        line-height: 6em;
+                        line-height: 5em;
                         position: absolute;
                         left: 7em;
                         top: 50%;
                         transform: translateY(-50%);
                         p{
-                            line-height: 3em;
+                            font-size: 1.071em;
+                            line-height: 2.5em;
                             &:last-child{
                                 font-size: .95em;
+                                white-space: nowrap;
                             }
                         }
                         span{
                             display: inline-block;
-                            font-size: 1.7em;
+                            font-size: 1.786em;
                         }
                         p,span{
                             &.red{
@@ -926,8 +928,11 @@
                         color: #fff;
                         position: absolute;
                         top: 1em;
-                        right: 4em;
+                        right: 1.5em;
                         padding: .1em .5em;
+                        p{
+                            font-size: 1.071em;
+                        }
                     }
                 }
             }

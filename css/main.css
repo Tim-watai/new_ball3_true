@@ -2754,7 +2754,7 @@ main.my_page.my_page.my_page {
             border: 1px solid #ffeddd;
             padding: .4em 1.5em;
             font-size: 1em;
-            border-radius: 8px;
+            border-radius: 6px;
             font-weight: bold; }
             main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .bill_right button p {
               font-size: 1.071em; }
@@ -4067,7 +4067,7 @@ main.my_page.my_page.my_page {
           height: 2.3em; }
         .basic_bill .save_type .mb_box .b50 .text_wrap {
           display: inline-block;
-          line-height: 6em;
+          line-height: 5em;
           position: absolute;
           left: 7em;
           top: 50%;
@@ -4075,12 +4075,14 @@ main.my_page.my_page.my_page {
           -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
           .basic_bill .save_type .mb_box .b50 .text_wrap p {
-            line-height: 3em; }
+            font-size: 1.071em;
+            line-height: 2.5em; }
             .basic_bill .save_type .mb_box .b50 .text_wrap p:last-child {
-              font-size: .95em; }
+              font-size: .95em;
+              white-space: nowrap; }
           .basic_bill .save_type .mb_box .b50 .text_wrap span {
             display: inline-block;
-            font-size: 1.7em; }
+            font-size: 1.786em; }
           .basic_bill .save_type .mb_box .b50 .text_wrap p.red, .basic_bill .save_type .mb_box .b50 .text_wrap span.red {
             color: #c75665; }
         .basic_bill .save_type .mb_box .b50 .r_btn {
@@ -4089,8 +4091,10 @@ main.my_page.my_page.my_page {
           color: #fff;
           position: absolute;
           top: 1em;
-          right: 4em;
+          right: 1.5em;
           padding: .1em .5em; }
+          .basic_bill .save_type .mb_box .b50 .r_btn p {
+            font-size: 1.071em; }
     .basic_bill .save_type .cards {
       width: auto;
       margin: 0 -1.2em 0 0; }
