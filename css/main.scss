@@ -134,7 +134,7 @@ header {
     background: #2f333d;
     p {
       line-height: 1.5em;
-      width: 1200px;
+      width: 1100px;
       text-align: right;
       margin: 0 auto;
       color: #b4bac8;
@@ -542,7 +542,7 @@ header {
           // display: none;
           width: calc((65.5% - 1.6em) - 4px);
           &.big_size{
-            width: calc((68.5% - 1.6em) - 4px);
+            width: calc((83.2% - 1.6em) - 4px);
           }
           &.active{
             display: block;
@@ -567,7 +567,7 @@ header {
           top: .7em;
           width: calc((65.5% - 1.6em) - 4px);
           &.big_size{
-            width: calc((80% - 1.6em) - 4px);
+            width: calc((83.2% - 1.6em) - 4px);
           }
 
           z-index: 5;
