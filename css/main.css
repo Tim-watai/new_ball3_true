@@ -1067,9 +1067,11 @@ aside .bet_box {
   .h_wrap.other_size {
     width: 1100px; }
     .h_wrap.other_size .logo {
-      width: 20%; }
+      width: calc(20% - 2em);
+      padding-left: 2em;
+      text-align: left; }
     .h_wrap.other_size .right {
-      padding: 0; }
+      padding-right: calc(.8em + 7px); }
   .h_wrap .logo {
     width: 16.8%;
     height: 100%;
@@ -1086,14 +1088,13 @@ aside .bet_box {
       position: relative; }
   .h_wrap ul {
     float: left;
-    overflow: hidden;
-    margin: 0 0 0 1em; }
+    overflow: hidden; }
     .h_wrap ul.m_yet {
       line-height: 6em;
       height: 6em; }
     .h_wrap ul li {
       float: left;
-      margin: 0 1em;
+      margin: 0 1.286em;
       position: relative;
       color: #4d515d;
       cursor: pointer;
@@ -1127,7 +1128,7 @@ aside .bet_box {
         .h_wrap ul li:hover:before, .h_wrap ul li:active:before, .h_wrap ul li.active:before {
           content: "";
           background: #293eb0;
-          height: 0.25em;
+          height: 0.286em;
           width: 100%;
           position: absolute;
           bottom: 0;
@@ -1146,7 +1147,7 @@ aside .bet_box {
         display: block; }
     .h_wrap .right .sign_yet {
       line-height: 6em;
-      padding-right: 1em; }
+      padding-right: calc(.8em + 7px); }
       .h_wrap .right .sign_yet .wrap {
         line-height: 4em;
         display: inline-block;
@@ -1179,7 +1180,7 @@ aside .bet_box {
         .h_wrap .right .sign_in .wrap .row {
           line-height: 1.5em; }
           .h_wrap .right .sign_in .wrap .row p {
-            font-size: 1.3em;
+            font-size: 1.143em;
             display: inline-block;
             vertical-align: baseline; }
             .h_wrap .right .sign_in .wrap .row p.gray {
@@ -1188,9 +1189,10 @@ aside .bet_box {
               color: #2d43b6; }
           .h_wrap .right .sign_in .wrap .row .vip {
             display: inline-block;
-            vertical-align: text-bottom;
+            vertical-align: top;
             margin: 0 0 0 0.5em;
-            padding: 0em 0.5em 0em;
+            line-height: 1.1em;
+            padding: .1em 0.25em 0em;
             background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
             background: -webkit-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
             background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
@@ -1200,18 +1202,17 @@ aside .bet_box {
               background: url(../image/icon/vip.png) no-repeat;
               background-size: 100%;
               display: inline-block;
-              width: 2em;
+              width: 1.6em;
               height: 0.8em;
-              vertical-align: middle; }
+              vertical-align: text-bottom; }
             .h_wrap .right .sign_in .wrap .row .vip p {
               display: inline-block;
               font-family: "微軟正黑體";
               font-weight: bold;
               color: #fff;
-              vertical-align: middle;
+              vertical-align: text-top;
               line-height: 100%;
-              font-size: 1.2em;
-              margin: 0 0 0 2px; }
+              font-size: .8em; }
           .h_wrap .right .sign_in .wrap .row.bot {
             text-align: left; }
             .h_wrap .right .sign_in .wrap .row.bot i {
@@ -2515,15 +2516,15 @@ aside .bet_box {
     height: 35em;
     line-height: 35em; }
 
-.container main ul.my_page {
+main ul.my_page {
   display: none; }
-  .container main ul.my_page.active {
+  main ul.my_page.active {
     display: block; }
-  .container main ul.my_page .avatar_wrap {
+  main ul.my_page .avatar_wrap {
     width: 100%;
     text-align: center;
     padding: 2em 0 0; }
-    .container main ul.my_page .avatar_wrap .avatar {
+    main ul.my_page .avatar_wrap .avatar {
       display: inline-block;
       width: 5.857em;
       height: 5.857em;
@@ -2531,19 +2532,19 @@ aside .bet_box {
       background-size: 100%;
       border-radius: 100px;
       margin: 0 0 1.5em; }
-    .container main ul.my_page .avatar_wrap .name {
+    main ul.my_page .avatar_wrap .name {
       text-transform: none;
       color: #4d515d;
-      font-size: 1.3em;
+      font-size: 1.143em;
       display: inline-block; }
-    .container main ul.my_page .avatar_wrap .day {
+    main ul.my_page .avatar_wrap .day {
       color: #838ba0;
-      font-size: 1em; }
-  .container main ul.my_page .box_3 {
+      font-size: 1.05em; }
+  main ul.my_page .box_3 {
     overflow: hidden;
     padding: 0 1em;
     margin: 1em 0 1em; }
-    .container main ul.my_page .box_3 .box {
+    main ul.my_page .box_3 .box {
       float: left;
       width: 33.33%;
       text-align: center;
@@ -2552,93 +2553,96 @@ aside .bet_box {
       overflow: hidden;
       border-radius: 4px;
       padding: .5em 0; }
-      .container main ul.my_page .box_3 .box:hover, .container main ul.my_page .box_3 .box.active {
+      main ul.my_page .box_3 .box:hover, main ul.my_page .box_3 .box.active {
         background: #4256be; }
-        .container main ul.my_page .box_3 .box:hover p, .container main ul.my_page .box_3 .box.active p {
+        main ul.my_page .box_3 .box:hover p, main ul.my_page .box_3 .box.active p {
           color: #fff; }
-        .container main ul.my_page .box_3 .box:hover i.cash, .container main ul.my_page .box_3 .box.active i.cash {
+        main ul.my_page .box_3 .box:hover i.cash, main ul.my_page .box_3 .box.active i.cash {
           background-position-y: -2.3em; }
-      .container main ul.my_page .box_3 .box i.cash {
+      main ul.my_page .box_3 .box i.cash {
         width: 2.3em;
         height: 2.3em;
-        background: url(../image/my/my_cash.png) no-repeat;
+        background: url(../image/my/my_cash2.png) no-repeat;
         background-size: 300%;
         display: inline-block; }
-      .container main ul.my_page .box_3 .box i.i1 {
+      main ul.my_page .box_3 .box i.i1 {
         background-position-x: 0em; }
-      .container main ul.my_page .box_3 .box i.i2 {
+      main ul.my_page .box_3 .box i.i2 {
         background-position-x: -2.3em; }
-      .container main ul.my_page .box_3 .box i.i3 {
+      main ul.my_page .box_3 .box i.i3 {
         background-position-x: -4.6em; }
-      .container main ul.my_page .box_3 .box p {
+      main ul.my_page .box_3 .box p {
         color: #4d515d;
-        font-size: 1.1em;
+        font-size: 1.214em;
         line-height: 100%;
         margin-top: .4em; }
-  .container main ul.my_page li {
+  main ul.my_page li {
     line-height: 3.5em;
     position: relative;
-    padding: 0 0 0 2.5em;
+    padding: 0 0 0 2.286em;
     cursor: pointer; }
-    .container main ul.my_page li:hover, .container main ul.my_page li.active {
+    main ul.my_page li:hover, main ul.my_page li.active {
       background: -webkit-gradient(linear, left top, right top, from(#1b2c85), to(#7e8bd1));
       background: -webkit-linear-gradient(left, #1b2c85 0%, #7e8bd1 100%);
       background: -o-linear-gradient(left, #1b2c85 0%, #7e8bd1 100%);
       background: linear-gradient(to right, #1b2c85 0%, #7e8bd1 100%); }
-      .container main ul.my_page li:hover i, .container main ul.my_page li.active i {
+      main ul.my_page li:hover i, main ul.my_page li.active i {
         background-position-y: -1.3em; }
-      .container main ul.my_page li:hover p, .container main ul.my_page li.active p {
+      main ul.my_page li:hover p, main ul.my_page li.active p {
         color: #fff; }
-        .container main ul.my_page li:hover p.num, .container main ul.my_page li.active p.num {
+        main ul.my_page li:hover p.num, main ul.my_page li.active p.num {
           background: #fff;
           color: #6272cc; }
-    .container main ul.my_page li p, .container main ul.my_page li i {
+    main ul.my_page li p, main ul.my_page li i {
       display: inline-block; }
-    .container main ul.my_page li i {
+    main ul.my_page li i {
       width: 1.3em;
       height: 1.3em;
       background: url(../image/my/my_li_icon.png) no-repeat;
       background-size: 1400%;
       vertical-align: middle;
       margin: 0 1em 0 0; }
-      .container main ul.my_page li i.i1 {
+      main ul.my_page li i.i1 {
         background-position-x: 0em; }
-      .container main ul.my_page li i.i2 {
+      main ul.my_page li i.i2 {
         background-position-x: -1.3em; }
-      .container main ul.my_page li i.i3 {
+      main ul.my_page li i.i3 {
         background-position-x: -2.6em; }
-      .container main ul.my_page li i.i4 {
+      main ul.my_page li i.i4 {
         background-position-x: -3.9em; }
-      .container main ul.my_page li i.i5 {
+      main ul.my_page li i.i5 {
         background-position-x: -5.2em; }
-      .container main ul.my_page li i.i6 {
+      main ul.my_page li i.i6 {
         background-position-x: -6.5em; }
-      .container main ul.my_page li i.i7 {
+      main ul.my_page li i.i7 {
         background-position-x: -7.8em; }
-      .container main ul.my_page li i.i8 {
+      main ul.my_page li i.i8 {
         background-position-x: -9.1em; }
-      .container main ul.my_page li i.i9 {
+      main ul.my_page li i.i9 {
         background-position-x: -10.4em; }
-      .container main ul.my_page li i.i10 {
+      main ul.my_page li i.i10 {
         background-position-x: -11.7em; }
-      .container main ul.my_page li i.i11 {
+      main ul.my_page li i.i11 {
         background-position-x: -13em; }
-      .container main ul.my_page li i.i12 {
+      main ul.my_page li i.i12 {
         background-position-x: -14.3em; }
-      .container main ul.my_page li i.i13 {
+      main ul.my_page li i.i13 {
         background-position-x: -15.6em; }
-      .container main ul.my_page li i.i14 {
+      main ul.my_page li i.i14 {
         background-position-x: -16.9em; }
-    .container main ul.my_page li p {
+    main ul.my_page li p {
       font-size: 1.1em;
       vertical-align: middle;
       line-height: 100%;
       color: #4d515d; }
-      .container main ul.my_page li p.num {
+      main ul.my_page li p.num {
+        font-size: 1em;
         display: none;
         background: #6272cc;
-        padding: .125em .75em;
+        padding: .1em .0em;
         position: absolute;
+        min-width: 1.786em;
+        text-align: center;
         top: 50%;
         right: 2em;
         -webkit-transform: translateY(-50%);
@@ -2646,13 +2650,13 @@ aside .bet_box {
         transform: translateY(-50%);
         color: #fff;
         border-radius: 4px; }
-        .container main ul.my_page li p.num.active {
+        main ul.my_page li p.num.active {
           display: inline-block; }
-  .container main ul.my_page .blue_line {
+  main ul.my_page .blue_line {
     width: 100%;
     height: 2px;
     position: relative; }
-    .container main ul.my_page .blue_line:before {
+    main ul.my_page .blue_line:before {
       content: '';
       position: absolute;
       width: 100%;
@@ -2664,21 +2668,21 @@ aside .bet_box {
       transform: translateX(-50%);
       background: #e6e9f3; }
 
-.container main.my_page {
+main.my_page.my_page.my_page {
   width: 1100px; }
-  .container main.my_page .left {
-    width: 20%; }
-  .container main.my_page .right {
-    width: 80%;
-    left: 20%; }
-    .container main.my_page .right .wrap {
+  main.my_page.my_page.my_page .left {
+    width: 22%; }
+  main.my_page.my_page.my_page .right {
+    width: 78%;
+    left: 22%; }
+    main.my_page.my_page.my_page .right .wrap {
       z-index: 1; }
-      .container main.my_page .right .wrap.fixed.fixed.fixed.fixed.fixed.fixed {
-        width: calc((80% - 1.6em) - 7px); }
-      .container main.my_page .right .wrap .game_in {
+      main.my_page.my_page.my_page .right .wrap.fixed.fixed.fixed.fixed.fixed.fixed {
+        width: calc((78% - 1.6em) - 7px); }
+      main.my_page.my_page.my_page .right .wrap .game_in {
         font-weight: bold;
         height: 7em; }
-        .container main.my_page .right .wrap .game_in.my_page_bill .my_bill_mid {
+        main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .my_bill_mid {
           position: absolute;
           left: 50%;
           -webkit-transform: translate(-50%, -50%);
@@ -2687,13 +2691,13 @@ aside .bet_box {
           top: 43%;
           width: auto;
           white-space: nowrap; }
-          .container main.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box {
+          main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box {
             display: inline-block;
             text-align: center;
             padding: 0 2em;
             color: #4d515d;
             position: relative; }
-            .container main.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box:before {
+            main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box:before {
               content: '';
               position: absolute;
               top: 50%;
@@ -2704,7 +2708,7 @@ aside .bet_box {
               width: 1px;
               height: 90%;
               background: #a8aecf; }
-            .container main.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box:last-child:before {
+            main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box:last-child:before {
               content: '';
               position: absolute;
               top: 50%;
@@ -2715,32 +2719,33 @@ aside .bet_box {
               width: 1px;
               height: 90%;
               background: transparent; }
-            .container main.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box p {
-              font-size: 1.1em; }
-              .container main.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box p:first-child {
+            main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box p {
+              font-size: 1.214em; }
+              main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box p:first-child {
                 margin: 0 0 .5em; }
-              .container main.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box p.blue {
+              main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .my_bill_mid .m_box p.blue {
                 color: #556de7; }
-        .container main.my_page .right .wrap .game_in.my_page_bill .bill_left {
+        main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .bill_left {
           position: absolute;
-          left: 1.571em;
+          left: 1.357em;
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
           top: 43%;
           width: auto;
-          font-size: 1.1em;
           color: #4d515d; }
-        .container main.my_page .right .wrap .game_in.my_page_bill .bill_right {
+          main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .bill_left p {
+            font-size: 1.214em; }
+        main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .bill_right {
           position: absolute;
-          right: 2em;
+          right: 1.357em;
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
           top: 43%;
           width: auto;
-          font-size: 1.1em; }
-          .container main.my_page .right .wrap .game_in.my_page_bill .bill_right button {
+          font-size: 1em; }
+          main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .bill_right button {
             color: #fff;
             background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b6885f));
             background: -webkit-linear-gradient(top, #dfb995 0%, #b6885f 100%);
@@ -2751,7 +2756,9 @@ aside .bet_box {
             font-size: 1em;
             border-radius: 8px;
             font-weight: bold; }
-      .container main.my_page .right .wrap .bill_record_d_card {
+            main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .bill_right button p {
+              font-size: 1.071em; }
+      main.my_page.my_page.my_page .right .wrap .bill_record_d_card {
         width: 100%;
         background: #404b87;
         color: #fff;
@@ -2760,14 +2767,14 @@ aside .bet_box {
         height: 3em;
         margin: -.5em 0 0;
         overflow: hidden; }
-        .container main.my_page .right .wrap .bill_record_d_card .basic_b {
+        main.my_page.my_page.my_page .right .wrap .bill_record_d_card .basic_b {
           float: left;
           padding: .5em 0 0;
           line-height: 2.5em;
           height: 3em;
           position: relative;
           text-align: center; }
-          .container main.my_page .right .wrap .bill_record_d_card .basic_b:before {
+          main.my_page.my_page.my_page .right .wrap .bill_record_d_card .basic_b:before {
             content: '';
             position: absolute;
             right: 0;
@@ -2778,21 +2785,21 @@ aside .bet_box {
             width: 1px;
             background: #fff;
             height: 60%; }
-          .container main.my_page .right .wrap .bill_record_d_card .basic_b:last-child:before {
+          main.my_page.my_page.my_page .right .wrap .bill_record_d_card .basic_b:last-child:before {
             display: none; }
-          .container main.my_page .right .wrap .bill_record_d_card .basic_b.b12 {
+          main.my_page.my_page.my_page .right .wrap .bill_record_d_card .basic_b.b12 {
             width: 12%; }
-          .container main.my_page .right .wrap .bill_record_d_card .basic_b.b15 {
+          main.my_page.my_page.my_page .right .wrap .bill_record_d_card .basic_b.b15 {
             width: 15%; }
-          .container main.my_page .right .wrap .bill_record_d_card .basic_b.b16 {
+          main.my_page.my_page.my_page .right .wrap .bill_record_d_card .basic_b.b16 {
             width: 16%; }
-          .container main.my_page .right .wrap .bill_record_d_card .basic_b.b18 {
+          main.my_page.my_page.my_page .right .wrap .bill_record_d_card .basic_b.b18 {
             width: 18%; }
-          .container main.my_page .right .wrap .bill_record_d_card .basic_b.b19 {
+          main.my_page.my_page.my_page .right .wrap .bill_record_d_card .basic_b.b19 {
             width: 19%; }
-          .container main.my_page .right .wrap .bill_record_d_card .basic_b.b20 {
+          main.my_page.my_page.my_page .right .wrap .bill_record_d_card .basic_b.b20 {
             width: 20%; }
-        .container main.my_page .right .wrap .bill_record_d_card .b25 {
+        main.my_page.my_page.my_page .right .wrap .bill_record_d_card .b25 {
           width: 25%;
           float: left;
           text-align: center;
@@ -2800,7 +2807,7 @@ aside .bet_box {
           line-height: 2.5em;
           height: 3em;
           position: relative; }
-          .container main.my_page .right .wrap .bill_record_d_card .b25:before {
+          main.my_page.my_page.my_page .right .wrap .bill_record_d_card .b25:before {
             content: '';
             position: absolute;
             right: 0;
@@ -2811,13 +2818,13 @@ aside .bet_box {
             width: 1px;
             background: #fff;
             height: 60%; }
-          .container main.my_page .right .wrap .bill_record_d_card .b25:last-child:before {
+          main.my_page.my_page.my_page .right .wrap .bill_record_d_card .b25:last-child:before {
             display: none; }
-        .container main.my_page .right .wrap .bill_record_d_card span {
+        main.my_page.my_page.my_page .right .wrap .bill_record_d_card span {
           display: inline-block;
           vertical-align: middle;
           font-size: 1.1em; }
-  .container main.my_page .right_2 {
+  main.my_page.my_page.my_page .right_2 {
     display: none; }
 
 .tr_record_box {
@@ -4591,9 +4598,10 @@ aside .bet_box {
   margin: 1.2em 0 0; }
   .infor_line span {
     line-height: 100%;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    color: #8c93a6; }
 
-.link {
+.link.link.link {
   position: relative;
   cursor: pointer;
   color: #5163c7; }
@@ -5790,9 +5798,10 @@ header {
   font-size: 14px; }
   .container .vip {
     display: inline-block;
-    vertical-align: text-bottom;
+    vertical-align: top;
     margin: 0 0 0 0.5em;
-    padding: .125em 0.5em .125em;
+    line-height: 1.1em;
+    padding: .1em 0.25em 0em;
     background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
     background: -webkit-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
     background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
@@ -5802,18 +5811,17 @@ header {
       background: url(../image/icon/vip.png) no-repeat;
       background-size: 100%;
       display: inline-block;
-      width: 2em;
+      width: 1.6em;
       height: 0.8em;
-      vertical-align: middle; }
+      vertical-align: text-bottom; }
     .container .vip p {
       display: inline-block;
       font-family: "微軟正黑體";
       font-weight: bold;
       color: #fff;
-      vertical-align: middle;
+      vertical-align: text-top;
       line-height: 100%;
-      font-size: 1.2em;
-      margin: 0 0 0 2px; }
+      font-size: .8em; }
   .container::-webkit-scrollbar {
     width: 5px;
     position: absolute;
@@ -5861,8 +5869,8 @@ header {
       padding: .8em;
       vertical-align: bottom; }
       .container .search_group .s_box i {
-        width: 1.5em;
-        height: 1.5em;
+        width: 2.286em;
+        height: 2.286em;
         background: url(../image/icon/f_list_i.png) no-repeat;
         background-size: 800%;
         display: inline-block;
@@ -5871,19 +5879,19 @@ header {
         .container .search_group .s_box i.i1 {
           background-position: 0em 0; }
         .container .search_group .s_box i.i2 {
-          background-position: -1.5em 0; }
+          background-position: -2.286em 0; }
         .container .search_group .s_box i.i3 {
-          background-position: -3em 0; }
+          background-position: -4.572em 0; }
         .container .search_group .s_box i.i4 {
-          background-position: -4.5em 0; }
+          background-position: -6.858em 0; }
         .container .search_group .s_box i.i5 {
-          background-position: -6em 0; }
+          background-position: -9.144em 0; }
         .container .search_group .s_box i.i6 {
-          background-position: -7.5em 0; }
+          background-position: -11.43em 0; }
         .container .search_group .s_box i.i7 {
-          background-position: -9em 0; }
+          background-position: -13.716em 0; }
         .container .search_group .s_box i.i8 {
-          background-position: -10.5em 0; }
+          background-position: -16.002em 0; }
       .container .search_group .s_box:hover {
         color: #fff;
         background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
@@ -5891,7 +5899,7 @@ header {
         background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
         background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
         .container .search_group .s_box:hover .i1 {
-          background-position: 0 -1.5em; }
+          background-position: 0 -2.286em; }
     .container .search_group .s_wrap {
       display: inline-block;
       line-height: 100%;
@@ -6006,8 +6014,8 @@ header {
     color: #4d515d;
     font-size: .9em; }
     .container .f_wrap i {
-      width: 1.5em;
-      height: 1.5em;
+      width: 2.286em;
+      height: 2.286em;
       background: url(../image/icon/f_list_i.png) no-repeat;
       background-size: 800%;
       display: inline-block;
@@ -6015,19 +6023,19 @@ header {
       .container .f_wrap i.i1 {
         background-position: 0em 0; }
       .container .f_wrap i.i2 {
-        background-position: -1.5em 0; }
+        background-position: -2.286em 0; }
       .container .f_wrap i.i3 {
-        background-position: -3em 0; }
+        background-position: -4.572em 0; }
       .container .f_wrap i.i4 {
-        background-position: -4.5em 0; }
+        background-position: -6.858em 0; }
       .container .f_wrap i.i5 {
-        background-position: -6em 0; }
+        background-position: -9.144em 0; }
       .container .f_wrap i.i6 {
-        background-position: -7.5em 0; }
+        background-position: -11.43em 0; }
       .container .f_wrap i.i7 {
-        background-position: -9em 0; }
+        background-position: -13.716em 0; }
       .container .f_wrap i.i8 {
-        background-position: -10.5em 0; }
+        background-position: -16.002em 0; }
     .container .f_wrap .f_top {
       width: 100%;
       text-align: center;
@@ -6081,7 +6089,7 @@ header {
         position: absolute;
         background: #df0506;
         color: #fff;
-        padding: .2em .25em .1em;
+        padding: .2em .25em 0em;
         left: 3px;
         top: 12px;
         border-radius: 4px;
@@ -6096,19 +6104,19 @@ header {
         background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
         background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
         .container .f_wrap .f_bot ul li:hover:hover i.i2, .container .f_wrap .f_bot ul li:active i.i2, .container .f_wrap .f_bot ul li.active i.i2 {
-          background-position: -1.5em -1.5em; }
+          background-position: -2.286em -2.286em; }
         .container .f_wrap .f_bot ul li:hover:hover i.i3, .container .f_wrap .f_bot ul li:active i.i3, .container .f_wrap .f_bot ul li.active i.i3 {
-          background-position: -3em -1.5em; }
+          background-position: -4.572em -2.286em; }
         .container .f_wrap .f_bot ul li:hover:hover i.i4, .container .f_wrap .f_bot ul li:active i.i4, .container .f_wrap .f_bot ul li.active i.i4 {
-          background-position: -4.5em -1.5em; }
+          background-position: -6.858em -2.286em; }
         .container .f_wrap .f_bot ul li:hover:hover i.i5, .container .f_wrap .f_bot ul li:active i.i5, .container .f_wrap .f_bot ul li.active i.i5 {
-          background-position: -6em -1.5em; }
+          background-position: -9.144em -2.286em; }
         .container .f_wrap .f_bot ul li:hover:hover i.i6, .container .f_wrap .f_bot ul li:active i.i6, .container .f_wrap .f_bot ul li.active i.i6 {
-          background-position: -7.5em -1.5em; }
+          background-position: -11.43em -2.286em; }
         .container .f_wrap .f_bot ul li:hover:hover i.i7, .container .f_wrap .f_bot ul li:active i.i7, .container .f_wrap .f_bot ul li.active i.i7 {
-          background-position: -9em -1.5em; }
+          background-position: -13.716em -2.286em; }
         .container .f_wrap .f_bot ul li:hover:hover i.i8, .container .f_wrap .f_bot ul li:active i.i8, .container .f_wrap .f_bot ul li.active i.i8 {
-          background-position: -10.5em -1.5em; }
+          background-position: -16.002em -2.286em; }
         .container .f_wrap .f_bot ul li:hover:hover p, .container .f_wrap .f_bot ul li:active p, .container .f_wrap .f_bot ul li.active p {
           color: #fff; }
     .container .f_wrap .f_bot ul.yet, .container .f_wrap .f_bot ul.in {
@@ -6175,7 +6183,7 @@ header {
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         overflow: hidden;
         border-radius: 8px;
-        padding: 0 1em 0 1em;
+        padding: 0 1.357em 0 1.357em;
         position: relative;
         z-index: 2; }
         .container main .right .search_bar .blue {

@@ -146,30 +146,30 @@ header {
   //共用vip_0708
   .vip {
     display: inline-block;
-    vertical-align: text-bottom;
+    vertical-align: top;
     margin: 0 0 0 0.5em;
-    padding: .125em 0.5em .125em;
+    line-height: 1.1em;
+    padding: .1em 0.25em 0em;
     background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
     border-radius: 4px;
     i {
-      background: url(../image/icon/vip.png) no-repeat;
-      background-size: 100%;
-      display: inline-block;
-      width: 2em;
-      height: 0.8em;
-      vertical-align: middle;
+    background: url(../image/icon/vip.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 1.6em;
+    height: 0.8em;
+    vertical-align: text-bottom;
     }
     p {
-      display: inline-block;
-      font-family: "微軟正黑體";
-      font-weight: bold;
-      color: #fff;
-      vertical-align: middle;
-      line-height: 100%;
-      font-size: 1.2em;
-      margin: 0 0 0 2px;
+        display: inline-block;
+        font-family: "微軟正黑體";
+        font-weight: bold;
+        color: #fff;
+        vertical-align: text-top;
+        line-height: 100%;
+        font-size: .8em;
     }
-  }
+}
  //0624字母大
 //  text-transform:capitalize;
  
@@ -231,8 +231,8 @@ header {
       padding: .8em;
       vertical-align: bottom;
       i{
-        width: 1.5em;
-        height: 1.5em;
+        width: 2.286em;
+        height: 2.286em;
         background: url(../image/icon/f_list_i.png) no-repeat;
         background-size: 800%;
         display: inline-block;
@@ -240,7 +240,7 @@ header {
         margin: 0 0 .25em;
         @for $i from 1 through 8{
           &.i#{$i}{
-            background-position: (($i - 1) * -1.5em) 0;
+            background-position: (($i - 1) * -2.286em) 0;
           }
         }
       }
@@ -248,7 +248,7 @@ header {
         color: #fff;
         background: linear-gradient(to right , #7f8cd1 0% ,#1a2b84 100%);
         .i1{
-          background-position: 0 -1.5em;
+          background-position: 0 -2.286em;
         }
       }
     }
@@ -360,15 +360,15 @@ header {
     //0624
     font-size: .9em;
     i{
-      width: 1.5em;
-      height: 1.5em;
+      width: 2.286em;
+      height: 2.286em;
       background: url(../image/icon/f_list_i.png) no-repeat;
       background-size: 800%;
       display: inline-block;
       line-height: 100%;
       @for $i from 1 through 8{
         &.i#{$i}{
-          background-position: (($i - 1) * -1.5em) 0;
+          background-position: (($i - 1) * -2.286em) 0;
         }
       }
     }
@@ -439,7 +439,7 @@ header {
               position: absolute;
               background: #df0506;
               color: #fff;
-              padding: .2em .25em .1em;
+              padding: .2em .25em 0em;
               left: 3px;
               top: 12px;
               border-radius: 4px;
@@ -456,7 +456,7 @@ header {
             i{
               @for $i from 2 through 8{
                 &.i#{$i}{
-                  background-position: (($i - 1) * -1.5em) -1.5em;
+                  background-position: (($i - 1) * -2.286em) -2.286em;
                 }
               }
             }
@@ -556,7 +556,7 @@ header {
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         overflow: hidden;
         border-radius: 8px;
-        padding: 0 1em 0 1em;
+        padding: 0 1.357em 0 1.357em;
         position: relative;
         z-index: 2;
         .blue{

@@ -443,135 +443,12 @@
             <div class="my_bill_record active">
                 <div class="wrap">
                   <div class="game_in my_page_bill">
-                      <div class="bill_left">
-                        投注紀錄
-                      </div>
-                    <div class="my_bill_mid">
-                        <div class="m_box">
-                            <p>筆數</p>
-                            <p class="blue">3</p>
-                        </div>
-                        <div class="m_box">
-                            <p>投注金額</p>
-                            <p class="blue">300</p>
-                        </div>
-                        <div class="m_box">
-                            <p>有效投注</p>
-                            <p class="blue">40000</p>
-                        </div>
-                        <div class="m_box">
-                            <p>結果</p>
-                            <p class="blue">40000</p>
-                        </div>
-                    </div>
-                    <div class="bill_right">
-                      <button>登出</button>
-                    </div>
-                  </div>
+               
+                  </div><!--gi-->
                   <div class="search_box">
                     <div class="search_bar">
-                        <span class="date_icon"></span>
-                        <div class="day_box">
-                            <span>2020-05-25</span>
-                            <span class="tri"></span>
-                        </div>
-                        <div class="row_line"></div>
-                        <span class="date_icon"></span>
-                        <div class="day_box">
-                          <span>2020-05-31</span>
-                          <span class="tri"></span>
-                      </div>
-                      <div class="tag_wrap">
-                          <span class="tag">查詢</span>
-                          <span class="tag ball_cho">選擇球種</span>
-                        </div>
-                      <div class="right_box">
-                          <div class="tag_wrap">
-                              <span class="tag">今日</span>
-                              <span class="tag">昨日</span>
-                              <span class="tag">明日</span>
-                              <span class="tag active">本週</span>
-                              <span class="tag">上週</span>
-                              <span class="tag">本月</span>
-                            </div>
-                        </div>
-                      
-                    </div>
-                    <div class="balls_choice">
-                          <div class="row">
-                              <span class="check active"></span>
-                              <p>選取/取消所有球種</p>
-                          </div>
-                          <div class="row">
-                            <div class="b12_5">
-                                    <span class="check active"></span>
-                                    <p>足球</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>棒球</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>籃球</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>賽馬賽狗</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>電競</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>指數</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>彩球</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>冰球</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>網球</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>斯諾克</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>排球</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>賽車</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>羽毛球</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>美式足球</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>沙灘足球</p>
-                            </div>
-                            <div class="b12_5">
-                                <span class="check active"></span>
-                                <p>乒乓球</p>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
+                   
+                  </div><!--sb-->
                   <div class="bill_record_d_card">
                       <div class="b25"><span>時間</span></div>
                       <div class="b25"><span>筆數</span></div>
@@ -582,7 +459,7 @@
                 <div class="wrap fixed">
                     <div class="game_in my_page_bill">
                         <div class="bill_left">
-                          投注紀錄
+                          <p>投注紀錄</p>
                         </div>
                       <div class="my_bill_mid">
                           <div class="m_box">
@@ -603,7 +480,7 @@
                           </div>
                       </div>
                       <div class="bill_right">
-                        <button>登出</button>
+                        <button><p>登出</p></button>
                       </div>
                     </div>
                     <div class="search_box">
@@ -5753,34 +5630,7 @@ $(document).ready(function(){
             return  balls_choice.removeClass('active');
         }
     })
-         //dummy同步本尊的寬
-         let search_bar_obj = $('.container main .right .search_bar');
-        let search_bar_dummy = $('.search_bar.fixed');
-        let ball_search_dummy = $('.wrap.fixed');
         
-        let obj_w = search_bar_obj.outerWidth();
-            search_bar_dummy.css({width:obj_w});
-            ball_search_dummy.css({width:obj_w});
-
-      function dummy(page){
-         let re_search_bar_obj = $('.container main .right .search_bar');
-          let re_obj_w = re_search_bar_obj.outerWidth();
-          search_bar_dummy.css({width:re_obj_w});
-          ball_search_dummy.css({width:re_obj_w});
-      }
-      //
-      //視窗偵測
-        $('.container main .right').scroll(function () {
-          var scrollVal = $(this).scrollTop();
-        //  console.log('scrollVal = '+scrollVal);
-         if(scrollVal >= 50){
-          $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
-          dummy();
-         }else if(scrollVal <= 49){
-          $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
-         }
-        });
-      //<------------------
 })//ready
 
 

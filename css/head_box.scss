@@ -39,10 +39,12 @@
     &.other_size{
         width: 1100px;
         .logo{
-            width: 20%;
+            width: calc(20% - 2em);
+            padding-left: 2em;
+            text-align: left;
         }
         .right{
-            padding: 0;
+            padding-right: calc(.8em + 7px);
         }
     }
 // padding: 0 0 0 .4em;
@@ -69,7 +71,7 @@
 ul {
     float: left;
     overflow: hidden;
-    margin: 0 0 0 1em;
+    // margin: 0 0 0 1em;
     &.m_yet {
     // width: 30%;
     // height: 100%;
@@ -79,7 +81,7 @@ ul {
     li {
     // font-size: 1.1em;
     float: left;
-    margin: 0 1em;
+    margin: 0 1.286em;
     position: relative;
     color: #4d515d;
     cursor: pointer;
@@ -123,7 +125,7 @@ ul {
         &:before {
         content: "";
         background: #293eb0;
-        height: 0.25em;
+        height: 0.286em;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -150,7 +152,7 @@ ul {
     .sign_yet {
     line-height: 6em;
     // text-align: right;
-    padding-right: 1em;
+    padding-right: calc(.8em + 7px);
     .wrap {
         line-height: 4em;
         display: inline-block;
@@ -192,7 +194,7 @@ ul {
         .row {
         line-height: 1.5em;
         p {
-            font-size: 1.3em;
+            font-size: 1.143em;
             display: inline-block;
             vertical-align: baseline;
             &.gray {
@@ -204,28 +206,28 @@ ul {
         }
         .vip {
             display: inline-block;
-            vertical-align: text-bottom;
+            vertical-align: top;
             margin: 0 0 0 0.5em;
-            padding: 0em 0.5em 0em;
+            line-height: 1.1em;
+            padding: .1em 0.25em 0em;
             background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
             border-radius: 4px;
             i {
             background: url(../image/icon/vip.png) no-repeat;
             background-size: 100%;
             display: inline-block;
-            width: 2em;
+            width: 1.6em;
             height: 0.8em;
-            vertical-align: middle;
+            vertical-align: text-bottom;
             }
             p {
-            display: inline-block;
-            font-family: "微軟正黑體";
-            font-weight: bold;
-            color: #fff;
-            vertical-align: middle;
-            line-height: 100%;
-            font-size: 1.2em;
-            margin: 0 0 0 2px;
+                display: inline-block;
+                font-family: "微軟正黑體";
+                font-weight: bold;
+                color: #fff;
+                vertical-align: text-top;
+                line-height: 100%;
+                font-size: .8em;
             }
         }
         &.bot {

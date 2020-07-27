@@ -1,4 +1,4 @@
-.container{
+
     main{
         ul {
             &.my_page{
@@ -23,12 +23,12 @@
                     .name{
                         text-transform: none;
                         color: $bl_d;
-                        font-size: 1.3em;
+                        font-size: 1.143em;
                         display: inline-block;
                     }
                     .day{
                         color: #838ba0;
-                        font-size: 1em;
+                        font-size: 1.05em;
                     }
                 }
                 .box_3{
@@ -59,7 +59,7 @@
                             &.cash{
                                 width: 2.3em;
                                 height: 2.3em;
-                                background: url(../image/my/my_cash.png)no-repeat;
+                                background: url(../image/my/my_cash2.png)no-repeat;
                                 background-size: 300%;
                                 display: inline-block;
                             }
@@ -71,7 +71,7 @@
                         }
                         p{
                             color: $bl_d;
-                            font-size: 1.1em;
+                            font-size: 1.214em;
                             line-height: 100%;
                             margin-top: .4em;
                         }
@@ -80,7 +80,7 @@
                 li{
                     line-height: 3.5em;
                     position: relative;
-                    padding: 0 0 0 2.5em;
+                    padding: 0 0 0 2.286em;
                     cursor: pointer;
                     &:hover,&.active{
                         background: linear-gradient(to right , #1b2c85 0% , #7e8bd1 100%);
@@ -117,13 +117,16 @@
                         line-height: 100%;
                         color: $bl_d;
                         &.num{
+                            font-size: 1em;
                             &.active{
                                 display: inline-block;
                             }
                             display: none;
                             background: #6272cc;
-                            padding: .125em .75em;
+                            padding: .1em .0em;
                             position: absolute;
+                            min-width: 1.786em;
+                            text-align: center;
                             top: 50%;
                             right: 2em;
                             transform: translateY(-50%);
@@ -149,185 +152,190 @@
                 }
               }
             }
-        &.my_page{
-            width: 1100px;
-            .left{
-                width: 20%;
-          
-            }
-            .right{
-                width: 80%;
-                left: 20%;
-                .wrap{
-                    z-index: 1;
-                    &.fixed.fixed.fixed.fixed.fixed.fixed{
-                        width: calc((80% - 1.6em) - 7px);
-                    }
-                    .game_in{
-                            font-weight: bold;
-                            height: 7em;
-                        &.my_page_bill{
-                           .my_bill_mid{
-                            position: absolute;
-                            left: 50%;
-                            transform: translate(-50%,-50%);
-                            top: 43%;
-                            width: auto;
-                            white-space: nowrap;
-                            .m_box{
-                                display: inline-block;
-                                text-align: center;
-                                padding: 0 2em;
-                                color: #4d515d;
-                                position: relative;
+    &.my_page.my_page.my_page{
+        width: 1100px;
+        .left{
+            width: 22%;
+        
+        }
+        .right{
+            width: 78%;
+            left: 22%;
+            .wrap{
+                z-index: 1;
+                &.fixed.fixed.fixed.fixed.fixed.fixed{
+                    width: calc((78% - 1.6em) - 7px);
+                }
+                .game_in{
+                        font-weight: bold;
+                        height: 7em;
+                    &.my_page_bill{
+                        .my_bill_mid{
+                        position: absolute;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        top: 43%;
+                        width: auto;
+                        white-space: nowrap;
+                        .m_box{
+                            display: inline-block;
+                            text-align: center;
+                            padding: 0 2em;
+                            color: #4d515d;
+                            position: relative;
+                            &:before{
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                right: 0;
+                                width: 1px;
+                                height: 90%;
+                                background: #a8aecf;
+                            }
+                            &:last-child{
                                 &:before{
                                     content: '';
                                     position: absolute;
                                     top: 50%;
                                     transform: translateY(-50%);
-                                    right: 0;
+                                    left: 0;
                                     width: 1px;
                                     height: 90%;
-                                    background: #a8aecf;
-                                }
-                                &:last-child{
-                                    &:before{
-                                        content: '';
-                                        position: absolute;
-                                        top: 50%;
-                                        transform: translateY(-50%);
-                                        left: 0;
-                                        width: 1px;
-                                        height: 90%;
-                                        background: transparent;
-                                    }
-                                }
-                                p{
-                                    font-size: 1.1em;
-                                    &:first-child{
-                                        margin: 0 0 .5em;
-                                    }
-                                    &.blue{
-                                        color: #556de7;
-                                    }
+                                    background: transparent;
                                 }
                             }
-                           }
-                           .bill_left{
-                            position: absolute;
-                            left: 1.571em;
-                            transform: translateY(-50%);
-                            top: 43%;
-                            width: auto;
-                            font-size: 1.1em;
-                            color: #4d515d;
-                           }
-                           .bill_right{
-                            position: absolute;
-                            right: 2em;
-                            transform: translateY(-50%);
-                            top: 43%;
-                            width: auto;
-                            font-size: 1.1em;
-                            button{
-                                color: #fff;
-                                background: linear-gradient(to bottom ,#dfb995 0% , #b6885f 100%);
-                                border: 1px solid #ffeddd;
-                                padding: .4em 1.5em;
-                                font-size: 1em;
-                                border-radius: 8px;
-                                font-weight: bold;
-                            }
-                           }
-                        }
-                    }
-                    .bill_record_d_card{
-                        width: 100%;
-                        background: #404b87;
-                        color: #fff;
-                        border-radius: 0 0 8px 8px;
-                        line-height: 3em;
-                        height: 3em;
-                        margin: -.5em 0 0;
-                        overflow: hidden;
-                        .basic_b{
-                            float: left;
-                            padding: .5em 0 0;
-                            line-height: 2.5em;
-                            height: 3em;
-                            position: relative;
-                            text-align: center;
-                            &:before{
-                                content: '';
-                                position: absolute;
-                                right: 0;
-                                top: calc(50% + .25em);
-                                transform: translateY(-50%);
-                                width: 1px;
-                                background: #fff;
-                                height: 60%;
-                            }
-                            &:last-child{
-                                &:before{
-                                    display: none;
+                            p{
+                                font-size: 1.214em;
+                                &:first-child{
+                                    margin: 0 0 .5em;
                                 }
-                            }
-                           
-                            &.b12{
-                                width: 12%;
-                            }
-                            &.b15{
-                                width: 15%;
-                            }
-                            &.b16{
-                                width: 16%;
-                            }
-                            &.b18{
-                                width: 18%;
-                            }
-                            &.b19{
-                                width: 19%;
-                            }
-                            &.b20{
-                                width: 20%;
-                            }
-                        }
-                        .b25{
-                            width: 25%;
-                            float: left;
-                            text-align: center;
-                            padding: .5em 0 0;
-                            line-height: 2.5em;
-                            height: 3em;
-                            position: relative;
-
-                            &:before{
-                                content: '';
-                                position: absolute;
-                                right: 0;
-                                top: calc(50% + .25em);
-                                transform: translateY(-50%);
-                                width: 1px;
-                                background: #fff;
-                                height: 60%;
-                            }
-                            &:last-child{
-                                &:before{
-                                    display: none;
+                                &.blue{
+                                    color: #556de7;
                                 }
                             }
                         }
-                        span{
-                            display: inline-block;
-                            vertical-align: middle;
-                            font-size: 1.1em;
+                        }
+                        .bill_left{
+                        position: absolute;
+                        left: 1.357em;
+                        transform: translateY(-50%);
+                        top: 43%;
+                        width: auto;
+                      
+                        color: #4d515d;
+                        p{
+                            font-size: 1.214em;
+                        }
+                        }
+                        .bill_right{
+                        position: absolute;
+                        right: 1.357em;
+                        transform: translateY(-50%);
+                        top: 43%;
+                        width: auto;
+                        font-size: 1em;
+                        button{
+                            color: #fff;
+                            background: linear-gradient(to bottom ,#dfb995 0% , #b6885f 100%);
+                            border: 1px solid #ffeddd;
+                            padding: .4em 1.5em;
+                            font-size: 1em;
+                            border-radius: 8px;
+                            font-weight: bold;
+                            p{
+                                font-size: 1.071em;
+                            }
+                        }
                         }
                     }
                 }
-            }
-            .right_2{
-                display: none;
+                .bill_record_d_card{
+                    width: 100%;
+                    background: #404b87;
+                    color: #fff;
+                    border-radius: 0 0 8px 8px;
+                    line-height: 3em;
+                    height: 3em;
+                    margin: -.5em 0 0;
+                    overflow: hidden;
+                    .basic_b{
+                        float: left;
+                        padding: .5em 0 0;
+                        line-height: 2.5em;
+                        height: 3em;
+                        position: relative;
+                        text-align: center;
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: calc(50% + .25em);
+                            transform: translateY(-50%);
+                            width: 1px;
+                            background: #fff;
+                            height: 60%;
+                        }
+                        &:last-child{
+                            &:before{
+                                display: none;
+                            }
+                        }
+                        
+                        &.b12{
+                            width: 12%;
+                        }
+                        &.b15{
+                            width: 15%;
+                        }
+                        &.b16{
+                            width: 16%;
+                        }
+                        &.b18{
+                            width: 18%;
+                        }
+                        &.b19{
+                            width: 19%;
+                        }
+                        &.b20{
+                            width: 20%;
+                        }
+                    }
+                    .b25{
+                        width: 25%;
+                        float: left;
+                        text-align: center;
+                        padding: .5em 0 0;
+                        line-height: 2.5em;
+                        height: 3em;
+                        position: relative;
+
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: calc(50% + .25em);
+                            transform: translateY(-50%);
+                            width: 1px;
+                            background: #fff;
+                            height: 60%;
+                        }
+                        &:last-child{
+                            &:before{
+                                display: none;
+                            }
+                        }
+                    }
+                    span{
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 1.1em;
+                    }
+                }
             }
         }
+        .right_2{
+            display: none;
+        }
     }
-}
+    }
