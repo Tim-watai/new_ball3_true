@@ -250,6 +250,10 @@ button {
       margin-top: 1.143em; }
       .sign_box .content .row .check_wrap {
         display: inline-block; }
+      .sign_box .content .row input[type="checkbox"] {
+        display: none; }
+      .sign_box .content .row input[type="checkbox"]:checked + label .cube:before, .sign_box .content .row input[type="checkbox"]:checked + label .cube:after {
+        display: block; }
       .sign_box .content .row .cube {
         width: 1em;
         height: 1em;
@@ -267,7 +271,22 @@ button {
           background: -webkit-gradient(linear, left top, left bottom, from(#3449b9), to(#8694d8));
           background: -webkit-linear-gradient(top, #3449b9 0%, #8694d8 100%);
           background: -o-linear-gradient(top, #3449b9 0%, #8694d8 100%);
-          background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%); }
+          background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
+          display: none; }
+        .sign_box .content .row .cube:after {
+          position: absolute;
+          content: '';
+          left: 50%;
+          top: 30%;
+          -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+          width: 50%;
+          height: 80%;
+          display: none;
+          border-color: #fff;
+          border-width: 0 2px 2px 0;
+          border-style: solid; }
       .sign_box .content .row .user_t {
         font-size: 1.214em;
         line-height: 1;
