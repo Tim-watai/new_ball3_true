@@ -478,15 +478,15 @@
                 top: .25em ;
                 left: .25em;
                 i{
-                  width: 1em;
-                  height: 1em;
+                  width: .9em;
+                  height: .9em;
                   background: url(../image/icon/talk_text_ic.png)no-repeat;
                   background-size: 200%;
                   margin: 0 .5em 0 0;
                   cursor: pointer;
                   @for $i  from 1 through 2{
                     &.i#{$i}{
-                      background-position-x: ($i - 1) * -1em
+                      background-position-x: ($i - 1) * -.9em
                     }
                   }
                 }
@@ -508,8 +508,11 @@
                 transform: translateY(-50%);
                 line-height: 1;
                 button{
-                  border-radius: 12px;
+                  border-radius: 6px;
                   padding: .125em .5em;
+                  p{
+                    font-size: 1.05em
+                  }
                 }
                 .cancel{
                   border: 1px solid #afafaf;
@@ -528,6 +531,7 @@
                     border-color: #fff transparent transparent transparent;
                     display: inline-block;
                     vertical-align: middle;
+                    margin-left: .5em;
                   }
                 }
               }     

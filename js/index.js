@@ -32,52 +32,7 @@ $(document).ready(function() {
       })
       //<--------------------
       
-      //登入狀態切換
-      let sign_yet = $('.right .sign_yet');
-      let sign_in = $('.right .sign_in');
-      let list_yet = $('.f_wrap .f_bot ul.yet');
-      let list_in = $('.f_wrap .f_bot ul.in');
-      let btn_start = $('header .h_wrap .right');
-      let right_2_live = $('.right_2');
-      let head_wrap = $('.h_wrap');
-      let main_page = $('main');
-      let search_bar = $('.search_bar');
-      let r_wrap = $('.right .wrap');
-        btn_start.click(function(){
-          if(sign_in.hasClass('active')){
-            return  sign_active(false);
-          }else{
-            return  sign_active(true);
-          }
-        })
-
-       function sign_active (sign){
-         console.log('sign ='+sign)
-      if(sign == false){
-                $('aside.fixed_size').removeClass('active')
-                sign_yet.addClass('active');
-                sign_in.removeClass('active');
-                list_yet.addClass('active');
-                right_2_live.removeClass('active');
-                head_wrap.removeClass('live_mode');
-                main_page.removeClass('live_mode');
-                search_bar.addClass('big_size');
-                r_wrap.addClass('big_size');
-        return  list_in.removeClass('active');
-      }else{
-                $('aside.fixed_size').addClass('active')
-                sign_yet.removeClass('active');
-                sign_in.addClass('active');
-                list_yet.removeClass('active');
-                right_2_live.addClass('active');
-                head_wrap.addClass('live_mode');
-                main_page.addClass('live_mode');
-                search_bar.removeClass('big_size');
-                r_wrap.removeClass('big_size');
-        return  list_in.addClass('active');
-      }
-      }
-      //<-----------
+      
 
   
 
@@ -214,14 +169,19 @@ $(document).ready(function() {
       });
       //<------------------
 
-      //註冊彈窗close
+      //註冊&登入_彈窗close
       let close_b = $('aside .sign_box .sign_close');
-      let sign_up = $('aside.sign_up,aside.sign_up_ok');
+      let sign_up = $('aside.sign_up');
       let sign_inin = $('aside.sign_in');
-      $('.test2 li:nth-child(4)').click(function(){
+
+      let sign_up_btn = $('.h_wrap .right .sign_yet span.up');
+      let sign_inin_btn = $('.h_wrap .right .sign_yet span.in');
+
+      $('.test2 li:nth-child(4),.h_wrap .right .sign_yet span.up ,.sign_up_btn').click(function(){
+        $('aside.sign_in.black_bg').removeClass('active');
         sign_up.addClass('active');
       })
-      $('.test2 li:nth-child(5)').click(function(){
+      $('.test2 li:nth-child(5),.h_wrap .right .sign_yet span.in').click(function(){
         sign_inin.addClass('active');
       })
       close_b.click(function(){
@@ -229,7 +189,66 @@ $(document).ready(function() {
         $(this).parent().parents().removeClass('active')
       })
       //<-----------------
+      //登入狀態切換
+      let sign_yet = $('.h_wrap .right .sign_yet');
+      let sign_in = $('.h_wrap .right .sign_in');
+      let list_yet = $('.f_wrap .f_bot ul.yet');
+      let list_in = $('.f_wrap .f_bot ul.in');
+      let btn_start = $('header .h_wrap .right');
+      let btn_start2 = $('.sign_in_btn');
 
+      let right_2_live = $('.right_2');
+      let head_wrap = $('.h_wrap');
+      let main_page = $('main');
+      let search_bar = $('.search_bar');
+      let r_wrap = $('.right .wrap');
+
+      let yet_status = $('.yet_sign_in_status');
+      let in_status = $('.sign_in_status');
+      btn_start2.click(function(){
+          if(sign_in.hasClass('active')){
+            
+            return  sign_active(false);
+          }else{
+            $('aside.sign_in.black_bg').removeClass('active');
+            return  sign_active(true);
+          }
+        })
+
+       function sign_active (sign){
+         console.log('sign ='+sign)
+      if(sign == false){
+                in_status.removeClass('active');
+                yet_status.addClass('active');
+                $('aside.fixed_size').removeClass('active')
+                sign_yet.addClass('active');
+                sign_in.removeClass('active');
+                list_yet.addClass('active');
+                right_2_live.removeClass('active');
+                head_wrap.removeClass('live_mode');
+                main_page.removeClass('live_mode');
+                search_bar.addClass('big_size');
+                r_wrap.addClass('big_size');
+        return  list_in.removeClass('active');
+      }else{
+                in_status.addClass('active');
+                yet_status.removeClass('active');
+                $('aside.fixed_size').addClass('active')
+                sign_yet.removeClass('active');
+                sign_in.addClass('active');
+                list_yet.removeClass('active');
+                right_2_live.addClass('active');
+                head_wrap.addClass('live_mode');
+                main_page.addClass('live_mode');
+                search_bar.removeClass('big_size');
+                r_wrap.removeClass('big_size');
+        return  list_in.addClass('active');
+      }
+      }
+      //<-----------
+
+
+      
       //聲明infor
       let infor_con = $('.infor_con');
       $('.icon_infor').click(function(){

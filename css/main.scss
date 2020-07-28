@@ -40,7 +40,8 @@
 
 //優惠活動
 @import "../css/event/event.scss";
-
+//登入登出切換用
+@import "../css/test_sign.scss";
 @keyframes marquee{
   0%{
       left:100%;
@@ -449,7 +450,8 @@ header {
           text-align: center;
          //0623
         // padding: 1.2em .8em 1.2em .8em;
-          padding: .8em;
+          // padding: .8em;
+          padding: 1.5em .8em;
           position: relative;
           width: $right_list_width;
           i{
