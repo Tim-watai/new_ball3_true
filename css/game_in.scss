@@ -78,21 +78,36 @@
       transform: translate(-50%, -50%);
       li:nth-child(2){
         position: relative;
-        &:before,&:after{
-          content: '';
-          width: .4em;
-          height: .15em;
-          background: #fff;
+        .team_left_point,.team_right_point{
+          width: auto;
+          height: auto;
+          color: #fff;
           position: absolute;
           top: 50%;
-          transform: translateY(-50%);
+          transform: translate(-50%,-50%);
+          font-size: 1.429em;
         }
-        &:before{
-          left: -3.5em;
+        .team_left_point{
+          left: -75%;
         }
-        &:after{
-          right: -3.5em;
+        .team_right_point{
+          left: 175%;
         }
+        // &:before,&:after{
+        //   content: '';
+        //   width: .4em;
+        //   height: .15em;
+        //   background: #fff;
+        //   position: absolute;
+        //   top: 50%;
+        //   transform: translateY(-50%);
+        // }
+        // &:before{
+        //   left: -3.5em;
+        // }
+        // &:after{
+        //   right: -3.5em;
+        // }
       }
     }
     .t_wrap1,.t_wrap2{
@@ -113,7 +128,7 @@
         vertical-align: middle; 
       }
       p{
-        max-width: 9em;
+        max-width: 6em;
         line-height: 1.2;
         overflow: hidden;
         text-overflow: ellipsis;

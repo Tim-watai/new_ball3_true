@@ -290,4 +290,19 @@ function change_methods(ishard){
 }
 //<---------------------------
 
+//shop car double bet購物車
+let shop_car = $('aside .bet_box.fixed_size .title');
+shop_car.click(function(){
+  if($(this).parent().hasClass('active') != true){
+    $(this).parent().addClass('active');
+  }else{
+    $(this).parent().removeClass('active');
+  }
+})
+
+
+//<----------
+
+
+
   }); 

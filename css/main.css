@@ -488,84 +488,112 @@ aside.black_bg {
   background: rgba(0, 0, 0, 0.4);
   z-index: 101; }
 
-aside .bet_box {
+.bet_box {
   width: 36em;
   height: auto;
   border-radius: 15px;
   position: absolute;
   left: calc(50vw - 18em);
   top: 100px;
+  font-size: 16px;
   overflow: hidden; }
-  aside .bet_box.free_w {
+  .bet_box.fixed_size.fixed_size.fixed_size.fixed_size {
+    position: fixed;
+    bottom: -1em;
+    left: 48%;
+    top: auto;
+    -webkit-transform: translateY(88.5%);
+    -ms-transform: translateY(88.5%);
+    transform: translateY(88.5%);
+    z-index: 10;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .bet_box.fixed_size.fixed_size.fixed_size.fixed_size.active {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      .bet_box.fixed_size.fixed_size.fixed_size.fixed_size.active .title .arrow_w {
+        -webkit-transform: translateY(-50%) rotate(270deg);
+        -ms-transform: translateY(-50%) rotate(270deg);
+        transform: translateY(-50%) rotate(270deg); }
+    .bet_box.fixed_size.fixed_size.fixed_size.fixed_size .title {
+      cursor: pointer; }
+    .bet_box.fixed_size.fixed_size.fixed_size.fixed_size .content .bets .computer {
+      padding: 0em 0 1em; }
+  .bet_box.free_w {
     width: auto; }
-  aside .bet_box.pw_w {
+  .bet_box.pw_w {
     width: 21em;
     left: calc(50vw - (21em / 2)); }
-  aside .bet_box.add_card_w {
+  .bet_box.add_card_w {
     width: 47em; }
-  aside .bet_box .hidden_i_block.hidden_i_block.hidden_i_block {
+  .bet_box .hidden_i_block.hidden_i_block.hidden_i_block {
     display: none; }
-    aside .bet_box .hidden_i_block.hidden_i_block.hidden_i_block.active {
+    .bet_box .hidden_i_block.hidden_i_block.hidden_i_block.active {
       display: inline-block; }
-  aside .bet_box.blue .title {
+  .bet_box.blue .title {
     background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
     background: -webkit-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
     background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
     background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%); }
-  aside .bet_box.blue .content {
+  .bet_box.blue .content {
     border-color: #8593d8; }
-    aside .bet_box.blue .content .bets .computer .row button {
+    .bet_box.blue .content .bets .computer .row button {
       background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5d9ef));
       background: -webkit-linear-gradient(top, #fff 0%, #d5d9ef 100%);
       background: -o-linear-gradient(top, #fff 0%, #d5d9ef 100%);
       background: linear-gradient(to bottom, #fff 0%, #d5d9ef 100%);
       border: solid 1px #495cc5; }
-      aside .bet_box.blue .content .bets .computer .row button.bet_btn {
+      .bet_box.blue .content .bets .computer .row button.bet_btn {
         color: #fff;
         background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2e44b7));
         background: -webkit-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
         background: -o-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
         background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
         border: none; }
-    aside .bet_box.blue .content .bets .check_icon {
+    .bet_box.blue .content .bets .check_icon {
       background: #354ecf; }
-    aside .bet_box.blue .content .window_box {
+    .bet_box.blue .content .window_box {
       padding: 1em 1.5em;
       width: 100%;
       color: #4d515d; }
-      aside .bet_box.blue .content .window_box .box_2 {
+      .bet_box.blue .content .window_box .box_2 {
         overflow: hidden; }
-        aside .bet_box.blue .content .window_box .box_2.margin_2 {
+        .bet_box.blue .content .window_box .box_2.margin_2 {
           margin: .8em -2em 0 0; }
-          aside .bet_box.blue .content .window_box .box_2.margin_2:first-child {
+          .bet_box.blue .content .window_box .box_2.margin_2:first-child {
             margin: 0 -2em 0 0; }
-          aside .bet_box.blue .content .window_box .box_2.margin_2 .box .row {
+          .bet_box.blue .content .window_box .box_2.margin_2 .box .row {
             margin: 0 2em 0 0; }
-        aside .bet_box.blue .content .window_box .box_2 .box {
+        .bet_box.blue .content .window_box .box_2 .box {
           float: left;
           width: 50%; }
-          aside .bet_box.blue .content .window_box .box_2 .box .row {
+          .bet_box.blue .content .window_box .box_2 .box .row {
             overflow: hidden;
             line-height: 3em; }
-            aside .bet_box.blue .content .window_box .box_2 .box .row p.name {
+            .bet_box.blue .content .window_box .box_2 .box .row p.name {
               line-height: 100%;
               display: inline-block;
               vertical-align: middle;
               width: 25%; }
-              aside .bet_box.blue .content .window_box .box_2 .box .row p.name.gray {
+              .bet_box.blue .content .window_box .box_2 .box .row p.name.gray {
                 color: #4d515d; }
-            aside .bet_box.blue .content .window_box .box_2 .box .row .right_box {
+            .bet_box.blue .content .window_box .box_2 .box .row .right_box {
               float: right;
               width: 75%; }
-              aside .bet_box.blue .content .window_box .box_2 .box .row .right_box.half {
+              .bet_box.blue .content .window_box .box_2 .box .row .right_box.half {
                 overflow: hidden;
                 margin: 0 -1em 0 0; }
-                aside .bet_box.blue .content .window_box .box_2 .box .row .right_box.half .half_box {
+                .bet_box.blue .content .window_box .box_2 .box .row .right_box.half .half_box {
                   width: calc(50% - 1em);
                   display: inline-block;
                   float: left;
                   margin: 0 1em 0 0; }
-              aside .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size {
+              .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size {
                 border: 1px solid #b9bfdc;
                 border-radius: 8px;
                 padding: 0 1em;
@@ -573,11 +601,11 @@ aside .bet_box {
                 vertical-align: middle;
                 color: #4d515d;
                 width: 100%; }
-                aside .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size.li_2_5 {
+                .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size.li_2_5 {
                   line-height: 2.5em; }
-                aside .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size .size_right {
+                .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size .size_right {
                   float: right; }
-                  aside .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size .size_right .arrow {
+                  .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size .size_right .arrow {
                     width: .5em;
                     height: .9em;
                     background: url(../image/icon/arrow_g.png) no-repeat;
@@ -587,7 +615,7 @@ aside .bet_box {
                     -webkit-transform: rotate(90deg);
                     -ms-transform: rotate(90deg);
                     transform: rotate(90deg); }
-      aside .bet_box.blue .content .window_box .blue_btn {
+      .bet_box.blue .content .window_box .blue_btn {
         color: #fff;
         background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2e44b7));
         background: -webkit-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
@@ -599,44 +627,44 @@ aside .bet_box {
         padding: .5em 4em;
         cursor: pointer;
         font-size: 1.143em; }
-      aside .bet_box.blue .content .window_box .mid_box_margin {
+      .bet_box.blue .content .window_box .mid_box_margin {
         margin: 2em 0 1em;
         text-align: center; }
-      aside .bet_box.blue .content .window_box .t_mid {
+      .bet_box.blue .content .window_box .t_mid {
         text-align: center; }
-  aside .bet_box.red .title {
+  .bet_box.red .title {
     background: -webkit-gradient(linear, left top, left bottom, from(#eb0004), to(#850004));
     background: -webkit-linear-gradient(top, #eb0004 0%, #850004 100%);
     background: -o-linear-gradient(top, #eb0004 0%, #850004 100%);
     background: linear-gradient(to bottom, #eb0004 0%, #850004 100%); }
-  aside .bet_box.red .content {
+  .bet_box.red .content {
     border-color: #e01821; }
-    aside .bet_box.red .content .bets .computer .row button {
+    .bet_box.red .content .bets .computer .row button {
       background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#efd5d5));
       background: -webkit-linear-gradient(top, #fff 0%, #efd5d5 100%);
       background: -o-linear-gradient(top, #fff 0%, #efd5d5 100%);
       background: linear-gradient(to bottom, #fff 0%, #efd5d5 100%);
       border: solid 1px #eb0004; }
-      aside .bet_box.red .content .bets .computer .row button.bet_btn {
+      .bet_box.red .content .bets .computer .row button.bet_btn {
         color: #fff;
         background: -webkit-gradient(linear, left top, left bottom, from(#ec0004), to(#850004));
         background: -webkit-linear-gradient(top, #ec0004 0%, #850004 100%);
         background: -o-linear-gradient(top, #ec0004 0%, #850004 100%);
         background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
         border: none; }
-    aside .bet_box.red .content .bets .check_icon {
+    .bet_box.red .content .bets .check_icon {
       background: #db0006; }
-  aside .bet_box .title {
+  .bet_box .title {
     line-height: 3em;
     position: relative;
     color: #fff;
     padding: 0 1em 0;
     cursor: move; }
-    aside .bet_box .title p, aside .bet_box .title span {
+    .bet_box .title p, .bet_box .title span {
       display: inline-block; }
-    aside .bet_box .title p {
+    .bet_box .title p {
       font-size: 1em; }
-    aside .bet_box .title .num_box {
+    .bet_box .title .num_box {
       display: inline-block;
       background: #fff;
       color: red;
@@ -645,7 +673,7 @@ aside .bet_box {
       line-height: 100%;
       font-size: 1em;
       vertical-align: text-bottom; }
-    aside .bet_box .title .close {
+    .bet_box .title .close {
       width: 1em;
       height: 1em;
       position: absolute;
@@ -655,7 +683,7 @@ aside .bet_box {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       cursor: pointer; }
-      aside .bet_box .title .close:before, aside .bet_box .title .close:after {
+      .bet_box .title .close:before, .bet_box .title .close:after {
         content: '';
         position: absolute;
         background: #fff;
@@ -663,44 +691,59 @@ aside .bet_box {
         height: 1px;
         left: 0;
         top: 50%; }
-      aside .bet_box .title .close:before {
+      .bet_box .title .close:before {
         -webkit-transform: translateY(-50%) rotate(45deg);
         -ms-transform: translateY(-50%) rotate(45deg);
         transform: translateY(-50%) rotate(45deg); }
-      aside .bet_box .title .close:after {
+      .bet_box .title .close:after {
         -webkit-transform: translateY(-50%) rotate(-45deg);
         -ms-transform: translateY(-50%) rotate(-45deg);
         transform: translateY(-50%) rotate(-45deg); }
-  aside .bet_box .content {
+    .bet_box .title .arrow_w {
+      width: .6em;
+      height: 1em;
+      position: absolute;
+      top: 50%;
+      right: 1em;
+      -webkit-transform: translateY(-50%) rotate(90deg);
+      -ms-transform: translateY(-50%) rotate(90deg);
+      transform: translateY(-50%) rotate(90deg);
+      cursor: pointer;
+      background: url(../image/icon/arrow_w.png) no-repeat;
+      background-size: 100%;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+  .bet_box .content {
     border-width: 0 2px 2px 2px;
     border-style: solid;
     border-radius: 0px 0 15px 15px;
     background: #fff;
     overflow: hidden;
     font-size: 14px; }
-    aside .bet_box .content .db {
+    .bet_box .content .db {
       display: block; }
-    aside .bet_box .content .red {
+    .bet_box .content .red {
       color: #f30d0d; }
-    aside .bet_box .content .l_red {
+    .bet_box .content .l_red {
       color: #f31d1d; }
-    aside .bet_box .content .blue {
+    .bet_box .content .blue {
       color: #005aff; }
-    aside .bet_box .content .l_blue {
+    .bet_box .content .l_blue {
       color: #556de7; }
-    aside .bet_box .content .d_blue {
+    .bet_box .content .d_blue {
       color: #061d93; }
-    aside .bet_box .content .gray {
+    .bet_box .content .gray {
       color: #b6bcca; }
-    aside .bet_box .content .mg_bot_5 {
+    .bet_box .content .mg_bot_5 {
       margin: 0 0 .5em; }
-    aside .bet_box .content .mg_bot_1 {
+    .bet_box .content .mg_bot_1 {
       margin: 0 0 1em; }
-    aside .bet_box .content span, aside .bet_box .content p {
+    .bet_box .content span, .bet_box .content p {
       display: inline-block; }
-    aside .bet_box .content .bets .line {
+    .bet_box .content .bets .line {
       border-bottom: 1px solid #e0e1e3; }
-    aside .bet_box .content .bets .line_box {
+    .bet_box .content .bets .line_box {
       display: inline-block;
       width: 2px;
       height: 1.3em;
@@ -708,27 +751,27 @@ aside .bet_box {
       line-height: 1;
       vertical-align: middle;
       margin: 0 .25em 0; }
-    aside .bet_box .content .bets .limit_area {
+    .bet_box .content .bets .limit_area {
       max-height: 18.6em;
       overflow-y: scroll; }
-      aside .bet_box .content .bets .limit_area::-webkit-scrollbar {
+      .bet_box .content .bets .limit_area::-webkit-scrollbar {
         width: 10px; }
-      aside .bet_box .content .bets .limit_area::-webkit-scrollbar-track {
+      .bet_box .content .bets .limit_area::-webkit-scrollbar-track {
         background: #eceef5;
         padding: 0 2px 0; }
-      aside .bet_box .content .bets .limit_area::-webkit-scrollbar-thumb {
+      .bet_box .content .bets .limit_area::-webkit-scrollbar-thumb {
         background: #80829f;
         border-radius: 100px; }
-      aside .bet_box .content .bets .limit_area .li_box {
+      .bet_box .content .bets .limit_area .li_box {
         border-bottom: 1px solid #e0e1e3; }
-    aside .bet_box .content .bets .check_icon {
+    .bet_box .content .bets .check_icon {
       border-radius: 100px;
       position: relative;
       width: 1.5em;
       height: 1.5em;
       vertical-align: middle;
       margin: 0 .25em 0 0; }
-      aside .bet_box .content .bets .check_icon:before {
+      .bet_box .content .bets .check_icon:before {
         content: '';
         position: absolute;
         width: .5em;
@@ -741,17 +784,17 @@ aside .bet_box {
         -webkit-transform: translateX(-50%) rotate(45deg);
         -ms-transform: translateX(-50%) rotate(45deg);
         transform: translateX(-50%) rotate(45deg); }
-    aside .bet_box .content .bets .bet_row {
+    .bet_box .content .bets .bet_row {
       width: 100%;
       font-size: .95em;
       line-height: 2; }
-    aside .bet_box .content .bets .bet_gn {
+    .bet_box .content .bets .bet_gn {
       padding: 0 1em 0;
       color: #4d515d;
       line-height: 2em;
       position: relative;
       width: 100%; }
-      aside .bet_box .content .bets .bet_gn .close {
+      .bet_box .content .bets .bet_gn .close {
         width: 1em;
         height: 1em;
         position: absolute;
@@ -761,7 +804,7 @@ aside .bet_box {
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         cursor: pointer; }
-        aside .bet_box .content .bets .bet_gn .close:before, aside .bet_box .content .bets .bet_gn .close:after {
+        .bet_box .content .bets .bet_gn .close:before, .bet_box .content .bets .bet_gn .close:after {
           content: '';
           position: absolute;
           background: gray;
@@ -769,15 +812,15 @@ aside .bet_box {
           height: 1px;
           left: 0;
           top: 50%; }
-        aside .bet_box .content .bets .bet_gn .close:before {
+        .bet_box .content .bets .bet_gn .close:before {
           -webkit-transform: translateY(-50%) rotate(45deg);
           -ms-transform: translateY(-50%) rotate(45deg);
           transform: translateY(-50%) rotate(45deg); }
-        aside .bet_box .content .bets .bet_gn .close:after {
+        .bet_box .content .bets .bet_gn .close:after {
           -webkit-transform: translateY(-50%) rotate(-45deg);
           -ms-transform: translateY(-50%) rotate(-45deg);
           transform: translateY(-50%) rotate(-45deg); }
-      aside .bet_box .content .bets .bet_gn span {
+      .bet_box .content .bets .bet_gn span {
         width: 1.1em;
         height: 1.1em;
         background: url(../image/icon/list3.png) no-repeat;
@@ -785,49 +828,49 @@ aside .bet_box {
         background-position-y: -2.2em;
         vertical-align: text-bottom;
         margin: 0 .25em 0 0; }
-        aside .bet_box .content .bets .bet_gn span.i3 {
+        .bet_box .content .bets .bet_gn span.i3 {
           background-position-x: -2.2em; }
-        aside .bet_box .content .bets .bet_gn span.i4 {
+        .bet_box .content .bets .bet_gn span.i4 {
           background-position-x: -3.3em; }
-        aside .bet_box .content .bets .bet_gn span.i5 {
+        .bet_box .content .bets .bet_gn span.i5 {
           background-position-x: -4.4em; }
-        aside .bet_box .content .bets .bet_gn span.i6 {
+        .bet_box .content .bets .bet_gn span.i6 {
           background-position-x: -5.5em; }
-        aside .bet_box .content .bets .bet_gn span.i7 {
+        .bet_box .content .bets .bet_gn span.i7 {
           background-position-x: -6.6em; }
-        aside .bet_box .content .bets .bet_gn span.i8 {
+        .bet_box .content .bets .bet_gn span.i8 {
           background-position-x: -7.7em; }
-        aside .bet_box .content .bets .bet_gn span.i9 {
+        .bet_box .content .bets .bet_gn span.i9 {
           background-position-x: -8.8em; }
-        aside .bet_box .content .bets .bet_gn span.i10 {
+        .bet_box .content .bets .bet_gn span.i10 {
           background-position-x: -9.9em; }
-        aside .bet_box .content .bets .bet_gn span.i11 {
+        .bet_box .content .bets .bet_gn span.i11 {
           background-position-x: -11em; }
-        aside .bet_box .content .bets .bet_gn span.i12 {
+        .bet_box .content .bets .bet_gn span.i12 {
           background-position-x: -12.1em; }
-        aside .bet_box .content .bets .bet_gn span.i13 {
+        .bet_box .content .bets .bet_gn span.i13 {
           background-position-x: -13.2em; }
-        aside .bet_box .content .bets .bet_gn span.i14 {
+        .bet_box .content .bets .bet_gn span.i14 {
           background-position-x: -14.3em; }
-        aside .bet_box .content .bets .bet_gn span.i15 {
+        .bet_box .content .bets .bet_gn span.i15 {
           background-position-x: -15.4em; }
-        aside .bet_box .content .bets .bet_gn span.i16 {
+        .bet_box .content .bets .bet_gn span.i16 {
           background-position-x: -16.5em; }
-        aside .bet_box .content .bets .bet_gn span.i17 {
+        .bet_box .content .bets .bet_gn span.i17 {
           background-position-x: -17.6em; }
-        aside .bet_box .content .bets .bet_gn span.i18 {
+        .bet_box .content .bets .bet_gn span.i18 {
           background-position-x: -18.7em; }
-      aside .bet_box .content .bets .bet_gn p {
+      .bet_box .content .bets .bet_gn p {
         font-size: .9em; }
-    aside .bet_box .content .bets .bet_bill {
+    .bet_box .content .bets .bet_bill {
       line-height: 4em;
       height: 4em;
       padding: 0 1em 0;
       color: #4d515d; }
-      aside .bet_box .content .bets .bet_bill .wrap {
+      .bet_box .content .bets .bet_bill .wrap {
         line-height: 1;
         vertical-align: middle; }
-      aside .bet_box .content .bets .bet_bill .team_n {
+      .bet_box .content .bets .bet_bill .team_n {
         margin: 0 .5em 0 0;
         max-width: 10em;
         overflow: hidden;
@@ -838,9 +881,9 @@ aside .bet_box {
         font-weight: bold;
         font-size: 1.1em;
         line-height: 1.3; }
-      aside .bet_box .content .bets .bet_bill .f_box:first-child {
+      .bet_box .content .bets .bet_bill .f_box:first-child {
         position: relative; }
-        aside .bet_box .content .bets .bet_bill .f_box:first-child:before {
+        .bet_box .content .bets .bet_bill .f_box:first-child:before {
           content: '';
           position: absolute;
           width: 1px;
@@ -851,16 +894,16 @@ aside .bet_box {
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
-      aside .bet_box .content .bets .bet_bill .f_box:last-child {
+      .bet_box .content .bets .bet_bill .f_box:last-child {
         padding: 0 .5em 0; }
-    aside .bet_box .content .bets .total {
+    .bet_box .content .bets .total {
       line-height: 3em;
       height: 3em;
       background: #e2e4ed;
       -webkit-box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
       box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
       position: relative; }
-      aside .bet_box .content .bets .total:before {
+      .bet_box .content .bets .total:before {
         content: '';
         position: absolute;
         bottom: 0;
@@ -868,10 +911,10 @@ aside .bet_box {
         width: 100%;
         height: 1px;
         background: #b9c0d2; }
-      aside .bet_box .content .bets .total .f_box {
+      .bet_box .content .bets .total .f_box {
         padding: 0 0 0 1em;
         position: relative; }
-        aside .bet_box .content .bets .total .f_box::before {
+        .bet_box .content .bets .total .f_box::before {
           content: '';
           position: absolute;
           width: 1px;
@@ -882,30 +925,36 @@ aside .bet_box {
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
-    aside .bet_box .content .bets .computer, aside .bet_box .content .bets .check_page {
+    .bet_box .content .bets .computer, .bet_box .content .bets .check_page {
       display: none;
       background: #f8f8f8; }
-      aside .bet_box .content .bets .computer.active, aside .bet_box .content .bets .check_page.active {
+      .bet_box .content .bets .computer.active, .bet_box .content .bets .check_page.active {
         display: block; }
-    aside .bet_box .content .bets .computer {
+    .bet_box .content .bets .computer {
       padding: 1.5em 0 0;
       color: #4d515d;
       overflow: hidden; }
-      aside .bet_box .content .bets .computer .row {
+      .bet_box .content .bets .computer p.c_title {
+        display: block;
+        padding: 0 0 0 1em;
+        line-height: 2em;
+        font-weight: bold;
+        margin: 1em 0; }
+      .bet_box .content .bets .computer .row {
         width: 100%;
         line-height: 2em;
         margin: 0 0 .75em;
         position: relative;
         overflow: hidden; }
-        aside .bet_box .content .bets .computer .row.for_input {
+        .bet_box .content .bets .computer .row.for_input {
           position: relative; }
-          aside .bet_box .content .bets .computer .row.for_input:before {
+          .bet_box .content .bets .computer .row.for_input:before {
             content: '元';
             position: absolute;
             right: .5em;
             top: 2px;
             z-index: 10; }
-        aside .bet_box .content .bets .computer .row input {
+        .bet_box .content .bets .computer .row input {
           line-height: 2em;
           float: right;
           padding: 0 1.5em 0 .5em;
@@ -914,47 +963,47 @@ aside .bet_box {
           font-size: 16px;
           position: relative;
           width: 62%; }
-          aside .bet_box .content .bets .computer .row input.bet_in::-webkit-input-placeholder {
+          .bet_box .content .bets .computer .row input.bet_in::-webkit-input-placeholder {
             color: #ced1e0; }
-          aside .bet_box .content .bets .computer .row input.bet_in:-ms-input-placeholder {
+          .bet_box .content .bets .computer .row input.bet_in:-ms-input-placeholder {
             color: #ced1e0; }
-          aside .bet_box .content .bets .computer .row input.bet_in::-ms-input-placeholder {
+          .bet_box .content .bets .computer .row input.bet_in::-ms-input-placeholder {
             color: #ced1e0; }
-          aside .bet_box .content .bets .computer .row input.bet_in::placeholder {
+          .bet_box .content .bets .computer .row input.bet_in::placeholder {
             color: #ced1e0; }
-        aside .bet_box .content .bets .computer .row button {
+        .bet_box .content .bets .computer .row button {
           line-height: 2em;
           font-size: 16px;
           border-radius: 4px;
           color: #4d515d; }
-        aside .bet_box .content .bets .computer .row p {
+        .bet_box .content .bets .computer .row p {
           line-height: 1;
           vertical-align: middle;
           font-size: .95em; }
-      aside .bet_box .content .bets .computer .f_box.b48:first-child {
+      .bet_box .content .bets .computer .f_box.b48 {
         padding: 0 0 0 1em; }
-      aside .bet_box .content .bets .computer .f_box.b52 .row:not(:last-child) button:first-child {
+      .bet_box .content .bets .computer .f_box.b52 .row:not(:last-child) button:first-child {
         margin: 0 1.7% 0; }
-      aside .bet_box .content .bets .computer .f_box.b52 .row:not(:last-child) button:last-child {
+      .bet_box .content .bets .computer .f_box.b52 .row:not(:last-child) button:last-child {
         margin: 0 4.7% 0 1.7%; }
-      aside .bet_box .content .bets .computer .f_box.b52 .row:last-child button:first-child {
+      .bet_box .content .bets .computer .f_box.b52 .row:last-child button:first-child {
         margin: 0 1.7% 0; }
-      aside .bet_box .content .bets .computer .f_box.b52 .row:last-child button:last-child {
+      .bet_box .content .bets .computer .f_box.b52 .row:last-child button:last-child {
         margin: 0 4.7% 0 0%; }
-    aside .bet_box .content .bets .check_page {
+    .bet_box .content .bets .check_page {
       overflow: hidden;
       padding: 0 0 .25em;
       padding: 1em 0 1em; }
-      aside .bet_box .content .bets .check_page span {
+      .bet_box .content .bets .check_page span {
         vertical-align: middle; }
-      aside .bet_box .content .bets .check_page .f_box {
+      .bet_box .content .bets .check_page .f_box {
         line-height: 4em; }
-        aside .bet_box .content .bets .check_page .f_box.add_h {
+        .bet_box .content .bets .check_page .f_box.add_h {
           line-height: 6em; }
-        aside .bet_box .content .bets .check_page .f_box:first-child {
+        .bet_box .content .bets .check_page .f_box:first-child {
           padding: 0 0 0 1em;
           position: relative; }
-          aside .bet_box .content .bets .check_page .f_box:first-child:before {
+          .bet_box .content .bets .check_page .f_box:first-child:before {
             content: '';
             position: absolute;
             width: 1px;
@@ -965,57 +1014,57 @@ aside .bet_box {
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
-        aside .bet_box .content .bets .check_page .f_box:last-child {
+        .bet_box .content .bets .check_page .f_box:last-child {
           padding: 0 0 0 .5em; }
-        aside .bet_box .content .bets .check_page .f_box .wrap {
+        .bet_box .content .bets .check_page .f_box .wrap {
           vertical-align: middle;
           line-height: 100%; }
-  aside .bet_box li.pw_size {
+  .bet_box li.pw_size {
     padding: 0 1em;
     line-height: 2.5em;
     overflow: hidden;
     margin: 1em 0 0; }
-    aside .bet_box li.pw_size p, aside .bet_box li.pw_size .right_box {
+    .bet_box li.pw_size p, .bet_box li.pw_size .right_box {
       display: inline-block; }
-    aside .bet_box li.pw_size p {
+    .bet_box li.pw_size p {
       color: #4d515d;
       font-size: 1.1em; }
-    aside .bet_box li.pw_size .right_box {
+    .bet_box li.pw_size .right_box {
       float: right;
       height: 2.5em; }
-    aside .bet_box li.pw_size input {
+    .bet_box li.pw_size input {
       height: 100%;
       width: 16em;
       padding: 0 .5em;
       border: 1px solid #b9bfdc;
       border-radius: 8px; }
-  aside .bet_box li.pw_btn_area {
+  .bet_box li.pw_btn_area {
     padding: 0 1em;
     line-height: 2.5em;
     overflow: hidden;
     margin: 1.5em 0 1em; }
-    aside .bet_box li.pw_btn_area .parent {
+    .bet_box li.pw_btn_area .parent {
       margin: 0 -.5em 0 0;
       overflow: hidden; }
-    aside .bet_box li.pw_btn_area .btn_wrap {
+    .bet_box li.pw_btn_area .btn_wrap {
       width: calc(50% - .5em);
       margin: 0 .5em 0 0;
       float: left; }
-    aside .bet_box li.pw_btn_area button {
+    .bet_box li.pw_btn_area button {
       height: 2.5em;
       width: 100%;
       border-radius: 8px; }
-      aside .bet_box li.pw_btn_area button p {
+      .bet_box li.pw_btn_area button p {
         font-size: 1.1em;
         font-weight: bold; }
-      aside .bet_box li.pw_btn_area button.check {
+      .bet_box li.pw_btn_area button.check {
         color: #fff;
         border: none;
         background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
         background: -webkit-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
         background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
         background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%); }
-      aside .bet_box li.pw_btn_area button.cancel {
+      .bet_box li.pw_btn_area button.cancel {
         color: #4d515d;
         border: 1px solid #495cc5;
         background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
@@ -1298,20 +1347,20 @@ aside .bet_box {
     transform: translate(-50%, -50%); }
     .game_in .mid li:nth-child(2) {
       position: relative; }
-      .game_in .mid li:nth-child(2):before, .game_in .mid li:nth-child(2):after {
-        content: '';
-        width: .4em;
-        height: .15em;
-        background: #fff;
+      .game_in .mid li:nth-child(2) .team_left_point, .game_in .mid li:nth-child(2) .team_right_point {
+        width: auto;
+        height: auto;
+        color: #fff;
         position: absolute;
         top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%); }
-      .game_in .mid li:nth-child(2):before {
-        left: -3.5em; }
-      .game_in .mid li:nth-child(2):after {
-        right: -3.5em; }
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 1.429em; }
+      .game_in .mid li:nth-child(2) .team_left_point {
+        left: -75%; }
+      .game_in .mid li:nth-child(2) .team_right_point {
+        left: 175%; }
   .game_in .t_wrap1, .game_in .t_wrap2 {
     display: inline-block;
     color: #fff;
@@ -1328,7 +1377,7 @@ aside .bet_box {
       line-height: 1;
       vertical-align: middle; }
     .game_in .t_wrap1 p, .game_in .t_wrap2 p {
-      max-width: 9em;
+      max-width: 6em;
       line-height: 1.2;
       overflow: hidden;
       -o-text-overflow: ellipsis;
@@ -5840,7 +5889,7 @@ header {
     position: fixed;
     top: 120px;
     z-index: 100;
-    right: 0;
+    right: -4px;
     -webkit-transform: translateX(74%);
     -ms-transform: translateX(74%);
     transform: translateX(74%);
@@ -5859,7 +5908,88 @@ header {
         background: #eaedf4; }
     .container .search_group .row {
       border-radius: 20px 0 0 20px;
-      line-height: 4em; }
+      line-height: 4.786em; }
+    .container .search_group .ul_wrap {
+      position: absolute;
+      top: 4.786em;
+      right: 0;
+      max-height: 453px;
+      line-height: 2em;
+      overflow-y: scroll;
+      border-radius: 0 0 0 30px; }
+      .container .search_group .ul_wrap::-webkit-scrollbar {
+        width: 5px;
+        position: absolute;
+        left: 0; }
+      .container .search_group .ul_wrap::-webkit-scrollbar-thumb {
+        background: #fff;
+        border-radius: 10px; }
+      .container .search_group .ul_wrap::-webkit-scrollbar-track {
+        background: #7993ab;
+        border-radius: 10px; }
+      .container .search_group .ul_wrap .gt {
+        width: 248px;
+        color: #4d515d; }
+        .container .search_group .ul_wrap .gt .title {
+          padding: 1em;
+          position: relative;
+          background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#e2e6f5));
+          background: -webkit-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
+          background: -o-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
+          background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%); }
+          .container .search_group .ul_wrap .gt .title .arrow {
+            background: url(../image/icon/arrow_d.png) no-repeat;
+            background-size: 100%;
+            width: .5em;
+            height: .8em;
+            margin: 0 0 0 .125em;
+            vertical-align: middle;
+            position: absolute;
+            -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+            right: 1em;
+            top: 50%;
+            cursor: pointer;
+            -webkit-transition: all ease-in-out .2s;
+            -o-transition: all ease-in-out .2s;
+            transition: all ease-in-out .2s; }
+        .container .search_group .ul_wrap .gt li {
+          padding: 1em;
+          line-height: 2em;
+          background: #fff;
+          border-bottom: 1px solid #c8cedf;
+          position: relative;
+          -webkit-transition: all ease-in-out .2s;
+          -o-transition: all ease-in-out .2s;
+          transition: all ease-in-out .2s; }
+          .container .search_group .ul_wrap .gt li span {
+            width: 1.6em;
+            height: 1.6em;
+            background: url(../image/icon/s_game_icon.png) no-repeat;
+            background-size: 300%;
+            vertical-align: middle;
+            margin: 0 .5em 0 0; }
+            .container .search_group .ul_wrap .gt li span.i1 {
+              background-position: 0em 0; }
+            .container .search_group .ul_wrap .gt li span.i2 {
+              background-position: -1.6em 0; }
+            .container .search_group .ul_wrap .gt li span.i3 {
+              background-position: -3.2em 0; }
+          .container .search_group .ul_wrap .gt li p {
+            display: inline-block;
+            position: absolute;
+            right: 1em;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            top: 50%; }
+        .container .search_group .ul_wrap .gt p, .container .search_group .ul_wrap .gt span {
+          display: inline-block; }
+        .container .search_group .ul_wrap .gt.active .title .arrow {
+          -webkit-transform: translate(0%, -50%) rotate(90deg);
+          -ms-transform: translate(0%, -50%) rotate(90deg);
+          transform: translate(0%, -50%) rotate(90deg); }
     .container .search_group .s_box {
       display: inline-block;
       font-size: .9em;
@@ -5909,76 +6039,6 @@ header {
       line-height: 100%;
       vertical-align: middle;
       position: relative; }
-      .container .search_group .s_wrap .ul_wrap {
-        position: absolute;
-        top: 3em;
-        left: 0;
-        max-height: 453px;
-        overflow-y: scroll;
-        border-radius: 0 0 0 30px; }
-        .container .search_group .s_wrap .ul_wrap .gt {
-          width: 248px;
-          color: #4d515d; }
-          .container .search_group .s_wrap .ul_wrap .gt .title {
-            padding: 1em;
-            position: relative;
-            background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#e2e6f5));
-            background: -webkit-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
-            background: -o-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
-            background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%); }
-            .container .search_group .s_wrap .ul_wrap .gt .title .arrow {
-              background: url(../image/icon/arrow_d.png) no-repeat;
-              background-size: 100%;
-              width: .5em;
-              height: .8em;
-              margin: 0 0 0 .125em;
-              vertical-align: middle;
-              position: absolute;
-              -webkit-transform: translate(0%, -50%);
-              -ms-transform: translate(0%, -50%);
-              transform: translate(0%, -50%);
-              right: 1em;
-              top: 50%;
-              cursor: pointer;
-              -webkit-transition: all ease-in-out .2s;
-              -o-transition: all ease-in-out .2s;
-              transition: all ease-in-out .2s; }
-          .container .search_group .s_wrap .ul_wrap .gt li {
-            padding: 1em;
-            line-height: 2em;
-            background: #fff;
-            border-bottom: 1px solid #c8cedf;
-            position: relative;
-            -webkit-transition: all ease-in-out .2s;
-            -o-transition: all ease-in-out .2s;
-            transition: all ease-in-out .2s; }
-            .container .search_group .s_wrap .ul_wrap .gt li span {
-              width: 1.6em;
-              height: 1.6em;
-              background: url(../image/icon/s_game_icon.png) no-repeat;
-              background-size: 300%;
-              vertical-align: middle;
-              margin: 0 .5em 0 0; }
-              .container .search_group .s_wrap .ul_wrap .gt li span.i1 {
-                background-position: 0em 0; }
-              .container .search_group .s_wrap .ul_wrap .gt li span.i2 {
-                background-position: -1.6em 0; }
-              .container .search_group .s_wrap .ul_wrap .gt li span.i3 {
-                background-position: -3.2em 0; }
-            .container .search_group .s_wrap .ul_wrap .gt li p {
-              display: inline-block;
-              position: absolute;
-              right: 1em;
-              -webkit-transform: translateY(-50%);
-              -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
-              top: 50%; }
-          .container .search_group .s_wrap .ul_wrap .gt p, .container .search_group .s_wrap .ul_wrap .gt span {
-            display: inline-block; }
-          .container .search_group .s_wrap .ul_wrap .gt.active .title .arrow {
-            -webkit-transform: translate(0%, -50%) rotate(90deg);
-            -ms-transform: translate(0%, -50%) rotate(90deg);
-            transform: translate(0%, -50%) rotate(90deg); }
       .container .search_group .s_wrap input {
         -webkit-box-shadow: inset 0 0 2px 2px #c6cae0;
         box-shadow: inset 0 0 2px 2px #c6cae0;
@@ -5986,30 +6046,36 @@ header {
         padding: .3em .25em .25em 1em;
         border-radius: 15px;
         display: inline-block;
-        vertical-align: bottom; }
+        vertical-align: middle;
+        line-height: 2em;
+        font-size: 1em; }
         .container .search_group .s_wrap input::-webkit-input-placeholder {
           color: #8f94a4;
-          font-size: 1em; }
+          font-size: 1.071em; }
         .container .search_group .s_wrap input:-ms-input-placeholder {
           color: #8f94a4;
-          font-size: 1em; }
+          font-size: 1.071em; }
         .container .search_group .s_wrap input::-ms-input-placeholder {
           color: #8f94a4;
-          font-size: 1em; }
+          font-size: 1.071em; }
         .container .search_group .s_wrap input::placeholder {
           color: #8f94a4;
-          font-size: 1em; }
+          font-size: 1.071em; }
       .container .search_group .s_wrap button {
         width: auto;
         height: auto;
-        padding: .125em .9em;
+        padding: .1em .9em 0em;
         margin: 0 1em 0 .5em;
         background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
         background: -webkit-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
         background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
         background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
         color: #fff;
-        border-radius: 6px; }
+        border-radius: 6px;
+        line-height: 2em;
+        vertical-align: middle; }
+        .container .search_group .s_wrap button p {
+          font-size: 1.214em; }
   .container .f_wrap {
     position: fixed;
     right: 0;
