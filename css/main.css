@@ -445,48 +445,42 @@ button {
             background: -o-linear-gradient(top, #a17045 0%, #dfb995 100%);
             background: linear-gradient(to bottom, #a17045 0%, #dfb995 100%); }
 
-aside .b33 {
-  width: 33.33%; }
-
-aside .b30 {
-  width: 30%; }
-
-aside .b48 {
-  width: 48%; }
-
-aside .b50 {
-  width: 50%; }
-
-aside .b52 {
-  width: 52%; }
-
-aside .b617 {
-  width: 61.7%; }
-
-aside.ch_pw {
+aside {
   display: none; }
-  aside.ch_pw.active {
+  aside.active {
     display: block; }
-
-aside.warning {
-  display: none; }
-  aside.warning.active {
-    display: block; }
-
-aside.add_b_card {
-  display: none; }
-  aside.add_b_card.active {
-    display: block; }
-
-aside .f_box {
-  float: left; }
-
-aside.black_bg {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 101; }
+  aside .b33 {
+    width: 33.33%; }
+  aside .b30 {
+    width: 30%; }
+  aside .b48 {
+    width: 48%; }
+  aside .b50 {
+    width: 50%; }
+  aside .b52 {
+    width: 52%; }
+  aside .b617 {
+    width: 61.7%; }
+  aside.ch_pw {
+    display: none; }
+    aside.ch_pw.active {
+      display: block; }
+  aside.warning {
+    display: none; }
+    aside.warning.active {
+      display: block; }
+  aside.add_b_card {
+    display: none; }
+    aside.add_b_card.active {
+      display: block; }
+  aside .f_box {
+    float: left; }
+  aside.black_bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 101; }
 
 .bet_box {
   width: 36em;
@@ -500,7 +494,7 @@ aside.black_bg {
   .bet_box.fixed_size.fixed_size.fixed_size.fixed_size {
     position: fixed;
     bottom: -1em;
-    left: 48%;
+    left: 36.8%;
     top: auto;
     -webkit-transform: translateY(88.5%);
     -ms-transform: translateY(88.5%);
@@ -659,7 +653,7 @@ aside.black_bg {
     position: relative;
     color: #fff;
     padding: 0 1em 0;
-    cursor: move; }
+    cursor: auto; }
     .bet_box .title p, .bet_box .title span {
       display: inline-block; }
     .bet_box .title p {
@@ -979,7 +973,7 @@ aside.black_bg {
         .bet_box .content .bets .computer .row p {
           line-height: 1;
           vertical-align: middle;
-          font-size: .95em; }
+          font-size: 1em; }
       .bet_box .content .bets .computer .f_box.b48 {
         padding: 0 0 0 1em; }
       .bet_box .content .bets .computer .f_box.b52 .row:not(:last-child) button:first-child {
@@ -5808,9 +5802,11 @@ body {
     z-index: 10;
     text-align: center;
     font-size: 14px; }
+    .test_box .test2 li {
+      margin-bottom: 1em; }
   .test_box .all_test {
     position: absolute;
-    top: 42%;
+    top: 62%;
     left: 2%;
     line-height: 1em;
     z-index: 10;

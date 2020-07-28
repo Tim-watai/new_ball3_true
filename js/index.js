@@ -54,6 +54,7 @@ $(document).ready(function() {
        function sign_active (sign){
          console.log('sign ='+sign)
       if(sign == false){
+                $('aside.fixed_size').removeClass('active')
                 sign_yet.addClass('active');
                 sign_in.removeClass('active');
                 list_yet.addClass('active');
@@ -64,6 +65,7 @@ $(document).ready(function() {
                 r_wrap.addClass('big_size');
         return  list_in.removeClass('active');
       }else{
+                $('aside.fixed_size').addClass('active')
                 sign_yet.removeClass('active');
                 sign_in.addClass('active');
                 list_yet.removeClass('active');
@@ -105,57 +107,57 @@ $(document).ready(function() {
       
       //彈窗
       //彈窗移動
-      let isMove = true;
       //單關移動
-      $('.bet_box.blue .title').mousedown(
-          function(event){
-          let isMove = true;
-          let abs_x = event.pageX - $('aside .bet_box.blue').offset().left;
-          let abs_y = event.pageY - $('aside .bet_box.blue').offset().top;
-          //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
-          let e_px = event.pageX;
-          let leftt = $('aside .bet_box').offset().left;
-          $(document).mousemove(
-            function(event){
-              if (isMove) {
-              let obj = $('aside.bet_solo .bet_box');
-              obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
-              }
-              //move接up
-            }).mouseup(
-          function () {
-            isMove = false;
-          }
-      )//up
-        })//down
+      // $('.bet_box.blue .title').mousedown(
+      //     function(event){
+      //     let isMove = true;
+      //     let abs_x = event.pageX - $('aside .bet_box.blue').offset().left;
+      //     let abs_y = event.pageY - $('aside .bet_box.blue').offset().top;
+      //     //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
+      //     let e_px = event.pageX;
+      //     let leftt = $('aside .bet_box').offset().left;
+      //     $(document).mousemove(
+      //       function(event){
+      //         if (isMove) {
+      //         let obj = $('aside.bet_solo .bet_box');
+      //         obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
+      //         }
+      //         //move接up
+      //       }).mouseup(
+      //     function () {
+      //       isMove = false;
+      //     }
+      // )//up
+      //   })
+        //down
       
       //<------
       //串關移動
       
-      $('.bet_box.red .title').mousedown(
-          function(event){
-          let isMove = true;
-          let abs_x = event.pageX - $('aside .bet_box.red').offset().left;
-          let abs_y = event.pageY - $('aside .bet_box.red').offset().top;
-          //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
-          let e_px = event.pageX;
-          let leftt = $('aside .bet_box').offset().left;
+      // $('.bet_box.red .title').mousedown(
+      //     function(event){
+      //     let isMove = true;
+      //     let abs_x = event.pageX - $('aside .bet_box.red').offset().left;
+      //     let abs_y = event.pageY - $('aside .bet_box.red').offset().top;
+      //     //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
+      //     let e_px = event.pageX;
+      //     let leftt = $('aside .bet_box').offset().left;
       
-          $(document).mousemove(
-            function(event){
-              if (isMove) {
-              let obj = $('aside.bet_double .bet_box');
-              obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
-                //滑鼠距離 - 物件當前距離abs = 增量
+      //     $(document).mousemove(
+      //       function(event){
+      //         if (isMove) {
+      //         let obj = $('aside.bet_double .bet_box');
+      //         obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
+      //           //滑鼠距離 - 物件當前距離abs = 增量
         
-              }
-              //move接up
-            }).mouseup(
-          function () {
-            isMove = false;
-          }
-      )//up
-        })//down
+      //         }
+      //         //move接up
+      //       }).mouseup(
+      //     function () {
+      //       isMove = false;
+      //     }
+      // )//up
+      //   })//down
       
       //<------
       
@@ -164,38 +166,51 @@ $(document).ready(function() {
       $('.test2 li:nth-child(1)').click(function(){
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
-        $('.bet_double').css('display','none');
-        $('.bet_solo').css('display','block');
+        $('aside.bet_solo').addClass('active');
       });
       //單關確認
-      $('.bet_btn').click(function(){
-        $('.computer').removeClass('active');
-        $('.check_page ,.hidden_i_block').addClass('active');
+      $('.bet_solo .bet_btn').click(function(){
+        $('.bet_solo .computer').removeClass('active');
+        $('.bet_solo .check_page ,.hidden_i_block').addClass('active');
       });
       //<------------------
       //串關
       $('.test2 li:nth-child(2)').click(function(){
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
-        $('.bet_double').css('display','block');
-        $('.bet_solo').css('display','none');
+        $('aside.fixed_size').addClass('active')
+        $('aside.bet_solo').removeClass('active');
       });
       //<------------------
+      //shop car double bet購物車
+        let shop_car_title = $('aside .bet_box.fixed_size .title');
+        let shop_car_check = $('.double_bet_btn')
+        shop_car_title.click(function(){
+          if($(this).parent().hasClass('active') != true){
+            $(this).parent().addClass('active');
+          }else{
+            $(this).parent().removeClass('active');
+          }
+        })
+        shop_car_check.click(function(){
+          console.log('shop check');
+          $('aside.bet_double').addClass('active');
+        })
+        //<----------
       //關閉彈窗
-      $('aside .bet_box .close').click(function(){
+      $('aside .bet_box .title .close').click(function(){
         $('.test2 li').siblings().removeClass('active');
-      $('.bet_double').css('display','none');
-      $('.bet_solo').css('display','none');
-      //重製注單
-      $('.computer').addClass('active');
-        $('.check_page ,.hidden_i_block ').removeClass('active');
+        if($(this).parents().hasClass('bet_double') == true){
+          return $(this).parents().removeClass('active');
+        }
+      $('aside.bet_solo').removeClass('active');
       })
       //關閉all彈窗
       $('.test2 li:nth-child(3)').click(function(){
         $(this).siblings().removeClass('active');
       
-        $('.bet_double').css('display','none');
-        $('.bet_solo').css('display','none');
+        $('.bet_double').removeClass('active');
+        $('.bet_solo').removeClass('active');
       });
       //<------------------
 
@@ -290,18 +305,7 @@ function change_methods(ishard){
 }
 //<---------------------------
 
-//shop car double bet購物車
-let shop_car = $('aside .bet_box.fixed_size .title');
-shop_car.click(function(){
-  if($(this).parent().hasClass('active') != true){
-    $(this).parent().addClass('active');
-  }else{
-    $(this).parent().removeClass('active');
-  }
-})
 
-
-//<----------
 
 
 
