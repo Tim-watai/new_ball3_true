@@ -75,6 +75,10 @@
             background: #fff;
             border-radius: 4px;
             cursor: pointer;
+            &:hover{
+              color: #fff;
+              background: #4d515d;
+            }
           }
         }
         .l_box{
@@ -518,11 +522,19 @@
                   border: 1px solid #afafaf;
                   color: #afafaf;
                   background: #fff;
+                  margin-right: .5em;
+                  &:hover{
+                    background: #afafaf;
+                    color: #fff;
+                  }
                 }
                 .send{
                   border: 1px solid #8593d8;
                   color: #fff;
                   background: linear-gradient(to bottom, #8593d8 0%, #3d50bb 100%);
+                  &:hover{
+                    background: linear-gradient(to bottom, #3d50bb 0%,  #8593d8 100%);
+                  }
                   .tri{
                     width: 0;
                     height: 0;

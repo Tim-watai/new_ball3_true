@@ -542,6 +542,11 @@ aside {
       background: -o-linear-gradient(top, #fff 0%, #d5d9ef 100%);
       background: linear-gradient(to bottom, #fff 0%, #d5d9ef 100%);
       border: solid 1px #495cc5; }
+      .bet_box.blue .content .bets .computer .row button:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#d5d9ef), to(#fff));
+        background: -webkit-linear-gradient(top, #d5d9ef 0%, #fff 100%);
+        background: -o-linear-gradient(top, #d5d9ef 0%, #fff 100%);
+        background: linear-gradient(to bottom, #d5d9ef 0%, #fff 100%); }
       .bet_box.blue .content .bets .computer .row button.bet_btn {
         color: #fff;
         background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2e44b7));
@@ -549,6 +554,11 @@ aside {
         background: -o-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
         background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
         border: none; }
+        .bet_box.blue .content .bets .computer .row button.bet_btn:hover {
+          background: -webkit-gradient(linear, left top, left bottom, from(#2e44b7), to(#8f9cdc));
+          background: -webkit-linear-gradient(top, #2e44b7 0%, #8f9cdc 100%);
+          background: -o-linear-gradient(top, #2e44b7 0%, #8f9cdc 100%);
+          background: linear-gradient(to bottom, #2e44b7 0%, #8f9cdc 100%); }
     .bet_box.blue .content .bets .check_icon {
       background: #354ecf; }
     .bet_box.blue .content .window_box {
@@ -639,6 +649,11 @@ aside {
       background: -o-linear-gradient(top, #fff 0%, #efd5d5 100%);
       background: linear-gradient(to bottom, #fff 0%, #efd5d5 100%);
       border: solid 1px #eb0004; }
+      .bet_box.red .content .bets .computer .row button:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#efd5d5), to(#fff));
+        background: -webkit-linear-gradient(top, #efd5d5 0%, #fff 100%);
+        background: -o-linear-gradient(top, #efd5d5 0%, #fff 100%);
+        background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%); }
       .bet_box.red .content .bets .computer .row button.bet_btn {
         color: #fff;
         background: -webkit-gradient(linear, left top, left bottom, from(#ec0004), to(#850004));
@@ -646,6 +661,11 @@ aside {
         background: -o-linear-gradient(top, #ec0004 0%, #850004 100%);
         background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
         border: none; }
+        .bet_box.red .content .bets .computer .row button.bet_btn:hover {
+          background: -webkit-gradient(linear, left top, left bottom, from(#850004), to(#ec0004));
+          background: -webkit-linear-gradient(top, #850004 0%, #ec0004 100%);
+          background: -o-linear-gradient(top, #850004 0%, #ec0004 100%);
+          background: linear-gradient(to bottom, #850004 0%, #ec0004 100%); }
     .bet_box.red .content .bets .check_icon {
       background: #db0006; }
   .bet_box .title {
@@ -2148,6 +2168,9 @@ aside {
           background: #fff;
           border-radius: 4px;
           cursor: pointer; }
+          .live_page .live_title .wrap .r_box p:hover {
+            color: #fff;
+            background: #4d515d; }
       .live_page .live_title .wrap .l_box {
         float: left;
         width: 50%; }
@@ -2539,7 +2562,11 @@ aside {
             .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .cancel, .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .cancel {
               border: 1px solid #afafaf;
               color: #afafaf;
-              background: #fff; }
+              background: #fff;
+              margin-right: .5em; }
+              .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .cancel:hover, .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .cancel:hover {
+                background: #afafaf;
+                color: #fff; }
             .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send, .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send {
               border: 1px solid #8593d8;
               color: #fff;
@@ -2547,6 +2574,11 @@ aside {
               background: -webkit-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
               background: -o-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
               background: linear-gradient(to bottom, #8593d8 0%, #3d50bb 100%); }
+              .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send:hover, .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send:hover {
+                background: -webkit-gradient(linear, left top, left bottom, from(#3d50bb), to(#8593d8));
+                background: -webkit-linear-gradient(top, #3d50bb 0%, #8593d8 100%);
+                background: -o-linear-gradient(top, #3d50bb 0%, #8593d8 100%);
+                background: linear-gradient(to bottom, #3d50bb 0%, #8593d8 100%); }
               .live_page .live_games .live_content .live_talk .talk_input .talk_btn .button_wrap .send .tri, .live_page .live_games .talk_content .live_talk .talk_input .talk_btn .button_wrap .send .tri {
                 width: 0;
                 height: 0;
@@ -2805,6 +2837,11 @@ main.my_page.my_page.my_page {
             font-weight: bold; }
             main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .bill_right button p {
               font-size: 1.071em; }
+            main.my_page.my_page.my_page .right .wrap .game_in.my_page_bill .bill_right button:hover {
+              background: -webkit-gradient(linear, left top, left bottom, from(#b6885f), to(#dfb995));
+              background: -webkit-linear-gradient(top, #b6885f 0%, #dfb995 100%);
+              background: -o-linear-gradient(top, #b6885f 0%, #dfb995 100%);
+              background: linear-gradient(to bottom, #b6885f 0%, #dfb995 100%); }
       main.my_page.my_page.my_page .right .wrap .bill_record_d_card {
         width: 100%;
         background: #404b87;
@@ -6286,6 +6323,11 @@ header {
           vertical-align: middle;
           position: relative;
           z-index: 1; }
+          .container main .right .search_bar .back_wrap:hover {
+            background: -webkit-gradient(linear, left top, left bottom, from(#2f45b7), to(#8f9cdc));
+            background: -webkit-linear-gradient(top, #2f45b7 0%, #8f9cdc 100%);
+            background: -o-linear-gradient(top, #2f45b7 0%, #8f9cdc 100%);
+            background: linear-gradient(to bottom, #2f45b7 0%, #8f9cdc 100%); }
           .container main .right .search_bar .back_wrap .arrow_w {
             background: url(../image/icon/arrow_w.png) no-repeat;
             background-size: 100%;
@@ -6311,9 +6353,9 @@ header {
           cursor: pointer;
           padding: 2px 0 0;
           position: relative; }
-          .container main .right .search_bar p.active {
+          .container main .right .search_bar p.active, .container main .right .search_bar p:hover {
             color: #6272cc; }
-            .container main .right .search_bar p.active:before {
+            .container main .right .search_bar p.active:before, .container main .right .search_bar p:hover:before {
               content: '';
               position: absolute;
               bottom: -.8em;

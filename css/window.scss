@@ -114,10 +114,16 @@ aside{
                             button{
                                 background: linear-gradient(to bottom ,#fff 0%,#d5d9ef 100%);
                                 border: solid 1px #495cc5;
+                                &:hover{
+                                    background: linear-gradient(to bottom ,#d5d9ef 0%,#fff 100%);
+                                }
                                 &.bet_btn{
                                     color: #fff;
                                     background: linear-gradient(to bottom ,#8f9cdc 0%,#2e44b7 100%);
                                     border: none;
+                                    &:hover{
+                                        background: linear-gradient(to bottom ,#2e44b7 0%,#8f9cdc 100%);
+                                    }
                                 }
                             }
                         }
@@ -241,10 +247,16 @@ aside{
                             button{
                                 background: linear-gradient(to bottom ,#fff 0%,#efd5d5 100%);
                                 border: solid 1px #eb0004;
+                                &:hover{
+                                    background: linear-gradient(to bottom ,#efd5d5 0%,#fff 100%);
+                                }
                                 &.bet_btn{
                                     color: #fff;
                                     background: linear-gradient(to bottom ,#ec0004 0%,#850004 100%);
                                     border: none;
+                                    &:hover{
+                                        background: linear-gradient(to bottom ,#850004 0%,#ec0004 100%);
+                                    }
                                 }
                             }
                         }
@@ -578,7 +590,6 @@ aside{
                     button{
                         line-height: 2em;
                         font-size: 16px;
-                        
                         border-radius: 4px;
                         color: #4d515d;
                        

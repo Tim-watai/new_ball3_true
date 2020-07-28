@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=1920,user-scalable=yes">
   <!--RWD-->
   <!--main.css-->
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="../../css/main.css"/>
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- swiper -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
-  <title>new_ball_2</title>
+  <title>special</title>
 </head>
 
 <header class="cn">
@@ -23,14 +23,14 @@
     </p>
   </div>
   <div class="h_box">
-    <div class="h_wrap">
+    <div class="h_wrap live_mode">
       <div class="logo">
         <h1></h1>
       </div>
       <ul class="m_yet">
         <li class="active">
           <p>首頁</p>
-          <a href="index.html"></a>
+          <a href="../../index.html"></a>
         </li>
         <li>
           <p>熱門賽事</p>
@@ -50,13 +50,13 @@
         </li>
       </ul>
       <div class="right">
-        <div class="sign_yet active">
+        <div class="sign_yet">
           <div class="wrap">
             <i></i>
             <p><span class="in">登入</span> / <span class="up">註冊</span></p>
           </div>
         </div>
-        <div class="sign_in">
+        <div class="sign_in active">
           <div class="wrap">
             <div class="row">
               <p class="gray">user545</p>
@@ -127,21 +127,7 @@
   </div>
 </header>
 <!--藉由containerfixed 使用mobile模式-->
-<div class="test_box">
-  <div class="en_cn">
-    <li class="en">英文</li>
-    <li class="cn">中文</li>
-  </div>
 
-
-  <div class="test2">
-    <li>單關投注<br>登入後出現</li>
-  </div>
-  <div class="all_test">
-    <li>關閉測試鈕</li>
-    <li>開啟測試鈕</li>
-  </div>
-</div>
 
 <aside class="bet_solo black_bg">
   <div class="bet_box blue">
@@ -599,8 +585,8 @@
 </aside>
 
 <div class="container cn">
-  <!--串關購物車 shopcar 在串關投注頁面出現_bet_page.html-->
-  <aside class="fixed_size bet_double" style = "display: none;">
+  <!--串關購物車 shopcar-->
+  <aside class="fixed_size bet_double active">
     <div class="bet_box red fixed_size">
       <div class="title">
         <span class="num_box">4</span>
@@ -771,7 +757,7 @@
           </li>
           <li>
             <div class="computer active">
-              <p class="c_title"><span class="line_box"></span>混合過關&ensp;4串一</p>
+              <p class="c_title"><span class="line_box"></span>混合過關 4串一</p>
               <div class="f_box b48">
                 <div class="row for_input">
                   <p>投注金額</p>
@@ -825,22 +811,19 @@
       </div>
     </div>
   </aside>
-  <main>
+  <main class="live_mode">
     <div class="right">
       <!--0623 card div是方格會被float left影響 使用子物件請用span 或者p i-->
       <div class="search_bar">
       </div><!--search_bar-->
       <!--已登入介面-->
-      <div class="sign_in_status">
+      <div class="sign_in_status active">
         <div class="search_bar fixed">
-          <p class="active">所有賽事</p>
+          <p>所有賽事</p>
         <div class="line"></div>
           <p>早盤投注</p>
         <div class="line"></div>
-          <p>
-            串關投注
-            <a href="./html/special/bet_page.html"></a>
-          </p>
+          <p class="active">串關投注</p>
         <div class="line"></div>
           <p>比賽結果</p>
           <div class="line"></div>
@@ -1773,8 +1756,8 @@
           </ul>
       </div>
       <!--未登入介面-->
-      <div class="yet_sign_in_status active">
-        <div class="search_bar big_size fixed">
+      <div class="yet_sign_in_status">
+        <div class="search_bar fixed">
           <div class="day_wrap">
             <div class="l_btn"></div>
             <p>今日</p>
@@ -1843,13 +1826,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4&ensp;-&ensp;2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>3&ensp;-&ensp;0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -1867,13 +1850,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4&ensp;-&ensp;2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left "><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>3&ensp;-&ensp;0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -1891,13 +1874,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4&ensp;-&ensp;2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left "><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>3&ensp;-&ensp;0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -1915,13 +1898,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4&ensp;-&ensp;2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left "><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>3&ensp;-&ensp;0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -2960,13 +2943,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4&ensp;-&ensp;2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid gray">
-              <p>3&ensp;-&ensp;0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -2984,13 +2967,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4&ensp;-&ensp;2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid gray">
-              <p>3&ensp;-&ensp;0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -3008,13 +2991,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4&ensp;-&ensp;2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid gray">
-              <p>3&ensp;-&ensp;0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -3032,13 +3015,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4&ensp;-&ensp;2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid gray">
-              <p>3&ensp;-&ensp;0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -3337,7 +3320,7 @@
       </ul>
 
     </div>
-    <div class="right_2">
+    <div class="right_2 active">
       <div class="live_page">
         <div class="live_title">
           <div class="wrap">
@@ -3362,10 +3345,10 @@
           <div class="live_title for_view">
             <div class="wrap">
               <div class="l_box">
-                <p class="t_hidden">布咸美恩斯&ensp;1905</p>
+                <p class="t_hidden">布咸美恩斯 1905</p>
               </div>
               <div class="r_box">
-                <p class="t_hidden">布拉格斯拉維亞&ensp;B</p>
+                <p class="t_hidden">布拉格斯拉維亞 B</p>
               </div>
               <div class="m_box">
                 <p class="blue">VS</p>
@@ -3396,12 +3379,12 @@
                   <li>
                     <div class="drow_left">
                       <h1 class="t_hidden">俱樂部友誼賽</h1>
-                      <p class="t_hidden">布咸美恩斯&ensp;1905</p>
-                      <p class="t_hidden">布拉格斯拉維亞&ensp;B</p>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
                     </div>
                     <div class="drow_right">
                       <div class="change_wrap">
-                        <h1 class="">06/24&ensp;18:00</h1>
+                        <h1 class="">06/24 18:00</h1>
                         <div class="doing_wrap">
                           <p>直播中</p><span class="red_point"></span>
                         </div>
@@ -4162,7 +4145,7 @@
                 </div>
                 <div class="talk_box">
                   <div class="time_tag">
-                    2020-06-29&ensp;18:06:02
+                    2020-06-29 18:06:02
                   </div>
                   <div class="play_wrap">
                     <div class="p_name">
@@ -4181,7 +4164,7 @@
                     </div>
                   </div>
                   <div class="time_tag">
-                    2020-06-29&ensp;18:02:52
+                    2020-06-29 18:02:52
                   </div>
                   <div class="play_wrap">
                     <div class="p_name">
@@ -4200,7 +4183,7 @@
                     </div>
                   </div>
                   <div class="time_tag">
-                    2020-06-29&ensp;18:00:52
+                    2020-06-29 18:00:52
                   </div>
                   <div class="play_wrap myself">
                     <div class="p_name">
@@ -4258,7 +4241,7 @@
           <div class="title">
             <p>熱門賽事</p><span class="arrow"></span>
           </div>
-          <ul>
+          <ul style="display: none;">
             <li><span class="i1"></span> 義大利甲組聯賽<p class="num">(12)</p>
             </li>
             <li><span class="i2"></span>法國甲組聯賽<p class="num">(12)</p>
@@ -4271,7 +4254,7 @@
           <div class="title">
             <p>埃及</p><span class="arrow"></span>
           </div>
-          <ul>
+          <ul style="display: none;">
             <li>埃及超級聯賽<p class="num">(12)</p>
             </li>
           </ul>
@@ -4280,7 +4263,7 @@
           <div class="title">
             <p>阿爾及利亞</p><span class="arrow"></span>
           </div>
-          <ul>
+          <ul style="display: none;">
             <li>阿爾及利亞甲組聯賽<p class="num">(12)</p>
             </li>
           </ul>
@@ -4289,7 +4272,7 @@
           <div class="title">
             <p>巴林</p><span class="arrow"></span>
           </div>
-          <ul>
+          <ul style="display: none;">
             <li>巴林超級聯賽<p class="num">(12)</p>
             </li>
           </ul>
@@ -4298,7 +4281,7 @@
           <div class="title">
             <p>巴西</p><span class="arrow"></span>
           </div>
-          <ul>
+          <ul style="display: none;">
             <li>巴西杯<p class="num">(12)</p>
             </li>
             <li>巴西里約州甲組聯賽<p class="num">(12)</p>
@@ -4315,7 +4298,7 @@
   </div>
   <div class="f_wrap">
     <div class="f_bot">
-      <ul class="yet active">
+      <ul class="yet">
         <li>
           <i class="i2"></i>
           <p class="red">存款</p>
@@ -4333,7 +4316,7 @@
           <p>APP下載</p>
         </li>
       </ul>
-      <ul class="in ">
+      <ul class="in active">
         <li>
           <i class="i2"></i>
           <p class="red">存款</p>
@@ -5522,6 +5505,6 @@
   <div class="bg_t"></div>
 </div><!--en-->
 
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="../../js/index.js"></script>
 
 </body

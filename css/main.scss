@@ -616,6 +616,9 @@ header {
           vertical-align: middle;
           position: relative;
           z-index: 1;
+          &:hover{
+            background: linear-gradient(to bottom, #2f45b7 0%, #8f9cdc 100%);
+          }
           .arrow_w{
             background: url(../image/icon/arrow_w.png) no-repeat;
             background-size: 100%;
@@ -646,7 +649,7 @@ header {
           cursor: pointer;
           padding: 2px 0 0;
           position: relative;
-          &.active{
+          &.active,&:hover{
             color: #6272cc;
             &:before{
               content: '';

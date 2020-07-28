@@ -246,6 +246,9 @@
                             p{
                                 font-size: 1.071em;
                             }
+                            &:hover{
+                                background: linear-gradient(to bottom ,#b6885f 0% , #dfb995 100%);
+                            }
                         }
                         }
                     }
