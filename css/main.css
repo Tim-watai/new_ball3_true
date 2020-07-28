@@ -6734,13 +6734,12 @@ header {
         margin: 6px 0 0; }
 
 .bg_t {
-  background: url(../image/bg2.jpg) no-repeat;
+  background: url(../image/bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
   width: 1920px;
   height: 1200px;
-  position: relative;
   position: fixed;
   top: 0px;
   left: 50%;
@@ -6749,3 +6748,15 @@ header {
   transform: translateX(-50%);
   z-index: -1;
   pointer-events: none; }
+  .bg_t.bg_t2:before {
+    position: absolute;
+    content: '';
+    width: 772px;
+    height: 652px;
+    background: url(../image/bg_t.png) no-repeat;
+    background-size: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 52%;
+    left: 56%; }

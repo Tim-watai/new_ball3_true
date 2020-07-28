@@ -1072,14 +1072,27 @@ header {
 }
 
 .bg_t {
-  // background: url(../image/bg.jpg) no-repeat;
-   background: url(../image/bg2.jpg) no-repeat;
+  background: url(../image/bg.jpg) no-repeat;
+  //  background: url(../image/bg2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  &.bg_t2{
+    &:before{
+      position: absolute;
+      content: '';
+      width: 772px;
+      height: 652px;
+      background: url(../image/bg_t.png)no-repeat;
+      background-size: 100%;
+      transform: translate(-50%, -50%);
+      top: 52%;
+      left: 56%;
+    }
+    
+  }
   overflow: hidden;
   width: 1920px;
   height: 1200px;
-  position: relative;
   position: fixed;
   top: 0px;
   left: 50%;

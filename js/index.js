@@ -188,6 +188,13 @@ $(document).ready(function() {
         console.log('sign_c')
         $(this).parent().parents().removeClass('active')
       })
+
+      //註冊成功彈窗
+      let sign_up_push = $('.sign_up_push');
+      sign_up_push.click(function(){
+        $('aside.sign_up.black_bg').removeClass('active');
+        $('aside.sign_up_ok.black_bg').addClass('active');
+      })
       //<-----------------
       //登入狀態切換
       let sign_yet = $('.h_wrap .right .sign_yet');
