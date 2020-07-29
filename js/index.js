@@ -332,7 +332,22 @@ function change_methods(ishard){
 //<---------------------------
 
 
+  //給予單關標籤
+  $( ".card li.row span" ).addClass(function( index, currentClass ) {
+    let addedClass;
+   
+    if ( currentClass != "i_box") {
+      addedClass = "solo_bet";
+      return addedClass;
+      // $( "p" ).text( "There is one green div" );
+    }
 
+  });
+  //單關投注觸發
+  $('.card li.row span.solo_bet').click(function(){
+    console.log('solo_bet click');
+    $('aside.bet_solo').addClass('active');
+  })
 
 
   }); 

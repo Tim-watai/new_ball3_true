@@ -1396,7 +1396,8 @@ aside {
       line-height: 1.2;
       overflow: hidden;
       -o-text-overflow: ellipsis;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      white-space: nowrap; }
     .game_in .t_wrap1 span, .game_in .t_wrap2 span {
       width: 3em;
       height: 2em;
