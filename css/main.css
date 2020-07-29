@@ -1552,7 +1552,7 @@ aside {
       color: #ff0000; }
     .card li .gray {
       color: #4d515d; }
-    .card li.row {
+    .card li .row {
       position: relative;
       pointer-events: all; }
     .card li div {
@@ -1771,7 +1771,10 @@ aside {
         .card li div span.two_text p:first-child {
           left: 25%;
           width: 50%;
-          white-space: nowrap; }
+          white-space: nowrap;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis; }
         .card li div span.two_text p:last-child {
           left: 70%; }
       .card li div .arrow_d {
@@ -5785,6 +5788,99 @@ p.qa_title {
   display: none; }
   .yet_sign_in_status.active, .sign_in_status.active {
     display: block; }
+
+.more_bet {
+  display: block;
+  font-size: 1em;
+  border-radius: 18px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 4px 2px #bac0db;
+  box-shadow: 0 0 4px 2px #bac0db;
+  margin: .8em 0 0; }
+  .more_bet .red {
+    color: #ff0000; }
+  .more_bet .blue {
+    color: #005aff; }
+  .more_bet .g_name {
+    background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#414c88));
+    background: -webkit-linear-gradient(top, #6b76b4 0%, #414c88 100%);
+    background: -o-linear-gradient(top, #6b76b4 0%, #414c88 100%);
+    background: linear-gradient(to bottom, #6b76b4 0%, #414c88 100%);
+    color: #fff;
+    border-bottom: 1px solid #e0e1e3;
+    line-height: 2em; }
+    .more_bet .g_name p {
+      line-height: 1;
+      vertical-align: middle;
+      margin: 0 0 0 1em;
+      font-size: 1em;
+      display: inline-block; }
+  .more_bet .g_table {
+    border: none;
+    background: #fff;
+    padding: 0 0 0 1%;
+    line-height: calc(3em - 12px);
+    overflow: hidden; }
+    .more_bet .g_table.box_2 span {
+      width: 49%; }
+    .more_bet .g_table.box_3 span {
+      width: 32.33%; }
+    .more_bet .g_table.box_4 span {
+      width: 24%; }
+    .more_bet .g_table.box_8 span {
+      width: 11.5%; }
+    .more_bet .g_table span {
+      float: left;
+      width: auto;
+      margin: 6px 1% 6px 0;
+      border: 1px solid #b9bfdc;
+      border-radius: 8px;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
+      background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+      background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
+      background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+      position: relative;
+      cursor: pointer;
+      height: calc(3em - 12px);
+      line-height: calc(3em - 12px); }
+      .more_bet .g_table span:hover, .more_bet .g_table span.active {
+        background: #3654ff;
+        border: 1px solid transparent;
+        color: #fff; }
+      .more_bet .g_table span.no_use {
+        background: none;
+        color: #4d515d;
+        border-color: transparent;
+        pointer-events: none; }
+        .more_bet .g_table span.no_use.no_use_title {
+          line-height: calc(2em - 12px);
+          height: calc(2em - 12px); }
+      .more_bet .g_table span.solo p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      .more_bet .g_table span.two_text p {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        line-height: 1.2; }
+        .more_bet .g_table span.two_text p:first-child {
+          left: 25%;
+          width: 50%;
+          white-space: nowrap;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis; }
+        .more_bet .g_table span.two_text p:last-child {
+          left: 70%; }
 
 @-webkit-keyframes marquee {
   0% {

@@ -164,11 +164,9 @@ li{
     .gray{
     color: #4d515d;
     }
-    &.row{
+    .row{
     position: relative;
     pointer-events: all;
-    div{
-    }
     }
     div{
     position: relative;
@@ -456,6 +454,8 @@ li{
             left: 25%;
             width: 50%;
             white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             }
             &:last-child{
             left: 70%;
