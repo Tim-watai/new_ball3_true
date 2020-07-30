@@ -304,10 +304,13 @@ $(document).ready(function() {
       
       })
       //<-----------------
-//新手專業switch
+//新手_專業_比賽結果_switch
 let hardchange = $(' main .right .search_bar p.beginner');
+let g_result_btn = $('main .right .search_bar p.g_result_btn'); 
+
 let beginner_page = $('.page_beginner');
 let senior_page = $('.page_senior');
+let g_result = $('.page_result');
 hardchange.click(function(){
   if($(this).hasClass('start')!=true){
     change_methods('beg');
@@ -348,6 +351,28 @@ function change_methods(ishard){
     console.log('solo_bet click');
     $('aside.bet_solo').addClass('active');
   })
-
+    //勾選icon
+    let check_btn = $('.league_choice .row span.check,.balls_choice .row span.check');
+    check_btn.click(function(){
+        if($(this).hasClass('active') != true){
+            return  $(this).addClass('active');
+        }else{
+            return  $(this).removeClass('active');
+        }
+    })
+    //<--------------------------------------
+    //選擇球種
+    let ball_tag_btn = $('.ball_cho');
+    let balls_choice = $('.balls_choice ,.league_choice');
+    ball_tag_btn.click(function(){
+        if(balls_choice.hasClass('active') != true){
+                    $(this).addClass('active');
+            return  balls_choice.addClass('active');
+        }else{
+                    $(this).removeClass('active');
+            return  balls_choice.removeClass('active');
+        }
+    })
+    //<----------------------------------------
 
   }); 

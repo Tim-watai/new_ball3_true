@@ -778,6 +778,8 @@ aside {
         border-radius: 100px; }
       .bet_box .content .bets .limit_area .li_box {
         border-bottom: 1px solid #e0e1e3; }
+        .bet_box .content .bets .limit_area .li_box:last-child {
+          border-bottom: none; }
     .bet_box .content .bets .check_icon {
       border-radius: 100px;
       position: relative;
@@ -5882,6 +5884,82 @@ p.qa_title {
         .more_bet .g_table span.two_text p:last-child {
           left: 70%; }
 
+.balls_choice, .league_choice {
+  display: none;
+  width: 100%;
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(20%, #fafbff), color-stop(80%, #fafbff), to(#e2e5f5));
+  background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 20%, #fafbff 80%, #e2e5f5 100%);
+  background: -o-linear-gradient(top, #fafbff 0%, #fafbff 20%, #fafbff 80%, #e2e5f5 100%);
+  background: linear-gradient(to bottom, #fafbff 0%, #fafbff 20%, #fafbff 80%, #e2e5f5 100%);
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(calc(100% - 1em));
+  -ms-transform: translateY(calc(100% - 1em));
+  transform: translateY(calc(100% - 1em));
+  z-index: 1;
+  padding: 1em;
+  color: #4d515d;
+  overflow: hidden; }
+  .balls_choice.active, .league_choice.active {
+    display: block; }
+  .balls_choice .row, .league_choice .row {
+    line-height: 2.3em;
+    height: 2.3em;
+    width: 100%;
+    float: left;
+    margin-top: .3em; }
+    .balls_choice .row:first-child, .league_choice .row:first-child {
+      margin-top: 1em; }
+    .balls_choice .row p, .league_choice .row p {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+      font-size: 1.143em; }
+    .balls_choice .row span, .league_choice .row span {
+      display: inline-block;
+      vertical-align: text-bottom; }
+      .balls_choice .row span.check, .league_choice .row span.check {
+        cursor: pointer;
+        width: 1em;
+        height: 1em;
+        border: 1px solid #b2afcf;
+        border-radius: 4px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#cbd0e9), to(#ffffff));
+        background: -webkit-linear-gradient(top, #cbd0e9 0%, #ffffff 100%);
+        background: -o-linear-gradient(top, #cbd0e9 0%, #ffffff 100%);
+        background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
+        position: relative; }
+        .balls_choice .row span.check.active, .league_choice .row span.check.active {
+          border: 1px solid #4259d7;
+          background: -webkit-gradient(linear, left top, left bottom, from(#2f45b7), to(#8694d8));
+          background: -webkit-linear-gradient(top, #2f45b7 0%, #8694d8 100%);
+          background: -o-linear-gradient(top, #2f45b7 0%, #8694d8 100%);
+          background: linear-gradient(to bottom, #2f45b7 0%, #8694d8 100%); }
+          .balls_choice .row span.check.active:before, .league_choice .row span.check.active:before {
+            content: '';
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            width: 50%;
+            height: 80%;
+            -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            -ms-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+            background: none;
+            border-width: 0 2px 2px 0;
+            border-style: solid;
+            border-color: #fff; }
+    .balls_choice .row .b12_5, .balls_choice .row .b33_3, .league_choice .row .b12_5, .league_choice .row .b33_3 {
+      float: left;
+      white-space: nowrap; }
+    .balls_choice .row .b12_5, .league_choice .row .b12_5 {
+      width: 12.5%; }
+    .balls_choice .row .b33_3, .league_choice .row .b33_3 {
+      width: 33.33%; }
+
 @-webkit-keyframes marquee {
   0% {
     left: 100%;
@@ -6443,7 +6521,7 @@ header {
                 display: none; }
         .container main .right .search_bar p {
           display: inline-block;
-          font-size: 1.1em;
+          font-size: 1.143em;
           color: #4d515d;
           line-height: 1.1;
           vertical-align: middle;
@@ -6606,74 +6684,6 @@ header {
           padding: 0 .5em; }
       .container main .right .search_box {
         position: relative; }
-        .container main .right .search_box .balls_choice {
-          display: none;
-          width: 100%;
-          height: auto;
-          background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(20%, #fafbff), color-stop(80%, #fafbff), to(#e2e5f5));
-          background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 20%, #fafbff 80%, #e2e5f5 100%);
-          background: -o-linear-gradient(top, #fafbff 0%, #fafbff 20%, #fafbff 80%, #e2e5f5 100%);
-          background: linear-gradient(to bottom, #fafbff 0%, #fafbff 20%, #fafbff 80%, #e2e5f5 100%);
-          border-radius: 0 0 8px 8px;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          -webkit-transform: translateY(90%);
-          -ms-transform: translateY(90%);
-          transform: translateY(90%);
-          z-index: 1;
-          padding: 1em;
-          color: #4d515d;
-          overflow: hidden; }
-          .container main .right .search_box .balls_choice.active {
-            display: block; }
-          .container main .right .search_box .balls_choice .row {
-            line-height: 2em;
-            height: 2em;
-            width: 100%;
-            float: left; }
-            .container main .right .search_box .balls_choice .row p {
-              display: inline-block;
-              vertical-align: middle;
-              line-height: 1; }
-            .container main .right .search_box .balls_choice .row span {
-              display: inline-block;
-              vertical-align: text-bottom; }
-              .container main .right .search_box .balls_choice .row span.check {
-                cursor: pointer;
-                width: 1em;
-                height: 1em;
-                border: 1px solid #b2afcf;
-                border-radius: 4px;
-                background: -webkit-gradient(linear, left top, left bottom, from(#cbd0e9), to(#ffffff));
-                background: -webkit-linear-gradient(top, #cbd0e9 0%, #ffffff 100%);
-                background: -o-linear-gradient(top, #cbd0e9 0%, #ffffff 100%);
-                background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
-                position: relative; }
-                .container main .right .search_box .balls_choice .row span.check.active {
-                  border: 1px solid #4259d7;
-                  background: -webkit-gradient(linear, left top, left bottom, from(#2f45b7), to(#8694d8));
-                  background: -webkit-linear-gradient(top, #2f45b7 0%, #8694d8 100%);
-                  background: -o-linear-gradient(top, #2f45b7 0%, #8694d8 100%);
-                  background: linear-gradient(to bottom, #2f45b7 0%, #8694d8 100%); }
-                  .container main .right .search_box .balls_choice .row span.check.active:before {
-                    content: '';
-                    position: absolute;
-                    top: 35%;
-                    left: 50%;
-                    width: 50%;
-                    height: 80%;
-                    -webkit-transform: translate(-50%, -50%) rotate(45deg);
-                    -ms-transform: translate(-50%, -50%) rotate(45deg);
-                    transform: translate(-50%, -50%) rotate(45deg);
-                    background: none;
-                    border-width: 0 2px 2px 0;
-                    border-style: solid;
-                    border-color: #fff; }
-            .container main .right .search_box .balls_choice .row .b12_5 {
-              width: 12.5%;
-              float: left;
-              white-space: nowrap; }
     .container main .left {
       width: 16.8%;
       float: left;

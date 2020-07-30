@@ -443,17 +443,16 @@
             <div class="my_bill_record active">
                 <div class="wrap">
                   <div class="game_in my_page_bill">
-               
                   </div><!--gi-->
                   <div class="search_box">
-                    <div class="search_bar">
-                   
+                  <div class="search_bar">
                   </div><!--sb-->
                   <div class="bill_record_d_card">
                       <div class="b25"><span>時間</span></div>
                       <div class="b25"><span>筆數</span></div>
                       <div class="b25"><span>金額/有效下注</span></div>
                       <div class="b25"><span>結果</span></div>
+                  </div>
                   </div>
                 </div>
                 <div class="wrap fixed">
@@ -592,7 +591,7 @@
                         <div class="b25"><span>金額/有效下注</span></div>
                         <div class="b25"><span>結果</span></div>
                     </div>
-                  </div>
+                </div>
                 <!--有have的狀態才能開啟-->
                 <div class="bill_box">
                     <div class="title_bill">
@@ -5616,6 +5615,7 @@ $(document).ready(function(){
             return  $(this).removeClass('active');
         }
     })
+    //<--------------------------------------
     //選擇球種
     let ball_tag_btn = $('.tag_wrap .tag.ball_cho');
     let balls_choice = $('.balls_choice');
@@ -5628,6 +5628,7 @@ $(document).ready(function(){
             return  balls_choice.removeClass('active');
         }
     })
+    //<----------------------------------------
         
 })//ready
 
