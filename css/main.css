@@ -1532,6 +1532,8 @@ aside {
     width: 100%;
     text-overflow: ellipsis;
     white-space: normal; }
+  .card .team_size.team_size.team_size.team_size {
+    font-size: 1.071em; }
   .card li {
     overflow: hidden;
     position: relative;
@@ -1858,6 +1860,10 @@ aside {
       width: 15%; }
     .card li .b16 {
       width: 16%; }
+    .card li .b17 {
+      width: 17%; }
+    .card li .b18 {
+      width: 18%; }
     .card li .b20 {
       width: 20%; }
     .card li .b22 {
@@ -1888,7 +1894,7 @@ aside {
     display: inline-block;
     vertical-align: middle;
     font-size: 1em;
-    line-height: 100%;
+    line-height: 120%;
     white-space: nowrap; }
   .card .g_name {
     line-height: 2em; }
@@ -1899,7 +1905,7 @@ aside {
       background: url(../image/icon/list3.png) no-repeat;
       background-size: 1800%;
       line-height: 1;
-      vertical-align: text-top;
+      vertical-align: text-bottom;
       margin: 0 -.5em 0 .5em; }
       .card .g_name i.i1 {
         background-position-x: -2.3em; }
@@ -1936,10 +1942,10 @@ aside {
     .card .g_name p {
       line-height: 1;
       vertical-align: middle;
-      margin: 0 0 0 1em;
+      margin: 0 0 0 calc(1em / 1.143);
       font-size: 1em; }
   .card .title {
-    line-height: 1.8em;
+    line-height: 2em;
     overflow: hidden;
     color: #4d515d; }
     .card .title p {
@@ -2036,8 +2042,6 @@ aside {
     height: 5em; }
     .card.big_mode .row .half {
       padding: 0; }
-      .card.big_mode .row .half:last-child div:last-child {
-        border-top: none; }
       .card.big_mode .row .half div {
         line-height: calc(5em / 2);
         height: calc(5em / 2);

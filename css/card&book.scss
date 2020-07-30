@@ -80,7 +80,6 @@
     }
 }
 .card{
-// font-size: 1.12em;
 font-size: 1em;
 border-radius: 18px;
 overflow: hidden;
@@ -135,6 +134,9 @@ em{
     width: 100%;
     text-overflow: ellipsis;
     white-space: normal;
+}
+.team_size.team_size.team_size.team_size{
+    font-size: 1.071em;
 }
 li{
     overflow: hidden;
@@ -539,6 +541,7 @@ li{
     .b3{
     width: 3%;
     }
+    
     .b4{
     width: 4%;
     }
@@ -571,6 +574,12 @@ li{
     }
     .b16{
     width: 16%;
+    }
+    .b17{
+        width: 17%;
+    }
+    .b18{
+        width: 18%;
     }
     .b20{
     width: 20%;
@@ -618,7 +627,7 @@ p{
     display: inline-block;
     vertical-align: middle;
     font-size: 1em;
-    line-height: 100%;
+    line-height: 120%;
     white-space: nowrap;
 }
 .g_name{
@@ -630,7 +639,7 @@ p{
     background: url(../image/icon/list3.png) no-repeat;
     background-size: 1800%;
     line-height: 1;
-    vertical-align: text-top;
+    vertical-align: text-bottom;
     margin: 0 -.5em 0 .5em;
     @for $i from 1 through 16{
         &.i#{$i}{
@@ -641,12 +650,12 @@ p{
     p{
     line-height: 1;
     vertical-align: middle;
-    margin: 0 0 0 1em;
+    margin: 0 0 0 calc(1em / 1.143);
     font-size: 1em;
     }
 }
 .title{
-    line-height: 1.8em;
+    line-height: 2em;
     overflow: hidden;
     color: #4d515d;
     
@@ -782,13 +791,13 @@ $big_mode_row:5em;
     height: $big_mode_row;
     .half{
         padding: 0;
-        &:last-child{
-        div{
-            &:last-child{
-            border-top: none;
-            }
-        }
-        }
+        // &:last-child{
+        // div{
+        //     &:last-child{
+        //     border-top: none;
+        //     }
+        // }
+        // }
         div{
         line-height: calc(#{$big_mode_row} / 2);
         height: calc(#{$big_mode_row} / 2);
