@@ -5850,10 +5850,11 @@ p.qa_title {
       cursor: pointer;
       height: calc(3em - 12px);
       line-height: calc(3em - 12px); }
-      .more_bet .g_table span:hover, .more_bet .g_table span.active {
+      .more_bet .g_table span:hover:hover:hover:hover, .more_bet .g_table span.active.active.active.active.active {
         background: #3654ff;
-        border: 1px solid transparent;
-        color: #fff; }
+        border: 1px solid transparent; }
+        .more_bet .g_table span:hover:hover:hover:hover p, .more_bet .g_table span.active.active.active.active.active p {
+          color: #fff; }
       .more_bet .g_table span.no_use {
         background: none;
         color: #4d515d;

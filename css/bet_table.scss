@@ -63,10 +63,12 @@
             cursor: pointer;
             height: calc(3em - 12px);
             line-height: calc(3em - 12px);
-            &:hover,&.active{
+            &:hover:hover:hover:hover,&.active.active.active.active.active{
                 background: #3654ff;
                 border: 1px solid transparent;
-                color: #fff;
+                p{
+                    color: #fff;
+                }
             }
             
             &.no_use{
