@@ -1,6 +1,55 @@
 //<<<<<<<<<<<<<<此頁管理首頁﹑與測試>>>>>>>>>>>>>>
 $(document).ready(function() {
     console.log("index ready");
+      //page_name = active種類頁
+      let fileName = location.pathname.split("/").slice(-1);
+      let testname = fileName.toString();
+      let findme ="soccer";
+      let page_name = [
+        'soccer',
+        'basball',
+        'basketball',
+        'esp',
+        'stock',
+        'lottery',
+        'ice_ball',
+        'tennis',
+        'snooker',
+        'v_ball',
+        'motor_sport',
+        'badminton',
+        'football',
+        'horse_race',
+        'bso',
+        't_tennis'
+    ];
+    
+    let left_tag = $('.left .index.active li').each(function(index){
+      return index.toString();
+    })
+    
+    console.log(left_tag);
+
+    for(let i = 0 ; i<page_name.length ; i++){
+      if ( testname.indexOf(page_name[i])> -1 ) {
+        // left_tag[i+2].siblings().removeClass('active');
+        // left_tag[(i+2)].addClass('active');
+
+        left_tag.each(function(index){
+          let now_index = index +2;
+
+          console.log('index = '+index+'i ='+i)
+
+        })
+        console.log(left_tag[i+2]);
+        // console.log('okname is = '+page_name[i]);
+
+      } else {
+        console.log('not found')
+      }
+    }
+      console.log('this page = {'+fileName+'}')
+      
       //測試鈕開關
       $('.all_test li:nth-child(1)').click(function(){
         $(this).siblings().removeClass('active');

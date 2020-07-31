@@ -2051,6 +2051,8 @@ aside {
         position: relative; }
         .card.big_mode .row .half div:last-child {
           border-top: 2px solid #e0e1e3; }
+      .card.big_mode .row .half.no_use_top div:last-child {
+        border-top: 2px solid transparent; }
     .card.big_mode .row .half_sp .b40 {
       width: 40%;
       border: none; }

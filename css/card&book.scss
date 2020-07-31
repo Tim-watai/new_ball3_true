@@ -809,7 +809,15 @@ $big_mode_row:5em;
             border-top: 2px solid #e0e1e3;
         }
         }
+        &.no_use_top{
+            div{
+                &:last-child{
+                    border-top: 2px solid transparent;
+                }
+            }
+        }
     }
+
     .half_sp{
         .b40{
         width: 40%;
