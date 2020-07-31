@@ -124,6 +124,9 @@
             height: 2.714em;
             border-radius: 4px;
             background: linear-gradient(to bottom,#8996da 0%,#3046b7 100%);
+            &:hover{
+                background: linear-gradient(to bottom,#3046b7 0%,#8996da 100%);
+            }
             .btn_w{
                 line-height: 100%;
                 vertical-align: middle;

@@ -257,6 +257,10 @@ header {
           padding: 1em;
           position: relative;
           background: linear-gradient(to bottom ,#fafbff 0% ,#e2e6f5 100%);
+          cursor: pointer;
+          &:hover{
+            background: linear-gradient(to bottom ,#fafbff 0% ,#abe6ec 100%);
+          }
           .arrow{
             background: url(../image/icon/arrow_d.png) no-repeat;
             background-size: 100%;
@@ -279,6 +283,11 @@ header {
           border-bottom: 1px solid #c8cedf;
           position: relative;
           transition: all ease-in-out .2s;
+          cursor: pointer;
+          &:hover{
+            text-decoration-line: underline;
+
+          }
           span{
             width: 1.6em;
             height: 1.6em;
@@ -307,6 +316,7 @@ header {
         }
         &.active{
           .title{
+            background: linear-gradient(to bottom ,#fafbff 0% ,#abe6ec 100%);
             .arrow{
               transform:  translate(0%,-50%) rotate(90deg);
             }
@@ -379,6 +389,9 @@ header {
         border-radius: 6px;
         line-height: 2em;
         vertical-align: middle;
+        &:hover{
+          background: linear-gradient(to bottom, #2f45b7 0%, #8f9cdc 100%);
+        }
         p{
           font-size: 1.214em;
         }

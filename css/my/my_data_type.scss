@@ -61,8 +61,18 @@
                 border-radius: 12px;
                 display: inline-block;
                 vertical-align: middle;
+                &:hover{
+                    background: #fff;
+                    border: 1px solid #8892c9;
+                    color: #8892c9;
+                }
                 &.active{
                     background: #2b3ea8;
+                    &:hover{
+                        border: 1px solid #2b3ea8;
+                        color: #2b3ea8;
+                        background: #fff;
+                    }
                 }
                 p{
                     line-height: 1;
@@ -127,6 +137,11 @@
     position: relative;
     cursor: pointer;
     color: #5163c7;
+    &:hover{
+
+        background: #5163c7;
+        color: #fff;
+    }
 }
 i{
     &.infor{

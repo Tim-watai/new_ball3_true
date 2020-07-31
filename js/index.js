@@ -52,10 +52,10 @@ $(document).ready(function() {
       if ( testname.indexOf(page_name[i])> -1 ) {
   
         $(left_taget[i+2]).addClass('active');
-        return console.log('i = '+i);
+        // return console.log('i = '+i);
       
       } else {
-        console.log('not found')
+        // console.log('not found')
       }
     }
     console.log('this page = {'+fileName+'}')
@@ -373,6 +373,7 @@ let beginner_page = $('.page_beginner');
 let senior_page = $('.page_senior');
 let g_result = $('.page_result');
 hardchange.click(function(){
+  console.log('新手專業')
   if($(this).hasClass('start')!=true){
     change_methods('beg');
     $(this).addClass('start');

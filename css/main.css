@@ -303,6 +303,8 @@ button {
         color: #4d515d; }
         .sign_box .content .row .user_t.pw_forget {
           cursor: pointer; }
+          .sign_box .content .row .user_t.pw_forget:hover {
+            text-shadow: 0 0 2px gray; }
       .sign_box .content .row .right_box {
         float: right; }
         .sign_box .content .row .right_box .in_box {
@@ -631,6 +633,11 @@ aside {
         padding: .5em 4em;
         cursor: pointer;
         font-size: 1.143em; }
+        .bet_box.blue .content .window_box .blue_btn:hover {
+          background: -webkit-gradient(linear, left top, left bottom, from(#2e44b7), to(#8f9cdc));
+          background: -webkit-linear-gradient(top, #2e44b7 0%, #8f9cdc 100%);
+          background: -o-linear-gradient(top, #2e44b7 0%, #8f9cdc 100%);
+          background: linear-gradient(to bottom, #2e44b7 0%, #8f9cdc 100%); }
       .bet_box.blue .content .window_box .mid_box_margin {
         margin: 2em 0 1em;
         text-align: center; }
@@ -1591,11 +1598,48 @@ aside {
             .card li div.icon_box .i_box div.cube.tv {
               background: url(../image/icon/live_icon.png) no-repeat;
               background-size: cover;
-              width: 2em;
               display: inline-block;
               vertical-align: bottom;
               width: 1.9em;
-              height: 1.9em; }
+              height: 1.9em;
+              position: relative;
+              overflow: hidden; }
+              .card li div.icon_box .i_box div.cube.tv:after {
+                position: absolute;
+                content: '';
+                height: 100%;
+                width: 10px;
+                background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0.03)), color-stop(30%, rgba(255, 255, 255, 0.6)), color-stop(50%, rgba(255, 255, 255, 0.85)), color-stop(70%, rgba(255, 255, 255, 0.85)), color-stop(71%, rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0)));
+                background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+                background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+                background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+                top: 0;
+                left: 0;
+                -webkit-transform: translate(-1.3em, 0%) rotate(-45deg);
+                -ms-transform: translate(-1.3em, 0%) rotate(-45deg);
+                transform: translate(-1.3em, 0%) rotate(-45deg);
+                opacity: 1;
+                -webkit-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out; }
+              .card li div.icon_box .i_box div.cube.tv:hover:after {
+                position: absolute;
+                content: '';
+                height: 100%;
+                width: 10px;
+                background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0.03)), color-stop(30%, rgba(255, 255, 255, 0.6)), color-stop(50%, rgba(255, 255, 255, 0.85)), color-stop(70%, rgba(255, 255, 255, 0.85)), color-stop(71%, rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0)));
+                background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+                background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+                background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+                top: 0;
+                left: 0;
+                -webkit-transform: translate(2.3em, 0%) rotate(-45deg);
+                -ms-transform: translate(2.3em, 0%) rotate(-45deg);
+                transform: translate(2.3em, 0%) rotate(-45deg);
+                opacity: 1;
+                -webkit-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out; }
             .card li div.icon_box .i_box div.cube.heart {
               background: url(../image/icon/heart.png) no-repeat;
               background-size: 200%;
@@ -1801,7 +1845,45 @@ aside {
           margin: 0 .125em 0 0; }
         .card li div i.tv {
           background: url(../image/icon/live_icon.png) no-repeat;
-          background-size: 100%; }
+          background-size: 100%;
+          position: relative;
+          overflow: hidden; }
+          .card li div i.tv:before {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 5px;
+            background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0.03)), color-stop(30%, rgba(255, 255, 255, 0.6)), color-stop(50%, rgba(255, 255, 255, 0.85)), color-stop(70%, rgba(255, 255, 255, 0.85)), color-stop(71%, rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0)));
+            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+            background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+            top: 0;
+            left: 0;
+            -webkit-transform: translate(-1em, 0%) rotate(-45deg);
+            -ms-transform: translate(-1em, 0%) rotate(-45deg);
+            transform: translate(-1em, 0%) rotate(-45deg);
+            opacity: 1;
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out; }
+          .card li div i.tv:hover:before {
+            content: '';
+            height: 100%;
+            width: 10px;
+            background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0.03)), color-stop(30%, rgba(255, 255, 255, 0.6)), color-stop(50%, rgba(255, 255, 255, 0.75)), color-stop(70%, rgba(255, 255, 255, 0.75)), color-stop(71%, rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0)));
+            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 70%, rgba(255, 255, 255, 0.75) 71%, rgba(255, 255, 255, 0) 100%);
+            background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 70%, rgba(255, 255, 255, 0.75) 71%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 70%, rgba(255, 255, 255, 0.75) 71%, rgba(255, 255, 255, 0) 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-transform: translate(2em, 0%) rotate(-45deg);
+            -ms-transform: translate(2em, 0%) rotate(-45deg);
+            transform: translate(2em, 0%) rotate(-45deg);
+            opacity: 1;
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out; }
         .card li div i.heart {
           background: url(../image/icon/heart.png) no-repeat;
           background-size: 200%; }
@@ -2126,6 +2208,8 @@ aside {
     text-overflow: ellipsis; }
   .live_page span, .live_page p, .live_page i {
     display: inline-block; }
+  .live_page .live_t.live_t.live_t:hover {
+    color: #caa481; }
   .live_page span.icon_tv_gold {
     width: 1.5em;
     height: 1.5em;
@@ -3667,6 +3751,12 @@ main.my_page.my_page.my_page {
                 padding: .125em .5em;
                 font-size: 1em;
                 border-radius: 12px; }
+                .basic_bill .save_type .trans_card .box_4 .box .row .right_box .yellow_btn:hover {
+                  background: #fff;
+                  border: 1px solid #d7af8a;
+                  color: #d7af8a; }
+                  .basic_bill .save_type .trans_card .box_4 .box .row .right_box .yellow_btn:hover p {
+                    color: #d7af8a; }
             .basic_bill .save_type .trans_card .box_4 .box .row .sm_t {
               font-size: .8em; }
             .basic_bill .save_type .trans_card .box_4 .box .row .big_t {
@@ -4070,6 +4160,12 @@ main.my_page.my_page.my_page {
               padding: .125em .5em;
               font-size: 1em;
               border-radius: 12px; }
+              .basic_bill .save_type .mb_box.trans .trans_box .row .yellow_btn:hover {
+                background: #fff;
+                border: 1px solid #d7af8a;
+                color: #d7af8a; }
+                .basic_bill .save_type .mb_box.trans .trans_box .row .yellow_btn:hover p {
+                  color: #d7af8a; }
             .basic_bill .save_type .mb_box.trans .trans_box .row .right_box {
               float: right; }
             .basic_bill .save_type .mb_box.trans .trans_box .row i {
@@ -4189,6 +4285,11 @@ main.my_page.my_page.my_page {
           top: 1em;
           right: 1.5em;
           padding: .1em .5em; }
+          .basic_bill .save_type .mb_box .b50 .r_btn:hover {
+            background: #fff;
+            border: 1px solid #d7af8a; }
+            .basic_bill .save_type .mb_box .b50 .r_btn:hover p {
+              color: #d7af8a; }
           .basic_bill .save_type .mb_box .b50 .r_btn p {
             font-size: 1.071em; }
     .basic_bill .save_type .cards {
@@ -4294,16 +4395,43 @@ main.my_page.my_page.my_page {
             background: -webkit-linear-gradient(right, #6589c6 0%, #a3c3f4 100%);
             background: -o-linear-gradient(right, #6589c6 0%, #a3c3f4 100%);
             background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%); }
+            .basic_bill .save_type .cards .box_3 .card_box.blue_card.blue_card.blue_card:hover {
+              background: -webkit-gradient(linear, right top, left top, from(#a3c3f4), to(#6589c6));
+              background: -webkit-linear-gradient(right, #a3c3f4 0%, #6589c6 100%);
+              background: -o-linear-gradient(right, #a3c3f4 0%, #6589c6 100%);
+              background: linear-gradient(to left, #a3c3f4 0%, #6589c6 100%);
+              -webkit-transition: all .3s ease-in-out;
+              -o-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out; }
           .basic_bill .save_type .cards .box_3 .card_box.green_card.green_card.green_card {
             background: -webkit-gradient(linear, right top, left top, from(#31a8b1), to(#60d6ce));
             background: -webkit-linear-gradient(right, #31a8b1 0%, #60d6ce 100%);
             background: -o-linear-gradient(right, #31a8b1 0%, #60d6ce 100%);
-            background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%); }
+            background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out; }
+            .basic_bill .save_type .cards .box_3 .card_box.green_card.green_card.green_card:hover {
+              background: -webkit-gradient(linear, right top, left top, from(#60d6ce), to(#31a8b1));
+              background: -webkit-linear-gradient(right, #60d6ce 0%, #31a8b1 100%);
+              background: -o-linear-gradient(right, #60d6ce 0%, #31a8b1 100%);
+              background: linear-gradient(to left, #60d6ce 0%, #31a8b1 100%);
+              -webkit-transition: all .3s ease-in-out;
+              -o-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out; }
           .basic_bill .save_type .cards .box_3 .card_box.pink_card.pink_card.pink_card {
             background: -webkit-gradient(linear, right top, left top, from(#d7767a), to(#ffadba));
             background: -webkit-linear-gradient(right, #d7767a 0%, #ffadba 100%);
             background: -o-linear-gradient(right, #d7767a 0%, #ffadba 100%);
             background: linear-gradient(to left, #d7767a 0%, #ffadba 100%); }
+            .basic_bill .save_type .cards .box_3 .card_box.pink_card.pink_card.pink_card:hover {
+              background: -webkit-gradient(linear, right top, left top, from(#ffadba), to(#d7767a));
+              background: -webkit-linear-gradient(right, #ffadba 0%, #d7767a 100%);
+              background: -o-linear-gradient(right, #ffadba 0%, #d7767a 100%);
+              background: linear-gradient(to left, #ffadba 0%, #d7767a 100%);
+              -webkit-transition: all .3s ease-in-out;
+              -o-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out; }
           .basic_bill .save_type .cards .box_3 .card_box.gray_top {
             line-height: 5.5em;
             overflow: hidden;
@@ -4651,8 +4779,16 @@ main.my_page.my_page.my_page {
         border-radius: 12px;
         display: inline-block;
         vertical-align: middle; }
+        .edit_box .box_2 .box .edit_btn:hover {
+          background: #fff;
+          border: 1px solid #8892c9;
+          color: #8892c9; }
         .edit_box .box_2 .box .edit_btn.active {
           background: #2b3ea8; }
+          .edit_box .box_2 .box .edit_btn.active:hover {
+            border: 1px solid #2b3ea8;
+            color: #2b3ea8;
+            background: #fff; }
         .edit_box .box_2 .box .edit_btn p {
           line-height: 1;
           font-size: 1.1em; }
@@ -4705,6 +4841,9 @@ main.my_page.my_page.my_page {
   position: relative;
   cursor: pointer;
   color: #5163c7; }
+  .link.link.link:hover {
+    background: #5163c7;
+    color: #fff; }
 
 i.infor {
   vertical-align: middle;
@@ -4911,12 +5050,21 @@ ul.data li {
     .contact_us_qa_table.contact_us_qa_table.contact_us_qa_table .save_type .pic_area .pic_import {
       display: inline-block;
       border-radius: 8px;
-      -webkit-box-shadow: 0 0 6px 1px #d1d4e2;
-      box-shadow: 0 0 6px 1px #d1d4e2;
+      -webkit-box-shadow: 0 0 0px 1px #d1d4e2;
+      box-shadow: 0 0 0px 1px #d1d4e2;
       width: 6.143em;
       height: 5.714em;
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear; }
+      .contact_us_qa_table.contact_us_qa_table.contact_us_qa_table .save_type .pic_area .pic_import:hover {
+        -webkit-box-shadow: 0 0 6px 1px #d1d4e2;
+        box-shadow: 0 0 6px 1px #d1d4e2;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
       .contact_us_qa_table.contact_us_qa_table.contact_us_qa_table .save_type .pic_area .pic_import .pic_icon {
         position: absolute;
         top: 50%;
@@ -4961,6 +5109,11 @@ ul.data li {
       background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
       border-radius: 8px;
       cursor: pointer; }
+      .contact_us_qa_table.contact_us_qa_table.contact_us_qa_table .save_type .pic_infor_area .blue_btn:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8f9cdc));
+        background: -webkit-linear-gradient(top, #3247b8 0%, #8f9cdc 100%);
+        background: -o-linear-gradient(top, #3247b8 0%, #8f9cdc 100%);
+        background: linear-gradient(to bottom, #3247b8 0%, #8f9cdc 100%); }
       .contact_us_qa_table.contact_us_qa_table.contact_us_qa_table .save_type .pic_infor_area .blue_btn p {
         font-size: 1.1em;
         color: #fff; }
@@ -5238,6 +5391,11 @@ ul.data li {
       background: -webkit-linear-gradient(top, #8996da 0%, #3046b7 100%);
       background: -o-linear-gradient(top, #8996da 0%, #3046b7 100%);
       background: linear-gradient(to bottom, #8996da 0%, #3046b7 100%); }
+      .online_text_area .bot_btn_ar .blue_btn:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#3046b7), to(#8996da));
+        background: -webkit-linear-gradient(top, #3046b7 0%, #8996da 100%);
+        background: -o-linear-gradient(top, #3046b7 0%, #8996da 100%);
+        background: linear-gradient(to bottom, #3046b7 0%, #8996da 100%); }
       .online_text_area .bot_btn_ar .blue_btn .btn_w {
         line-height: 100%;
         vertical-align: middle;
@@ -6162,7 +6320,13 @@ header {
           background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#e2e6f5));
           background: -webkit-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
           background: -o-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
-          background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%); }
+          background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%);
+          cursor: pointer; }
+          .container .search_group .ul_wrap .gt .title:hover {
+            background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#abe6ec));
+            background: -webkit-linear-gradient(top, #fafbff 0%, #abe6ec 100%);
+            background: -o-linear-gradient(top, #fafbff 0%, #abe6ec 100%);
+            background: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%); }
           .container .search_group .ul_wrap .gt .title .arrow {
             background: url(../image/icon/arrow_d.png) no-repeat;
             background-size: 100%;
@@ -6188,7 +6352,11 @@ header {
           position: relative;
           -webkit-transition: all ease-in-out .2s;
           -o-transition: all ease-in-out .2s;
-          transition: all ease-in-out .2s; }
+          transition: all ease-in-out .2s;
+          cursor: pointer; }
+          .container .search_group .ul_wrap .gt li:hover {
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline; }
           .container .search_group .ul_wrap .gt li span {
             width: 1.6em;
             height: 1.6em;
@@ -6212,10 +6380,15 @@ header {
             top: 50%; }
         .container .search_group .ul_wrap .gt p, .container .search_group .ul_wrap .gt span {
           display: inline-block; }
-        .container .search_group .ul_wrap .gt.active .title .arrow {
-          -webkit-transform: translate(0%, -50%) rotate(90deg);
-          -ms-transform: translate(0%, -50%) rotate(90deg);
-          transform: translate(0%, -50%) rotate(90deg); }
+        .container .search_group .ul_wrap .gt.active .title {
+          background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#abe6ec));
+          background: -webkit-linear-gradient(top, #fafbff 0%, #abe6ec 100%);
+          background: -o-linear-gradient(top, #fafbff 0%, #abe6ec 100%);
+          background: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%); }
+          .container .search_group .ul_wrap .gt.active .title .arrow {
+            -webkit-transform: translate(0%, -50%) rotate(90deg);
+            -ms-transform: translate(0%, -50%) rotate(90deg);
+            transform: translate(0%, -50%) rotate(90deg); }
     .container .search_group .s_box {
       display: inline-block;
       font-size: .9em;
@@ -6300,6 +6473,11 @@ header {
         border-radius: 6px;
         line-height: 2em;
         vertical-align: middle; }
+        .container .search_group .s_wrap button:hover {
+          background: -webkit-gradient(linear, left top, left bottom, from(#2f45b7), to(#8f9cdc));
+          background: -webkit-linear-gradient(top, #2f45b7 0%, #8f9cdc 100%);
+          background: -o-linear-gradient(top, #2f45b7 0%, #8f9cdc 100%);
+          background: linear-gradient(to bottom, #2f45b7 0%, #8f9cdc 100%); }
         .container .search_group .s_wrap button p {
           font-size: 1.214em; }
   .container .f_wrap {

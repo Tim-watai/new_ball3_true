@@ -141,6 +141,9 @@
                 color: #4d515d;
                 &.pw_forget{
                     cursor: pointer;
+                    &:hover{
+                        text-shadow: 0 0 2px gray;
+                    }
                 }
             }
             .right_box{

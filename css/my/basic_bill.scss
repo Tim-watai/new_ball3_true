@@ -335,6 +335,14 @@
                                     padding: .125em .5em;
                                     font-size: 1em;
                                     border-radius: 12px;
+                                    &:hover{
+                                        background: #fff;
+                                        border: 1px solid #d7af8a;
+                                        color: #d7af8a;
+                                        p{
+                                            color: #d7af8a;
+                                        }
+                                    }
                                 }
                             }
                             .sm_t{
@@ -794,6 +802,14 @@
                                 padding: .125em .5em;
                                 font-size: 1em;
                                 border-radius: 12px;
+                                &:hover{
+                                    background: #fff;
+                                    border: 1px solid #d7af8a;
+                                    color: #d7af8a;
+                                    p{
+                                        color: #d7af8a;
+                                    }
+                                }
                             }
                             .right_box{
                                 float: right;
@@ -930,6 +946,13 @@
                         top: 1em;
                         right: 1.5em;
                         padding: .1em .5em;
+                        &:hover{
+                            background: #fff;
+                            border: 1px solid #d7af8a;
+                            p{
+                                color: #d7af8a;
+                            }
+                        }
                         p{
                             font-size: 1.071em;
                         }
@@ -1058,12 +1081,25 @@
                         }
                         &.blue_card.blue_card.blue_card{
                             background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
+                            &:hover{
+                                background: linear-gradient(to left, #a3c3f4 0%, #6589c6 100%);
+                                transition: all .3s ease-in-out;
+                            }
                         }
                         &.green_card.green_card.green_card{
                             background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
+                            transition: all .3s ease-in-out;
+                            &:hover{
+                                background: linear-gradient(to left, #60d6ce 0%, #31a8b1 100%);
+                                transition: all .3s ease-in-out;
+                            }
                         }
                         &.pink_card.pink_card.pink_card{
                             background: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
+                            &:hover{
+                                background: linear-gradient(to left, #ffadba 0%, #d7767a 100%);
+                                transition: all .3s ease-in-out;
+                            }
                         }
                         &.gray_top{
                             line-height: 5.5em;
