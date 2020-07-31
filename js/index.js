@@ -4,11 +4,11 @@ $(document).ready(function() {
       //page_name = active種類頁
       let fileName = location.pathname.split("/").slice(-1);
       let testname = fileName.toString();
-      let findme ="soccer";
       let page_name = [
         'soccer',
         'basball',
         'basketball',
+        'horse_race',
         'esp',
         'stock',
         'lottery',
@@ -19,36 +19,48 @@ $(document).ready(function() {
         'motor_sport',
         'badminton',
         'football',
-        'horse_race',
         'bso',
-        't_tennis'
+        'table_ball'
     ];
-    
-    let left_tag = $('.left .index.active li').each(function(index){
-      return index.toString();
-    })
-    
-    console.log(left_tag);
+    let left_taget =[
+      '.left .index.active li:nth-child(1)',
+      '.left .index.active li:nth-child(2)',
+      '.left .index.active li:nth-child(3)',
+      '.left .index.active li:nth-child(4)',
+      '.left .index.active li:nth-child(5)',
+      '.left .index.active li:nth-child(6)',
+      '.left .index.active li:nth-child(7)',
+      '.left .index.active li:nth-child(8)',
+      '.left .index.active li:nth-child(9)',
+      '.left .index.active li:nth-child(10)',
+      '.left .index.active li:nth-child(11)',
+      '.left .index.active li:nth-child(12)',
+      '.left .index.active li:nth-child(13)',
+      '.left .index.active li:nth-child(14)',
+      '.left .index.active li:nth-child(15)',
+      '.left .index.active li:nth-child(16)',
+      '.left .index.active li:nth-child(17)',
+      '.left .index.active li:nth-child(18)'
+    ]
+    // let left_tag = $('.left .index.active li').each(function(index){
+    //   return index.toString();
+    // })
+    // let left_tag = $('.left .index.active li')
+    // console.log(left_tag);
 
     for(let i = 0 ; i<page_name.length ; i++){
       if ( testname.indexOf(page_name[i])> -1 ) {
-        // left_tag[i+2].siblings().removeClass('active');
-        // left_tag[(i+2)].addClass('active');
-
-        left_tag.each(function(index){
-          let now_index = index +2;
-
-          console.log('index = '+index+'i ='+i)
-
-        })
-        console.log(left_tag[i+2]);
-        // console.log('okname is = '+page_name[i]);
-
+  
+        $(left_taget[i+2]).addClass('active');
+        return console.log('i = '+i);
+      
       } else {
         console.log('not found')
       }
     }
-      console.log('this page = {'+fileName+'}')
+    console.log('this page = {'+fileName+'}')
+    //<---------隨著頁面更換左球種-----------------------
+      
       
       //測試鈕開關
       $('.all_test li:nth-child(1)').click(function(){
