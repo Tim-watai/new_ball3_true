@@ -152,7 +152,7 @@ ul {
     .sign_yet {
     line-height: 6em;
     // text-align: right;
-    padding-right: calc(.8em + 7px);
+    // padding-right: calc(.8em + 7px);
     .wrap {
         line-height: 4em;
         display: inline-block;
@@ -186,7 +186,8 @@ ul {
     //登入
     .sign_in {
     line-height: 6em;
-    padding-left: 2em;
+    //2020_08_03
+    // padding-left: 2em;
     // text-align: right;
     .wrap {
         display: inline-block;
@@ -208,7 +209,7 @@ ul {
         .vip {
             display: inline-block;
             vertical-align: top;
-            margin: 0 0 0 0.5em;
+            // margin: 0 0 0 0.5em;
             line-height: 1.1em;
             padding: .1em 0.25em 0em;
             background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
@@ -240,7 +241,7 @@ ul {
             background-size: 100%;
             display: inline-block;
             vertical-align: text-bottom;
-            margin: 0 0 0 4px;
+            margin: 0 0 0 .5em;
             }
         }
         }

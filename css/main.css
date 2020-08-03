@@ -1218,8 +1218,7 @@ aside {
       .h_wrap .right .sign_in.active {
         display: block; }
     .h_wrap .right .sign_yet {
-      line-height: 6em;
-      padding-right: calc(.8em + 7px); }
+      line-height: 6em; }
       .h_wrap .right .sign_yet .wrap {
         line-height: 4em;
         display: inline-block;
@@ -1244,8 +1243,7 @@ aside {
         color: #4d515d;
         position: relative; }
     .h_wrap .right .sign_in {
-      line-height: 6em;
-      padding-left: 2em; }
+      line-height: 6em; }
       .h_wrap .right .sign_in .wrap {
         display: inline-block;
         line-height: 4em;
@@ -1263,7 +1261,6 @@ aside {
           .h_wrap .right .sign_in .wrap .row .vip {
             display: inline-block;
             vertical-align: top;
-            margin: 0 0 0 0.5em;
             line-height: 1.1em;
             padding: .1em 0.25em 0em;
             background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
@@ -1295,7 +1292,7 @@ aside {
               background-size: 100%;
               display: inline-block;
               vertical-align: text-bottom;
-              margin: 0 0 0 4px; }
+              margin: 0 0 0 .5em; }
 
 .game_in {
   width: 100%;
