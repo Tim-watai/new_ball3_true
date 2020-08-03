@@ -513,6 +513,9 @@ li{
         height: 1.7em;
         vertical-align: middle;
         margin: 0 .125em 0 0;
+        &:first-child{
+            margin: 0;
+        }
         }
     
         &.tv{
@@ -566,8 +569,8 @@ li{
     }
     .point_b{
         display: inline-block;
-        width: .5em;
-        height: .5em;
+        width: 1em;
+        height: 1em;
         background: #000;
         border-radius: 100%;
         vertical-align: middle;
@@ -809,7 +812,7 @@ p{
 .row{
     background: #fefefe;
     &:nth-child(even){
-    background: #f3f3f3;
+    background: #f8f8f8;
     }
     &.pure_text.pure_text.pure_text.pure_text.pure_text{
     color: #4d515d;
@@ -828,9 +831,9 @@ p{
 }
 &.normal_mode{
     .row{
-    line-height:3em;
-    height:3em;
-    position: relative;
+        line-height: calc(3em - 2px);
+        height:3em;
+        position: relative;
     }
     .title{
     .b24{
@@ -867,7 +870,8 @@ $big_mode_row:5em;
         &.no_use_top{
             div{
                 &:last-child{
-                    border-top: 2px solid transparent;
+                    // border-top: 2px solid transparent;
+                    border-top: none;
                 }
             }
         }

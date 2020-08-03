@@ -355,12 +355,14 @@ $(document).ready(function() {
         if($(this).hasClass('active') != true){
                 $(this).addClass('active');
                 $(this).siblings().removeClass('start');
+                $(this).children(".ball_drow").addClass('active')
         return  $(this).children(".ball_drow").slideDown("slow");
       
         }else{
                 $(this).removeClass('active');
                 $(this).siblings().addClass('start');
-        return  $(this).children(".ball_drow").hide();
+                return     $(this).children(".ball_drow").removeClass('active')
+          // $(this).children(".ball_drow").hide();
         }
       
       })

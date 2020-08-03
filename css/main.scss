@@ -226,11 +226,12 @@ header {
     }
     .row{
       border-radius: 20px 0 0 20px;
-      line-height: 4.786em;
+      line-height:100%;
+      background: #eaedf4;
     }
     .ul_wrap{
       position: absolute;
-      top: 4.786em;
+      top: 100%;
       right: 0;
       max-height: 453px;
       line-height: 2em;
@@ -335,8 +336,9 @@ header {
       position: relative;
       line-height: 100%;
       text-align: center;
-      padding: .8em;
-      vertical-align: bottom;
+      padding: calc(.8em + 10px) 0;
+      vertical-align: middle;
+    
       i{
         width: 2.286em;
         height: 2.286em;
@@ -401,7 +403,7 @@ header {
   .f_wrap {
     position: fixed;
     right: 0;
-    top: 200px;
+    top: 230px;
     z-index: 10;
     color: #4d515d;
     //0624
@@ -449,13 +451,13 @@ header {
         text-align: center;
         //0623
         // padding: 1.2em .8em 1.2em .8em;
-        padding: .8em;
+      
         i{
           margin: 0 0 4px;
         }
         &:hover{
           color: #fff;
-          background: linear-gradient(to right , #7f8cd1 0% ,#1a2b84 100%);
+        
           .i1{
             background-position: 0 -1.5em;
           }
@@ -464,6 +466,7 @@ header {
     }
     .f_bot{
       ul{
+        background: #eaedf4;
         li{
           line-height: 100%;
           text-align: center;
@@ -606,6 +609,7 @@ header {
         border-radius: 8px;
         padding: 0 1.357em 0 1.357em;
         position: relative;
+        box-shadow: 0 0 6px 1px #bcc2dc;
         z-index: 2;
         .blue{
           color: #556de7;
@@ -746,7 +750,7 @@ header {
             line-height: 1.1;
             vertical-align: middle;
             display: inline-block;
-            padding: 2px .315em 0 .315em;
+            padding: 4px .315em 2px .315em;
             color: #3145b2;
             border-radius: 4px;
             font-size: 1rem;
@@ -1030,10 +1034,10 @@ header {
       width: 22.2%;
       height: auto;
       float: left;
-      overflow-y: scroll;
+      overflow-y: auto;
       overflow-x: hidden;
       position: fixed;
-      height: 88vh;
+      height: 100vh;
       top: 0;
       right: 0;
       padding: 0 0 8em;

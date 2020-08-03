@@ -319,13 +319,14 @@
                         margin: 0 $trans_marg 0 0;
                         border: 1px solid #b9c0d2;
                         border-radius: 8px;
-                        padding: 0 .8em;
-                        line-height: 6em;
+                        padding: 3px .8em 0;
+                        line-height: calc(3em - 1.5px);
                         overflow: hidden;
                         .row{
                             display: block;
                             float: left;
-                            line-height: 3em;
+                    
+                            // line-height: 3em;
                             width: 100%;
                             .right_box{
                                 float: right;
@@ -375,7 +376,7 @@
                     display: inline-block;
                     line-height: 1;
                     vertical-align: bottom;
-                    padding: 0 0 .5em;
+                    padding: 0 0 1em;
                     color: #c59a73;
                     cursor: pointer;
                     span{
@@ -436,7 +437,7 @@
                     background-size: 100%;
                     width: 2.5em;
                     height: 1.5em;
-                    margin: 0 1em;
+                    margin: 0 calc(1em + 10px) 0 1em;
                 }
                 .i_box{
                     border-radius: 8px;
@@ -529,11 +530,11 @@
                             margin: 0 .8em 0 0;
                             line-height: 1;
                             p{
-                                font-size: 1.2em;
+                                font-size: 1.4em;
                                 display: inline-block;
-                                vertical-align: baseline;
+                                vertical-align: middle;
                                 &.money{
-                                    font-size: .8em;
+                                    font-size: 1em;
                                 }
 
                             }
@@ -605,14 +606,16 @@
                             }
                         }
                         .copy_box{
-                            width: 3em;
+                            width: 3.8em;
+                            padding-top: 1px;
                             height: 1.5em;
                             margin: 0 0 0 .5em;
                             display: inline-block;
                             vertical-align: middle;
                         }
                         .copy{
-                            width: 3em;
+                            width: 3.8em;
+                            padding-top: 1px;
                             display: inline-block;
                             text-align: center;
                             line-height: 1.5em;
@@ -639,7 +642,7 @@
                         width: 100%;
                     }
                     .li_h_2_3{
-                        line-height: 2.3em;
+                        line-height: 2.6em;
                         padding: 0;
                     }
 
@@ -652,8 +655,8 @@
                         padding:.5em 0;
                         .icon_change{
                             display: inline-block;
-                            width: 2em;
-                            height: 2em;
+                            width: 1.6em;
+                            height: 1.6em;
                             background: url(../image/my/change.png)no-repeat;
                             background-size: 100%;
                             vertical-align: middle;
@@ -665,7 +668,11 @@
                             }
                         }
                         &.li_h_2_3{
-                            line-height: 2.3em;
+                            line-height: 2.6em;
+                            padding: 0;
+                        }
+                        &.li_h_3{
+                            line-height: 3em;
                             padding: 0;
                         }
                         &:hover,&.active{
@@ -682,7 +689,7 @@
                                 border-radius: 0 0 10px 0;
                             }
                             .icon_change{
-                                background-position-y: -2em;
+                                background-position-y: -1.6em;
                             }
                         }
                         &.for_change{
@@ -710,6 +717,9 @@
                         width: 30%;
                         height: 2.5em;
                         border-radius: 4px;
+                        &:hover{
+                            background: linear-gradient(to bottom,#3046b7 0%, #8e9bdc);
+                        }
                         p{
                             font-size: 1.2em;
                         }

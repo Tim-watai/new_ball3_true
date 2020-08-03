@@ -731,11 +731,17 @@ aside{
                     color: #fff;
                     border: none;
                     background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+                    &:hover{
+                        background: linear-gradient(to bottom, #2f45b7 0%, #8f9cdc 100%);
+                    }
                 }
                 &.cancel{
                     color: #4d515d;
                     border: 1px solid #495cc5;
                     background: linear-gradient(to bottom, #ffffff 0% ,#d5d9ef 100%);
+                    &:hover{
+                        background: linear-gradient(to bottom, #d5d9ef 0% ,#ffffff 100%);
+                    }
                 }
             }
             

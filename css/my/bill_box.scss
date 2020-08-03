@@ -68,14 +68,19 @@
         }
     }
     .footer_bill{
-        font-size: 1.12em;
+        font-size: 1em;
         border-radius: 8px;
         overflow: hidden;
         margin: .8em 0 0;
         color: #fff;
         background: #bf652e;
-        line-height: 2em;
-        height: 2em;
+        line-height: 2.5em;
+        height: 2.5em;
+        span{
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 100%;
+        }
         .t_mid{
             text-align: center;
         }
