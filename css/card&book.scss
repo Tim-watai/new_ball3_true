@@ -64,7 +64,7 @@
                 span{
                 background: linear-gradient(to bottom ,#ffffff 0%, #ebecf7 100%);
                 border: 1px solid #b9bfdc;
-                border-radius: 8px;
+                border-radius: 5px;
                 }
             }
         }
@@ -748,7 +748,7 @@ p{
         span{
         background: linear-gradient(to bottom ,#ffffff 0%, #ffe9da 100%);
         border: 1px solid #b9bfdc;
-        border-radius: 8px;
+        border-radius: 5px;
         }
     }
     }
@@ -775,7 +775,7 @@ p{
         span{
         background: linear-gradient(to bottom ,#ffffff 0%, #ebecf7 100%);
         border: 1px solid #b9bfdc;
-        border-radius: 8px;
+        border-radius: 5px;
         }
     }
     }
@@ -795,7 +795,7 @@ p{
             span{
             background: linear-gradient(to bottom ,#ffffff 0%, #ebecf7 100%);
             border: 1px solid #b9bfdc;
-            border-radius: 8px;
+            border-radius: 5px;
             }
         }
         span{
@@ -841,7 +841,7 @@ p{
     }
     }
 }
-$big_mode_row:5em;
+$big_mode_row: 5.429em;
 
 &.big_mode{
     .row{
@@ -888,12 +888,14 @@ $big_mode_row:5em;
         }
     }
     .two{
+        padding-top: 1px;
         div{
         line-height: calc(#{$big_mode_row} / 2);
-        height: calc(#{$big_mode_row} / 2);
+        height: calc((#{$big_mode_row} / 2) - 2px);
         width: 100%;
         border: none;
         position: relative;
+        padding:2px 0 ;
         // &:first-child{
         //     span{
         //     margin: .25em 0 0;

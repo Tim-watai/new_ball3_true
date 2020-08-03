@@ -1537,7 +1537,7 @@ aside {
   background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
   border: 1px solid #b9bfdc;
-  border-radius: 8px; }
+  border-radius: 5px; }
 
 .game_inner_box.game_inner_box .card span.two_text p:last-child {
   color: #005aff; }
@@ -2103,7 +2103,7 @@ aside {
     background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
     border: 1px solid #b9bfdc;
-    border-radius: 8px; }
+    border-radius: 5px; }
   .card.gray.gray .g_name {
     background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f0f0f0));
     background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
@@ -2125,7 +2125,7 @@ aside {
     background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
     border: 1px solid #b9bfdc;
-    border-radius: 8px; }
+    border-radius: 5px; }
   .card.blue.blue .g_name {
     background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#414c88));
     background: -webkit-linear-gradient(top, #6b76b4 0%, #414c88 100%);
@@ -2143,7 +2143,7 @@ aside {
     background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
     border: 1px solid #b9bfdc;
-    border-radius: 8px; }
+    border-radius: 5px; }
   .card.blue.blue div span.two_text p:last-child {
     color: #005aff; }
   .card .row {
@@ -2167,13 +2167,13 @@ aside {
   .card.normal_mode .title .b24 {
     padding: 0 .5em 0; }
   .card.big_mode .row {
-    line-height: 5em;
-    height: 5em; }
+    line-height: 5.429em;
+    height: 5.429em; }
     .card.big_mode .row .half {
       padding: 0; }
       .card.big_mode .row .half div {
-        line-height: calc(5em / 2);
-        height: calc(5em / 2);
+        line-height: calc(5.429em / 2);
+        height: calc(5.429em / 2);
         padding: 0 .5em 0;
         width: 100%;
         border: none;
@@ -2188,17 +2188,20 @@ aside {
     .card.big_mode .row .half_sp .b60 {
       width: 60%;
       border: none; }
-    .card.big_mode .row .two div {
-      line-height: calc(5em / 2);
-      height: calc(5em / 2);
-      width: 100%;
-      border: none;
-      position: relative; }
+    .card.big_mode .row .two {
+      padding-top: 1px; }
+      .card.big_mode .row .two div {
+        line-height: calc(5.429em / 2);
+        height: calc((5.429em / 2) - 2px);
+        width: 100%;
+        border: none;
+        position: relative;
+        padding: 2px 0; }
     .card.big_mode .row .three {
       padding: 0; }
       .card.big_mode .row .three div {
-        line-height: calc(5em / 3);
-        height: calc(5em / 3);
+        line-height: calc(5.429em / 3);
+        height: calc(5.429em / 3);
         padding: 0 .5em 0;
         width: 100%;
         border: none;
@@ -2210,7 +2213,7 @@ aside {
           border-top: none; }
     .card.big_mode .row .three_wrap .wrap_box {
       width: 100%;
-      height: 5em;
+      height: 5.429em;
       position: relative; }
       .card.big_mode .row .three_wrap .wrap_box .wrap_in {
         position: absolute;
@@ -2230,8 +2233,8 @@ aside {
           position: relative;
           width: 100%;
           display: inline-block;
-          line-height: calc((5em - 20px) / 3);
-          height: calc((5em - 20px) / 3);
+          line-height: calc((5.429em - 20px) / 3);
+          height: calc((5.429em - 20px) / 3);
           cursor: pointer; }
           .card.big_mode .row .three_wrap .wrap_box .wrap_in span:first-child {
             margin: 0 0 1px; }
@@ -4566,6 +4569,8 @@ main.my_page.my_page.my_page {
         width: 49%; }
       .basic_bill .bill_row li .b54 {
         width: 54%; }
+      .basic_bill .bill_row li .b89 {
+        width: 89%; }
   .basic_bill .close {
     line-height: 2.5em;
     height: 2.5em;
@@ -4727,7 +4732,7 @@ main.my_page.my_page.my_page {
         font-size: 1.1em; }
   .bill_box .footer_bill {
     font-size: 1em;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
     margin: .8em 0 0;
     color: #fff;
