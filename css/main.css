@@ -1385,9 +1385,9 @@ aside {
           background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 70%, rgba(255, 255, 255, 0.75) 71%, rgba(255, 255, 255, 0) 100%);
           top: 60%;
           left: 0;
-          -webkit-transform: translate(-1.6em, -50%) rotate(-45deg);
-          -ms-transform: translate(-1.6em, -50%) rotate(-45deg);
-          transform: translate(-1.6em, -50%) rotate(-45deg);
+          -webkit-transform: translate(-2.8em, -50%) rotate(-45deg);
+          -ms-transform: translate(-2.8em, -50%) rotate(-45deg);
+          transform: translate(-2.8em, -50%) rotate(-45deg);
           opacity: 1;
           -webkit-transition: all .3s linear;
           -o-transition: all .3s linear;
