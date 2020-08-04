@@ -1620,7 +1620,7 @@ aside {
         overflow: hidden; }
         .card li div.icon_box .ii_wrap {
           float: none;
-          margin: 6px 0; }
+          margin: 5px 0 0px; }
         .card li div.icon_box .icon_box_wrap {
           float: none;
           overflow: hidden;
@@ -1645,8 +1645,8 @@ aside {
               background-size: cover;
               display: inline-block;
               vertical-align: bottom;
-              width: 1.9em;
-              height: 1.9em;
+              width: 1.7em;
+              height: 1.7em;
               position: relative;
               overflow: hidden; }
               .card li div.icon_box .i_box div.cube.tv:after {
@@ -1877,15 +1877,15 @@ aside {
         background: url(../image/icon/arrow_d.png) no-repeat;
         background-size: 100%;
         width: .4em;
-        height: .6em;
+        height: .7em;
         margin: 0 0 0 .125em;
         vertical-align: middle; }
       .card li div i {
         display: inline-block;
         cursor: pointer; }
         .card li div i.m_icon {
-          width: 1.7em;
-          height: 1.7em;
+          width: 1.6em;
+          height: 1.6em;
           vertical-align: middle;
           margin: 0 .125em 0 0; }
           .card li div i.m_icon:first-child {
@@ -1935,7 +1935,7 @@ aside {
           background: url(../image/icon/heart.png) no-repeat;
           background-size: 200%; }
           .card li div i.heart:hover, .card li div i.heart.active {
-            background-position: -1.7em 0; }
+            background-position: -1.6em 0; }
       .card li div .point {
         display: inline-block;
         width: .5em;
@@ -2023,7 +2023,7 @@ aside {
     display: inline-block;
     vertical-align: middle;
     font-size: 1em;
-    line-height: 120%;
+    line-height: 100%;
     white-space: nowrap; }
   .card .g_name {
     line-height: 2em; }
@@ -4694,6 +4694,8 @@ main.my_page.my_page.my_page {
     background: linear-gradient(to bottom, #ffffff 0%, #edeef5 100%);
     position: relative; }
     .bill_box .title_bill span {
+      font-size: 1em; }
+    .bill_box .title_bill p {
       font-size: 1.1em; }
     .bill_box .title_bill .b25 {
       float: left;
@@ -6712,7 +6714,10 @@ header {
         top: .8em;
         width: 968px;
         z-index: 5;
-        width: calc((65.5% - 1.6em) - 4px); }
+        width: calc((65.5% - 1.6em) - 4px);
+        -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
+        box-shadow: 0 0 6px 1px #bcc2dc;
+        border-radius: 8px; }
         .container main .right .wrap.fixed.fixed.fixed.fixed.big_size {
           width: calc((83.2% - 1.6em) - 4px); }
         .container main .right .wrap.fixed.fixed.fixed.fixed.active {
@@ -6729,8 +6734,6 @@ header {
         border-radius: 8px;
         padding: 0 1.357em 0 1.357em;
         position: relative;
-        -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
-        box-shadow: 0 0 6px 1px #bcc2dc;
         z-index: 2; }
         .container main .right .search_bar .blue {
           color: #556de7; }
@@ -6738,6 +6741,8 @@ header {
           position: fixed;
           top: .7em;
           width: calc((65.5% - 1.6em) - 4px);
+          -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
+          box-shadow: 0 0 6px 1px #bcc2dc;
           z-index: 5; }
           .container main .right .search_bar.fixed.big_size {
             width: calc((83.2% - 1.6em) - 4px); }

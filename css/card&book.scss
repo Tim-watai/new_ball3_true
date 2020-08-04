@@ -179,7 +179,7 @@ li{
         .ii_wrap{
             
             float: none;
-            margin: 6px 0;
+            margin: 5px 0 0px;
         }
         .icon_box_wrap{
             float: none;
@@ -208,8 +208,8 @@ li{
                         background-size: cover;
                         display: inline-block;
                         vertical-align: bottom;
-                        width: 1.9em;
-                        height: 1.9em;
+                        width: 1.7em;
+                        height: 1.7em;
                         position: relative;
                         overflow: hidden;
                         &:after{
@@ -500,7 +500,7 @@ li{
         background: url(../image/icon/arrow_d.png) no-repeat;
         background-size: 100%;
         width: .4em;
-        height: .6em;
+        height: .7em;
         margin: 0 0 0 .125em;
         vertical-align: middle;
         }
@@ -509,8 +509,8 @@ li{
         display: inline-block;
         cursor: pointer;
         &.m_icon{
-        width: 1.7em;
-        height: 1.7em;
+        width: 1.6em;
+        height: 1.6em;
         vertical-align: middle;
         margin: 0 .125em 0 0;
         &:first-child{
@@ -554,7 +554,7 @@ li{
         background: url(../image/icon/heart.png)no-repeat;
         background-size: 200%;
         &:hover,&.active{
-            background-position: -1.7em 0;
+            background-position: -1.6em 0;
         }
         }
     }
@@ -685,7 +685,7 @@ p{
     display: inline-block;
     vertical-align: middle;
     font-size: 1em;
-    line-height: 120%;
+    line-height: 100%;
     white-space: nowrap;
 }
 .g_name{
