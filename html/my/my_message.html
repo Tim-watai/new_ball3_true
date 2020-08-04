@@ -649,14 +649,24 @@
               <div class="avatar"></div>
               <div class="n_wrap">
                 <p class="name">user545</p>
-                <div class="vip"><i></i><p>0</p></div>
+                <div class="vip"><i></i>
+                  <p>0</p>
+                </div>
               </div>
               <p class="day">加入第6天</p>
             </div>
             <div class="box_3">
-              <div class="box"><i class="cash i1"></i><p>存款</p> <a href="./my_bill_save.html"></a></div>
-              <div class="box"><i class="cash i2"></i><p>轉點</p><a href="./my_bill_trans.html"></a></div>
-              <div class="box"><i class="cash i3"></i><p>取款</p> <a href="./my_bill_get_cash.html"></a></div>
+              <div class="box"><i class="cash i1"></i>
+                <p>存款</p><a href="./my_bill_save.html"></a>
+              </div>
+              <div class="box"><i class="cash i2"></i>
+                <p>轉點</p>
+                <a href="./my_bill_trans.html"></a>
+              </div>
+              <div class="box"><i class="cash i3"></i>
+                <p>取款</p>
+                <a href="./my_bill_get_cash.html"></a>
+              </div>
             </div>
             <li>
               <i class="i1"></i>
@@ -664,16 +674,12 @@
               <p class="num active">1</p>
               <a href="./my_data.html"></a>
             </li>
-            <li>
-              <i class="i2"></i>
-              <p class="name">投注限額</p>
-              <p class="num active">1</p>
-            </li>
             <div class="blue_line"></div>
             <li>
               <i class="i3"></i>
               <p class="name">我的錢包</p>
               <p class="num active">1</p>
+              <a href="./my_bill_money_bag.html"></a>
             </li>
             <li>
               <i class="i4"></i>
@@ -693,11 +699,6 @@
               <p class="num active">1</p>
               <a href="./my_bill_record.html"></a>
             </li>
-            <li>
-              <i class="i7"></i>
-              <p class="name">卡片管理</p>
-              <p class="num active">1</p>
-            </li>
             <div class="blue_line"></div>
             <li>
               <i class="i8"></i>
@@ -711,7 +712,7 @@
               <p class="num active">1</p>
               <a href="./my_contact_us.html"></a>
             </li>
-            <li  class="active">
+            <li class="active">
               <i class="i10"></i>
               <p class="name">消息中心</p>
               <p class="num active">1</p>
@@ -948,38 +949,6 @@ ed_point.click(function(){
   }
 })
 //<--------------------
-//dummy同步本尊的寬
-let search_bar_obj = $('.container main .right .search_bar');
-        let search_bar_dummy = $('.search_bar.fixed');
-        let ball_search_dummy = $('.wrap.fixed');
-        
-        let obj_w = search_bar_obj.outerWidth();
-            search_bar_dummy.css({width:obj_w});
-            ball_search_dummy.css({width:obj_w});
-      function dummy(page){
-        search_bar_dummy.css({width:obj_w});
-        ball_search_dummy.css({width:obj_w});
-        if(page == 'my'){
-          let search_bar_my = $('.container main.my_page .right .my_bill');
-          let my_wrap = $('.container main.my_page .right .my_bill .wrap.fixed');
-          let obj_w = search_bar_my.outerWidth();
-          my_wrap.css({width:obj_w});
-          console.log('my')
-        }
-      }
-      //
-      //視窗偵測
-        $('.container main .right').scroll(function () {
-      
-          var scrollVal = $(this).scrollTop();
-        //  console.log('scrollVal = '+scrollVal);
-         if(scrollVal >= 50){
-          $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
-         }else if(scrollVal <= 49){
-          $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
-         }
-        });
-      //<------------------
 //switch
 let sw_btn = $('.mess_sw .s_b50');
 sw_btn.click(function(){

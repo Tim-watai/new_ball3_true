@@ -489,7 +489,10 @@ aside {
   height: auto;
   border-radius: 15px;
   position: absolute;
-  left: calc(50vw - 18em);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 100px;
   font-size: 16px;
   overflow: hidden; }
@@ -523,8 +526,7 @@ aside {
   .bet_box.free_w {
     width: auto; }
   .bet_box.pw_w {
-    width: 21em;
-    left: calc(50vw - (21em / 2)); }
+    width: 21em; }
   .bet_box.add_card_w {
     width: 47em; }
   .bet_box .hidden_i_block.hidden_i_block.hidden_i_block {
@@ -776,7 +778,7 @@ aside {
       max-height: 18.6em;
       overflow-y: scroll; }
       .bet_box .content .bets .limit_area::-webkit-scrollbar {
-        width: 10px; }
+        width: 5px; }
       .bet_box .content .bets .limit_area::-webkit-scrollbar-track {
         background: #eceef5;
         padding: 0 2px 0; }
@@ -1948,6 +1950,7 @@ aside {
         display: inline-block;
         width: 1em;
         height: 1em;
+        border: 1px solid #959595;
         background: #000;
         border-radius: 100%;
         vertical-align: middle;
@@ -2594,7 +2597,7 @@ aside {
                 .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button {
                   border: 1px solid #3654ff;
                   border-radius: 12px;
-                  padding: .1em .5em;
+                  padding: 0em .5em;
                   background: transparent;
                   color: #3654ff; }
                   .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:hover, .live_page .live_games .live_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button.active, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button:hover, .live_page .live_games .talk_content .live_balls .ball_wrap .ball_drow li .drow_right .btn_wrap button.active {
@@ -3139,8 +3142,8 @@ main.my_page.my_page.my_page {
 .help_wrap {
   color: #4d515d;
   margin: .5em 0 0;
-  -webkit-box-shadow: 0 0 6px 1px #ccd0ec;
-  box-shadow: 0 0 6px 1px #ccd0ec;
+  -webkit-box-shadow: 0 0 6px 3px #ccd0ec;
+  box-shadow: 0 0 6px 3px #ccd0ec;
   border-radius: 12px;
   overflow: hidden;
   -webkit-transition: all .2s ease-in-out;
@@ -3869,6 +3872,14 @@ main.my_page.my_page.my_page {
         width: 1.286em;
         height: 1.286em;
         background: url(../image/icon/infor.png) no-repeat;
+        background-size: 100%;
+        vertical-align: middle;
+        margin: 0 .25em 0 0; }
+      .basic_bill .save_type .trans_row .infor_i_g {
+        display: inline-block;
+        width: 1.286em;
+        height: 1.286em;
+        background: url(../image/icon/infor_gray.png) no-repeat;
         background-size: 100%;
         vertical-align: middle;
         margin: 0 .25em 0 0; }
@@ -4682,8 +4693,8 @@ main.my_page.my_page.my_page {
     color: #fe0000; }
   .bill_box .title_bill {
     width: 100%;
-    line-height: 3em;
-    height: 3em;
+    line-height: 2.571em;
+    height: 2.571em;
     border-radius: 8px;
     border: 1px solid #989dbc;
     color: #4d515d;
@@ -4694,7 +4705,7 @@ main.my_page.my_page.my_page {
     background: linear-gradient(to bottom, #ffffff 0%, #edeef5 100%);
     position: relative; }
     .bill_box .title_bill span {
-      font-size: 1em; }
+      font-size: 1.071em; }
     .bill_box .title_bill p {
       font-size: 1.1em; }
     .bill_box .title_bill .b25 {
@@ -4908,7 +4919,7 @@ main.my_page.my_page.my_page {
   margin: 1.2em 0 0; }
   .infor_line span {
     line-height: 100%;
-    vertical-align: bottom;
+    vertical-align: middle;
     color: #8c93a6; }
 
 .link.link.link {
@@ -4928,6 +4939,15 @@ i.infor {
   background-size: 100%; }
   i.infor.infor_margin_r {
     margin-right: 0.571em; }
+
+i.infor_i_g {
+  display: inline-block;
+  width: 1.286em;
+  height: 1.286em;
+  background: url(../image/icon/infor_gray.png) no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+  margin: 0 .25em 0 0; }
 
 .full_box {
   width: auto; }
@@ -6032,7 +6052,7 @@ p.qa_title {
 .more_bet {
   display: block;
   font-size: 1em;
-  border-radius: 18px;
+  border-radius: 10px;
   overflow: hidden;
   -webkit-box-shadow: 0 0 4px 2px #bac0db;
   box-shadow: 0 0 4px 2px #bac0db;
@@ -6074,9 +6094,9 @@ p.qa_title {
     .more_bet .g_table span {
       float: left;
       width: auto;
-      margin: 6px 1% 6px 0;
+      margin: 3px 1% 3px 0;
       border: 1px solid #b9bfdc;
-      border-radius: 8px;
+      border-radius: 5px;
       height: 100%;
       background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
       background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
@@ -6097,8 +6117,9 @@ p.qa_title {
         border-color: transparent;
         pointer-events: none; }
         .more_bet .g_table span.no_use.no_use_title {
-          line-height: calc(2em - 12px);
-          height: calc(2em - 12px); }
+          line-height: calc(2.5em - 12px);
+          height: calc(2.5em - 12px);
+          margin-top: 8px; }
       .more_bet .g_table span.solo p {
         position: absolute;
         top: 50%;
@@ -6940,8 +6961,8 @@ header {
           display: inline-block;
           vertical-align: middle;
           width: auto;
-          height: 1.5em;
-          line-height: 1.5em;
+          height: 1.786em;
+          line-height: 1.786em;
           border: 1px solid #3145b2;
           border-radius: 4px;
           background: #fff;

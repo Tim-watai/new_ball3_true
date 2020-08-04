@@ -129,7 +129,7 @@
     margin: 1.2em 0 0;
     span{
         line-height: 100%;
-        vertical-align: bottom;
+        vertical-align: middle;
         color: #8c93a6;
     }
 }
@@ -154,6 +154,15 @@ i{
         &.infor_margin_r{
             margin-right: 0.571em;
         }
+    }
+    &.infor_i_g{
+        display: inline-block;
+        width: 1.286em;
+        height: 1.286em;
+        background: url(../image/icon/infor_gray.png)no-repeat;
+        background-size: 100%;
+        vertical-align: middle;
+        margin: 0 .25em 0 0;
     }
 }
 

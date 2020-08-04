@@ -230,6 +230,10 @@
                 </div>
               </div>
             </div>
+            <span class="infor_line"><i class="infor_i_g"></i>
+              <span>最多支援3張銀行卡
+            </span>
+            </span>
           </div>
         </div>
         <!--added Card-->
@@ -459,22 +463,18 @@
           <p class="num active">1</p>
           <a href="./my_data.html"></a>
         </li>
-        <li>
-          <i class="i2"></i>
-          <p class="name">投注限額</p>
-          <p class="num active">1</p>
-        </li>
         <div class="blue_line"></div>
         <li>
           <i class="i3"></i>
           <p class="name">我的錢包</p>
           <p class="num active">1</p>
+          <a href="./my_bill_money_bag.html"></a>
         </li>
         <li>
           <i class="i4"></i>
           <p class="name">交易紀錄</p>
           <p class="num active">1</p>
-          <a href="../my/my_bill_trans_record.html"></a>
+          <a href="./my_bill_trans_record.html"></a>
         </li>
         <li>
           <i class="i5"></i>
@@ -487,11 +487,6 @@
           <p class="name">投注紀錄</p>
           <p class="num active">1</p>
           <a href="./my_bill_record.html"></a>
-        </li>
-        <li>
-          <i class="i7"></i>
-          <p class="name">卡片管理</p>
-          <p class="num active">1</p>
         </li>
         <div class="blue_line"></div>
         <li>
@@ -5293,29 +5288,7 @@
   warning_clch.click(function(){
       return warning_w.removeClass('active');
     })
-    //pw_ch 彈窗_移動
-  $('.bet_box.blue.free_w .title').mousedown(
-          function(event){
-          let isMove = true;
-          let abs_x = event.pageX - $('aside .bet_box.blue.free_w').offset().left;
-          let abs_y = event.pageY - $('aside .bet_box.blue.free_w').offset().top;
-          //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
-          let e_px = event.pageX;
-          let leftt = $('aside .bet_box.free_w').offset().left;
-          $(document).mousemove(
-            function(event){
-              if (isMove) {
-              let obj = $('aside .bet_box.free_w');
-              obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
-              }
-              //move接up
-            }).mouseup(
-              function () {
-                isMove = false;
-              }
-            )//up
-        })//down
-  //<-----------------------------------
+   
 
   //修改密碼彈窗
   let ch_pw = $('.tag_wrap .tag.ch_pw');
@@ -5331,28 +5304,7 @@
     pw_close.click(function(){
       return ch_window.removeClass('active');
     })
-  //pw_ch 彈窗_移動
-  $('.bet_box.blue.pw_w .title').mousedown(
-          function(event){
-          let isMove = true;
-          let abs_x = event.pageX - $('aside .bet_box.blue.pw_w').offset().left;
-          let abs_y = event.pageY - $('aside .bet_box.blue.pw_w').offset().top;
-          //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
-          let e_px = event.pageX;
-          let leftt = $('aside .bet_box.pw_w').offset().left;
-          $(document).mousemove(
-            function(event){
-              if (isMove) {
-              let obj = $('aside .bet_box.pw_w');
-              obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
-              }
-              //move接up
-            }).mouseup(
-              function () {
-                isMove = false;
-              }
-            )//up
-        })//down
+
 
     //添加銀行卡彈窗
     let add_btn = $('.box_3 .card_box.m_card');
@@ -5369,28 +5321,7 @@
       return add_window.removeClass('active');
     })
 
-  //add_card 彈窗_移動
-  $('.bet_box.blue.add_card_w .title').mousedown(
-        function(event){
-        let isMove = true;
-        let abs_x = event.pageX - $('aside .bet_box.blue.add_card_w').offset().left;
-        let abs_y = event.pageY - $('aside .bet_box.blue.add_card_w').offset().top;
-        //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
-        let e_px = event.pageX;
-        let leftt = $('aside .bet_box.add_card_w').offset().left;
-        $(document).mousemove(
-          function(event){
-            if (isMove) {
-            let obj = $('aside .bet_box.add_card_w');
-            obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
-            }
-            //move接up
-          }).mouseup(
-            function () {
-              isMove = false;
-            }
-          )//up
-      })//down
+  
 
   //立即取款 輸入觸發
   let input_cash = $('.basic_bill .save_type .row li input');
