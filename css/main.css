@@ -1296,6 +1296,7 @@ header {
             vertical-align: top;
             line-height: 1.1em;
             padding: .1em 0.25em 0em;
+            margin-right: .5em;
             background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
             background: -webkit-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
             background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
