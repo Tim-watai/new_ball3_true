@@ -2096,7 +2096,7 @@ header {
     .card .g_name p {
       line-height: 1;
       vertical-align: middle;
-      margin: 0 0 0 calc(1em / 1.143);
+      margin: 0 0 0 .5em;
       font-size: 1em; }
   .card .title {
     line-height: 2em;
@@ -3808,8 +3808,10 @@ main.my_page.my_page.my_page {
       margin: 0 -.5em 0 0; }
     .basic_bill .save_type .trans_card {
       width: auto;
-      margin: 0 -0.5em 0 0;
+      margin: 0.5em -0.5em 0 0;
       overflow: hidden; }
+      .basic_bill .save_type .trans_card:first-child {
+        margin-top: 0; }
       .basic_bill .save_type .trans_card .box_4 {
         width: calc(100% / 4);
         float: left; }
@@ -6875,7 +6877,7 @@ body {
             background: #6272cc;
             line-height: 1.1;
             font-size: 1.2em;
-            padding: 2px 0 0 0;
+            padding: 5px 0 3px 0;
             color: #fff;
             border-radius: 4px;
             vertical-align: middle;

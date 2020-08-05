@@ -310,8 +310,11 @@
             .trans_card{
                 $trans_marg:.5em;
                 width: auto;
-                margin: 0 #{$trans_marg * -1} 0 0;
+                margin: .5em #{$trans_marg * -1} 0 0;
                 overflow: hidden;
+                &:first-child{
+                    margin-top: 0;
+                }
                 .box_4{
                     width: calc(100% / 4);
                     float: left;
