@@ -1,3 +1,6 @@
+$f_size_16:1.143em;
+$f_size_15:1.071em;
+$f_size_14:1em;
 .book{
     line-height: 3.5em;
     height: 3.5em;
@@ -129,7 +132,7 @@ em{
     line-height: 1.2;
     vertical-align: middle;
     word-break: break-all;
-    font-size: 14px;
+    font-size: 16px;
     overflow: hidden;
     width: 100%;
     text-overflow: ellipsis;
@@ -207,7 +210,7 @@ li{
                         background: url(../image/icon/live_icon.png)no-repeat;
                         background-size: cover;
                         display: inline-block;
-                        vertical-align: bottom;
+                        vertical-align: top;
                         width: 1.7em;
                         height: 1.7em;
                         position: relative;
@@ -245,7 +248,7 @@ li{
                         width: 1.6em;
                         height: 1.6em;
                         display: inline-block;
-                        vertical-align: bottom;
+                        vertical-align: middle;
                         &:hover,&.active{
                             background-position-x: -1.6em;
                         }
@@ -258,7 +261,7 @@ li{
                             display: inline-block;
                             line-height: 100%;
                             display: inline-block;
-                            vertical-align: middle;
+                            vertical-align: text-bottom;
                             font-size: 1.2em;
                         }
                     }
@@ -356,7 +359,7 @@ li{
         float: left;
         width: 11.375%;
         border: 1px solid #b9bfdc;
-        border-radius: 8px;
+        border-radius: 5px;
         height: 100%;
         position: relative;
         cursor: pointer;
@@ -382,7 +385,7 @@ li{
         width: 23.75%;
         margin: 0 1% 0;
         border: 1px solid #b9bfdc;
-        border-radius: 8px;
+        border-radius: 5px;
         height: 100%;
         position: relative;
         cursor: pointer;
@@ -409,7 +412,7 @@ li{
         width: 32%;
         margin: 0 1% 0;
         border: 1px solid #b9bfdc;
-        border-radius: 8px;
+        border-radius: 5px;
         height: 100%;
         position: relative;
         cursor: pointer;
@@ -430,7 +433,7 @@ li{
         margin: 0 1% 0;
         background: linear-gradient(to bottom ,#ffffff 0%, #ffe9da 100%);
         border: 1px solid #b9bfdc;
-        border-radius: 8px;
+        border-radius: 5px;
         height: 100%;
         position: relative;
         cursor: pointer;
@@ -452,7 +455,7 @@ li{
         width: 88%;
         background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
         border: 1px solid #b9bfdc;
-        border-radius: 8px;
+        border-radius: 5px;
         //0703
         height: calc(100%);
         position: relative;
@@ -478,7 +481,8 @@ li{
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            line-height: 1.2;
+            line-height: 1;
+            font-size: $f_size_14;
             &:first-child{
             left: 25%;
             width: 50%;
@@ -488,6 +492,7 @@ li{
             }
             &:last-child{
             left: 70%;
+            font-size: $f_size_16;
             }
         }
         }
@@ -685,7 +690,7 @@ li{
 p{
     display: inline-block;
     vertical-align: middle;
-    font-size: 1em;
+    font-size: 1.143em;
     line-height: 100%;
     white-space: nowrap;
 }
@@ -699,7 +704,7 @@ p{
     background-size: 1800%;
     line-height: 1;
     vertical-align: text-bottom;
-    margin: 0 -.5em 0 .5em;
+    margin: 0 0 0 0.857em;
     @for $i from 1 through 16{
         &.i#{$i}{
         background-position-x: (($i + 1) * -1.15em);
@@ -709,8 +714,8 @@ p{
     p{
     line-height: 1;
     vertical-align: middle;
-    margin: 0 0 0 .5em;
-    font-size: 1em;
+    margin: 0 0 0 0.071em;
+    font-size: $f_size_15;
     }
 }
 .title{
@@ -723,7 +728,7 @@ p{
     line-height: 1;
     vertical-align: middle;
     // font-size: 14px;
-    font-size: 1em;
+    font-size: 1.143em;
     }
 }
 
@@ -832,8 +837,10 @@ p{
 }
 &.normal_mode{
     .row{
-        line-height: calc(3em - 2px);
-        height:3em;
+        // line-height: calc(3em - 2px);
+        // height:3em;
+        line-height: calc(2.786em - 2px);
+        height:2.786em;
         position: relative;
     }
     .title{
@@ -882,6 +889,9 @@ $big_mode_row: 5.429em;
         .b40{
         width: 40%;
         border: none;
+        p{
+            font-size: 1.143em;
+        }
         }
         .b60{
         width: 60%;
@@ -912,7 +922,7 @@ $big_mode_row: 5.429em;
     .three{
         padding: 0;
         div{
-        line-height: calc(#{$big_mode_row} / 3);
+        line-height: calc((#{$big_mode_row} / 3) - 1px);
         height: calc(#{$big_mode_row} / 3);
         padding: 0 .5em 0;
         width: 100%;
@@ -942,6 +952,9 @@ $big_mode_row: 5.429em;
             .m_icon{
                 margin: 0 auto;
                 display: block;
+                &.heart.heart.heart{
+                    margin: .25em auto 0 auto;
+                }
             }
             &.w100{
             width: 100%;
@@ -964,6 +977,9 @@ $big_mode_row: 5.429em;
             em{
             cursor: pointer;
             font-size: 1.1em;
+            p{
+                font-size: 1em;
+            }
             }
         }
         }

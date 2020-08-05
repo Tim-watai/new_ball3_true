@@ -55,14 +55,18 @@
         <div class="sign_in active">
           <div class="wrap">
             <div class="row">
+              <p class="gray">user545</p>
               <div class="vip"><i></i>
                 <p>0</p>
               </div>
-              <p class="gray">user545</p>
+             
             </div>
             <div class="row bot">
-              <p class="blue">NT$ <span>0.00</span></p>
+              <p class="blue my_money">NT$ <span>0.00</span></p>
               <i class="q"></i>
+              <button class="sign_out">
+                <p>登出</p>
+              </button>
             </div>
           </div>
         </div>
@@ -97,7 +101,7 @@
             </div>
           </div>
           <div class="bill_right">
-            <button><p>登出</p></button>
+            
           </div>
         </div>
         <div class="search_bar">
@@ -111,7 +115,7 @@
           <p class="blue">週結</p>
           <div class="right_box">
             <div class="tag_wrap">
-              <span class="tag ch_pw">修改密碼</span>
+              <span class="tag ch_pw"><span>修改密碼</span></span>
             </div>
           </div>
 
@@ -828,7 +832,7 @@
 <aside class="ch_pw black_bg">
   <div class="bet_box blue pw_w" style="left: 777px; top: 151px;">
     <div class="title">
-      <p>修改密碼</p>
+      <p><span>修改密碼</span></p>
       <span class="close"></span>
     </div>
     <div class="content">
@@ -864,7 +868,7 @@
   $(document).ready(function () {
     console.log('get_cash_page');
 
-  //修改密碼彈窗
+  //<span>修改密碼</span>彈窗
   let ch_pw = $('.tag_wrap .tag.ch_pw');
   let ch_window = $('.black_bg.ch_pw');
   ch_pw.click(function(){

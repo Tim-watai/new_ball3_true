@@ -274,6 +274,8 @@ $(document).ready(function() {
       let yet_status = $('.yet_sign_in_status');
       let in_status = $('.sign_in_status');
       let h_status = $('.time_line .time_box');
+
+      let soccer_in = $('.left .index.active li:nth-child(3)');
       btn_start2.click(function(){
           if(sign_in.hasClass('active')){
             
@@ -287,6 +289,7 @@ $(document).ready(function() {
        function sign_active (sign){
          console.log('sign ='+sign)
       if(sign == false){
+                soccer_in.removeClass('active');
                 h_status.removeClass('in_status');
                 in_status.removeClass('active');
                 yet_status.addClass('active');
@@ -301,6 +304,7 @@ $(document).ready(function() {
                 r_wrap.addClass('big_size');
         return  list_in.removeClass('active');
       }else{
+                soccer_in.addClass('active');
                 h_status.addClass('in_status');
                 in_status.addClass('active');
                 yet_status.removeClass('active');
@@ -428,7 +432,7 @@ function change_methods(ishard){
         }
     })
     //<--------------------------------------
-    //選擇球種
+    //<p>選擇球種</p>
     let ball_tag_btn = $('.ball_cho');
     let balls_choice = $('.balls_choice ,.league_choice');
     ball_tag_btn.click(function(){

@@ -111,16 +111,19 @@
             display: inline-block;
             line-height: 1;
             vertical-align: middle;
+            padding-top: 4px;
             &.bf{
                 line-height: 1;
                 vertical-align: middle;
                 margin: 0 0 0 1em;
                 font-size: 1.1em;
+                padding-top: 4px;
             }
             &.bf_n{
                 line-height: 1;
                 vertical-align: middle;
                 font-size: 1.1em;
+                
             }
            
         }
@@ -321,7 +324,7 @@
                     .box{
                         margin: 0 $trans_marg 0 0;
                         border: 1px solid #b9c0d2;
-                        border-radius: 8px;
+                        border-radius: 5px;
                         padding: 3px .8em 0;
                         line-height: calc(3em - 1.5px);
                         overflow: hidden;
@@ -452,7 +455,7 @@
                     margin: 0 calc(1em + 10px) 0 1em;
                 }
                 .i_box{
-                    border-radius: 8px;
+                    border-radius: 5px;
                     border: 1px solid #b9bfdc;
                     display: inline-block;
                     vertical-align: middle;
@@ -467,7 +470,7 @@
                     vertical-align: middle;
                     background: #b6bcca;
                     color: #fff;
-                    border-radius: 8px;
+                    border-radius: 5px;
                     padding: .6em 1em;
                     p{
                         font-size: 16px;
@@ -485,7 +488,7 @@
             
             .bk_box{
                 border: 1px solid #b9bfdc;
-                border-radius: 8px;
+                border-radius: 5px;
                 line-height: 2.5em;
                 height: 2.5em;
                 width: 30%;
@@ -542,7 +545,7 @@
                             margin: 0 .8em 0 0;
                             line-height: 1;
                             p{
-                                font-size: 1.4em;
+                                font-size: 1.286em;
                                 display: inline-block;
                                 vertical-align: middle;
                                 &.money{
@@ -656,6 +659,7 @@
                     .li_h_2_3{
                         line-height: 2.6em;
                         padding: 0;
+                      
                     }
 
                     .save_wrap{
@@ -682,6 +686,7 @@
                         &.li_h_2_3{
                             line-height: 2.6em;
                             padding: 0;
+                            padding-top: 2px;
                         }
                         &.li_h_3{
                             line-height: 3em;
@@ -753,7 +758,7 @@
                     input{
                         line-height: 1.5em;
                         width: 30%;
-                        border-radius: 8px;
+                        border-radius: 5px;
                         border: 1px solid #b9c0d2;
                         padding: .5em 1em;
                         margin: 0 1em 0 0;
@@ -784,10 +789,10 @@
             //取款_中心&鎖定_錢包
             .mb_box{
                 border: 1px solid #b9c0d2;
-                border-radius: 8px;
+                border-radius: 5px;
                 overflow: hidden;
-                line-height: 6em;
-                height: 6em;
+                line-height: 7.286em;
+                height: 7.286em;
                 &.free.free.free.free.free{
                     height: auto;
                     line-height: 100%;
@@ -1000,7 +1005,7 @@
                         margin: 0 1.2em 0 0;
                         text-align: center;
                         background: #f1f1f1;
-                        border-radius: 8px;
+                        border-radius: 5px;
                         line-height: 8em;
                         &.text_left{
                             text-align: left;

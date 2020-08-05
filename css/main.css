@@ -603,7 +603,7 @@ aside {
                   margin: 0 1em 0 0; }
               .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size {
                 border: 1px solid #b9bfdc;
-                border-radius: 8px;
+                border-radius: 5px;
                 padding: 0 1em;
                 display: inline-block;
                 vertical-align: middle;
@@ -631,7 +631,7 @@ aside {
         background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
         width: auto;
         display: inline-block;
-        border-radius: 8px;
+        border-radius: 5px;
         padding: .5em 4em;
         cursor: pointer;
         font-size: 1.143em; }
@@ -1062,7 +1062,7 @@ aside {
       width: 16em;
       padding: 0 .5em;
       border: 1px solid #b9bfdc;
-      border-radius: 8px; }
+      border-radius: 5px; }
   .bet_box li.pw_btn_area {
     padding: 0 1em;
     line-height: 2.5em;
@@ -1078,7 +1078,7 @@ aside {
     .bet_box li.pw_btn_area button {
       height: 2.5em;
       width: 100%;
-      border-radius: 8px; }
+      border-radius: 5px; }
       .bet_box li.pw_btn_area button p {
         font-size: 1.1em;
         font-weight: bold; }
@@ -1240,7 +1240,7 @@ header {
           position: absolute;
           bottom: 0;
           left: 0;
-          border-radius: 8px; }
+          border-radius: 5px; }
   .h_wrap .right {
     float: right;
     line-height: 6em;
@@ -1302,12 +1302,14 @@ header {
             vertical-align: top;
             line-height: 1.1em;
             padding: .1em 0.25em 0em;
-            margin-right: .5em;
             background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
             background: -webkit-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
             background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
             background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
-            border-radius: 4px; }
+            border-radius: 4px;
+            width: 3.500em;
+            padding: 2px 0;
+            text-align: center; }
             .h_wrap .right .sign_in .wrap .row .vip i {
               background: url(../image/icon/vip.png) no-repeat;
               background-size: 100%;
@@ -1322,7 +1324,8 @@ header {
               color: #fff;
               vertical-align: text-top;
               line-height: 100%;
-              font-size: .8em; }
+              font-size: .8em;
+              white-space: nowrap; }
           .h_wrap .right .sign_in .wrap .row.bot {
             text-align: left; }
             .h_wrap .right .sign_in .wrap .row.bot i {
@@ -1331,8 +1334,33 @@ header {
               background: url(../image/icon/q_icon.png) no-repeat;
               background-size: 100%;
               display: inline-block;
-              vertical-align: text-bottom;
-              margin: 0 0 0 .5em; }
+              vertical-align: middle; }
+            .h_wrap .right .sign_in .wrap .row.bot .my_money {
+              display: inline-block;
+              vertical-align: middle;
+              padding-top: 4px;
+              line-height: 1; }
+            .h_wrap .right .sign_in .wrap .row.bot .sign_out {
+              background: -webkit-gradient(linear, left top, left bottom, from(#ddb692), to(#b78a61));
+              background: -webkit-linear-gradient(top, #ddb692 0%, #b78a61 100%);
+              background: -o-linear-gradient(top, #ddb692 0%, #b78a61 100%);
+              background: linear-gradient(to bottom, #ddb692 0%, #b78a61 100%);
+              border: 1px solid #ffeddd;
+              color: #fff;
+              border-radius: 5px;
+              font-size: 14px;
+              padding: 4px 9px 2px;
+              width: 3.5em; }
+              .h_wrap .right .sign_in .wrap .row.bot .sign_out:hover {
+                background: -webkit-gradient(linear, left top, left bottom, from(#b78a61), to(#ddb692));
+                background: -webkit-linear-gradient(top, #b78a61 0%, #ddb692 100%);
+                background: -o-linear-gradient(top, #b78a61 0%, #ddb692 100%);
+                background: linear-gradient(to bottom, #b78a61 0%, #ddb692 100%); }
+              .h_wrap .right .sign_in .wrap .row.bot .sign_out p {
+                font-size: 1.071em;
+                line-height: 1;
+                vertical-align: middle;
+                white-space: nowrap; }
 
 .game_in {
   width: 100%;
@@ -1609,7 +1637,7 @@ header {
     line-height: 1.2;
     vertical-align: middle;
     word-break: break-all;
-    font-size: 14px;
+    font-size: 16px;
     overflow: hidden;
     width: 100%;
     text-overflow: ellipsis;
@@ -1674,7 +1702,7 @@ header {
               background: url(../image/icon/live_icon.png) no-repeat;
               background-size: cover;
               display: inline-block;
-              vertical-align: bottom;
+              vertical-align: top;
               width: 1.7em;
               height: 1.7em;
               position: relative;
@@ -1721,7 +1749,7 @@ header {
               width: 1.6em;
               height: 1.6em;
               display: inline-block;
-              vertical-align: bottom; }
+              vertical-align: middle; }
               .card li div.icon_box .i_box div.cube.heart:hover, .card li div.icon_box .i_box div.cube.heart.active {
                 background-position-x: -1.6em; }
             .card li div.icon_box .i_box div.cube.num {
@@ -1732,7 +1760,7 @@ header {
                 display: inline-block;
                 line-height: 100%;
                 display: inline-block;
-                vertical-align: middle;
+                vertical-align: text-bottom;
                 font-size: 1.2em; }
       .card li div.box_8, .card li div.box_4, .card li div.box_3, .card li div.box_2, .card li div.box_1 {
         padding: 6px 0; }
@@ -1792,7 +1820,7 @@ header {
           float: left;
           width: 11.375%;
           border: 1px solid #b9bfdc;
-          border-radius: 8px;
+          border-radius: 5px;
           height: 100%;
           position: relative;
           cursor: pointer;
@@ -1811,7 +1839,7 @@ header {
           width: 23.75%;
           margin: 0 1% 0;
           border: 1px solid #b9bfdc;
-          border-radius: 8px;
+          border-radius: 5px;
           height: 100%;
           position: relative;
           cursor: pointer;
@@ -1831,7 +1859,7 @@ header {
           width: 32%;
           margin: 0 1% 0;
           border: 1px solid #b9bfdc;
-          border-radius: 8px;
+          border-radius: 5px;
           height: 100%;
           position: relative;
           cursor: pointer;
@@ -1851,7 +1879,7 @@ header {
           background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
           background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
           border: 1px solid #b9bfdc;
-          border-radius: 8px;
+          border-radius: 5px;
           height: 100%;
           position: relative;
           cursor: pointer;
@@ -1870,7 +1898,7 @@ header {
           background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
           background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
           border: 1px solid #b9bfdc;
-          border-radius: 8px;
+          border-radius: 5px;
           height: calc(100%);
           position: relative;
           cursor: pointer;
@@ -1890,7 +1918,8 @@ header {
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        line-height: 1.2; }
+        line-height: 1;
+        font-size: 1em; }
         .card li div span.two_text p:first-child {
           left: 25%;
           width: 50%;
@@ -1899,7 +1928,8 @@ header {
           -o-text-overflow: ellipsis;
           text-overflow: ellipsis; }
         .card li div span.two_text p:last-child {
-          left: 70%; }
+          left: 70%;
+          font-size: 1.143em; }
       .card li div .arrow_d {
         color: #4d515d;
         cursor: pointer;
@@ -2053,7 +2083,7 @@ header {
   .card p {
     display: inline-block;
     vertical-align: middle;
-    font-size: 1em;
+    font-size: 1.143em;
     line-height: 100%;
     white-space: nowrap; }
   .card .g_name {
@@ -2066,7 +2096,7 @@ header {
       background-size: 1800%;
       line-height: 1;
       vertical-align: text-bottom;
-      margin: 0 -.5em 0 .5em; }
+      margin: 0 0 0 0.857em; }
       .card .g_name i.i1 {
         background-position-x: -2.3em; }
       .card .g_name i.i2 {
@@ -2102,8 +2132,8 @@ header {
     .card .g_name p {
       line-height: 1;
       vertical-align: middle;
-      margin: 0 0 0 .5em;
-      font-size: 1em; }
+      margin: 0 0 0 0.071em;
+      font-size: 1.071em; }
   .card .title {
     line-height: 2em;
     overflow: hidden;
@@ -2112,7 +2142,7 @@ header {
       display: inline-block;
       line-height: 1;
       vertical-align: middle;
-      font-size: 1em; }
+      font-size: 1.143em; }
   .card.gold.gold .g_name {
     background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d9a87c));
     background: -webkit-linear-gradient(top, #fedab8 0%, #d9a87c 100%);
@@ -2192,8 +2222,8 @@ header {
         pointer-events: none;
         line-height: calc(2em - 12px); }
   .card.normal_mode .row {
-    line-height: calc(3em - 2px);
-    height: 3em;
+    line-height: calc(2.786em - 2px);
+    height: 2.786em;
     position: relative; }
   .card.normal_mode .title .b24 {
     padding: 0 .5em 0; }
@@ -2216,6 +2246,8 @@ header {
     .card.big_mode .row .half_sp .b40 {
       width: 40%;
       border: none; }
+      .card.big_mode .row .half_sp .b40 p {
+        font-size: 1.143em; }
     .card.big_mode .row .half_sp .b60 {
       width: 60%;
       border: none; }
@@ -2231,7 +2263,7 @@ header {
     .card.big_mode .row .three {
       padding: 0; }
       .card.big_mode .row .three div {
-        line-height: calc(5.429em / 3);
+        line-height: calc((5.429em / 3) - 1px);
         height: calc(5.429em / 3);
         padding: 0 .5em 0;
         width: 100%;
@@ -2258,6 +2290,8 @@ header {
         .card.big_mode .row .three_wrap .wrap_box .wrap_in .m_icon {
           margin: 0 auto;
           display: block; }
+          .card.big_mode .row .three_wrap .wrap_box .wrap_in .m_icon.heart.heart.heart {
+            margin: .25em auto 0 auto; }
         .card.big_mode .row .three_wrap .wrap_box .wrap_in.w100 {
           width: 100%; }
         .card.big_mode .row .three_wrap .wrap_box .wrap_in span {
@@ -2274,6 +2308,8 @@ header {
         .card.big_mode .row .three_wrap .wrap_box .wrap_in em {
           cursor: pointer;
           font-size: 1.1em; }
+          .card.big_mode .row .three_wrap .wrap_box .wrap_in em p {
+            font-size: 1em; }
 
 .live_page {
   background: #fafbff;
@@ -2289,6 +2325,10 @@ header {
     text-overflow: ellipsis; }
   .live_page span, .live_page p, .live_page i {
     display: inline-block; }
+  .live_page p.live_t.live_t.live_t.live_t.live_t {
+    font-size: 1.071em;
+    vertical-align: middle;
+    padding-bottom: 2px; }
   .live_page .live_t.live_t.live_t:hover {
     color: #caa481; }
   .live_page span.icon_tv_gold {
@@ -2296,7 +2336,7 @@ header {
     height: 1.5em;
     background: url(../image/icon/live_icon_gold.png) no-repeat;
     background-size: 100%;
-    vertical-align: text-bottom;
+    vertical-align: bottom;
     margin: 0 .75em 0 0;
     cursor: pointer; }
   .live_page span.icon_infor {
@@ -2337,15 +2377,15 @@ header {
         float: left;
         width: 50%;
         text-align: right; }
-        .live_page .live_title .wrap .r_box p {
+        .live_page .live_title .wrap .r_box p.teach_btn {
           color: #4d515d;
           font-size: 1em;
-          padding: .1em;
+          padding: 3px;
           border: solid 1px;
           background: #fff;
           border-radius: 4px;
           cursor: pointer; }
-          .live_page .live_title .wrap .r_box p:hover {
+          .live_page .live_title .wrap .r_box p.teach_btn:hover {
             color: #fff;
             background: #4d515d; }
       .live_page .live_title .wrap .l_box {
@@ -3101,7 +3141,7 @@ main.my_page.my_page.my_page {
   width: 100%;
   background: #fff;
   position: relative;
-  margin: 1em 0 0;
+  margin: .5em 0 0;
   overflow: hidden; }
   .tr_record_box .record_row {
     overflow: hidden;
@@ -3264,7 +3304,7 @@ main.my_page.my_page.my_page {
         margin-right: .5em;
         line-height: 2.286em;
         border: 1px solid #b78960;
-        border-radius: 8px;
+        border-radius: 5px;
         text-align: center;
         cursor: pointer; }
         .rules_type .row .box_wrap .m_box:hover, .rules_type .row .box_wrap .m_box.active {
@@ -3660,12 +3700,14 @@ main.my_page.my_page.my_page {
     .basic_bill .b_name p {
       display: inline-block;
       line-height: 1;
-      vertical-align: middle; }
+      vertical-align: middle;
+      padding-top: 4px; }
       .basic_bill .b_name p.bf {
         line-height: 1;
         vertical-align: middle;
         margin: 0 0 0 1em;
-        font-size: 1.1em; }
+        font-size: 1.1em;
+        padding-top: 4px; }
       .basic_bill .b_name p.bf_n {
         line-height: 1;
         vertical-align: middle;
@@ -3824,7 +3866,7 @@ main.my_page.my_page.my_page {
         .basic_bill .save_type .trans_card .box_4 .box {
           margin: 0 0.5em 0 0;
           border: 1px solid #b9c0d2;
-          border-radius: 8px;
+          border-radius: 5px;
           padding: 3px .8em 0;
           line-height: calc(3em - 1.5px);
           overflow: hidden; }
@@ -3939,7 +3981,7 @@ main.my_page.my_page.my_page {
         height: 1.5em;
         margin: 0 calc(1em + 10px) 0 1em; }
       .basic_bill .save_type .trans_row .i_box {
-        border-radius: 8px;
+        border-radius: 5px;
         border: 1px solid #b9bfdc;
         display: inline-block;
         vertical-align: middle;
@@ -3951,7 +3993,7 @@ main.my_page.my_page.my_page {
         vertical-align: middle;
         background: #b6bcca;
         color: #fff;
-        border-radius: 8px;
+        border-radius: 5px;
         padding: .6em 1em; }
         .basic_bill .save_type .trans_row .i_btn p {
           font-size: 16px;
@@ -3965,7 +4007,7 @@ main.my_page.my_page.my_page {
         width: 35%; }
     .basic_bill .save_type .bk_box {
       border: 1px solid #b9bfdc;
-      border-radius: 8px;
+      border-radius: 5px;
       line-height: 2.5em;
       height: 2.5em;
       width: 30%;
@@ -4012,7 +4054,7 @@ main.my_page.my_page.my_page {
             margin: 0 .8em 0 0;
             line-height: 1; }
             .basic_bill .save_type .row.box_5 li .save_wrap p {
-              font-size: 1.4em;
+              font-size: 1.286em;
               display: inline-block;
               vertical-align: middle; }
               .basic_bill .save_type .row.box_5 li .save_wrap p.money {
@@ -4120,7 +4162,8 @@ main.my_page.my_page.my_page {
               font-size: 1.2em; }
           .basic_bill .save_type .row li .save_wrap.li_h_2_3 {
             line-height: 2.6em;
-            padding: 0; }
+            padding: 0;
+            padding-top: 2px; }
           .basic_bill .save_type .row li .save_wrap.li_h_3 {
             line-height: 3em;
             padding: 0; }
@@ -4184,7 +4227,7 @@ main.my_page.my_page.my_page {
         .basic_bill .save_type .row li input {
           line-height: 1.5em;
           width: 30%;
-          border-radius: 8px;
+          border-radius: 5px;
           border: 1px solid #b9c0d2;
           padding: .5em 1em;
           margin: 0 1em 0 0; }
@@ -4234,10 +4277,10 @@ main.my_page.my_page.my_page {
           background-position-x: -39em; }
     .basic_bill .save_type .mb_box {
       border: 1px solid #b9c0d2;
-      border-radius: 8px;
+      border-radius: 5px;
       overflow: hidden;
-      line-height: 6em;
-      height: 6em; }
+      line-height: 7.286em;
+      height: 7.286em; }
       .basic_bill .save_type .mb_box.free.free.free.free.free {
         height: auto;
         line-height: 100%; }
@@ -4411,7 +4454,7 @@ main.my_page.my_page.my_page {
           margin: 0 1.2em 0 0;
           text-align: center;
           background: #f1f1f1;
-          border-radius: 8px;
+          border-radius: 5px;
           line-height: 8em; }
           .basic_bill .save_type .cards .box_3 .card_box.text_left {
             text-align: left; }
@@ -4705,7 +4748,7 @@ main.my_page.my_page.my_page {
 
 .bill_box {
   margin: .5em 0;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden; }
   .bill_box.active {
     border: 1px solid #b7906e;
@@ -4725,7 +4768,7 @@ main.my_page.my_page.my_page {
     width: 100%;
     line-height: 2.571em;
     height: 2.571em;
-    border-radius: 8px;
+    border-radius: 5px;
     border: 1px solid #989dbc;
     color: #4d515d;
     overflow: hidden;
@@ -5054,7 +5097,7 @@ ul.data li {
         background: -webkit-linear-gradient(top, #ffffff 0%, #d5daef 100%);
         background: -o-linear-gradient(top, #ffffff 0%, #d5daef 100%);
         background: linear-gradient(to bottom, #ffffff 0%, #d5daef 100%);
-        border-radius: 8px;
+        border-radius: 5px;
         border: 1px solid #495cc5;
         cursor: pointer; }
         .contact_us_size.contact_us_size.contact_us_size .contact_top .b50 .right_box .c_cube:hover, .contact_us_size.contact_us_size.contact_us_size .contact_bot .b50 .right_box .c_cube:hover {
@@ -5123,7 +5166,7 @@ ul.data li {
     color: #8c93a6; }
   .contact_us_qa_table.contact_us_qa_table.contact_us_qa_table .qa_type_box .qa_type {
     border: 1px solid #b9bfdc;
-    border-radius: 8px;
+    border-radius: 5px;
     display: inline-block;
     padding: 0.714em 1em;
     line-height: 100%;
@@ -5173,7 +5216,7 @@ ul.data li {
     height: 5.714em; }
     .contact_us_qa_table.contact_us_qa_table.contact_us_qa_table .save_type .pic_area .pic_import {
       display: inline-block;
-      border-radius: 8px;
+      border-radius: 5px;
       -webkit-box-shadow: 0 0 0px 1px #d1d4e2;
       box-shadow: 0 0 0px 1px #d1d4e2;
       width: 6.143em;
@@ -5231,7 +5274,7 @@ ul.data li {
       background: -webkit-linear-gradient(top, #8f9cdc 0%, #3247b8 100%);
       background: -o-linear-gradient(top, #8f9cdc 0%, #3247b8 100%);
       background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-      border-radius: 8px;
+      border-radius: 5px;
       cursor: pointer; }
       .contact_us_qa_table.contact_us_qa_table.contact_us_qa_table .save_type .pic_infor_area .blue_btn:hover {
         background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8f9cdc));
@@ -5361,7 +5404,7 @@ ul.data li {
       height: 100%;
       overflow: hidden;
       border: 1px solid #fff;
-      border-radius: 8px;
+      border-radius: 5px;
       -webkit-box-shadow: 0 0 6px 1px #d7dced;
       box-shadow: 0 0 6px 1px #d7dced;
       position: relative;
@@ -5970,7 +6013,7 @@ p.qa_title {
         left: 1em;
         height: 1.857em;
         line-height: 1.857em;
-        border-radius: 8px;
+        border-radius: 5px;
         padding: 0 1em;
         background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
         background: -webkit-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
@@ -6134,8 +6177,8 @@ p.qa_title {
       background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
       position: relative;
       cursor: pointer;
-      height: calc(3em - 12px);
-      line-height: calc(3em - 12px); }
+      height: calc(3em - 14px);
+      line-height: calc(3em - 14px); }
       .more_bet .g_table span:hover:hover:hover:hover, .more_bet .g_table span.active.active.active.active.active {
         background: #3654ff;
         border: 1px solid transparent; }
@@ -6172,9 +6215,11 @@ p.qa_title {
           white-space: nowrap;
           overflow: hidden;
           -o-text-overflow: ellipsis;
-          text-overflow: ellipsis; }
+          text-overflow: ellipsis;
+          font-size: 1em; }
         .more_bet .g_table span.two_text p:last-child {
-          left: 70%; }
+          left: 70%;
+          font-size: 1.143em; }
 
 .balls_choice, .league_choice {
   display: none;
@@ -6749,12 +6794,12 @@ body {
         top: .8em;
         width: 968px;
         z-index: 5;
-        width: calc((65.5% - 1.6em) - 4px);
+        width: calc((65.5% - 1.6em) - 6px);
         -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
         box-shadow: 0 0 6px 1px #bcc2dc;
-        border-radius: 8px; }
+        border-radius: 5px; }
         .container main .right .wrap.fixed.fixed.fixed.fixed.big_size {
-          width: calc((83.2% - 1.6em) - 4px); }
+          width: calc((83.2% - 1.6em) - 6px); }
         .container main .right .wrap.fixed.fixed.fixed.fixed.active {
           display: block; }
       .container main .right .search_bar {
@@ -6766,7 +6811,7 @@ body {
         background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         overflow: hidden;
-        border-radius: 8px;
+        border-radius: 5px;
         padding: 0 1.357em 0 1.357em;
         position: relative;
         z-index: 2; }
@@ -6820,9 +6865,9 @@ body {
                 display: none; }
         .container main .right .search_bar p {
           display: inline-block;
-          font-size: 1.143em;
+          font-size: 1.071em;
           color: #4d515d;
-          line-height: 1.1;
+          line-height: 1;
           vertical-align: middle;
           cursor: pointer;
           padding: 2px 0 0;
@@ -6832,7 +6877,7 @@ body {
             .container main .right .search_bar p.active:before, .container main .right .search_bar p:hover:before {
               content: '';
               position: absolute;
-              bottom: -.8em;
+              bottom: -14px;
               left: 0;
               width: 100%;
               height: 3px;
@@ -6882,7 +6927,7 @@ body {
             width: 60%;
             background: #6272cc;
             line-height: 1.1;
-            font-size: 1.2em;
+            font-size: 1.071em;
             padding: 5px 0 3px 0;
             color: #fff;
             border-radius: 4px;
@@ -6897,19 +6942,25 @@ body {
             line-height: 1.1;
             vertical-align: middle;
             display: inline-block;
-            padding: 4px .315em 2px .315em;
+            padding: 4px .315em 4px .315em;
             color: #3145b2;
             border-radius: 4px;
-            font-size: 1rem;
+            font-size: 14px;
             cursor: pointer; }
+            .container main .right .search_bar .tag_wrap .tag span {
+              font-size: 1.071em;
+              line-height: 1;
+              vertical-align: middle;
+              color: #3145b2; }
             .container main .right .search_bar .tag_wrap .tag:last-child {
               margin: 0; }
             .container main .right .search_bar .tag_wrap .tag:hover, .container main .right .search_bar .tag_wrap .tag.active {
               background: -webkit-gradient(linear, left top, left bottom, from(#354ab9), to(#8b98da));
               background: -webkit-linear-gradient(top, #354ab9 0%, #8b98da 100%);
               background: -o-linear-gradient(top, #354ab9 0%, #8b98da 100%);
-              background: linear-gradient(to bottom, #354ab9 0%, #8b98da 100%);
-              color: #fff; }
+              background: linear-gradient(to bottom, #354ab9 0%, #8b98da 100%); }
+              .container main .right .search_bar .tag_wrap .tag:hover span, .container main .right .search_bar .tag_wrap .tag.active span {
+                color: #fff; }
         .container main .right .search_bar .right_box {
           float: right;
           height: 100%; }
@@ -6961,7 +7012,8 @@ body {
           background: url(../image/my/date_icon.png) no-repeat;
           background-size: 100%;
           display: inline-block;
-          cursor: pointer; }
+          cursor: pointer;
+          margin-right: 4px; }
         .container main .right .search_bar span.tri {
           width: 0;
           height: 0;
@@ -7024,10 +7076,10 @@ body {
           .container main .left ul.index li i {
             width: 1.5em;
             height: 1.5em;
-            background: url(../image/icon/list4.png) no-repeat;
+            background: url(../image/icon/list.png) no-repeat;
             background-size: 1800%;
-            vertical-align: text-bottom;
-            margin: 0 1.15em 0 0; }
+            vertical-align: middle;
+            margin: 0 .5em 0 0; }
             .container main .left ul.index li i.i1 {
               background-position: 0em 0; }
             .container main .left ul.index li i.i2 {
@@ -7068,7 +7120,8 @@ body {
             font-size: 1.15em;
             line-height: 100%;
             width: 50%;
-            vertical-align: middle; }
+            vertical-align: middle;
+            padding-top: 4px; }
             .container main .left ul.index li p.num {
               position: absolute;
               right: .9em;

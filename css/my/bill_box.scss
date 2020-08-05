@@ -1,6 +1,6 @@
 .bill_box{
     margin: .5em 0;
-    border-radius: 8px;
+    border-radius: 5px;
     overflow: hidden;
     &.active{
         border: 1px solid #b7906e;
@@ -18,7 +18,7 @@
         width: 100%;
         line-height: 2.571em;
         height: 2.571em;
-        border-radius: 8px;
+        border-radius: 5px;
         border: 1px solid #989dbc;
         color: #4d515d;
         overflow: hidden;

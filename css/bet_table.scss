@@ -1,3 +1,4 @@
+$f_size_16:1.143em;
 .more_bet{
     display: block;
     font-size: 1em;
@@ -22,6 +23,7 @@
             margin: 0 0 0 1em;
             font-size: 1em;
             display: inline-block;
+            
         }
     }
     .g_table{
@@ -66,8 +68,8 @@
             background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
             position: relative;
             cursor: pointer;
-            height: calc(3em - 12px);
-            line-height: calc(3em - 12px);
+            height: calc(3em - 14px);
+            line-height: calc(3em - 14px);
             &:hover:hover:hover:hover,&.active.active.active.active.active{
                 background: #3654ff;
                 border: 1px solid transparent;
@@ -109,9 +111,11 @@
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    font-size: 1em;
                     }
                     &:last-child{
                     left: 70%;
+                    font-size: $f_size_16;
                     }
                 }
                 }
