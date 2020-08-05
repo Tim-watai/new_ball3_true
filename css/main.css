@@ -1113,16 +1113,31 @@ aside {
 .container.en .f_wrap .f_bot ul li p {
   font-size: .9em; }
 
-.time_line {
-  background: #2f333d; }
-  .time_line .time_wrap {
-    line-height: 1.5em;
-    width: 1350px;
-    text-align: right;
-    margin: 0 auto;
-    color: #b4bac8; }
-  .time_line p {
-    width: auto; }
+header {
+  font-size: 14px;
+  width: 100%;
+  top: 0;
+  line-height: 100%;
+  position: fixed;
+  z-index: 10; }
+  header .time_line {
+    background: #2f333d; }
+    header .time_line .time_box {
+      line-height: 1.5em;
+      width: 1100px;
+      text-align: right;
+      margin: 0 auto;
+      color: #b4bac8;
+      overflow: hidden; }
+      header .time_line .time_box .right_box {
+        float: right;
+        padding-right: calc(.8em + 7px); }
+        header .time_line .time_box .right_box p {
+          padding-top: 2px; }
+      header .time_line .time_box.in_status {
+        width: 1350px; }
+        header .time_line .time_box.in_status .right_box {
+          width: 22.22%; }
 
 .h_box {
   width: 100%;
@@ -1156,6 +1171,8 @@ aside {
       text-align: left; }
     .h_wrap.other_size .right {
       padding-right: calc(.8em + 7px); }
+      .h_wrap.other_size .right .sign_in.active {
+        padding-right: 0; }
   .h_wrap .logo {
     width: 16.8%;
     height: 100%;
@@ -1229,8 +1246,12 @@ aside {
       .h_wrap .right .sign_yet.active,
       .h_wrap .right .sign_in.active {
         display: block; }
+    .h_wrap .right .sign_in.active {
+      text-align: right;
+      padding-right: calc(.8em + 7px); }
     .h_wrap .right .sign_yet {
-      line-height: 6em; }
+      line-height: 6em;
+      padding-right: calc(.8em + 7px); }
       .h_wrap .right .sign_yet .wrap {
         line-height: 4em;
         display: inline-block;
@@ -6303,22 +6324,6 @@ body {
       color: #fff;
       background: #000; }
 
-header {
-  font-size: 14px;
-  width: 100%;
-  top: 0;
-  line-height: 100%;
-  position: fixed;
-  z-index: 10; }
-  header .time_line {
-    background: #2f333d; }
-    header .time_line p {
-      line-height: 1.5em;
-      width: 1100px;
-      text-align: right;
-      margin: 0 auto;
-      color: #b4bac8; }
-
 .container {
   margin: 7.5em 0 0;
   width: 100%;
@@ -6372,7 +6377,7 @@ header {
     -webkit-transform: translateX(74%);
     -ms-transform: translateX(74%);
     transform: translateX(74%);
-    border-radius: 20px 0 0 20px;
+    border-radius: 29px 0 0 29px;
     -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
     box-shadow: 0 0 5px 1px #b6bcdd;
     background: #fff;
@@ -6386,7 +6391,7 @@ header {
       .container .search_group.active .row {
         background: #eaedf4; }
     .container .search_group .row {
-      border-radius: 20px 0 0 20px;
+      border-radius: 29px 0 0 29px;
       line-height: 100%;
       background: #eaedf4; }
     .container .search_group .ul_wrap {
@@ -6489,7 +6494,7 @@ header {
       display: inline-block;
       font-size: .9em;
       width: 7em;
-      border-radius: 20px 0 0 20px;
+      border-radius: 29px 0 0 29px;
       text-align: center;
       cursor: pointer;
       position: relative;

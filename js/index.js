@@ -273,6 +273,7 @@ $(document).ready(function() {
 
       let yet_status = $('.yet_sign_in_status');
       let in_status = $('.sign_in_status');
+      let h_status = $('.time_line .time_box');
       btn_start2.click(function(){
           if(sign_in.hasClass('active')){
             
@@ -286,6 +287,7 @@ $(document).ready(function() {
        function sign_active (sign){
          console.log('sign ='+sign)
       if(sign == false){
+                h_status.removeClass('in_status');
                 in_status.removeClass('active');
                 yet_status.addClass('active');
                 $('aside.fixed_size').removeClass('active')
@@ -299,6 +301,7 @@ $(document).ready(function() {
                 r_wrap.addClass('big_size');
         return  list_in.removeClass('active');
       }else{
+                h_status.addClass('in_status');
                 in_status.addClass('active');
                 yet_status.removeClass('active');
                 $('aside.fixed_size').addClass('active')

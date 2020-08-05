@@ -133,25 +133,28 @@ body {
 }
 
 //all_test
-header {
-  font-size: 14px;
-  width: 100%;
-  top: 0;
-  line-height: 100%;
-  position: fixed;
-  z-index: 10;
-  .time_line {
-    background: #2f333d;
-    p {
-      line-height: 1.5em;
-      width: 1100px;
-      text-align: right;
-      margin: 0 auto;
-      color: #b4bac8;
-    }
-  }
+// header {
+//   font-size: 14px;
+//   width: 100%;
+//   top: 0;
+//   line-height: 100%;
+//   position: fixed;
+//   z-index: 10;
+//   .time_line {
+//     background: #2f333d;
+//     .time_box {
+//       line-height: 1.5em;
+//       width: 1100px;
+//       text-align: right;
+//       margin: 0 auto;
+//       color: #b4bac8;
+//       &.in_status{
+//         width: 1350px;
+//       }
+//     }
+//   }
 
-}
+// }
 .container {
   //共用vip_0708
   .vip {
@@ -214,7 +217,7 @@ header {
     // right: -260px;
     right: -4px;
     transform: translateX(74%);
-    border-radius: 20px 0 0 20px;
+    border-radius: 29px 0 0 29px;
     box-shadow: 0 0 5px 1px #b6bcdd;
     background: #fff;
     transition: all ease-in-out .3s;
@@ -225,7 +228,7 @@ header {
       }
     }
     .row{
-      border-radius: 20px 0 0 20px;
+      border-radius: 29px 0 0 29px;
       line-height:100%;
       background: #eaedf4;
     }
@@ -330,7 +333,7 @@ header {
       display: inline-block;
       font-size: .9em;
       width: $right_list_width;
-      border-radius: 20px 0 0 20px;
+      border-radius: 29px 0 0 29px;
       text-align: center;
       cursor: pointer;
       position: relative;
