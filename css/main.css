@@ -6390,14 +6390,16 @@ body {
   .container .vip {
     display: inline-block;
     vertical-align: top;
-    margin: 0 0 0 0.5em;
     line-height: 1.1em;
     padding: .1em 0.25em 0em;
     background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
     background: -webkit-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
     background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
     background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
-    border-radius: 4px; }
+    border-radius: 4px;
+    width: 3.500em;
+    padding: 2px 0;
+    text-align: center; }
     .container .vip i {
       background: url(../image/icon/vip.png) no-repeat;
       background-size: 100%;
