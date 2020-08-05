@@ -1219,13 +1219,19 @@ header {
         margin: 0px 4px 0 0;
         vertical-align: text-bottom; }
         .h_wrap ul li i.i1 {
-          background-position: 0 0; }
+          background-position: 0px 0; }
         .h_wrap ul li i.i2 {
           background-position: -16px 0; }
         .h_wrap ul li i.i3 {
           background-position: -32px 0; }
       .h_wrap ul li:hover, .h_wrap ul li:active, .h_wrap ul li.active {
         color: #293eb0; }
+        .h_wrap ul li:hover i.i1, .h_wrap ul li:active i.i1, .h_wrap ul li.active i.i1 {
+          background-position: 0px -16px; }
+        .h_wrap ul li:hover i.i2, .h_wrap ul li:active i.i2, .h_wrap ul li.active i.i2 {
+          background-position: -16px -16px; }
+        .h_wrap ul li:hover i.i3, .h_wrap ul li:active i.i3, .h_wrap ul li.active i.i3 {
+          background-position: -32px -16px; }
         .h_wrap ul li:hover:before, .h_wrap ul li:active:before, .h_wrap ul li.active:before {
           content: "";
           background: #293eb0;

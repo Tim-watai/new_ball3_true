@@ -134,21 +134,33 @@ ul {
         background-size: 300%;
         margin: 0px 4px 0 0;
         vertical-align: text-bottom;
-        &.i1 {
-        background-position: 0 0;
+        @for $i from 1 through 3{
+            &.i#{$i}{
+                background-position:  ($i - 1) * -16px 0;
+            }
         }
-        &.i2 {
-        background-position: -16px 0;
-        }
-        &.i3 {
-        background-position: -32px 0;
-        }
+        // &.i1 {
+        // background-position: 0 0;
+        // }
+        // &.i2 {
+        // background-position: -16px 0;
+        // }
+        // &.i3 {
+        // background-position: -32px 0;
+        // }
     }
     &:hover,
     &:active,
     &.active {
         color: #293eb0;
         // border-bottom: 1px solid #293eb0;
+        i{
+            @for $i from 1 through 3{
+                &.i#{$i}{
+                    background-position:  ($i - 1) * -16px -16px;
+                }
+            }
+        }
         &:before {
         content: "";
         background: #293eb0;
