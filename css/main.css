@@ -2730,6 +2730,8 @@ header {
               display: inline-block;
               padding: .25em .5em;
               text-transform: none; }
+              .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap .p_box p, .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap .p_box p {
+                padding-top: 2px; }
             .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap.myself, .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap.myself {
               text-align: right; }
               .live_page .live_games .live_content .live_talk .talk_box .talk_box .play_wrap.myself .p_box, .live_page .live_games .talk_content .live_talk .talk_box .talk_box .play_wrap.myself .p_box {
