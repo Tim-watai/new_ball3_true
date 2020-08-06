@@ -5462,7 +5462,7 @@ ul.data li {
   overflow-y: scroll;
   height: 37.857em; }
   .online_talk_box::-webkit-scrollbar {
-    width: .714em;
+    width: 0.357em;
     position: absolute;
     left: 0; }
   .online_talk_box::-webkit-scrollbar-thumb {
