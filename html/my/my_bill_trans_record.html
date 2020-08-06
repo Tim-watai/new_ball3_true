@@ -165,11 +165,11 @@
           </div>
         </div>
         <div class="search_bar">
-          <p class="active">存款</p>
+          <p class="active re_save_btn">存款</p>
           <div class="line"></div>
-          <p>轉點</p>
+          <p class="re_trans_btn">轉點</p>
           <div class="line"></div>
-          <p>取款</p>
+          <p class="re_cash_btn">取款</p>
           <div class="right_box">
             <span class="date_icon"></span>
             <div class="day_box">
@@ -5039,9 +5039,17 @@ sw.click(function(){
   //<--------------
 
   //記錄種類切換 0806
-  // function record_change(){
+    let re_btns = [$('.re_save_btn'),$('.re_trans_btn'),$('.re_cash_btn')];
+    for(let i = 0; i<re_btns.length ;i++ ){
+      re_btns[i].click(function(){
+        let re_name = re_btns[i];
+        console.log(re_name[i]);
+      })
+    
+    }
+  function record_change(){
 
-  // }
+  }
     
 })//document_ready
 </script>

@@ -1380,6 +1380,58 @@ header {
     background: url(../image/game_in/gin_bask.png) no-repeat;
     background-size: 100%;
     position: relative; }
+  .game_in.hor {
+    background: url(../image/game_in/gin_hor.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.esp {
+    background: url(../image/game_in/gin_esp.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.sto {
+    background: url(../image/game_in/gin_sto.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.lot {
+    background: url(../image/game_in/gin_lot.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.ice {
+    background: url(../image/game_in/gin_ice.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.ten {
+    background: url(../image/game_in/gin_ten.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.sno {
+    background: url(../image/game_in/gin_sno.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.vba {
+    background: url(../image/game_in/gin_vba.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.mot {
+    background: url(../image/game_in/gin_mot.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.bad {
+    background: url(../image/game_in/gin_bad.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.foo {
+    background: url(../image/game_in/gin_foo.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.bea {
+    background: url(../image/game_in/gin_bea.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
+  .game_in.tab {
+    background: url(../image/game_in/gin_tab.png) no-repeat;
+    background-size: 100%;
+    position: relative; }
   .game_in.my_page_bill {
     background: url(../image/my/title_bg.png) no-repeat;
     background-size: 100%;

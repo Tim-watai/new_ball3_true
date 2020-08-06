@@ -407,13 +407,13 @@ function change_methods(ishard){
 
 
   //給予單關標籤
-  $( ".card li.row span" ).addClass(function( index, currentClass ) {
+  $( ".card li.row span.two_text" ).addClass(function( index, currentClass ) {
     let addedClass;
    
     if ( currentClass != "i_box") {
       addedClass = "solo_bet";
       return addedClass;
-      // $( "p" ).text( "There is one green div" );
+      
     }
 
   });
