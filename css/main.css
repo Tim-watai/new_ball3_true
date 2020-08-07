@@ -1816,7 +1816,7 @@ header {
                 vertical-align: text-bottom;
                 font-size: 1.2em; }
       .card li div.box_8, .card li div.box_4, .card li div.box_3, .card li div.box_2, .card li div.box_1 {
-        padding: 6px 0; }
+        padding: 4px 0; }
         .card li div.box_8 span:hover:hover:hover, .card li div.box_8 span.active.active.active, .card li div.box_4 span:hover:hover:hover, .card li div.box_4 span.active.active.active, .card li div.box_3 span:hover:hover:hover, .card li div.box_3 span.active.active.active, .card li div.box_2 span:hover:hover:hover, .card li div.box_2 span.active.active.active, .card li div.box_1 span:hover:hover:hover, .card li div.box_1 span.active.active.active {
           background: #3654ff;
           border: 1px solid transparent; }
@@ -2149,7 +2149,7 @@ header {
       background-size: 1800%;
       line-height: 1;
       vertical-align: text-bottom;
-      margin: 0 0 0 0.857em; }
+      margin: 0 .25em 0 0.857em; }
       .card .g_name i.i1 {
         background-position-x: -2.3em; }
       .card .g_name i.i2 {
