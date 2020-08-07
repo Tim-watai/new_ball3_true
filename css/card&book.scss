@@ -675,6 +675,18 @@ li{
     .b46{
     width: calc(46% - 1.7%);
     }
+    .b50{
+        width: 50%;
+    }
+    .b53{
+        width: 53%;
+    }
+    .b55{
+        width: 55%;
+    }
+    .b60{
+        width: 60%;
+    }
     .b100{
     width: 100%;
     }
@@ -977,6 +989,7 @@ $big_mode_row: 5.429em;
             em{
             cursor: pointer;
             font-size: 1.1em;
+            position: relative;
             p{
                 font-size: 1em;
             }
