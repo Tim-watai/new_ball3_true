@@ -849,7 +849,7 @@ aside {
       .bet_box .content .bets .bet_gn span {
         width: 1.1em;
         height: 1.1em;
-        background: url(../image/icon/list3.png) no-repeat;
+        background: url(../image/icon/list.png) no-repeat;
         background-size: 1800%;
         background-position-y: -2.2em;
         vertical-align: text-bottom;
@@ -2145,7 +2145,7 @@ header {
       display: inline-block;
       width: 1.15em;
       height: 1.15em;
-      background: url(../image/icon/list3.png) no-repeat;
+      background: url(../image/icon/list.png) no-repeat;
       background-size: 1800%;
       line-height: 1;
       vertical-align: text-bottom;
@@ -3712,7 +3712,7 @@ main.my_page.my_page.my_page {
         width: 1.2em;
         height: 1.2em;
         vertical-align: middle;
-        background: url(../image/icon/list3.png) no-repeat;
+        background: url(../image/icon/list.png) no-repeat;
         background-size: 1800%;
         background-position-y: -2.4em;
         margin: 0 -.8em 0 1em; }
@@ -4349,7 +4349,9 @@ main.my_page.my_page.my_page {
           width: calc(100% - .5em); }
         .basic_bill .save_type .mb_box.trans .trans_box {
           padding: .5em .8em;
-          overflow: hidden; }
+          overflow: hidden;
+          display: inline-block;
+          vertical-align: middle; }
           .basic_bill .save_type .mb_box.trans .trans_box .row {
             display: block;
             float: left;
@@ -4560,11 +4562,11 @@ main.my_page.my_page.my_page {
             .basic_bill .save_type .cards .box_3 .card_box.finish_card .card_check {
               display: none;
               position: absolute;
-              top: -1em;
+              top: -.5em;
               right: -.5em;
               line-height: 100%;
-              width: 3em;
-              height: 3em;
+              width: 2.5em;
+              height: 2.5em;
               border-radius: 100px;
               border: .25em solid #fff;
               background: #000; }
@@ -4593,8 +4595,8 @@ main.my_page.my_page.my_page {
                 border-color: #fff;
                 border-style: solid;
                 border-radius: 2px;
-                width: 1em;
-                height: 1.5em; }
+                width: .7em;
+                height: 1.3em; }
           .basic_bill .save_type .cards .box_3 .card_box.blue_card.blue_card.blue_card {
             background: -webkit-gradient(linear, right top, left top, from(#6589c6), to(#a3c3f4));
             background: -webkit-linear-gradient(right, #6589c6 0%, #a3c3f4 100%);
@@ -4736,7 +4738,7 @@ main.my_page.my_page.my_page {
         .basic_bill .open li.title i {
           width: 1em;
           height: 1em;
-          background: url(../image/icon/list3.png) no-repeat;
+          background: url(../image/icon/list.png) no-repeat;
           background-size: 1800%;
           background-position-y: -2em;
           display: inline-block;

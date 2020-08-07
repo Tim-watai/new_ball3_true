@@ -445,5 +445,7 @@ function change_methods(ishard){
         }
     })
     //<----------------------------------------
+    //0807_聯繫我們localStorage
+    let contact
 
   }); 

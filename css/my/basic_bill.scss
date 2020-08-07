@@ -96,7 +96,7 @@
                 width: 1.2em;
                 height: 1.2em;
                 vertical-align: middle;
-                background: url(../image/icon/list3.png) no-repeat;
+                background: url(../image/icon/list.png) no-repeat;
                 background-size: 1800%;
                 background-position-y: -2.4em;
                 margin: 0 -.8em 0 1em;
@@ -812,6 +812,8 @@
                     .trans_box{
                         padding: .5em .8em;
                         overflow: hidden;
+                        display: inline-block;
+                        vertical-align: middle;
                         .row{
                             display: block;
                             float: left;
@@ -1070,11 +1072,11 @@
                             .card_check{
                                 display: none;
                                 position: absolute;
-                                top: -1em;
+                                top: -.5em;
                                 right: -.5em;
                                 line-height: 100%;
-                                width: 3em;
-                                height: 3em;
+                                width: 2.5em;
+                                height: 2.5em;
                                 border-radius: 100px;
                                 border: .25em solid #fff;
                                 background: #000;
@@ -1101,8 +1103,8 @@
                                     border-color: #fff;
                                     border-style: solid;
                                     border-radius: 2px;
-                                    width: 1em;
-                                    height: 1.5em;
+                                    width: .7em;
+                                    height: 1.3em;
                                 }
                             }
                         }
@@ -1265,7 +1267,7 @@
                         i{
                             width: 1em;
                             height: 1em;
-                            background: url(../image/icon/list3.png) no-repeat;
+                            background: url(../image/icon/list.png) no-repeat;
                             background-size: 1800%;
                             background-position-y: -2em;
                             display: inline-block;
