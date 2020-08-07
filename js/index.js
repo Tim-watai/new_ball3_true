@@ -446,6 +446,27 @@ function change_methods(ishard){
     })
     //<----------------------------------------
     //0807_聯繫我們localStorage
-    let contact
-
+    // let contact_btn = $('.container .f_wrap .f_bot ul li:nth-child(6)');
+    // let contact_page = 'my_contact_us.html';
+    // console.log('testname ='+testname);
+    // if(testname == contact_page){
+        
+    //   let sevis = localStorage.getItem('sev');
+    //   console.log('contact! true' + sevis);
+    //   change_sev_page();
+    // }else{
+    //   localStorage.removeItem('sev');
+    //   console.log('reomve sev')
+    // }
+    // function change_sev_page (){
+    //  let sev_page = $('.game_anno_page');
+    //  sev_page.siblings().removeClass('active');
+    //  sev_page.addClass('active');
+    // }
+    // contact_btn.click(function(){
+    //   console.log('contact_btn');
+    //   localStorage.setItem('sev','sev_contact');
+     
+    // })
+   
   }); 
