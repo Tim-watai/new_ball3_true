@@ -424,7 +424,18 @@ aside{
             .bet_row{
                 width: 100%;
                 font-size: .95em;
-                line-height: 2;
+                // line-height: 2;
+                //0819
+                line-height: 1.8;
+                height: 1.8em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                .t_hidden{
+                    overflow: hidden;
+                    // text-overflow: ellipsis;
+                    width: 100%;
+                    white-space: nowrap;
+                }
             }
             .bet_gn{
                 padding: 0 1em 0;
@@ -482,6 +493,7 @@ aside{
                 .wrap{
                     line-height: 1;
                     vertical-align: middle;
+                    width: 100%;
                 }
                 .team_n{
                     margin: 0 .5em 0 0;
@@ -508,7 +520,7 @@ aside{
                     }
                 }
                 .f_box:last-child{
-                    padding: 0 .5em 0;
+                    padding: 0 0 0 .5em;
                 }
             }
             .total{

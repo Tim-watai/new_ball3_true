@@ -813,7 +813,15 @@ aside {
     .bet_box .content .bets .bet_row {
       width: 100%;
       font-size: .95em;
-      line-height: 2; }
+      line-height: 1.8;
+      height: 1.8em;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis; }
+      .bet_box .content .bets .bet_row .t_hidden {
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap; }
     .bet_box .content .bets .bet_gn {
       padding: 0 1em 0;
       color: #4d515d;
@@ -895,7 +903,8 @@ aside {
       color: #4d515d; }
       .bet_box .content .bets .bet_bill .wrap {
         line-height: 1;
-        vertical-align: middle; }
+        vertical-align: middle;
+        width: 100%; }
       .bet_box .content .bets .bet_bill .team_n {
         margin: 0 .5em 0 0;
         max-width: 10em;
@@ -921,7 +930,7 @@ aside {
           -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
       .bet_box .content .bets .bet_bill .f_box:last-child {
-        padding: 0 .5em 0; }
+        padding: 0 0 0 .5em; }
     .bet_box .content .bets .total {
       line-height: 3em;
       height: 3em;
