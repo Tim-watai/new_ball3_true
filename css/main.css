@@ -1669,8 +1669,10 @@ header {
   -webkit-box-shadow: 0 0 4px 2px #bac0db;
   box-shadow: 0 0 4px 2px #bac0db;
   margin: .8em 0 0; }
-  .card .icon_margin i:last-child {
-    margin-left: .5em; }
+  .card .icon_margin {
+    text-align: center; }
+    .card .icon_margin i:last-child {
+      margin-left: .5em; }
   .card.no_line.no_line li {
     border: none;
     background: #fff; }
@@ -2082,7 +2084,22 @@ header {
         height: 4.8em;
         background: url(../image/icon/basball.png) no-repeat;
         background-size: contain;
-        vertical-align: middle; }
+        vertical-align: middle;
+        position: relative; }
+        .card li div .bb_base:before {
+          content: '';
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          border: 1px solid #959595;
+          background: #ff0000;
+          position: absolute;
+          right: .65em;
+          border-radius: 100%;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
       .card li div.n_pad {
         padding: 0; }
       .card li div:last-child {
@@ -2312,8 +2329,21 @@ header {
         position: relative; }
         .card.big_mode .row .half div:last-child {
           border-top: 2px solid #e0e1e3; }
-      .card.big_mode .row .half.no_use_top div:last-child {
-        border-top: none; }
+      .card.big_mode .row .half.no_use_top {
+        height: 5.429em; }
+        .card.big_mode .row .half.no_use_top .half_wrap {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          line-height: 100%;
+          height: auto; }
+          .card.big_mode .row .half.no_use_top .half_wrap i:first-child {
+            margin-bottom: .8em; }
+        .card.big_mode .row .half.no_use_top div:last-child {
+          border-top: none; }
     .card.big_mode .row .half_sp .b40 {
       width: 40%;
       border: none; }

@@ -89,6 +89,7 @@ overflow: hidden;
 box-shadow: 0 0 4px 2px #bac0db;
 margin: .8em 0 0;
 .icon_margin{
+    text-align: center;
     i{
         &:last-child{
             margin-left: .5em;
@@ -592,6 +593,20 @@ li{
         background: url(../image/icon/basball.png) no-repeat;
         background-size: contain;
         vertical-align: middle;
+        position: relative;
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            border: 1px solid #959595;
+            background: #ff0000;
+            position: absolute;
+            right:.65em ;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
     
     &.n_pad{
@@ -891,6 +906,21 @@ $big_mode_row: 5.429em;
         }
         }
         &.no_use_top{
+            height: 5.429em;
+            .half_wrap{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                line-height: 100%;
+                height: auto;
+                i{
+                    &:first-child{
+                        margin-bottom: .8em;
+                    }
+                    
+                }
+            }
             div{
                 &:last-child{
                     // border-top: 2px solid transparent;
