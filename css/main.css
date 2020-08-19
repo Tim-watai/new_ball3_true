@@ -3793,7 +3793,7 @@ main.my_page.my_page.my_page {
       background: url(../image/my/reset.png) no-repeat;
       background-size: 100%;
       vertical-align: text-bottom;
-      margin: 0 .25em 0 0;
+      margin: 0 .25em -3px 0;
       cursor: pointer; }
     .basic_bill .b_name .right_box {
       position: absolute;
@@ -5061,6 +5061,8 @@ main.my_page.my_page.my_page {
     line-height: 100%;
     vertical-align: middle;
     color: #8c93a6; }
+    .infor_line span.link_area {
+      position: relative; }
 
 .link.link.link {
   position: relative;
