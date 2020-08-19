@@ -1730,19 +1730,20 @@ header {
         padding: 0 6px;
         overflow: hidden; }
         .card li div.icon_box .ii_wrap {
+          width: 100%;
           float: none;
-          margin: 5px 0 0px; }
+          margin: 5px 0 0px;
+          position: relative; }
         .card li div.icon_box .icon_box_wrap {
           float: none;
           overflow: hidden;
-          margin-right: -7px; }
+          position: relative;
+          width: 100%;
+          text-align: center; }
         .card li div.icon_box .i_box {
-          width: calc(100% / 3);
-          display: block;
-          float: left;
+          width: calc((100% / 3) - 4px);
+          display: inline-block;
           line-height: calc(3em - 12px); }
-          .card li div.icon_box .i_box.heart_size {
-            width: 30px; }
           .card li div.icon_box .i_box div.cube {
             background: #000;
             width: auto;
@@ -6510,6 +6511,14 @@ body {
       -webkit-transform: translateX(0%);
       -ms-transform: translateX(0%);
       transform: translateX(0%); }
+      .container .search_group.active .s_box {
+        color: #fff;
+        background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+        background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
+        background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
+        background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
+        .container .search_group.active .s_box .i1 {
+          background-position: 0 -2.286em; }
       .container .search_group.active .row {
         background: #eaedf4; }
     .container .search_group .row {
@@ -6847,7 +6856,7 @@ body {
       position: fixed;
       top: 0;
       left: 16.8%;
-      height: 88vh;
+      height: 825px;
       overflow-y: scroll; }
       .container main .right::-webkit-scrollbar {
         width: .5em;
@@ -7111,7 +7120,7 @@ body {
       top: 0;
       left: 0;
       position: fixed;
-      height: 88vh;
+      height: 825px;
       overflow-y: scroll;
       -webkit-box-shadow: 0 0 5px 3px #d3d8ea;
       box-shadow: 0 0 5px 3px #d3d8ea;
@@ -7259,7 +7268,7 @@ body {
       overflow-y: auto;
       overflow-x: hidden;
       position: fixed;
-      height: 100vh;
+      height: 909px;
       top: 0;
       right: 0;
       padding: 0 0 8em;

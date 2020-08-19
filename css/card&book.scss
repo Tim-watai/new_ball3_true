@@ -180,23 +180,26 @@ li{
         padding: 0 6px;
         overflow: hidden;
         .ii_wrap{
-            
+            width: 100%;
             float: none;
             margin: 5px 0 0px;
+            position: relative;
         }
         .icon_box_wrap{
             float: none;
             overflow: hidden;
-            margin-right: -7px;
+            position: relative;
+            width: 100%;
+            text-align: center;
         }
         .i_box{
-            width: calc(100% / 3);
-            display: block;
-            float: left;
+            width: calc((100% / 3) - 4px);
+            display: inline-block;
+            // float: left;
             line-height: calc(3em - 12px);
-            &.heart_size{
-                width: 30px;
-            }
+            // &.heart_size{
+            //     width: 30px;
+            // }
             div{
                 &.cube{
                     background: #000;
