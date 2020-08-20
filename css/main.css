@@ -2094,12 +2094,36 @@ header {
           border: 1px solid #959595;
           background: #ff0000;
           position: absolute;
-          right: .65em;
+          left: .625em;
           border-radius: 100%;
           top: 50%;
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
+        .card li div .bb_base .b1 {
+          width: 1em;
+          height: 1em;
+          border: 1px solid #959595;
+          background: #ff0000;
+          position: absolute;
+          right: .625em;
+          border-radius: 100%;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+        .card li div .bb_base .b2 {
+          width: 1em;
+          height: 1em;
+          border: 1px solid #959595;
+          background: #ff0000;
+          position: absolute;
+          top: .25em;
+          border-radius: 100%;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
       .card li div.n_pad {
         padding: 0; }
       .card li div:last-child {
@@ -2340,8 +2364,8 @@ header {
           transform: translate(-50%, -50%);
           line-height: 100%;
           height: auto; }
-          .card.big_mode .row .half.no_use_top .half_wrap i:first-child {
-            margin-bottom: .8em; }
+          .card.big_mode .row .half.no_use_top .half_wrap i {
+            margin: .4em 0; }
         .card.big_mode .row .half.no_use_top div:last-child {
           border-top: none; }
     .card.big_mode .row .half_sp .b40 {

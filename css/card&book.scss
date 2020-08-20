@@ -602,11 +602,36 @@ li{
             border: 1px solid #959595;
             background: #ff0000;
             position: absolute;
-            right:.65em ;
+            left:.625em ;
             border-radius: 100%;
             top: 50%;
             transform: translateY(-50%);
         }
+       .b1{
+            width: 1em;
+            height: 1em;
+            border: 1px solid #959595;
+            background: #ff0000;
+            position: absolute;
+            right:.625em ;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+       }
+       .b2{
+        width: 1em;
+        height: 1em;
+        border: 1px solid #959595;
+        background: #ff0000;
+        position: absolute;
+        top:.25em ;
+        border-radius: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+       }
+       .b3{
+
+       }
     }
     
     &.n_pad{
@@ -915,9 +940,10 @@ $big_mode_row: 5.429em;
                 line-height: 100%;
                 height: auto;
                 i{
-                    &:first-child{
-                        margin-bottom: .8em;
-                    }
+                    margin: .4em 0;
+                    // &:first-child{
+                    //     margin-bottom: .8em;
+                    // }
                     
                 }
             }
