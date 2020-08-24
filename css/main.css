@@ -2086,20 +2086,6 @@ header {
         background-size: contain;
         vertical-align: middle;
         position: relative; }
-        .card li div .bb_base:before {
-          content: '';
-          display: inline-block;
-          width: 1em;
-          height: 1em;
-          border: 1px solid #959595;
-          background: #ff0000;
-          position: absolute;
-          left: .625em;
-          border-radius: 100%;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%); }
         .card li div .bb_base .b1 {
           width: 1em;
           height: 1em;
@@ -2111,7 +2097,8 @@ header {
           top: 50%;
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
-          transform: translateY(-50%); }
+          transform: translateY(-50%);
+          display: none; }
         .card li div .bb_base .b2 {
           width: 1em;
           height: 1em;
@@ -2123,7 +2110,23 @@ header {
           left: 50%;
           -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
-          transform: translateX(-50%); }
+          transform: translateX(-50%);
+          display: none; }
+        .card li div .bb_base .b3 {
+          width: 1em;
+          height: 1em;
+          border: 1px solid #959595;
+          background: #ff0000;
+          position: absolute;
+          left: .625em;
+          border-radius: 100%;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          display: none; }
+        .card li div .bb_base .b1.active, .card li div .bb_base .b2.active, .card li div .bb_base .b3.active {
+          display: block; }
       .card li div.n_pad {
         padding: 0; }
       .card li div:last-child {
