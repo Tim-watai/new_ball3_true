@@ -81,6 +81,7 @@
         height: 2.214em;
         background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
         position: relative;
+        border-radius: 18px 18px 0 0;
         .line{
             background: #bcbcbc;
             width: 1px;
@@ -196,6 +197,7 @@
         padding: 1.2em;
         background: #fff;
         border-top: 1px solid #e0e1e3;
+        border-radius: 0 0 18px 18px;
         //0713
         overflow: hidden;
         &.set_size{
@@ -308,7 +310,7 @@
         }
         //轉點
             &.trans_marg{
-                margin: 0 -.5em 0 0;
+                // margin: 0 -.5em 0 0;
             }
             .trans_card{
                 $trans_marg:.5em;
@@ -401,6 +403,39 @@
             .trans_row{
                 line-height: 1.2em;
                 margin: 1em 0 0;
+               
+                select{
+                    border: none;
+                    width: 100%;
+                    option{
+                        padding: .6em 1em;
+                        &:hover{
+                            background: #fff;
+                        }
+                    }
+                    .select-selected {
+                        background-color: #000;
+                        color: #fff;
+                      }
+                }
+                .select-items {
+                    position: absolute;
+                    background-color: #fff;
+                    top: calc(100% + .6em);
+                    left: 0;
+                    right: 0;
+                    z-index: 99;
+                  }
+                .select-selected:after {
+                    position: absolute;
+                    content: "";
+                    top: 14px;
+                    right: 10px;
+                    width: 0;
+                    height: 0;
+                    border: 6px solid transparent;
+                    border-color: #fff transparent transparent transparent;
+                  }
                 input{
                     &::placeholder{
                         color: #d1d4e2;
@@ -492,13 +527,13 @@
                 line-height: 2.5em;
                 height: 2.5em;
                 width: 30%;
-                overflow: hidden;
+                // overflow: hidden;
                 .bk_wrap{
                     padding: 0 1em;
                     position: relative;
                     .bk_drow{
                         position: absolute;
-                        top: -100%;
+                        top: 100%;
                         border: 1px solid #b9bfdc;
                         border-radius: 5px;
                         line-height: 2.5em;
@@ -777,6 +812,11 @@
                         }
                         &.active{
                             background: linear-gradient(to bottom,#8e9bdc 0%, #3046b7);
+                            transition: all .2s ease-in-out;
+                            &:hover{
+                                background: linear-gradient(to bottom,#3046b7 0%, #8e9bdc);
+                                transition: all .2s ease-in-out;
+                            }
                         }
                     }
                     input{
@@ -1264,6 +1304,9 @@
                 line-height: 2.5em;
                 height: 2.5em;
                 display: block;
+                li{
+                    border-radius: 0 0 18px 18px;
+                }
             }
             .open{
                 
@@ -1274,6 +1317,9 @@
                     position: relative;
                     line-height: 2.5em;
                     height: 2.5em;
+                    &:last-child{
+                        // border-radius: 0 0 18px 18px;
+                    }
                     &.big_line{
                         line-height: 5em;
                         height: 5em;

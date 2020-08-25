@@ -127,6 +127,13 @@
             box-shadow: 0 0 6px 1px #d7dced;
             position: relative;
             cursor: pointer;
+            &:hover{
+                .link_title{
+                    p{
+                        text-decoration:underline;
+                    }
+                }
+            }
             i{
                 display: block;
                 &.link_icon{

@@ -706,7 +706,17 @@ aside {
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
       cursor: pointer; }
+      .bet_box .title .close:hover {
+        -webkit-transform: translateY(-50%) rotate(180deg);
+        -ms-transform: translateY(-50%) rotate(180deg);
+        transform: translateY(-50%) rotate(180deg);
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
       .bet_box .title .close:before, .bet_box .title .close:after {
         content: '';
         position: absolute;
@@ -3773,7 +3783,8 @@ main.my_page.my_page.my_page {
     background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
     background: -o-linear-gradient(top, #fff 0%, #f0f0f0 100%);
     background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
-    position: relative; }
+    position: relative;
+    border-radius: 18px 18px 0 0; }
     .basic_bill .b_name .line {
       background: #bcbcbc;
       width: 1px;
@@ -3904,6 +3915,7 @@ main.my_page.my_page.my_page {
     padding: 1.2em;
     background: #fff;
     border-top: 1px solid #e0e1e3;
+    border-radius: 0 0 18px 18px;
     overflow: hidden; }
     .basic_bill .save_type.set_size {
       padding: 1.286em; }
@@ -3983,8 +3995,6 @@ main.my_page.my_page.my_page {
       width: 100%; }
     .basic_bill .save_type.data_size {
       padding: 1.3em 1.2em; }
-    .basic_bill .save_type.trans_marg {
-      margin: 0 -.5em 0 0; }
     .basic_bill .save_type .trans_card {
       width: auto;
       margin: 0.5em -0.5em 0 0;
@@ -4060,6 +4070,32 @@ main.my_page.my_page.my_page {
     .basic_bill .save_type .trans_row {
       line-height: 1.2em;
       margin: 1em 0 0; }
+      .basic_bill .save_type .trans_row select {
+        border: none;
+        width: 100%; }
+        .basic_bill .save_type .trans_row select option {
+          padding: .6em 1em; }
+          .basic_bill .save_type .trans_row select option:hover {
+            background: #fff; }
+        .basic_bill .save_type .trans_row select .select-selected {
+          background-color: #000;
+          color: #fff; }
+      .basic_bill .save_type .trans_row .select-items {
+        position: absolute;
+        background-color: #fff;
+        top: calc(100% + .6em);
+        left: 0;
+        right: 0;
+        z-index: 99; }
+      .basic_bill .save_type .trans_row .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #fff transparent transparent transparent; }
       .basic_bill .save_type .trans_row input::-webkit-input-placeholder {
         color: #d1d4e2; }
       .basic_bill .save_type .trans_row input:-ms-input-placeholder {
@@ -4141,14 +4177,13 @@ main.my_page.my_page.my_page {
       border-radius: 5px;
       line-height: 2.5em;
       height: 2.5em;
-      width: 30%;
-      overflow: hidden; }
+      width: 30%; }
       .basic_bill .save_type .bk_box .bk_wrap {
         padding: 0 1em;
         position: relative; }
         .basic_bill .save_type .bk_box .bk_wrap .bk_drow {
           position: absolute;
-          top: -100%;
+          top: 100%;
           border: 1px solid #b9bfdc;
           border-radius: 5px;
           line-height: 2.5em;
@@ -4373,7 +4408,18 @@ main.my_page.my_page.my_page {
             background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3046b7));
             background: -webkit-linear-gradient(top, #8e9bdc 0%, #3046b7);
             background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
-            background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7); }
+            background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out; }
+            .basic_bill .save_type .row li .cash_btn.active:hover {
+              background: -webkit-gradient(linear, left top, left bottom, from(#3046b7), to(#8e9bdc));
+              background: -webkit-linear-gradient(top, #3046b7 0%, #8e9bdc);
+              background: -o-linear-gradient(top, #3046b7 0%, #8e9bdc);
+              background: linear-gradient(to bottom, #3046b7 0%, #8e9bdc);
+              -webkit-transition: all .2s ease-in-out;
+              -o-transition: all .2s ease-in-out;
+              transition: all .2s ease-in-out; }
         .basic_bill .save_type .row li input {
           line-height: 1.5em;
           width: 30%;
@@ -4811,6 +4857,8 @@ main.my_page.my_page.my_page {
     line-height: 2.5em;
     height: 2.5em;
     display: block; }
+    .basic_bill .close li {
+      border-radius: 0 0 18px 18px; }
   .basic_bill .open {
     display: none;
     border: 1px solid #7987d0; }
@@ -5566,6 +5614,8 @@ ul.data li {
       box-shadow: 0 0 6px 1px #d7dced;
       position: relative;
       cursor: pointer; }
+      .link_row .box .box_wrap:hover .link_title p {
+        text-decoration: underline; }
       .link_row .box .box_wrap i {
         display: block; }
         .link_row .box .box_wrap i.link_icon {
@@ -5631,6 +5681,8 @@ ul.data li {
     color: #2d43b6;
     display: inline-block;
     font-size: 1em; }
+    .online_talk_box .ser_reply p {
+      position: relative; }
   .online_talk_box .time_tag {
     text-align: center;
     color: #838ba0;
