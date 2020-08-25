@@ -495,6 +495,30 @@
                 overflow: hidden;
                 .bk_wrap{
                     padding: 0 1em;
+                    position: relative;
+                    .bk_drow{
+                        position: absolute;
+                        top: -100%;
+                        border: 1px solid #b9bfdc;
+                        border-radius: 5px;
+                        line-height: 2.5em;
+                        height: 2.5em;
+                        span{
+                            &.bk_icon{
+                                display: inline-block;
+                                width: 1.12em;
+                                height: 1.12em;
+                                vertical-align: middle;
+                                background: url(../image/my/china_bank.png)no-repeat;
+                                background-size: 100%;
+                            }
+                        }
+                        p{
+                            display: inline-block;
+                            line-height: 100%;
+                            vertical-align: middle;
+                        }
+                    }
                 }
                 span{
                     &.bk_icon{

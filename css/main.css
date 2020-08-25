@@ -4144,7 +4144,26 @@ main.my_page.my_page.my_page {
       width: 30%;
       overflow: hidden; }
       .basic_bill .save_type .bk_box .bk_wrap {
-        padding: 0 1em; }
+        padding: 0 1em;
+        position: relative; }
+        .basic_bill .save_type .bk_box .bk_wrap .bk_drow {
+          position: absolute;
+          top: -100%;
+          border: 1px solid #b9bfdc;
+          border-radius: 5px;
+          line-height: 2.5em;
+          height: 2.5em; }
+          .basic_bill .save_type .bk_box .bk_wrap .bk_drow span.bk_icon {
+            display: inline-block;
+            width: 1.12em;
+            height: 1.12em;
+            vertical-align: middle;
+            background: url(../image/my/china_bank.png) no-repeat;
+            background-size: 100%; }
+          .basic_bill .save_type .bk_box .bk_wrap .bk_drow p {
+            display: inline-block;
+            line-height: 100%;
+            vertical-align: middle; }
       .basic_bill .save_type .bk_box span.bk_icon {
         display: inline-block;
         width: 1.12em;
@@ -5129,6 +5148,9 @@ main.my_page.my_page.my_page {
     color: #8c93a6; }
     .infor_line span.link_area {
       position: relative; }
+      .infor_line span.link_area:hover {
+        background: #5163c7;
+        color: #fff; }
 
 .link.link.link {
   position: relative;
@@ -6945,6 +6967,10 @@ body {
         -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
         box-shadow: 0 0 6px 1px #bcc2dc;
         border-radius: 5px; }
+        .container main .right .wrap.fixed.fixed.fixed.fixed .search_bar {
+          overflow: visible; }
+        .container main .right .wrap.fixed.fixed.fixed.fixed .bill_record_d_card {
+          position: absolute; }
         .container main .right .wrap.fixed.fixed.fixed.fixed.big_size {
           width: calc((83.2% - 1.6em) - 6px); }
         .container main .right .wrap.fixed.fixed.fixed.fixed.active {
@@ -7179,7 +7205,32 @@ body {
           border: 1px solid #3145b2;
           border-radius: 4px;
           background: #fff;
-          padding: 0 .5em; }
+          padding: 0 .5em;
+          position: relative;
+          cursor: pointer; }
+          .container main .right .search_bar .day_box:active .day_drow, .container main .right .search_bar .day_box:hover .day_drow, .container main .right .search_bar .day_box.active .day_drow {
+            display: block; }
+          .container main .right .search_bar .day_box .day_drow {
+            display: none;
+            line-height: 1.786em;
+            width: calc(100% + 2px);
+            border: 1px solid #3145b2;
+            border-width: 0 1px 1px;
+            position: absolute;
+            top: 1.69em;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            border-radius: 0 0 4px 4px;
+            background: #fff;
+            padding: 0 .5em;
+            z-index: 1; }
+            .container main .right .search_bar .day_box .day_drow span {
+              width: 100%; }
+              .container main .right .search_bar .day_box .day_drow span:hover {
+                background: #000;
+                color: #fff; }
       .container main .right .search_box {
         position: relative; }
     .container main .left {

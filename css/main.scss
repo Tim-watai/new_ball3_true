@@ -586,8 +586,12 @@ body {
           width: calc((65.5% - 1.6em) - 6px);
           box-shadow: 0 0 6px 1px #bcc2dc;
           border-radius: 5px;
+         
           .search_bar{
-           
+            overflow: visible;
+          }
+          .bill_record_d_card{
+            position: absolute;
           }
           &.big_size{
             width: calc((83.2% - 1.6em) - 6px);
@@ -862,6 +866,37 @@ body {
           border-radius: 4px;
           background: #fff;
           padding: 0 .5em;
+          position: relative;
+          cursor: pointer;
+          &:active,&:hover,&.active{
+            .day_drow{
+              display: block;
+            }
+          }
+          .day_drow{
+            display: none;
+            line-height: 1.786em;
+            width: calc(100% + 2px);
+            border: 1px solid #3145b2;
+            border-width: 0 1px 1px;
+            position: absolute;
+            top: 1.69em;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            border-radius: 0 0 4px 4px;
+            background: #fff;
+            padding: 0 .5em;
+            z-index: 1;
+            span{
+              width: 100%;
+              &:hover{
+                background: #000;
+                color: #fff;
+              }
+            }
+          }
         }
     
       }
