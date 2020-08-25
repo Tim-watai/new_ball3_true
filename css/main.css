@@ -3919,7 +3919,11 @@ main.my_page.my_page.my_page {
       background-size: 100%;
       vertical-align: text-bottom;
       margin: 0 .25em -2px 0;
-      cursor: pointer; }
+      cursor: pointer;
+      border-radius: 100px;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
 
 @-webkit-keyframes reset_ani {
   0% {
@@ -3958,6 +3962,12 @@ main.my_page.my_page.my_page {
       .basic_bill .b_name .right_box:hover .reset_icon {
         -webkit-animation: reset_ani 1s ease-in-out infinite forwards;
         animation: reset_ani 1s ease-in-out infinite forwards; }
+      .basic_bill .b_name .right_box:hover .question_icon {
+        -webkit-box-shadow: 0 0 3px 1px #b6bcca;
+        box-shadow: 0 0 3px 1px #b6bcca;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
       .basic_bill .b_name .right_box p {
         display: inline-block;
         cursor: pointer; }

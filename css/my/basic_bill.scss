@@ -143,6 +143,8 @@
             vertical-align: text-bottom;
             margin: 0 .25em -2px 0;
             cursor: pointer;
+            border-radius: 100px;
+            transition: all .2s ease-in-out;
         }
 @keyframes reset_ani {
     0%{transform: rotate(0deg);}
@@ -169,6 +171,10 @@
             &:hover{
                 .reset_icon{
                     animation: reset_ani 1s ease-in-out infinite forwards ;
+                }
+                .question_icon{
+                    box-shadow: 0 0 3px 1px #b6bcca;
+                    transition: all .2s ease-in-out;
                 }
             }
             p{
