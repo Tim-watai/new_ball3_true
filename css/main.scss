@@ -698,7 +698,6 @@ body {
           color: #4d515d;
           line-height: 1;
           vertical-align: middle;
-          cursor: pointer;
           padding: 2px 0 0;
           position: relative;
         }
@@ -878,9 +877,16 @@ body {
           padding: 0 .5em;
           position: relative;
           cursor: pointer;
+          transition: all .2s ease-in-out;
           &:active,&:hover,&.active{
             .day_drow{
               display: block;
+            }
+            span{
+              &.tri{
+                transform: rotate(180deg);
+                transition: all .2s ease-in-out;
+              }
             }
           }
           .day_drow{
@@ -892,17 +898,17 @@ body {
             position: absolute;
             top: 1.69em;
             left: 50%;
-            -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
             transform: translateX(-50%);
             border-radius: 0 0 4px 4px;
             background: #fff;
-            padding: 0 .5em;
+          
             z-index: 1;
             span{
               width: 100%;
+              padding: 0 .5em;
+              line-height: 1.786em;
               &:hover{
-                background: #000;
+                background: #3145b2;
                 color: #fff;
               }
             }
