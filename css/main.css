@@ -3869,6 +3869,22 @@ main.my_page.my_page.my_page {
       vertical-align: text-bottom;
       margin: 0 .25em -2px 0;
       cursor: pointer; }
+
+@-webkit-keyframes reset_ani {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@keyframes reset_ani {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
     .basic_bill .b_name .reset_icon {
       display: inline-block;
       width: 1em;
@@ -3888,8 +3904,12 @@ main.my_page.my_page.my_page {
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
+      .basic_bill .b_name .right_box:hover .reset_icon {
+        -webkit-animation: reset_ani 1s ease-in-out infinite forwards;
+        animation: reset_ani 1s ease-in-out infinite forwards; }
       .basic_bill .b_name .right_box p {
-        display: inline-block; }
+        display: inline-block;
+        cursor: pointer; }
       .basic_bill .b_name .right_box span {
         line-height: 1;
         vertical-align: middle;
@@ -4039,12 +4059,60 @@ main.my_page.my_page.my_page {
               font-size: .8em; }
             .basic_bill .save_type .trans_card .box_4 .box .row .big_t {
               font-size: 1.2em; }
+    .basic_bill .save_type .drow_down.drow_down .hidden {
+      display: none; }
+    .basic_bill .save_type .drow_down.drow_down.active .hidden {
+      display: block; }
+    .basic_bill .save_type .drow_down.drow_down.active .bar_wrap span.arrow_gold {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
     .basic_bill .save_type .trans_drow_bg {
       position: relative;
       width: auto;
       height: 3em;
+      line-height: 3em;
       padding: 0;
-      margin: 0 -1.5em -1.5em; }
+      margin: 0 -1.5em -1.5em;
+      text-align: center;
+      background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#efefef));
+      background: -webkit-linear-gradient(top, #fff 0%, #efefef 100%);
+      background: -o-linear-gradient(top, #fff 0%, #efefef 100%);
+      background: linear-gradient(to bottom, #fff 0%, #efefef 100%); }
+      .basic_bill .save_type .trans_drow_bg .bar_wrap {
+        display: inline-block;
+        line-height: 1;
+        vertical-align: bottom;
+        padding: 0 0 1em;
+        color: #c59a73;
+        cursor: pointer;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
+        .basic_bill .save_type .trans_drow_bg .bar_wrap:active span.arrow_gold, .basic_bill .save_type .trans_drow_bg .bar_wrap.active span.arrow_gold {
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+          -webkit-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out; }
+        .basic_bill .save_type .trans_drow_bg .bar_wrap p {
+          display: inline-block; }
+        .basic_bill .save_type .trans_drow_bg .bar_wrap span {
+          display: inline-block; }
+          .basic_bill .save_type .trans_drow_bg .bar_wrap span.arrow_gold {
+            background: url(../image/icon/arrow_gold.png) no-repeat;
+            width: .8em;
+            height: .5em;
+            background-size: 100%;
+            vertical-align: middle;
+            margin: 0 0 0 .5em;
+            -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg); }
     .basic_bill .save_type .trans_drow_bar {
       position: absolute;
       left: 0;
@@ -4057,22 +4125,6 @@ main.my_page.my_page.my_page {
       background: -webkit-linear-gradient(top, #fff 0%, #efefef 100%);
       background: -o-linear-gradient(top, #fff 0%, #efefef 100%);
       background: linear-gradient(to bottom, #fff 0%, #efefef 100%); }
-      .basic_bill .save_type .trans_drow_bar .bar_wrap {
-        display: inline-block;
-        line-height: 1;
-        vertical-align: bottom;
-        padding: 0 0 1em;
-        color: #c59a73;
-        cursor: pointer; }
-        .basic_bill .save_type .trans_drow_bar .bar_wrap span {
-          display: inline-block; }
-          .basic_bill .save_type .trans_drow_bar .bar_wrap span.arrow_gold {
-            background: url(../image/icon/arrow_gold.png) no-repeat;
-            width: .8em;
-            height: .5em;
-            background-size: 100%;
-            vertical-align: middle;
-            margin: 0 0 0 .5em; }
     .basic_bill .save_type .trans_row {
       line-height: 1.2em;
       margin: 1em 0 0; }

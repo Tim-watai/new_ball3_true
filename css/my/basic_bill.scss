@@ -144,6 +144,10 @@
             margin: 0 .25em -2px 0;
             cursor: pointer;
         }
+@keyframes reset_ani {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(-360deg);}
+}
         .reset_icon{
             display: inline-block;
             width: 1em;
@@ -162,8 +166,14 @@
             line-height: 2.214em;
             right: 1.5em;
             transform: translateY(-50%);
+            &:hover{
+                .reset_icon{
+                    animation: reset_ani 1s ease-in-out infinite forwards ;
+                }
+            }
             p{
                 display: inline-block;
+                cursor: pointer;
             }
             span{
                 line-height: 1;
@@ -370,12 +380,62 @@
                     }
                 }
             }
+            .drow_down.drow_down{
+                .hidden{
+                    display: none;
+                }
+                &.active{
+                    .hidden{
+                        display: block;
+                    }
+                    .bar_wrap{
+                        span.arrow_gold{
+                            transform: rotate(180deg);
+                            transition: all .3s ease-in-out;
+                        }
+                    }
+                    
+                }
+            }
             .trans_drow_bg{
                 position: relative;
                 width: auto;
                 height: 3em;
+                line-height: 3em;
                 padding: 0;
                 margin: 0 -1.5em -1.5em;
+                text-align: center;
+                background: linear-gradient(to bottom, #fff 0%,#efefef 100%);
+                .bar_wrap{
+                    display: inline-block;
+                    line-height: 1;
+                    vertical-align: bottom;
+                    padding: 0 0 1em;
+                    color: #c59a73;
+                    cursor: pointer;
+                    transition: all .3s ease-in-out;
+                    &:active,&.active{
+                        span.arrow_gold{
+                            transform: rotate(180deg);
+                            transition: all .3s ease-in-out;
+                        }
+                    }
+                    p{
+                        display: inline-block;
+                    }
+                    span{
+                        display: inline-block;
+                        &.arrow_gold{
+                            background: url(../image/icon/arrow_gold.png)no-repeat;
+                            width: .8em;
+                            height: .5em;
+                            background-size: 100%;
+                            vertical-align: middle;
+                            margin: 0 0 0 .5em;
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
             }
             .trans_drow_bar{
                 position: absolute;
@@ -386,25 +446,6 @@
                 line-height: 3em;
                 margin: 0 0 -1.5em;
                 background: linear-gradient(to bottom, #fff 0%,#efefef 100%);
-                .bar_wrap{
-                    display: inline-block;
-                    line-height: 1;
-                    vertical-align: bottom;
-                    padding: 0 0 1em;
-                    color: #c59a73;
-                    cursor: pointer;
-                    span{
-                        display: inline-block;
-                        &.arrow_gold{
-                            background: url(../image/icon/arrow_gold.png)no-repeat;
-                            width: .8em;
-                            height: .5em;
-                            background-size: 100%;
-                            vertical-align: middle;
-                            margin: 0 0 0 .5em;
-                        }
-                    }
-                }
             }
             .trans_row{
                 line-height: 1.2em;
