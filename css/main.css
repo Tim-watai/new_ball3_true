@@ -213,7 +213,17 @@ button {
       position: relative;
       display: inline-block;
       vertical-align: text-bottom;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      .sign_box .title .sign_close:hover {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
       .sign_box .title .sign_close:before {
         content: '';
         position: absolute;
@@ -571,9 +581,12 @@ aside {
       width: 100%;
       color: #4d515d; }
       .bet_box.blue .content .window_box .box_2 {
-        overflow: hidden; }
+        overflow: visible;
+        height: 42px;
+        display: block;
+        width: 100%; }
         .bet_box.blue .content .window_box .box_2.margin_2 {
-          margin: .8em -2em 0 0; }
+          margin: calc(.8em - 4px) -2em 0 0; }
           .bet_box.blue .content .window_box .box_2.margin_2:first-child {
             margin: 0 -2em 0 0; }
           .bet_box.blue .content .window_box .box_2.margin_2 .box .row {
@@ -582,7 +595,6 @@ aside {
           float: left;
           width: 50%; }
           .bet_box.blue .content .window_box .box_2 .box .row {
-            overflow: hidden;
             line-height: 3em; }
             .bet_box.blue .content .window_box .box_2 .box .row p.name {
               line-height: 100%;
@@ -595,7 +607,6 @@ aside {
               float: right;
               width: 75%; }
               .bet_box.blue .content .window_box .box_2 .box .row .right_box.half {
-                overflow: hidden;
                 margin: 0 -1em 0 0; }
                 .bet_box.blue .content .window_box .box_2 .box .row .right_box.half .half_box {
                   width: calc(50% - 1em);
@@ -605,11 +616,38 @@ aside {
               .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size {
                 border: 1px solid #b9bfdc;
                 border-radius: 5px;
-                padding: 0 1em;
+                padding: 0 .8em;
                 display: inline-block;
                 vertical-align: middle;
                 color: #4d515d;
-                width: 100%; }
+                width: 100%;
+                position: relative; }
+                .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size:hover .w_drow_down {
+                  display: block; }
+                .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size:hover .size_right .arrow {
+                  -webkit-transform: rotate(270deg);
+                  -ms-transform: rotate(270deg);
+                  transform: rotate(270deg);
+                  -webkit-transition: all .2s ease-in-out;
+                  -o-transition: all .2s ease-in-out;
+                  transition: all .2s ease-in-out; }
+                .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size .w_drow_down {
+                  display: none;
+                  top: 95%;
+                  position: absolute;
+                  width: calc(100% + 2px);
+                  border: 1px solid #b9bfdc;
+                  border-width: 0 1px 1px;
+                  border-radius: 0 0 5px 5px;
+                  z-index: 2;
+                  left: -1px;
+                  background: #fff; }
+                  .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size .w_drow_down li {
+                    padding: 0 .8em;
+                    cursor: pointer; }
+                    .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size .w_drow_down li:hover {
+                      background: #b9bfdc;
+                      color: #fff; }
                 .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size.li_2_5 {
                   line-height: 2.5em; }
                 .bet_box.blue .content .window_box .box_2 .box .row .right_box .blue_box_size .size_right {
@@ -623,7 +661,10 @@ aside {
                     background-size: 100%;
                     -webkit-transform: rotate(90deg);
                     -ms-transform: rotate(90deg);
-                    transform: rotate(90deg); }
+                    transform: rotate(90deg);
+                    -webkit-transition: all .2s ease-in-out;
+                    -o-transition: all .2s ease-in-out;
+                    transition: all .2s ease-in-out; }
       .bet_box.blue .content .window_box .blue_btn {
         color: #fff;
         background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2e44b7));
@@ -2127,7 +2168,7 @@ header {
           position: absolute;
           top: .25em;
           border-radius: 100%;
-          left: 50%;
+          left: 51%;
           -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -4200,8 +4241,7 @@ main.my_page.my_page.my_page {
         background: #fff;
         display: none; }
         .basic_bill .save_type .trans_row .trans_drow li {
-          padding: .6em 1em;
-          border-top: 1px solid #b9bfdc; }
+          padding: .6em 1em; }
           .basic_bill .save_type .trans_row .trans_drow li:hover {
             background: #b9bfdc; }
             .basic_bill .save_type .trans_row .trans_drow li:hover span {
@@ -4294,7 +4334,6 @@ main.my_page.my_page.my_page {
           .basic_bill .save_type .bk_box .bk_wrap .bk_drow li {
             padding: 0 1em;
             width: 100%;
-            border-bottom: 1px solid #b9bfdc;
             cursor: pointer; }
             .basic_bill .save_type .bk_box .bk_wrap .bk_drow li:hover {
               background: #b9bfdc; }
@@ -5068,7 +5107,8 @@ main.my_page.my_page.my_page {
 .bill_box {
   margin: .5em 0;
   border-radius: 5px;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
   .bill_box.active {
     border: 1px solid #b7906e;
     border-top: none;
@@ -5801,7 +5841,11 @@ ul.data li {
     display: inline-block;
     font-size: 1em; }
     .online_talk_box .ser_reply p {
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
+      .online_talk_box .ser_reply p:hover {
+        background: #2d43b6;
+        color: #fff; }
   .online_talk_box .time_tag {
     text-align: center;
     color: #838ba0;

@@ -141,9 +141,15 @@ aside{
                     //     font-size: 1.143em;
                     // }
                     .box_2{
-                        overflow: hidden;
+                     
+                        // overflow: hidden; 
+                        //0825
+                        overflow: visible;
+                        height: 42px;
+                        display: block;
+                        width: 100%;
                         &.margin_2{
-                            margin: .8em -2em 0 0;
+                            margin: calc(.8em - 4px) -2em 0 0;
                             &:first-child{
                                 margin: 0 -2em 0 0;
                             }
@@ -157,7 +163,7 @@ aside{
                             float: left;
                             width: 50%;
                             .row{
-                                overflow: hidden;
+                                // overflow: hidden;
                                 line-height: 3em;
                                
                                 p{
@@ -175,26 +181,56 @@ aside{
                                     float: right;
                                     width: 75%;
                                     &.half{
-                                        overflow: hidden;
+                                        // overflow: hidden;
                                         margin: 0 -1em 0 0;
                                         .half_box{
                                             width: calc(50% - 1em);
                                             display: inline-block;
                                             float: left;
                                             margin: 0 1em 0 0;
-                                            .blue_box_size{
-                                               
-                                            }
                                         }
                                     }
                                     .blue_box_size{
                                         border: 1px solid #b9bfdc;
                                         border-radius: 5px;
-                                        padding: 0 1em;
+                                        padding: 0 .8em;
                                         display: inline-block;
                                         vertical-align: middle;
                                         color: #4d515d;
                                         width: 100%;
+                                        position: relative;
+                                        &:hover{
+
+                                            .w_drow_down{
+                                                display: block;
+                                            }
+                                            .size_right{
+                                                .arrow{
+                                                    transform: rotate(270deg);
+                                                    transition: all .2s ease-in-out;
+                                                }
+                                            }
+                                        }
+                                        .w_drow_down{
+                                            display: none;
+                                            top: 95%;
+                                            position: absolute;
+                                            width: calc(100% + 2px);
+                                            border: 1px solid #b9bfdc;
+                                            border-width: 0 1px 1px;
+                                            border-radius: 0 0 5px 5px;
+                                            z-index: 2;
+                                            left: -1px;
+                                            background: #fff;
+                                            li{
+                                                padding: 0 .8em;
+                                                cursor: pointer;
+                                                &:hover{
+                                                    background: #b9bfdc;
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
                                         &.li_2_5{
                                             line-height: 2.5em;
                                         }
@@ -208,6 +244,7 @@ aside{
                                                 vertical-align: middle;
                                                 background-size: 100%;
                                                 transform: rotate(90deg);
+                                                transition: all .2s ease-in-out;
                                             }
                                         }
                                     }

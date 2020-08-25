@@ -33,6 +33,11 @@
         font-size: 1em;
         p{
             position: relative;
+            cursor: pointer;
+            &:hover{
+                background: #2d43b6;
+                color: #fff;
+            }
         }
     }
     .time_tag{
