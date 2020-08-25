@@ -3719,6 +3719,10 @@ main.my_page.my_page.my_page {
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; }
+  .basic_bill.no_hidden {
+    overflow: visible; }
+    .basic_bill.no_hidden .save_type {
+      overflow: visible; }
   .basic_bill.b50 {
     width: 50%; }
   .basic_bill .num_wrap {
@@ -4180,14 +4184,34 @@ main.my_page.my_page.my_page {
       width: 30%; }
       .basic_bill .save_type .bk_box .bk_wrap {
         padding: 0 1em;
-        position: relative; }
+        position: relative;
+        cursor: pointer; }
+        .basic_bill .save_type .bk_box .bk_wrap:hover .bk_drow, .basic_bill .save_type .bk_box .bk_wrap:active .bk_drow, .basic_bill .save_type .bk_box .bk_wrap.active .bk_drow {
+          display: block; }
         .basic_bill .save_type .bk_box .bk_wrap .bk_drow {
+          display: none;
+          width: 100%;
           position: absolute;
           top: 100%;
+          /* border-width: 0 1px 1px; */
+          padding: 0 1em;
+          left: 0;
+          /* -webkit-transform: translateX(-50%); */
+          -ms-transform: translateX(-50%);
+          /* transform: translateX(-50%); */
+          background: #fff;
           border: 1px solid #b9bfdc;
-          border-radius: 5px;
+          border-width: 0 1px 1px;
+          border-radius: 0 0 5px 5px;
           line-height: 2.5em;
-          height: 2.5em; }
+          z-index: 50; }
+          .basic_bill .save_type .bk_box .bk_wrap .bk_drow li {
+            padding: 0;
+            width: 100%;
+            border-bottom: 1px solid #b9bfdc;
+            cursor: pointer; }
+            .basic_bill .save_type .bk_box .bk_wrap .bk_drow li:last-child {
+              border-bottom: none; }
           .basic_bill .save_type .bk_box .bk_wrap .bk_drow span.bk_icon {
             display: inline-block;
             width: 1.12em;
@@ -4199,6 +4223,9 @@ main.my_page.my_page.my_page {
             display: inline-block;
             line-height: 100%;
             vertical-align: middle; }
+            .basic_bill .save_type .bk_box .bk_wrap .bk_drow p:hover {
+              background: #000;
+              color: #fff; }
       .basic_bill .save_type .bk_box span.bk_icon {
         display: inline-block;
         width: 1.12em;
@@ -4224,7 +4251,11 @@ main.my_page.my_page.my_page {
       .basic_bill .save_type .bk_box .right_box {
         float: right; }
     .basic_bill .save_type .row {
-      overflow: hidden; }
+      overflow: visible;
+      clear: both;
+      display: inline-block;
+      height: auto;
+      width: 100%; }
       .basic_bill .save_type .row.box_7 {
         margin: 0 -.8em 0 0; }
         .basic_bill .save_type .row.box_7 li {
@@ -4476,7 +4507,8 @@ main.my_page.my_page.my_page {
       border-radius: 5px;
       overflow: hidden;
       line-height: 7.286em;
-      height: 7.286em; }
+      height: 7.286em;
+      width: 100%; }
       .basic_bill .save_type .mb_box.free.free.free.free.free {
         height: auto;
         line-height: 100%; }
@@ -4484,7 +4516,6 @@ main.my_page.my_page.my_page {
         border: none; }
       .basic_bill .save_type .mb_box.trans {
         float: left;
-        margin: 0 .5em 0 0;
         position: relative; }
         .basic_bill .save_type .mb_box.trans.full {
           width: calc(100% - .5em); }
