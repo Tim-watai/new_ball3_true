@@ -133,6 +133,10 @@
         color: #8c93a6;
         &.link_area{
             position: relative;
+            &:hover{
+                background: #5163c7;
+                color: #fff;
+            }
         }
     }
 }
