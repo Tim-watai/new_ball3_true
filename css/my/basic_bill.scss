@@ -409,42 +409,6 @@
             .trans_row{
                 line-height: 1.2em;
                 margin: 1em 0 0;
-               
-                select{
-                    border: none;
-                    width: 100%;
-                    option{
-                        padding: .6em 1em;
-                        &:hover{
-                            background: #fff;
-                        }
-                    }
-                    .select-selected {
-                        background-color: #000;
-                        color: #fff;
-                      }
-                }
-                .select-styled{
-
-                }
-                .select-items {
-                    position: absolute;
-                    background-color: #fff;
-                    top: calc(100% + .6em);
-                    left: 0;
-                    right: 0;
-                    z-index: 99;
-                  }
-                .select-selected:after {
-                    position: absolute;
-                    content: "";
-                    top: 14px;
-                    right: 10px;
-                    width: 0;
-                    height: 0;
-                    border: 6px solid transparent;
-                    border-color: #fff transparent transparent transparent;
-                  }
                 input{
                     &::placeholder{
                         color: #d1d4e2;
@@ -498,16 +462,47 @@
                     height: 1.5em;
                     margin: 0 calc(1em + 10px) 0 1em;
                 }
+                .trans_drow{
+                    position: absolute;
+                    left: -1px;
+                    top: 95%;
+                    width: calc(100% + 2px);
+                    border: 1px solid #b9bfdc;
+                    border-width: 0 1px 1px;
+                    border-radius: 0 0 5px 5px;
+                    background: #fff;
+                    display: none;
+                    li{
+                        padding: .6em 1em;
+                        border-top: 1px solid #b9bfdc;
+                        &:hover{
+                            background: #b9bfdc;
+                            span{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
                 .i_box{
                     border-radius: 5px;
                     border: 1px solid #b9bfdc;
                     display: inline-block;
                     vertical-align: middle;
                     padding: .6em 1em;
+                    transition: .2s all ease-in-out;
                     &.active,&:focus{
                         border-color: #364bb9;
                     }
-                    
+                    &:hover,&:active{
+                        transition: .2s all ease-in-out;
+                        .trans_drow{
+                            display: block;
+                        }
+                        .right_text .arrow{
+                            transform: rotate(270deg);
+                            transition: .2s all ease-in-out;
+                        }
+                    }
                 }
                 .i_btn{
                     display: inline-block;
@@ -522,10 +517,16 @@
                     }
                     &.active{
                         background: linear-gradient(to bottom,#8f9cdc 0%,#2e44b7 100%);
+                        &:hover{
+                            background: linear-gradient(to bottom,#2e44b7 0%,#8f9cdc 100%);
+                        }
                     }
                 }
                 .w35p{
                     width: 35%;
+                    position: relative;
+                    cursor: pointer;
+                    
                 }
             }
             //轉點金額區塊
@@ -541,22 +542,25 @@
                     padding: 0 1em;
                     position: relative;
                     cursor: pointer;
+                    transition: .2s all ease-in-out;
                     &:hover,&:active,&.active{
                         .bk_drow{
                             display: block;
                         }
+                        .right_box{
+                            .arrow{
+                                transform: rotate(270deg);
+                                transition: .2s all ease-in-out;
+                            }
+                        }
                     }
                     .bk_drow{
                         display: none;
-                        width: 100%;
+                        width: calc(100% + 2px);
                         position: absolute;
                         top: 100%;
-                        /* border-width: 0 1px 1px; */
-                        padding: 0 1em;
-                        left: 0;
-                        /* -webkit-transform: translateX(-50%); */
-                        -ms-transform: translateX(-50%);
-                        /* transform: translateX(-50%); */
+                        left: 50%;
+                        transform: translateX(-50%);
                         background: #fff;
                         border: 1px solid #b9bfdc;
                         border-width: 0 1px 1px;
@@ -564,10 +568,16 @@
                         line-height: 2.5em;
                         z-index: 50;
                         li{
-                            padding: 0;
+                            padding: 0 1em;
                             width: 100%;
                             border-bottom: 1px solid #b9bfdc;
                             cursor: pointer;
+                            &:hover{
+                                background: #b9bfdc;
+                                p{
+                                    color: #fff;
+                                }
+                            }
                             &:last-child{
                                 border-bottom: none;
                             }
@@ -586,10 +596,10 @@
                             display: inline-block;
                             line-height: 100%;
                             vertical-align: middle;
-                            &:hover{
-                                background: #000;
-                                color: #fff;
-                            }
+                            // &:hover{
+                            //     background: #000;
+                            //     color: #fff;
+                            // }
                         }
                     }
                 }
@@ -992,6 +1002,7 @@
                         width: 3.2em;
                         height: 1.8em;
                         border-radius: 30px;
+                        cursor: pointer;
                         transition: all .2s ease-in-out;
                         .s_ball{
                             position: absolute;

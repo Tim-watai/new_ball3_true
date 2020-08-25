@@ -3526,7 +3526,9 @@ main.my_page.my_page.my_page {
       line-height: calc(3.214em - 24px);
       padding: 0;
       width: calc(100% - 8px);
-      border-radius: 24px; }
+      border-radius: 24px;
+      vertical-align: middle;
+      display: inline-block; }
 
 .basic_bill.message_anno .b_name {
   background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#414c88));
@@ -4074,32 +4076,6 @@ main.my_page.my_page.my_page {
     .basic_bill .save_type .trans_row {
       line-height: 1.2em;
       margin: 1em 0 0; }
-      .basic_bill .save_type .trans_row select {
-        border: none;
-        width: 100%; }
-        .basic_bill .save_type .trans_row select option {
-          padding: .6em 1em; }
-          .basic_bill .save_type .trans_row select option:hover {
-            background: #fff; }
-        .basic_bill .save_type .trans_row select .select-selected {
-          background-color: #000;
-          color: #fff; }
-      .basic_bill .save_type .trans_row .select-items {
-        position: absolute;
-        background-color: #fff;
-        top: calc(100% + .6em);
-        left: 0;
-        right: 0;
-        z-index: 99; }
-      .basic_bill .save_type .trans_row .select-selected:after {
-        position: absolute;
-        content: "";
-        top: 14px;
-        right: 10px;
-        width: 0;
-        height: 0;
-        border: 6px solid transparent;
-        border-color: #fff transparent transparent transparent; }
       .basic_bill .save_type .trans_row input::-webkit-input-placeholder {
         color: #d1d4e2; }
       .basic_bill .save_type .trans_row input:-ms-input-placeholder {
@@ -4151,14 +4127,47 @@ main.my_page.my_page.my_page {
         width: 2.5em;
         height: 1.5em;
         margin: 0 calc(1em + 10px) 0 1em; }
+      .basic_bill .save_type .trans_row .trans_drow {
+        position: absolute;
+        left: -1px;
+        top: 95%;
+        width: calc(100% + 2px);
+        border: 1px solid #b9bfdc;
+        border-width: 0 1px 1px;
+        border-radius: 0 0 5px 5px;
+        background: #fff;
+        display: none; }
+        .basic_bill .save_type .trans_row .trans_drow li {
+          padding: .6em 1em;
+          border-top: 1px solid #b9bfdc; }
+          .basic_bill .save_type .trans_row .trans_drow li:hover {
+            background: #b9bfdc; }
+            .basic_bill .save_type .trans_row .trans_drow li:hover span {
+              color: #fff; }
       .basic_bill .save_type .trans_row .i_box {
         border-radius: 5px;
         border: 1px solid #b9bfdc;
         display: inline-block;
         vertical-align: middle;
-        padding: .6em 1em; }
+        padding: .6em 1em;
+        -webkit-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out; }
         .basic_bill .save_type .trans_row .i_box.active, .basic_bill .save_type .trans_row .i_box:focus {
           border-color: #364bb9; }
+        .basic_bill .save_type .trans_row .i_box:hover, .basic_bill .save_type .trans_row .i_box:active {
+          -webkit-transition: .2s all ease-in-out;
+          -o-transition: .2s all ease-in-out;
+          transition: .2s all ease-in-out; }
+          .basic_bill .save_type .trans_row .i_box:hover .trans_drow, .basic_bill .save_type .trans_row .i_box:active .trans_drow {
+            display: block; }
+          .basic_bill .save_type .trans_row .i_box:hover .right_text .arrow, .basic_bill .save_type .trans_row .i_box:active .right_text .arrow {
+            -webkit-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+            -webkit-transition: .2s all ease-in-out;
+            -o-transition: .2s all ease-in-out;
+            transition: .2s all ease-in-out; }
       .basic_bill .save_type .trans_row .i_btn {
         display: inline-block;
         vertical-align: middle;
@@ -4174,8 +4183,15 @@ main.my_page.my_page.my_page {
           background: -webkit-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
           background: -o-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
           background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%); }
+          .basic_bill .save_type .trans_row .i_btn.active:hover {
+            background: -webkit-gradient(linear, left top, left bottom, from(#2e44b7), to(#8f9cdc));
+            background: -webkit-linear-gradient(top, #2e44b7 0%, #8f9cdc 100%);
+            background: -o-linear-gradient(top, #2e44b7 0%, #8f9cdc 100%);
+            background: linear-gradient(to bottom, #2e44b7 0%, #8f9cdc 100%); }
       .basic_bill .save_type .trans_row .w35p {
-        width: 35%; }
+        width: 35%;
+        position: relative;
+        cursor: pointer; }
     .basic_bill .save_type .bk_box {
       border: 1px solid #b9bfdc;
       border-radius: 5px;
@@ -4185,20 +4201,28 @@ main.my_page.my_page.my_page {
       .basic_bill .save_type .bk_box .bk_wrap {
         padding: 0 1em;
         position: relative;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out; }
         .basic_bill .save_type .bk_box .bk_wrap:hover .bk_drow, .basic_bill .save_type .bk_box .bk_wrap:active .bk_drow, .basic_bill .save_type .bk_box .bk_wrap.active .bk_drow {
           display: block; }
+        .basic_bill .save_type .bk_box .bk_wrap:hover .right_box .arrow, .basic_bill .save_type .bk_box .bk_wrap:active .right_box .arrow, .basic_bill .save_type .bk_box .bk_wrap.active .right_box .arrow {
+          -webkit-transform: rotate(270deg);
+          -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+          -webkit-transition: .2s all ease-in-out;
+          -o-transition: .2s all ease-in-out;
+          transition: .2s all ease-in-out; }
         .basic_bill .save_type .bk_box .bk_wrap .bk_drow {
           display: none;
-          width: 100%;
+          width: calc(100% + 2px);
           position: absolute;
           top: 100%;
-          /* border-width: 0 1px 1px; */
-          padding: 0 1em;
-          left: 0;
-          /* -webkit-transform: translateX(-50%); */
+          left: 50%;
+          -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
-          /* transform: translateX(-50%); */
+          transform: translateX(-50%);
           background: #fff;
           border: 1px solid #b9bfdc;
           border-width: 0 1px 1px;
@@ -4206,10 +4230,14 @@ main.my_page.my_page.my_page {
           line-height: 2.5em;
           z-index: 50; }
           .basic_bill .save_type .bk_box .bk_wrap .bk_drow li {
-            padding: 0;
+            padding: 0 1em;
             width: 100%;
             border-bottom: 1px solid #b9bfdc;
             cursor: pointer; }
+            .basic_bill .save_type .bk_box .bk_wrap .bk_drow li:hover {
+              background: #b9bfdc; }
+              .basic_bill .save_type .bk_box .bk_wrap .bk_drow li:hover p {
+                color: #fff; }
             .basic_bill .save_type .bk_box .bk_wrap .bk_drow li:last-child {
               border-bottom: none; }
           .basic_bill .save_type .bk_box .bk_wrap .bk_drow span.bk_icon {
@@ -4223,9 +4251,6 @@ main.my_page.my_page.my_page {
             display: inline-block;
             line-height: 100%;
             vertical-align: middle; }
-            .basic_bill .save_type .bk_box .bk_wrap .bk_drow p:hover {
-              background: #000;
-              color: #fff; }
       .basic_bill .save_type .bk_box span.bk_icon {
         display: inline-block;
         width: 1.12em;
@@ -4582,6 +4607,7 @@ main.my_page.my_page.my_page {
           width: 3.2em;
           height: 1.8em;
           border-radius: 30px;
+          cursor: pointer;
           -webkit-transition: all .2s ease-in-out;
           -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out; }
@@ -7141,6 +7167,15 @@ body {
               background: #6272cc; }
           .container main .right .search_bar p.set {
             margin: 0 0 0 .5em; }
+        .container main .right .search_bar span {
+          display: inline-block;
+          font-size: 1.071em;
+          color: #4d515d;
+          line-height: 1;
+          vertical-align: middle;
+          cursor: pointer;
+          padding: 2px 0 0;
+          position: relative; }
         .container main .right .search_bar .arrow {
           background: url(../image/icon/arrow_g.png) no-repeat;
           background-size: 100%;

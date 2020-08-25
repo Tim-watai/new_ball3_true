@@ -692,6 +692,16 @@ body {
             margin: 0 0 0 .5em;
           }
         }
+        span{
+          display: inline-block;
+          font-size: 1.071em;
+          color: #4d515d;
+          line-height: 1;
+          vertical-align: middle;
+          cursor: pointer;
+          padding: 2px 0 0;
+          position: relative;
+        }
         .arrow{
           background: url(../image/icon/arrow_g.png)no-repeat;
           background-size: 100%;
