@@ -448,7 +448,7 @@
           <div class="box">
             <div class="basic_bill">
               <div class="b_name">
-                <i class="icon i14"></i>
+                <i class="icon i15"></i>
                 <p class="bf">美式足球投注限額</p>
               </div>
               <ul class="data">
@@ -816,28 +816,7 @@
     pw_close.click(function(){
       return ch_window.removeClass('active');
     })
-  //pw_ch 彈窗_移動
-  $('.bet_box.blue.pw_w .title').mousedown(
-          function(event){
-          let isMove = true;
-          let abs_x = event.pageX - $('aside .bet_box.blue.pw_w').offset().left;
-          let abs_y = event.pageY - $('aside .bet_box.blue.pw_w').offset().top;
-          //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
-          let e_px = event.pageX;
-          let leftt = $('aside .bet_box.pw_w').offset().left;
-          $(document).mousemove(
-            function(event){
-              if (isMove) {
-              let obj = $('aside .bet_box.pw_w');
-              obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
-              }
-              //move接up
-            }).mouseup(
-              function () {
-                isMove = false;
-              }
-            )//up
-  })//down
+  
 
 
 

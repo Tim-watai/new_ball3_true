@@ -804,10 +804,13 @@ body {
             cursor: pointer;
             span{
               font-size: 1.1em;
+              color: #3145b2;
             }
             &:hover{
               background: #3145b2;
-              color: #fff;
+              span{
+                color: #fff;
+              }
             }
           }
           .delete{

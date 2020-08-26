@@ -3467,7 +3467,7 @@ main.my_page.my_page.my_page {
   height: 6.643em; }
 
 .rules_type {
-  width: 80%;
+  width: 78%;
   position: fixed;
   top: 9.927em;
   right: 0;
@@ -7383,10 +7383,12 @@ body {
             color: #3145b2;
             cursor: pointer; }
             .container main .right .search_bar .edit .do span, .container main .right .search_bar .edit .delete span, .container main .right .search_bar .edit .cancel span {
-              font-size: 1.1em; }
+              font-size: 1.1em;
+              color: #3145b2; }
             .container main .right .search_bar .edit .do:hover, .container main .right .search_bar .edit .delete:hover, .container main .right .search_bar .edit .cancel:hover {
-              background: #3145b2;
-              color: #fff; }
+              background: #3145b2; }
+              .container main .right .search_bar .edit .do:hover span, .container main .right .search_bar .edit .delete:hover span, .container main .right .search_bar .edit .cancel:hover span {
+                color: #fff; }
           .container main .right .search_bar .edit .delete {
             margin-right: .2em; }
           .container main .right .search_bar .edit .doing {
