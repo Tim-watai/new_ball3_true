@@ -7402,7 +7402,7 @@ body {
             vertical-align: middle; }
           .container main .right .search_bar .day_wrap .l_btn, .container main .right .search_bar .day_wrap .r_btn {
             cursor: pointer; }
-          .container main .right .search_bar .day_wrap p {
+          .container main .right .search_bar .day_wrap span {
             display: inline-block;
             width: 60%;
             background: #6272cc;
