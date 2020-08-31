@@ -3703,7 +3703,7 @@ main.my_page.my_page.my_page {
         -o-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out; }
     .mess_drow.active .mess_content {
-      display: block; }
+      display: inline-block; }
   .mess_drow.editing .mess_title .e_point:before {
     display: block; }
   .mess_drow span.tt {
