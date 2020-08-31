@@ -3771,8 +3771,6 @@ main.my_page.my_page.my_page {
     background: #fff;
     border-radius: 12px;
     margin: -1em 0 0; }
-    .mess_drow .mess_content [class*='mess'] {
-      margin-top: 2.143em; }
     .mess_drow .mess_content .mess_card {
       border-radius: 12px;
       border: 1px solid #6b76b4;
