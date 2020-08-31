@@ -3787,7 +3787,8 @@ main.my_page.my_page.my_page {
       line-height: 2;
       margin-top: 1.6em;
       font-size: 1.071em;
-      color: #292b30; }
+      color: #292b30;
+      display: inline-block; }
     .mess_drow .mess_content .mess_table {
       text-align: center;
       overflow: hidden;
