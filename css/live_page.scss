@@ -55,19 +55,26 @@
         position: relative;
         width: 100%;
         line-height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: .5em 0;
         .l_box{
-          left: .7em;
+          padding-left: .7em;
+          padding-right: 2em;
         }
         .r_box{
-          right: .7em;
+          padding-left: 2em;
+          padding-right: .7em;
           text-align: right;
         }
         .r_box,.l_box{
           line-height: 1em;
-          transform: translate(0, -50%);
-          top: 50%;
-          position: absolute;
-          width: 37%;
+          // transform: translate(0, -50%);
+          // top: 50%;
+          // position: absolute;
+          width: 50%;
           p{
             font-size: 1em;
             color: #4d515d;

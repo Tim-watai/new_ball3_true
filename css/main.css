@@ -2547,20 +2547,31 @@ header {
     .live_page .live_title.for_view.for_view.for_view {
       position: relative;
       width: 100%;
-      line-height: 100%; }
+      line-height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: .5em 0; }
       .live_page .live_title.for_view.for_view.for_view .l_box {
-        left: .7em; }
+        padding-left: .7em;
+        padding-right: 2em; }
       .live_page .live_title.for_view.for_view.for_view .r_box {
-        right: .7em;
+        padding-left: 2em;
+        padding-right: .7em;
         text-align: right; }
       .live_page .live_title.for_view.for_view.for_view .r_box, .live_page .live_title.for_view.for_view.for_view .l_box {
         line-height: 1em;
-        -webkit-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-        transform: translate(0, -50%);
-        top: 50%;
-        position: absolute;
-        width: 37%; }
+        width: 50%; }
         .live_page .live_title.for_view.for_view.for_view .r_box p, .live_page .live_title.for_view.for_view.for_view .l_box p {
           font-size: 1em;
           color: #4d515d;
