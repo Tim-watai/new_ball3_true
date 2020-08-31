@@ -49,11 +49,25 @@
     }
     .live_title{
       line-height: 3.214em;
-      height: 3.214em;
+      min-height: 3.214em;
       border-bottom: solid 1px #e0e1e3;
       &.for_view.for_view.for_view{
+        position: relative;
+        width: 100%;
+        line-height: 100%;
+        .l_box{
+          left: .7em;
+        }
+        .r_box{
+          right: .7em;
+          text-align: right;
+        }
         .r_box,.l_box{
           line-height: 1em;
+          transform: translate(0, -50%);
+          top: 50%;
+          position: absolute;
+          width: 37%;
           p{
             font-size: 1em;
             color: #4d515d;
@@ -61,11 +75,32 @@
             border: none;
             border-radius: 0;
             cursor: text;
-            width: 88%;
+            width: 100%;
             vertical-align: bottom;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+          }
+        }
+        .m_box{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          width: 55px;
+          height: 1em;
+          text-align: center;
+          p{
+            // font-size: 1.1em;
+            font-size: .068em;
+          }
+          .point_left,.point_right{
+            position: absolute;
+            max-width: 19.5px;
+            transform: translateX(-50%);
+          }
+          .point_left{
+            left: 10%;
+          }
+          .point_right{
+            left: 90%;
           }
         }
       }
@@ -74,7 +109,7 @@
         line-height: 100%;
         display: inline-block;
         vertical-align: middle;
-        padding: 0 1em 0;
+        padding: 0 .7em 0;
         position: relative;
         .r_box{
           float: left;
@@ -106,15 +141,7 @@
             cursor: pointer;
           }
         }
-        .m_box{
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%,-50%);
-          p{
-            font-size: 1.1em;
-          }
-        }
+       
         .infor_con{
           position: absolute;
           left: 50%;
