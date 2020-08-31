@@ -73,10 +73,10 @@ aside{
     
     &.fixed_size.fixed_size.fixed_size.fixed_size{
         position: absolute;
-        bottom: -1em;
+        bottom: 0em;
         left: 36.8%;
         top: auto;
-        transform: translateY(88.5%);
+        transform: translateY(91.5%);
         z-index: 10;
         transition: all .2s ease-in-out;
         &.active{
