@@ -168,6 +168,7 @@ body {
   margin:7.5em 0 0;
   width: 100%;
   height: calc(100% - 7.5em);
+  max-height: 835px;
   position: fixed;
   z-index: 1;
   overflow: auto;
