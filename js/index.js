@@ -42,11 +42,7 @@ $(document).ready(function() {
       '.left .index.active li:nth-child(17)',
       '.left .index.active li:nth-child(18)'
     ]
-    // let left_tag = $('.left .index.active li').each(function(index){
-    //   return index.toString();
-    // })
-    // let left_tag = $('.left .index.active li')
-    // console.log(left_tag);
+
 
     for(let i = 0 ; i<page_name.length ; i++){
       if ( testname.indexOf(page_name[i])> -1 ) {
@@ -120,64 +116,7 @@ $(document).ready(function() {
         }
       })
       //<-----------
-      
-      //彈窗
-      //彈窗移動
-      //單關移動
-      // $('.bet_box.blue .title').mousedown(
-      //     function(event){
-      //     let isMove = true;
-      //     let abs_x = event.pageX - $('aside .bet_box.blue').offset().left;
-      //     let abs_y = event.pageY - $('aside .bet_box.blue').offset().top;
-      //     //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
-      //     let e_px = event.pageX;
-      //     let leftt = $('aside .bet_box').offset().left;
-      //     $(document).mousemove(
-      //       function(event){
-      //         if (isMove) {
-      //         let obj = $('aside.bet_solo .bet_box');
-      //         obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
-      //         }
-      //         //move接up
-      //       }).mouseup(
-      //     function () {
-      //       isMove = false;
-      //     }
-      // )//up
-      //   })
-        //down
-      
-      //<------
-      //串關移動
-      
-      // $('.bet_box.red .title').mousedown(
-      //     function(event){
-      //     let isMove = true;
-      //     let abs_x = event.pageX - $('aside .bet_box.red').offset().left;
-      //     let abs_y = event.pageY - $('aside .bet_box.red').offset().top;
-      //     //abs > 滑鼠距離-物件距離與邊框距離 = 當前距離
-      //     let e_px = event.pageX;
-      //     let leftt = $('aside .bet_box').offset().left;
-      
-      //     $(document).mousemove(
-      //       function(event){
-      //         if (isMove) {
-      //         let obj = $('aside.bet_double .bet_box');
-      //         obj.css({'left':event.pageX - abs_x, 'top':event.pageY - abs_y});
-      //           //滑鼠距離 - 物件當前距離abs = 增量
-        
-      //         }
-      //         //move接up
-      //       }).mouseup(
-      //     function () {
-      //       isMove = false;
-      //     }
-      // )//up
-      //   })//down
-      
-      //<------
-      
-      
+  
       //單關
       $('.test2 li:nth-child(1)').click(function(){
         $(this).siblings().removeClass('active');
@@ -445,28 +384,4 @@ function change_methods(ishard){
         }
     })
     //<----------------------------------------
-    //0807_聯繫我們localStorage
-    // let contact_btn = $('.container .f_wrap .f_bot ul li:nth-child(6)');
-    // let contact_page = 'my_contact_us.html';
-    // console.log('testname ='+testname);
-    // if(testname == contact_page){
-        
-    //   let sevis = localStorage.getItem('sev');
-    //   console.log('contact! true' + sevis);
-    //   change_sev_page();
-    // }else{
-    //   localStorage.removeItem('sev');
-    //   console.log('reomve sev')
-    // }
-    // function change_sev_page (){
-    //  let sev_page = $('.game_anno_page');
-    //  sev_page.siblings().removeClass('active');
-    //  sev_page.addClass('active');
-    // }
-    // contact_btn.click(function(){
-    //   console.log('contact_btn');
-    //   localStorage.setItem('sev','sev_contact');
-     
-    // })
-   
   }); 

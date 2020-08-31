@@ -502,7 +502,7 @@ aside {
   width: 36em;
   height: auto;
   border-radius: 15px;
-  position: absolute;
+  position: fixed;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
