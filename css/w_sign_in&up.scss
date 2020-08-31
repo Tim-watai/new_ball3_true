@@ -87,7 +87,7 @@
         .row{
             height: 2.714em;
             line-height: 2.714em;
-            overflow: hidden;
+            // overflow: hidden;
             margin-top: 1.143em;
             //sign_in
             .check_wrap{
@@ -163,6 +163,9 @@
                         font-size: 1.071em;
                         color: #838ba0;
                     }
+                    &:focus{
+                        border: 1px solid #384dba;
+                    }
                 }
             }
             .r_box{
@@ -189,6 +192,9 @@
                     &::placeholder{
                         font-size: 1.071em;
                         color: #838ba0;
+                    }
+                    &:focus{
+                        border: 1px solid #384dba;
                     }
                 }
             }

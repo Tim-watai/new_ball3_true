@@ -256,7 +256,6 @@ button {
     .sign_box .content .row {
       height: 2.714em;
       line-height: 2.714em;
-      overflow: hidden;
       margin-top: 1.143em; }
       .sign_box .content .row .check_wrap {
         display: inline-block; }
@@ -335,6 +334,8 @@ button {
           .sign_box .content .row .right_box .in_box::placeholder {
             font-size: 1.071em;
             color: #838ba0; }
+          .sign_box .content .row .right_box .in_box:focus {
+            border: 1px solid #384dba; }
       .sign_box .content .row .r_box {
         float: left;
         margin-right: 2.143em; }
@@ -366,6 +367,8 @@ button {
           .sign_box .content .row .r_box .in_box::placeholder {
             font-size: 1.071em;
             color: #838ba0; }
+          .sign_box .content .row .r_box .in_box:focus {
+            border: 1px solid #384dba; }
     .sign_box .content .icon_area {
       text-align: center; }
     .sign_box .content .ic_wrap {
@@ -1067,6 +1070,8 @@ aside {
             color: #ced1e0; }
           .bet_box .content .bets .computer .row input.bet_in::placeholder {
             color: #ced1e0; }
+          .bet_box .content .bets .computer .row input.bet_in:focus {
+            border-color: #3247b8; }
         .bet_box .content .bets .computer .row button {
           line-height: 2em;
           font-size: 16px;
@@ -1134,6 +1139,8 @@ aside {
       padding: 0 .5em;
       border: 1px solid #b9bfdc;
       border-radius: 5px; }
+      .bet_box li.pw_size input:focus {
+        border-color: #3046b8; }
   .bet_box li.pw_btn_area {
     padding: 0 1em;
     line-height: 2.5em;
@@ -3569,7 +3576,9 @@ main.my_page.my_page.my_page {
       background: -webkit-linear-gradient(top, #fafbff 0%, #e3e7f6 100%);
       background: -o-linear-gradient(top, #fafbff 0%, #e3e7f6 100%);
       background: linear-gradient(to bottom, #fafbff 0%, #e3e7f6 100%);
-      color: #2c3973; }
+      color: #2c3973;
+      -webkit-animation: choice_ani .3s 1 ease-in-out;
+      animation: choice_ani .3s 1 ease-in-out; }
     .mess_sw .s_b50.s_b50.s_b50 .sp {
       font-size: 1.143em;
       color: #fff;
@@ -3580,6 +3589,22 @@ main.my_page.my_page.my_page {
       border-radius: 24px;
       vertical-align: middle;
       display: inline-block; }
+
+@-webkit-keyframes choice_ani {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes choice_ani {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
 .basic_bill.message_anno .b_name {
   background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#414c88));
@@ -4028,7 +4053,9 @@ main.my_page.my_page.my_page {
           cursor: pointer; }
           .basic_bill .save_type.set_size .set_sw .s_b50.active p {
             background: #fff;
-            color: #4d515d; }
+            color: #4d515d;
+            -webkit-animation: choice_ani .3s 1 ease-in-out;
+            animation: choice_ani .3s 1 ease-in-out; }
           .basic_bill .save_type.set_size .set_sw .s_b50:first-child p {
             margin: 2px 0 0 2px; }
           .basic_bill .save_type.set_size .set_sw .s_b50:last-child p {
@@ -7007,6 +7034,9 @@ body {
         .container .search_group .s_wrap input::placeholder {
           color: #8f94a4;
           font-size: 1.071em; }
+        .container .search_group .s_wrap input:focus {
+          -webkit-box-shadow: inset 0 0 2px 2px #3449b9;
+          box-shadow: inset 0 0 2px 2px #3449b9; }
       .container .search_group .s_wrap button {
         width: auto;
         height: auto;
