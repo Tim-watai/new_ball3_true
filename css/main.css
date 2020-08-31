@@ -3674,7 +3674,8 @@ main.my_page.my_page.my_page {
   .basic_bill.message_anno .save_type p {
     line-height: 2;
     font-size: 1.143em;
-    letter-spacing: .5px; }
+    letter-spacing: .5px;
+    display: inline-block; }
 
 .messages_page, .events_page, .game_anno_page, .anno_page {
   display: none; }
