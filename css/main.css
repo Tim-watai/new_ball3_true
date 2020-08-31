@@ -565,6 +565,12 @@ aside {
         background: -webkit-linear-gradient(top, #d5d9ef 0%, #fff 100%);
         background: -o-linear-gradient(top, #d5d9ef 0%, #fff 100%);
         background: linear-gradient(to bottom, #d5d9ef 0%, #fff 100%); }
+      .bet_box.blue .content .bets .computer .row button:active {
+        background: -webkit-gradient(linear, left top, left bottom, from(#2e44b7), to(#8f9cdc));
+        background: -webkit-linear-gradient(top, #2e44b7 0%, #8f9cdc 100%);
+        background: -o-linear-gradient(top, #2e44b7 0%, #8f9cdc 100%);
+        background: linear-gradient(to bottom, #2e44b7 0%, #8f9cdc 100%);
+        color: #fff; }
       .bet_box.blue .content .bets .computer .row button.bet_btn {
         color: #fff;
         background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2e44b7));
@@ -708,6 +714,12 @@ aside {
         background: -webkit-linear-gradient(top, #efd5d5 0%, #fff 100%);
         background: -o-linear-gradient(top, #efd5d5 0%, #fff 100%);
         background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%); }
+      .bet_box.red .content .bets .computer .row button:active {
+        background: -webkit-gradient(linear, left top, left bottom, from(#850004), to(#ec0004));
+        background: -webkit-linear-gradient(top, #850004 0%, #ec0004 100%);
+        background: -o-linear-gradient(top, #850004 0%, #ec0004 100%);
+        background: linear-gradient(to bottom, #850004 0%, #ec0004 100%);
+        color: #fff; }
       .bet_box.red .content .bets .computer .row button.bet_btn {
         color: #fff;
         background: -webkit-gradient(linear, left top, left bottom, from(#ec0004), to(#850004));
@@ -7694,8 +7706,8 @@ body {
       overflow-y: auto;
       overflow-x: hidden;
       position: fixed;
-      height: 909px;
-      top: 0;
+      min-height: 909px;
+      top: 2px;
       right: 0;
       padding: 0 0 8em;
       display: none; }

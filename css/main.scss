@@ -1103,8 +1103,8 @@ body {
       overflow-y: auto;
       overflow-x: hidden;
       position: fixed;
-      height: 909px;
-      top: 0;
+      min-height: 909px;
+      top: 2px;
       right: 0;
       padding: 0 0 8em;
       display: none;

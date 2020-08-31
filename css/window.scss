@@ -118,6 +118,10 @@ aside{
                                 &:hover{
                                     background: linear-gradient(to bottom ,#d5d9ef 0%,#fff 100%);
                                 }
+                                &:active{
+                                    background: linear-gradient(to bottom ,#2e44b7 0%,#8f9cdc 100%);
+                                    color: #fff;
+                                }
                                 &.bet_btn{
                                     color: #fff;
                                     background: linear-gradient(to bottom ,#8f9cdc 0%,#2e44b7 100%);
@@ -290,6 +294,10 @@ aside{
                                 border: solid 1px #eb0004;
                                 &:hover{
                                     background: linear-gradient(to bottom ,#efd5d5 0%,#fff 100%);
+                                }
+                                &:active{
+                                    background: linear-gradient(to bottom ,#850004 0%,#ec0004 100%);
+                                    color: #fff;
                                 }
                                 &.bet_btn{
                                     color: #fff;
